@@ -1,0 +1,27 @@
+
+
+@font-face {
+    font-family: 'tornadocbold';
+    src: url('fonts/tornadoc/TornadoC-Bold-webfont.eot');
+    src: url('fonts/tornadoc/TornadoC-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/tornadoc/TornadoC-Bold-webfont.woff2') format('woff2'),
+         url('fonts/tornadoc/TornadoC-Bold-webfont.woff') format('woff'),
+         url('fonts/tornadoc/TornadoC-Bold-webfont.ttf') format('truetype'),
+         url('fonts/tornadoc/TornadoC-Bold-webfont.svg#tornadocbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dearjoe_1_msregular';
+    src: url('fonts/dear_joe/DJ1TRIAL-webfont.eot');
+    src: url('fonts/dear_joe/DJ1TRIAL-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dear_joe/DJ1TRIAL-webfont.woff2') format('woff2'),
+         url('fonts/dear_joe/DJ1TRIAL-webfont.woff') format('woff'),
+         url('fonts/dear_joe/DJ1TRIAL-webfont.ttf') format('truetype'),
+         url('fonts/dear_joe/DJ1TRIAL-webfont.svg#dearjoe_1_msregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

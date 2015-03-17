@@ -1,0 +1,90 @@
+.primary-menu.main-menu-wrap.black.open-menu
+  =render partial: "partials/main_menu"
+
+header
+  .mobile-menu-button
+    a.navicon-button.larr.show-for-small-only
+      .navicon
+  =render partial: "partials/header"
+
+
+main.main-block-wrap.main-block
+  .row
+    .columns.medium-10.medium-centered
+      =render partial: "partials/main_block"
+
+.ordered-list-wrap.white-grey
+  .ordered-list
+    .title-head.grey
+      .row
+        .columns
+          .wrap
+            h4.hide-for-medium-only friends online
+            .items-menu
+              a
+                =image_tag "UD-icon-sub menu.svg"
+              .menu-wrap.close-menu
+                .menu
+                  .group
+                    .title
+                      strong Display options:
+                    .options
+                      .option
+                        .label
+                          .icon
+                            =image_tag "UD-icon-sort.svg"
+                          span
+                            |Sort by
+                      .option
+                        .label
+                          .icon
+                            =image_tag "UD-icon-fullscreen.svg"
+                          span
+                            |View mode
+                        .input
+                          select.view-mode
+                            option value="fullscreen" Fullscreen
+                            option value="minimize" Minimize
+
+    =render partial: "partials/ordered_people_list"
+
+footer
+  .row
+    .columns.medium-10.medium-centered
+      .row
+        .columns.large-7.medium-12.small-12
+          .row
+            .columns.large-2.medium-2.hide-for-small-only
+              a.scrollToTop
+                = image_tag "UD-icon-arrow up.svg"
+            .columns.large-10.medium-10.small-12
+              nav
+                li
+                  a About us
+                li
+                  a Free trail
+                li
+                  a Privacy policy
+                li
+                  a Other useful infomation
+        .columns.large-5.medium-12.small-12
+          .row
+            .columns.large-6.medium-6.small-6
+              nav.payment
+                li
+                  a
+                    =image_tag "Paymant-Visa.svg"
+                li
+                  a
+                    =image_tag "Paymant-Mastercard.svg"
+                li
+                  a
+                    =image_tag "Paymant-Paypal.svg"
+                li
+                  a
+                    =image_tag "Paymant-American express.svg"
+
+            .columns.large-6.medium-6.small-6
+              p
+                =image_tag "UD-icon-diamond.svg"
+                |© UkrainianDiamonds 2015

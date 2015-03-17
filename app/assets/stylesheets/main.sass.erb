@@ -1,0 +1,957 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "mixins"
+
+body
+  padding: 0
+  margin: 0
+  display: flex
+  min-height: 100vh
+  flex-direction: column
+  height: 100%
+
+main
+  -webkit-box-flex: 1 0 auto
+  -webkit-flex: 1 0 auto
+  -ms-flex: 1 0 auto
+  flex: 1 0 auto
+  width: 100%
+header, footer
+  flex: none
+
+header
+  height: 80px
+  background-color: #BEC3C7
+  width: 100%
+  position: relative
+  margin-bottom: 40px
+
+footer
+  background-color: #BEC3C7
+  .scrollToTop
+    position: relative
+    display: block
+    height: 60px
+    img
+      width: 36px
+      +my_center_align
+        position: absolute
+  nav
+    line-height: 60px
+    li
+      list-style: none
+      float: left
+      a
+        font:
+          size: rem-calc(12)
+          family: 'Fira Sans', sans-serif
+        line-height: rem-calc(14.4)
+        color: #D03F4A
+        padding: 0 5px
+        border-right: 1px solid #2E3E51
+      &:last-of-type
+        a
+          border-right: none
+
+  nav.payment
+    li
+      list-style: none
+      a
+        img
+          width: 38px
+  p
+    font:
+      size: rem-calc(16)
+    line-height: rem-calc(60)
+    color: #2E3E51
+      margin: 0
+    img
+      width: 32px
+
+.black
+  background-color: #2E2E36 !important
+.white
+  background-color: #fff
+.white-grey
+  background-color: #EDF0F1
+.grey
+  background-color: #BEC3C7
+
+
+.main-menu-wrap
+  width: 85px
+  transition: width .5s
+  position: fixed
+  left: 0
+  top: 0
+  bottom: 0
+  z-index: 11
+  @media (min-width : 40.063em) and (max-width : 64em)
+    width: 85px !important
+  @media (min-width : 0em) and (max-width : 40em)
+    display: none
+  .button-menu-wrap
+    position: relative
+    .button-menu
+      position: absolute
+      top: 0
+      right: -90px
+      z-index: 11
+      .desktop
+        @media (min-width : 0) and (max-width : 64em)
+          display: none
+      .mobile
+        display: none
+        @media (min-width : 0) and (max-width : 64em)
+          display: block
+  .title
+    display: none
+  &.open-menu
+    width: 360px
+    .title
+      display: block
+  &.open-for-medium-and-mobile
+    @media (min-width : 0) and (max-width : 64em)
+      width: 360px !important
+      .title
+        display: block !important
+      .pm-item
+        width: 215px !important
+        .icon
+          width: 75px
+// Change to watch in slow motion
+$duration: .5s
+
+$size : 100%
+$toggled-size : .75
+
+$bg : #449A88
+$nav-bg  : #2A2A2A
+$content-bg : #2E3E51
+
+.navicon-button
+  display: inline-block
+  position: relative
+  padding: 2.0625rem 1.5rem
+  transition: $duration/2
+  cursor: pointer
+  user-select: none
+  opacity: .8
+
+  .navicon:before, .navicon:after
+    transition: $duration/2
+
+  &:hover
+    transition: $duration
+    opacity: 1
+
+    .navicon:before, .navicon:after
+      transition: $duration/2
+
+    .navicon:before
+      top: .825rem
+    .navicon:after
+      top: -.825rem
+
+
+.navicon
+  position: relative
+  width: 2.5em
+  height: .3125rem
+  background: $content-bg
+  transition: $duration
+  /*border-radius: 2.5rem*/
+
+  &:before, &:after
+    display: block
+    content: ""
+    height: .3125rem
+    width: 2.5rem
+    background: $content-bg
+    position: absolute
+    z-index: -1
+    transition: $duration $duration/2
+    /*border-radius: 1rem*/
+
+  &:before
+    top: .625rem
+  &:after
+    top: -.625rem
+
+.open:not(.steps) .navicon:before,
+.open:not(.steps) .navicon:after
+  top: 0 !important
+
+.open .navicon:before,
+.open .navicon:after
+  transition: $duration
+
+.open.larr .navicon,
+  &:before, &:after
+    width: 1.5rem
+  &:before
+    transform: rotate(45deg)
+    transform-origin: left top
+  &:after
+    transform: rotate(-45deg)
+    transform-origin: left bottom
+
+.logo
+  border-bottom: 1px solid #27272E
+  a
+    display: block
+    height: 122px
+    border-bottom: 1px solid #43434D
+    position: relative
+  .logo-inner
+    width: 215px
+    margin: 0 auto
+    +my_vertical_align
+    .icon
+      float: left
+      width: 80px
+    .title
+      float: left
+      font:
+        family: 'dearjoe_1_msregular'
+      color: #D03F4A
+      @media only screen and (min-width : 40.063em) and (max-width : 64em)
+        display: none
+      b
+        font:
+          family: 'tornadocbold'
+          size: rem-calc(24)
+          weight: 500
+        line-height: rem-calc(21)
+        letter-spacing: rem-calc(.025)
+        color: #fff
+
+ul.primary-menu
+  margin-left: 0
+  li
+    list-style: none
+    border-bottom: 1px solid #27272E
+    a
+      display: block
+      height: 76px
+      border-bottom: 1px solid #43434D
+      position: relative
+      .pm-item
+        width: 215px
+        margin: 0 auto
+        height: 100%
+        @media only screen and (min-width : 40.063em) and (max-width : 64em)
+          width: 100%
+          .icon
+            width: 100%
+            position: relative
+            img
+              width: 75px
+              display: block
+              margin: 0 auto
+      .icon
+        width: 75px
+        float: left
+        //margin-top: 8px
+      .title
+        font:
+          size: rem-calc(20.85)
+          family: 'Fira Sans', sans-serif
+        text-transform: uppercase
+        color: #EDF0F1
+        float: left
+        position: relative
+        height: 100%
+        @media only screen and (min-width : 40.063em) and (max-width : 64em)
+          display: none !important
+        .round-count
+          position: absolute
+          top: 5px
+          right: -30px
+          width: 24px
+          height: 24px
+          border-radius: 50%
+          background-color: #D03F4A
+          &:before
+            position: absolute
+            top: 0
+            left: 0
+            display: inline-block
+            content: attr(data-count)
+            color: #fff
+            font:
+              size: rem-calc(14)
+              family: 'Fira Sans', sans-serif
+            line-height: rem-calc(24)
+            width: 24px
+            text-align: center
+        b
+          font:
+            weight: 400
+          line-height: rem-calc(75)
+
+.header-navigation
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  section
+    height: 100%
+    padding-right: 35px
+    li
+      display: inline-block
+      background: transparent
+      float: left
+      height: 100%
+      a
+        position: relative
+        display: block
+        height: 100%
+      &.search
+        width: 40px
+        a
+          img
+            width: 65%
+            +my_vertical_align
+      &.notification
+        width: 55px
+        padding: 0
+        border-radius: 0
+        display: block
+        margin: 0
+        position: static
+        a
+          div
+            width: 47%
+            margin: 0 auto
+            +my_vertical_align
+            .round-count
+              position: absolute
+              top: 0
+              right: -15px
+              width: 24px
+              height: 24px
+              border-radius: 50%
+              background-color: #D03F4A
+              &:before
+                position: absolute
+                top: 0
+                left: 0
+                display: inline-block
+                content: attr(data-count)
+                color: #fff
+                font:
+                  size: rem-calc(14)
+                  family: 'Fira Sans', sans-serif
+                line-height: rem-calc(24)
+                width: 24px
+                text-align: center
+      &.credits
+        margin-left: 1rem
+        a
+          div
+            +my_vertical_align
+            height: 24px
+            background-color: #D03F4A
+            font:
+              size: rem-calc(18)
+              family: 'Fira Sans', sans-serif
+            line-height: rem-calc(25)
+            color: #EDF0F1
+            padding-left: 30px
+            padding-right: 10px
+            border-radius: 12px 0 0 12px
+            right: -3px
+            position: relative
+            &:before
+              display: block
+              content: ''
+              background-image: url('<%=asset_path("UD-icon-diamond-white.svg")%>')
+              background-size: 100%
+              background-repeat: no-repeat
+              position: absolute
+              width: 16px
+              height: 16px
+              top: 6px
+              left: 8px
+
+
+
+
+      &.profile-avatar
+        width: 66px
+        position: relative
+        a
+          .image
+            max-width: 100%
+            width: 100%
+            height: 0
+            padding-bottom: 100%
+            overflow: hidden
+            -webkit-background-size: cover !important
+            -moz-background-size: cover !important
+            -o-background-size: cover !important
+            background-size: cover !important
+            margin: 0 auto
+
+            border-radius: 50%
+            +my_vertical_align
+        &.close
+          .user-profile-wrap
+            +element-invisible
+      &.profile-info
+        padding-left: 8px
+        div
+          +my_vertical_align
+        p
+          font:
+            size: rem-calc(12)
+            family: 'Fira Sans', sans-serif
+          line-height: rem-calc(14.4)
+          color: #2E3E51
+          margin: 0
+          padding: 0
+        strong
+          font:
+            size: rem-calc(20.85)
+            family: 'Fira Sans', sans-serif
+            weight: 500
+          line-height: rem-calc(25.03)
+          color: #2E3E51
+        a
+          font:
+            size: rem-calc(10)
+            family: 'Fira Sans', sans-serif
+          line-height: rem-calc(12)
+          color: #D03F4A
+          display: inline-block
+          height: auto
+      &.ordered-list-button
+        a
+          img
+            +my_vertical_align
+
+.ordered-list-wrap
+  width: 360px
+  position: absolute
+  right: 0
+  top: 120px
+  height: 100%
+  z-index: 11
+  @media (min-width : 40.063em) and (max-width : 64em)
+    width: 85px
+  @media (min-width : 0em) and (max-width : 40em)
+    display: none
+.title-head
+  //padding-left: 30px
+  height: 38px
+  position: relative
+  width: 100%
+  .wrap
+    position: relative
+    height: 38px
+  h4
+    margin: 0
+    padding: 0
+    line-height: rem-calc(38)
+    color: #2E3E51
+    text-transform: uppercase
+    font:
+      size: rem-calc(20.85)
+      family: 'Fira Sans', sans-serif
+  .items-menu
+    position: absolute
+    top: 6px
+    right: 0
+    bottom: 6px
+    cursor: pointer
+    width: 38px
+    a
+      display: block
+      width: 100%
+      height: 100%
+    img
+      height: 100%
+      float: right
+    .menu-wrap
+      position: relative
+      .menu
+        position: absolute
+        top: 42px
+        right: -28px
+        background-color: #EDF0F1
+        min-width: 360px
+        min-height: 300px
+        z-index: 11
+        border: 1px solid #BEC3C7
+        padding: 22px
+        display: none
+        strong
+          font:
+            size: rem-calc(21)
+            family: 'Fira Sans', sans-serif
+            weight: 400
+          text-transform: uppercase
+          line-height: rem-calc(25.2)
+          color: #2E3E51
+        .options
+          .option
+            padding-left: 15px
+        .label
+          background: transparent
+          width: 55%
+          float: left
+          .icon
+            width: 26px
+            height: 21px
+            float: left
+            margin-right: 8px
+          span
+            font:
+              size: rem-calc(12)
+              family: 'Fira Sans', sans-serif
+              weight: 500
+            line-height: rem-calc(21)
+            color: #58595B
+        .input
+          width: 45%
+          float: left
+          select
+            color: #D03F4A
+            background: transparent
+            border: none
+            option
+section.ordered-list
+  margin-left: 0
+  li
+    list-style: none
+    border-bottom: 1px solid #BEC3C7
+    a
+      display: block
+      height: 107px
+      border-bottom: 1px solid #fff
+    .one-item
+      padding-top: 20px
+    .avatar
+      width: 48px
+      height: 48px
+      float: left
+      position: relative
+      margin-top: 4px
+      &:before
+        display: block
+        content: ''
+        position: absolute
+        bottom: -2px
+        height: 2px
+        background-color: #96D03F
+        width: 100%
+      .image
+        max-width: 100%
+        width: 100%
+        height: 0
+        padding-bottom: 100%
+        overflow: hidden
+        -webkit-background-size: cover !important
+        -moz-background-size: cover !important
+        -o-background-size: cover !important
+        background-size: cover !important
+        margin: 0 auto
+    .information
+      float: left
+      width: 75%
+      padding-left: 0.9375rem
+      .title
+        h4
+          font:
+            size: rem-calc(16)
+            family: 'Fira Sans', sans-serif
+          line-height: rem-calc(19.2)
+          color: #2E3E51
+          margin: 0
+          padding: 0
+      .info
+        p
+          font:
+            size: rem-calc(12)
+            family: 'Fira Sans', sans-serif
+          line-height: rem-calc(14.4)
+          color: #48647C
+          margin: 0
+          padding: 0
+          span
+      .about
+        p
+          font:
+            size: rem-calc(12)
+            family: 'Fira Sans', sans-serif
+          line-height: rem-calc(14.4)
+          color: #BEC3C7
+
+.main-block
+  .title-head
+    margin-top: 10px
+  a.more
+    font:
+      size: rem-calc(18)
+      family: 'Fira Sans', sans-serif
+    line-height: rem-calc(35)
+    color: #EDF0F1
+    background-color: #48647C
+    height: 35px
+    text-transform: uppercase
+    padding: 0 17px
+    margin: 10px auto 40px auto
+    display: inline-block
+    +my_horizontal_align
+
+.notes
+  .note-wrap
+    .note-inner
+      width: 100%
+      padding: 0 2px
+      position: relative
+      &[data-count="3"]
+        &:before
+          display: block
+          content: ''
+          position: absolute
+          left: -2px
+          top: -1px
+          right: 19px
+          bottom: 0
+          background-color: #808062
+        &:after
+          display: block
+          content: ''
+          position: absolute
+          left: 0px
+          top: 2px
+          right: 17px
+          bottom: -2px
+          background-color: #AAAA83
+      &[data-count="2"]
+        &:after
+          display: block
+          content: ''
+          position: absolute
+          left: 0px
+          top: 2px
+          right: 18px
+          bottom: -2px
+          background-color: #AAAA83
+      &:hover
+        .note
+          -webkit-box-shadow: -2px 9px 5px -1px rgba(0, 0, 0, 0.5)
+          -moz-box-shadow: -2px 9px 5px -1px rgba(0, 0, 0, 0.5)
+          box-shadow: -2px 9px 5px -1px rgba(0, 0, 0, 0.5)
+        .navigation-block
+          /*overflow: visible !important*/
+        .buttons
+          -webkit-box-shadow: -3px 4px 5px -3px rgba(0,0,0,0.5)
+          -moz-box-shadow: -3px 4px 5px -3px rgba(0,0,0,0.5)
+          box-shadow: -3px 4px 5px -3px rgba(0,0,0,0.5)
+          display: block !important
+      .note
+        background-color: #E2E2AE
+        padding-top: 1rem
+        position: relative
+        top: 4px
+        z-index: 1
+        &:before
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 0 15px 15px 0
+          border-color: transparent #fcfcfc transparent transparent
+          display: block
+          content: ''
+          position: absolute
+          top: 0
+          right: 0
+        &:after
+          width: 0
+          height: 0
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 15px 0 0 15px
+          border-color: transparent transparent transparent #efecce
+          display: block
+          content: ''
+          position: absolute
+          top: 0
+          right: 0
+
+        .info-block
+          padding-bottom: 1rem
+        .navigation-block
+          position: relative
+          /*overflow: hidden*/
+          z-index: 11
+          .buttons
+            position: absolute
+            left: 0
+            top: 0
+            right: 0
+            background-color: #E2E2AE
+            padding: 0 1rem
+            display: none
+            p
+              padding-left: 1rem
+              font:
+                size: rem-calc(12)
+                family: 'Fira Sans', sans-serif
+                weight: 400
+              color: #2E3E51
+              line-height: rem-calc(14.4)
+              margin: 0
+              padding-top: 10px
+              padding-bottom: 13px
+              a
+                color: #D03F4A
+
+        .avatar
+          width: 40%
+          float: left
+          .image
+            max-width: 100%
+            width: 100%
+            height: 0
+            padding-bottom: 120%
+            overflow: hidden
+            -webkit-background-size: cover !important
+            -moz-background-size: cover !important
+            -o-background-size: cover !important
+            background-size: cover !important
+            margin: 0 auto
+        .information
+          width: 60%
+          float: left
+          strong
+            font:
+              size: rem-calc(18)
+              family: 'Fira Sans', sans-serif
+              weight: 400
+            color: #D03F4A
+            line-height: rem-calc(21.6)
+            padding-left: 5px
+          p
+            font:
+              family: 'dearjoe_1_msregular'
+              size: rem-calc(33.53)
+            color: #2E3E51
+            line-height: rem-calc(22)
+            margin: 0
+            margin-top: 1rem
+            padding: 0
+            padding-left: 13px
+        a.ud-button
+          font:
+            size: rem-calc(18)
+            family: 'Fira Sans', sans-serif
+            weight: 400
+          color: #EDF0F1
+          line-height: rem-calc(35)
+          height: rem-calc(35)
+          display: inline-block
+          width: 100%
+          text:
+            transform: uppercase
+            align: center
+          background-color: #D03F4A
+
+.mobile-menu-button
+  position: relative
+  z-index: 8
+  width: 65px
+.ordered-list-button
+  width: 45px
+  padding-left: 15px
+  a
+    img
+      width: 33px
+
+.hide-note
+  @media (min-width : 0) and (max-width : 818px)
+    display: none
+
+.note-column
+  @media (min-width : 0) and (max-width : 818px)
+    width: 50%
+
+.preview-profile
+  position: relative
+  overflow: hidden
+  &:hover
+    .information-wrap
+      bottom: 0
+    .information
+      height: 100px !important
+  .information-wrap
+    position: absolute
+    left: 0
+    right: 0
+    bottom: -38px
+    +transition(bottom, .5s, ease)
+    .triangle-wrap
+      position: relative
+      overflow: hidden
+      height: 10px
+      width: 100%
+      opacity: .8
+      .triangle
+        border: 10px solid #2E2E36
+        border-bottom: none
+        border-color: transparent #2E2E36 transparent
+        position: relative
+        left: 30px
+        -webkit-transform: translateX(-50%)
+        -moz-transform: translateX(-50%)
+        -ms-transform: translateX(-50%)
+        -o-transform: translateX(-50%)
+        transform: translateX(-50%)
+        position: absolute
+        top: 0
+        z-index: 11
+        &:before, &:after
+          right: 10px
+          width: 360px
+        &:before
+          content: ""
+          position: absolute
+          z-index: 11
+          height: 10px
+          top: -10px
+          background: #2E2E36
+        &:after
+          content: ""
+          position: absolute
+          z-index: 11
+          height: 10px
+          top: -10px
+          right: -370px
+          background: #2E2E36
+
+    .information
+      height: 63px
+      width: 100%
+      background: rgba(46, 46, 54, .80)
+      padding: 0 14px
+      +transition(height, .4s, ease)
+      .title
+        h4
+          font:
+            size: rem-calc(27)
+            family: 'Fira Sans', sans-serif
+          color: #EDF0F1
+          line-height: rem-calc(32)
+          margin: 0
+          padding: 0
+      .info
+        p
+          color: #96D03F
+          font:
+            size: rem-calc(14)
+            family: 'Fira Sans', sans-serif
+          line-height: rem-calc(16,8)
+          margin: 0
+          padding: 0
+          span
+            color: #EDF0F1
+
+      .actions
+        .action-button
+          width: 30px
+          height: 25px
+          display: inline-block
+          margin-right: 18px
+          object
+            width: 100%
+            height: 100%
+
+    .status
+      height: 44px
+      position: relative
+      width: 100%
+      background-color: #96D03F
+      &:before
+        content: 'online'
+        position: absolute
+        left: 13px
+        line-height: rem-calc(44)
+        font:
+          size: rem-calc(28)
+          family: 'Fira Sans', sans-serif
+        text-transform: uppercase
+        color: #EDF0F1
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        top: -15px
+        right: 0
+        width: 0px
+        height: 0px
+        border-style: solid
+        border-width: 0 0 15px 15px
+        border-color: transparent transparent #96d03f transparent
+  &.offline
+    .information
+      .info
+        p
+          color: #D03F4A
+    .status
+      height: 44px
+      position: relative
+      width: 100%
+      background-color: #D03F4A
+      &:before
+        content: 'offline'
+        position: absolute
+        left: 13px
+        line-height: rem-calc(44)
+        font:
+          size: rem-calc(28)
+          family: 'Fira Sans', sans-serif
+        text-transform: uppercase
+        color: #EDF0F1
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        top: -15px
+        right: 0
+        width: 0px
+        height: 0px
+        border-style: solid
+        border-width: 0 0 15px 15px
+        border-color: transparent transparent #D03F4A transparent
+
+.best-match-wrap
+  padding-top: 25px
+  margin-bottom: 13px
+  .preview-profile-wrap
+    padding: 0 2px 13px 2px
+    //@include grid-block(4)
+  .image
+    max-width: 100%
+    width: 100%
+    height: 0
+    padding-bottom: 133%
+    overflow: hidden
+    -webkit-background-size: cover !important
+    -moz-background-size: cover !important
+    -o-background-size: cover !important
+    background-size: cover !important
+    margin: 0 auto
+
+.your-best-match-wrap
+  padding-left: 0 !important
+  padding-right: 0 !important
+
+
+
+.your-favorites-wrap
+  margin-bottom: 0
