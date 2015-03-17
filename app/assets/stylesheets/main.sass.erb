@@ -443,6 +443,13 @@ ul.primary-menu
     width: 85px
   @media (min-width : 0em) and (max-width : 40em)
     display: none
+  &.minimizate
+    width: 85px
+    .wrap
+      h4
+        display: none !important
+    .information
+      display: none !important
 .title-head
   //padding-left: 30px
   height: 38px
@@ -486,7 +493,7 @@ ul.primary-menu
         z-index: 11
         border: 1px solid #BEC3C7
         padding: 22px
-        display: none
+        /*display: none*/
         strong
           font:
             size: rem-calc(21)
@@ -761,7 +768,8 @@ section.ordered-list
             transform: uppercase
             align: center
           background-color: #D03F4A
-
+.close-menu
+  display: none
 .mobile-menu-button
   position: relative
   z-index: 8

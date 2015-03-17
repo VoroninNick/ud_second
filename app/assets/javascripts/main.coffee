@@ -22,20 +22,13 @@ $(document).ready ->
     $('.ordered-list-wrap').toggle().show()
 
   $('select.view-mode').change ->
-    $wrapper = $(this).closest('.grid-frame')
+    $wrapper = $(this).closest('.ordered-list-wrap')
     if $(this).val() == 'minimize'
-        $wrapper.addClass('ordered-list-closed')
-        $orderedListWrap.removeClass('large-3')
-        $orderedListWrap.addClass('large-1')
-        $mainBlockWrap.removeClass('large-9')
-        $mainBlockWrap.addClass('large-11')
+      $wrapper.addClass('minimizate')
 
     else if $(this).val() == 'fullscreen'
-      $wrapper.removeClass('ordered-list-closed')
-      $orderedListWrap.removeClass('large-1')
-      $orderedListWrap.addClass('large-3')
-      $mainBlockWrap.removeClass('large-11')
-      $mainBlockWrap.addClass('large-9')
+      $wrapper.removeClass('minimizate')
+
 
 
   $('.items-menu a').click (e) ->
@@ -47,16 +40,16 @@ $(document).ready ->
     else
       $menu.addClass('close-menu')
 
-  $('html').click ->
-    $('.menu-wrap').addClass('close-menu')
-    $('.header-navigation section li.profile-avatar').addClass('close')
-
-  $('li.profile-avatar').click (e) ->
-    e.stopPropagation()
-    if $(this).hasClass('close')
-      $(this).removeClass('close')
-    else
-      $(this).addClass('close')
+#  $('html').click ->
+#    $('.menu-wrap').addClass('close-menu')
+#    $('.header-navigation section li.profile-avatar').addClass('close')
+#
+#  $('li.profile-avatar').click (e) ->
+#    e.stopPropagation()
+#    if $(this).hasClass('close')
+#      $(this).removeClass('close')
+#    else
+#      $(this).addClass('close')
 
 # click event to scroll to top
   $(".scrollToTop").click ->
