@@ -68,6 +68,7 @@ footer
       margin: 0
     img
       width: 32px
+      margin-right: 20px
 
 .black
   background-color: #2E2E36 !important
@@ -87,6 +88,9 @@ footer
   top: 0
   bottom: 0
   z-index: 11
+  -webkit-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.35)
+  -moz-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.35)
+  box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.35)
   @media (min-width : 40.063em) and (max-width : 64em)
     width: 85px !important
   @media (min-width : 0em) and (max-width : 40em)
@@ -108,7 +112,7 @@ footer
   .title
     display: none
   &.open-menu
-    width: 360px
+    /*width: 360px*/
     .title
       display: block
   &.open-for-medium-and-mobile
@@ -120,6 +124,8 @@ footer
         width: 215px !important
         .icon
           width: 75px
+.open-menu
+  width: 360px
 // Change to watch in slow motion
 $duration: .5s
 
@@ -320,7 +326,7 @@ ul.primary-menu
         border-radius: 0
         display: block
         margin: 0
-        position: static
+        position: relative
         a
           div
             width: 47%
@@ -347,6 +353,9 @@ ul.primary-menu
                 line-height: rem-calc(24)
                 width: 24px
                 text-align: center
+        &.close
+          .notifications-wrap
+            +element-invisible
       &.credits
         margin-left: 1rem
         a
@@ -447,9 +456,9 @@ ul.primary-menu
     width: 85px
     .wrap
       h4
-        display: none !important
+        display: none
     .information
-      display: none !important
+      display: none
 .title-head
   //padding-left: 30px
   height: 38px
@@ -485,15 +494,36 @@ ul.primary-menu
       position: relative
       .menu
         position: absolute
-        top: 42px
-        right: -28px
+        top: 23px
+        right: -13px
         background-color: #EDF0F1
         min-width: 360px
         min-height: 300px
         z-index: 11
         border: 1px solid #BEC3C7
         padding: 22px
-        /*display: none*/
+        &:before
+          display: block
+          content: ''
+          position: absolute
+          top: -16px
+          right: 6px
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 0 15px 15px 15px
+          border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent
+        &:after
+          display: block
+          content: ''
+          position: absolute
+          top: -15px
+          right: 7px
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 0 15px 15px 15px
+          border-color: transparent transparent #edf0f1 transparent
         strong
           font:
             size: rem-calc(21)
@@ -529,6 +559,8 @@ ul.primary-menu
             background: transparent
             border: none
             option
+
+
 section.ordered-list
   margin-left: 0
   li
@@ -614,6 +646,8 @@ section.ordered-list
     +my_horizontal_align
 
 .notes
+  width: 97%
+  margin: 0 auto
   .note-wrap
     .note-inner
       width: 100%
@@ -963,3 +997,264 @@ section.ordered-list
 
 .your-favorites-wrap
   margin-bottom: 0
+
+.user-profile-wrap
+  background-color: #EDF0F1
+  min-width: 353px
+  /*min-height: 290px*/
+  position: absolute
+  right: -80px
+  top: 95px
+  z-index: 21
+  padding: 1rem
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5)
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5)
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5)
+  .user-profile
+    width: 100%
+    position: relative
+    &:before
+      display: block
+      content: ''
+      position: absolute
+      top: -31px
+      right: 80px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 0 15px 15px 15px
+      border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent
+    &:after
+      display: block
+      content: ''
+      position: absolute
+      top: -31px
+      right: 82px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 0 15px 15px 15px
+      border-color: transparent transparent #edf0f1 transparent
+
+  .avatar
+    position: relative
+    a
+      display: inline-block !important
+      position: absolute !important
+      left: 0
+      right: 0
+      bottom: 0
+      line-height: rem-calc(25)
+      font:
+        size: rem-calc(14)
+        weight: 400
+        family: 'Fira Sans', sans-serif
+      color: #EDF0F1
+      background-color: rgba(40, 127, 184, .8)
+      text-transform: uppercase
+      height: 25px !important
+      text-align: center
+  ul.links
+    margin-left: 0
+    height: 14px
+    margin-top: 12px
+    li
+      list-style: none
+      width: 50%
+      display: inline-block
+      &:first-of-type
+        border-right: 1px solid #2E3E51
+      a
+        text-align: center
+        font:
+          size: rem-calc(12)
+          family: 'Fira Sans', sans-serif
+          weight: 400
+        line-height: rem-calc(14.4)
+        color: #D03F4A
+  .credits
+    +my_vertical_align
+    height: 35px
+    width: 100px
+    background-color: #D03F4A
+    font:
+      size: rem-calc(20.42)
+      family: 'Fira Sans', sans-serif
+    line-height: rem-calc(35)
+    color: #EDF0F1
+    padding-left: 42px
+    padding-right: 10px
+    border-radius: 20px
+    right: -3px
+    position: relative
+    &:before
+      display: block
+      content: ''
+      background-image: url('<%=asset_path("UD-icon-diamond-white.svg")%>')
+      background-size: 100%
+      background-repeat: no-repeat
+      position: absolute
+      width: 16px
+      height: 16px
+      top: 9px
+      left: 12px
+  a.ud-more-credits
+    font:
+      size: rem-calc(24)
+      family: 'Fira Sans', sans-serif
+    line-height: rem-calc(49)
+    color: #EDF0F1
+    background-color: #D03F4A
+    height: 49px
+    text:
+      transform: uppercase
+      align: center
+
+.notifications-wrap
+  background-color: #fff
+  min-width: 353px
+  min-height: 290px
+  position: absolute
+  right: -80px
+  top: 95px
+  z-index: 21
+  /*padding: 1rem*/
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5)
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5)
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5)
+  .notifications-inner
+    width: 100%
+    height: 100%
+    position: static
+    &:before
+      display: block
+      content: ''
+      position: absolute
+      top: -15px
+      right: 88px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 0 15px 15px 15px
+      border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent
+    &:after
+      display: block
+      content: ''
+      position: absolute
+      top: -15px
+      right: 90px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 0 15px 15px 15px
+      border-color: transparent transparent #edf0f1 transparent
+    .title-head
+      background-color: #EDF0F1
+    .notification-panel-wrap
+      position: absolute
+      left: 0
+      top: 50px
+      right: 0
+      bottom: 12px
+      .notification-panel
+        position: static
+        width: 100%
+        height: 100%
+        overflow-y: auto
+        .notification-one-item
+          min-height: 70px
+          border-bottom: 1px solid #F1F2F2
+          padding-top: 10px
+          &:last-of-type
+            border-bottom: none
+          .avatar
+            width: 48px
+            position: relative
+            &:before
+              display: block
+              content: ''
+              position: absolute
+              left: 0
+              right: 0
+              bottom: -2px
+              height: 2px
+              background-color: #96D03F
+            .image
+              max-width: 100%
+              width: 100%
+              height: 0
+              padding-bottom: 100%
+              overflow: hidden
+              -webkit-background-size: cover !important
+              -moz-background-size: cover !important
+              -o-background-size: cover !important
+              background-size: cover !important
+              margin: 0 auto
+          .information
+            p
+              font:
+                size: rem-calc(12)
+                family: 'Fira Sans', sans-serif
+              line-height: rem-calc(14.4)
+              color: #939598
+              margin-bottom: 0
+              a
+                font:
+                  size: rem-calc(16)
+                  family: 'Fira Sans', sans-serif
+                line-height: rem-calc(19.2)
+                color: #2E3E51
+                display: inline-block
+            .action-block
+              a, p
+                display: inline-block
+                font:
+                  size: rem-calc(12)
+                  family: 'Fira Sans', sans-serif
+                line-height: rem-calc(14.4)
+                color: #BEC3C7
+                margin: 0
+                padding: 0
+              p
+                float: right
+          &.offline
+            .avatar
+              &:before
+                background-color: #D03F4A
+
+          &.system
+            .image
+              background: url('<%=asset_path("UD-settings-v2.png")%>')no-repeat center center
+            .avatar
+              &:before
+                display: none
+          &:hover
+            background-color: #F1F2F2
+
+.medium-sidebar
+  @media (min-width : 40.063em) and (max-width : 1700px)
+    width: 310px
+.medium-main
+  @media (min-width : 1445px) and (max-width : 1630px)
+    max-width: 52rem !important
+  /*@media (min-width : 52em) and (max-width : 1630px)*/
+
+
+
+.main-menu-wrap
+  &.slim-sidebar
+    @media (min-width : 40.063em) and (max-width : 1445px)
+      width: 85px
+      .title
+        display: none
+
+.ordered-list-wrap
+  &.slim-sidebar
+    @media (min-width : 40.063em) and (max-width : 1445px)
+      width: 85px
+      .wrap
+        h4
+          display: none !important
+      .information
+        display: none !important
+

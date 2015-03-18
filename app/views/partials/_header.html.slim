@@ -3,11 +3,12 @@
     li.search
       a
         =image_tag "UD-icon-search.svg"
-    li.notification
+    li.notification.close
       a
         div
           =image_tag "UD-icon-notifications.svg"
           .round-count data-count="28"
+      =render partial: "partials/notifications"
     li.credits
       a
         div 2999

@@ -16,7 +16,7 @@ $(document).ready ->
     $(this).toggleClass("open")
 
   $(".button-menu a.mobile").click ->
-    $menuWrap.addClass('open-for-medium-and-mobile')
+    $menuWrap.toggleClass('open-for-medium-and-mobile')
 
   $('.ordered-list-button a').click ->
     $('.ordered-list-wrap').toggle().show()
@@ -44,12 +44,12 @@ $(document).ready ->
 #    $('.menu-wrap').addClass('close-menu')
 #    $('.header-navigation section li.profile-avatar').addClass('close')
 #
-#  $('li.profile-avatar').click (e) ->
-#    e.stopPropagation()
-#    if $(this).hasClass('close')
-#      $(this).removeClass('close')
-#    else
-#      $(this).addClass('close')
+  $('.header-navigation section li').click (e) ->
+    e.stopPropagation()
+    if $(this).hasClass('close')
+      $(this).removeClass('close')
+    else
+      $(this).addClass('close')
 
 # click event to scroll to top
   $(".scrollToTop").click ->
