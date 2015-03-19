@@ -9,14 +9,14 @@
           =image_tag "UD-icon-notifications.svg"
           .round-count data-count="28"
       =render partial: "partials/notifications"
-    li.credits
+    li.credits.hide-for-small-only
       a
         div 2999
     li.profile-avatar.close
       a
         .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
       =render partial: "partials/user_profile"
-    li.profile-info
+    li.profile-info.hide-for-small-only
       div
         p welcome back,
         strong Gregory

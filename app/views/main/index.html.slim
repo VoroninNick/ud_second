@@ -2,9 +2,15 @@
   =render partial: "partials/main_menu"
 
 header
-  .mobile-menu-button
-    a.navicon-button.larr.show-for-small-only
-      .navicon
+  /.mobile-menu-button
+  /  a.navicon-button.larr.show-for-small-only
+  /    .navicon
+  .button-menu-wrap
+    .button-menu
+      a.navicon-button.larr.open.desktop
+        .navicon
+      a.navicon-button.larr.mobile
+        .navicon
   =render partial: "partials/header"
 
 

@@ -17,6 +17,7 @@ main
   -ms-flex: 1 0 auto
   flex: 1 0 auto
   width: 100%
+  margin-top: 120px
 header, footer
   flex: none
 
@@ -24,8 +25,11 @@ header
   height: 80px
   background-color: #BEC3C7
   width: 100%
-  position: relative
   margin-bottom: 40px
+  position: fixed
+  top: 0
+  z-index: 50
+  transition: top .3s
 
 footer
   background-color: #BEC3C7
@@ -87,7 +91,7 @@ footer
   left: 0
   top: 0
   bottom: 0
-  z-index: 11
+  z-index: 51
   -webkit-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.35)
   -moz-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.35)
   box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.35)
@@ -95,20 +99,6 @@ footer
     width: 85px !important
   @media (min-width : 0em) and (max-width : 40em)
     display: none
-  .button-menu-wrap
-    position: relative
-    .button-menu
-      position: absolute
-      top: 0
-      right: -90px
-      z-index: 11
-      .desktop
-        @media (min-width : 0) and (max-width : 64em)
-          display: none
-      .mobile
-        display: none
-        @media (min-width : 0) and (max-width : 64em)
-          display: block
   .title
     display: none
   &.open-menu
@@ -124,8 +114,84 @@ footer
         width: 215px !important
         .icon
           width: 75px
+  .main-menu
+    a
+      overflow: hidden
 .open-menu
   width: 360px
+
+.button-menu-wrap
+  position: relative
+  width: 360px
+  transition: width .5s
+  .button-menu
+    position: absolute
+    top: 0
+    right: -90px
+    z-index: 11
+    .desktop
+      @media (min-width : 0) and (max-width : 64em)
+        display: none
+    .mobile
+      display: none
+      @media (min-width : 0) and (max-width : 64em)
+        display: block
+  @media (min-width : 40.063em) and (max-width : 1700px)
+    width: 310px
+  @media (min-width : 40.063em) and (max-width : 1445px)
+    width: 85px
+    .button-menu
+      .desktop
+        display: none
+      .mobile
+        display: block
+  @media (min-width : 0em) and (max-width : 40rem)
+    width: 0
+
+.closed-main-menu
+  .button-menu-wrap, .main-menu-wrap
+    width: 85px !important
+  .button-menu-wrap
+    @media (min-width : 0em) and (max-width : 40rem)
+      width: 0 !important
+  .main-menu
+    .pm-item
+      img
+        margin-left: 12px
+      .round-count
+        display: block
+    .logo-inner
+      img
+        margin-left: 12px
+.opened-main-menu
+  .main-menu-wrap
+    width: 360px !important
+    @media (min-width : 0em) and (max-width : 40rem)
+      width: 310px !important
+      display: block
+    .logo-inner
+      .icon
+        img
+          margin-left: 0 !important
+      .title
+        display: block !important
+    ul.primary-menu
+      .icon
+        img
+          margin-left: 0 !important
+      .round-count
+        display: none
+      .title
+        display: block !important
+        .round-count
+          display: block
+  .button-menu-wrap
+    width: 360px
+    @media (min-width : 0em) and (max-width : 40rem)
+      width: 310px !important
+
+
+
 // Change to watch in slow motion
 $duration: .5s
 
@@ -156,15 +222,15 @@ $content-bg : #2E3E51
       transition: $duration/2
 
     .navicon:before
-      top: .825rem
+      top: .625rem
     .navicon:after
-      top: -.825rem
+      top: -.625rem
 
 
 .navicon
   position: relative
-  width: 2.5em
-  height: .3125rem
+  width: 2em
+  height: .25rem
   background: $content-bg
   transition: $duration
   /*border-radius: 2.5rem*/
@@ -172,8 +238,8 @@ $content-bg : #2E3E51
   &:before, &:after
     display: block
     content: ""
-    height: .3125rem
-    width: 2.5rem
+    height: .25rem
+    width: 2rem
     background: $content-bg
     position: absolute
     z-index: -1
@@ -181,9 +247,9 @@ $content-bg : #2E3E51
     /*border-radius: 1rem*/
 
   &:before
-    top: .625rem
+    top: .5rem
   &:after
-    top: -.625rem
+    top: -.5rem
 
 .open:not(.steps) .navicon:before,
 .open:not(.steps) .navicon:after
@@ -195,7 +261,7 @@ $content-bg : #2E3E51
 
 .open.larr .navicon,
   &:before, &:after
-    width: 1.5rem
+    width: 1.2rem
   &:before
     transform: rotate(45deg)
     transform-origin: left top
@@ -226,7 +292,7 @@ $content-bg : #2E3E51
         display: none
       b
         font:
-          family: 'tornadocbold'
+          family: 'Fira Sans', sans-serif
           size: rem-calc(24)
           weight: 500
         line-height: rem-calc(21)
@@ -247,19 +313,35 @@ ul.primary-menu
         width: 215px
         margin: 0 auto
         height: 100%
-        @media only screen and (min-width : 40.063em) and (max-width : 64em)
-          width: 100%
-          .icon
-            width: 100%
-            position: relative
-            img
-              width: 75px
-              display: block
-              margin: 0 auto
+        transition: margin .5s
+
       .icon
         width: 75px
         float: left
-        //margin-top: 8px
+        position: relative
+        .round-count
+          position: absolute
+          top: 5px
+          right: 0px
+          width: 24px
+          height: 24px
+          border-radius: 50%
+          background-color: #D03F4A
+          display: none
+          &:before
+            position: absolute
+            top: 0
+            left: 0
+            display: inline-block
+            content: attr(data-count)
+            color: #fff
+            font:
+              size: rem-calc(14)
+              family: 'Fira Sans', sans-serif
+            line-height: rem-calc(24)
+            width: 24px
+            text-align: center
+
       .title
         font:
           size: rem-calc(20.85)
@@ -425,7 +507,7 @@ ul.primary-menu
           font:
             size: rem-calc(20.85)
             family: 'Fira Sans', sans-serif
-            weight: 500
+            weight: 400
           line-height: rem-calc(25.03)
           color: #2E3E51
         a
@@ -440,13 +522,18 @@ ul.primary-menu
         a
           img
             +my_vertical_align
-
+.hide-header
+  header
+    top: -80px
+  .ordered-list-wrap
+    top: 20px
 .ordered-list-wrap
   width: 360px
-  position: absolute
+  position: fixed
   right: 0
   top: 120px
-  height: 100%
+  transition: top .5s
+  bottom: 0
   z-index: 11
   @media (min-width : 40.063em) and (max-width : 64em)
     width: 85px
@@ -460,7 +547,6 @@ ul.primary-menu
     .information
       display: none
 .title-head
-  //padding-left: 30px
   height: 38px
   position: relative
   width: 100%
@@ -476,6 +562,7 @@ ul.primary-menu
     font:
       size: rem-calc(20.85)
       family: 'Fira Sans', sans-serif
+    letter-spacing: .02rem
   .items-menu
     position: absolute
     top: 6px
@@ -571,7 +658,7 @@ section.ordered-list
       height: 107px
       border-bottom: 1px solid #fff
     .one-item
-      padding-top: 20px
+      padding-top: 14px
     .avatar
       width: 48px
       height: 48px
@@ -611,10 +698,12 @@ section.ordered-list
           margin: 0
           padding: 0
       .info
+        padding: 4px 0 13px 0
         p
           font:
             size: rem-calc(12)
             family: 'Fira Sans', sans-serif
+            weight: 300
           line-height: rem-calc(14.4)
           color: #48647C
           margin: 0
@@ -625,6 +714,7 @@ section.ordered-list
           font:
             size: rem-calc(12)
             family: 'Fira Sans', sans-serif
+            weight: 300
           line-height: rem-calc(14.4)
           color: #BEC3C7
 
@@ -672,6 +762,7 @@ section.ordered-list
           right: 17px
           bottom: -2px
           background-color: #AAAA83
+
       &[data-count="2"]
         &:after
           display: block
@@ -992,6 +1083,10 @@ section.ordered-list
 .your-best-match-wrap
   padding-left: 0 !important
   padding-right: 0 !important
+  @media (min-width : 0) and (max-width : 818px)
+    width: 50%
+    .action-button
+      margin-right: 13px !important
 
 
 
@@ -1235,16 +1330,25 @@ section.ordered-list
   @media (min-width : 40.063em) and (max-width : 1700px)
     width: 310px
 .medium-main
-  @media (min-width : 1445px) and (max-width : 1630px)
-    max-width: 52rem !important
-  /*@media (min-width : 52em) and (max-width : 1630px)*/
-
-
+  transition: max-width .5s
+  @media (min-width : 1575px) and (max-width : 1630px)
+    max-width: 60rem !important
+  @media (min-width : 1495px) and (max-width : 1575px)
+    max-width: 55rem !important
+  @media (min-width : 1445px) and (max-width : 1495px)
+    max-width: 50rem !important
+  @media (min-width : 1025px) and (max-width : 1170px)
+    max-width: 50rem !important
 
 .main-menu-wrap
   &.slim-sidebar
     @media (min-width : 40.063em) and (max-width : 1445px)
       width: 85px
+      .icon
+        img
+          margin-left: 12px !important
+        .round-count
+          display: block
       .title
         display: none
 
