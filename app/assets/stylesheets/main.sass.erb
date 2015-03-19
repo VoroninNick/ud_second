@@ -33,23 +33,34 @@ header
 
 footer
   background-color: #BEC3C7
+  position: relative
+  .links-wrap, .labels-wrap, .copyright-wrap
+    display: inline-block
+  .labels-wrap
+    margin: 0 5%
+
   .scrollToTop
-    position: relative
+    position: absolute
+    top: 0
+    right: 1rem
     display: block
     height: 60px
+    width: 32px
     img
       width: 36px
       +my_center_align
         position: absolute
-  nav
+  ul
     line-height: 60px
+    margin-left: 0
     li
       list-style: none
-      float: left
+      display: inline-block
       a
         font:
           size: rem-calc(12)
           family: 'Fira Sans', sans-serif
+          weight: 300
         line-height: rem-calc(14.4)
         color: #D03F4A
         padding: 0 5px
@@ -58,7 +69,7 @@ footer
         a
           border-right: none
 
-  nav.payment
+  ul.payment
     li
       list-style: none
       a
@@ -66,13 +77,14 @@ footer
           width: 38px
   p
     font:
-      size: rem-calc(16)
+      size: rem-calc(12)
+      weight: 300
     line-height: rem-calc(60)
     color: #2E3E51
       margin: 0
     img
-      width: 32px
-      margin-right: 20px
+      width: 26px
+      margin-right: 10px
 
 .black
   background-color: #2E2E36 !important
@@ -540,7 +552,7 @@ ul.primary-menu
   bottom: 0
   z-index: 11
   &.fixed-to-footer
-    bottom: 140px
+    bottom: 82px
   @media (min-width : 40.063em) and (max-width : 64em)
     width: 85px
   @media (min-width : 0em) and (max-width : 40em)

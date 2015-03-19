@@ -9,6 +9,7 @@ $(window).resize ->
   st = $(this).scrollTop()
   wh = $(window).height()
   ot = $('footer').offset().top
+  fh = $('footer').height()
 
   action = ot - wh
   if st >= action
