@@ -38,6 +38,8 @@ footer
     display: inline-block
   .labels-wrap
     margin: 0 5%
+    @media (min-width : 1440px) and (max-width : 1490px)
+      margin: 0 1%
 
   .scrollToTop
     position: absolute
@@ -136,9 +138,10 @@ footer
   position: relative
   width: 360px
   transition: width .5s
+  height: 100%
   .button-menu
-    position: absolute
-    top: 0
+    +my_vertical_align
+      position: absolute
     right: -90px
     z-index: 11
     .desktop
@@ -202,8 +205,12 @@ footer
     @media (min-width : 0em) and (max-width : 40rem)
       width: 310px !important
 
-
-
+img.diamond-logo
+  display: none
+  width: 26px
+  +my_vertical_align
+  @media (min-width : 40.063em) and (max-width : 1445px)
+    display: block
 // Change to watch in slow motion
 $duration: .5s
 
@@ -296,20 +303,12 @@ $content-bg : #2E3E51
       float: left
       width: 80px
     .title
-      float: left
-      font:
-        family: 'dearjoe_1_msregular'
-      color: #D03F4A
+      width: 140px
+      position: absolute
+      top: 9px
+      left: 78px
       @media only screen and (min-width : 40.063em) and (max-width : 64em)
         display: none
-      b
-        font:
-          family: 'Fira Sans', sans-serif
-          size: rem-calc(24)
-          weight: 500
-        line-height: rem-calc(21)
-        letter-spacing: rem-calc(.025)
-        color: #fff
 
 ul.primary-menu
   margin-left: 0
@@ -551,8 +550,11 @@ ul.primary-menu
   transition: top .5s
   bottom: 0
   z-index: 11
+  overflow: hidden
   &.fixed-to-footer
     bottom: 82px
+    @media (min-width : 40.063em) and (max-width : 1170px)
+      bottom: 160px
   @media (min-width : 40.063em) and (max-width : 64em)
     width: 85px
   @media (min-width : 0em) and (max-width : 40em)
@@ -677,12 +679,26 @@ section.ordered-list
       border-bottom: 1px solid #fff
     .one-item
       padding-top: 14px
+      .title-small
+        display: none
+        @media (min-width : 40.063em) and (max-width : 1445px)
+          display: block
+        h4
+          text-align: center
+          font:
+            size: rem-calc(14)
+            weight: 400
+          line-height: rem-calc(16.8)
+          color: #2E3E51
+          padding-top: 3px
     .avatar
       width: 48px
       height: 48px
       float: left
       position: relative
       margin-top: 4px
+      @media (min-width : 40.063em) and (max-width : 1445px)
+        +my_horizontal_align
       &:before
         display: block
         content: ''

@@ -2,9 +2,6 @@
   =render partial: "partials/main_menu"
 
 header
-  /.mobile-menu-button
-  /  a.navicon-button.larr.show-for-small-only
-  /    .navicon
   .button-menu-wrap
     .button-menu
       a.navicon-button.larr.open.desktop
@@ -26,6 +23,7 @@ main.main-block-wrap.main-block
         .columns
           .wrap
             h4.hide-for-medium-only friends online
+            =image_tag "UD-icon-diamond.svg", class: "diamond-logo"
             .items-menu
               a
                 =image_tag "UD-icon-sub menu.svg"
@@ -89,39 +87,3 @@ footer
               |© UkrainianDiamonds 2015
   a.scrollToTop
     = image_tag "UD-icon-arrow up.svg"
-        /  .row
-        /    .columns.large-1.medium-1.hide-for-small-only.hide
-        /      a.scrollToTop
-        /        = image_tag "UD-icon-arrow up.svg"
-        /    .columns.large-12.medium-12.small-12
-        /      ul
-        /        li
-        /          a About us
-        /        li
-        /          a Free trail
-        /        li
-        /          a Privacy policy
-        /        li
-        /          a Other useful infomation
-        /      .clearfix
-        /.columns
-        /  .row
-        /    .columns.large-6.medium-6.small-6
-        /      ul.payment
-        /        li
-        /          a
-        /            =image_tag "Paymant-Visa.svg"
-        /        li
-        /          a
-        /            =image_tag "Paymant-Mastercard.svg"
-        /        li
-        /          a
-        /            =image_tag "Paymant-Paypal.svg"
-        /        li
-        /          a
-        /            =image_tag "Paymant-American express.svg"
-        /
-        /    .columns.large-6.medium-6.small-6
-        /      p
-        /        =image_tag "UD-icon-diamond.svg"
-        /        |© UkrainianDiamonds 2015
