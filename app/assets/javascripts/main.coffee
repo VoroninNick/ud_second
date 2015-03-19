@@ -6,10 +6,28 @@ $(window).resize ->
   if $(window).width() >= 1445
     if $(".button-menu a.mobile").hasClass('open')
       $(".button-menu a.mobile").removeClass('open')
+  st = $(this).scrollTop()
+  wh = $(window).height()
+  ot = $('footer').offset().top
+
+  action = ot - wh
+  if st >= action
+    $('.ordered-list-wrap').addClass('fixed-to-footer')
+  else
+    $('.ordered-list-wrap').removeClass('fixed-to-footer')
 
 lastScrollTop = 0
 $(window).scroll (event) ->
   st = $(this).scrollTop()
+  wh = $(window).height()
+  ot = $('footer').offset().top
+
+  action = ot - wh
+  if st >= action
+    $('.ordered-list-wrap').addClass('fixed-to-footer')
+  else
+    $('.ordered-list-wrap').removeClass('fixed-to-footer')
+
   if st > lastScrollTop
     # downscroll code
     $('body').addClass 'hide-header'

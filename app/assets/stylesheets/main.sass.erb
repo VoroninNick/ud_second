@@ -499,6 +499,7 @@ ul.primary-menu
           font:
             size: rem-calc(12)
             family: 'Fira Sans', sans-serif
+            weight: 300
           line-height: rem-calc(14.4)
           color: #2E3E51
           margin: 0
@@ -514,10 +515,13 @@ ul.primary-menu
           font:
             size: rem-calc(10)
             family: 'Fira Sans', sans-serif
+            weight: 300
           line-height: rem-calc(12)
           color: #D03F4A
           display: inline-block
           height: auto
+          display: block
+          padding-top: 3px
       &.ordered-list-button
         a
           img
@@ -535,6 +539,8 @@ ul.primary-menu
   transition: top .5s
   bottom: 0
   z-index: 11
+  &.fixed-to-footer
+    bottom: 140px
   @media (min-width : 40.063em) and (max-width : 64em)
     width: 85px
   @media (min-width : 0em) and (max-width : 40em)
@@ -835,7 +841,7 @@ section.ordered-list
               font:
                 size: rem-calc(12)
                 family: 'Fira Sans', sans-serif
-                weight: 400
+                weight: 300
               color: #2E3E51
               line-height: rem-calc(14.4)
               margin: 0
@@ -843,15 +849,17 @@ section.ordered-list
               padding-bottom: 13px
               a
                 color: #D03F4A
+                font-weight: 300
 
         .avatar
           width: 40%
           float: left
+          padding-top: 4px
           .image
             max-width: 100%
             width: 100%
             height: 0
-            padding-bottom: 120%
+            padding-bottom: 100%
             overflow: hidden
             -webkit-background-size: cover !important
             -moz-background-size: cover !important
@@ -868,13 +876,15 @@ section.ordered-list
               weight: 400
             color: #D03F4A
             line-height: rem-calc(21.6)
-            padding-left: 5px
+            padding-left: 10px
+            letter-spacing: .02rem
           p
             font:
               family: 'dearjoe_1_msregular'
-              size: rem-calc(33.53)
+              size: rem-calc(24)
+              weight: 300
             color: #2E3E51
-            line-height: rem-calc(22)
+            line-height: rem-calc(24)
             margin: 0
             margin-top: 1rem
             padding: 0
@@ -931,11 +941,11 @@ section.ordered-list
     .triangle-wrap
       position: relative
       overflow: hidden
-      height: 10px
+      height: 8px
       width: 100%
       opacity: .8
       .triangle
-        border: 10px solid #2E2E36
+        border: 8px solid #2E2E36
         border-bottom: none
         border-color: transparent #2E2E36 transparent
         position: relative
@@ -949,22 +959,22 @@ section.ordered-list
         top: 0
         z-index: 11
         &:before, &:after
-          right: 10px
+          right: 8px
           width: 360px
         &:before
           content: ""
           position: absolute
           z-index: 11
-          height: 10px
-          top: -10px
+          height: 8px
+          top: -8px
           background: #2E2E36
         &:after
           content: ""
           position: absolute
           z-index: 11
-          height: 10px
-          top: -10px
-          right: -370px
+          height: 8px
+          top: -8px
+          right: -368px
           background: #2E2E36
 
     .information
@@ -979,18 +989,21 @@ section.ordered-list
             size: rem-calc(27)
             family: 'Fira Sans', sans-serif
           color: #EDF0F1
-          line-height: rem-calc(32)
+          line-height: rem-calc(27)
           margin: 0
           padding: 0
+          padding-top: 5px
       .info
         p
           color: #96D03F
           font:
             size: rem-calc(14)
             family: 'Fira Sans', sans-serif
-          line-height: rem-calc(16,8)
+            weight: 200
+          line-height: rem-calc(25)
           margin: 0
           padding: 0
+          padding-bottom: 8px
           span
             color: #EDF0F1
 
@@ -1019,6 +1032,7 @@ section.ordered-list
           family: 'Fira Sans', sans-serif
         text-transform: uppercase
         color: #EDF0F1
+        letter-spacing: .02rem
       &:after
         content: ''
         display: block
@@ -1091,12 +1105,11 @@ section.ordered-list
 
 
 .your-favorites-wrap
-  margin-bottom: 0
+
 
 .user-profile-wrap
   background-color: #EDF0F1
   min-width: 353px
-  /*min-height: 290px*/
   position: absolute
   right: -80px
   top: 95px
