@@ -77,18 +77,19 @@
 
 
 
-.title-head.grey
+.title-head.grey.notification-wrap
   .columns
     .wrap
       h4 your best match
-      .items-menu
+      .items-menu.notification-link
         a
           =image_tag "UD-icon-sub menu.svg"
-        .menu-wrap.close-menu
+        .notification-container
           .menu
             .group
               .title
                 strong Display options:
+
 
 
 .best-match-wrap.white-grey
@@ -272,12 +273,17 @@
   .clearfix
 
 
-.title-head.grey
+.title-head.grey.notification-wrap
   .columns
     .wrap
       h4 your favorites
-      .items-menu
+      .items-menu.notification-link
         =image_tag "UD-icon-sub menu.svg"
+        .notification-container
+          .menu
+            .group
+              .title
+                strong Display options:
 
 .your-favorites-wrap.best-match-wrap.white-grey
   .columns

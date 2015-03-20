@@ -67,9 +67,6 @@ $(document).ready ->
 
 
 
-  $('.ordered-list-button a').click ->
-    $('.ordered-list-wrap').toggle().show()
-
   $('select.view-mode').change ->
     $wrapper = $(this).closest('.ordered-list-wrap')
     if $(this).val() == 'minimize'
@@ -79,20 +76,6 @@ $(document).ready ->
       $wrapper.removeClass('minimizate')
 
 
-
-  $('.items-menu a').click (e) ->
-    e.stopPropagation()
-    $wrap = $(this).closest('.items-menu')
-    $menu = $wrap.find('.menu-wrap')
-    if $menu.hasClass('close-menu')
-      $menu.removeClass('close-menu')
-    else
-      $menu.addClass('close-menu')
-
-#  $('html').click ->
-#    $('.menu-wrap').addClass('close-menu')
-#    $('.header-navigation section li.profile-avatar').addClass('close')
-#
   $('.header-navigation section li').click (e) ->
     e.stopPropagation()
     if $(this).hasClass('close')
@@ -106,3 +89,20 @@ $(document).ready ->
       scrollTop: 0
     , 800
     false
+
+  $('.notification-link').click ->
+    $('.notification-container').hide()
+    $wrap = $(this).closest('.notification-wrap')
+    $container = $wrap.find('.notification-container')
+    $container.fadeToggle 300
+    false
+
+  #Document Click
+  $(document).click ->
+    $('.notification-container').hide()
+    return
+
+  #Popup Click
+  $('.notification-container').click ->
+    false
+  return

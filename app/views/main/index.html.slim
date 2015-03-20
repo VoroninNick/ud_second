@@ -18,16 +18,16 @@ main.main-block-wrap.main-block
 
 .ordered-list-wrap.white-grey.medium-sidebar.slim-sidebar
   .ordered-list
-    .title-head.grey
+    .title-head.grey.notification-wrap
       .row
         .columns
           .wrap
             h4.hide-for-medium-only friends online
             =image_tag "UD-icon-diamond.svg", class: "diamond-logo"
-            .items-menu
+            .items-menu.notification-link
               a
                 =image_tag "UD-icon-sub menu.svg"
-              .menu-wrap.close-menu
+              .notification-container
                 .menu
                   .group
                     .title
@@ -36,19 +36,87 @@ main.main-block-wrap.main-block
                       .option
                         .label
                           .icon
-                            =image_tag "UD-icon-sort.svg"
+                            = embedded_svg "UD-icon-sort.svg"
                           span
                             |Sort by
+                        .input
+                          select.sort-by
+                            option value="age_increase" Age increase
+                            option value="age_decrease" Age decrease
+                            option value="alfabet" Alfabet
+                            option value="recent_activity" Recent activity
+                            option value="favotites_first" Favotites first
+                        .clearfix
+
                       .option
                         .label
                           .icon
-                            =image_tag "UD-icon-fullscreen.svg"
+                            = embedded_svg "UD-icon-fullscreen.svg"
                           span
                             |View mode
                         .input
                           select.view-mode
                             option value="fullscreen" Fullscreen
                             option value="minimize" Minimize
+                        .clearfix
+                  .group.notification-group-wrap
+                    .title
+                      strong Notification settings:
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-notifications.svg"
+                          span Turn notifications...
+                        .input
+                          .checkbox-switch
+                            input#turn-notification type="checkbox" name="tur-notification" checked=""
+                              label for="turn-notification"
+                        .clearfix
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-eye.svg"
+                          span Display a notification when someone...
+                        .clearfix
+                        .input-group
+                          .input
+                            .squared
+                              input#comes_online type="checkbox" name="notification-group" value="Comes online" checked=""
+                              label for="comes_online"
+                            .t-label
+                              label for="comes_online" Comes online
+                          .input
+                            .squared
+                              input#goes-offline type="checkbox" name="notification-group" value="Goes offline"  checked=""
+                              label for="goes-offline"
+                            .t-label
+                              label for="goes-offline" Goes offline
+                          .input
+                            .squared
+                              input#starts_an_im type="checkbox" name="notification-group" value="Starts an IM with me"
+                              label for="starts_an_im"
+                            .t-label
+                              label for="starts_an_im" Starts an IM with me
+                          .input
+                            .squared
+                              input#sends_me_a_message type="checkbox" name="notification-group" value="Sends me a message"
+                              label for="sends_me_a_message"
+                            .t-label
+                              label for="sends_me_a_message" Sends me a message
+
+                          .clearfix
+                        .clearfix
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-sound.svg"
+                          span Turn sound of notifications...
+                        .input
+                          .checkbox-switch
+                            input#turn-sound type="checkbox"
+                              label for="turn-sound"
+                        .clearfix
 
     =render partial: "partials/ordered_people_list"
 
