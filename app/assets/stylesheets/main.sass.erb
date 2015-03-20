@@ -566,11 +566,15 @@ ul.primary-menu
     display: none
   &.minimizate
     width: 85px
+    img.diamond-logo
+      display: block
     .wrap
       h4
-        display: none
+        display: none !important
     .information
-      display: none
+      display: none !important
+    .title-small
+      display: block !important
 .title-head
   height: 38px
   position: relative
@@ -634,8 +638,8 @@ section.ordered-list
           color: #2E3E51
           padding-top: 3px
     .avatar
-      width: 48px
-      height: 48px
+      width: 60px
+      height: 60px
       float: left
       position: relative
       margin-top: 4px
@@ -645,15 +649,15 @@ section.ordered-list
         margin-top: -1px
         +my_horizontal_align
         &:before
-          bottom: 0
-          height: 4px
+          bottom: 0 !important
+          height: 4px !important
 
       &:before
         display: block
         content: ''
         position: absolute
-        bottom: -2px
-        height: 2px
+        bottom: 0
+        height: 4px
         background-color: #96D03F
         width: 100%
       .image
@@ -988,9 +992,16 @@ section.ordered-list
           height: 25px
           display: inline-block
           margin-right: 18px
-          object
+          object, svg
             width: 100%
             height: 100%
+          a:hover
+            path, polygon, rect
+              fill: #96D03F
+          &.red-fill
+            a:hover
+              path, polygon, rect
+                fill: #D03F4A
 
     .status
       height: 44px
@@ -1078,47 +1089,36 @@ section.ordered-list
       margin-right: 13px !important
 
 
+.padding-left-large-none
+  padding-left: 0 !important
+  @media (min-width : 64.063em) and (max-width : 90em)
+    padding-left: 0!important
+.padding-left-medium-none
 
-.your-favorites-wrap
-
-
+  @media (min-width : 40.063em) and (max-width : 64em)
+    padding-left: 0!important
 .user-profile-wrap
   background-color: #EDF0F1
   min-width: 353px
+  min-height: 200px !important
   position: absolute
-  right: -80px
-  top: 95px
+  right: 20px !important
+  top: 90px !important
   z-index: 21
-  padding: 1rem
+  padding: 1rem 0
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5)
   -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5)
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5)
+  /*display: block !important*/
   .user-profile
     width: 100%
     position: relative
-    &:before
-      display: block
-      content: ''
-      position: absolute
-      top: -31px
-      right: 80px
-      width: 0
-      height: 0
-      border-style: solid
-      border-width: 0 15px 15px 15px
-      border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent
-    &:after
-      display: block
-      content: ''
-      position: absolute
-      top: -31px
-      right: 82px
-      width: 0
-      height: 0
-      border-style: solid
-      border-width: 0 15px 15px 15px
-      border-color: transparent transparent #edf0f1 transparent
-
+  p
+    font:
+      size: rem-calc(12)
+      weight: 300
+    line-height: rem-calc(14.4)
+    margin-bottom: 0
   .avatar
     position: relative
     a
@@ -1137,6 +1137,21 @@ section.ordered-list
       text-transform: uppercase
       height: 25px !important
       text-align: center
+      opacity: .1
+      transition: opacity .5s
+    &:hover a
+      opacity: 1
+  .information
+    strong
+      font:
+        size: rem-calc(20.85)
+        weight: 400
+      line-height: rem-calc(25.03)
+      color: #2E3E51
+      display: inline-block
+      margin-bottom: 5px
+    p
+      margin-bottom: 1rem
   ul.links
     margin-left: 0
     height: 14px
@@ -1156,7 +1171,7 @@ section.ordered-list
         line-height: rem-calc(14.4)
         color: #D03F4A
   .credits
-    +my_vertical_align
+    //+my_vertical_align
     height: 35px
     width: 100px
     background-color: #D03F4A
@@ -1170,6 +1185,8 @@ section.ordered-list
     border-radius: 20px
     right: -3px
     position: relative
+    margin-bottom: 13px
+    margin-top: 5px
     &:before
       display: block
       content: ''
@@ -1199,7 +1216,7 @@ section.ordered-list
   min-height: 290px
   position: absolute
   right: -80px
-  top: 95px
+  top: 95px !important
   z-index: 21
   /*padding: 1rem*/
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5)
@@ -1209,28 +1226,28 @@ section.ordered-list
     width: 100%
     height: 100%
     position: static
-    &:before
-      display: block
-      content: ''
-      position: absolute
-      top: -15px
-      right: 88px
-      width: 0
-      height: 0
-      border-style: solid
-      border-width: 0 15px 15px 15px
-      border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent
-    &:after
-      display: block
-      content: ''
-      position: absolute
-      top: -15px
-      right: 90px
-      width: 0
-      height: 0
-      border-style: solid
-      border-width: 0 15px 15px 15px
-      border-color: transparent transparent #edf0f1 transparent
+    /*&:before*/
+      /*display: block*/
+      /*content: ''*/
+      /*position: absolute*/
+      /*top: -15px*/
+      /*right: 88px*/
+      /*width: 0*/
+      /*height: 0*/
+      /*border-style: solid*/
+      /*border-width: 0 15px 15px 15px*/
+      /*border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent*/
+    /*&:after*/
+      /*display: block*/
+      /*content: ''*/
+      /*position: absolute*/
+      /*top: -15px*/
+      /*right: 90px*/
+      /*width: 0*/
+      /*height: 0*/
+      /*border-style: solid*/
+      /*border-width: 0 15px 15px 15px*/
+      /*border-color: transparent transparent #edf0f1 transparent*/
     .title-head
       background-color: #EDF0F1
     .notification-panel-wrap

@@ -76,12 +76,12 @@ $(document).ready ->
       $wrapper.removeClass('minimizate')
 
 
-  $('.header-navigation section li').click (e) ->
-    e.stopPropagation()
-    if $(this).hasClass('close')
-      $(this).removeClass('close')
-    else
-      $(this).addClass('close')
+#  $('.header-navigation section li').click (e) ->
+#    e.stopPropagation()
+#    if $(this).hasClass('close')
+#      $(this).removeClass('close')
+#    else
+#      $(this).addClass('close')
 
 # click event to scroll to top
   $(".scrollToTop").click ->

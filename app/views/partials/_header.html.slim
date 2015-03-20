@@ -3,8 +3,8 @@
     li.search
       a
         =image_tag "UD-icon-search.svg"
-    li.notification.close
-      a
+    li.notification.notification-wrap
+      a.notification-link
         div
           =image_tag "UD-icon-notifications.svg"
           .round-count data-count="28"
@@ -12,8 +12,8 @@
     li.credits
       a
         div 2999
-    li.profile-avatar.close
-      a
+    li.profile-avatar.notification-wrap
+      a.notification-link
         .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
       =render partial: "partials/user_profile"
     li.profile-info.hide-for-small-only
