@@ -759,14 +759,20 @@ section.ordered-list
     +my_horizontal_align
 
 
-@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2)
-  .your-best-match-wrap
+
+.your-best-match-wrap
+  @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2)
     width: 100% !important
-  .profile-avatar
+.profile-avatar
+  @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2)
     display: none
-  li.credits a div
-    border-radius: 12px
-  .note-column
+li.credits
+  a
+    div
+      @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2)
+        border-radius: 12px
+.note-column
+  @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2)
     width: 100% !important
 
 .notes
