@@ -762,6 +762,9 @@ section.ordered-list
   width: 97%
   margin: 0 auto
   margin-bottom: 10px
+  .hide-note-for-small
+    @media only screen and (min-width : 0) and (max-width : 320px)
+      display: none
   .note-wrap
     .note-inner
       width: 100%
