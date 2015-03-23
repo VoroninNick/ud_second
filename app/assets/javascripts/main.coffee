@@ -103,11 +103,14 @@ $(document).ready ->
     , 800
     false
 
+#notification popup
+  flag = false
   $('.notification-link').click ->
     $('.notification-container').hide()
     $wrap = $(this).closest('.notification-wrap')
     $container = $wrap.find('.notification-container')
-    $container.fadeToggle 300
+    if flag = !flag
+      $container.fadeToggle 300
     false
 
   #Document Click
@@ -117,5 +120,22 @@ $(document).ready ->
 
   #Popup Click
   $('.notification-container').click ->
+    false
+  return
+
+  $('.notification-link-sub').click ->
+#    $('.notification-container-sub').hide()
+#    $wrap = $(this).closest('.notification-wrap-sub')
+#    $container = $wrap.find('.notification-container-sub')
+#    $container.fadeToggle 300
+#    false
+
+  #Document Click
+  $(document).click ->
+    $('.notification-container-sub').hide()
+    return
+
+  #Popup Click
+  $('.notification-container-sub').click ->
     false
   return
