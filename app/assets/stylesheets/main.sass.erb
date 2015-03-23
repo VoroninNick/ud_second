@@ -426,6 +426,31 @@ ul.primary-menu
         display: block
         margin: 0
         position: relative
+        .notification-container
+          /*display: block !important*/
+          right: -40px
+          &:before
+            display: block
+            content: ""
+            position: absolute
+            top: -12px
+            right: 54px
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 0 11px 11px 11px
+            border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent
+          &:after
+            display: block
+            content: ""
+            position: absolute
+            top: -11px
+            right: 55px
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 0 11px 11px 11px
+            border-color: transparent transparent #edf0f1 transparent
         a
           div
             width: 47%
@@ -993,6 +1018,10 @@ section.ordered-list
           height: 25px
           display: inline-block
           margin-right: 18px
+          @media (min-width : 0) and (max-width : 1170px)
+            margin-right: 9px
+          a
+            display: inline-block
           object, svg
             width: 100%
             height: 100%
@@ -1085,6 +1114,9 @@ section.ordered-list
     background-size: cover !important
     margin: 0 auto
 
+.hide-for-vh
+  @media (min-height: 0) and (max-height : 700px)
+    display: none
 .your-best-match-wrap
   padding-left: 0 !important
   padding-right: 0 !important
@@ -1236,38 +1268,32 @@ section.ordered-list
   min-height: 290px
   position: absolute
   right: -80px
-  top: 95px !important
+  top: 90px !important
   z-index: 21
-  /*padding: 1rem*/
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5)
   -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5)
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5)
+  @media (min-width : 520px) and (max-width : 580px)
+    right: -100px !important
+  @media (min-width : 470px) and (max-width : 520px)
+    right: -150px !important
+    &:before
+      right: 45.6% !important
+    &:after
+      right: 46% !important
+
+  @media (min-width : 0) and (max-width : 470px)
+    right: -200px !important
+    &:before
+      right: 60% !important
+    &:after
+      right: 60.3% !important
+
   .notifications-inner
     width: 100%
     height: 100%
     position: static
-    /*&:before*/
-      /*display: block*/
-      /*content: ''*/
-      /*position: absolute*/
-      /*top: -15px*/
-      /*right: 88px*/
-      /*width: 0*/
-      /*height: 0*/
-      /*border-style: solid*/
-      /*border-width: 0 15px 15px 15px*/
-      /*border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent*/
-    /*&:after*/
-      /*display: block*/
-      /*content: ''*/
-      /*position: absolute*/
-      /*top: -15px*/
-      /*right: 90px*/
-      /*width: 0*/
-      /*height: 0*/
-      /*border-style: solid*/
-      /*border-width: 0 15px 15px 15px*/
-      /*border-color: transparent transparent #edf0f1 transparent*/
+
     .title-head
       background-color: #EDF0F1
     .notification-panel-wrap
@@ -1315,6 +1341,7 @@ section.ordered-list
               font:
                 size: rem-calc(12)
                 family: 'Fira Sans', sans-serif
+                weight: 300
               line-height: rem-calc(14.4)
               color: #939598
               margin-bottom: 0
@@ -1326,11 +1353,26 @@ section.ordered-list
                 color: #2E3E51
                 display: inline-block
             .action-block
+              height: rem-calc(14.4)
+              /*background-color: yellow*/
+              margin-top: 3px
+              a
+                position: relative
+                display: inline-block
+                padding-left: 18px !important
+                float: left
+              svg
+                width: 15px
+                height: 100%
+                +my_vertical_align
+                  position: absolute
+                left: -3px
               a, p
                 display: inline-block
                 font:
                   size: rem-calc(12)
                   family: 'Fira Sans', sans-serif
+                  weight: 300
                 line-height: rem-calc(14.4)
                 color: #BEC3C7
                 margin: 0
