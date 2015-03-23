@@ -38,8 +38,8 @@
       <file leaf-file-name="main.sass.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.sass.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7104478" vertical-offset="12512" max-vertical-offset="29461">
-              <caret line="764" column="22" selection-start-line="764" selection-start-column="22" selection-end-line="764" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.8119403" vertical-offset="12512" max-vertical-offset="29495">
+              <caret line="768" column="19" selection-start-line="768" selection-start-column="19" selection-end-line="768" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -1746,8 +1746,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.sass.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7104478" vertical-offset="12512" max-vertical-offset="29461">
-          <caret line="764" column="22" selection-start-line="764" selection-start-column="22" selection-end-line="764" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.8119403" vertical-offset="12512" max-vertical-offset="29495">
+          <caret line="768" column="19" selection-start-line="768" selection-start-column="19" selection-end-line="768" selection-end-column="19" />
           <folding />
         </state>
       </provider>

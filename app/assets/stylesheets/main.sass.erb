@@ -765,6 +765,8 @@ section.ordered-list
   .hide-note-for-small
     @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)
       display: none
+    @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2)
+      display: none
   .note-wrap
     .note-inner
       width: 100%
