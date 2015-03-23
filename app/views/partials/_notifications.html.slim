@@ -1,13 +1,20 @@
 .notifications-wrap.notification-container
   .notifications-inner
-    .title-head
+    .title-head.notification-wrap
       .row
         .columns
           .wrap
-            h4.hide-for-medium-only friends online
-            .items-menu
+            h4.hide-for-medium-only Notifications
+            .items-menu.notification-link
               a
-                =image_tag "UD-icon-sub menu.svg"
+                =embedded_svg "UD-icon-sub menu.svg"
+              /.notification-container
+              /  .menu
+              /    .group
+              /      .title
+              /        strong Display options:
+              /      .options
+
     .notification-panel-wrap
       #notifications-panel.notification-panel
         .notification-one-item.system

@@ -246,7 +246,7 @@ $content-bg : #2E3E51
   transition: $duration/2
   cursor: pointer
   user-select: none
-  opacity: .8
+  /*opacity: .8*/
 
   .navicon:before, .navicon:after
     transition: $duration/2
@@ -641,7 +641,7 @@ ul.primary-menu
       display: block
       width: 100%
       height: 100%
-    img
+    img, svg
       height: 100%
       float: right
 
@@ -774,7 +774,7 @@ section.ordered-list
           content: ''
           position: absolute
           left: -2px
-          top: -1px
+          top: 0px
           right: 19px
           bottom: 0
           background-color: #808062
@@ -1300,6 +1300,10 @@ section.ordered-list
       right: 60% !important
     &:after
       right: 60.3% !important
+  .items-menu
+    svg
+      rect
+        fill: #BEC3C7
 
   .notifications-inner
     width: 100%
