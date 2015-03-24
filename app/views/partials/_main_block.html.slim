@@ -84,11 +84,26 @@
       .items-menu.notification-link
         a
           =image_tag "UD-icon-sub menu.svg"
-        .notification-container
-          .menu
-            .group
-              .title
-                strong Display options:
+          .notification-container
+            .menu
+              .group
+                .title
+                  strong Display options:
+                .options
+                  .option
+                    .label
+                      .icon
+                        = embedded_svg "UD-icon-sort.svg"
+                      span
+                        |Sort by
+                    .input
+                      select.sort-by
+                        option value="age_increase" Age increase
+                        option value="age_decrease" Age decrease
+                        option value="alfabet" Alfabet
+                        option value="recent_activity" Recent activity
+                        option value="favotites_first" Favotites first
+                    .clearfix
 
 
 
@@ -314,6 +329,21 @@
             .group
               .title
                 strong Display options:
+              .options
+                .option
+                  .label
+                    .icon
+                      = embedded_svg "UD-icon-sort.svg"
+                    span
+                      |Sort by
+                  .input
+                    select.sort-by
+                      option value="age_increase" Age increase
+                      option value="age_decrease" Age decrease
+                      option value="alfabet" Alfabet
+                      option value="recent_activity" Recent activity
+                      option value="favotites_first" Favotites first
+                  .clearfix
 
 .your-favorites-wrap.best-match-wrap.white-grey
   .columns

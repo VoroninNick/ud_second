@@ -407,7 +407,65 @@ ul.primary-menu
           font:
             weight: 600
           line-height: rem-calc(75)
+.input
+  input
+    color: #2E3E51 !important
+    font:
+      size: rem-calc(14) !important
+    line-height: rem-calc(16.8) !important
+    outline: none !important
+    border: none
+    box-shadow: none !important
+    &:focus
+      border: 1px solid #2E3E51 !important
 
+input[type=checkbox] + .search-input
+  /*display: none*/
+  width: 0
+input[type=checkbox]:checked + .search-input
+  display: block
+  width: auto
+  margin-right: 10px
+.search-input-wrap
+  display: block
+  height: 80px
+  float: left
+  position: relative
+  .search-input
+    height: 100%
+    display: inline-block
+    overflow: hidden
+    .input
+      height: 100%
+      float: left
+      position: relative
+      input
+        margin: 0 !important
+        padding: 0 15px !important
+        height: 35px
+        width: 450px
+        line-height: rem-calc(35)
+        +my_vertical_align
+        @media (min-width : 1065px) and (max-width : 1165px)
+          width: 350px
+        @media (min-width : 965px) and (max-width : 1065px)
+          width: 250px
+        @media (min-width : 865px) and (max-width : 965px)
+          width: 150px
+    .form-action
+      height: 100%
+      float: left
+      position: relative
+      button
+        height: 35px
+        margin: 0 0 0 22px !important
+        padding: 0 25px 0 25px !important
+        line-height: rem-calc(35)
+        background-color: #D03F4A
+        +my_vertical_align
+        outline: none !important
+#header-search-form
+  position: absolute
 .header-navigation
   position: absolute
   top: 0
@@ -426,8 +484,12 @@ ul.primary-menu
         display: block
         height: 100%
       &.search
-        width: 40px
-        a
+        label
+          position: relative
+          display: block
+          height: 100%
+          width: 40px
+          float: left
           img
             width: 65%
             +my_vertical_align
