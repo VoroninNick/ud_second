@@ -38,8 +38,8 @@
       <file leaf-file-name="main.sass.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.sass.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.7743272" vertical-offset="7024" max-vertical-offset="31348">
-              <caret line="514" column="24" selection-start-line="514" selection-start-column="24" selection-end-line="514" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.73134327" vertical-offset="8010" max-vertical-offset="31348">
+              <caret line="500" column="26" selection-start-line="500" selection-start-column="26" selection-end-line="500" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -474,7 +474,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2983871" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2983871" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1665,7 +1665,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/main.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24637681" vertical-offset="374" max-vertical-offset="2703">
+        <state vertical-scroll-proportion="0.3552239" vertical-offset="374" max-vertical-offset="2703">
           <caret line="36" column="68" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
           <folding>
             <marker date="1427200035000" expanded="true" signature="-1:-1" placeholder="..." />
@@ -1692,8 +1692,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.sass.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7743272" vertical-offset="7024" max-vertical-offset="31348">
-          <caret line="514" column="24" selection-start-line="514" selection-start-column="24" selection-end-line="514" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.73134327" vertical-offset="8010" max-vertical-offset="31348">
+          <caret line="500" column="26" selection-start-line="500" selection-start-column="26" selection-end-line="500" selection-end-column="26" />
           <folding />
         </state>
       </provider>
