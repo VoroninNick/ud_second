@@ -3,6 +3,10 @@ class MainController < ApplicationController
 
   end
 
+  def favorites
+
+  end
+
   def second
 
   end

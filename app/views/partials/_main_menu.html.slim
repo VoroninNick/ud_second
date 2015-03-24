@@ -1,6 +1,6 @@
 .main-menu
   .logo
-    a
+    a href=root_path
       .logo-inner
         .icon
           = image_tag "UD-logo-diamond.png"
@@ -16,7 +16,7 @@
 
   ul.primary-menu
     li
-      a title="home page"
+      a href=root_path title="home page"
         .pm-item
           .icon
             = image_tag "UD-home.png"
@@ -32,7 +32,7 @@
             b search girls
           .clearfix
     li
-      a title="favorites"
+      a href=favorites_path title="favorites"
         .pm-item
           .icon
             = image_tag "UD-favorites.png"
