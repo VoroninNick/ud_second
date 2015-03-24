@@ -419,13 +419,6 @@ ul.primary-menu
     &:focus
       border: 1px solid #2E3E51 !important
 
-input[type=checkbox] + .search-input
-  /*display: none*/
-  width: 0
-input[type=checkbox]:checked + .search-input
-  display: block
-  width: auto
-  margin-right: 10px
 .search-input-wrap
   display: block
   height: 80px
@@ -435,6 +428,7 @@ input[type=checkbox]:checked + .search-input
     height: 100%
     display: inline-block
     overflow: hidden
+    width: 0
     .input
       height: 100%
       float: left
@@ -471,6 +465,13 @@ input[type=checkbox]:checked + .search-input
   top: 0
   right: 0
   bottom: 0
+  &.open-search
+    @media (min-width : 830px) and (max-width : 865px)
+      width: 66%
+    @media (min-width : 650px) and (max-width : 830px)
+      width: 71%
+    @media (min-width : 0) and (max-width : 650px)
+      width: 80%
   section
     height: 100%
     padding-right: 35px
@@ -484,7 +485,33 @@ input[type=checkbox]:checked + .search-input
         display: block
         height: 100%
       &.search
-        label
+        &.open
+          @media (min-width : 0) and (max-width : 865px)
+            position: absolute
+            right: 0
+            top: 0
+            bottom: 0
+            left: 0
+            background: #BEC3C7
+            z-index: 1
+            input
+              @media (min-width: 765px) and (max-width: 865px)
+                width: 350px
+              @media (min-width: 650px) and (max-width: 765px)
+                width: 250px
+              @media (min-width : 590px) and (max-width : 650px)
+                width: 265px
+              @media (min-width : 540px) and (max-width : 590px)
+                width: 220px
+              @media (min-width : 0) and (max-width : 540px)
+                width: 120px
+
+          .search-input
+            display: block
+            width: auto
+            margin-right: 10px
+
+        a
           position: relative
           display: block
           height: 100%

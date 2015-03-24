@@ -1,15 +1,14 @@
 .header-navigation
   section
     li.search
-      label for="header-search-form"
+      a
         =image_tag "UD-icon-search.svg"
       .search-input-wrap
-        input#header-search-form.invisible type="checkbox"
-          .search-input
-            .input
-              input type="text" placeholder="Keyword"
-            .form-action
-              button SEARCH
+        .search-input
+          .input
+            input type="text" placeholder="Keyword"
+          .form-action
+            button SEARCH
     li.notification.notification-wrap
       a.notification-link
         div

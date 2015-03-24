@@ -40,6 +40,19 @@ $(window).scroll (event) ->
 
 
 $(document).ready ->
+#  search header form
+  $('li.search a').click ->
+    $wrap = $(this).closest('.header-navigation')
+    $search = $(this).parent()
+    if $search.hasClass('open')
+      $search.removeClass('open')
+    else
+      $search.addClass('open')
+    if $wrap.hasClass('open-search')
+      $wrap.removeClass('open-search')
+    else
+      $wrap.addClass('open-search')
+
 # disable scroll when mouse over an absolute div
   $('#notifications-panel').bind 'mousewheel DOMMouseScroll', (e) ->
     scrollTo = null
