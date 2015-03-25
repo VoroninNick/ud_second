@@ -327,7 +327,27 @@ $content-bg : #2E3E51
       left: 78px
       @media only screen and (min-width : 40.063em) and (max-width : 64em)
         display: none
-
+.round-count
+  position: absolute
+  top: 0px
+  right: 0px
+  width: 24px
+  height: 24px
+  border-radius: 50%
+  background-color: #D03F4A
+  &:before
+    position: absolute
+    top: 0
+    left: 0
+    display: inline-block
+    content: attr(data-count)
+    color: #fff
+    font:
+      size: rem-calc(14)
+      family: 'Fira Sans', sans-serif
+    line-height: rem-calc(24)
+    width: 24px
+    text-align: center
 ul.primary-menu
   margin-left: 0
   li
@@ -1057,6 +1077,8 @@ li.credits
 .preview-profile
   position: relative
   overflow: hidden
+  a
+    display: block
   &:hover
     .information-wrap
       bottom: 0
@@ -1144,6 +1166,8 @@ li.credits
           height: 100%
           display: inline-block
           margin-right: 18px
+          path, polygon
+            fill: #BEC3C7
           @media (min-width : 0) and (max-width : 1170px)
             margin-right: 9px
           a

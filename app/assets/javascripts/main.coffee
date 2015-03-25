@@ -40,6 +40,14 @@ $(window).scroll (event) ->
 
 
 $(document).ready ->
+#  favorites tabs
+  $('.favorites-nav a').click ->
+    $wrap = $(this).closest('favorites-woman-wrap')
+    $tabsContainer =
+    $('.favorites-nav a').removeClass('active')
+    $(this).addClass('active')
+
+
 #  search header form
   $('li.search a').click ->
     $wrap = $(this).closest('.header-navigation')
@@ -102,12 +110,7 @@ $(document).ready ->
       $wrapper.removeClass('minimizate')
 
 
-#  $('.header-navigation section li').click (e) ->
-#    e.stopPropagation()
-#    if $(this).hasClass('close')
-#      $(this).removeClass('close')
-#    else
-#      $(this).addClass('close')
+
 
 # click event to scroll to top
   $(".scrollToTop").click ->
