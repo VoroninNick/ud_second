@@ -4,8 +4,8 @@
       .columns
         .favorites-nav
           nav
-            li
-              a.active
+            li.active
+              a
                 .icon
                   =embedded_svg "UD-icon-star.svg"
                   .round-count data-count="17"
@@ -55,13 +55,185 @@
                 .title
                   b Block list
 
-  .row.medium-main.my-special-list-wrap
+  .row.medium-main.tab-item-wrap
     .columns.medium-10.medium-centered.large-12
       .title-head.grey.notification-wrap
         .columns
           .wrap
             h4
               |My special list (&nbsp;
+              span
+                |3
+              |&nbsp;new )
+            .items-menu.notification-link
+              =image_tag "UD-icon-sub menu.svg"
+              .notification-container
+                .menu
+                  .group
+                    .title
+                      strong Display options:
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-sort.svg"
+                          span
+                            |Sort by
+                        .input
+                          select.sort-by
+                            option value="age_increase" Age increase
+                            option value="age_decrease" Age decrease
+                            option value="alfabet" Alfabet
+                            option value="recent_activity" Recent activity
+                            option value="favotites_first" Favotites first
+                        .clearfix
+      .favorites-container.best-match-wrap.white-grey
+        .columns
+          .columns.large-3.medium-3.small-6.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                a
+                  .image style="background: url('#{asset_path("man_1.jpeg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Muhammad
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button.has-in-special
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match.offline
+                a
+                  .image style="background: url('#{asset_path("man_2.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Michael
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button.has-in-list
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("man_6.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Swimmer
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button.has-in-list
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("man_4.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Disel
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button.has-in-list
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+        .clearfix
+  .row.medium-main.tab-item-wrap.hide
+    .columns.medium-10.medium-centered.large-12
+      .title-head.grey.notification-wrap
+        .columns
+          .wrap
+            h4
+              |Match list (&nbsp;
               span
                 |3
               |&nbsp;new )
@@ -122,10 +294,7 @@
                       .action-button
                         a href="" title="test"
                           =embedded_svg "UD-icon-chat buble.svg"
-                      .action-button
-                        a href="" title="test"
-                          =embedded_svg "UD-icon-camshare.svg"
-                  .status
+                  .p-status
 
           .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
             .preview-profile-wrap
@@ -150,6 +319,9 @@
                           =embedded_svg "UD-icon-heart.svg"
                       .action-button
                         a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
                           =embedded_svg "UD-icon-introduction letter.svg"
                       .action-button
                         a href="" title="test"
@@ -157,10 +329,7 @@
                       .action-button
                         a href="" title="test"
                           =embedded_svg "UD-icon-chat buble.svg"
-                      .action-button
-                        a href="" title="test"
-                          =embedded_svg "UD-icon-camshare.svg"
-                  .status
+                  .p-status
 
           .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
             .preview-profile-wrap
@@ -184,6 +353,9 @@
                           =embedded_svg "UD-icon-heart.svg"
                       .action-button
                         a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
                           =embedded_svg "UD-icon-introduction letter.svg"
                       .action-button
                         a href="" title="test"
@@ -191,10 +363,7 @@
                       .action-button
                         a href="" title="test"
                           =embedded_svg "UD-icon-chat buble.svg"
-                      .action-button
-                        a href="" title="test"
-                          =embedded_svg "UD-icon-camshare.svg"
-                  .status
+                  .p-status
 
           .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
             .preview-profile-wrap
@@ -218,6 +387,9 @@
                           =embedded_svg "UD-icon-heart.svg"
                       .action-button
                         a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
                           =embedded_svg "UD-icon-introduction letter.svg"
                       .action-button
                         a href="" title="test"
@@ -225,10 +397,808 @@
                       .action-button
                         a href="" title="test"
                           =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+        .clearfix
+  .row.medium-main.tab-item-wrap.hide
+    .columns.medium-10.medium-centered.large-12
+      .title-head.grey.notification-wrap
+        .columns
+          .wrap
+            h4
+              |Favorites list (&nbsp;
+              span
+                |3
+              |&nbsp;new )
+            .items-menu.notification-link
+              =image_tag "UD-icon-sub menu.svg"
+              .notification-container
+                .menu
+                  .group
+                    .title
+                      strong Display options:
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-sort.svg"
+                          span
+                            |Sort by
+                        .input
+                          select.sort-by
+                            option value="age_increase" Age increase
+                            option value="age_decrease" Age decrease
+                            option value="alfabet" Alfabet
+                            option value="recent_activity" Recent activity
+                            option value="favotites_first" Favotites first
+                        .clearfix
+      .favorites-container.best-match-wrap.white-grey
+        .columns
+          .columns.large-3.medium-3.small-6.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                a
+                  .image style="background: url('#{asset_path("man_1.jpeg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Muhammad
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
                       .action-button
                         a href="" title="test"
-                          =embedded_svg "UD-icon-camshare.svg"
-                  .status
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match.offline
+                a
+                  .image style="background: url('#{asset_path("man_2.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Michael
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("man_6.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Swimmer
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("man_4.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Disel
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+        .clearfix
+  .row.medium-main.tab-item-wrap.hide
+    .columns.medium-10.medium-centered.large-12
+      .title-head.grey.notification-wrap
+        .columns
+          .wrap
+            h4
+              |WHo visited your profile (&nbsp;
+              span
+                |3
+              |&nbsp;new )
+            .items-menu.notification-link
+              =image_tag "UD-icon-sub menu.svg"
+              .notification-container
+                .menu
+                  .group
+                    .title
+                      strong Display options:
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-sort.svg"
+                          span
+                            |Sort by
+                        .input
+                          select.sort-by
+                            option value="age_increase" Age increase
+                            option value="age_decrease" Age decrease
+                            option value="alfabet" Alfabet
+                            option value="recent_activity" Recent activity
+                            option value="favotites_first" Favotites first
+                        .clearfix
+      .favorites-container.best-match-wrap.white-grey
+        .columns
+          .columns.large-3.medium-3.small-6.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                a
+                  .image style="background: url('#{asset_path("man_1.jpeg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Muhammad
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match.offline
+                a
+                  .image style="background: url('#{asset_path("man_2.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Michael
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("man_6.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Swimmer
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("man_4.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Disel
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+        .clearfix
+  .row.medium-main.tab-item-wrap.hide
+    .columns.medium-10.medium-centered.large-12
+      .title-head.grey.notification-wrap
+        .columns
+          .wrap
+            h4
+              |I am in their Favorites (&nbsp;
+              span
+                |3
+              |&nbsp;new )
+            .items-menu.notification-link
+              =image_tag "UD-icon-sub menu.svg"
+              .notification-container
+                .menu
+                  .group
+                    .title
+                      strong Display options:
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-sort.svg"
+                          span
+                            |Sort by
+                        .input
+                          select.sort-by
+                            option value="age_increase" Age increase
+                            option value="age_decrease" Age decrease
+                            option value="alfabet" Alfabet
+                            option value="recent_activity" Recent activity
+                            option value="favotites_first" Favotites first
+                        .clearfix
+      .favorites-container.best-match-wrap.white-grey
+        .columns
+          .columns.large-3.medium-3.small-6.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                a
+                  .image style="background: url('#{asset_path("man_1.jpeg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Muhammad
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match.offline
+                a
+                  .image style="background: url('#{asset_path("man_2.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Michael
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("man_6.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Swimmer
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("man_4.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Disel
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+        .clearfix
+  .row.medium-main.tab-item-wrap.hide
+    .columns.medium-10.medium-centered.large-12
+      .title-head.grey.notification-wrap
+        .columns
+          .wrap
+            h4
+              |You visited their profile (&nbsp;
+              span
+                |3
+              |&nbsp;new )
+            .items-menu.notification-link
+              =image_tag "UD-icon-sub menu.svg"
+              .notification-container
+                .menu
+                  .group
+                    .title
+                      strong Display options:
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-sort.svg"
+                          span
+                            |Sort by
+                        .input
+                          select.sort-by
+                            option value="age_increase" Age increase
+                            option value="age_decrease" Age decrease
+                            option value="alfabet" Alfabet
+                            option value="recent_activity" Recent activity
+                            option value="favotites_first" Favotites first
+                        .clearfix
+      .favorites-container.best-match-wrap.white-grey
+        .columns
+          .columns.large-3.medium-3.small-6.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                a
+                  .image style="background: url('#{asset_path("man_1.jpeg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Muhammad
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match.offline
+                a
+                  .image style="background: url('#{asset_path("man_2.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Michael
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("man_6.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Swimmer
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("man_4.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Disel
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-star-2.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                  .p-status
+        .clearfix
+
+  .row.medium-main.tab-item-wrap.hide
+    .columns.medium-10.medium-centered.large-12
+      .title-head.grey.notification-wrap
+        .columns
+          .wrap
+            h4
+              |members who blocked you  (&nbsp;
+              span
+                |3
+              |&nbsp;new )
+            .items-menu.notification-link
+              =image_tag "UD-icon-sub menu.svg"
+              .notification-container
+                .menu
+                  .group
+                    .title
+                      strong Display options:
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-sort.svg"
+                          span
+                            |Sort by
+                        .input
+                          select.sort-by
+                            option value="age_increase" Age increase
+                            option value="age_decrease" Age decrease
+                            option value="alfabet" Alfabet
+                            option value="recent_activity" Recent activity
+                            option value="favotites_first" Favotites first
+                        .clearfix
+      .favorites-container.best-match-wrap.white-grey
+        .columns
+          .columns.large-3.medium-3.small-6.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                a
+                  .image style="background: url('#{asset_path("man_1.jpeg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Muhammad
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match.offline
+                a
+                  .image style="background: url('#{asset_path("man_2.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Michael
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("man_6.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Swimmer
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("man_4.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Disel
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                  .p-status
         .clearfix
 
 .row
@@ -246,8 +1216,8 @@
       .columns
         .favorites-nav
           nav
-            li
-              a.active
+            li.active
+              a
                 .icon
                   =embedded_svg "UD-icon-diamond favorites.svg"
                   .round-count data-count="11"
@@ -289,7 +1259,7 @@
                 .title
                   b Block list
 
-  .row.medium-main
+  .row.medium-main.tab-item-wrap
     .columns.medium-10.medium-centered.large-12
       .title-head.grey.notification-wrap
         .columns
@@ -297,7 +1267,7 @@
             h4
               |My special list (&nbsp;
               span
-                |3
+                |11
               |&nbsp;new )
             .items-menu.notification-link
               =image_tag "UD-icon-sub menu.svg"
@@ -356,7 +1326,7 @@
                       .action-button
                         a href="" title="test"
                           =embedded_svg "UD-icon-camshare.svg"
-                  .status
+                  .p-status
 
           .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
             .preview-profile-wrap
@@ -391,7 +1361,7 @@
                       .action-button
                         a href="" title="test"
                           =embedded_svg "UD-icon-camshare.svg"
-                  .status
+                  .p-status
 
           .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
             .preview-profile-wrap
@@ -425,7 +1395,7 @@
                       .action-button
                         a href="" title="test"
                           =embedded_svg "UD-icon-camshare.svg"
-                  .status
+                  .p-status
 
           .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
             .preview-profile-wrap
@@ -459,5 +1429,818 @@
                       .action-button
                         a href="" title="test"
                           =embedded_svg "UD-icon-camshare.svg"
-                  .status
+                  .p-status
+        .clearfix
+
+  .row.medium-main.tab-item-wrap.hide
+    .columns.medium-10.medium-centered.large-12
+      .title-head.grey.notification-wrap
+        .columns
+          .wrap
+            h4
+              |Favorites list (&nbsp;
+              span
+                |7
+              |&nbsp;new )
+            .items-menu.notification-link
+              =image_tag "UD-icon-sub menu.svg"
+              .notification-container
+                .menu
+                  .group
+                    .title
+                      strong Display options:
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-sort.svg"
+                          span
+                            |Sort by
+                        .input
+                          select.sort-by
+                            option value="age_increase" Age increase
+                            option value="age_decrease" Age decrease
+                            option value="alfabet" Alfabet
+                            option value="recent_activity" Recent activity
+                            option value="favotites_first" Favotites first
+                        .clearfix
+      .favorites-container.best-match-wrap.white-grey
+        .columns
+          .columns.large-3.medium-3.small-6.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                a
+                  .image style="background: url('#{asset_path("girl_1.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-camshare.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match.offline
+                a
+                  .image style="background: url('#{asset_path("girl_2.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-camshare.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("girl_3.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-camshare.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("girl_4.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-camshare.svg"
+                  .p-status
+        .clearfix
+  .row.medium-main.tab-item-wrap.hide
+    .columns.medium-10.medium-centered.large-12
+      .title-head.grey.notification-wrap
+        .columns
+          .wrap
+            h4
+              |WHo visited your profile (&nbsp;
+              span
+                |1
+              |&nbsp;new )
+            .items-menu.notification-link
+              =image_tag "UD-icon-sub menu.svg"
+              .notification-container
+                .menu
+                  .group
+                    .title
+                      strong Display options:
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-sort.svg"
+                          span
+                            |Sort by
+                        .input
+                          select.sort-by
+                            option value="age_increase" Age increase
+                            option value="age_decrease" Age decrease
+                            option value="alfabet" Alfabet
+                            option value="recent_activity" Recent activity
+                            option value="favotites_first" Favotites first
+                        .clearfix
+      .favorites-container.best-match-wrap.white-grey
+        .columns
+          .columns.large-3.medium-3.small-6.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                a
+                  .image style="background: url('#{asset_path("girl_1.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-camshare.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match.offline
+                a
+                  .image style="background: url('#{asset_path("girl_2.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-camshare.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("girl_3.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-camshare.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("girl_4.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-camshare.svg"
+                  .p-status
+        .clearfix
+  .row.medium-main.tab-item-wrap.hide
+    .columns.medium-10.medium-centered.large-12
+      .title-head.grey.notification-wrap
+        .columns
+          .wrap
+            h4
+              |I am in their Favorites (&nbsp;
+              span
+                |42
+              |&nbsp;new )
+            .items-menu.notification-link
+              =image_tag "UD-icon-sub menu.svg"
+              .notification-container
+                .menu
+                  .group
+                    .title
+                      strong Display options:
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-sort.svg"
+                          span
+                            |Sort by
+                        .input
+                          select.sort-by
+                            option value="age_increase" Age increase
+                            option value="age_decrease" Age decrease
+                            option value="alfabet" Alfabet
+                            option value="recent_activity" Recent activity
+                            option value="favotites_first" Favotites first
+                        .clearfix
+      .favorites-container.best-match-wrap.white-grey
+        .columns
+          .columns.large-3.medium-3.small-6.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                a
+                  .image style="background: url('#{asset_path("girl_1.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-camshare.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match.offline
+                a
+                  .image style="background: url('#{asset_path("girl_2.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-camshare.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("girl_3.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-camshare.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("girl_4.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-camshare.svg"
+                  .p-status
+        .clearfix
+  .row.medium-main.tab-item-wrap.hide
+    .columns.medium-10.medium-centered.large-12
+      .title-head.grey.notification-wrap
+        .columns
+          .wrap
+            h4
+              |You visited their profile (&nbsp;
+              span
+                |8
+              |&nbsp;new )
+            .items-menu.notification-link
+              =image_tag "UD-icon-sub menu.svg"
+              .notification-container
+                .menu
+                  .group
+                    .title
+                      strong Display options:
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-sort.svg"
+                          span
+                            |Sort by
+                        .input
+                          select.sort-by
+                            option value="age_increase" Age increase
+                            option value="age_decrease" Age decrease
+                            option value="alfabet" Alfabet
+                            option value="recent_activity" Recent activity
+                            option value="favotites_first" Favotites first
+                        .clearfix
+      .favorites-container.best-match-wrap.white-grey
+        .columns
+          .columns.large-3.medium-3.small-6.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                a
+                  .image style="background: url('#{asset_path("girl_1.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-camshare.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match.offline
+                a
+                  .image style="background: url('#{asset_path("girl_2.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-camshare.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("girl_3.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-camshare.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("girl_4.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button.red-fill
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-heart.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-introduction letter.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-mail.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-chat buble.svg"
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-camshare.svg"
+                  .p-status
+        .clearfix
+  .row.medium-main.tab-item-wrap.hide
+    .columns.medium-10.medium-centered.large-12
+      .title-head.grey.notification-wrap
+        .columns
+          .wrap
+            h4
+              |Members who blocked you (&nbsp;
+              span
+                |8
+              |&nbsp;new )
+            .items-menu.notification-link
+              =image_tag "UD-icon-sub menu.svg"
+              .notification-container
+                .menu
+                  .group
+                    .title
+                      strong Display options:
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-sort.svg"
+                          span
+                            |Sort by
+                        .input
+                          select.sort-by
+                            option value="age_increase" Age increase
+                            option value="age_decrease" Age decrease
+                            option value="alfabet" Alfabet
+                            option value="recent_activity" Recent activity
+                            option value="favotites_first" Favotites first
+                        .clearfix
+      .favorites-container.best-match-wrap.white-grey
+        .columns
+          .columns.large-3.medium-3.small-6.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                a
+                  .image style="background: url('#{asset_path("girl_1.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-block-notification.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match.offline
+                a
+                  .image style="background: url('#{asset_path("girl_2.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-block-notification.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("girl_3.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-block-notification.svg"
+                  .p-status
+
+          .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+            .preview-profile-wrap
+              .preview-profile.the-best-match
+                .image style="background: url('#{asset_path("girl_4.jpg")}')no-repeat center center;"
+                .information-wrap
+                  .triangle-wrap
+                    .triangle
+                  .information
+                    .title
+                      h4 Zlata
+                    .info
+                      p
+                        |21
+                        span
+                          |&nbsp;|&nbsp;
+                        |Lviv
+                    .actions
+                      .action-button
+                        a href="" title="test"
+                          =embedded_svg "UD-icon-block-notification.svg"
+                  .p-status
         .clearfix

@@ -40,13 +40,32 @@ $(window).scroll (event) ->
 
 
 $(document).ready ->
-#  favorites tabs
-  $('.favorites-nav a').click ->
-    $wrap = $(this).closest('favorites-woman-wrap')
-    $tabsContainer =
-    $('.favorites-nav a').removeClass('active')
+
+#  init index page tabs wooman
+  $('.favorites-nav li').click ->
+    current_position = $(this).index()
+#    alert ''+current_position
+    $head_tabs = $(this)
+    $wrap = $(this).closest('.favorites-woman-wrap')
+    $('.favorites-nav li').removeClass('active')
     $(this).addClass('active')
 
+    $body_tabs = $wrap.find('.tab-item-wrap')
+    $body_tabs.addClass('hide')
+    $body_tabs.eq(current_position).removeClass('hide')
+
+#  init index page tabs man
+  $('.favorites-nav li').click ->
+    current_position = $(this).index()
+#    alert ''+current_position
+    $head_tabs = $(this)
+    $wrap = $(this).closest('.favorites-man-wrap')
+    $('.favorites-nav li').removeClass('active')
+    $(this).addClass('active')
+
+    $body_tabs = $wrap.find('.tab-item-wrap')
+    $body_tabs.addClass('hide')
+    $body_tabs.eq(current_position).removeClass('hide')
 
 #  search header form
   $('li.search a').click ->

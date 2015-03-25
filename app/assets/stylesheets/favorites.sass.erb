@@ -17,6 +17,13 @@
         width: 10%
       @media (min-width: 0) and (max-width: 640px)
         width: 12.5%
+      &.active
+        .round-count
+          display: none
+        path, polygon
+          fill: #3598DB !important
+        b
+          color: #3598DB !important
       &:last-of-type
         border-right: 1px solid #43434D
         a
@@ -28,13 +35,6 @@
         padding-top: 9px
         .round-count
           right: 6px
-        &.active
-          .round-count
-            display: none
-          path, polygon
-            fill: #3598DB !important
-          b
-            color: #3598DB !important
         .icon
           position: relative
           height: 30px
@@ -69,3 +69,16 @@
     nav
       li
         width: 16%
+
+.favorites-container
+  .preview-profile
+    .information
+      .actions
+        .action-button
+          width: 22px !important
+          margin-right: 14px !important
+          &.has-in-list
+            path, polygon
+              fill: #96D03F
+.f-margin-top
+  margin-top: 30px
