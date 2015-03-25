@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'main#index'
 
   get 'favorites' => 'main#favorites'
+  get 'search' => 'main#search'
   get 'second-version' => 'main#second'
 
   # Example of regular route:

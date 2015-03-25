@@ -7,6 +7,9 @@ class MainController < ApplicationController
 
   end
 
+  def search
+
+  end
   def second
 
   end
