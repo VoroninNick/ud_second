@@ -67,6 +67,30 @@ $(document).ready ->
     $body_tabs.addClass('hide')
     $body_tabs.eq(current_position).removeClass('hide')
 
+#    init multiple select
+  $('select.ud-multiple').SumoSelect()
+
+#clear form
+  $('a.clear-form').click ->
+    $formWrap = $(this).closest('form')
+    $items = $formWrap.find('ul.options li')
+    $items.removeClass('selected')#
+    $captionSelect = $formWrap.find('p.CaptionCont span')
+    $captionSelect.text('')
+
+#small search form height binder
+  $isExpendeForm = false
+  $('.advanced-form-wrap .wrap h4').click ->
+    $wrap = $(this).closest('.advanced-form-wrap')
+    $form = $wrap.find('.advanced-form')
+
+    if $isExpendeForm == false
+      $form.addClass('extend-form')
+      $isExpendeForm = true
+    else
+      $form.removeClass('extend-form')
+      $isExpendeForm = false
+
 #  search header form
   $('li.search a').click ->
     $wrap = $(this).closest('.header-navigation')
