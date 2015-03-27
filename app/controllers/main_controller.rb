@@ -10,6 +10,10 @@ class MainController < ApplicationController
   def search
 
   end
+
+  def profile_woman
+
+  end
   def second
 
   end

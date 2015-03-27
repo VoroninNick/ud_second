@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get 'search' => 'main#search'
   get 'second-version' => 'main#second'
 
+  get 'profile_woman' => 'main#profile_woman'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

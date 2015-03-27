@@ -175,26 +175,10 @@ $(document).ready ->
   #Document Click
   $(document).click ->
     $('.notification-container').hide()
-    return
+    return true
 
   #Popup Click
-  $('.notification-container').click ->
-    false
-  return
+  $('.notification-container').on "click", (event)->
+    event.stopPropagation()
 
-  $('.notification-link-sub').click ->
-#    $('.notification-container-sub').hide()
-#    $wrap = $(this).closest('.notification-wrap-sub')
-#    $container = $wrap.find('.notification-container-sub')
-#    $container.fadeToggle 300
-#    false
 
-  #Document Click
-  $(document).click ->
-    $('.notification-container-sub').hide()
-    return
-
-  #Popup Click
-  $('.notification-container-sub').click ->
-    false
-  return

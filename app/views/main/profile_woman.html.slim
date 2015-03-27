@@ -1,0 +1,455 @@
+.profile-page-wrap.profile-woman-page-wrap
+  .profile-header-wrap style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
+    .row.medium-main
+      .columns.medium-10.medium-centered.large-12
+        .row
+          .columns.large-5.medium-5
+            .main-profile-pictures
+              .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
+          .columns.large-7.medium-7
+            p Hello, my name is
+  .profile-nav-actions-wrap
+    .row.medium-main
+      .columns.medium-10.medium-centered.large-12
+        .row
+          .columns.large-5.medium-5
+            .main-profile-pictures-footer
+              .triangle-wrap
+                .triangle
+              .profile-b-status
+                .title-head.notification-wrap
+                  .columns
+                    .p-title
+                      =embedded_svg "UD-icon-heart.svg"
+                      .items-menu.notification-link
+                        a href=profile_woman_path
+                          =image_tag "UD-icon-sub menu.svg"
+                          .notification-container
+                            .menu
+                              .group
+                                .title
+                                  strong Display options:
+                                .options
+                                  .option
+                                    .label
+                                      .icon
+                                        = embedded_svg "UD-icon-sort.svg"
+                                      span
+                                        |Sort by
+                                    .input
+                                      select.sort-by
+                                        option value="age_increase" Age increase
+                                        option value="age_decrease" Age decrease
+                                        option value="alfabet" Alfabet
+                                        option value="recent_activity" Recent activity
+                                        option value="favotites_first" Favotites first
+                                    .clearfix
+          .columns.large-7.medium-7
+            nav
+              li
+                a
+                  = image_tag "UD-introduction-letter.png"
+              li
+                a
+                  = image_tag "UD-mail-box.png"
+              li
+                a
+                  = image_tag "UD-logo-live-chat-p.png"
+              li
+                a
+                  = image_tag "UD-cam-share.png"
+              li
+                a
+                  = image_tag "UD-gift.png"
+              li
+                a
+                  = image_tag "UD-intimacy.png"
+  .profile-content-wrap
+    .row.medium-main
+      .columns.medium-10.medium-centered.large-12
+        .row
+          .columns.large-5.medium-5.white-grey
+            .p-account-validate-status
+              |Account is not validated yet!
+            .media-content-block-wrap
+              .header
+                b Video
+              .content
+                =image_tag "UAD-video-girl.jpg"
+            .media-content-block-wrap
+              .header
+                b
+                  |Photos (
+                  span
+                    |9
+                  |)
+              .content
+                .row.collapse
+                  .profile-one-photo.columns.large-4.medium-4
+                    a
+                      .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
+                  .profile-one-photo.columns.large-4.medium-4
+                    a
+                      .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
+                  .profile-one-photo.columns.large-4.medium-4
+                    a
+                      .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
+                  .profile-one-photo.columns.large-4.medium-4
+                    a
+                      .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
+                  .profile-one-photo.columns.large-4.medium-4.end
+                    a
+                      .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
+            .row
+              .columns
+                a.more Show more
+
+          .columns.large-7.medium-7
+            .row.profile-more-info
+              .columns.large-6.medium-6.small-6
+                .row
+                  .columns.large-5.medium-6.small-6.pmi-key
+                    |Age:
+                  .columns.large-7.medium-6.small-6.pmi-value
+                    |24
+                    =image_tag "UAD-zodiac-4-Cancer.png"
+                .row
+                  .columns.large-5.medium-6.small-6.pmi-key
+                    |From:
+                  .columns.large-7.medium-6.small-6.pmi-value
+                    |Lviv, Ukraine
+                .row
+                  .columns.large-5.medium-6.small-6.pmi-key
+                    |English level:
+                  .columns.large-7.medium-6.small-6.pmi-value
+                    |intermediate
+                .row
+                  .columns.large-5.medium-6.small-6.pmi-key
+                    |Relationship:
+                  .columns.large-7.medium-6.small-6.pmi-value
+                    |never was
+                .row
+                  .columns.large-5.medium-6.small-6.pmi-key
+                    |Children:
+                  .columns.large-7.medium-6.small-6.pmi-value
+                    |no
+                .row
+                  .columns.large-5.medium-6.small-6.pmi-key
+                    |Want kids:
+                  .columns.large-7.medium-6.small-6.pmi-value
+                    |yes
+              .columns.large-6.medium-6.small-6
+                .row
+                  .columns.large-5.medium-6.small-6.pmi-key
+                    |Height:
+                  .columns.large-7.medium-6.small-6.pmi-value
+                    |179 cm
+                .row
+                  .columns.large-5.medium-6.small-6.pmi-key
+                    |Weight:
+                  .columns.large-7.medium-6.small-6.pmi-value
+                    |48 kg
+                .row
+                  .columns.large-5.medium-6.small-6.pmi-key
+                    |Yeys color:
+                  .columns.large-7.medium-6.small-6.pmi-value
+                    |Brown
+                .row
+                  .columns.large-5.medium-6.small-6.pmi-key
+                    |Hair color:
+                  .columns.large-7.medium-6.small-6.pmi-value
+                    |Black diamond
+            .row
+              .columns
+                .content-block
+                  .title-block-wrap
+                    .title About me
+                  p
+                    |I has been working with writing challenged clients for over four years. (How long you've been providing a service is useful information.) She provides ghost writing, coaching and ghost editing services. (What your services are is also useful) Her educational background in family science and journalism has given her a broad base from which to approach many topics. (Education and experience.) Her writing skills may be confirmed independently on oDesk.com and Elance.com. (Provable facts.) She especially enjoys preparing resumes for individuals who are changing careers. (Hook, grab and hold.) You may learn more about her services at Writing as a Ghost.com. (Second hook, grab and hold.)
+
+                .content-block
+                  .title-block-wrap
+                    .title My type of men
+                  p
+                    |Jane Doe writes SEO articles for businesses that want to see their Google search rankings surge.(What she does.) Her articles have appeared in a number of e-zine sites, including EzineArticles.com, ArticlesBase.com, HubPages.com and TRCB.com. (Way to confirm her skills.) She contributes articles about SEO techniques regularly to Site-Reference Newletter.com. (Her experience level.) Her articles focus on balancing informative with SEO needs--but never at the expense of providing an entertaining read. (There's the hook.) Learn more about how Jane's SEO articles could grow your business by visiting her blog at JaneDoeSEOArticlesBlog.com.
+        .row
+          .title-head.grey
+            .columns
+              .wrap
+                h4 Similar girls for you
+
+          .your-favorites-wrap.best-match-wrap.white-grey
+            .columns
+              .columns.large-3.medium-3.small-6.your-best-match-wrap
+                .preview-profile-wrap
+                  .preview-profile.the-best-match
+                    a
+                      .image style="background: url('#{asset_path("girl_1.jpg")}')no-repeat center center;"
+                    .information-wrap
+                      .triangle-wrap
+                        .triangle
+                      .information
+                        .title
+                          h4 Zlata
+                        .info
+                          p
+                            |21
+                            span
+                              |&nbsp;|&nbsp;
+                            |Lviv
+                        .actions
+                          .action-button.red-fill
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-heart.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-introduction letter.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-mail.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-chat buble.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-camshare.svg"
+                      .p-status
+
+              .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+                .preview-profile-wrap
+                  .preview-profile.the-best-match.offline
+                    a
+                      .image style="background: url('#{asset_path("girl_2.jpg")}')no-repeat center center;"
+                    .information-wrap
+                      .triangle-wrap
+                        .triangle
+                      .information
+                        .title
+                          h4 Zlata
+                        .info
+                          p
+                            |21
+                            span
+                              |&nbsp;|&nbsp;
+                            |Lviv
+                        .actions
+                          .action-button.red-fill
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-heart.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-introduction letter.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-mail.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-chat buble.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-camshare.svg"
+                      .p-status
+
+              .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+                .preview-profile-wrap
+                  .preview-profile.the-best-match
+                    .image style="background: url('#{asset_path("girl_3.jpg")}')no-repeat center center;"
+                    .information-wrap
+                      .triangle-wrap
+                        .triangle
+                      .information
+                        .title
+                          h4 Zlata
+                        .info
+                          p
+                            |21
+                            span
+                              |&nbsp;|&nbsp;
+                            |Lviv
+                        .actions
+                          .action-button.red-fill
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-heart.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-introduction letter.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-mail.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-chat buble.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-camshare.svg"
+                      .p-status
+
+              .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+                .preview-profile-wrap
+                  .preview-profile.the-best-match
+                    .image style="background: url('#{asset_path("girl_4.jpg")}')no-repeat center center;"
+                    .information-wrap
+                      .triangle-wrap
+                        .triangle
+                      .information
+                        .title
+                          h4 Zlata
+                        .info
+                          p
+                            |21
+                            span
+                              |&nbsp;|&nbsp;
+                            |Lviv
+                        .actions
+                          .action-button.red-fill
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-heart.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-introduction letter.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-mail.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-chat buble.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-camshare.svg"
+                      .p-status
+
+              .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+                .preview-profile-wrap
+                  .preview-profile.the-best-match.offline
+                    .image style="background: url('#{asset_path("girl_5.jpg")}')no-repeat center center;"
+                    .information-wrap
+                      .triangle-wrap
+                        .triangle
+                      .information
+                        .title
+                          h4 Zlata
+                        .info
+                          p
+                            |21
+                            span
+                              |&nbsp;|&nbsp;
+                            |Lviv
+                        .actions
+                          .action-button.red-fill
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-heart.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-introduction letter.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-mail.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-chat buble.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-camshare.svg"
+                      .p-status
+
+              .columns.large-3.medium-3.collapse.your-best-match-wrap
+                .preview-profile-wrap
+                  .preview-profile.the-best-match
+                    .image style="background: url('#{asset_path("girl_6.jpg")}')no-repeat center center;"
+                    .information-wrap
+                      .triangle-wrap
+                        .triangle
+                      .information
+                        .title
+                          h4 Zlata
+                        .info
+                          p
+                            |21
+                            span
+                              |&nbsp;|&nbsp;
+                            |Lviv
+                        .actions
+                          .action-button.red-fill
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-heart.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-introduction letter.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-mail.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-chat buble.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-camshare.svg"
+                      .p-status
+
+              .columns.large-3.medium-3.collapse.your-best-match-wrap
+                .preview-profile-wrap
+                  .preview-profile.the-best-match
+                    .image style="background: url('#{asset_path("girl_11.jpeg")}')no-repeat center center;"
+                    .information-wrap
+                      .triangle-wrap
+                        .triangle
+                      .information
+                        .title
+                          h4 Zlata
+                        .info
+                          p
+                            |21
+                            span
+                              |&nbsp;|&nbsp;
+                            |Lviv
+                        .actions
+                          .action-button.red-fill
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-heart.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-introduction letter.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-mail.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-chat buble.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-camshare.svg"
+                      .p-status
+              .columns.large-3.medium-3.collapse.your-best-match-wrap
+                .preview-profile-wrap
+                  .preview-profile.the-best-match
+                    .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
+                    .information-wrap
+                      .triangle-wrap
+                        .triangle
+                      .information
+                        .title
+                          h4 Zlata
+                        .info
+                          p
+                            |21
+                            span
+                              |&nbsp;|&nbsp;
+                            |Lviv
+                        .actions
+                          .action-button.red-fill
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-heart.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-introduction letter.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-mail.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-chat buble.svg"
+                          .action-button
+                            a href="" title="test"
+                              =embedded_svg "UD-icon-camshare.svg"
+                      .p-status
+            .clearfix
