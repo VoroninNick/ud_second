@@ -1,11 +1,10 @@
 .profile-page-wrap.profile-woman-page-wrap
-  .profile-header-wrap style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
+  .profile-header-wrap.blur style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
     .row.medium-main
       .columns.medium-10.medium-centered.large-12
         .row
           .columns.large-5.medium-5
-            .main-profile-pictures
-              .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
+
           .columns.large-7.medium-7
             p Hello, my name is
   .profile-nav-actions-wrap
@@ -14,6 +13,11 @@
         .row
           .columns.large-5.medium-5
             .main-profile-pictures-footer
+              .main-profile-pictures-wrap
+                .main-profile-pictures-inner
+                  .black-opacity-layer
+                  .main-profile-pictures
+                    .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
               .triangle-wrap
                 .triangle
               .profile-b-status
@@ -22,28 +26,27 @@
                     .p-title
                       =embedded_svg "UD-icon-heart.svg"
                       .items-menu.notification-link
-                        a href=profile_woman_path
-                          =image_tag "UD-icon-sub menu.svg"
-                          .notification-container
-                            .menu
-                              .group
-                                .title
-                                  strong Display options:
-                                .options
-                                  .option
-                                    .label
-                                      .icon
-                                        = embedded_svg "UD-icon-sort.svg"
-                                      span
-                                        |Sort by
-                                    .input
-                                      select.sort-by
-                                        option value="age_increase" Age increase
-                                        option value="age_decrease" Age decrease
-                                        option value="alfabet" Alfabet
-                                        option value="recent_activity" Recent activity
-                                        option value="favotites_first" Favotites first
-                                    .clearfix
+                        =image_tag "UD-icon-sub menu.svg"
+                        .notification-container
+                          .menu
+                            .group
+                              .title
+                                strong Display options:
+                              .options
+                                .option
+                                  .label
+                                    .icon
+                                      = embedded_svg "UD-icon-sort.svg"
+                                    span
+                                      |Sort by
+                                  .input
+                                    select.sort-by
+                                      option value="age_increase" Age increase
+                                      option value="age_decrease" Age decrease
+                                      option value="alfabet" Alfabet
+                                      option value="recent_activity" Recent activity
+                                      option value="favotites_first" Favotites first
+                                  .clearfix
           .columns.large-7.medium-7
             nav
               li

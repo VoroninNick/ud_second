@@ -24,6 +24,8 @@ p
     -moz-background-size: cover !important
     -o-background-size: cover !important
     background-size: cover !important
+    position: relative
+    top: 10px
   .image
     max-width: 100%
     width: 100%
@@ -35,12 +37,10 @@ p
     -o-background-size: cover !important
     background-size: cover !important
     margin: 0 auto
-  .main-profile-pictures
-    position: relative
-    top: 120px
   .profile-nav-actions-wrap
     height: 130px
     background-color: #2E2E36
+    position: relative
     .main-profile-pictures-footer
       position: relative
       top: 15px
@@ -93,6 +93,7 @@ p
       background-color: #96D03F
       position: absolute
       bottom: 25px
+      z-index: 2
       .p-title
         width: 100%
         position: relative
@@ -211,5 +212,40 @@ p
     img
       height: 20px
       margin-left: 10px
+
+.main-profile-pictures-wrap
+  position: absolute
+  top: -15px
+  left: 0
+  right: 0
+  height: 0
+  .main-profile-pictures-inner
+    position: relative
+    height: 45px
+    .black-opacity-layer
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 0
+      height: 30px
+      background: rgba(46, 46, 54, 0.8)
+      z-index: 1
+    .main-profile-pictures
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      .image
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+
+.blur
+  -webkit-filter: blur(6px)
+  -moz-filter: blur(6px)
+  -o-filter: blur(6px)
+  -ms-filter: blur(6px)
+  filter: blur(6px)
 
 
