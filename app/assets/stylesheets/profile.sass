@@ -98,7 +98,7 @@ p
     max-width: 100%
     width: 100%
     height: 0
-    padding-bottom: 120%
+    padding-bottom: 111%
     overflow: hidden
     -webkit-background-size: cover !important
     -moz-background-size: cover !important
@@ -136,6 +136,49 @@ p
       top: 15px
       height: 115px
       background: rgba(46, 46, 54, 0.8)
+      .notification-container
+        min-width: 308px
+        top: 54px
+        right: -26px
+        //display: block !important
+        padding-bottom: 35px
+        .group
+          .title
+            margin-bottom: 5px
+        .information
+          p
+            font:
+              size: rem-calc(12)
+              weight: 300
+            line-height: rem-calc(28)
+            color: #58595B
+            margin: 0
+            padding-left: 15px
+            span
+        .label, .input
+          height: 28px
+        .label
+          width: 12%
+          .icon
+            height: 100%
+            width: 18px
+        .input
+          width: 88%
+          a
+            font:
+              size: rem-calc(12)
+              weight: 300
+            line-height: rem-calc(28)
+            color: #58595B
+        &:before
+          right: 12px
+        &:after
+          right: 14px
+        svg
+          width: 100%
+          height: 23px
+          path, polygon, rect
+            fill: #48647C
       .triangle-wrap
         position: relative
         top: -15px
@@ -228,6 +271,10 @@ p
     nav
       li
         width: 80px
+        @media (min-width : 1445px) and (max-width : 1575px)
+          width: 60px
+        @media (min-width : 818px) and (max-width : 1170px)
+          width: 60px
         list-style: none
         display: inline-block
         a
@@ -283,7 +330,9 @@ p
           width: 100%
         .profile-one-photo
           padding: 1px
-
+.action-for-hide-on-small
+  @media (min-width : 818px) and (max-width : 865px)
+    display: none !important
 .content-block
   padding-bottom: 20px
 .title-block-wrap
