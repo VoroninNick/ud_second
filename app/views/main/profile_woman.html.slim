@@ -1,12 +1,14 @@
 .profile-page-wrap.profile-woman-page-wrap
-  .profile-header-wrap.blur style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
-    .row.medium-main
-      .columns.medium-10.medium-centered.large-12
-        .row
-          .columns.large-5.medium-5
+  .profile-header-wrap
+    .p-image.blur style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
+    .phl-wrap
+      .row.medium-main
+        .columns.medium-10.medium-centered.large-12
+          .row
+            .columns.large-5.medium-5
 
-          .columns.large-7.medium-7
-            p Hello, my name is
+            .columns.large-7.medium-7
+              .profile-header-label-name data-profile-name="Polina Dream"
   .profile-nav-actions-wrap
     .row.medium-main
       .columns.medium-10.medium-centered.large-12
@@ -20,7 +22,7 @@
                     .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
               .triangle-wrap
                 .triangle
-              .profile-b-status
+              .profile-b-status.remove-from-favorites
                 .title-head.notification-wrap
                   .columns
                     .p-title
@@ -48,30 +50,38 @@
                                       option value="favotites_first" Favotites first
                                   .clearfix
           .columns.large-7.medium-7
-            nav
-              li
-                a
-                  = image_tag "UD-introduction-letter.png"
-              li
-                a
-                  = image_tag "UD-mail-box.png"
-              li
-                a
-                  = image_tag "UD-logo-live-chat-p.png"
-              li
-                a
-                  = image_tag "UD-cam-share.png"
-              li
-                a
-                  = image_tag "UD-gift.png"
-              li
-                a
-                  = image_tag "UD-intimacy.png"
+            .row
+              .columns
+                .profile-nav-title-wrap
+                  .profile-nav-title
+                    h4 Hello, my name is
+                    h3 Poline Dream
+            .row
+              .columns
+                nav
+                  li
+                    a data-title-action="Profile review"
+                      = image_tag "UD-introduction-letter.png"
+                  li
+                    a data-title-action="Send email"
+                      = image_tag "UD-mail-box.png"
+                  li
+                    a data-title-action="Live chat"
+                      = image_tag "UD-logo-live-chat-p.png"
+                  li
+                    a data-title-action="Cam share"
+                      = image_tag "UD-cam-share.png"
+                  li
+                    a data-title-action="Send a gift"
+                      = image_tag "UD-gift.png"
+                  li
+                    a
+                      = image_tag "UD-intimacy.png"
   .profile-content-wrap
     .row.medium-main
       .columns.medium-10.medium-centered.large-12
         .row
-          .columns.large-5.medium-5.white-grey
+          .profile-columns.columns.large-5.medium-5.white-grey
             .p-account-validate-status
               |Account is not validated yet!
             .media-content-block-wrap
@@ -88,26 +98,35 @@
                   |)
               .content
                 .row.collapse
-                  .profile-one-photo.columns.large-4.medium-4
+                  .profile-one-photo.columns.large-4.medium-4.small-4
                     a
                       .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
-                  .profile-one-photo.columns.large-4.medium-4
+                  .profile-one-photo.columns.large-4.medium-4.small-4
                     a
                       .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
-                  .profile-one-photo.columns.large-4.medium-4
+                  .profile-one-photo.columns.large-4.medium-4.small-4
                     a
                       .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
-                  .profile-one-photo.columns.large-4.medium-4
+                  .profile-one-photo.columns.large-4.medium-4.small-4
                     a
                       .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
-                  .profile-one-photo.columns.large-4.medium-4.end
+                  .profile-one-photo.columns.large-4.medium-4.small-4
                     a
                       .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
-            .row
-              .columns
-                a.more Show more
+                  .profile-one-photo.columns.large-4.medium-4.small-4
+                    a
+                      .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
+                  .profile-one-photo.columns.large-4.medium-4.small-4
+                    a
+                      .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
+                  .profile-one-photo.columns.large-4.medium-4.small-4
+                    a
+                      .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
+                  .profile-one-photo.columns.large-4.medium-4.small-4
+                    a
+                      .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
 
-          .columns.large-7.medium-7
+          .profile-columns.columns.large-7.medium-7
             .row.profile-more-info
               .columns.large-6.medium-6.small-6
                 .row

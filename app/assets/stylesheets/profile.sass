@@ -16,16 +16,84 @@ p
   padding-left: 0.9375rem
   margin-top: 1px
   margin-bottom: 9px
+.profile-nav-title-wrap
+  position: absolute
+  height: 120px
+  left: 0
+  right: 0
+  top: -130px
+  @media (min-width : 0) and (max-width : 818px)
+    position: static
+    height: auto
+  .profile-nav-title
+    width: 100%
+    height: 100%
+    position: relative
+    h4, h3
+      color: #fff
+      font:
+        family: "Fira Sans", sans-serif
+      margin: 0
+    h4
+      font:
+        size: rem-calc(24.28)
+        weight: 300
+      line-height: rem-calc(29.14)
+    h3
+      font:
+        size: rem-calc(60)
+        weight: 400
+      line-height: rem-calc(72)
+    @media (min-width : 0) and (max-width : 818px)
+      h4
+        font:
+          size: rem-calc(16)
+          weight: 200
+        line-height: rem-calc(19.2)
+      h3
+        font:
+          size: rem-calc(36)
+        line-height: rem-calc(43.2)
+.profile-columns
+  @media (min-width : 0) and (max-width : 818px)
+    width: 100%
+.profile-header-label-name
+  height: 500px
+  position: relative
+  //background: yellow
+  &:before
+    position: absolute
+    content: attr(data-profile-name)
+    left: -40px
+    bottom: -110px
+    font:
+      family: 'dearjoe_1_msregular'
+      size: 12.5625rem
+      weight: 600
+    color: #EDF0F1
+    opacity: .25
+    white-space: nowrap
 .profile-page-wrap
   .profile-header-wrap
     height: 510px
     margin-top: -120px
-    -webkit-background-size: cover !important
-    -moz-background-size: cover !important
-    -o-background-size: cover !important
-    background-size: cover !important
     position: relative
     top: 10px
+    .p-image
+      height: 100%
+      width: 100%
+      -webkit-background-size: cover !important
+      -moz-background-size: cover !important
+      -o-background-size: cover !important
+      background-size: cover !important
+    @media (min-width : 0) and (max-width : 818px)
+      display: none
+    .phl-wrap
+      position: absolute
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
   .image
     max-width: 100%
     width: 100%
@@ -41,6 +109,28 @@ p
     height: 130px
     background-color: #2E2E36
     position: relative
+    @media (min-width : 0) and (max-width : 818px)
+      height: auto
+      padding: 35px 0
+      .main-profile-pictures-footer
+        height: auto!important
+        top: 0 !important
+        .main-profile-pictures-wrap
+          position: static
+          height: auto
+          .main-profile-pictures-inner
+            height: auto
+            position: static
+            .black-opacity-layer
+              display: none
+            .main-profile-pictures
+              position: static
+            .image
+              position: static
+        .profile-b-status
+          bottom: 0
+      .triangle-wrap
+        display: none
     .main-profile-pictures-footer
       position: relative
       top: 15px
@@ -94,24 +184,32 @@ p
       position: absolute
       bottom: 25px
       z-index: 2
+      &.remove-from-favorites
+        .p-title:before
+          left: 80px
+        svg
+          display: block
       .p-title
         width: 100%
         position: relative
-        top: 10px
+        top: 15px
         padding-left: 29px
         &:before
           content: 'online'
           position: absolute
-          left: 80px
-          line-height: rem-calc(44)
+          left: 29px
+          line-height: rem-calc(34)
           font:
             size: rem-calc(40)
             family: 'Fira Sans', sans-serif
-            weight: 300
+            weight: 500
           text-transform: uppercase
           color: #EDF0F1
           letter-spacing: .02rem
+          @media (min-width : 0) and (max-width : 818px)
+            display: none
       svg
+        display: none
         width: 38px
         height: 100%
         path
@@ -137,6 +235,24 @@ p
           position: relative
           height: 130px
           width: 100%
+          @media (min-width : 0) and (max-width : 818px)
+            height: 100px
+            img
+              top: 37% !important
+              left: 8px
+            &:before
+              display: inline-block
+              content: attr(data-title-action)
+              position: absolute
+              bottom: 5px
+              font:
+                size: rem-calc(14)
+                weight: 200
+                family: "Fira Sans", sans-serif
+              line-height: rem-calc(16.8)
+              color: #EDF0F1
+              //white-space: nowrap
+              text-align: center
           img
             +my_vertical_align
               position: absolute
@@ -157,12 +273,14 @@ p
         b
           font:
             size: rem-calc(20)
-            weight: 400
+            weight: 500
           line-height: rem-calc(38)
           color: #2E3E51
           text-transform: uppercase
       .content
         margin-bottom: 9px
+        img
+          width: 100%
         .profile-one-photo
           padding: 1px
 
