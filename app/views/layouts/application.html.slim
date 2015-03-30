@@ -165,3 +165,70 @@ body
                 |© UkrainianDiamonds 2015
     a.scrollToTop
       = image_tag "UD-icon-arrow up.svg"
+
+  #YourIntroductionLetter.reveal-modal data-reveal=""
+    .modal-wrap
+      .modal-header-wrap
+        h3 your introduction letter
+        a.close-reveal-modal
+      .modal-content-wrap.your-introduction-letter
+        .row
+          .columns.large-2.medium-2.small-3.about-me-wrap
+            .row
+              .columns
+                .image-wrap
+                  .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+            .row
+              .columns.text-center
+                p me
+          .columns.large-10.medium-10.small-9
+            .row
+              .columns
+                h3 Hello, my name is Gregory, nice to meet you Galina
+                p You are the most beautiful woman I have ever seen. Your hair, your eyes, your lips, your body that you haven't grown into, the way you walk, smile, laugh, the way your cheeks drop when you're mad or upset, the way you drag your feet when you're tired. Every single thing about you is beautiful.
+              .columns
+
+                a.modal-link.m-send.right.secondary data-reveal-id="YourIntroductionLetterSend" href="#" SEND
+                a.modal-link.m-edit.right.secondary data-reveal-id="YourIntroductionLetterEdit" href="#" Edit
+
+  #YourIntroductionLetterEdit.reveal-modal data-reveal=""
+    .modal-wrap
+      .modal-header-wrap
+        h3 compose your introduction letter
+        a.close-reveal-modal
+      .modal-content-wrap.your-introduction-letter
+        .row
+          .columns
+            form
+              .input
+                label Title or greeting field (29/1000)
+                input placeholder="Hello, my name is Gregory, nice to meet you [girl’s name]"
+              .input
+                label Content text field (104/1000)
+                textarea rows="5" placeholder="[girl’s name], You are the most beautiful woman I have ever seen. Your hair, your eyes, your lips, your body that you haven't grown into, the way you walk, smile, laugh, the way your cheeks drop when you're mad or upset, the way you drag your feet when you're tired. Every single thing about you is beautiful."
+
+        .row
+          .columns
+            a.modal-link.m-send.right data-reveal-id="YourIntroductionLetterSend" href="#" Save letter
+            a.browse-file.right
+              = embedded_svg "UD-icon-add files.svg"
+
+  #YourIntroductionLetterSend.reveal-modal data-reveal=""
+    .modal-wrap
+      .modal-header-wrap
+
+        a.close-reveal-modal
+      .modal-content-wrap.your-introduction-letter
+        .row.text-center
+          .columns
+            .row
+              .columns
+                h3 Your introduction letter was successfully sent
+                p Galina has recived you introduction letter, and will answer you as soon as possible.
+            .row
+              .columns
+                a.close-reveal-modal.modal-link.m-send Ok, Thank you
+      .modal-footer-wrap
+        .row.text-center
+          .columns
+            p This introduction letter was free according to your current membership plan. You have 14 free introduction letters left.

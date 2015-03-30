@@ -40,6 +40,7 @@ $(window).scroll (event) ->
 
 
 $(document).ready ->
+#  $('#YourIntroductionLetterSend').foundation('reveal', 'open')
 
 #  init index page tabs wooman
   $('.favorites-nav li').click ->
