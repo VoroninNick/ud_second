@@ -35,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.coffee" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/main.coffee">
+      <file leaf-file-name="_header.html.slim" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/partials/_header.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.252588" vertical-offset="487" max-vertical-offset="3247">
-              <caret line="43" column="3" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.31911263" vertical-offset="17" max-vertical-offset="646">
+              <caret line="12" column="95" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -75,12 +75,12 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/partials/_main_block.html.slim" />
         <option value="$PROJECT_DIR$/app/views/main/favorites.html.slim" />
-        <option value="$PROJECT_DIR$/app/views/partials/_header.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/main.sass.erb" />
         <option value="$PROJECT_DIR$/app/views/main/profile_woman.html.slim" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/profile.sass" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/main.coffee" />
+        <option value="$PROJECT_DIR$/app/views/partials/_header.html.slim" />
       </list>
     </option>
   </component>
@@ -488,7 +488,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3830645" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3830645" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -6476,48 +6476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/_header.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4047619" vertical-offset="0" max-vertical-offset="966">
-          <caret line="23" column="106" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="106" />
-          <folding>
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder=".header-navigation" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="section" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="li.search" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="=image_tag &quot;UD-icon-search.svg&quot;" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder=".search-input-wrap" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder=".search-input" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="form" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder=".input" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="input type=&quot;text&quot; placeholder=&quot;name, user id or any other search girl&quot;" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder=".form-action" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="button SEARCH" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="li.notification.notification-wrap" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="a.notification-link" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="div" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="=image_tag &quot;UD-icon-notifications.svg&quot;" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder=".round-count data-count=&quot;28&quot;" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="=render partial: &quot;partials/notifications&quot;" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="li.credits" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="div 2999" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="li.profile-avatar.notification-wrap" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="a.notification-link" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;user_avatar_default.png&quot;)}')no-repeat center center;&quot;" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="=render partial: &quot;partials/user_profile&quot;" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="li.profile-info.hide-for-small-only" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="div" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="p welcome back," />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="strong Gregory" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="a Sign out" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="li.ordered-list-button.show-for-small-only" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1427719538000" expanded="true" signature="-1:-1" placeholder="=image_tag &quot;UD-icon-diamond.svg&quot;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.sass.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.71118015" vertical-offset="10516" max-vertical-offset="31875">
@@ -7764,8 +7722,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/main.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.252588" vertical-offset="487" max-vertical-offset="3247">
-          <caret line="43" column="3" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.73549485" vertical-offset="487" max-vertical-offset="3247">
+          <caret line="54" column="109" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+          <folding>
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427733624000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/_header.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31911263" vertical-offset="17" max-vertical-offset="646">
+          <caret line="12" column="95" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
           <folding />
         </state>
       </provider>
