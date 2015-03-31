@@ -768,7 +768,7 @@ section.ordered-list
   li
     list-style: none
     border-bottom: 1px solid #BEC3C7
-    a
+    a, .one-item-wrap
       display: block
       height: 107px
       border-bottom: 1px solid #fff
@@ -857,7 +857,106 @@ section.ordered-list
             weight: 300
           line-height: rem-calc(14.4)
           color: #BEC3C7
+  .ol-start-chat
+    .one-item-wrap
+      height: auto
+      position: relative
+    .ol-start-chat-wrap
+      padding-top: 15px
+      //position: absolute
+      //left: 0
+      //top: 0
+      //right: 0
+      //bottom: 0
+      background: #EDF0F1
+      padding-bottom: 10px
+      display: inline-block
+      .avatar
+        &:before
+          display: none
+      b
+        font:
+          size: rem-calc(18)
+          weight: 400
+        line-height: rem-calc(21)
+        color: #2E3E51
+    .ol-start-chart-footer
+      p
+        font:
+          size: rem-calc(12)
+          weight: 300
+          family: "Fira Sans", sans-serif
+        color: #2E3E51
+        line-height: rem-calc(14.4)
+        padding-top: 7px
+        padding-left: 12px
+        a
+          color: #D03F4A
+          height: auto
+          border: none
+          display: inline-block
 
+    .ud-tool-tip
+      padding: 11px
+      background-color: #D7EAF8
+      border-radius: 5px
+      -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
+      -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
+      box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
+      margin-bottom: 15px
+      margin-top: 15px
+      position: relative
+      &:before
+        display: block
+        content: ""
+        position: absolute
+        top: -11px
+        left: 20px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 0 11px 11px 11px
+        border-color: transparent transparent #D7EAF8 transparent
+        z-index: 1
+      &:after
+        display: block
+        content: ""
+        position: absolute
+        top: -11px
+        left: 21px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 0 11px 11px 11px
+        border-color: transparent transparent rgba(0, 0, 0, 0.35) transparent
+      p
+        font:
+          size: rem-calc(14)
+          weight: 300
+          family: "Fira Sans", sans-serif
+        line-height: rem-calc(18)
+        color: #404049
+    a.ud-button
+      font:
+        size: rem-calc(18)
+        weight: 500
+      line-height: rem-calc(35)
+      text-transform: uppercase
+      color: #EDF0F1
+      height: 35px !important
+      width: 100%
+      background-color: #D03F4A
+      text-align: center
+.special-text-shadow
+  text-shadow: 1px 1px 1px #9b3036, 2px 2px 1px #9e3138, 3px 3px 1px #9e3138, 4px 4px 1px #a13239, 5px 5px 1px #a8343c, 6px 6px 1px #a9343d, 7px 7px 1px #ae353e, 8px 8px 1px #b13740, 9px 9px 1px #b63842, 10px 10px 1px #bb3944, 11px 11px 1px #bc3a45, 12px 12px 1px #c03b46, 13px 13px 1px #c03b46, 14px 14px 1px #bf3b46, 15px 15px 1px #c03b47, 16px 16px 1px #c23c47, 17px 17px 1px #c23c47, 18px 18px 1px #c33c48, 19px 19px 1px #c33c48, 20px 20px 1px #c33c48, 21px 21px 1px #c33c48, 22px 22px 1px #c33c48
+  overflow: hidden
+.fo-custom-row
+  width: 100%
+  float: left
+
+.admin-menu
+  header, .main-menu-wrap
+    top: 30px
 .main-block
   a.more
     font:
@@ -1056,6 +1155,8 @@ li.credits
             transform: uppercase
             align: center
           background-color: #D03F4A
+          text-shadow: 1px 1px 1px #9b3036, 2px 2px 1px #9e3138, 3px 3px 1px #9e3138, 4px 4px 1px #a13239, 5px 5px 1px #a8343c, 6px 6px 1px #a9343d, 7px 7px 1px #ae353e, 8px 8px 1px #b13740, 9px 9px 1px #b63842, 10px 10px 1px #bb3944, 11px 11px 1px #bc3a45, 12px 12px 1px #c03b46, 13px 13px 1px #c03b46, 14px 14px 1px #bf3b46, 15px 15px 1px #c03b47, 16px 16px 1px #c23c47, 17px 17px 1px #c23c47, 18px 18px 1px #c33c48, 19px 19px 1px #c33c48, 20px 20px 1px #c33c48, 21px 21px 1px #c33c48, 22px 22px 1px #c33c48
+          overflow: hidden
 .close-menu
   display: none
 .mobile-menu-button
@@ -1215,10 +1316,10 @@ li.credits
         border-width: 0 0 15px 15px
         border-color: transparent transparent #96d03f transparent
   &.offline
-    .image
-      filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale") /* Firefox 10+, Firefox on Android */
-      filter: gray /* IE6-9 */
-      -webkit-filter: grayscale(100%) /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+    //.image
+    //  filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale") /* Firefox 10+, Firefox on Android */
+    //  filter: gray /* IE6-9 */
+    //  -webkit-filter: grayscale(100%) /* Chrome 19+, Safari 6+, Safari 6+ iOS */
     .information
       .info
         p
