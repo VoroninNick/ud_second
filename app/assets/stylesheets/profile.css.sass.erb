@@ -39,11 +39,17 @@ p
         size: rem-calc(24.28)
         weight: 300
       line-height: rem-calc(29.14)
+      @media (min-width : 0) and (max-width : 40em)
+        text-align: center
+        padding-top: 25px
     h3
       font:
         size: rem-calc(60)
         weight: 400
       line-height: rem-calc(72)
+      @media (min-width : 0) and (max-width : 40em)
+        text-align: center
+        padding-bottom: 10px
     @media (min-width : 0) and (max-width : 818px)
       h4
         font:
@@ -74,6 +80,8 @@ p
     opacity: .25
     white-space: nowrap
 .profile-page-wrap
+  .action-button
+    margin-right: 8px !important
   .profile-header-wrap
     height: 510px
     margin-top: -120px
@@ -312,6 +320,8 @@ p
       line-height: rem-calc(28)
       color: #58595B
     .media-content-block-wrap
+      &.photos-wrap
+        padding-bottom: 45px
       .header
         height: 38px
         background-color: #BEC3C7
@@ -319,11 +329,13 @@ p
         margin-bottom: 3px
         b
           font:
-            size: rem-calc(20)
+            size: 1.30313rem
             weight: 500
+            family: "Fira Sans", sans-serif
           line-height: rem-calc(38)
           color: #2E3E51
           text-transform: uppercase
+          letter-spacing: 0.02rem
       .content
         margin-bottom: 9px
         img
@@ -369,6 +381,7 @@ p
   .pmi-key
     font:
       size: rem-calc(12)
+      weight: 300
     color: #6D6E71
   .pmi-value
     font:
@@ -376,6 +389,7 @@ p
       size: rem-calc(20)
       weight: 300
     color: #FF6F70
+    padding-left: 0 !important
     img
       height: 20px
       margin-left: 10px
@@ -466,14 +480,37 @@ p
       margin: 0
       color: #2E3E51
       font:
-        size: rem-calc(21)
-        weight: 400
+        size: 1.30313rem
+        weight: 500
+        family: "Fira Sans", sans-serif
+      letter-spacing: 0.02rem
       line-height: rem-calc(38)
       text-transform: uppercase
   .modal-content-wrap
     padding: 25px 0 45px 0
     background-color: #EDF0F1
     &.your-introduction-letter
+      &.status-popup
+        padding-bottom: 25px
+        h3
+          color: #2E3E51
+          font-size: 1.30313rem
+          font-weight: 500
+          font-family: "Fira Sans", sans-serif
+          letter-spacing: 0.02rem
+          line-height: 2.375rem
+          text-transform: uppercase
+        .m-send
+          background: #D03F4A
+          color: #fff
+          margin-top: 20px
+      h3
+        font:
+          weight: 400
+          size: rem-calc(16)
+        line-height: 1.7rem
+        margin-top: 0
+        color: #2E3E51
       .send_to_girl_avatar
         width: 60px
         height: 60px
@@ -501,7 +538,12 @@ p
           color: #2E3E51
       .about-me-wrap
         p
-          margin: 8px 0 0 0
+          margin: 5px 0 0 0
+          font-weight: 400
+      .image-wrap
+        width: 87%
+        margin: 0 auto
+        margin-top: 5px
       .image
         max-width: 100%
         width: 100%
@@ -532,7 +574,7 @@ p
       a.modal-link
         font:
           size: rem-calc(18)
-          weight: 600
+          weight: 500
         color: #D03F4A
         text-transform: uppercase
         height: 35px
@@ -561,6 +603,12 @@ p
             position: absolute
             left: 0
             top: 0
+            font:
+              size: rem-calc(14)
+              weight: 300
+              family: "Fira Sans", sans-serif
+            line-height: rem-calc(16.8)
+            color: #BEC3C7
           a
             position: absolute
             top: 0
@@ -568,14 +616,11 @@ p
             font:
               size: rem-calc(14)
               weight: 300
+              family: "Fira Sans", sans-serif
             line-height: 16.8px
             color: #3598DB
             text-transform: lowercase
-        label
-          font:
-            size: rem-calc(14)
-          line-height: rem-calc(16.8)
-          color: #BEC3C7
+
         input, textarea
           font:
             family: "Fira Sans", sans-serif !important
@@ -600,6 +645,9 @@ p
         weight: 200
       line-height: rem-calc(16)
       color: #BEC3C7
+      width: 90%
+      margin: 0 auto
+      margin-bottom: 25px
 
 
 
