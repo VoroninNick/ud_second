@@ -728,6 +728,60 @@ ul.primary-menu
       display: none !important
     .title-small
       display: block !important
+    .one-item.hide
+      display: block !important
+      visibility: visible
+    .ol-start-chat-wrap
+      //@media (min-width : 40.063em) and (max-width : 1445px)
+      position: absolute
+      top: 0
+      left: -450px
+      width: 435px
+      height: 260px
+      -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
+      -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
+      box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
+      &:before
+        display: block
+        position: absolute
+        content: ''
+        top: 30px
+        right: -11px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 11px 0 11px 11px
+        border-color: transparent transparent transparent #EDF0F1
+      .avatar-column
+        width: 22%
+        p
+          text-align: center
+      .text-column
+        width: 78%
+      .fo-custom-row
+        margin-top: 20px
+        .columns
+          width: 100%
+      .ol-start-chart-footer
+        p
+          float: right
+          padding-right: 20px
+        .ud-button
+          width: 60%
+          float: right
+      .ud-tool-tip
+        margin-top: 0
+        &:before
+          top: 16px
+          left: -11px
+          border-width: 11px 11px 11px 0
+          border-color: transparent #D7EAF8 transparent transparent
+        &:after
+          top: 17px
+          left: -11px
+          border-width: 11px 11px 11px 0
+          border-color: transparent rgba(0, 0, 0, 0.35) transparent transparent
+
   .title-head
     h4
       padding-left: 35px
@@ -999,7 +1053,8 @@ section.ordered-list
         p
           font:
             size: rem-calc(12)
-          text-align: center
+          @media (min-width : 40.063em) and (max-width : 1445px)
+            text-align: center
     .ol-start-chart-footer
       p
         font:
