@@ -772,6 +772,98 @@ section.ordered-list
   li
     list-style: none
     border-bottom: 1px solid #BEC3C7
+    &.a-web-camera
+      .information
+        .title
+          position: relative
+          &:before
+            display: block
+            content: ''
+            background-image: url('<%=asset_path("UD-icon-camshare-green.svg")%>')
+            background-size: 100%
+            background-repeat: no-repeat
+            position: absolute
+            width: 17px
+            height: 14px
+            top: 2px
+            right: 0px
+      @media (min-width : 40.063em) and (max-width : 1445px)
+        .avatar
+          .image
+            &:before
+              display: block
+              content: ''
+              background-image: url('<%=asset_path("UD-icon-camshare-green.svg")%>')
+              background-size: 100%
+              background-repeat: no-repeat
+              position: absolute
+              width: 17px
+              height: 14px
+              top: 5px
+              right: 5px
+    &.a-web-camera
+      &.in-ud-chat
+        .information
+          .title
+            &:after
+              right: 30px
+    &.in-ud-chat
+      background-color: #DBDDDD
+      .information
+        .title
+          position: relative
+          &:after
+            display: block
+            content: ''
+            background-image: url('<%=asset_path("UD-icon-chat buble-notification.svg")%>')
+            background-size: 100%
+            background-repeat: no-repeat
+            position: absolute
+            width: 17px
+            height: 17px
+            top: 1px
+            right: 0px
+      @media (min-width : 40.063em) and (max-width : 1445px)
+        .avatar
+          .image
+            &:after
+              display: block
+              content: ''
+              background-image: url('<%=asset_path("UD-icon-chat buble-notification.svg")%>')
+              background-size: 100%
+              background-repeat: no-repeat
+              position: absolute
+              width: 17px
+              height: 17px
+              top: 24px
+              right: 5px
+    &.in-ud-video-chat
+      background-color: #FF6F70
+      .title
+        h4
+          color: #fff !important
+      .info
+        p
+          color: #fff !important
+      .about
+        p
+          color: #fff !important
+    &.received-a-letter
+      .avatar
+        &:after
+          display: block
+          content: ''
+          position: absolute
+          left: 0
+          top: 0
+          right: 0
+          bottom: 0
+          background-color: rgba(53, 152, 219, .8)
+          background-image: url('<%=asset_path("UD-icon-mail-white.svg")%>')
+          background-size: 70%
+          background-repeat: no-repeat
+          background-position: center
+
     a, .one-item-wrap
       display: block
       height: 107px
@@ -797,6 +889,7 @@ section.ordered-list
           line-height: rem-calc(16.8)
           color: #2E3E51
           padding-top: 3px
+
     .avatar
       width: 60px
       height: 60px

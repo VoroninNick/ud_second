@@ -48,6 +48,15 @@ $(document).ready ->
     else
       $wrapper.addClass('minimizate')
 
+# dismiss message on frendlie list
+  $('.ol-start-chart-footer a.dismiss').click ->
+    $wrapper = $(this).closest('.ol-start-chat')
+    $frendContainer = $wrapper.find('.one-item')
+    $thisContainer = $wrapper.find('.ol-start-chat-wrap')
+    $thisContainer.toggleClass('hide')
+    $frendContainer.toggleClass('hide')
+
+
 #  $('#SendEmail').foundation('reveal', 'open')
 
 #  init index page tabs wooman
