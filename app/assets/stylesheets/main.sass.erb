@@ -781,6 +781,50 @@ ul.primary-menu
           left: -11px
           border-width: 11px 11px 11px 0
           border-color: transparent rgba(0, 0, 0, 0.35) transparent transparent
+    section.ordered-list
+      li
+        .avatar
+          margin-top: 0
+        a
+          height: 88px
+        .title-small
+          h4
+            margin: 0
+        &.a-web-camera
+          .avatar
+            .image
+              &:before
+                display: block
+                content: ''
+                background-image: url('<%=asset_path("UD-icon-camshare-green.svg")%>')
+                background-size: 100%
+                background-repeat: no-repeat
+                position: absolute
+                width: 17px
+                height: 14px
+                top: 5px
+                right: 5px
+        &.a-web-camera
+          &.in-ud-chat
+          .avatar
+            .image
+              &:after
+                top: 24px !important
+        &.in-ud-chat
+          .avatar
+            .image
+              &:after
+                display: block
+                content: ''
+                background-image: url('<%=asset_path("UD-icon-chat buble-notification.svg")%>')
+                background-size: 100%
+                background-repeat: no-repeat
+                position: absolute
+                width: 17px
+                height: 17px
+                top: 5px
+                right: 5px
+
 
   .title-head
     h4
@@ -861,6 +905,12 @@ section.ordered-list
           .title
             &:after
               right: 30px
+        .avatar
+          .image
+            &:after
+              @media (min-width : 40.063em) and (max-width : 1445px)
+                top: 24px
+                right: 5px
     &.in-ud-chat
       background-color: #DBDDDD
       .information
@@ -889,7 +939,7 @@ section.ordered-list
               position: absolute
               width: 17px
               height: 17px
-              top: 24px
+              top: 5px
               right: 5px
     &.in-ud-video-chat
       background-color: #FF6F70
@@ -920,12 +970,12 @@ section.ordered-list
 
     a, .one-item-wrap
       display: block
-      height: 107px
+      height: 81px
       border-bottom: 1px solid #fff
       @media (min-width : 40.063em) and (max-width : 1445px)
-        height: 100px
+        height: 88px
     .one-item
-      padding-top: 14px
+      padding-top: 6px
       @media (min-width : 40.063em) and (max-width : 1445px)
         display: block !important
         visibility: visible
@@ -935,6 +985,8 @@ section.ordered-list
           display: block
           h4
             padding-top: 0
+            margin: 0
+            font-weight: 500
         h4
           text-align: center
           font:
@@ -982,6 +1034,7 @@ section.ordered-list
       float: left
       width: 75%
       padding-left: 0.9375rem
+      padding-top: 10px
       .title
         h4
           font:
@@ -1046,7 +1099,8 @@ section.ordered-list
       b
         font:
           size: rem-calc(18)
-          weight: 400
+          weight: 500
+          family: "Fira Sans", sans-serif
         line-height: rem-calc(21)
         color: #2E3E51
       .avatar-column
@@ -1137,6 +1191,7 @@ section.ordered-list
       font:
         size: rem-calc(18)
         weight: 500
+        family: "Fira Sans", sans-serif
       line-height: rem-calc(35)
       text-transform: uppercase
       color: #EDF0F1
@@ -1144,6 +1199,7 @@ section.ordered-list
       width: 100%
       background-color: #D03F4A
       text-align: center
+      letter-spacing: 0.03rem
 .special-text-shadow
   text-shadow: 1px 1px 1px #9b3036, 2px 2px 1px #9e3138, 3px 3px 1px #9e3138, 4px 4px 1px #a13239, 5px 5px 1px #a8343c, 6px 6px 1px #a9343d, 7px 7px 1px #ae353e, 8px 8px 1px #b13740, 9px 9px 1px #b63842, 10px 10px 1px #bb3944, 11px 11px 1px #bc3a45, 12px 12px 1px #c03b46, 13px 13px 1px #c03b46, 14px 14px 1px #bf3b46, 15px 15px 1px #c03b47, 16px 16px 1px #c23c47, 17px 17px 1px #c23c47, 18px 18px 1px #c33c48, 19px 19px 1px #c33c48, 20px 20px 1px #c33c48, 21px 21px 1px #c33c48, 22px 22px 1px #c33c48
   overflow: hidden
@@ -1731,7 +1787,13 @@ li.credits
     text:
       transform: uppercase
       align: center
-
+.no-padding-left
+  padding-left: 0
+.no-padding-left-media
+  @media (min-width : 1445px) and (max-width : 0)
+    padding-left: 0
+.no-padding-right
+  padding-right: 0
 .notifications-wrap
   background-color: #fff !important
   min-width: 353px
