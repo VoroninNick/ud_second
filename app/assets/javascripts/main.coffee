@@ -47,6 +47,12 @@ $(document).ready ->
       $wrapper.removeClass('minimizate')
     else
       $wrapper.addClass('minimizate')
+  $('.ordered-list-wrap img.diamond-logo-mobile').click ->
+    $wrapper = $(this).closest('.ordered-list-wrap')
+    if $wrapper.hasClass('maxinmizate')
+      $wrapper.removeClass('maxinmizate')
+    else
+      $wrapper.addClass('maxinmizate')
 
 # dismiss message on frendlie list
   $('.ol-start-chart-footer a.dismiss').click ->
