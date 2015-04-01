@@ -40,6 +40,14 @@ $(window).scroll (event) ->
 
 
 $(document).ready ->
+# binder for frends list minimizate maximizate
+  $('.ordered-list-wrap img.diamond-logo').click ->
+    $wrapper = $(this).closest('.ordered-list-wrap')
+    if $wrapper.hasClass('minimizate')
+      $wrapper.removeClass('minimizate')
+    else
+      $wrapper.addClass('minimizate')
+
 #  $('#SendEmail').foundation('reveal', 'open')
 
 #  init index page tabs wooman
