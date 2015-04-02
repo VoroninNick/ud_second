@@ -40,6 +40,31 @@ $(window).scroll (event) ->
 
 
 $(document).ready ->
+  $('a.ud-start-cam').click ->
+    $wrapper = $(this).closest('.video-chat-window')
+    $welcome = $wrapper.find('.vcw-welcome')
+    $wcw = $wrapper.find('.vcw-inner')
+    if $wcw.hasClass('hide')
+      $wcw.removeClass('hide')
+      $welcome.addClass('hide')
+#  live chat toombler
+  $('.horizontal-layout-button').click ->
+    $wrapper = $(this).closest('.main-block-wrap')
+    $tumbler = $('.live-chat-tumblers .tumbler')
+    $tumbler.removeClass('active')
+    $(this).addClass('active')
+    if $wrapper.hasClass('vertical-layout')
+      $wrapper.removeClass('vertical-layout')
+    $wrapper.addClass('horizontal-layout')
+  $('.vertical-layout-button').click ->
+    $wrapper = $(this).closest('.main-block-wrap')
+    $tumbler = $('.live-chat-tumblers .tumbler')
+    $tumbler.removeClass('active')
+    $(this).addClass('active')
+    if $wrapper.hasClass('horizontal-layout')
+      $wrapper.removeClass('horizontal-layout')
+    $wrapper.addClass('vertical-layout')
+
 # binder for frends list minimizate maximizate
   $('.ordered-list-wrap img.diamond-logo').click ->
     $wrapper = $(this).closest('.ordered-list-wrap')

@@ -1,17 +1,268 @@
-.main-block-wrap.main-block
+.main-block-wrap.main-block.horizontal-layout
+  .black-layer-absolute
   .row.medium-main
     .columns.medium-10.medium-centered.large-12
       .row
         .columns.large-2.medium-2.right
           .live-chat-tumblers
-            .tumbler.horizontal-layout
-            .tumbler.vertical-layout
+            .tumbler.horizontal-layout-button.active
+              =embedded_svg "UD-icon-horisontal mode.svg"
+            .tumbler.vertical-layout-button
+              =embedded_svg "UD-icon-vertical mode.svg"
   .row.medium-main
     .columns.medium-10.medium-centered.large-12
       .row
-        .columns.large-3
-          div style="height: 1000px; background: #EDF0F1; width: 100%;"
+        .columns.large-3.lch-people-online
+          .lch-people-online-wrap.best-match-wrap
+            .title-head.grey.notification-wrap
+              .columns
+                .wrap
+                  h4
+                    /span
+                    /  |213
+                    |ladies on-line
+                  .items-menu.notification-link
+                    =image_tag "UD-icon-sub menu.svg"
+                    .notification-container
+                      .menu
+                        .group
+                          .title
+                            strong Display options:
+                          .options
+                            .option
+                              .label
+                                .icon
+                                  = embedded_svg "UD-icon-sort.svg"
+                                span
+                                  |Sort by
+                              .input
+                                select.sort-by
+                                  option value="age_increase" Age increase
+                                  option value="age_decrease" Age decrease
+                                  option value="alfabet" Alfabet
+                                  option value="recent_activity" Recent activity
+                                  option value="favotites_first" Favotites first
+                              .clearfix
+            /div style="height: 1000px; background: #EDF0F1; width: 100%;"
+            .row
+              .columns
+                .columns.large-10.large-centered.your-best-match-wrap
+                  .preview-profile-wrap
+                    .preview-profile.the-best-match
+                      a href=profile_girl_path
+                        .image style="background: url('#{asset_path("girl_12.jpg")}')no-repeat center center;"
+                      .information-wrap
+                        .triangle-wrap
+                          .triangle
+                        .information
+                          .title
+                            h4 Zlata
+                          .info
+                            p
+                              |21
+                              span
+                                |&nbsp;|&nbsp;
+                              |Lviv
+                          .actions
+                            .action-button.red-fill
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-heart.svg"
+                            .action-button
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-introduction letter.svg"
+                            .action-button
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-mail.svg"
+                            .action-button
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-chat buble.svg"
+                            .action-button
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-camshare.svg"
+                        .p-status
+                .columns.large-10.large-centered.your-best-match-wrap
+                  .preview-profile-wrap
+                    .preview-profile.the-best-match
+                      a href=profile_girl_path
+                        .image style="background: url('#{asset_path("girl_21.jpg")}')no-repeat center center;"
+                      .information-wrap
+                        .triangle-wrap
+                          .triangle
+                        .information
+                          .title
+                            h4 Zlata
+                          .info
+                            p
+                              |21
+                              span
+                                |&nbsp;|&nbsp;
+                              |Lviv
+                          .actions
+                            .action-button.red-fill
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-heart.svg"
+                            .action-button
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-introduction letter.svg"
+                            .action-button
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-mail.svg"
+                            .action-button
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-chat buble.svg"
+                            .action-button
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-camshare.svg"
+                        .p-status
+                .columns.large-10.large-centered.your-best-match-wrap
+                  .preview-profile-wrap
+                    .preview-profile.the-best-match
+                      a href=profile_girl_path
+                        .image style="background: url('#{asset_path("girl_22.jpg")}')no-repeat center center;"
+                      .information-wrap
+                        .triangle-wrap
+                          .triangle
+                        .information
+                          .title
+                            h4 Zlata
+                          .info
+                            p
+                              |21
+                              span
+                                |&nbsp;|&nbsp;
+                              |Lviv
+                          .actions
+                            .action-button.red-fill
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-heart.svg"
+                            .action-button
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-introduction letter.svg"
+                            .action-button
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-mail.svg"
+                            .action-button
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-chat buble.svg"
+                            .action-button
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-camshare.svg"
+                        .p-status
+                .columns.large-10.large-centered.your-best-match-wrap
+                  .preview-profile-wrap
+                    .preview-profile.the-best-match
+                      a href=profile_girl_path
+                        .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
+                      .information-wrap
+                        .triangle-wrap
+                          .triangle
+                        .information
+                          .title
+                            h4 Zlata
+                          .info
+                            p
+                              |21
+                              span
+                                |&nbsp;|&nbsp;
+                              |Lviv
+                          .actions
+                            .action-button.red-fill
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-heart.svg"
+                            .action-button
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-introduction letter.svg"
+                            .action-button
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-mail.svg"
+                            .action-button
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-chat buble.svg"
+                            .action-button
+                              a href="" title="test"
+                                =embedded_svg "UD-icon-camshare.svg"
+                        .p-status
+
         .columns.large-9
-          div style="height: 245px; width: 100%; background: #2E2E36;"
-        .columns.large-12
-          div style="width: 100%; height: 450px; background: yellow;"
+          .row
+            .columns.live-chat-custom-column.video-chat-column
+              .video-chat-wrap
+                .row
+                  .columns.vch-column
+                    .video-chat-window
+                      .vcw-welcome
+                        .row
+                          .columns.large-5
+                            .row
+                              .columns
+                                .avatar
+                                  .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+                            .row
+                              .columns.text-center
+                                .about-people
+                                  b You
+                          .columns.large-7.no-padding-left
+                            a.ud-button.special-text-shadow.ud-start-cam start camshare
+                            p Each minute of chat with CamShare billed at 4 Credits
+                      .vcw-inner.hide
+                        .image style="background: url('#{asset_path("man_11a.jpg")}')no-repeat center center;"
+                        .avatar
+                          .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+                  .columns.vch-column
+                    .video-chat-window
+                      .vcw-welcome.hide
+                        .row
+                          .columns.large-5
+                            .row
+                              .columns
+                                .avatar
+                                  .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+                            .row
+                              .columns.text-center
+                                .about-people
+                                  b
+                                    |Olena
+                                    = embedded_svg "UD-icon-camshare-green.svg"
+                          .columns.large-7.no-padding-left
+                            a.ud-button.special-text-shadow.ud-start-cam see her webcam
+                            p Each minute of chat with video billed at 2 Credits
+                      .vcw-inner
+                        .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+                        .avatar
+                          .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+                        .vcw-navigation-wrap
+                          .triangle-wrap
+                            .triangle
+                          .vcw-navigation
+            .columns.live-chat-custom-column.text-chat-column
+              .text-chat-wrap
+                .title-head.grey.notification-wrap
+                  .columns
+                    .wrap
+                      h4 Live chat: You and Olena
+                      .items-menu.notification-link
+                        =image_tag "UD-icon-sub menu.svg"
+                        .notification-container
+                          .menu
+                            .group
+                              .title
+                                strong Display options:
+                              .options
+                                .option
+                                  .label
+                                    .icon
+                                      = embedded_svg "UD-icon-sort.svg"
+                                    span
+                                      |Sort by
+                                  .input
+                                    select.sort-by
+                                      option value="age_increase" Age increase
+                                      option value="age_decrease" Age decrease
+                                      option value="alfabet" Alfabet
+                                      option value="recent_activity" Recent activity
+                                      option value="favotites_first" Favotites first
+                                  .clearfix
+                .text-chat-inner
+                  .text-chat-view-container
+                  .text-chat-input-container
+
