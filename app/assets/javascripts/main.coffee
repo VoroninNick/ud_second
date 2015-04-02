@@ -40,6 +40,7 @@ $(window).scroll (event) ->
 
 
 $(document).ready ->
+#  binder for strat web cam chat
   $('a.ud-start-cam').click ->
     $wrapper = $(this).closest('.video-chat-window')
     $welcome = $wrapper.find('.vcw-welcome')
@@ -47,6 +48,16 @@ $(document).ready ->
     if $wcw.hasClass('hide')
       $wcw.removeClass('hide')
       $welcome.addClass('hide')
+#  stop web cam chat
+  $('a.ud-stop-cam').click ->
+    $wrapper = $(this).closest('.video-chat-window')
+    $welcome = $wrapper.find('.vcw-welcome')
+    $wcw = $wrapper.find('.vcw-inner')
+    if $welcome.hasClass('hide')
+      $welcome.removeClass('hide')
+      $wcw.addClass('hide')
+
+
 #  live chat toombler
   $('.horizontal-layout-button').click ->
     $wrapper = $(this).closest('.main-block-wrap')
