@@ -66,10 +66,18 @@ $(document).ready ->
     $wrapper.removeClass('live-cam-full-mode')
 
 # bimder stop cam in full mode
-  $('.live-cam-full-mode a.ud-stop-cam').click (e) ->
-    e.preventDefault()
-    alert "prevent default"
-
+#  $('.live-cam-full-mode a.ud-stop-cam').click (e) ->
+#    e.preventDefault()
+#    alert "prevent default"
+  $('.live-cam-full-mode a.ud-minimize-stop-cam').click ->
+    $mainWrapper = $(this).closest('.main-block-wrap')
+    $mainWrapper.removeClass('live-cam-full-mode')
+    $wrapper = $(this).closest('.video-chat-window')
+    $welcome = $wrapper.find('.vcw-welcome')
+    $wcw = $wrapper.find('.vcw-inner')
+    if $welcome.hasClass('hide')
+      $welcome.removeClass('hide')
+      $wcw.addClass('hide')
 
 
 
