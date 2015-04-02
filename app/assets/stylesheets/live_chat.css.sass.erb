@@ -36,6 +36,35 @@
     content: ''
     height: 245px
     background: transparent
+.live-cam-full-mode
+  .black-layer-absolute
+    &:before
+      height: 500px
+  .video-chat-wrap
+    height: 500px !important
+  .column-live-chat-me
+    display: none
+  .column-live-chat-enemy
+    width: 100% !important
+    .video-chat-window
+      height: 460px !important
+      .vcw-inner
+        .avatar
+          &.avatar-me
+            left: 0
+          &.avatar-enemy
+            left: 53px
+  a.ud-fullscreen-mode
+    display: none !important
+  a.ud-minimize-mode
+    width: 46px
+    height: 38px
+    display: inline-block !important
+    svg
+      width: 100%
+      height: 100%
+      path, polygon
+        fill: #fff
 
 .horizontal-layout
   position: relative
@@ -215,7 +244,7 @@
               z-index: 11
               &:before, &:after
                 right: 8px
-                width: 360px
+                width: 1000px
               &:before
                 content: ""
                 position: absolute
@@ -229,12 +258,14 @@
                 z-index: 11
                 height: 8px
                 top: -8px
-                right: -368px
+                left: 8px
                 background: #2E2E36
           .vcw-navigation
             height: 47px
             width: 100%
             background-color: rgba(46, 46, 54, .8)
+            a.ud-minimize-mode
+              display: none
             p
               font:
                 size: rem-calc(10)

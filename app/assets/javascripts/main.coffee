@@ -56,6 +56,22 @@ $(document).ready ->
     if $welcome.hasClass('hide')
       $welcome.removeClass('hide')
       $wcw.addClass('hide')
+# binder for web cam chat fullmode
+  $('a.ud-fullscreen-mode').click ->
+    $wrapper = $(this).closest('.main-block-wrap')
+    $wrapper.addClass('live-cam-full-mode')
+# minimize
+  $('a.ud-minimize-mode').click ->
+    $wrapper = $(this).closest('.main-block-wrap')
+    $wrapper.removeClass('live-cam-full-mode')
+
+# bimder stop cam in full mode
+  $('.live-cam-full-mode a.ud-stop-cam').click (e) ->
+    e.preventDefault()
+    alert "prevent default"
+
+
+
 
 
 #  live chat toombler

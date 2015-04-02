@@ -1,4 +1,4 @@
-.main-block-wrap.main-block.horizontal-layout
+.main-block-wrap.main-block.horizontal-layout.live-cam-full-mode
   .black-layer-absolute
   .row.medium-main
     .columns.medium-10.medium-centered.large-12
@@ -188,7 +188,7 @@
             .columns.live-chat-custom-column.video-chat-column
               .video-chat-wrap
                 .row
-                  .columns.vch-column
+                  .columns.vch-column.column-live-chat-me
                     .video-chat-window
                       .vcw-welcome
                         .row
@@ -218,7 +218,7 @@
                                   p Each minute of chat with video billed at 2 Credits
                                 .columns.large-4.medium-4.small-4
                                   a.ud-button.special-text-shadow.ud-stop-cam stop
-                  .columns.vch-column
+                  .columns.vch-column.column-live-chat-enemy
                     .video-chat-window
                       .vcw-welcome.hide
                         .row
@@ -238,7 +238,9 @@
                             p Each minute of chat with video billed at 2 Credits
                       .vcw-inner
                         .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
-                        .avatar
+                        .avatar.avatar-me
+                          .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+                        .avatar.avatar-enemy
                           .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
                         .vcw-navigation-wrap
                           .triangle-wrap
@@ -253,6 +255,8 @@
                                 .columns.large-3.medium-3.small-3
                                   a.ud-fullscreen-mode
                                     =embedded_svg "UD-icon-fullscreen.svg"
+                                  a.ud-minimize-mode
+                                    =embedded_svg "UD-icon-minimize.svg"
             .columns.live-chat-custom-column.text-chat-column
               .text-chat-wrap
                 .title-head.grey.notification-wrap
