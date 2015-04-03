@@ -95,6 +95,8 @@
     width: 30%
     float: right
     padding-left: 0
+    .column-live-chat-me
+      margin-bottom: 35px
     .video-chat-wrap
       min-height: 670px
     .video-chat-wrap
@@ -220,9 +222,10 @@
       .date-time-wrap
         display: inline-block
         float: left
-        margin-top: 5px
-        margin-right: 10px
-        margin-bottom: 5px
+        height: 1.1875rem
+        overflow: hidden
+        margin: 0
+        padding: 4px 8px 0 0
         p
           color: #BEC3C7
           font:
@@ -267,7 +270,6 @@
     left: 0
     right: 0
     bottom: 0
-    border-top: 1px solid #BEC3C7
     &:before
       display: block
       content: ''
@@ -277,6 +279,15 @@
       right: 0
       position: absolute
       background-color: #fff
+    &:after
+      display: block
+      content: ''
+      height: 1px
+      left: 0
+      top: 0px
+      right: 0
+      position: absolute
+      background-color: #BEC3C7
     .text-chat-input-container-inner
       position: relative
       width: 100%
