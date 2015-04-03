@@ -35,6 +35,7 @@
     display: block
     content: ''
     height: 245px
+    transition: height .4s
     background: transparent
 .live-cam-full-mode
   .black-layer-absolute
@@ -79,10 +80,12 @@
     width: 100%
     .video-chat-wrap
       height: 245px
+      transition: height .4s
       .vch-column
         width: 50%
       .video-chat-window
         height: 200px
+        transition: height .4s
   .text-chat-column
     width: 100%
     margin-top: 24px
@@ -111,7 +114,17 @@
       .vch-column
         width: 100%
       .video-chat-window
-        height: 170px
+        //height: 170px
+        height: auto
+        width: 85%
+        margin: 0 auto
+        margin-top: 38px
+        .column-for-vertical-layout
+          width: 100%
+          &.no-padding-left
+            padding-left: 0.9375rem
+        p
+          text-align: center
   .text-chat-column
     width: 70%
     padding-right: 0
@@ -149,7 +162,105 @@
     right: 0
     bottom: 230px
     overflow-y: auto
-    //background: yellow
+    .ud-one-message
+      margin-bottom: 10px
+
+    .my-message
+      .avatar
+        .image
+          border-radius: 50%
+      .large-10
+        padding-left: 0
+      .chat-bubbles-wrap
+        background-color: #fff
+        position: relative
+        &:before
+          display: block
+          content: ''
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 0 20px 20px 0
+          border-color: transparent #ffffff transparent transparent
+          position: absolute
+          top: 24px
+          left: -20px
+    .enemy-message
+      .avatar
+        position: relative
+        &:before
+          display: block
+          content: ""
+          position: absolute
+          bottom: 0
+          height: 4px
+          background-color: #96D03F
+          width: 100%
+      .large-10
+        padding-right: 0
+      .chat-bubbles-wrap
+        background-color: #D7EAF8
+        &:after
+          display: block
+          content: ''
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 20px 20px 0 0
+          border-color: #d7eaf8 transparent transparent transparent
+          position: absolute
+          top: 24px
+          right: -20px
+    .chat-bubbles-wrap
+      width: 100%
+      min-height: 80px
+      border-radius: 7px
+      .text-wrap
+        padding: 15px
+      .date-time-wrap
+        display: inline-block
+        float: left
+        margin-top: 5px
+        margin-right: 10px
+        margin-bottom: 5px
+        p
+          color: #BEC3C7
+          font:
+            size: rem-calc(10)
+            weight: 300
+          line-height: rem-calc(12)
+          margin: 0
+      p
+        font:
+          size: rem-calc(14)
+          weight: 300
+          family: "Fira Sans", sans-serif
+        line-height: rem-calc(19)
+        color: #404049
+        margin-bottom: 0
+    .avatar
+      //width: 64px
+      margin: 0 auto
+      .image
+        max-width: 100%
+        width: 100%
+        height: 0
+        padding-bottom: 100%
+        overflow: hidden
+        -webkit-background-size: cover !important
+        -moz-background-size: cover !important
+        -o-background-size: cover !important
+        background-size: cover !important
+        margin: 0 auto
+
+    .about-people
+      b
+        font:
+          size: rem-calc(14)
+          family: "Fira Sans", sans-serif
+          weight: 400
+        color: #2E3E51
+        text-transform: lowercase
   .text-chat-input-container
     min-height: 210px
     position: absolute
@@ -172,6 +283,12 @@
       height: 100%
       padding: 0 0.9375rem
       padding-top: 25px
+    textarea
+      margin: 0
+    .right-group-links
+      display: inline-block
+      float: right
+      margin-top: 1rem
     .avatar
       width: 64px
       margin: 0 auto
