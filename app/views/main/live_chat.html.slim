@@ -12,7 +12,7 @@
   .row.medium-main
     .columns.medium-10.medium-centered.large-12
       .row
-        .columns.large-3.lch-people-online
+        .columns.large-3.medium-3.lch-people-online
           .lch-people-online-wrap.best-match-wrap
             .title-head.grey.notification-wrap
               .columns
@@ -183,7 +183,7 @@
                                 =embedded_svg "UD-icon-camshare.svg"
                         .p-status
 
-        .columns.large-9
+        .columns.large-9.medium-9.lch-video-text-chats-wrap
           .row
             .columns.live-chat-custom-column.video-chat-column
               .video-chat-wrap
@@ -192,7 +192,7 @@
                     .video-chat-window
                       .vcw-welcome
                         .row
-                          .columns.large-5
+                          .columns.large-5.medium-5
                             .row
                               .columns
                                 .avatar
@@ -201,7 +201,7 @@
                               .columns.text-center
                                 .about-people
                                   b You
-                          .columns.large-7.no-padding-left
+                          .columns.large-7.medium-7.no-padding-left
                             a.ud-button.special-text-shadow.ud-start-cam start camshare
                             p Each minute of chat with CamShare billed at 4 Credits
                       .vcw-inner.hide
@@ -222,7 +222,7 @@
                     .video-chat-window
                       .vcw-welcome
                         .row
-                          .columns.large-5
+                          .columns.large-5.medium-5
                             .row
                               .columns
                                 .avatar
@@ -233,7 +233,7 @@
                                   b
                                     |Olena
                                     = embedded_svg "UD-icon-camshare-green.svg"
-                          .columns.large-7.no-padding-left
+                          .columns.large-7.medium-7.no-padding-left
                             a.ud-button.special-text-shadow.ud-start-cam see her webcam
                             p Each minute of chat with video billed at 2 Credits
                       .vcw-inner.hide
@@ -287,6 +287,41 @@
                                       option value="favotites_first" Favotites first
                                   .clearfix
                 .text-chat-inner
-                  .text-chat-view-container
-                  .text-chat-input-container
+                .text-chat-view-container
+                .text-chat-input-container
+                  .text-chat-input-container-inner
+                    .row
+                      .columns.large-2.medium-2
+                        .row
+                          .columns
+                            .avatar
+                              .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+                        .row
+                          .columns.text-center
+                            .about-people
+                              b me
+                      .columns.large-10.medium-10
+                        form
+                          .row
+                            .columns
+                              label Quick replay
+                          .row
+                            .columns
+                              textarea rows="5"
+                          .row
+                            .columns
+                              a.translate.left Translate into english
+                              a.ud-button.special-text-shadow.right href="#" Send
+                              a.edit-icon-svg.browse-file.right
+                                = embedded_svg "UD-icon-add files.svg"
+                              a.edit-icon-svg.smiles.right
+                                = embedded_svg "UD-icon-smile.svg"
+                              a.ud-close-session.right
+                                |Close this session
+                                span
+                                  |&nbsp;or
+/.row
+/  .columns.large-8.large-centered
+/    .text-div
+/      div style="min-height: 200px; border: 1px solid red; resize: vertical; overflow: auto;"
 
