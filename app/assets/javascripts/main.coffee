@@ -72,7 +72,7 @@ $(document).ready ->
     $wrapper = $(this).closest('.video-chat-window')
     $welcome = $wrapper.find('.vcw-welcome')
     $wcw = $wrapper.find('.vcw-inner')
-    if $mainWrapper.hasClass('live-cam-full-mode')
+    if !$mainWrapper.hasClass('live-cam-full-mode')
       if $welcome.hasClass('hide')
         $welcome.removeClass('hide')
         $wcw.addClass('hide')

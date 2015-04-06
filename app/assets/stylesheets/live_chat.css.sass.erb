@@ -91,7 +91,14 @@
     margin-top: 24px
     @media (min-width : 0) and (max-width : 980px)
       margin-bottom: 65px
-
+  .column-for-horizontal-layout
+    @media (min-width : 0) and (max-width : 1500px)
+      width: 100%
+      .avatar
+        width: 32%
+        margin: 0 auto
+      p
+        text-align: center
 .vertical-layout
   .video-chat-column
     width: 30%
@@ -135,7 +142,7 @@
 .text-chat-column
   resize: vertical
   overflow: auto
-  min-height: 670px
+  min-height: 719px
   position: relative
   &:after
     position: absolute
@@ -198,6 +205,9 @@
       .chat-bubbles-wrap
         background-color: #fff
         position: relative
+        @media (min-width : 980px) and (max-width : 1170px)
+          width: 95%
+          float: right
         &:before
           display: block
           content: ''
@@ -209,6 +219,9 @@
           position: absolute
           top: 24px
           left: -20px
+          .about-people
+      b
+        text-transform: lowercase
     .enemy-message
       .avatar
         position: relative
@@ -224,6 +237,7 @@
         padding-right: 0
       .chat-bubbles-wrap
         background-color: #D7EAF8
+        position: relative
         &:after
           display: block
           content: ''
@@ -239,6 +253,9 @@
       width: 100%
       min-height: 80px
       border-radius: 7px
+      @media (min-width : 980px) and (max-width : 1170px)
+        width: 95%
+        float: left
       .text-wrap
         padding: 15px
       .date-time-wrap
@@ -285,7 +302,6 @@
           family: "Fira Sans", sans-serif
           weight: 400
         color: #2E3E51
-        text-transform: lowercase
   .text-chat-input-container
     min-height: 235px
     position: absolute
@@ -451,12 +467,12 @@
               width: 21px
               height: 21px
         a.ud-button
-          margin-bottom: 18px
+          margin-bottom: 10px
         p
           font:
             size: rem-calc(10)
             family: "Fira Sans", sans-serif
-            weight: 300
+            weight: 200
           color: #BEC3C7
           line-height: rem-calc(13)
       .vcw-inner
@@ -590,7 +606,7 @@
       .actions
         .action-button
           width: 23px
-          margin-right: 4px
+          margin-right: 2px
 
 .lch-video-text-chats-wrap
   @media (min-width : 0) and (max-width : 980px)

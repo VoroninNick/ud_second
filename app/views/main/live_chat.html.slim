@@ -17,10 +17,10 @@
             .title-head.grey.notification-wrap
               .columns
                 .wrap
+                  - temp = 23
                   h4
-                    /span
-                    /  |213
-                    |ladies on-line
+                    =temp
+                    |&nbsp;ladies
                   .items-menu.notification-link
                     =image_tag "UD-icon-sub menu.svg"
                     .notification-container
@@ -195,7 +195,7 @@
                     .video-chat-window
                       .vcw-welcome
                         .row
-                          .columns.column-for-vertical-layout.large-5.medium-5
+                          .columns.column-for-horizontal-layout.column-for-vertical-layout.large-5.medium-5
                             .row
                               .columns
                                 .avatar
@@ -206,7 +206,7 @@
                                   b
                                     |Olena
                                     = embedded_svg "UD-icon-camshare-green.svg"
-                          .columns.column-for-vertical-layout.large-7.medium-7.no-padding-left
+                          .columns.column-for-horizontal-layout.column-for-vertical-layout.large-7.medium-7.no-padding-left
                             a.ud-button.special-text-shadow.ud-start-cam see her webcam
                             p Each minute of chat with video billed at 2 Credits
                       .vcw-inner.hide
@@ -236,7 +236,7 @@
                     .video-chat-window
                       .vcw-welcome
                         .row
-                          .columns.column-for-vertical-layout.large-5.medium-5
+                          .columns.column-for-horizontal-layout.column-for-vertical-layout.large-5.medium-5
                             .row
                               .columns
                                 .avatar
@@ -245,7 +245,7 @@
                               .columns.text-center
                                 .about-people
                                   b You
-                          .columns.column-for-vertical-layout.large-7.medium-7.no-padding-left
+                          .columns.column-for-horizontal-layout.column-for-vertical-layout.large-7.medium-7.no-padding-left
                             a.ud-button.special-text-shadow.ud-start-cam start camshare
                             p Each minute of chat with CamShare billed at 4 Credits
                       .vcw-inner.hide
@@ -304,7 +304,7 @@
                           .columns.text-center
                             .about-people
                               b me
-                      .column.large-10.medium-10.small-9
+                      .column.large-8.medium-8.small-9.end
                         .chat-bubbles-wrap
                           .text-wrap
                             .date-time-wrap
@@ -321,7 +321,7 @@
                           .columns.text-center
                             .about-people
                               b Olena
-                      .column.large-10.medium-10.small-9
+                      .column.large-8.medium-8.small-9
                         .chat-bubbles-wrap
                           .text-wrap
                             .date-time-wrap
@@ -338,7 +338,7 @@
                           .columns.text-center
                             .about-people
                               b me
-                      .column.large-10.medium-10.small-9
+                      .column.large-8.medium-8.small-6.end
                         .chat-bubbles-wrap
                           .text-wrap
                             .date-time-wrap
@@ -355,7 +355,7 @@
                           .columns.text-center
                             .about-people
                               b Olena
-                      .column.large-10.medium-10.small-9
+                      .column.large-8.medium-8.small-6
                         .chat-bubbles-wrap
                           .text-wrap
                             .date-time-wrap
@@ -371,7 +371,7 @@
                           .columns.text-center
                             .about-people
                               b Olena
-                      .column.large-10.medium-10.small-9
+                      .column.large-8.medium-8.small-6
                         .chat-bubbles-wrap
                           .text-wrap
                             .date-time-wrap
