@@ -125,20 +125,40 @@
       .vch-column
         width: 100%
       .video-chat-window
-        //height: 170px
         height: auto
         width: 85%
         margin: 0 auto
         margin-top: 38px
+        //margin-bottom: 50px
+        padding-bottom: 47px
+        .vcw-inner
+          overflow: inherit
+          .image
+            padding-bottom: 100%
+          .vcw-navigation-wrap
+            bottom: -47px !important
+            z-index: 1
+            .vcw-inner-columns
+              width: 100%
+              p
+                margin-bottom: 8px
+              a
+                width: 100%
+            .ud-fullscreen-mode, .ud-minimize-mode
+              display: none !important
         .column-for-vertical-layout
           width: 100%
           &.no-padding-left
             padding-left: 0.9375rem
         p
           text-align: center
+
   .text-chat-column
     width: 70%
     padding-right: 0
+
+
+
 .text-chat-column
   resize: vertical
   overflow: auto
@@ -173,6 +193,13 @@
     right: 0
     bottom: 255px
     overflow-y: auto
+    overflow-x: hidden
+    @media (min-width : 1445px) and (max-width : 1495px)
+      bottom: 300px
+    @media (min-width : 980px) and (max-width : 1170px)
+      bottom: 300px
+    @media (min-width : 0) and (max-width : 810px)
+      bottom: 300px
     /* Let's get this party started */
     &::-webkit-scrollbar
       width: 8px
