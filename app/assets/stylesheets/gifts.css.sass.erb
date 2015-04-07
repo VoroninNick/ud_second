@@ -45,7 +45,7 @@
           text-transform: uppercase
           line-height: rem-calc(64)
       &.active
-        polygon, path
+        polygon, path, rect
           fill: #3598DB
         span
           color: #3598DB
@@ -192,6 +192,20 @@
             height: 4px
             background-color: #96D03F
             width: 100%
+      &.gift-rules
+        ul
+          margin-left: 0
+          list-style: none
+          li
+            a
+              font:
+                size: rem-calc(16)
+                weight: 300
+                family: 'Fira Sans', sans-serif
+              line-height: rem-calc(38)
+              color: #808285
+              &.active
+                color: #D03F4A
 
 .gift-popup-wrap
   .gift-popup-images-wrap

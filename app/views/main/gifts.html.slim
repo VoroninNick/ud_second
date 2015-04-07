@@ -249,8 +249,59 @@
 
         .gift-one-page.gift-sent.hide gift-sent
         .gift-one-page.gift-delivered.hide gift-delivered
-        .gift-one-page.gift-rules.hide gift-rules
-
+        .gift-one-page.gift-rules.hide
+          .row
+            .columns.large-3.medium-3
+              ul
+                li
+                  a.active Delivery rules
+                li
+                  a Rules №2
+                li
+                  a Rules №3
+                li
+                  a Rules №4
+                li
+                  a Rules №5
+            .columns.large-9.medium-9
+              .g-rules-one-rule
+                .title-head.grey.notification-wrap
+                  .columns
+                    .wrap
+                      h4 Delivery rules
+                      .items-menu.notification-link
+                        =image_tag "UD-icon-sub menu.svg"
+                        .notification-container
+                          .menu
+                            .group
+                              .title
+                                strong Display options:
+                              .options
+                                .option
+                                  .label
+                                    .icon
+                                      = embedded_svg "UD-icon-sort.svg"
+                                    span
+                                      |Sort by
+                                  .input
+                                    select.sort-by
+                                      option value="age_increase" Age increase
+                                      option value="age_decrease" Age decrease
+                                      option value="alfabet" Alfabet
+                                      option value="recent_activity" Recent activity
+                                      option value="favotites_first" Favotites first
+                                  .clearfix
+                .rule-tab-content.white-grey
+                  .columns
+                    .row
+                      .columns
+                        h4 Rule title 1
+                        p
+                          |By clicking the Purchase Credits button, I hereby acknowledge and agree that the purchase and receipt of the credit package selected above, which provides the ability to utilize services through UkrainianDiamonds.com, including, but not limited to email messaging, instant messaging, live video streaming, and Camshare, constitutes value received.
+                        h4 Rule title 2
+                        p
+                          |Furthermore, I covenant and agree that I will not initiate any cardholder chargebacks in an attempt to secure a refund, and I recognize that any attempt to do so would constitute a violation of the terms of this purchase. I understand that, having hereby acknowledged value received, any effort to initiate such a chargeback would be a misrepresentation of fact and could be construed as an act of fraud.
+                  .clearfix
 #PreviewGift1.reveal-modal data-reveal=""
   .modal-wrap
     .modal-header-wrap
