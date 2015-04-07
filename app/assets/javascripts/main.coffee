@@ -40,6 +40,35 @@ $(window).scroll (event) ->
 
 
 $(document).ready ->
+#gift preview image in popup
+  $('.gift-popup-images-wrap .gift-image-thumb').click ->
+    $wrapper = $(this).closest('.gift-popup-images-wrap')
+    $previewWrap = $wrapper.find('.gift-image-preview')
+    $thumbButtons = $wrapper.find('.gift-image-thumb')
+    $thisStyle = $(this).attr("style")
+    $previewWrap.attr style: $thisStyle
+    $thumbButtons.removeClass('active')
+    $(this).addClass('active')
+
+
+# gits set class active
+  $('.gcw-head-nav a').click ->
+    $('.gcw-head-nav .gcw-link-wrap').removeClass('active')
+    $(this).parent().addClass('active')
+#  gifts main tabs
+  $('.gift-tab').click ->
+    current_position = $(this).index()
+    $head_tabs = $(this)
+    $wrap = $(this).closest('.gifts-page-wrap')
+    $('.gifts-header-wrap .gift-tab').removeClass('active')
+    $(this).addClass('active')
+
+    $body_tabs = $wrap.find('.gift-one-page')
+    $body_tabs.addClass('hide')
+    $body_tabs.eq(current_position).removeClass('hide')
+
+
+
 #  binder for strat web cam chat
   $('a.ud-start-cam').click ->
     $wrapper = $(this).closest('.video-chat-window')
@@ -121,7 +150,7 @@ $(document).ready ->
     $frendContainer.toggleClass('hide')
 
 
-#  $('#SendEmail').foundation('reveal', 'open')
+#  $('#PreviewGift1').foundation('reveal', 'open')
 
 #  init index page tabs wooman
   $('.favorites-nav li').click ->

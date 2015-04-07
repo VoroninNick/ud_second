@@ -1,0 +1,291 @@
+.gifts-page-wrap
+  .gifts-header-wrap
+    .row.medium-main
+      .columns.medium-10.medium-centered.large-12
+        .row
+          .columns.large-3.medium-3.small-3.gift-tab.active
+            a
+              .gift-tab-head-block
+                .git-tab-ico
+                  = embedded_svg "UD-gifts-gift center.svg"
+                .gift-tab-title
+                  span Gift center
+          .columns.large-3.medium-3.small-3.gift-tab
+            a
+              .gift-tab-head-block
+                .git-tab-ico
+                  = embedded_svg "UD-gifts-sent.svg"
+                .gift-tab-title
+                  span sent
+          .columns.large-3.medium-3.small-3.gift-tab
+            a
+              .gift-tab-head-block
+                .git-tab-ico
+                  = embedded_svg "UD-gifts-delivered.svg"
+                .gift-tab-title
+                  span delivered
+          .columns.large-3.medium-3.small-3.gift-tab.gift-last-tab
+            a
+              .gift-tab-head-block
+                .git-tab-ico
+                  = embedded_svg "UD-gifts-rules.svg"
+                .gift-tab-title
+                  span rules
+  .gifts-content-wrap
+    .row.medium-main
+      .columns.medium-10.medium-centered.large-12
+        .gift-one-page.gift-center
+          .gift-order
+            .row
+              .columns.center
+                .columns.large-2
+                  = embedded_svg "UD-gifts-gift center.svg"
+                .columns.large-2.text-center
+                  .gift-label
+                    b Send to
+                .columns.large-2.end
+                  .avatar
+                    .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
+            .row
+              .columns
+          .gift-catalog
+            .title-head.grey.notification-wrap
+              .columns
+                .wrap
+                  h4 Catalog
+                  .items-menu.notification-link
+                    =image_tag "UD-icon-sub menu.svg"
+                    .notification-container
+                      .menu
+                        .group
+                          .title
+                            strong Display options:
+                          .options
+                            .option
+                              .label
+                                .icon
+                                  = embedded_svg "UD-icon-sort.svg"
+                                span
+                                  |Sort by
+                              .input
+                                select.sort-by
+                                  option value="age_increase" Age increase
+                                  option value="age_decrease" Age decrease
+                                  option value="alfabet" Alfabet
+                                  option value="recent_activity" Recent activity
+                                  option value="favotites_first" Favotites first
+                              .clearfix
+            .gc-wrap.white-grey
+              .columns
+                .row.collapse.text-center.gcw-head-nav
+                  .columns.large-2.medium-2.gcw-link-wrap
+                    a
+                      |Flowers
+                  .columns.large-2.medium-2.gcw-link-wrap.active
+                    a
+                      |Soft toys
+                  .columns.large-2.medium-2.gcw-link-wrap
+                    a
+                      |Candy’s
+                  .columns.large-2.medium-2.gcw-link-wrap
+                    a
+                      |Jewerly
+                  .columns.large-2.medium-2.gcw-link-wrap
+                    a
+                      |Devices
+                  .columns.large-2.medium-2.gcw-link-wrap
+                    a
+                      |Special gift
+                .row.collapse
+                  .columns.large-2.medium-2
+                    .catalog-one-gift
+                      .gift-action-button.ga-preview
+                        a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                          = embedded_svg "UD-icon-search.svg"
+                      a
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture7.jpg")}')no-repeat center center;"
+                        .og-price-wrap
+                          .og-price
+                            p
+                              = embedded_svg "UD-icon-diamond.svg"
+                              |2000
+                  .columns.large-2.medium-2
+                    .catalog-one-gift
+                      .gift-action-button.ga-preview
+                        a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                          = embedded_svg "UD-icon-search.svg"
+                      a
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture8.jpg")}')no-repeat center center;"
+                        .og-price-wrap
+                          .og-price
+                            p
+                              = embedded_svg "UD-icon-diamond.svg"
+                              |2000
+                  .columns.large-2.medium-2
+                    .catalog-one-gift
+                      .gift-action-button.ga-preview
+                        a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                          = embedded_svg "UD-icon-search.svg"
+                      a
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture3.jpg")}')no-repeat center center;"
+                        .og-price-wrap
+                          .og-price
+                            p
+                              = embedded_svg "UD-icon-diamond.svg"
+                              |2000
+                  .columns.large-2.medium-2
+                    .catalog-one-gift
+                      .gift-action-button.ga-preview
+                        a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                          = embedded_svg "UD-icon-search.svg"
+                      a
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture10.jpg")}')no-repeat center center;"
+                        .og-price-wrap
+                          .og-price
+                            p
+                              = embedded_svg "UD-icon-diamond.svg"
+                              |2000
+                  .columns.large-2.medium-2
+                    .catalog-one-gift
+                      .gift-action-button.ga-preview
+                        a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                          = embedded_svg "UD-icon-search.svg"
+                      a
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture.jpg")}')no-repeat center center;"
+                        .og-price-wrap
+                          .og-price
+                            p
+                              = embedded_svg "UD-icon-diamond.svg"
+                              |2000
+                  .columns.large-2.medium-2
+                    .catalog-one-gift
+                      .gift-action-button.ga-preview
+                        a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                          = embedded_svg "UD-icon-search.svg"
+                      a
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture11.jpg")}')no-repeat center center;"
+                        .og-price-wrap
+                          .og-price
+                            p
+                              = embedded_svg "UD-icon-diamond.svg"
+                              |2000
+                  .columns.large-2.medium-2
+                    .catalog-one-gift
+                      .gift-action-button.ga-preview
+                        a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                          = embedded_svg "UD-icon-search.svg"
+                      a
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture4.jpg")}')no-repeat center center;"
+                        .og-price-wrap
+                          .og-price
+                            p
+                              = embedded_svg "UD-icon-diamond.svg"
+                              |2000
+                  .columns.large-2.medium-2
+                    .catalog-one-gift
+                      .gift-action-button.ga-preview
+                        a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                          = embedded_svg "UD-icon-search.svg"
+                      a
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture6.jpg")}')no-repeat center center;"
+                        .og-price-wrap
+                          .og-price
+                            p
+                              = embedded_svg "UD-icon-diamond.svg"
+                              |2000
+                  .columns.large-2.medium-2
+                    .catalog-one-gift
+                      .gift-action-button.ga-preview
+                        a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                          = embedded_svg "UD-icon-search.svg"
+                      a
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture12.jpg")}')no-repeat center center;"
+                        .og-price-wrap
+                          .og-price
+                            p
+                              = embedded_svg "UD-icon-diamond.svg"
+                              |2000
+                  .columns.large-2.medium-2
+                    .catalog-one-gift
+                      .gift-action-button.ga-preview
+                        a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                          = embedded_svg "UD-icon-search.svg"
+                      a
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture2.jpg")}')no-repeat center center;"
+                        .og-price-wrap
+                          .og-price
+                            p
+                              = embedded_svg "UD-icon-diamond.svg"
+                              |2000
+                  .columns.large-2.medium-2
+                    .catalog-one-gift
+                      .gift-action-button.ga-preview
+                        a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                          = embedded_svg "UD-icon-search.svg"
+                      a
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture6.jpg")}')no-repeat center center;"
+                        .og-price-wrap
+                          .og-price
+                            p
+                              = embedded_svg "UD-icon-diamond.svg"
+                              |2000
+                  .columns.large-2.medium-2.end
+                    .catalog-one-gift
+                      .gift-action-button.ga-preview
+                        a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                          = embedded_svg "UD-icon-search.svg"
+                      a
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture6.jpg")}')no-repeat center center;"
+                        .og-price-wrap
+                          .og-price
+                            p
+                              = embedded_svg "UD-icon-diamond.svg"
+                              |2000
+
+                .row
+                  .columns
+                    a.more Show more
+              .clearfix
+
+        .gift-one-page.gift-sent.hide gift-sent
+        .gift-one-page.gift-delivered.hide gift-delivered
+        .gift-one-page.gift-rules.hide gift-rules
+
+#PreviewGift1.reveal-modal data-reveal=""
+  .modal-wrap
+    .modal-header-wrap
+      h3 Gift information
+      a.close-reveal-modal
+    .modal-content-wrap.gift-popup-wrap
+      .row
+        .columns.large-5.medium-5.small-5
+          .gift-popup-images-wrap
+            .row
+              .columns
+                .image.gift-image-preview style="background: url('#{asset_path("Toys-teddybear-picture6.jpg")}')no-repeat center center;"
+            .row.collapse
+              .columns.large-3.medium-3.small-3
+                .image.gift-image-thumb.active style="background: url('#{asset_path("Toys-teddybear-picture6.jpg")}')no-repeat center center;"
+              .columns.large-3.medium-3.small-3
+                .image.gift-image-thumb style="background: url('#{asset_path("Toys-teddybear-picture4.jpg")}')no-repeat center center;"
+              .columns.large-3.medium-3.small-3
+                .image.gift-image-thumb style="background: url('#{asset_path("Toys-teddybear-picture12.jpg")}')no-repeat center center;"
+              .columns.large-3.medium-3.small-3
+                .image.gift-image-thumb style="background: url('#{asset_path("Toys-teddybear-picture7.jpg")}')no-repeat center center;"
+        .columns.large-7.medium-7.small-7
+          h2 White teddy bear
+          p.credits-label
+            span Price:
+          .credits
+            |2000
+          .gift-content-popup
+            p
+              |The teddy bear is a soft toy in the form of a bear. Developed apparently simultaneously by toymakers Morris Michtom in the US and Richard Steiff in Germany in the early years of the 20th century, and named after President Theodore "Teddy" Roosevelt, Jr., the teddy bear became an iconic children's toy, celebrated in story, song, and film.
+          a.ud-button.special-text-shadow Pick this gift
+          p.gift-or
+            |or&nbsp;
+            a.close-reveal-modal pick another
+    .modal-footer-wrap
+      .row.text-center
+        .columns
+          /p This introduction letter was free according to your current membership plan. You have 14 free introduction letters left.

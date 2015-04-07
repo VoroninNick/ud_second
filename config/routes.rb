@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'favorites' => 'main#favorites'
   get 'search' => 'main#search'
   get 'live_chat' => 'main#live_chat'
+  get 'gifts' => 'main#gifts'
 
   get 'second-version' => 'main#second'
 

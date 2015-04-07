@@ -1,0 +1,303 @@
+@import "mixins"
+
+.gifts-page-wrap
+  .gifts-header-wrap
+    height: 64px
+    background-color: #2E2E36
+    .gift-tab
+      .gift-tab-head-block
+        height: 64px
+        display: inline-block
+        .git-tab-ico
+          height: 100%
+          float: left
+          margin-right: 17px
+        .gift-tab-title
+          height: 100%
+          float: left
+      a
+        display: inline-block
+        text-align: center
+        width: 100%
+        height: 64px
+        border-left: 1px solid #43434D
+        position: relative
+        &:before
+          display: block
+          content: ''
+          background-color: #27272E
+          width: 1px
+          left: -2px
+          top: 0
+          bottom: 0
+          position: absolute
+        svg
+          width: 30px
+          height: 100%
+          polygon, path
+            fill: #BEC3C7
+        span
+          font:
+            size: rem-calc(21)
+            family: 'Fira Sans', sans-serif
+            weight: 400
+          color: #BEC3C7
+          text-transform: uppercase
+          line-height: rem-calc(64)
+      &.active
+        polygon, path
+          fill: #3598DB
+        span
+          color: #3598DB
+      &.gift-last-tab
+        a
+          border-right: 1px solid #27272E
+          &:after
+            display: block
+            content: ''
+            background-color: #43434D
+            width: 1px
+            right: -2px
+            top: 0
+            bottom: 0
+            position: absolute
+
+  .gifts-content-wrap
+    .gift-one-page
+      height: 850px
+      padding-top: 35px
+      a.more
+        margin-top: 20px
+      .image
+        max-width: 100%
+        width: 100%
+        height: 0
+        padding-bottom: 100%
+        overflow: hidden
+        -webkit-background-size: cover !important
+        -moz-background-size: cover !important
+        -o-background-size: cover !important
+        background-size: cover !important
+        margin: 0 auto
+      .gift-catalog
+        padding-top: 35px
+        .gc-wrap
+          //min-height: 500px
+          .gcw-head-nav
+            margin-top: 10px
+            margin-bottom: 15px
+            .active
+              a
+                color: #fff
+                background-color: #3598DB
+            a
+              color: #BEC3C7
+              background-color: #fff
+              display: block
+              width: 100%
+              text-transform: uppercase
+              border: 1px solid #EDF0F1
+              line-height: rem-calc(32)
+          .catalog-one-gift
+            position: relative
+            overflow: hidden
+            border: 1px solid transparent
+            &:hover
+              border-color: rgba(40, 127, 184, .8)
+              .gift-action-button
+                opacity: 1
+              .og-price-wrap
+                opacity: 1
+          .gift-action-button
+            position: absolute
+            top: 0
+            width: 32px
+            height: 32px
+            background-color: rgba(40, 127, 184, .8)
+            opacity: 0
+            //transition: opacity .5s
+            a
+              width: inherit
+              display: block
+              height: inherit
+              svg
+                width: 59%
+                height: 100%
+                margin: 0 auto
+                display: block
+                path
+                  fill: #fff
+            &.ga-preview
+              left: 0
+        .og-price-wrap
+          position: absolute
+          bottom: 0
+          left: 0
+          right: 0
+          height: 32px
+          background-color: rgba(40, 127, 184, .8)
+          opacity: 0
+          //transition: opacity .5s
+          .og-price
+            display: inline-block
+            //background: yellow
+            +my_horizontal_align
+              position: absolute
+            p
+              height: 100%
+              text-align: center
+              line-height: rem-calc(32)
+              color: #fff
+              margin: 0
+              padding: 0
+              position: relative
+              font:
+                size: rem-calc(21)
+                weight: 400
+              padding-left: 25px
+              svg
+                position: absolute
+                height: 18px
+                width: 18px
+                left: 0
+                top: 7px
+                path
+                  fill: #fff
+      .gift-order
+        .gift-label
+          width: 100%
+          height: 0
+          padding-bottom: 100%
+          //background: yellow
+          position: relative
+          b
+            font:
+              family: 'dearjoe_1_msregular'
+              size: rem-calc(42)
+              weight: 300
+            color: #FF6F70
+            display: block
+            width: 100%
+            //+my_vertical_align
+            +my_center_align
+              position: absolute
+        .avatar
+          position: relative
+
+          &:before
+            display: block
+            content: ""
+            position: absolute
+            bottom: 0
+            height: 4px
+            background-color: #96D03F
+            width: 100%
+
+.gift-popup-wrap
+  .gift-popup-images-wrap
+    margin-top: 5px
+    .gift-image-preview
+      margin-bottom: 5px !important
+      border: 1px solid #EDF0F1
+    .gift-image-thumb
+      border: 1px solid #EDF0F1
+      position: relative
+      cursor: pointer
+      &.active
+        &:before
+          display: block
+          content: ''
+          position: absolute
+          left: 0
+          top: 0
+          right: 0
+          bottom: 0
+          background-color: #2E3E51
+          opacity: .2
+    .image
+      max-width: 100%
+      width: 100%
+      height: 0
+      padding-bottom: 110%
+      overflow: hidden
+      -webkit-background-size: cover !important
+      -moz-background-size: cover !important
+      -o-background-size: cover !important
+      background-size: cover !important
+      margin: 0 auto
+  .ud-button
+    font-size: 1.125rem
+    font-weight: 500
+    color: #fff
+    background-color: #D03F4A
+    text-transform: uppercase
+    height: 35px
+    line-height: 2.1875rem
+    padding: 0 35px
+    display: inline-block
+    position: static
+  h2
+    margin: 0
+    padding: 0
+    color: #2E3E51
+    font:
+      size: rem-calc(21)
+  p.credits-label
+    margin-bottom: 0
+    span
+      font:
+        size: rem-calc(12)
+        weight: 300
+      color: #2E3E51
+      line-height: rem-calc(14)
+  .credits
+    height: 35px
+    width: 99px
+    background-color: #48647C
+    font:
+      size: rem-calc(20.42)
+      family: 'Fira Sans', sans-serif
+      weight: 300
+    line-height: rem-calc(35)
+    color: #EDF0F1
+    padding-left: 42px
+    padding-right: 10px
+    border-radius: 20px
+    right: -3px
+    position: relative
+    margin-bottom: 13px
+    &:before
+      display: block
+      content: ''
+      background-image: url('<%=asset_path("UD-icon-diamond-white.svg")%>')
+      background-size: 100%
+      background-repeat: no-repeat
+      position: absolute
+      width: 18px
+      height: 18px
+      top: 10px
+      left: 12px
+  .gift-content-popup
+    p
+      font:
+        size: rem-calc(14)
+        weight: 300
+        family: "Fira Sans", sans-serif
+      line-height: rem-calc(18)
+      color: #2E3E51
+      padding: 0
+  p.gift-or
+    font:
+      size: 0.75rem
+      weight: 300
+      family: "Fira Sans", sans-serif
+    color: #2E3E51
+    line-height: 0.9rem
+    padding-top: 7px
+    padding-left: 12px
+    a
+      position: static !important
+      color: #D03F4A !important
+      font:
+        size: rem-calc(12) !important
+        weight: 300 !important

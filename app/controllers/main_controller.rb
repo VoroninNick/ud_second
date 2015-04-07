@@ -18,6 +18,11 @@ class MainController < ApplicationController
   def profile_woman
 
   end
+
+  def gifts
+
+  end
+
   def second
 
   end
