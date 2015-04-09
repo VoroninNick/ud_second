@@ -248,7 +248,104 @@
               .clearfix
 
         .gift-one-page.gift-sent.hide gift-sent
-        .gift-one-page.gift-delivered.hide gift-delivered
+        .gift-one-page.gift-delivered.hide
+          .title-head.grey.notification-wrap
+            .columns
+              .wrap
+                h4 Delivered gifts
+                .items-menu.notification-link
+                  =image_tag "UD-icon-sub menu.svg"
+                  .notification-container
+                    .menu
+                      .group
+                        .title
+                          strong Display options:
+                        .options
+                          .option
+                            .label
+                              .icon
+                                = embedded_svg "UD-icon-sort.svg"
+                              span
+                                |Sort by
+                            .input
+                              select.sort-by
+                                option value="age_increase" Age increase
+                                option value="age_decrease" Age decrease
+                                option value="alfabet" Alfabet
+                                option value="recent_activity" Recent activity
+                                option value="favotites_first" Favotites first
+                            .clearfix
+          .white-grey
+            .columns
+              .columns.large-4.medium-4
+                .delivered-girl-with-gift-wrap
+                  .delivered-girl-with-gift
+                    .image style="background: url('#{asset_path("girl-teddy-1.jpg")}')no-repeat center center;"
+                    .gift-preview
+                      .image style="background: url('#{asset_path("Toys-teddybear-picture6.jpg")}')no-repeat center center;"
+                  .dgg-status-wrap
+                    p.text-center
+                      |Delivered to&nbsp;
+                      a Galina
+                      |&nbsp;at 2015-02-12
+              .columns.large-4.medium-4
+                .delivered-girl-with-gift-wrap
+                  .delivered-girl-with-gift
+                    .image style="background: url('#{asset_path("girl-teddy-2.jpg")}')no-repeat center center;"
+                    .gift-preview
+                      .image style="background: url('#{asset_path("Toys-teddybear-picture6.jpg")}')no-repeat center center;"
+                  .dgg-status-wrap
+                    p.text-center
+                      |Delivered to&nbsp;
+                      a Galina
+                      |&nbsp;at 2015-02-12
+              .columns.large-4.medium-4
+                .delivered-girl-with-gift-wrap
+                  .delivered-girl-with-gift
+                    .image style="background: url('#{asset_path("girl-teddy-3.jpg")}')no-repeat center center;"
+                    .gift-preview
+                      .image style="background: url('#{asset_path("Toys-teddybear-picture6.jpg")}')no-repeat center center;"
+                  .dgg-status-wrap
+                    p.text-center
+                      |Delivered to&nbsp;
+                      a Galina
+                      |&nbsp;at 2015-02-12
+              .columns.large-4.medium-4
+                .delivered-girl-with-gift-wrap
+                  .delivered-girl-with-gift
+                    .image style="background: url('#{asset_path("girl-teddy-4.jpg")}')no-repeat center center;"
+                    .gift-preview
+                      .image style="background: url('#{asset_path("Toys-teddybear-picture6.jpg")}')no-repeat center center;"
+                  .dgg-status-wrap
+                    p.text-center
+                      |Delivered to&nbsp;
+                      a Galina
+                      |&nbsp;at 2015-02-12
+              .columns.large-4.medium-4
+                .delivered-girl-with-gift-wrap
+                  .delivered-girl-with-gift
+                    .image style="background: url('#{asset_path("girl-teddy-5.png")}')no-repeat center center;"
+                    .gift-preview
+                      .image style="background: url('#{asset_path("Toys-teddybear-picture6.jpg")}')no-repeat center center;"
+                  .dgg-status-wrap
+                    p.text-center
+                      |Delivered to&nbsp;
+                      a Galina
+                      |&nbsp;at 2015-02-12
+              .columns.large-4.medium-4
+                .delivered-girl-with-gift-wrap
+                  .delivered-girl-with-gift
+                    .image style="background: url('#{asset_path("girl-teddy-6.png")}')no-repeat center center;"
+                    .gift-preview
+                      .image style="background: url('#{asset_path("Toys-teddybear-picture6.jpg")}')no-repeat center center;"
+                  .dgg-status-wrap
+                    p.text-center
+                      |Delivered to&nbsp;
+                      a Aleksandra
+                      |&nbsp;at 2015-02-12
+            .row
+              .columns
+                a.more Show more
         .gift-one-page.gift-rules.hide
           .row
             .columns.large-3.medium-3
