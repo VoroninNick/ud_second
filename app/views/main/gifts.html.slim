@@ -31,21 +31,208 @@
                   = embedded_svg "UD-gifts-rules.svg"
                 .gift-tab-title
                   span rules
+          .clearfix
   .gifts-content-wrap
     .row.medium-main
       .columns.medium-10.medium-centered.large-12
         .gift-one-page.gift-center
           .gift-order
+            h5 Приклад без подарунка
             .row
               .columns.center
-                .columns.large-2
-                  = embedded_svg "UD-gifts-gift center.svg"
-                .columns.large-2.text-center
+                .columns.large-2.large-offset-3.medium-2.medium-offset-3
+                  .selected-one-gift
+                    = embedded_svg "UD-gifts-gift center.svg"
+                    .title-for-picture.text-center
+                      a
+                        |Pick gift
+                .columns.large-2.medium-2.text-center
                   .gift-label
                     b Send to
-                .columns.large-2.end
+                .columns.large-2.medium-2.end
                   .avatar
                     .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
+                  .title-for-picture.text-center
+                    a
+                      |Galina
+                .clearfix
+
+            h5 З одним
+            .row
+              .columns.center
+                .columns.large-2.large-offset-3.medium-2.medium-offset-3
+                  .selected-one-gift
+                    .gift-action-button.ga-preview
+                      a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                        = embedded_svg "UD-icon-search.svg"
+                    .gift-action-button.ga-remove
+                      a
+                        =embedded_svg "UD-icon-close.svg"
+                    a
+                      .image style="background: url('#{asset_path("posy-2.jpg")}')no-repeat center center;"
+                    .title-for-picture.text-center
+                      a
+                        |Posy
+                .columns.large-2.medium-2.text-center
+                  .gift-label
+                    b Send to
+                .columns.large-2.medium-2.end
+                  .avatar
+                    .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
+                .clearfix
+
+
+            h5 З двома
+            .row
+              .columns.center
+                .columns.large-2.large-offset-1.medium-2.medium-offset-1
+                  .selected-one-gift
+                    .gift-action-button.ga-preview
+                      a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                        = embedded_svg "UD-icon-search.svg"
+                    .gift-action-button.ga-remove
+                      a
+                        =embedded_svg "UD-icon-close.svg"
+                    a
+                      .image style="background: url('#{asset_path("posy-2.jpg")}')no-repeat center center;"
+                    .title-for-picture.text-center
+                      a
+                        |Posy
+                .columns.large-2.medium-2
+                  .selected-one-gift
+                    .gift-action-button.ga-preview
+                      a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                        = embedded_svg "UD-icon-search.svg"
+                    .gift-action-button.ga-remove
+                      a
+                        =embedded_svg "UD-icon-close.svg"
+                    a
+                      .image style="background: url('#{asset_path("wooman-watches-1.jpg")}')no-repeat center center;"
+                    .title-for-picture.text-center
+                      a
+                        |Watch
+                .columns.large-2.medium-2.text-center
+                  .gift-label
+                    b Send to
+                .columns.large-2.medium-2.end
+                  .avatar
+                    .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
+                .clearfix
+
+
+            h5 З трьома
+            .row
+              .columns.center
+                .columns.large-2.medium-2
+                  .selected-one-gift
+                    .gift-action-button.ga-preview
+                      a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                        = embedded_svg "UD-icon-search.svg"
+                    .gift-action-button.ga-remove
+                      a
+                        =embedded_svg "UD-icon-close.svg"
+                    a
+                      .image style="background: url('#{asset_path("Toys-teddybear-picture6.jpg")}')no-repeat center center;"
+                    .title-for-picture.text-center
+                      a
+                        |Watch
+                .columns.large-2.medium-2
+                  .selected-one-gift
+                    .gift-action-button.ga-preview
+                      a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                        = embedded_svg "UD-icon-search.svg"
+                    .gift-action-button.ga-remove
+                      a
+                        =embedded_svg "UD-icon-close.svg"
+                    a
+                      .image style="background: url('#{asset_path("Toys-teddybear-picture4.jpg")}')no-repeat center center;"
+                    .title-for-picture.text-center
+                      a
+                        |Watch
+                .columns.large-2.medium-2
+                  .selected-one-gift
+                    .gift-action-button.ga-preview
+                      a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                        = embedded_svg "UD-icon-search.svg"
+                    .gift-action-button.ga-remove
+                      a
+                        =embedded_svg "UD-icon-close.svg"
+                    a
+                      .image style="background: url('#{asset_path("wooman-watches-1.jpg")}')no-repeat center center;"
+                    .title-for-picture.text-center
+                      a
+                        |Watch
+                .columns.large-2.medium-2.text-center
+                  .gift-label
+                    b Send to
+                .columns.large-2.medium-2.end
+                  .avatar
+                    .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
+                .clearfix
+
+            h5 З чотирма
+            .row
+              .columns.center
+                .columns.large-2.medium-2
+                  .selected-one-gift
+                    .gift-action-button.ga-preview
+                      a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                        = embedded_svg "UD-icon-search.svg"
+                    .gift-action-button.ga-remove
+                      a
+                        =embedded_svg "UD-icon-close.svg"
+                    a
+                      .image style="background: url('#{asset_path("posy-2.jpg")}')no-repeat center center;"
+                    .title-for-picture.text-center
+                      a
+                        |Watch
+                .columns.large-2.medium-2
+                  .selected-one-gift
+                    .gift-action-button.ga-preview
+                      a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                        = embedded_svg "UD-icon-search.svg"
+                    .gift-action-button.ga-remove
+                      a
+                        =embedded_svg "UD-icon-close.svg"
+                    a
+                      .image style="background: url('#{asset_path("posy-4.jpg")}')no-repeat center center;"
+                    .title-for-picture.text-center
+                      a
+                        |Watch
+                .columns.large-2.medium-2
+                  .selected-one-gift
+                    .gift-action-button.ga-preview
+                      a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                        = embedded_svg "UD-icon-search.svg"
+                    .gift-action-button.ga-remove
+                      a
+                        =embedded_svg "UD-icon-close.svg"
+                    a
+                      .image style="background: url('#{asset_path("Toys-teddybear-picture4.jpg")}')no-repeat center center;"
+                    .title-for-picture.text-center
+                      a
+                        |Watch
+                .columns.large-2.medium-2
+                  .selected-one-gift
+                    .gift-action-button.ga-preview
+                      a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
+                        = embedded_svg "UD-icon-search.svg"
+                    .gift-action-button.ga-remove
+                      a
+                        =embedded_svg "UD-icon-close.svg"
+                    a
+                      .image style="background: url('#{asset_path("wooman-watches-1.jpg")}')no-repeat center center;"
+                    .title-for-picture.text-center
+                      a
+                        |Watch
+                .columns.large-2.medium-2.text-center
+                  .gift-label
+                    b Send to
+                .columns.large-2.medium-2.end
+                  .avatar
+                    .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
+                .clearfix
+
             .row
               .columns
           .gift-catalog
@@ -399,6 +586,7 @@
                         p
                           |Furthermore, I covenant and agree that I will not initiate any cardholder chargebacks in an attempt to secure a refund, and I recognize that any attempt to do so would constitute a violation of the terms of this purchase. I understand that, having hereby acknowledged value received, any effort to initiate such a chargeback would be a misrepresentation of fact and could be construed as an act of fraud.
                   .clearfix
+
 #PreviewGift1.reveal-modal data-reveal=""
   .modal-wrap
     .modal-header-wrap

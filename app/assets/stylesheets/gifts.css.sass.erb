@@ -63,8 +63,15 @@
             position: absolute
 
   .gifts-content-wrap
+    .title-for-picture
+      a
+        font-size: 0.875rem
+        font-weight: 400
+        line-height: 1.05rem
+        color: #2E3E51
+        padding-top: 3px
     .gift-one-page
-      height: 850px
+      min-height: 850px
       padding-top: 35px
       a.more
         margin-top: 20px
@@ -206,6 +213,7 @@
               color: #808285
               &.active
                 color: #D03F4A
+
 .delivered-girl-with-gift-wrap
   margin-top: 1.8rem
   .delivered-girl-with-gift
@@ -226,6 +234,36 @@
       margin-bottom: 0
       a
         color: #FF6F70
+
+.selected-one-gift
+  position: relative
+  .title-for-picture
+    a
+      color: #BEC3C7 !important
+  &:hover
+    .gift-action-button
+      opacity: 1
+    .title-for-picture
+      a
+        color: #3598DB !important
+  .gift-action-button
+    position: absolute
+    top: 0
+    width: 32px
+    height: 32px
+    background-color: rgba(40, 127, 184, 0.8)
+    opacity: 0
+    svg
+      width: 59%
+      height: 100%
+      margin: 0 auto
+      display: block
+      path, polygon
+        fill: #fff
+    &.ga-preview
+      left: 0
+    &.ga-remove
+      right: 0
 .gift-popup-wrap
   .gift-popup-images-wrap
     margin-top: 5px
