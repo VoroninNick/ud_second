@@ -1,0 +1,104 @@
+.ud-inbox-page-wrap
+  .ud-inbox-header-wrap
+    .row.medium-main
+      .columns.medium-10.medium-centered.large-12
+        .row
+          .columns.large-2.medium-2.ud-inbox-tab.active
+            a
+              .inbox-tab-head-block
+                .inbox-tab-ico
+                  = embedded_svg "UAD-inbox-1-Inbox.svg"
+                .inbox-tab-title
+                  span inbox
+          .columns.large-2.medium-2.ud-inbox-tab
+            a
+              .inbox-tab-head-block
+                .inbox-tab-ico
+                  = embedded_svg "UAD-inbox-2-Intro.svg"
+                .inbox-tab-title
+                  span intros
+          .columns.large-2.medium-2.ud-inbox-tab
+            a
+              .inbox-tab-head-block
+                .inbox-tab-ico
+                  = embedded_svg "UAD-inbox-3-sent.svg"
+                .inbox-tab-title
+                  span sent
+          .columns.large-2.medium-2.ud-inbox-tab
+            a
+              .inbox-tab-head-block
+                .inbox-tab-ico
+                  = embedded_svg "UAD-inbox-4-drafts.svg"
+                .inbox-tab-title
+                  span drafts
+          .columns.large-2.medium-2.ud-inbox-tab
+            a
+              .inbox-tab-head-block
+                .inbox-tab-ico
+                  = embedded_svg "UAD-inbox-5-saved.svg"
+                .inbox-tab-title
+                  span saved
+          .columns.large-2.medium-2.ud-inbox-tab.ud-inbox-last-tab
+            a
+              .inbox-tab-head-block
+                .inbox-tab-ico
+                  = embedded_svg "UAD-inbox-6 trash.svg"
+                .inbox-tab-title
+                  span Trash
+
+  .ud-inbox-content-wrap
+    .row.medium-main
+      .columns.medium-10.medium-centered.large-12
+        .ud-inbox-one-tab-wrap.ud-inbox-wrap
+          .title-head.grey.notification-wrap
+            .columns
+              .wrap
+                h4 draft messeges
+                .items-menu.notification-link
+                  =image_tag "UD-icon-sub menu.svg"
+                  .notification-container
+                    .menu
+                      .group
+                        .title
+                          strong Display options:
+                        .options
+                          .option
+                            .label
+                              .icon
+                                = embedded_svg "UD-icon-sort.svg"
+                              span
+                                |Sort by
+                            .input
+                              select.sort-by
+                                option value="age_increase" Age increase
+                                option value="age_decrease" Age decrease
+                                option value="alfabet" Alfabet
+                                option value="recent_activity" Recent activity
+                                option value="favotites_first" Favotites first
+                            .clearfix
+
+
+          .white-grey
+            .columns.no-padding
+              .ud-inbox-message-block-wrap
+                .columns.large-2.medium-2
+                  .avatar-wrap
+                    .avatar
+                      .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
+                    .title-for-avatar.text-center
+                      span
+                        |Galina
+                .columns.large-10.medium-10
+                  .columns
+                    .row
+                      .columns.large-6.medium-6
+                        b Spring is the subject of conversation
+                      .columns.large-6.medium-6
+                        p.udi-label Draft
+                    .row
+                      .columns
+                        p
+                          |I wish I could call you with a special name in real life. But did you decide something about our acquaintence? Or still not sure?? what doubts do you have, suleyman? Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me. I`m repeating it to you all the time, so what is the problem? You look through my profile when I write to you.? Oksana
+
+                .clearfix
+            .clearfix

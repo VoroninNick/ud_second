@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'search' => 'main#search'
   get 'live_chat' => 'main#live_chat'
   get 'gifts' => 'main#gifts'
-
+  get 'mail_box' => 'main#mail_box'
   get 'second-version' => 'main#second'
 
   get 'profile_girl' => 'main#profile_woman'

@@ -23,6 +23,10 @@ class MainController < ApplicationController
 
   end
 
+  def mail_box
+
+  end
+
   def second
 
   end

@@ -1,0 +1,144 @@
+@import "mixins"
+
+.ud-inbox-page-wrap
+  .ud-inbox-header-wrap
+    height: 64px
+    background-color: #2E2E36
+    .ud-inbox-tab
+      border-left: 1px solid #43434D
+      height: 64px
+      &:before
+        display: block
+        content: ""
+        background-color: #27272E
+        width: 1px
+        left: -2px
+        top: 0
+        bottom: 0
+        position: absolute
+      a
+        display: inline-block
+        text-align: center
+        width: 100%
+        height: 64px
+        position: relative
+        .inbox-tab-head-block
+          height: 64px
+          display: inline-block
+          .inbox-tab-ico
+            height: 100%
+            float: left
+            margin-right: 17px
+            svg
+              width: 40px
+              height: 100%
+          .inbox-tab-title
+            height: 100%
+            float: left
+            span
+              font:
+                size: 1.3125rem
+                family: "Fira Sans", sans-serif
+                weight: 400
+              color: #BEC3C7
+              text-transform: uppercase
+              line-height: 4rem
+      &.active
+        svg
+          path
+            fill: #3598DB
+        a
+          .inbox-tab-title
+            span
+              color: #3598DB
+      &.ud-inbox-last-tab
+        border-right: 1px solid #27272E
+        &:after
+          display: block
+          content: ""
+          background-color: #43434D
+          width: 1px
+          right: -2px
+          top: 0
+          bottom: 0
+          position: absolute
+
+  .ud-inbox-content-wrap
+    margin-top: 13px
+    .ud-inbox-message-block-wrap
+      margin-top: 26px
+      padding-left: 0.9375rem
+      padding-right: 0.9375rem
+      padding-bottom: 24px
+      position: relative
+      &:before
+        display: block
+        content: ""
+        height: 1px
+        left: 0
+        bottom: 0px
+        right: 0
+        position: absolute
+        background-color: #fff
+      &:after
+        display: block
+        content: ""
+        height: 1px
+        left: 0
+        bottom: -1px
+        right: 0
+        position: absolute
+        background-color: #BEC3C7
+      .avatar-wrap
+        padding-left: 50px
+        position: relative
+        &:after
+          display: block
+          content: ''
+          width: 30px
+          height: 16px
+          background-image: url('<%=asset_path("UD-icon-sent to.svg")%>')
+          background-size: 100%
+          background-repeat: no-repeat
+          position: absolute
+          top: 30%
+          left: 0
+        .avatar
+          position: relative
+          &:before
+            display: block
+            content: ""
+            position: absolute
+            bottom: 0
+            height: 4px
+            background-color: #96D03F
+            width: 100%
+          .image
+            max-width: 100%
+            width: 100%
+            height: 0
+            padding-bottom: 110%
+            overflow: hidden
+            -webkit-background-size: cover !important
+            -moz-background-size: cover !important
+            -o-background-size: cover !important
+            background-size: cover !important
+            margin: 0 auto
+      b
+        color: #2E3E51
+        font:
+          size: rem-calc(18)
+          weight: 400
+        line-height: rem-calc(21.6)
+      p
+        color: #BEC3C7
+        font:
+          size: rem-calc(14)
+          weight: 300
+        line-height: rem-calc(19)
+        &.udi-label
+          color: #FF6F70
+          font:
+            size: rem-calc(14)
+            weight: 300
+          line-height: rem-calc(16.8)
