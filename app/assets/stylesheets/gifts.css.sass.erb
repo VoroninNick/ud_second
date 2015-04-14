@@ -171,6 +171,15 @@
                 path
                   fill: #fff
       .gift-order
+        a.ud-button
+          margin-top: 20px
+          margin-bottom: 50px
+        label
+          color: #2E3E51
+          font:
+            size: 14px
+            weight: 600
+          line-height: 16.8px
         .gift-label
           width: 100%
           height: 0
@@ -188,6 +197,15 @@
             //+my_vertical_align
             +my_center_align
               position: absolute
+        p.gift-note
+          color: #2E3E51
+          font:
+            size: rem-calc(12)
+            weight: 300
+          line-height: rem-calc(14.4)
+          a
+            color: #FF6F70
+
         .avatar
           position: relative
 
@@ -217,6 +235,7 @@
   height: 38px
   border-top: 1px solid #BEC3C7
   border-bottom: 1px solid #BEC3C7
+  margin-top: 20px
   ul
     list-style: none
     margin:
@@ -226,8 +245,36 @@
     li
       display: inline-block
       p
+        float: left
       &.gtp-key
+        p
+          margin: 0
+          color: #BEC3C7
+          font-size: 12px
+          line-height: rem-calc(38)
+          font-weight: 300
       &.gtp-value
+        position: relative
+        &:before
+          display: block
+          content: ''
+          position: absolute
+          left: 8px
+          top: 9.5px
+          width: 22px
+          height: 18px
+          background-image: url('<%=asset_path("UD-icon-diamond-blue.svg")%>')
+          background-size: 100%
+          background-repeat: no-repeat
+
+        p
+          color: #48647C
+          font:
+            size: rem-calc(24)
+          line-height: rem-calc(38)
+          margin: 0
+          padding-left: 40px
+
 .delivered-girl-with-gift-wrap
   margin-top: 1.8rem
   .delivered-girl-with-gift
@@ -251,6 +298,30 @@
 
 .selected-one-gift
   position: relative
+  .gift-ico-plus
+    right: -24px
+    width: 18px
+    height: 18px
+    +my_vertical_align(38%)
+      position: absolute
+    &:before
+      display: block
+      content: ''
+      width: 2px
+      height: 18px
+      background-color: #BEC3C7
+      +my_center_align
+        position: absolute
+    &:after
+      display: block
+      content: ''
+      width: 18px
+      height: 2px
+      background-color: #BEC3C7
+      +my_center_align
+        position: absolute
+
+
   .title-for-picture
     a
       color: #BEC3C7 !important

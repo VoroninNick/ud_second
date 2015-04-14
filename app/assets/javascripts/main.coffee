@@ -70,8 +70,13 @@ $(document).ready ->
 #  binder for click on button a.read-all-rules
   $('a.read-all-rules').click (e)->
     e.preventDefault()
-    $('.gcw-head-nav a').removeClass('active')
-    $('.gcw-head-nav a.gift-rules').addClass('active')
+#    $wrapper = $('.gifts-page-wrap')
+#    $tabsTitle = $wrapper.find('')
+    $('.gift-tab').removeClass('active')
+    $('.gift-tab-rules').addClass('active')
+
+    $('.gift-one-page').addClass('hide')
+    $('.gift-rules').removeClass('hide')
 
 
 

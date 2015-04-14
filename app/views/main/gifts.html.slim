@@ -24,8 +24,8 @@
                   = embedded_svg "UD-gifts-delivered.svg"
                 .gift-tab-title
                   span delivered
-          .columns.large-3.medium-3.small-3.gift-tab.gift-last-tab
-            a.gift-rules
+          .columns.large-3.medium-3.small-3.gift-tab.gift-tab-rules.gift-last-tab
+            a
               .gift-tab-head-block
                 .git-tab-ico
                   = embedded_svg "UD-gifts-rules.svg"
@@ -80,6 +80,20 @@
                   .avatar
                     .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
                 .clearfix
+            .row
+              .columns.large-2.large-offset-3.medium-6
+                .gifts-total-price-wrap
+                  ul
+                    li.gtp-key.hide
+                      p
+                        |Total price.
+                    li.gtp-value
+                      p
+                        |2500
+              .columns.large-6.medium-6.end
+                .row
+                  .columns.large-6.large-centered
+                    a.ud-button.special-text-shadow Send gift
 
 
             h5 З двома
@@ -87,6 +101,7 @@
               .columns.center
                 .columns.large-2.large-offset-1.medium-2.medium-offset-1
                   .selected-one-gift
+                    .gift-ico-plus
                     .gift-action-button.ga-preview
                       a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
                         = embedded_svg "UD-icon-search.svg"
@@ -118,6 +133,20 @@
                   .avatar
                     .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
                 .clearfix
+            .row
+              .columns.large-4.large-offset-1.medium-6
+                .gifts-total-price-wrap
+                  ul
+                    li.gtp-key
+                      p
+                        |Total price.
+                    li.gtp-value
+                      p
+                        |2500
+              .columns.large-6.medium-6.end
+                .row
+                  .columns.large-6.large-centered
+                    a.ud-button.special-text-shadow Send gift
 
 
             h5 З трьома
@@ -125,6 +154,7 @@
               .columns.center
                 .columns.large-2.medium-2
                   .selected-one-gift
+                    .gift-ico-plus
                     .gift-action-button.ga-preview
                       a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
                         = embedded_svg "UD-icon-search.svg"
@@ -138,6 +168,7 @@
                         |Watch
                 .columns.large-2.medium-2
                   .selected-one-gift
+                    .gift-ico-plus
                     .gift-action-button.ga-preview
                       a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
                         = embedded_svg "UD-icon-search.svg"
@@ -171,14 +202,14 @@
                 .clearfix
             .row
               .columns.large-6.medium-6
-               .gifts-total-price-wrap
-                 ul
-                   li.gtp-key
-                     p
-                      |Total price.
-                   li.gtp-value
-                     p
-                       |2500
+                .gifts-total-price-wrap
+                  ul
+                    li.gtp-key
+                      p
+                        |Total price.
+                    li.gtp-value
+                      p
+                        |2500
               .columns.large-6.medium-6
                 .row
                   .columns.large-6.large-centered
@@ -191,6 +222,7 @@
               .columns.center
                 .columns.large-2.medium-2
                   .selected-one-gift
+                    .gift-ico-plus
                     .gift-action-button.ga-preview
                       a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
                         = embedded_svg "UD-icon-search.svg"
@@ -204,6 +236,7 @@
                         |Watch
                 .columns.large-2.medium-2
                   .selected-one-gift
+                    .gift-ico-plus
                     .gift-action-button.ga-preview
                       a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
                         = embedded_svg "UD-icon-search.svg"
@@ -217,6 +250,7 @@
                         |Watch
                 .columns.large-2.medium-2
                   .selected-one-gift
+                    .gift-ico-plus
                     .gift-action-button.ga-preview
                       a data-reveal-id="PreviewGift1" href="#" data-title-action="Send email"
                         = embedded_svg "UD-icon-search.svg"
@@ -248,6 +282,22 @@
                   .avatar
                     .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
                 .clearfix
+            .row
+              .columns.large-8.medium-8
+                .gifts-total-price-wrap
+                  ul
+                    li.gtp-key
+                      p
+                        |Total price.
+                    li.gtp-value
+                      p
+                        |2500
+              .columns.large-4.medium-4
+                .row
+                  .columns.large-7.right
+                    a.ud-button.special-text-shadow Send gift
+
+
 
             .row
               .columns.large-6.medium-6
@@ -260,7 +310,7 @@
                     textarea placeholder="Enter message" rows="7"
                 .row
                   .columns
-                    p
+                    p.gift-note
                       |Dont forget to
                       a.read-all-rules
                         |&nbsp;read all rules&nbsp;
