@@ -67,6 +67,12 @@ $(document).ready ->
     $body_tabs.addClass('hide')
     $body_tabs.eq(current_position).removeClass('hide')
 
+#  binder for click on button a.read-all-rules
+  $('a.read-all-rules').click (e)->
+    e.preventDefault()
+    $('.gcw-head-nav a').removeClass('active')
+    $('.gcw-head-nav a.gift-rules').addClass('active')
+
 
 
 #  binder for strat web cam chat

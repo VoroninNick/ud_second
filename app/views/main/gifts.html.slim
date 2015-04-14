@@ -25,7 +25,7 @@
                 .gift-tab-title
                   span delivered
           .columns.large-3.medium-3.small-3.gift-tab.gift-last-tab
-            a
+            a.gift-rules
               .gift-tab-head-block
                 .git-tab-ico
                   = embedded_svg "UD-gifts-rules.svg"
@@ -169,6 +169,22 @@
                   .avatar
                     .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
                 .clearfix
+            .row
+              .columns.large-6.medium-6
+               .gifts-total-price-wrap
+                 ul
+                   li.gtp-key
+                     p
+                      |Total price.
+                   li.gtp-value
+                     p
+                       |2500
+              .columns.large-6.medium-6
+                .row
+                  .columns.large-6.large-centered
+                    a.ud-button.special-text-shadow Send gift
+
+
 
             h5 З чотирма
             .row
@@ -234,7 +250,21 @@
                 .clearfix
 
             .row
-              .columns
+              .columns.large-6.medium-6
+                label Note for Galina
+                textarea placeholder="Enter message" rows="7"
+              .columns.large-6.medium-6
+                .row
+                  .columns
+                    label Note for administration
+                    textarea placeholder="Enter message" rows="7"
+                .row
+                  .columns
+                    p
+                      |Dont forget to
+                      a.read-all-rules
+                        |&nbsp;read all rules&nbsp;
+                      |and conditions about gift delivery
           .gift-catalog
             .title-head.grey.notification-wrap
               .columns
