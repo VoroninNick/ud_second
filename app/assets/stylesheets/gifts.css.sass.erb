@@ -89,7 +89,7 @@
       .gift-catalog
         padding-top: 35px
         .gc-wrap
-          //min-height: 500px
+          margin-bottom: 60px
           .gcw-head-nav
             margin-top: 10px
             margin-bottom: 15px
@@ -108,9 +108,9 @@
           .catalog-one-gift
             position: relative
             overflow: hidden
-            border: 1px solid transparent
+            margin: 1px
             &:hover
-              border-color: rgba(40, 127, 184, .8)
+              border: 2px solid rgba(40, 127, 184, .8)
               .gift-action-button
                 opacity: 1
               .og-price-wrap
@@ -180,6 +180,16 @@
             size: 14px
             weight: 600
           line-height: 16.8px
+          margin-bottom: 10px
+          span
+            color: #BEC3C7
+            font:
+              size: rem-calc(14)
+              weight: 300
+            line-height: rem-calc(16.8)
+            padding-left: .8rem
+
+
         .gift-label
           width: 100%
           height: 0
@@ -203,6 +213,7 @@
             size: rem-calc(12)
             weight: 300
           line-height: rem-calc(14.4)
+          margin-top: 13px
           a
             color: #FF6F70
 
@@ -231,6 +242,15 @@
               color: #808285
               &.active
                 color: #D03F4A
+textarea
+  margin: 0
+  outline: none !important
+  box-shadow: none !important
+  font-family: "Fira Sans", sans-serif !important
+  font-size: 0.875rem
+  font-weight: 300 !important
+  line-height: 1.05rem
+  color: #6D6E71 !important
 .gifts-total-price-wrap
   height: 38px
   border-top: 1px solid #BEC3C7

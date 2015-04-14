@@ -301,12 +301,18 @@
 
             .row
               .columns.large-6.medium-6
-                label Note for Galina
+                label
+                  |Note for Galina
+                  span
+                    |(0/300)
                 textarea placeholder="Enter message" rows="7"
               .columns.large-6.medium-6
                 .row
                   .columns
-                    label Note for administration
+                    label
+                      |Note for administration
+                      span
+                        |(0/300)
                     textarea placeholder="Enter message" rows="7"
                 .row
                   .columns
@@ -629,32 +635,10 @@
                   a Rules №5
             .columns.large-9.medium-9
               .g-rules-one-rule
-                .title-head.grey.notification-wrap
+                .title-head.grey
                   .columns
                     .wrap
                       h4 Delivery rules
-                      .items-menu.notification-link
-                        =image_tag "UD-icon-sub menu.svg"
-                        .notification-container
-                          .menu
-                            .group
-                              .title
-                                strong Display options:
-                              .options
-                                .option
-                                  .label
-                                    .icon
-                                      = embedded_svg "UD-icon-sort.svg"
-                                    span
-                                      |Sort by
-                                  .input
-                                    select.sort-by
-                                      option value="age_increase" Age increase
-                                      option value="age_decrease" Age decrease
-                                      option value="alfabet" Alfabet
-                                      option value="recent_activity" Recent activity
-                                      option value="favotites_first" Favotites first
-                                  .clearfix
                 .rule-tab-content.white-grey
                   .columns
                     .row
