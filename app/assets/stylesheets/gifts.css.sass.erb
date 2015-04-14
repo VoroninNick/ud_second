@@ -65,11 +65,19 @@
   .gifts-content-wrap
     .title-for-picture
       a
-        font-size: 0.875rem
-        font-weight: 400
+        font:
+          size: rem-calc(16)
+          family: 'Fira Sans', sans-serif
         line-height: 1.05rem
         color: #2E3E51
-        padding-top: 3px
+        margin: 0
+        padding: 0
+
+        //font-size: 0.875rem
+        //font-weight: 400
+        //line-height: 1.05rem
+        //color: #2E3E51
+        //padding-top: 3px
     .gift-one-page
       min-height: 850px
       padding-top: 35px
@@ -187,26 +195,8 @@
               size: rem-calc(14)
               weight: 300
             line-height: rem-calc(16.8)
-            padding-left: .8rem
+            padding-left: .5rem
 
-
-        .gift-label
-          width: 100%
-          height: 0
-          padding-bottom: 100%
-          //background: yellow
-          position: relative
-          b
-            font:
-              family: 'dearjoe_1_msregular'
-              size: rem-calc(42)
-              weight: 300
-            color: #FF6F70
-            display: block
-            width: 100%
-            //+my_vertical_align
-            +my_center_align
-              position: absolute
         p.gift-note
           color: #2E3E51
           font:
@@ -228,6 +218,22 @@
             height: 4px
             background-color: #96D03F
             width: 100%
+      .gift-label
+        width: 100%
+        height: 0
+        padding-bottom: 100%
+        position: relative
+        b
+          font:
+            family: 'dearjoe_1_msregular'
+            size: 2rem
+            weight: 300
+          color: #FF6F70
+          display: block
+          width: 100%
+          //+my_vertical_align
+          +my_center_align
+            position: absolute
       &.gift-rules
         ul
           margin-left: 0
@@ -240,8 +246,69 @@
                 family: 'Fira Sans', sans-serif
               line-height: rem-calc(38)
               color: #808285
-              &.active
+            &.active
+              a
                 color: #D03F4A
+                font-weight: 400
+      &.gift-delivered
+        margin-bottom: 60px
+      &.gift-sent
+        .gift-sent-list-one-list-wrap
+          margin:
+            top: 24px
+          padding:
+            left: 0.9375rem
+            right: 0.9375rem
+            bottom: 24px
+          position: relative
+          &:before
+            display: block
+            content: ""
+            height: 1px
+            left: 0
+            bottom: 0px
+            right: 0
+            position: absolute
+            background-color: #fff
+          &:after
+            display: block
+            content: ""
+            height: 1px
+            left: 0
+            bottom: -1px
+            right: 0
+            position: absolute
+            background-color: #BEC3C7
+        .gift-label
+          b
+            font:
+              size: 1.5rem
+        .avatar
+          position: relative
+          &:before
+            display: block
+            content: ""
+            position: absolute
+            bottom: 0
+            height: 4px
+            background-color: #96D03F
+            width: 100%
+        a
+          color: #2E3E51 !important
+        .gift-sent-empty
+          margin:
+            top: 75px
+            bottom: 80px
+          h4
+            color: #BEC3C7
+            font:
+              size: rem-calc(21)
+              weight: 400
+            text-transform: uppercase
+
+.no-padding
+  padding-left: 0
+  padding-right: 0
 textarea
   margin: 0
   outline: none !important
@@ -291,6 +358,7 @@ textarea
           color: #48647C
           font:
             size: rem-calc(24)
+            weight: 400
           line-height: rem-calc(38)
           margin: 0
           padding-left: 40px
@@ -305,7 +373,7 @@ textarea
     bottom: 2px
     width: 60px
   .dgg-status-wrap
-    margin-top: 15px
+    margin-top: 8px
     p
       font:
         size: rem-calc(14)
@@ -315,9 +383,28 @@ textarea
       margin-bottom: 0
       a
         color: #FF6F70
+.rule-tab-content
+  padding:
+    top: 15px
+    bottom: 35px
+  h4
+    font:
+      size: 1rem
+  p
+    font:
+      size: .875rem
+      weight: 200
 
 .selected-one-gift
   position: relative
+  &.gift-empty-ico
+    svg
+      width: 90%
+      margin: 0  auto
+      display: block
+    .title-for-picture
+      a
+        color: #3598DB !important
   .gift-ico-plus
     right: -24px
     width: 18px
@@ -389,7 +476,7 @@ textarea
           right: 0
           bottom: 0
           background-color: #2E3E51
-          opacity: .2
+          opacity: .3
     .image
       max-width: 100%
       width: 100%

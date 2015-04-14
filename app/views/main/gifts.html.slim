@@ -41,7 +41,7 @@
             .row
               .columns.center
                 .columns.large-2.large-offset-3.medium-2.medium-offset-3
-                  .selected-one-gift
+                  .selected-one-gift.gift-empty-ico
                     = embedded_svg "UD-gifts-gift center.svg"
                     .title-for-picture.text-center
                       a
@@ -79,6 +79,9 @@
                 .columns.large-2.medium-2.end
                   .avatar
                     .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
+                  .title-for-picture.text-center
+                    a
+                      |Galina
                 .clearfix
             .row
               .columns.large-2.large-offset-3.medium-6
@@ -132,6 +135,9 @@
                 .columns.large-2.medium-2.end
                   .avatar
                     .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
+                  .title-for-picture.text-center
+                    a
+                      |Galina
                 .clearfix
             .row
               .columns.large-4.large-offset-1.medium-6
@@ -199,6 +205,9 @@
                 .columns.large-2.medium-2.end
                   .avatar
                     .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
+                  .title-for-picture.text-center
+                    a
+                      |Galina
                 .clearfix
             .row
               .columns.large-6.medium-6
@@ -281,6 +290,9 @@
                 .columns.large-2.medium-2.end
                   .avatar
                     .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
+                  .title-for-picture.text-center
+                    a
+                      |Galina
                 .clearfix
             .row
               .columns.large-8.medium-8
@@ -520,7 +532,105 @@
                     a.more Show more
               .clearfix
 
-        .gift-one-page.gift-sent.hide gift-sent
+        .gift-one-page.gift-sent.hide
+          .title-head.grey.notification-wrap
+            .columns
+              .wrap
+                h4 Sent list
+                .items-menu.notification-link
+                  =image_tag "UD-icon-sub menu.svg"
+                  .notification-container
+                    .menu
+                      .group
+                        .title
+                          strong Display options:
+                        .options
+                          .option
+                            .label
+                              .icon
+                                = embedded_svg "UD-icon-sort.svg"
+                              span
+                                |Sort by
+                            .input
+                              select.sort-by
+                                option value="age_increase" Age increase
+                                option value="age_decrease" Age decrease
+                                option value="alfabet" Alfabet
+                                option value="recent_activity" Recent activity
+                                option value="favotites_first" Favotites first
+                            .clearfix
+
+
+          .white-grey
+            .columns.no-padding
+              .gift-sent-list-one-list-wrap
+                .row
+                  .columns.large-2.medium-2
+                    .avatar
+                      .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
+                    .title-for-picture.text-center
+                      a
+                        |Galina
+                  .columns.large-2.medium-2
+                    .gift-label
+                      b Waiting for...
+                  .columns.large-2.medium-2
+                    .selected-one-gift
+                      .gift-ico-plus
+                      a
+                        .image style="background: url('#{asset_path("posy-2.jpg")}')no-repeat center center;"
+                      .title-for-picture.text-center
+                        a
+                          |Posy
+                  .columns.large-2.medium-2.end
+                    .selected-one-gift
+                      a
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture4.jpg")}')no-repeat center center;"
+                      .title-for-picture.text-center
+                        a
+                          |Toys teddybear
+              .gift-sent-list-one-list-wrap
+                .row
+                  .columns.large-2.medium-2
+                    .avatar
+                      .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+                    .title-for-picture.text-center
+                      a
+                        |Galina
+                  .columns.large-2.medium-2
+                    .gift-label
+                      b Waiting for...
+                  .columns.large-2.medium-2
+                    .selected-one-gift
+                      .gift-ico-plus
+                      a
+                        .image style="background: url('#{asset_path("posy-2.jpg")}')no-repeat center center;"
+                      .title-for-picture.text-center
+                        a
+                          |Posy
+                  .columns.large-2.medium-2
+                    .selected-one-gift
+                      .gift-ico-plus
+                      a
+                        .image style="background: url('#{asset_path("wooman-watches-1.jpg")}')no-repeat center center;"
+                      .title-for-picture.text-center
+                        a
+                          |Toys teddybear
+                  .columns.large-2.medium-2.end
+                    .selected-one-gift
+                      a
+                        .image style="background: url('#{asset_path("posy-3.jpg")}')no-repeat center center;"
+                      .title-for-picture.text-center
+                        a
+                          |Posy
+
+            .columns.gift-sent-empty.text-center.hide
+              h4 You haven’t sent any gift yet
+            .clearfix
+
+
+
+
         .gift-one-page.gift-delivered.hide
           .title-head.grey.notification-wrap
             .columns
@@ -622,9 +732,9 @@
         .gift-one-page.gift-rules.hide
           .row
             .columns.large-3.medium-3
-              ul
-                li
-                  a.active Delivery rules
+              ul.gift-rule-tabs
+                li.active
+                  a Delivery rules
                 li
                   a Rules №2
                 li
@@ -639,6 +749,72 @@
                   .columns
                     .wrap
                       h4 Delivery rules
+                .rule-tab-content.white-grey
+                  .columns
+                    .row
+                      .columns
+                        h4 Rule title 1
+                        p
+                          |By clicking the Purchase Credits button, I hereby acknowledge and agree that the purchase and receipt of the credit package selected above, which provides the ability to utilize services through UkrainianDiamonds.com, including, but not limited to email messaging, instant messaging, live video streaming, and Camshare, constitutes value received.
+                        h4 Rule title 2
+                        p
+                          |Furthermore, I covenant and agree that I will not initiate any cardholder chargebacks in an attempt to secure a refund, and I recognize that any attempt to do so would constitute a violation of the terms of this purchase. I understand that, having hereby acknowledged value received, any effort to initiate such a chargeback would be a misrepresentation of fact and could be construed as an act of fraud.
+                  .clearfix
+
+              .g-rules-one-rule.hide
+                .title-head.grey
+                  .columns
+                    .wrap
+                      h4 Rules n2
+                .rule-tab-content.white-grey
+                  .columns
+                    .row
+                      .columns
+                        h4 Rule title 1
+                        p
+                          |By clicking the Purchase Credits button, I hereby acknowledge and agree that the purchase and receipt of the credit package selected above, which provides the ability to utilize services through UkrainianDiamonds.com, including, but not limited to email messaging, instant messaging, live video streaming, and Camshare, constitutes value received.
+
+                  .clearfix
+
+              .g-rules-one-rule.hide
+                .title-head.grey
+                  .columns
+                    .wrap
+                      h4 Rules n3
+                .rule-tab-content.white-grey
+                  .columns
+                    .row
+                      .columns
+                        h4 Rule title 1
+                        p
+                          |By clicking the Purchase Credits button, I hereby acknowledge and agree that the purchase and receipt of the credit package selected above, which provides the ability to utilize services through UkrainianDiamonds.com, including, but not limited to email messaging, instant messaging, live video streaming, and Camshare, constitutes value received.
+                        h4 Rule title 2
+                        p
+                          |Furthermore, I covenant and agree that I will not initiate any cardholder chargebacks in an attempt to secure a refund, and I recognize that any attempt to do so would constitute a violation of the terms of this purchase. I understand that, having hereby acknowledged value received, any effort to initiate such a chargeback would be a misrepresentation of fact and could be construed as an act of fraud.
+                  .clearfix
+
+              .g-rules-one-rule.hide
+                .title-head.grey
+                  .columns
+                    .wrap
+                      h4 Rules n4
+                .rule-tab-content.white-grey
+                  .columns
+                    .row
+                      .columns
+                        h4 Rule title 1
+                        p
+                          |By clicking the Purchase Credits button, I hereby acknowledge and agree that the purchase and receipt of the credit package selected above, which provides the ability to utilize services through UkrainianDiamonds.com, including, but not limited to email messaging, instant messaging, live video streaming, and Camshare, constitutes value received.
+                        h4 Rule title 2
+                        p
+                          |Furthermore, I covenant and agree that I will not initiate any cardholder chargebacks in an attempt to secure a refund, and I recognize that any attempt to do so would constitute a violation of the terms of this purchase. I understand that, having hereby acknowledged value received, any effort to initiate such a chargeback would be a misrepresentation of fact and could be construed as an act of fraud.
+                  .clearfix
+
+              .g-rules-one-rule.hide
+                .title-head.grey
+                  .columns
+                    .wrap
+                      h4 Rules n5
                 .rule-tab-content.white-grey
                   .columns
                     .row

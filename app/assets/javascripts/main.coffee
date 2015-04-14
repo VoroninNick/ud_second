@@ -40,6 +40,20 @@ $(window).scroll (event) ->
 
 
 $(document).ready ->
+#  gift sub rules tabs
+  $('ul.gift-rule-tabs li').click (e)->
+    e.preventDefault()
+    current_position = $(this).index()
+    $wrapper = $(this).closest('.gift-rules')
+    $tabHeader = $wrapper.find('li')
+    $tabHeader.removeClass('active')
+    $(this).addClass('active')
+
+    $body_tabs = $wrapper.find('.g-rules-one-rule')
+    $body_tabs.addClass('hide')
+    $body_tabs.eq(current_position).removeClass('hide')
+
+
 #gift preview image in popup
   $('.gift-popup-images-wrap .gift-image-thumb').click ->
     $wrapper = $(this).closest('.gift-popup-images-wrap')
