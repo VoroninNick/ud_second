@@ -35,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="inbox.css.sass.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/inbox.css.sass.erb">
+      <file leaf-file-name="mail_box.html.slim" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/main/mail_box.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5292865" vertical-offset="3668" max-vertical-offset="6154">
-              <caret line="245" column="147" selection-start-line="245" selection-start-column="7" selection-end-line="245" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.55291575" vertical-offset="2939" max-vertical-offset="7854">
+              <caret line="203" column="65" selection-start-line="203" selection-start-column="65" selection-end-line="203" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -90,10 +90,10 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.sass" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/inbox.css.sass" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/profile.css.sass.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/main.coffee" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/views/main/mail_box.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/inbox.css.sass.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/main.coffee" />
+        <option value="$PROJECT_DIR$/app/views/main/mail_box.html.slim" />
       </list>
     </option>
   </component>
@@ -338,7 +338,7 @@
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.slim" />
     <property name="SearchEverywhereHistoryKey" value="your-introduction-letter &#9;null&#9;null&#10;.icon-send-to&#9;null&#9;null&#10;routes&#9;FILE&#9;file:///Volumes/WORK/Nazariy/Projects/ UD/Project/ud-service-second/config/routes.rb&#10;text-chat-view-container&#9;null&#9;null&#10;a.ud-button&#9;null&#9;null&#10;.ordered-list&#9;null&#9;null&#10;.information&#9;null&#9;null&#10;information&#9;null&#9;null&#10;ud-button&#9;null&#9;null&#10;route&#9;FILE&#9;file:///Volumes/WORK/Nazariy/Projects/ UD/Project/ud-service-second/config/routes.rb&#10;.title-head&#9;null&#9;null&#10;main&#9;FILE&#9;file:///Volumes/WORK/Nazariy/Projects/ UD/Project/ud-service-second/app/controllers/main_controller.rb&#10;rout&#9;FILE&#9;file:///Volumes/WORK/Nazariy/Projects/ UD/Project/ud-service-second/config/routes.rb&#10;gem&#9;FILE&#9;file:///Volumes/WORK/Nazariy/Projects/ UD/Project/ud-service-second/Gemfile&#10;preview-profile&#9;null&#9;null&#10;round-count&#9;null&#9;null&#10;.favorites-nav-wrap&#9;null&#9;null&#10;action-button&#9;null&#9;null&#10;.ordered-list-wrap&#9;null&#9;null" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.lastSelected" value="preferences.sourceCode.CSS" />
+    <property name="options.lastSelected" value="preferences.fileTypes" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FullScreen" value="false" />
@@ -1684,59 +1684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/main.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3768116" vertical-offset="469" max-vertical-offset="5729">
-          <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
-          <folding>
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429105586000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32560483" vertical-offset="0" max-vertical-offset="992">
@@ -1745,453 +1692,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main/mail_box.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.109129064" vertical-offset="1273" max-vertical-offset="7854">
-          <caret line="81" column="35" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="35" />
-          <folding>
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-inbox-page-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-inbox-header-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row.medium-main" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.medium-10.medium-centered.large-12" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-2.medium-2.ud-inbox-tab.active" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-head-block" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-ico" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="= embedded_svg &quot;UAD-inbox-1-Inbox.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-title" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span inbox" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-2.medium-2.ud-inbox-tab" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-head-block" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-ico" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="= embedded_svg &quot;UAD-inbox-2-Intro.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-title" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span intros" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-2.medium-2.ud-inbox-tab" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-head-block" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-ico" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="= embedded_svg &quot;UAD-inbox-3-sent.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-title" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span sent" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-2.medium-2.ud-inbox-tab" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-head-block" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-ico" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="= embedded_svg &quot;UAD-inbox-4-drafts.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-title" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span drafts" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-2.medium-2.ud-inbox-tab" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-head-block" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-ico" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="= embedded_svg &quot;UAD-inbox-5-saved.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-title" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span saved" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-2.medium-2.ud-inbox-tab.ud-inbox-last-tab" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-head-block" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-ico" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="= embedded_svg &quot;UAD-inbox-6 trash.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".inbox-tab-title" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span Trash" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-inbox-content-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row.medium-main" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.medium-10.medium-centered.large-12" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-inbox-one-tab-wrap.ud-inbox-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".title-head.grey.notification-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="h4 draft messeges" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".items-menu.notification-link" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=image_tag &quot;UD-icon-sub menu.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".notification-container" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".menu" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".group" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".title" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="strong Display options:" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".options" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".option" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".label" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".icon" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="= embedded_svg &quot;UD-icon-sort.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Sort by" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".input" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="select.sort-by" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="option value=&quot;age_increase&quot; Age increase" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="option value=&quot;age_decrease&quot; Age decrease" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="option value=&quot;alfabet&quot; Alfabet" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="option value=&quot;recent_activity&quot; Recent activity" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="option value=&quot;favotites_first&quot; Favotites first" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".white-grey.ud-draft-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.no-padding" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-one-block-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-inbox-message-block-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-option-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-option" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-sub menu.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-option-popup.hide" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="ul" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-replay.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Reply" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-5-saved.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Save e-mail" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-print.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Print it" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-6 trash.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Delete" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="p Messege id: #20150323234501123" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-2.medium-2" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".avatar-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".avatar" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;girl_24.jpg&quot;)}')no-repeat center center;&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".title-for-avatar.text-center" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Galina" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-10.medium-10.no-padding-left" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ui-message-main-wrap data-count-messages=&quot;[6]&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="b Spring is the subject of conversation" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="p.ud-inbox-draft Draft" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ui-message-detail-info" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="p.ud-date" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|2015-02-20" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-5-saved.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-4-drafts.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-11.medium-11.small-11" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="p.ud-text-message" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|I wish I could call you with a special name in real life. But did you decide something about our acquaintence? Or still not sure?? what doubts do you have, suleyman? Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me. I`m repeating it to you all the time, so what is the problem? You look through my profile when I write to you.? Oksana" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".column" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ui-all-messages.title-head.grey.notification-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="h4 all conversations" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".items-menu.notification-link" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=image_tag &quot;UD-icon-sub menu.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".notification-container" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".menu" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".group" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".title" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="strong Display options:" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".options" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".option" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".label" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".icon" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="= embedded_svg &quot;UD-icon-sort.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Sort by" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".input" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="select.sort-by" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="option value=&quot;age_increase&quot; Age increase" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="option value=&quot;age_decrease&quot; Age decrease" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="option value=&quot;alfabet&quot; Alfabet" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="option value=&quot;recent_activity&quot; Recent activity" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="option value=&quot;favotites_first&quot; Favotites first" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".white-grey.all-conversations.ud-inbox-message-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.no-padding" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-one-block-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-inbox-message-block-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-option-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-option" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-sub menu.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-option-popup.hide" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="ul" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-replay.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Reply" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-5-saved.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Save e-mail" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-print.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Print it" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-6 trash.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Delete" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="p Messege id: #20150323234501123" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-2.medium-2" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".avatar-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".avatar" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;girl_11.jpeg&quot;)}')no-repeat center center;&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".title-for-avatar.text-center" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Kateryna" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-10.medium-10.no-padding-left" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ui-message-main-wrap data-count-messages=&quot;[6]&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="b Spring is the subject of conversation" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ui-message-detail-info" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="p.ud-date" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|2015-02-20" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-5-saved.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-2-Intro.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-4-drafts.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-11.medium-11.small-11" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="p.ud-text-message" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|I wish I could call you with a special name in real life. But did you decide something about our acquaintence? Or still not sure?? what doubts do you have, suleyman? Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me. I`m repeating it to you all the time, so what is the problem? You look through my profile when I write to you.? Oksana" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".column" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-inbox-sent-message.hide" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-2.medium-2" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".avatar-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".avatar" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;user_avatar_default.png&quot;)}')no-repeat center center;&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".title-for-avatar.text-center" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|me" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.no-padding-left.large-10.medium-10" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-input-message-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="form" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".input" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".input-label" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="label" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Quick replay" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|(0/1000)" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="textarea placeholder=&quot;The maximum message length is 1000 symbols&quot; rows=&quot;7&quot; maxlength=&quot;1000&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a.modal-link.m-send.right data-reveal-id=&quot;YourIntroductionLetterSend&quot; href=&quot;#&quot; Send" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a.edit-icon-svg.browse-file.right" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="= embedded_svg &quot;UD-icon-add files.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a.edit-icon-svg.smiles.right" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="= embedded_svg &quot;UD-icon-smile.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-one-block-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-inbox-message-block-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-option-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-option" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-sub menu.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-option-popup.hide" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="ul" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-replay.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Reply" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-5-saved.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Save e-mail" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-print.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Print it" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-6 trash.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Delete" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="p Messege id: #20150323234501123" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-2.medium-2" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".avatar-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".avatar" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;girl_101.jpg&quot;)}')no-repeat center center;&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".title-for-avatar.text-center" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Olena" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-10.medium-10.no-padding-left" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ui-message-main-wrap data-count-messages=&quot;[3]&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="b Spring is the subject of conversation" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ui-message-detail-info" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="p.ud-date" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|2015-02-20" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-5-saved.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-2-Intro.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-4-drafts.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-11.medium-11.small-11" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="p.ud-text-message" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|I wish I could call you with a special name in real life. But did you decide something about our acquaintence? Or still not sure?? what doubts do you have, suleyman? Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me. I`m repeating it to you all the time, so what is the problem? You look through my profile when I write to you.? Oksana" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".column" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-inbox-message-block-wrap.ud-inbox-message-sub-block-wrap.ud-inbox-message-from-me" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-option-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-option" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-sub menu.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-option-popup.hide" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="ul" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-replay.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Reply" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-5-saved.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Save e-mail" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-print.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Print it" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-6 trash.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Delete" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="p Messege id: #20150323234501123" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-2.medium-2" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".avatar-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".avatar" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;user_avatar_default.png&quot;)}')no-repeat center center;&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".title-for-avatar.text-center" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|me" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-10.medium-10.no-padding-left" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ui-message-main-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="p.ud-date 02:16 PM" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ui-message-detail-info" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-5-saved.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-2-Intro.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-4-drafts.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-11.medium-11.small-11" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="p.ud-text-message" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Hello! Your life is gonna change this year and I can tell you why! My name is Gregory, I was born in sweet place of Ukraine - calling Poltava. To introduce myself I want to start from five words: -faith -love -future -dream -eternity You know why?" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".column" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-inbox-message-block-wrap.ud-inbox-message-sub-block-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-option-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-option" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-sub menu.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-message-option-popup.hide" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="ul" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-replay.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Reply" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-5-saved.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Save e-mail" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-print.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Print it" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="li" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-6 trash.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Delete" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="p Messege id: #20150323234501123" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-2.medium-2" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".avatar-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".avatar" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;girl_101.jpg&quot;)}')no-repeat center center;&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".title-for-avatar.text-center" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|me" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-10.medium-10.no-padding-left" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ui-message-main-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="p.ud-date 02:32 PM" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ui-message-detail-info" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-5-saved.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-2-Intro.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-inbox-4-drafts.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-11.medium-11.small-11" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="p.ud-text-message" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|My DREAM is strong family, I know it will someday. And everything I do - should come in ETERNITY soon, it will be my children...through all generations. So here I am. If you like my world – so just come in and you’ll see more. Enjoy!" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".column" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-inbox-sent-message" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.large-2.medium-2" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".avatar-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".avatar" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;user_avatar_default.png&quot;)}')no-repeat center center;&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".title-for-avatar.text-center" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|me" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns.no-padding-left.large-10.medium-10" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".ud-input-message-wrap" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="form" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".input" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".input-label" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="label" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|Quick replay" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="span" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="|(0/1000)" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="textarea placeholder=&quot;The maximum message length is 1000 symbols&quot; rows=&quot;7&quot; maxlength=&quot;1000&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".columns" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a.modal-link.m-send.right data-reveal-id=&quot;YourIntroductionLetterSend&quot; href=&quot;#&quot; Send" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a.edit-icon-svg.browse-file.right" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="= embedded_svg &quot;UD-icon-add files.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="a.edit-icon-svg.smiles.right" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder="= embedded_svg &quot;UD-icon-smile.svg&quot;" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
-            <marker date="1429109640000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/inbox.css.sass.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5292865" vertical-offset="3668" max-vertical-offset="6154">
           <caret line="245" column="147" selection-start-line="245" selection-start-column="7" selection-end-line="245" selection-end-column="7" />
+          <folding>
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429110125000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/main.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60559005" vertical-offset="299" max-vertical-offset="5797">
+          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+          <folding>
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429111094000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main/mail_box.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55291575" vertical-offset="2939" max-vertical-offset="7854">
+          <caret line="203" column="65" selection-start-line="203" selection-start-column="65" selection-end-line="203" selection-end-column="65" />
           <folding />
         </state>
       </provider>

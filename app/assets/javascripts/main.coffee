@@ -44,11 +44,15 @@ $(document).ready ->
   $('.ui-message-main-wrap b, .ui-message-main-wrap p.ud-text-message').click ->
     $wrapper = $(this).closest('.ud-message-one-block-wrap')
     $editMessage = $wrapper.find('.ud-inbox-sent-message')
+    $subMesssageWrapper = $wrapper.find('.ud-inbox-message-sub-block-wrap')
+    $subMesssageWrapper.removeClass('hide')
     $editMessage.removeClass('hide')
 
   $('.ud-inbox-message-wrap a.m-send').click ->
     $wrapper = $(this).closest('.ud-message-one-block-wrap')
     $editMessage = $wrapper.find('.ud-inbox-sent-message')
+    $subMesssageWrapper = $wrapper.find('.ud-inbox-message-sub-block-wrap')
+    $subMesssageWrapper.addClass('hide')
     $editMessage.addClass('hide')
 
 #  gift sub rules tabs
