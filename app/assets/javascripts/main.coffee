@@ -40,6 +40,10 @@ $(window).scroll (event) ->
 
 
 $(document).ready ->
+#  mail box
+  $('.ui-message-main-wrap b, .ui-message-main-wrap p.ud-text-message').click ->
+    alert "test"
+
 #  gift sub rules tabs
   $('ul.gift-rule-tabs li').click (e)->
     e.preventDefault()
