@@ -98,17 +98,7 @@
 
         &.ud-inbox-draft
           padding-left: 50px
-          &:after
-            display: block
-            content: ''
-            width: 30px
-            height: 16px
-            background-image: url('<%=asset_path("UD-icon-sent to.svg")%>')
-            background-size: 100%
-            background-repeat: no-repeat
-            position: absolute
-            top: 30%
-            left: 0
+
         .avatar
           position: relative
           &:before
@@ -232,10 +222,73 @@
             size: rem-calc(14)
             weight: 300
           line-height: rem-calc(16.8)
+      &.ud-inbox-message-sub-block-wrap
+        padding-left: 5%
+        p.ud-date
+          display: inline-block
+          margin-bottom: 0
+          color: #BEC3C7
+        p.ud-text-message
+          color: #404049
+      &.ud-inbox-message-from-me
+        .avatar
+          &:before
+            display: none
+          .image
+            border-radius: 50%
+            padding-bottom: 100%
+
+p.ud-inbox-draft
+  position: absolute
+  left: 0.9375rem
+  top: 0
+  color: #FF6F70
+  font:
+    size: rem-calc(14)
+    weight: 300
+  line-height: rem-calc(16.8)
+  margin-bottom: 0
+
+.ud-draft-wrap
+  .avatar-wrap
+    float: right
+    margin-right: 20px !important
+    position: relative
+    &:after
+      display: block
+      content: ''
+      width: 30px
+      height: 16px
+      background-image: url('<%=asset_path("UD-icon-sent to.svg")%>')
+      background-size: 100%
+      background-repeat: no-repeat
+      position: absolute
+      top: 30%
+      left: -40px
 .all-conversations
   margin-bottom: 165px
 .ud-inbox-sent-message
   padding-top: 30px
+  position: relative
+  &:before
+    display: block
+    content: ""
+    height: 1px
+    left: 0
+    bottom: 0px
+    right: 0
+    position: absolute
+    background-color: #fff
+  &:after
+    display: block
+    content: ""
+    height: 1px
+    left: 0
+    bottom: -1px
+    right: 0
+    position: absolute
+    background-color: #BEC3C7
+
   .avatar-wrap
     position: relative
     width: 60px

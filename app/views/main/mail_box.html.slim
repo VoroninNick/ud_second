@@ -79,29 +79,63 @@
                             .clearfix
 
 
-          .white-grey
+          .white-grey.ud-draft-wrap
             .columns.no-padding
-              .ud-inbox-message-block-wrap
-                .columns.large-2.medium-2
-                  .avatar-wrap.ud-inbox-draft
-                    .avatar
-                      .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
-                    .title-for-avatar.text-center
-                      span
-                        |Galina
-                .columns.large-10.medium-10
-                  .columns
-                    .row
-                      .columns.large-6.medium-6
-                        b Spring is the subject of conversation
-                      .columns.large-6.medium-6
-                        p.udi-label Draft
-                    .row
-                      .columns
-                        p
-                          |I wish I could call you with a special name in real life. But did you decide something about our acquaintence? Or still not sure?? what doubts do you have, suleyman? Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me. I`m repeating it to you all the time, so what is the problem? You look through my profile when I write to you.? Oksana
+              .ud-message-one-block-wrap
+                .ud-inbox-message-block-wrap
+                  .ud-message-option-wrap
+                    .ud-message-option
+                      =embedded_svg "UD-icon-sub menu.svg"
+                      .ud-message-option-popup.hide
+                        ul
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-replay.svg"
+                              |Reply
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-5-saved.svg"
+                              |Save e-mail
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-print.svg"
+                              |Print it
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-6 trash.svg"
+                              |Delete
+                          p Messege id: #20150323234501123
+                  .row
+                    .columns.large-2.medium-2
+                      .avatar-wrap
+                        .avatar
+                          .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+                        .title-for-avatar.text-center
+                          span
+                            |Galina
+                    .columns.large-10.medium-10.no-padding-left
+                      .ui-message-main-wrap data-count-messages="[6]"
+                        .row
+                          .columns.large-6.medium-6
+                            b Spring is the subject of conversation
+                          .columns.large-6.medium-6
+                            p.ud-inbox-draft Draft
+                            .ui-message-detail-info
+                              p.ud-date
+                                |2015-02-20
+                              a
+                                =embedded_svg "UAD-inbox-5-saved.svg"
+                              a
+                                =embedded_svg "UAD-inbox-4-drafts.svg"
 
-                .clearfix
+                        .row
+                          .columns.large-11.medium-11.small-11
+                            p.ud-text-message
+                              |I wish I could call you with a special name in real life. But did you decide something about our acquaintence? Or still not sure?? what doubts do you have, suleyman? Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me. I`m repeating it to you all the time, so what is the problem? You look through my profile when I write to you.? Oksana
+                        .row
+                          .column
+                  .clearfix
+
             .clearfix
 
           .ui-all-messages.title-head.grey.notification-wrap
@@ -132,65 +166,178 @@
                             .clearfix
 
 
-          .white-grey.all-conversations
+          .white-grey.all-conversations.ud-inbox-message-wrap
             .columns.no-padding
-              .ud-inbox-message-block-wrap
-                .ud-message-option-wrap
-                  .ud-message-option
-                    =embedded_svg "UD-icon-sub menu.svg"
-                    .ud-message-option-popup.hide
-                      ul
-                        li
-                          a
-                            =embedded_svg "UAD-inbox-replay.svg"
-                            |Reply
-                        li
-                          a
-                            =embedded_svg "UAD-inbox-5-saved.svg"
-                            |Save e-mail
-                        li
-                          a
-                            =embedded_svg "UAD-inbox-print.svg"
-                            |Print it
-                        li
-                          a
-                            =embedded_svg "UAD-inbox-6 trash.svg"
-                            |Delete
-                        p Messege id: #20150323234501123
-                .row
-                  .columns.large-2.medium-2
-                    .avatar-wrap
-                      .avatar
-                        .image style="background: url('#{asset_path("girl_11.jpeg")}')no-repeat center center;"
-                      .title-for-avatar.text-center
-                        span
-                          |Kateryna
-                  .columns.large-10.medium-10.no-padding-left
-                    .ui-message-main-wrap data-count-messages="[6]"
-                      .row
-                        .columns.large-6.medium-6
-                          b Spring is the subject of conversation
-                        .columns.large-6.medium-6
-                          .ui-message-detail-info
-                            p.ud-date
-                              |2015-02-20
+              .ud-message-one-block-wrap
+                .ud-inbox-message-block-wrap
+                  .ud-message-option-wrap
+                    .ud-message-option
+                      =embedded_svg "UD-icon-sub menu.svg"
+                      .ud-message-option-popup.hide
+                        ul
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-replay.svg"
+                              |Reply
+                          li
                             a
                               =embedded_svg "UAD-inbox-5-saved.svg"
+                              |Save e-mail
+                          li
                             a
-                              =embedded_svg "UAD-inbox-2-Intro.svg"
+                              =embedded_svg "UAD-inbox-print.svg"
+                              |Print it
+                          li
                             a
-                              =embedded_svg "UAD-inbox-4-drafts.svg"
+                              =embedded_svg "UAD-inbox-6 trash.svg"
+                              |Delete
+                          p Messege id: #20150323234501123
+                  .row
+                    .columns.large-2.medium-2
+                      .avatar-wrap
+                        .avatar
+                          .image style="background: url('#{asset_path("girl_11.jpeg")}')no-repeat center center;"
+                        .title-for-avatar.text-center
+                          span
+                            |Kateryna
+                    .columns.large-10.medium-10.no-padding-left
+                      .ui-message-main-wrap data-count-messages="[6]"
+                        .row
+                          .columns.large-6.medium-6
+                            b Spring is the subject of conversation
+                          .columns.large-6.medium-6
+                            .ui-message-detail-info
+                              p.ud-date
+                                |2015-02-20
+                              a
+                                =embedded_svg "UAD-inbox-5-saved.svg"
+                              a
+                                =embedded_svg "UAD-inbox-2-Intro.svg"
+                              a
+                                =embedded_svg "UAD-inbox-4-drafts.svg"
 
-                      .row
-                        .columns.large-11.medium-11.small-11
-                          p.ud-text-message
-                            |I wish I could call you with a special name in real life. But did you decide something about our acquaintence? Or still not sure?? what doubts do you have, suleyman? Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me. I`m repeating it to you all the time, so what is the problem? You look through my profile when I write to you.? Oksana
-                      .row
-                        .columns
+                        .row
+                          .columns.large-11.medium-11.small-11
+                            p.ud-text-message
+                              |I wish I could call you with a special name in real life. But did you decide something about our acquaintence? Or still not sure?? what doubts do you have, suleyman? Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me. I`m repeating it to you all the time, so what is the problem? You look through my profile when I write to you.? Oksana
+                        .row
+                          .column
+                  .clearfix
 
-                .clearfix
-              .ud-inbox-sent-message
-                .columns
+
+                .ud-inbox-sent-message.hide
+                  .columns
+                    .row
+                      .columns.large-2.medium-2
+                        .avatar-wrap
+                          .avatar
+                            .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+                          .title-for-avatar.text-center
+                            span
+                              |me
+                      .columns.no-padding-left.large-10.medium-10
+                        .ud-input-message-wrap
+                          form
+                            .row
+                              .columns
+                                .input
+                                  .input-label
+                                    label
+                                      |Quick replay
+                                      span
+                                        |(0/1000)
+
+                                  textarea placeholder="The maximum message length is 1000 symbols" rows="7" maxlength="1000"
+                          .row
+                            .columns
+                              /a Translate into english
+                              a.modal-link.m-send.right data-reveal-id="YourIntroductionLetterSend" href="#" Send
+                              a.edit-icon-svg.browse-file.right
+                                = embedded_svg "UD-icon-add files.svg"
+                              a.edit-icon-svg.smiles.right
+                                = embedded_svg "UD-icon-smile.svg"
+                          .clearfix
+                  .clearfix
+
+              .ud-message-one-block-wrap
+                .ud-inbox-message-block-wrap
+                  .ud-message-option-wrap
+                    .ud-message-option
+                      =embedded_svg "UD-icon-sub menu.svg"
+                      .ud-message-option-popup.hide
+                        ul
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-replay.svg"
+                              |Reply
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-5-saved.svg"
+                              |Save e-mail
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-print.svg"
+                              |Print it
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-6 trash.svg"
+                              |Delete
+                          p Messege id: #20150323234501123
+                  .row
+                    .columns.large-2.medium-2
+                      .avatar-wrap
+                        .avatar
+                          .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
+                        .title-for-avatar.text-center
+                          span
+                            |Olena
+                    .columns.large-10.medium-10.no-padding-left
+                      .ui-message-main-wrap data-count-messages="[3]"
+                        .row
+                          .columns.large-6.medium-6
+                            b Spring is the subject of conversation
+                          .columns.large-6.medium-6
+                            .ui-message-detail-info
+                              p.ud-date
+                                |2015-02-20
+                              a
+                                =embedded_svg "UAD-inbox-5-saved.svg"
+                              a
+                                =embedded_svg "UAD-inbox-2-Intro.svg"
+                              a
+                                =embedded_svg "UAD-inbox-4-drafts.svg"
+
+                        .row
+                          .columns.large-11.medium-11.small-11
+                            p.ud-text-message
+                              |I wish I could call you with a special name in real life. But did you decide something about our acquaintence? Or still not sure?? what doubts do you have, suleyman? Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me. I`m repeating it to you all the time, so what is the problem? You look through my profile when I write to you.? Oksana
+                        .row
+                          .column
+                  .clearfix
+                / sub message
+                .ud-inbox-message-block-wrap.ud-inbox-message-sub-block-wrap.ud-inbox-message-from-me
+                  .ud-message-option-wrap
+                    .ud-message-option
+                      =embedded_svg "UD-icon-sub menu.svg"
+                      .ud-message-option-popup.hide
+                        ul
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-replay.svg"
+                              |Reply
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-5-saved.svg"
+                              |Save e-mail
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-print.svg"
+                              |Print it
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-6 trash.svg"
+                              |Delete
+                          p Messege id: #20150323234501123
                   .row
                     .columns.large-2.medium-2
                       .avatar-wrap
@@ -199,26 +346,112 @@
                         .title-for-avatar.text-center
                           span
                             |me
-                    .columns.no-padding-left.large-10.medium-10
-                      .ud-input-message-wrap
-                        form
+                    .columns.large-10.medium-10.no-padding-left
+                      .ui-message-main-wrap
+                        .row
+                          .columns.large-6.medium-6
+                            p.ud-date 02:16 PM
+                          .columns.large-6.medium-6
+                            .ui-message-detail-info
+                              a
+                                =embedded_svg "UAD-inbox-5-saved.svg"
+                              a
+                                =embedded_svg "UAD-inbox-2-Intro.svg"
+                              a
+                                =embedded_svg "UAD-inbox-4-drafts.svg"
+
+                        .row
+                          .columns.large-11.medium-11.small-11
+                            p.ud-text-message
+                              |Hello! Your life is gonna change this year and I can tell you why! My name is Gregory, I was born in sweet place of Ukraine - calling Poltava. To introduce myself I want to start from five words: -faith -love -future -dream -eternity You know why?
+                        .row
+                          .column
+                  .clearfix
+                / sub message
+                .ud-inbox-message-block-wrap.ud-inbox-message-sub-block-wrap
+                  .ud-message-option-wrap
+                    .ud-message-option
+                      =embedded_svg "UD-icon-sub menu.svg"
+                      .ud-message-option-popup.hide
+                        ul
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-replay.svg"
+                              |Reply
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-5-saved.svg"
+                              |Save e-mail
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-print.svg"
+                              |Print it
+                          li
+                            a
+                              =embedded_svg "UAD-inbox-6 trash.svg"
+                              |Delete
+                          p Messege id: #20150323234501123
+                  .row
+                    .columns.large-2.medium-2
+                      .avatar-wrap
+                        .avatar
+                          .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
+                        .title-for-avatar.text-center
+                          span
+                            |me
+                    .columns.large-10.medium-10.no-padding-left
+                      .ui-message-main-wrap
+                        .row
+                          .columns.large-6.medium-6
+                            p.ud-date 02:32 PM
+                          .columns.large-6.medium-6
+                            .ui-message-detail-info
+                              a
+                                =embedded_svg "UAD-inbox-5-saved.svg"
+                              a
+                                =embedded_svg "UAD-inbox-2-Intro.svg"
+                              a
+                                =embedded_svg "UAD-inbox-4-drafts.svg"
+
+                        .row
+                          .columns.large-11.medium-11.small-11
+                            p.ud-text-message
+                              |My DREAM is strong family, I know it will someday. And everything I do - should come in ETERNITY soon, it will be my children...through all generations. So here I am. If you like my world – so just come in and you’ll see more. Enjoy!
+                        .row
+                          .column
+                  .clearfix
+
+                .ud-inbox-sent-message
+                  .columns
+                    .row
+                      .columns.large-2.medium-2
+                        .avatar-wrap
+                          .avatar
+                            .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+                          .title-for-avatar.text-center
+                            span
+                              |me
+                      .columns.no-padding-left.large-10.medium-10
+                        .ud-input-message-wrap
+                          form
+                            .row
+                              .columns
+                                .input
+                                  .input-label
+                                    label
+                                      |Quick replay
+                                      span
+                                        |(0/1000)
+
+                                  textarea placeholder="The maximum message length is 1000 symbols" rows="7" maxlength="1000"
                           .row
                             .columns
-                              .input
-                                .input-label
-                                  label
-                                    |Quick replay
-                                    span
-                                      |(0/1000)
-
-                                textarea placeholder="The maximum message length is 1000 symbols" rows="7" maxlength="1000"
-                        .row
-                          .columns
-                            /a Translate into english
-                            a.modal-link.m-send.right data-reveal-id="YourIntroductionLetterSend" href="#" Send
-                            a.edit-icon-svg.browse-file.right
-                              = embedded_svg "UD-icon-add files.svg"
-                            a.edit-icon-svg.smiles.right
-                              = embedded_svg "UD-icon-smile.svg"
-                        .clearfix
+                              /a Translate into english
+                              a.modal-link.m-send.right data-reveal-id="YourIntroductionLetterSend" href="#" Send
+                              a.edit-icon-svg.browse-file.right
+                                = embedded_svg "UD-icon-add files.svg"
+                              a.edit-icon-svg.smiles.right
+                                = embedded_svg "UD-icon-smile.svg"
+                          .clearfix
+                  .clearfix
             .clearfix

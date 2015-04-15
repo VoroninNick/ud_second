@@ -42,7 +42,14 @@ $(window).scroll (event) ->
 $(document).ready ->
 #  mail box
   $('.ui-message-main-wrap b, .ui-message-main-wrap p.ud-text-message').click ->
-    alert "test"
+    $wrapper = $(this).closest('.ud-message-one-block-wrap')
+    $editMessage = $wrapper.find('.ud-inbox-sent-message')
+    $editMessage.removeClass('hide')
+
+  $('.ud-inbox-message-wrap a.m-send').click ->
+    $wrapper = $(this).closest('.ud-message-one-block-wrap')
+    $editMessage = $wrapper.find('.ud-inbox-sent-message')
+    $editMessage.addClass('hide')
 
 #  gift sub rules tabs
   $('ul.gift-rule-tabs li').click (e)->
