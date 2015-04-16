@@ -67,6 +67,24 @@
             position: absolute
 
   .gifts-content-wrap
+    .ud-button-wrap
+      position: relative
+      margin-top: 20px
+      margin-bottom: 50px
+      height: 35px
+      &:before, &:after
+        display: block
+        content: ''
+        position: absolute
+        background-color: #D03F4A
+        top: 0
+        bottom: 0
+        width: 45px
+      &:before
+        left: -45px
+      &:after
+        right: -45px
+
     .title-for-picture
       a
         font:
@@ -183,9 +201,6 @@
                 path
                   fill: #fff
       .gift-order
-        a.ud-button
-          margin-top: 20px
-          margin-bottom: 50px
         label
           color: #2E3E51
           font:
@@ -227,6 +242,8 @@
         height: 0
         padding-bottom: 100%
         position: relative
+        @media (min-width : 0) and (max-width : 40em)
+          padding-bottom: 35%
         b
           font:
             family: 'dearjoe_1_msregular'
