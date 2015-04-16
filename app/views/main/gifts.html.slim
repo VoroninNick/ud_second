@@ -532,45 +532,79 @@
           .title-head.grey.notification-wrap
             .columns
               .wrap
+                h4 Processed by administration
+
+
+          .white-grey.gift-delivery-processed-by-administration.gift-sent-list-one-block-wrap
+            .columns.no-padding
+              .gift-sent-list-one-list-wrap
+                .columns.large-4.medium-4.small-6
+                  .delivered-girl-with-gift-wrap
+                    .delivered-girl-with-gift
+                      .image style="background: url('#{asset_path("girl-teddy-1.jpg")}')no-repeat center center;"
+                      .gift-preview-wrap
+                        .gift-preview
+                          .image style="background: url('#{asset_path("Toys-teddybear-picture6.jpg")}')no-repeat center center;"
+                          a.gift-remove-item Remove
+                        .gift-preview
+                          .image style="background: url('#{asset_path("Toys-teddybear-picture6.jpg")}')no-repeat center center;"
+                          a.gift-remove-item Remove
+                    .dgg-status-wrap
+                      p.text-center
+                        |Delivered to&nbsp;
+                        a Galina
+                        |&nbsp;at 2015-02-12
+                    .dgg-cancel-delivery-wrap
+                      a.more Cancel delivery
+                      p.text-center 2 hr 35 min left
+                .columns.large-4.medium-4.small-6
+                  .delivered-girl-with-gift-wrap
+                    .delivered-girl-with-gift
+                      .image style="background: url('#{asset_path("girl-teddy-3.jpg")}')no-repeat center center;"
+                      .gift-preview
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture6.jpg")}')no-repeat center center;"
+                    .dgg-status-wrap
+                      p.text-center
+                        |Delivered to&nbsp;
+                        a Galina
+                        |&nbsp;at 2015-02-12
+                    .dgg-cancel-delivery-wrap
+                .columns.large-4.medium-4.small-6
+                  .delivered-girl-with-gift-wrap
+                    .delivered-girl-with-gift
+                      .image style="background: url('#{asset_path("girl-teddy-4.jpg")}')no-repeat center center;"
+                      .gift-preview
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture6.jpg")}')no-repeat center center;"
+                    .dgg-status-wrap
+                      p.text-center
+                        |Delivered to&nbsp;
+                        a Galina
+                        |&nbsp;at 2015-02-12
+                    .dgg-cancel-delivery-wrap
+                .clearfix
+
+            .clearfix
+
+          .title-head.grey.notification-wrap
+            .columns
+              .wrap
                 h4 Sent list
-                .items-menu.notification-link
-                  =image_tag "UD-icon-sub menu.svg"
-                  .notification-container
-                    .menu
-                      .group
-                        .title
-                          strong Display options:
-                        .options
-                          .option
-                            .label
-                              .icon
-                                = embedded_svg "UD-icon-sort.svg"
-                              span
-                                |Sort by
-                            .input
-                              select.sort-by
-                                option value="age_increase" Age increase
-                                option value="age_decrease" Age decrease
-                                option value="alfabet" Alfabet
-                                option value="recent_activity" Recent activity
-                                option value="favotites_first" Favotites first
-                            .clearfix
 
 
-          .white-grey
+          .white-grey.gift-sent-list-one-block-wrap
             .columns.no-padding
               .gift-sent-list-one-list-wrap
                 .row
-                  .columns.large-2.medium-2
+                  .columns.large-2.medium-2.small-4.small-offset-4.large-offset-0.medium-offset-0
                     .avatar
                       .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
                     .title-for-picture.text-center
                       a
                         |Galina
-                  .columns.large-2.medium-2
+                  .columns.large-2.medium-2.small-6.small-offset-3.large-offset-0.medium-offset-0
                     .gift-label
-                      b Waiting for...
-                  .columns.large-2.medium-2
+                      b.text-center Waiting for...
+                  .columns.large-2.medium-2.small-6
                     .selected-one-gift
                       .gift-ico-plus
                       a
@@ -578,7 +612,7 @@
                       .title-for-picture.text-center
                         a
                           |Posy
-                  .columns.large-2.medium-2.end
+                  .columns.large-2.medium-2.end.small-6
                     .selected-one-gift
                       a
                         .image style="background: url('#{asset_path("Toys-teddybear-picture4.jpg")}')no-repeat center center;"
@@ -587,16 +621,16 @@
                           |Toys teddybear
               .gift-sent-list-one-list-wrap
                 .row
-                  .columns.large-2.medium-2
+                  .columns.large-2.medium-2.small-4.small-offset-4.large-offset-0.medium-offset-0
                     .avatar
                       .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
                     .title-for-picture.text-center
                       a
                         |Galina
-                  .columns.large-2.medium-2
+                  .columns.large-2.medium-2.small-6.small-offset-3.large-offset-0.medium-offset-0
                     .gift-label
-                      b Waiting for...
-                  .columns.large-2.medium-2
+                      b.text-center Waiting for...
+                  .columns.large-2.medium-2.small-6
                     .selected-one-gift
                       .gift-ico-plus
                       a
@@ -604,7 +638,7 @@
                       .title-for-picture.text-center
                         a
                           |Posy
-                  .columns.large-2.medium-2
+                  .columns.large-2.medium-2.small-6
                     .selected-one-gift
                       .gift-ico-plus
                       a
@@ -612,17 +646,200 @@
                       .title-for-picture.text-center
                         a
                           |Toys teddybear
-                  .columns.large-2.medium-2.end
+                  .columns.large-2.medium-2.end.small-6
                     .selected-one-gift
                       a
                         .image style="background: url('#{asset_path("posy-3.jpg")}')no-repeat center center;"
                       .title-for-picture.text-center
                         a
                           |Posy
+            .clearfix
+          .title-head.grey.notification-wrap
+            .columns
+              .wrap
+                h4 Cancel list
+                .items-menu.notification-link
+                  =image_tag "UD-icon-sub menu.svg"
+                  .notification-container.gift-canceled-options
+                    .menu
+                      .group
+                        .title
+                          strong Additional actions:
+                        .options
+                          .option
+                            .label
+                              .icon
+                                = embedded_svg "UAD-inbox-6 trash.svg"
+                            .input
+                              a Remove all
+                            .clearfix
+
+          .white-grey.gift-sent-list-one-block-wrap.gift-sent-list-cancel-block-wrap
+            .columns.no-padding
+              .gift-sent-list-one-list-wrap
+                a.gift-cancel-button
+                  = embedded_svg "UAD-inbox-6 trash.svg"
+                .row
+                  .columns.large-2.medium-2.small-4.small-offset-4.large-offset-0.medium-offset-0
+                    .avatar
+                      .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
+                    .title-for-picture.text-center
+                      a
+                        |Galina
+                  .columns.large-2.medium-2.small-6.small-offset-3.large-offset-0.medium-offset-0
+                    .gift-label
+                      b.text-center Will not recive
+                      a.more Resend
+                  .columns.large-2.medium-2.small-6
+                    .selected-one-gift
+                      .gift-ico-plus
+                      a
+                        .image style="background: url('#{asset_path("posy-2.jpg")}')no-repeat center center;"
+                      .title-for-picture.text-center
+                        a
+                          |Posy
+                  .columns.large-2.medium-2.end.small-6
+                    .selected-one-gift
+                      a
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture4.jpg")}')no-repeat center center;"
+                      .title-for-picture.text-center
+                        a
+                          |Toys teddybear
+              .gift-sent-list-one-list-wrap
+                a.gift-cancel-button
+                  = embedded_svg "UAD-inbox-6 trash.svg"
+                .row
+                  .columns.large-2.medium-2.small-4.small-offset-4.large-offset-0.medium-offset-0
+                    .avatar
+                      .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+                    .title-for-picture.text-center
+                      a
+                        |Galina
+                  .columns.large-2.medium-2.small-6.small-offset-3.large-offset-0.medium-offset-0
+                    .gift-label
+                      b.text-center Will not recive
+                      a.more Resend
+                  .columns.large-2.medium-2.small-6
+                    .selected-one-gift
+                      .gift-ico-plus
+                      a
+                        .image style="background: url('#{asset_path("posy-2.jpg")}')no-repeat center center;"
+                      .title-for-picture.text-center
+                        a
+                          |Posy
+                  .columns.large-2.medium-2.small-6
+                    .selected-one-gift
+                      .gift-ico-plus
+                      a
+                        .image style="background: url('#{asset_path("wooman-watches-1.jpg")}')no-repeat center center;"
+                      .title-for-picture.text-center
+                        a
+                          |Toys teddybear
+                  .columns.large-2.medium-2.end.small-6
+                    .selected-one-gift
+                      a
+                        .image style="background: url('#{asset_path("posy-3.jpg")}')no-repeat center center;"
+                      .title-for-picture.text-center
+                        a
+                          |Posy
+            .clearfix
+
+
+          .title-head.grey.notification-wrap
+            .columns
+              .wrap
+                h4 Rejected list
+                .items-menu.notification-link
+                  =image_tag "UD-icon-sub menu.svg"
+                  .notification-container.gift-canceled-options
+                    .menu
+                      .group
+                        .title
+                          strong Additional actions:
+                        .options
+                          .option
+                            .label
+                              .icon
+                                = embedded_svg "UAD-inbox-6 trash.svg"
+                            .input
+                              a Remove all
+                            .clearfix
+
+          .white-grey.gift-sent-list-one-block-wrap.gift-sent-list-cancel-block-wrap
+            .columns.no-padding
+              .gift-sent-list-one-list-wrap
+                a.gift-cancel-button
+                  = embedded_svg "UAD-inbox-6 trash.svg"
+                .row
+                  .columns.large-2.medium-2.small-4.small-offset-4.large-offset-0.medium-offset-0
+                    .avatar
+                      .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
+                    .title-for-picture.text-center
+                      a
+                        |Galina
+                  .columns.large-2.medium-2.small-6.small-offset-3.large-offset-0.medium-offset-0
+                    .gift-label
+                      b.text-center Has rejected
+                  .columns.large-2.medium-2.small-6
+                    .selected-one-gift
+                      .gift-ico-plus
+                      a
+                        .image style="background: url('#{asset_path("posy-2.jpg")}')no-repeat center center;"
+                      .title-for-picture.text-center
+                        a
+                          |Posy
+                  .columns.large-2.medium-2.end.small-6
+                    .selected-one-gift
+                      a
+                        .image style="background: url('#{asset_path("Toys-teddybear-picture4.jpg")}')no-repeat center center;"
+                      .title-for-picture.text-center
+                        a
+                          |Toys teddybear
+              .gift-sent-list-one-list-wrap
+                a.gift-cancel-button
+                  = embedded_svg "UAD-inbox-6 trash.svg"
+                .row
+                  .columns.large-2.medium-2.small-4.small-offset-4.large-offset-0.medium-offset-0
+                    .avatar
+                      .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+                    .title-for-picture.text-center
+                      a
+                        |Galina
+                  .columns.large-2.medium-2.small-6.small-offset-3.large-offset-0.medium-offset-0
+                    .gift-label
+                      b.text-center Has rejected
+                  .columns.large-2.medium-2.small-6
+                    .selected-one-gift
+                      .gift-ico-plus
+                      a
+                        .image style="background: url('#{asset_path("posy-2.jpg")}')no-repeat center center;"
+                      .title-for-picture.text-center
+                        a
+                          |Posy
+                  .columns.large-2.medium-2.small-6
+                    .selected-one-gift
+                      .gift-ico-plus
+                      a
+                        .image style="background: url('#{asset_path("wooman-watches-1.jpg")}')no-repeat center center;"
+                      .title-for-picture.text-center
+                        a
+                          |Toys teddybear
+                  .columns.large-2.medium-2.end.small-6
+                    .selected-one-gift
+                      a
+                        .image style="background: url('#{asset_path("posy-3.jpg")}')no-repeat center center;"
+                      .title-for-picture.text-center
+                        a
+                          |Posy
+            .clearfix
+
+
 
             .columns.gift-sent-empty.text-center.hide
               h4 You haven’t sent any gift yet
             .clearfix
+
+
 
 
 

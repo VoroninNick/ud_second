@@ -1,6 +1,40 @@
 @import "mixins"
 
 .gifts-page-wrap
+  .gift-delivery-processed-by-administration
+  .gift-sent-list-one-block-wrap
+    margin-bottom: 35px
+  .gift-preview-wrap
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    .gift-preview
+      position: relative
+      margin-right: 2px
+      right: 0
+      bottom: 2px
+      width: 60px
+      float: right
+      overflow: hidden
+      a.gift-remove-item
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        height: 20px
+        color: #EDF0F1 !important
+        font:
+          size: rem-calc(12)
+        line-height: rem-calc(20)
+        text-align: center
+        background-color: rgba(40, 127, 184, 0.8)
+        opacity: 0
+      &:hover
+        a
+          opacity: 1
+          transition: opacity .5s
+
   .gifts-header-wrap
     height: 64px
     background-color: #2E2E36
@@ -67,6 +101,31 @@
             position: absolute
 
   .gifts-content-wrap
+    .gift-canceled-options
+      min-height: 150px
+      .option
+        margin-top: 10px
+      .label
+        width: 25%
+        height: 28px
+        .icon
+          height: 100%
+      .input
+        width: 75%
+        height: 28px
+        a
+          font-size: 0.75rem
+          font-weight: 300
+          line-height: 1.75rem
+          color: #58595B
+    .gift-sent-list-cancel-block-wrap
+      .gift-label
+        b
+          +my_center_align(30%)
+            position: absolute
+        a.more
+          +my_center_align(60%)
+            position: absolute
     .ud-button-wrap
       position: relative
       margin-top: 20px
@@ -255,6 +314,10 @@
           //+my_vertical_align
           +my_center_align
             position: absolute
+        a.more
+          color: #fff
+          width: 100%
+          text-align: center
       &.gift-rules
         ul
           margin-left: 0
@@ -300,6 +363,30 @@
             right: 0
             position: absolute
             background-color: #BEC3C7
+          a.gift-cancel-button
+            position: absolute
+            top: 0
+            right: 0.9rem
+            width: 40px
+            height: 40px
+            z-index: 1
+            opacity: 0
+            svg
+              width: 25px
+              height: 25px
+              float: right
+          &:hover
+            a.gift-cancel-button
+              opacity: 1
+              transition: opacity .5s
+          .delivered-girl-with-gift-wrap
+            .dgg-status-wrap
+              p
+                a
+                  color: #FF6F70!important
+          .title-for-picture
+            a
+              color: #2E3E51 !important
         .gift-label
           b
             font:
@@ -315,7 +402,19 @@
             background-color: #96D03F
             width: 100%
         a
-          color: #2E3E51 !important
+          color: #2E3E51
+        .dgg-cancel-delivery-wrap
+          height: 77px
+          a.more
+            color: #EDF0F1 !important
+            margin-bottom: 0
+          p
+            color: #BEC3C7
+            font:
+              size: rem-calc(14)
+              weight: 300
+            line-height: rem-calc(16.8)
+
         .gift-sent-empty
           margin:
             top: 75px
@@ -404,6 +503,7 @@ textarea
       margin-bottom: 0
       a
         color: #FF6F70
+
 .rule-tab-content
   padding:
     top: 15px
