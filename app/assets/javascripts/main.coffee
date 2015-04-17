@@ -40,6 +40,7 @@ $(window).scroll (event) ->
 
 
 $(document).ready ->
+
 #  mail box
   $('.ui-message-main-wrap b, .ui-message-main-wrap p.ud-text-message').click ->
     $wrapper = $(this).closest('.ud-message-one-block-wrap')
@@ -190,7 +191,7 @@ $(document).ready ->
     $frendContainer.toggleClass('hide')
 
 
-#  $('#PreviewGift1').foundation('reveal', 'open')
+  $('#ReportUser').foundation('reveal', 'open')
 
 #  init index page tabs wooman
   $('.favorites-nav li').click ->
@@ -314,22 +315,22 @@ $(document).ready ->
     false
 
 #notification popup
-  flag = false
-  $('.notification-link').click ->
-    $('.notification-container').hide()
-    $wrap = $(this).closest('.notification-wrap')
-    $container = $wrap.find('.notification-container')
-    if flag = !flag
-      $container.fadeToggle 300
-    false
+#  flag = false
+#  $('.notification-link').click ->
+#    $('.notification-container').hide()
+#    $wrap = $(this).closest('.notification-wrap')
+#    $container = $wrap.find('.notification-container')
+#    if flag = !flag
+#      $container.fadeToggle 300
+#    false
 
   #Document Click
-  $(document).click ->
-    $('.notification-container').hide()
-    return true
+#  $(document).click ->
+#    $('.notification-container').hide()
+#    return true
 
   #Popup Click
-  $('.notification-container').on "click", (event)->
-    event.stopPropagation()
+#  $('.notification-container').on "click", (event)->
+#    event.stopPropagation()
 
 

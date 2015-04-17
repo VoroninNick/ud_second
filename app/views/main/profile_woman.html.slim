@@ -83,13 +83,13 @@
                                     .icon
                                       = embedded_svg "UD-icon-diamond.svg"
                                   .input
-                                    a href="" Send INTIMACY REQUEST
+                                    a data-reveal-id="IntimacyRequest" Send INTIMACY REQUEST
                                 .option.action
                                   .label
                                     .icon
                                       = embedded_svg "UD-icon-diamond.svg"
                                   .input
-                                    a href="" REPORT user
+                                    a data-reveal-id="ReportUser" REPORT user
 
                                   .clearfix
                             .group
@@ -142,7 +142,7 @@
                     a href=gifts_path data-title-action="Send a gift"
                       = image_tag "UD-gift.png"
                   li
-                    a
+                    a data-reveal-id="IntimacyRequest"
                       = image_tag "UD-intimacy.png"
   .profile-content-wrap
     .row.medium-main
@@ -549,6 +549,72 @@
                       .p-status
             .clearfix
 
+#ReportUser.reveal-modal data-reveal=""
+  .modal-wrap
+    .modal-header-wrap
+      h3 Report user
+      a.close-reveal-modal
+    .modal-content-wrap.status-popup.ud-report-user-wrap
+      .row
+        .columns
+          .row
+            .columns
+              h3 Report dublicate or suspect profiles
+              p We take steps to ensure that only genuine profiles are listed at our site, however on ocations some slip past us.
+              p Please help us eliminate any dublicate or fake profiles by letting us know if you spot something that is suspicious.
+          .row
+            .columns.large-4.medium-4
+              .avatar
+                .image style="background: url('#{asset_path("girl_21.jpg")}')no-repeat center center;"
+              h4 Galina
+              p
+                |21
+                span
+                  |&nbsp;|&nbsp;
+                |Lviv
+            .columns.large-8.medium-8
+              .input
+                label Reason of report
+                select
+                  option Please select
+                  option Please select
+                  option Please select
+                  option Please select
+                  option Please select
+              .input
+                label
+                  |Comment
+                  span
+                    |(0/1000)
+                textarea rows="3" placeholder="For more detail information"
+              .input
+                label
+                  |Evidance
+                  span
+                    |(0/1000)
+                textarea rows="3" placeholder="Here is a screenshot prove"
+          .row
+            .columns.large-8.medium-8.right
+              a.close-reveal-modal.modal-link.ud-button.special-text-shadow.right Send request
+
+              a.edit-icon-svg.browse-file.right
+                = embedded_svg "UD-icon-add files.svg"
+
+              .input.right
+                .squared
+                  input#block_user type="checkbox" value="Comes online" checked=""
+                  label for="block_user"
+                .t-label
+                  label for="block_user" Also block this user
+
+
+
+
+    .modal-footer-wrap
+      .row.text-center
+        .columns
+          /p 79 credits will be deducted from your account for sending the letter
+
 
 #YourIntroductionLetter.reveal-modal data-reveal=""
   .modal-wrap
@@ -623,6 +689,30 @@
       .row.text-center
         .columns
           p This introduction letter was free according to your current membership plan. You have 14 free introduction letters left.
+
+#IntimacyRequest.reveal-modal data-reveal=""
+  .modal-wrap
+    .modal-header-wrap
+      h3 Send intimisy request
+      a.close-reveal-modal
+    .modal-content-wrap.your-introduction-letter.status-popup
+      .row.text-center
+        .columns
+          .row
+            .columns
+              h3 You are about to send an intimisy request to Galina
+              p By sending Contact Request this lady will be informed that you would like to ask her contact details and once she accepts it your communication will be uncensored so it will take your communication to higher level and make it more private and intimate.
+              p Cost of the request is 79 credits. You will be charged once you click Send Request button, in case your lady Decline your request you will be refunded, so we strongly recommend to ask if a lady ready to accept Contact Request before you it.
+
+          .row
+            .columns
+              a.close-reveal-modal.modal-link.m-send Send request
+    .modal-footer-wrap
+      .row.text-center
+        .columns
+          p 79 credits will be deducted from your account for sending the letter
+
+
 
 #SendEmail.reveal-modal data-reveal=""
   .modal-wrap
