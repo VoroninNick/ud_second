@@ -1,0 +1,109 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    title UdServiceSecondVersion
+    = stylesheet_link_tag    'application'
+    = javascript_include_tag "vendor/modernizr"
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+
+body.landing-page-wrap
+  .l-header-wrap
+    .l-header.black
+      .row
+        .columns.large-3.medium-3
+          a href=root_path
+            .l-logo-wrap
+              .l-icon
+                = image_tag "UD-logo-diamond.png"
+              .l-title
+                =image_tag "UAD-logo-text.svg"
+        .columns.large-9.medium-9
+          a href="#l-why-we" Why we?
+          a href="#l-couple-stories" Couple stories
+          a href="#l-men-say" Men say
+          a.l-ud-button login
+
+  .l-main-banner-wrap
+  /?
+  .l-who-is-online-now-wrap
+  .l-search-form-wrap
+  .l-how-it-work-wrap
+    .row
+      .columns
+        .title-block-wrap
+          .title
+            |How it works
+    .row.text-center
+      .columns.large-3.medium-3
+        .row
+          .columns
+            = image_tag "UD-logo-diamond.png"
+        .row
+          .columns
+            b Sign up
+        .row
+          .columns
+            i its easy e free
+        .row
+          .columns
+            .l-round-count-wrap
+              .round-count data-count="1"
+      .columns.large-3.medium-3
+        .row
+          .columns
+            = image_tag "UD-logo-diamond.png"
+        .row
+          .columns
+            b Discover
+        .row
+          .columns
+            i find your Diamond!
+        .row
+          .columns
+            .l-round-count-wrap
+              .round-count data-count="2"
+      .columns.large-3.medium-3
+        .row
+          .columns
+            = image_tag "UD-logo-diamond.png"
+        .row
+          .columns
+            b Communicate
+        .row
+          .columns
+            i to win her heart!
+        .row
+          .columns
+            .l-round-count-wrap
+              .round-count data-count="3"
+      .columns.large-3.medium-3
+        .row
+          .columns
+            = image_tag "UD-logo-diamond.png"
+        .row
+          .columns
+            b Date diamonds
+        .row
+          .columns
+            i travel with us!
+        .row
+          .columns
+            .l-round-count-wrap
+              .round-count data-count="4"
+  .l-couple-stories-wrap#l-couple-stories
+    .row
+      .columns
+        .title-block-wrap.left-arrow-title
+          .title
+            |Couple Stories
+  .l-men-say-wrap#l-men-say
+    .row
+      .columns
+        .title-block-wrap
+          .title
+            |Man says
+  .l-why-we-wrap#l-why-we
+  .l-footer-wrap

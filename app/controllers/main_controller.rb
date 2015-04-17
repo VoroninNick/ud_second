@@ -1,4 +1,9 @@
 class MainController < ApplicationController
+  layout "landing", only: [:main]
+  def main
+
+  end
+
   def index
 
   end
