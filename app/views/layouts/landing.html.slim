@@ -21,15 +21,121 @@ body.landing-page-wrap
               .l-title
                 =image_tag "UAD-logo-text.svg"
         .columns.large-9.medium-9
-          a href="#l-why-we" Why we?
-          a href="#l-couple-stories" Couple stories
-          a href="#l-men-say" Men say
-          a.l-ud-button login
+          ul.right
+            li
+              a href="#l-search" Search
+            li
+              a href="#l-couple-stories" Couple stories
+            li
+              a href="#l-men-say" Men say
+            li
+              a.l-ud-button login
 
   .l-main-banner-wrap
-  /?
+    .l-banner-login-form-wrap
+      .row
+        .columns.large-4.large-offset-1.medium-4.medium-offset-1
+          .l-banner-login-form-inner
+            .l-banner-login-form
+
+    ul#index-banner
+      li
+        a
+          .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
+      li
+        a
+          .image style="background: url('#{asset_path("girl_102.jpg")}')no-repeat center center;"
+      li
+        a
+          .image style="background: url('#{asset_path("girl-teddy-5.png")}')no-repeat center center;"
+
+  .l-about-project-wrap
+    .row.text-center
+      .columns.large-3.medium-3
+        .row
+          .columns
+            = image_tag "UD-logo-diamond.png"
+        .row
+          .columns
+            b PRIVACY & SAFETY
+        .row
+          .columns
+            i Guaranteed
+
+      .columns.large-3.medium-3
+        .row
+          .columns
+            = image_tag "UD-favorites.png"
+        .row
+          .columns
+            b REAL & VALIDATED
+        .row
+          .columns
+            i Ladies only
+
+      .columns.large-3.medium-3
+        .row
+          .columns
+            = image_tag "UD-logo-diamond.png"
+        .row
+          .columns
+            b 100% REFUND
+        .row
+          .columns
+            i Guaranteed
+
+      .columns.large-3.medium-3
+        .row
+          .columns
+            = image_tag "UD-favorites.png"
+        .row
+          .columns
+            b FREE TRIAL
+        .row
+          .columns
+            i For Three Days
+
   .l-who-is-online-now-wrap
-  .l-search-form-wrap
+    .l-header.text-center
+      h3 WHo is online now?
+    ul#diamonds-online-carousel
+      li
+        .your-best-match-wrap
+          .preview-profile-wrap
+            .preview-profile.the-best-match
+              a href=profile_girl_path
+                .image style="background: url('#{asset_path("zlata-3.jpg")}')no-repeat center center;"
+              .information-wrap
+                .triangle-wrap
+                  .triangle
+                .information
+                  .title
+                    h4 Zlata
+                  .info
+                    p
+                      |21
+                      span
+                        |&nbsp;|&nbsp;
+                      |Lviv
+                  .actions
+                    .action-button.red-fill
+                      a href="" title="test"
+                        =embedded_svg "UD-icon-heart.svg"
+                    .action-button
+                      a href="" title="test"
+                        =embedded_svg "UD-icon-introduction letter.svg"
+                    .action-button
+                      a href="" title="test"
+                        =embedded_svg "UD-icon-mail.svg"
+                    .action-button
+                      a href="" title="test"
+                        =embedded_svg "UD-icon-chat buble.svg"
+                    .action-button
+                      a href="" title="test"
+                        =embedded_svg "UD-icon-camshare.svg"
+                .p-status
+
+  .l-search-form-wrap#l-search
   .l-how-it-work-wrap
     .row
       .columns

@@ -1,16 +1,47 @@
 @import "mixins"
 
 
-.landing-page-wrap
+body.landing-page-wrap
+  display: block !important
   .l-round-count-wrap
     position: relative
     height: 24px
     .round-count
       +my_horizontal_align
-.l-header
+.l-header-wrap
+  height: 100px
+  .l-header
+    height: 100%
+  ul
+    list-style: none
+    margin: 0
+    height: 100px
+    li
+      height: 100%
+      float: left
+      padding: 0 25px
+      a
+        display: inline-block
+        +my_vertical_align
+        color: #EDF0F1
+        font:
+          size: rem-calc(16)
+          weight: 400
+        height: 19px
+        line-height: rem-calc(19)
   .l-logo-wrap
     .l-icon
+      width: 40%
+      float: left
+      height: 100px
+      img
+        +my_vertical_align
     .l-title
+      width: 60%
+      float: left
+      height: 100px
+      img
+        +my_vertical_align
   .l-ud-button
     font:
       size: rem-calc(18)
@@ -26,3 +57,56 @@
     background-color: #D03F4A
     text-shadow: 1px 1px 1px #9b3036, 2px 2px 1px #9b2e36, 3px 3px 1px #9d2e37, 4px 4px 1px #9e2f37, 5px 5px 1px #a02f38, 6px 6px 1px #a13038, 7px 7px 1px #a33039, 8px 8px 1px #a53139, 9px 9px 1px #a6313a, 10px 10px 1px #a8323b, 11px 11px 1px #aa323b, 12px 12px 1px #ab333c, 13px 13px 1px #ad333c, 14px 14px 1px #ae343d, 15px 15px 1px #b0343d, 16px 16px 1px #b2353e, 17px 17px 1px #c23c47, 18px 18px 1px #b5363f, 19px 19px 1px #b63640, 20px 20px 1px #b83740, 21px 21px 1px #ba3741, 22px 22px 1px #bb3842
     overflow: hidden
+    padding: 0 20px
+
+.l-main-banner-wrap
+  height: 610px
+  .l-banner-login-form-wrap
+    height: 0
+    position: absolute
+    left: 0
+    top: 100px
+    right: 0
+    .l-banner-login-form-inner
+      height: 0
+      position: relative
+      .l-banner-login-form
+        height: 410px
+        background-color: #EDF0F1
+        width: 100%
+        position: absolute
+        top: 55px
+        left: 0
+        z-index: 10
+  .bx-wrapper
+    height: 100%
+    .bx-viewport
+      height: 100%
+  ul
+    height: 100%
+    margin: 0
+    list-style: none
+    li
+      height: 100%
+      a
+        height: 100%
+        .image
+          max-width: 100%
+          width: 100%
+          height: 100%
+          overflow: hidden
+          -webkit-background-size: cover !important
+          -moz-background-size: cover !important
+          -o-background-size: cover !important
+          background-size: cover !important
+          margin: 0 auto
+
+.l-about-project-wrap
+  background-color: #EDF0F1
+
+.l-who-is-online-now-wrap
+  background-color: #EDF0F1
+  .l-header
+    height: 38px
+    background-color: #BEC3C7
+    h3

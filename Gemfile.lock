@@ -40,6 +40,7 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
+    bxslider-rails (4.1.0)
     byebug (4.0.1)
       columnize (= 0.9.0)
       rb-readline (= 0.5.2)
@@ -165,6 +166,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bxslider-rails
   byebug
   coffee-rails (~> 4.1.0)
   foundation-rails

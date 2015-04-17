@@ -74,6 +74,16 @@ $(document).ready ->
 #  $('.notification-container').on "click", (event)->
 #    event.stopPropagation()
 
+# index banner
+  $('ul#index-banner').bxSlider
+#    controls: false
+    auto: true
+#    pause: 6000
+#    speed: 1000
+#    touchEnabled:false
+#    pagerCustom: 'ul#pagers-index-banner'
+
+
 #  mailbox show browse file
   $('.ud-has-attached-file .ua-tumbler').click ->
     $wrap = $(this).closest('.ud-has-attached-file')
