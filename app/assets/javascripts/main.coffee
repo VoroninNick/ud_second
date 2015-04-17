@@ -74,6 +74,11 @@ $(document).ready ->
 #  $('.notification-container').on "click", (event)->
 #    event.stopPropagation()
 
+#  mailbox show browse file
+  $('.ud-has-attached-file .ua-tumbler').click ->
+    $wrap = $(this).closest('.ud-has-attached-file')
+    $block = $wrap.find('.ud-attached-wrap')
+    $block.show()
 
 #  mail box
   $('.ui-message-main-wrap b, .ui-message-main-wrap p.ud-text-message').click ->
@@ -95,7 +100,6 @@ $(document).ready ->
     $editMessage = $wrapper.find('.ud-inbox-sent-message')
     $subMesssageWrapper = $wrapper.find('.ud-inbox-message-sub-block-wrap')
     $('.ud-message-one-block-wrap').removeClass('ud-opened-message-block')
-    $wrapper.addClass('ud-opened-message-block')
     $subMesssageWrapper.addClass('hide')
     $editMessage.addClass('hide')
 
