@@ -80,13 +80,22 @@ $(document).ready ->
     $wrapper = $(this).closest('.ud-message-one-block-wrap')
     $editMessage = $wrapper.find('.ud-inbox-sent-message')
     $subMesssageWrapper = $wrapper.find('.ud-inbox-message-sub-block-wrap')
+
+    $('.ud-inbox-sent-message, .ud-inbox-message-sub-block-wrap').addClass('hide')
+    $('.ud-message-one-block-wrap').removeClass('ud-opened-message-block')
+    $wrapper.addClass('ud-opened-message-block')
+
     $subMesssageWrapper.removeClass('hide')
     $editMessage.removeClass('hide')
+
+
 
   $('.ud-inbox-message-wrap a.m-send').click ->
     $wrapper = $(this).closest('.ud-message-one-block-wrap')
     $editMessage = $wrapper.find('.ud-inbox-sent-message')
     $subMesssageWrapper = $wrapper.find('.ud-inbox-message-sub-block-wrap')
+    $('.ud-message-one-block-wrap').removeClass('ud-opened-message-block')
+    $wrapper.addClass('ud-opened-message-block')
     $subMesssageWrapper.addClass('hide')
     $editMessage.addClass('hide')
 
@@ -225,7 +234,7 @@ $(document).ready ->
     $frendContainer.toggleClass('hide')
 
 
-  $('#ReportUser').foundation('reveal', 'open')
+#  $('#AddAPictures').foundation('reveal', 'open')
 
 #  init index page tabs wooman
   $('.favorites-nav li').click ->
@@ -368,8 +377,8 @@ $(document).on 'mouseup', (event)->
   $context_container = null
   $containers.each (index, element)->
     $element = $(element)
-    console.log('element')
-    window.TARGET = event.target
+#    console.log('element')
+#    window.TARGET = event.target
     cond1 = !$element.is(event.target)
     cond2 = $element.has(event.target).length is 0
     out_of_container = cond1 && cond2

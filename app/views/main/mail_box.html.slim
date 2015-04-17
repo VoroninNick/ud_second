@@ -166,7 +166,7 @@
                             .clearfix
 
 
-          .white-grey.all-conversations.ud-inbox-message-wrap
+          .all-conversations.ud-inbox-message-wrap
             .columns.no-padding
               .ud-message-one-block-wrap
                 .ud-inbox-message-block-wrap
@@ -251,9 +251,21 @@
                           .row
                             .columns
                               /a Translate into english
-                              a.modal-link.m-send.right data-reveal-id="YourIntroductionLetterSend" href="#" Send
-                              a.edit-icon-svg.browse-file.right
-                                = embedded_svg "UD-icon-add files.svg"
+                              a.modal-link.m-send.right  href="#" Send
+                              .ud-browse-images-wrap.notification-wrap.right
+                                a.edit-icon-svg.browse-file.notification-link
+                                  = embedded_svg "UD-icon-add files.svg"
+                                .notification-container
+                                  .menu
+                                    .group
+                                      .options
+                                        .option
+                                          .label
+                                            .icon
+                                              = embedded_svg "ud-make-image.svg"
+                                          .input
+                                            a data-reveal-id="AddAPictures" Add a picture
+                                          .clearfix
                               a.edit-icon-svg.smiles.right
                                 = embedded_svg "UD-icon-smile.svg"
                           .clearfix
@@ -447,9 +459,21 @@
                           .row
                             .columns
                               /a Translate into english
-                              a.modal-link.m-send.right data-reveal-id="YourIntroductionLetterSend" href="#" Send
-                              a.edit-icon-svg.browse-file.right
-                                = embedded_svg "UD-icon-add files.svg"
+                              a.modal-link.m-send.right  href="#" Send
+                              .ud-browse-images-wrap.notification-wrap.right
+                                a.edit-icon-svg.browse-file.notification-link
+                                  = embedded_svg "UD-icon-add files.svg"
+                                .notification-container
+                                  .menu
+                                    .group
+                                      .options
+                                        .option
+                                          .label
+                                            .icon
+                                              = embedded_svg "ud-make-image.svg"
+                                          .input
+                                            a data-reveal-id="AddAPictures" Add a picture
+                                          .clearfix
                               a.edit-icon-svg.smiles.right
                                 = embedded_svg "UD-icon-smile.svg"
                           .clearfix
@@ -525,7 +549,45 @@
                                   a
                                     .image style="background: url('#{asset_path("My gallery 6.jpg")}')no-repeat center center;"
                   .clearfix
-
-
-
             .clearfix
+#AddAPictures.reveal-modal data-reveal=""
+  .modal-wrap.ud-add-image-from-gallery-wrap
+    .modal-header-wrap
+      h3 Add a picture
+      a.close-reveal-modal
+    .modal-content-wrap
+      .row
+        .columns
+          h3 My gallery
+      .row
+        .columns
+          .row.collapse
+            .columns.large-3.medium-3.small-6
+              .image-popup-one-item
+                a
+                  .image style="background: url('#{asset_path("My gallery 1.jpg")}')no-repeat center center;"
+            .columns.large-3.medium-3.small-6
+              .image-popup-one-item
+                a
+                  .image style="background: url('#{asset_path("My gallery 4.jpg")}')no-repeat center center;"
+            .columns.large-3.medium-3.small-6
+              .image-popup-one-item
+                a
+                  .image style="background: url('#{asset_path("My gallery 5.jpg")}')no-repeat center center;"
+            .columns.large-3.medium-3.small-6
+              .image-popup-one-item
+                a
+                  .image style="background: url('#{asset_path("My gallery 6.jpg")}')no-repeat center center;"
+            .columns.large-3.medium-3.small-6
+              .image-popup-one-item
+                a
+                  .image style="background: url('#{asset_path("girl-teddy-6.png")}')no-repeat center center;"
+            .columns.large-3.medium-3.small-6.end
+              .image-popup-one-item
+                label for="browseImage"
+                  .image style="background: url('#{asset_path("girl-teddy-6.png")}')no-repeat center center;"
+                input#browseImage type="file"
+    .modal-footer-wrap
+      .row
+        .columns
+          p You can attach two photos to your letter. Attach one photo for free. 5 credits will be deducted from your account for the second photo.

@@ -1,6 +1,10 @@
 @import "mixins"
 
 .ud-inbox-page-wrap
+  .ud-message-one-block-wrap
+    background-color: #EDF0F1
+    &.ud-opened-message-block
+      margin-bottom: 20px
   .ui-all-messages
     margin-top: 28px
   .ud-inbox-header-wrap
@@ -68,7 +72,7 @@
   .ud-inbox-content-wrap
     margin-top: 13px
     .ud-inbox-message-block-wrap
-      margin-top: 26px
+      padding-top: 26px
       padding-left: 0.9375rem
       padding-right: 0.9375rem
       padding-bottom: 24px
@@ -157,7 +161,7 @@
         position: absolute
         width: 20px
         height: 18px
-        top: 0
+        top: 30px
         right: 0.9375rem
         svg
           height: 100%
@@ -288,6 +292,117 @@ p.ud-inbox-draft
     weight: 300
   line-height: rem-calc(16.8)
   margin-bottom: 0
+
+.ud-add-image-from-gallery-wrap
+  .modal-footer-wrap
+    p
+      width: 100%
+  h3
+    margin: 0
+    color: #2E3E51
+    font-size: 1.30313rem
+    font-weight: 500
+    font-family: "Fira Sans", sans-serif
+    letter-spacing: 0.02rem
+    line-height: 2.375rem
+    text-transform: uppercase
+  .image-popup-one-item
+    padding: 1px
+    label
+      position: relative
+      &:before
+        display: block
+        content: ''
+        background-image: asset_url('ud-make-image.svg')
+        background-size: 100%
+        background-repeat: no-repeat
+        width: 55px
+        height: 46px
+        +my_horizontal_align
+          position: absolute
+        top: 30%
+      &:after
+        display: inline-block
+        content: 'new photo'
+        +my_horizontal_align
+          position: absolute
+        top: 67%
+        color: #6D6E71
+        font:
+          size: rem-calc(14)
+          weight: 400
+        text-transform: uppercase
+
+  a
+    .image
+      max-width: 100%
+      width: 100%
+      height: 0
+      padding-bottom: 100%
+      overflow: hidden
+      -webkit-background-size: cover !important
+      -moz-background-size: cover !important
+      -o-background-size: cover !important
+      background-size: cover !important
+      margin: 0 auto
+  label
+    padding-bottom: 100%
+    background-color: #BEC3C7
+  input
+    visibility: hidden
+    position: absolute
+    z-index: -111
+
+
+.ud-browse-images-wrap
+  .notification-container
+    bottom: 48px
+    top: auto
+    //display: block !important
+    min-width: 160px
+    min-height: 40px
+    left: -30px
+    right: auto
+    border: none
+    &:before, &:after
+      top: auto
+    &:before
+      border-color: rgba(0, 0, 0, 0.2) transparent transparent transparent
+      border-width: 12px 12px 0  12px
+      left: 30px
+      bottom: -12px
+    &:after
+      border-color: #edf0f1 transparent transparent transparent
+      border-width: 11px 11px 0  11px
+      left: 30px
+      bottom: -11px
+    .group
+      padding: 15px
+      padding-left: 20px
+    .options
+      .option
+        padding-left: 0
+        .label
+          width: 20px
+          height: 30px
+          line-height: 30px
+          .icon
+            width: 100%
+            height: 100%
+            margin: 0
+            padding: 0
+            svg
+              left: 0
+        .input
+          width: auto
+          height: 30px
+          margin-left: 10px
+          a
+            color: #58595B
+            font:
+              size: rem-calc(12)
+            line-height: rem-calc(30)
+
 
 .ud-draft-wrap
   .avatar-wrap
