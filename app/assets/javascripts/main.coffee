@@ -351,22 +351,34 @@ $(document).ready ->
 
 
 #notification popup
-  flag = false
-  $('.notification-link').click ->
-    $('.notification-container').hide()
+  $('.notification-link').click (event)->
     $wrap = $(this).closest('.notification-wrap')
     $container = $wrap.find('.notification-container')
-    if flag = !flag
-      $container.fadeToggle 300
-    false
 
-#  Document Click
-  $(document).click ->
-    $('.notification-container').hide()
-    return true
+    if !$container.hasClass('visible')
+      $container.fadeIn 300
+      $container.addClass('visible')
+    else
+      $container.removeClass('visible')
 
-#  Popup Click
-  $('.notification-container').on "click", (event)->
-    event.stopPropagation()
+$(document).on 'mouseup', (event)->
+  $containers = $("div.notification-container")
+  out_of_container = true
+  in_container = !out_of_container
+  $context_container = null
+  $containers.each (index, element)->
+    $element = $(element)
+    console.log('element')
+    window.TARGET = event.target
+    cond1 = !$element.is(event.target)
+    cond2 = $element.has(event.target).length is 0
+    out_of_container = cond1 && cond2
+    in_container = !out_of_container
 
+    if out_of_container
+      $context_container = $element
+      return false
+  console.log("mouseup: in: #{in_container}; out: #{out_of_container}")
+  if out_of_container
+    $containers.fadeOut duration: 300
 
