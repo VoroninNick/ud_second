@@ -38,8 +38,42 @@ $(window).scroll (event) ->
   lastScrollTop = st
 
 
+#deselect = (e) ->
+#  $wrapper = e.closest('.notification-wrap')
+#  $container = $wrapper.find('.notification-container')
+#  $container.hide() ->
+#    e.removeClass 'ud-option-menu-is-opened'
+#    return
+#  return
+
+#$.fn.slideFadeToggle = (easing, callback) ->
+#  @animate {
+#    opacity: 'toggle'
+#    height: 'toggle'
+#  }, 'fast', easing, callback
+
 
 $(document).ready ->
+# tip popup
+#  $('.notification-link').on 'click', ->
+#
+#    $('.notification-link').removeClass('ud-option-menu-is-opened')
+#    $('.notification-container').hide()
+#    $wrapper = $(this).closest('.notification-wrap')
+#    $container = $wrapper.find('.notification-container')
+#    if $(this).hasClass('ud-option-menu-is-opened')
+#      deselect $(this)
+#    else
+#      $(this).addClass 'ud-option-menu-is-opened'
+#      $container.show()
+#    false
+#  $(document).click ->
+#    $('.notification-link').removeClass('ud-option-menu-is-opened')
+#    $('.notification-container').hide()
+#
+#  $('.notification-container').on "click", (event)->
+#    event.stopPropagation()
+
 
 #  mail box
   $('.ui-message-main-wrap b, .ui-message-main-wrap p.ud-text-message').click ->
@@ -314,23 +348,25 @@ $(document).ready ->
     , 800
     false
 
+
+
 #notification popup
-#  flag = false
-#  $('.notification-link').click ->
-#    $('.notification-container').hide()
-#    $wrap = $(this).closest('.notification-wrap')
-#    $container = $wrap.find('.notification-container')
-#    if flag = !flag
-#      $container.fadeToggle 300
-#    false
+  flag = false
+  $('.notification-link').click ->
+    $('.notification-container').hide()
+    $wrap = $(this).closest('.notification-wrap')
+    $container = $wrap.find('.notification-container')
+    if flag = !flag
+      $container.fadeToggle 300
+    false
 
-  #Document Click
-#  $(document).click ->
-#    $('.notification-container').hide()
-#    return true
+#  Document Click
+  $(document).click ->
+    $('.notification-container').hide()
+    return true
 
-  #Popup Click
-#  $('.notification-container').on "click", (event)->
-#    event.stopPropagation()
+#  Popup Click
+  $('.notification-container').on "click", (event)->
+    event.stopPropagation()
 
 
