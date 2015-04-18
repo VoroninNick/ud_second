@@ -75,9 +75,9 @@ $(document).ready ->
 #    event.stopPropagation()
 
 # index banner
-  $('ul#index-banner').bxSlider
+  $('ul#index-banner').bxSlider()
 #    controls: false
-    auto: true
+#    auto: true
 #    pause: 6000
 #    speed: 1000
 #    touchEnabled:false
