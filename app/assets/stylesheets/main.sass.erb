@@ -65,12 +65,6 @@ header
 footer
   background-color: #BEC3C7
   position: relative
-  .links-wrap, .labels-wrap, .copyright-wrap
-    display: inline-block
-  .labels-wrap
-    margin: 0 5%
-    @media (min-width : 1440px) and (max-width : 1490px)
-      margin: 0 1%
 
   .scrollToTop
     position: absolute
@@ -83,6 +77,13 @@ footer
       width: 36px
       +my_center_align
         position: absolute
+.l-footer-wrap
+  .links-wrap, .labels-wrap, .copyright-wrap
+    display: inline-block
+  .labels-wrap
+    margin: 0 5%
+    @media (min-width : 1440px) and (max-width : 1490px)
+      margin: 0 1%
   ul
     line-height: 60px
     margin-left: 0
