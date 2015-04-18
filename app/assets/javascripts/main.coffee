@@ -391,8 +391,6 @@ $(document).on 'mouseup', (event)->
   $context_container = null
   $containers.each (index, element)->
     $element = $(element)
-#    console.log('element')
-#    window.TARGET = event.target
     cond1 = !$element.is(event.target)
     cond2 = $element.has(event.target).length is 0
     out_of_container = cond1 && cond2
@@ -400,6 +398,7 @@ $(document).on 'mouseup', (event)->
 
     if out_of_container
       $context_container = $element
+    else
       return false
   console.log("mouseup: in: #{in_container}; out: #{out_of_container}")
   if out_of_container
