@@ -35,8 +35,8 @@ body.landing-page-wrap
     .l-banner-login-form-wrap
       .row
         .columns.large-5.medium-5.end
-          .l-banner-login-form-inner
-            .l-banner-login-form
+          =render partial: "partials/banner_reg_log_form"
+
 
     ul#index-banner
       li
@@ -200,7 +200,7 @@ body.landing-page-wrap
                 .columns.large-6.medium-6
                   .input
                     label Hair color
-                    select
+                    select.ud-multiple
                       option value="Doesn’t matter" Doesn’t matter
                       option value="Doesn’t matter" Doesn’t matter
                       option value="Doesn’t matter" Doesn’t matter
@@ -216,7 +216,7 @@ body.landing-page-wrap
                       option value="Doesn’t matter" Doesn’t matter
                       option value="Doesn’t matter" Doesn’t matter
                       option value="Doesn’t matter" Doesn’t matter
-                  .input
+                  .input.input-ud-button
                     input type="submit" value="Find Diamonds"
                   a
                     span

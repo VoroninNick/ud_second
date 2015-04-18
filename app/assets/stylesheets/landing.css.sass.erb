@@ -116,11 +116,80 @@ body.landing-page-wrap
       .l-banner-login-form
         height: 410px
         background-color: #EDF0F1
-        width: 100%
+        width: 90%
         position: absolute
         top: 55px
-        left: 0
+        right: 0
         z-index: 10
+        .lbf-registration-form
+          margin-top: 10px
+
+          i
+            color: #2E2E36
+            font:
+              size: rem-calc(25)
+              weight: 300
+              family: 'dearjoe_1_msregular'
+          .ud-gender-input
+            position: relative
+            margin: 5px 0 20px
+            input
+              position: absolute
+              left: -1000px
+              visibility: hidden
+          .input-ud-button
+            margin-top: 30px
+            input[type="submit"]
+              height: 45px
+              font:
+                size: rem-calc(33) !important
+              line-height: rem-calc(45)
+              color: #EDF0F1 !important
+              width: 100%
+          .input
+            input
+              height: 45px
+            label
+              color: #2E3E51
+              font:
+                size: rem-calc(12)
+              padding-left: 12px
+              line-height: 1.05rem
+              margin-bottom: 6px
+
+        .lbf-header-wrap
+          height: 60px
+          width: 100%
+          .lbf-tumbler
+            height: 100%
+            float: left
+            background-color: #D03F4A
+            padding-top: 10px
+            cursor: pointer
+            b, p
+              color: #EDF0F1
+            b
+              font:  
+                size: rem-calc(21)
+                weight: 400
+              line-height: rem-calc(25)
+              text-transform: uppercase
+            p
+              margin-bottom: 0
+              font:
+                size: rem-calc(10)
+                weight: 300
+              line-height: rem-calc(12)
+            &.lbf-active
+              background-color: #EDF0F1
+              cursor: default
+              b, p
+                color: #2E3E51
+
+          .lbf-registration-wrap
+            width: 60%
+          .lbf-login-wrap
+            width: 40%
   .bx-wrapper
     height: 610px
     .bx-viewport
@@ -155,7 +224,106 @@ body.landing-page-wrap
     background-color: #BEC3C7
     h3
 
+.input-ud-button
+  input[type="submit"]
+    font-size: 1.125rem
+    font-weight: 500
+    font-family: "Fira Sans", sans-serif
+    line-height: rem-calc(35)
+    text-transform: uppercase
+    color: #EDF0F1
+    height: 35px
+    background-color: #D03F4A
+    text-align: center
+    letter-spacing: 0.03rem
+    display: inline-block
+
+    text-shadow: 1px 1px 1px #9b3036, 2px 2px 1px #9e3138, 3px 3px 1px #9e3138, 4px 4px 1px #a13239, 5px 5px 1px #a8343c, 6px 6px 1px #a9343d, 7px 7px 1px #ae353e, 8px 8px 1px #b13740, 9px 9px 1px #b63842, 10px 10px 1px #bb3944, 11px 11px 1px #bc3a45, 12px 12px 1px #c03b46, 13px 13px 1px #c03b46, 14px 14px 1px #bf3b46, 15px 15px 1px #c03b47, 16px 16px 1px #c23c47, 17px 17px 1px #c23c47, 18px 18px 1px #c33c48, 19px 19px 1px #c33c48, 20px 20px 1px #c33c48, 21px 21px 1px #c33c48, 22px 22px 1px #c33c48
+    overflow: hidden
+
 .l-search-form-wrap
+  .input
+    padding-top: 15px
+    > label
+      font:
+        size: rem-calc(14)
+      line-height: rem-calc(16.8)
+      color: #2E3E51
+      margin-bottom: 6px
+    select
+      width: 100%
+      margin: 0
+      border: none
+    .SumoSelect
+      width: 100%
+      .optWrapper
+        top: 35px
+      ul.options
+        max-height: none
+        height: auto
+        overflow: visible
+        li
+          height: 35px
+          border-radius: 0!important
+          border-bottom: 1px solid #BEC3C7
+          padding: 0 0 0 35px
+          &:hover
+            background-color: #EDF0F1
+          span
+            i
+              background: #fff
+              border: 1px solid #BEC3C7
+          label
+            font:
+              size: rem-calc(14)
+            line-height: rem-calc(35)
+            color: #BEC3C7
+          &.selected
+            span
+              i
+                background-image: url('<%=asset_path("UAD-check-(white).png")%>')
+                background-color: #3598DB
+                border: none
+            label
+              color: #3598DB
+    .SlectBox
+      width: 100%
+      padding: 0
+      height: 35px
+      border: none
+      margin: 0
+      > span
+        height: 100%
+        line-height: rem-calc(35)
+        color: #BEC3C7
+        font:
+          size: rem-calc(14)
+          weight: 300
+        padding-left: 12px
+      > label
+        background-color: transparent
+        > i
+          background-image: url('<%=asset_path("UAD-triangle-grey.png")%>')
+          width: 100%
+          height: 100%
+  .input-ud-button
+    input[type="submit"]
+      width: 100%
+      color: #EDF0F1 !important
+      font-size: 1.125rem !important
+  a
+    font-size: 0.75rem
+    font-weight: 300
+    font-family: "Fira Sans", sans-serif
+    color: #D03F4A
+    line-height: 0.9rem
+    padding-top: 7px
+    padding-left: 12px
+    span
+      color: #2E3E51
+      height: auto
+      border: none
+      display: inline-block
   .l-search-result-wrap
     margin-top: 2px
     padding-top: 15px
