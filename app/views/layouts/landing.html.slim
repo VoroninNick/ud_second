@@ -46,10 +46,11 @@ body.landing-page-wrap
             .row
               .columns.large-7.medium-7.right
                 .l-banner-about-profile
-                  .lb-about-profile
-                    h3 Hello, my name is
-                    h2 Diana Dream
-                    p I am manager, from Lviv. I love sunshine and intellegence talks.
+                  .lb-about-profile-wrap
+                    .lb-about-profile
+                      h3 Hello, my name is
+                      h2 Diana Dream
+                      p I am manager, from Lviv. I love sunshine and intellegence talks.
       li
         a
           .image style="background: url('#{asset_path("girl_102.jpg")}')no-repeat center center;"
@@ -144,6 +145,230 @@ body.landing-page-wrap
                 .p-status
 
   .l-search-form-wrap#l-search
+    .row
+      .columns
+        .title-head.grey.notification-wrap
+          .columns
+            .wrap
+              h4 feel free to search some diamonds!
+              .items-menu.notification-link
+                =image_tag "UD-icon-sub menu.svg"
+                .notification-container
+                  .menu
+                    .group
+                      .title
+                        strong Display options:
+                      .options
+                        .option
+                          .label
+                            .icon
+                              = embedded_svg "UD-icon-sort.svg"
+                            span
+                              |Sort by
+                          .input
+                            select.sort-by
+                              option value="age_increase" Age increase
+                              option value="age_decrease" Age decrease
+                              option value="alfabet" Alfabet
+                              option value="recent_activity" Recent activity
+                              option value="favotites_first" Favotites first
+                          .clearfix
+    .row
+      .columns
+        .white-grey
+          .row
+            .columns
+              form
+                .column.large-6.medium-6
+                  div data-role="rangeslider"
+                    label for="priceMin" Age
+                    input type="range" name="priceMin" id="priceMin" min="18" max="65" value="18"
+                    label for="priceMax" Price Range ($):
+                    input type="range" name="priceMax" id="priceMax" min="18" max="65" value="65"
+
+                  div data-role="rangeslider"
+                    label for="priceMin" Height
+                    input type="range" name="priceMin" id="priceMin" min="135" max="200" value="135"
+                    label for="priceMax" Price Range ($):
+                    input type="range" name="priceMax" id="priceMax" min="135" max="200" value="200"
+
+                  div data-role="rangeslider"
+                    label for="priceMin" Weight
+                    input type="range" name="priceMin" id="priceMin" min="40" max="150" value="40"
+                    label for="priceMax" Price Range ($):
+                    input type="range" name="priceMax" id="priceMax" min="40" max="150" value="150"
+                .columns.large-6.medium-6
+                  .input
+                    label Hair color
+                    select
+                      option value="Doesn’t matter" Doesn’t matter
+                      option value="Doesn’t matter" Doesn’t matter
+                      option value="Doesn’t matter" Doesn’t matter
+                      option value="Doesn’t matter" Doesn’t matter
+                      option value="Doesn’t matter" Doesn’t matter
+                      option value="Doesn’t matter" Doesn’t matter
+                  .input
+                    label City
+                    select.ud-multiple multiple="multiple"
+                      option value="Doesn’t matter" Doesn’t matter
+                      option value="Doesn’t matter" Doesn’t matter
+                      option value="Doesn’t matter" Doesn’t matter
+                      option value="Doesn’t matter" Doesn’t matter
+                      option value="Doesn’t matter" Doesn’t matter
+                      option value="Doesn’t matter" Doesn’t matter
+                  .input
+                    input type="submit" value="Find Diamonds"
+                  a
+                    span
+                      |or&nbsp;
+                    |Clear form
+        .white-grey.best-match-wrap.l-search-result-wrap
+          .columns
+            h3
+              |Search results:&nbsp;
+              span
+                |Found 5 ladies
+              |&nbsp;matching you creterias
+          .columns
+            .columns.large-3.medium-3.small-6.your-best-match-wrap
+              .preview-profile-wrap
+                .preview-profile.the-best-match
+                  a
+                    .image style="background: url('#{asset_path("girl_1.jpg")}')no-repeat center center;"
+                  .information-wrap
+                    .triangle-wrap
+                      .triangle
+                    .information
+                      .title
+                        h4 Zlata
+                      .info
+                        p
+                          |21
+                          span
+                            |&nbsp;|&nbsp;
+                          |Lviv
+                      .actions
+                        .action-button.red-fill
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-heart.svg"
+                        .action-button
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-introduction letter.svg"
+                        .action-button
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-mail.svg"
+                        .action-button
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-chat buble.svg"
+                        .action-button
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-camshare.svg"
+                    .p-status
+
+            .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+              .preview-profile-wrap
+                .preview-profile.the-best-match.offline
+                  a
+                    .image style="background: url('#{asset_path("girl_2.jpg")}')no-repeat center center;"
+                  .information-wrap
+                    .triangle-wrap
+                      .triangle
+                    .information
+                      .title
+                        h4 Zlata
+                      .info
+                        p
+                          |21
+                          span
+                            |&nbsp;|&nbsp;
+                          |Lviv
+                      .actions
+                        .action-button.red-fill
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-heart.svg"
+                        .action-button
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-introduction letter.svg"
+                        .action-button
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-mail.svg"
+                        .action-button
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-chat buble.svg"
+                        .action-button
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-camshare.svg"
+                    .p-status
+
+            .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+              .preview-profile-wrap
+                .preview-profile.the-best-match
+                  .image style="background: url('#{asset_path("girl_3.jpg")}')no-repeat center center;"
+                  .information-wrap
+                    .triangle-wrap
+                      .triangle
+                    .information
+                      .title
+                        h4 Zlata
+                      .info
+                        p
+                          |21
+                          span
+                            |&nbsp;|&nbsp;
+                          |Lviv
+                      .actions
+                        .action-button.red-fill
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-heart.svg"
+                        .action-button
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-introduction letter.svg"
+                        .action-button
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-mail.svg"
+                        .action-button
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-chat buble.svg"
+                        .action-button
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-camshare.svg"
+                    .p-status
+
+            .columns.large-3.medium-3.small-6.collapse.your-best-match-wrap
+              .preview-profile-wrap
+                .preview-profile.the-best-match
+                  .image style="background: url('#{asset_path("girl_4.jpg")}')no-repeat center center;"
+                  .information-wrap
+                    .triangle-wrap
+                      .triangle
+                    .information
+                      .title
+                        h4 Zlata
+                      .info
+                        p
+                          |21
+                          span
+                            |&nbsp;|&nbsp;
+                          |Lviv
+                      .actions
+                        .action-button.red-fill
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-heart.svg"
+                        .action-button
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-introduction letter.svg"
+                        .action-button
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-mail.svg"
+                        .action-button
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-chat buble.svg"
+                        .action-button
+                          a href="" title="test"
+                            =embedded_svg "UD-icon-camshare.svg"
+                    .p-status
+          .clearfix
+
   .l-how-it-work-wrap
     .row
       .columns
@@ -160,7 +385,7 @@ body.landing-page-wrap
             b Sign up
         .row
           .columns
-            i its easy e free
+            i its easy & free!
         .row
           .columns
             .l-round-count-wrap
@@ -207,12 +432,28 @@ body.landing-page-wrap
           .columns
             .l-round-count-wrap
               .round-count data-count="4"
-  .l-couple-stories-wrap#l-couple-stories
+
+  .l-couple-stories-wrap#l-couple-stories.white-grey
     .row
       .columns
         .title-block-wrap.left-arrow-title
           .title
             |Couple Stories
+    .row
+      .columns
+        ul
+          li
+            .row
+              .columns.large-5.medium-5
+                .image style="background: url('#{asset_path("kissing-couple.jpg")}')no-repeat center center;"
+              .columns.large-7.medium-7
+                h3 DAVID & OLGA
+                p
+                  |“It seems to me that all Internet dating stories are the same. After several fails you finally find what you were looking for. That’s the story of our meeting with Olga. She wrote me first!” – says David.
+                p
+                  span
+                    |“I’ve known what I wanted. So when I so David’s profile, I liked photos and just wrote. He answered. Soon we were out of online, we decided to move into the real world and that was right decision! We are happily marries for 2 years already and now we are expecting our first child”,
+                  |- Olga says.
   .l-men-say-wrap#l-men-say
     .row
       .columns
