@@ -38,41 +38,8 @@ $(window).scroll (event) ->
   lastScrollTop = st
 
 
-#deselect = (e) ->
-#  $wrapper = e.closest('.notification-wrap')
-#  $container = $wrapper.find('.notification-container')
-#  $container.hide() ->
-#    e.removeClass 'ud-option-menu-is-opened'
-#    return
-#  return
-
-#$.fn.slideFadeToggle = (easing, callback) ->
-#  @animate {
-#    opacity: 'toggle'
-#    height: 'toggle'
-#  }, 'fast', easing, callback
-
 
 $(document).ready ->
-# tip popup
-#  $('.notification-link').on 'click', ->
-#
-#    $('.notification-link').removeClass('ud-option-menu-is-opened')
-#    $('.notification-container').hide()
-#    $wrapper = $(this).closest('.notification-wrap')
-#    $container = $wrapper.find('.notification-container')
-#    if $(this).hasClass('ud-option-menu-is-opened')
-#      deselect $(this)
-#    else
-#      $(this).addClass 'ud-option-menu-is-opened'
-#      $container.show()
-#    false
-#  $(document).click ->
-#    $('.notification-link').removeClass('ud-option-menu-is-opened')
-#    $('.notification-container').hide()
-#
-#  $('.notification-container').on "click", (event)->
-#    event.stopPropagation()
 
 # index banner
   $('ul#index-banner').bxSlider()
@@ -83,6 +50,17 @@ $(document).ready ->
 #    touchEnabled:false
 #    pagerCustom: 'ul#pagers-index-banner'
 
+# gits inbox tabs
+  $('.ud-inbox-page-wrap .ud-inbox-tab').click ->
+    current_position = $(this).index()
+    $head_tabs = $(this)
+    $wrap = $(this).closest('.ud-inbox-page-wrap')
+    $('.ud-inbox-page-wrap .ud-inbox-tab').removeClass('active')
+    $(this).addClass('active')
+
+    $body_tabs = $wrap.find('.ud-inbox-one-tab-wrap')
+    $body_tabs.addClass('hide')
+    $body_tabs.eq(current_position).removeClass('hide')
 
 #  mailbox show browse file
   $('.ud-has-attached-file .ua-tumbler').click ->
@@ -138,10 +116,19 @@ $(document).ready ->
     $(this).addClass('active')
 
 
-# gits set class active
-  $('.gcw-head-nav a').click ->
-    $('.gcw-head-nav .gcw-link-wrap').removeClass('active')
-    $(this).parent().addClass('active')
+# gits catalog tabs
+  $('.gc-wrap .gcw-link-wrap').click ->
+    current_position = $(this).index()
+    $head_tabs = $(this)
+    $wrap = $(this).closest('.gc-wrap')
+    $('.gc-wrap .gcw-link-wrap').removeClass('active')
+    $(this).addClass('active')
+
+    $body_tabs = $wrap.find('.gc-catalog-one-tab-wrap')
+    $body_tabs.addClass('hide')
+    $body_tabs.eq(current_position).removeClass('hide')
+
+
 #  gifts main tabs
   $('.gift-tab').click ->
     current_position = $(this).index()
@@ -157,8 +144,7 @@ $(document).ready ->
 #  binder for click on button a.read-all-rules
   $('a.read-all-rules').click (e)->
     e.preventDefault()
-#    $wrapper = $('.gifts-page-wrap')
-#    $tabsTitle = $wrapper.find('')
+
     $('.gift-tab').removeClass('active')
     $('.gift-tab-rules').addClass('active')
 
