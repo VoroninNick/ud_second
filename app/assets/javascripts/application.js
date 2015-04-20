@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require foundation
 //= require bxslider
+//= require owl.carousel
 //= require_tree .
 
 $(function(){ $(document).foundation(); });

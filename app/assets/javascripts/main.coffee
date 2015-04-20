@@ -21,7 +21,7 @@ lastScrollTop = 0
 $(window).scroll (event) ->
   st = $(this).scrollTop()
   wh = $(window).height()
-  ot = $('footer').offset().top
+  ot = $('.l-footer-wrap').offset().top
 
   action = ot - wh
   if st >= action
@@ -40,9 +40,34 @@ $(window).scroll (event) ->
 
 
 $(document).ready ->
+#  landing banner registration form
+  $('.lbf-registration-form .ud-gender-input label').click ->
+    alert 'test'
 
-# index banner
-  $('ul#index-banner').bxSlider()
+#  landing binder header login form
+  $('a.l-open-lhf-button').click ->
+    if $('.l-header-login-form-inner').hasClass('hide')
+      $('.l-header-login-form-inner').removeClass('hide')
+    else
+      $('.l-header-login-form-inner').addClass('hide')
+
+# landing who is online
+  owl1 = $("ul#diamonds-online-carousel")
+  owl1.owlCarousel
+    pagination: false,
+    navigation: false,
+    items: 6 #10 items above 1000px browser width
+    itemsMobile: false # itemsMobile disabled - inherit from itemsTablet option
+    autoPlay : false
+
+# landing index banner
+  $('ul#index-banner').bxSlider ->
+    mode: 'fade'
+#    auto: true
+    pause: 6000
+
+# landing couple stories
+  $('#l-couple-stories ul').bxSlider()
 #    controls: false
 #    auto: true
 #    pause: 6000

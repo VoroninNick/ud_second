@@ -12,6 +12,106 @@ body.landing-page-wrap
   height: 100px
   .l-header
     height: 100%
+    .l-header-login-form-wrap
+      position: relative
+      width: 100%
+      .l-header-login-form-inner
+        position: absolute
+        left: 0
+        right: 0
+        .l-header-login-form
+          position: relative
+          z-index: 1
+          background-color: #EDF0F1
+          padding-top: 25px
+          padding-bottom: 35px
+          p
+            color: #2E3E51
+            font:
+              size: rem-calc(10)
+              weight: 300
+            line-height: rem-calc(12)
+            margin-bottom: 9px
+          form
+            a
+              color: #D03F4A
+              font:
+                size: rem-calc(10)
+                weight: 300
+              line-height: rem-calc(12)
+          .input
+            .t-label
+              label
+                font:
+                  size: rem-calc(10)
+                  weight: 300
+                line-height: rem-calc(12)
+                padding-left: 0
+            label
+              color: #2E3E51
+              font-size: 0.75rem
+              padding-left: 12px
+              line-height: 1.05rem
+              margin-bottom: 6px
+            input
+              color: #D03F4A
+          .l-hf-socials-wrap
+            a
+              display: inline-block
+              background-color: #287FB8
+              height: 35px
+              width: 100%
+              font:
+                size: rem-calc(12)
+              line-height: rem-calc(35)
+              color: #EDF0F1
+              text-transform: uppercase
+              border-left: 1px solid #EDF0F1
+              border-right: 1px solid #EDF0F1
+              padding-left: 40px
+              svg
+                width: 30px
+                height: 30px
+                position: absolute
+                left: 6px
+                top: 2.5px
+                path
+                  fill: #fff
+          .l-hf-label
+            width: 100%
+            height: 30px
+            overflow: hidden
+            margin-top: 5px
+            b
+              display: inline-block
+              background: #EDF0F1
+              font:
+                family: 'dearjoe_1_msregular'
+                size: rem-calc(23)
+              +my_horizontal_align
+              &:before
+                display: block
+                content: ''
+                width: 26px
+                height: 26px
+                position: absolute
+                top: 0
+                left: -5px
+                background-color: #EDF0F1
+                z-index: -1
+              &:after
+                display: block
+                content: ""
+                position: absolute
+                top: 13px
+                left: -1000px
+                width: 2000px
+                height: 0px
+                border-bottom: 2px dotted #48647C
+                z-index: -2
+          input[type="submit"]
+            width: 100%
+            color: #EDF0F1 !important
   ul
     list-style: none
     margin: 0
@@ -58,7 +158,25 @@ body.landing-page-wrap
     text-shadow: 1px 1px 1px #9b3036, 2px 2px 1px #9b2e36, 3px 3px 1px #9d2e37, 4px 4px 1px #9e2f37, 5px 5px 1px #a02f38, 6px 6px 1px #a13038, 7px 7px 1px #a33039, 8px 8px 1px #a53139, 9px 9px 1px #a6313a, 10px 10px 1px #a8323b, 11px 11px 1px #aa323b, 12px 12px 1px #ab333c, 13px 13px 1px #ad333c, 14px 14px 1px #ae343d, 15px 15px 1px #b0343d, 16px 16px 1px #b2353e, 17px 17px 1px #c23c47, 18px 18px 1px #b5363f, 19px 19px 1px #b63640, 20px 20px 1px #b83740, 21px 21px 1px #ba3741, 22px 22px 1px #bb3842
     overflow: hidden
     padding: 0 20px
-
+.bx-wrapper
+  position: relative
+  .bx-controls
+    .bx-controls-direction
+      a
+        position: absolute
+        text-indent: -9999px
+        width: 14px
+        height: 28px
+        //background-color: royalblue
+        background-size: 100%
+        background-repeat: no-repeat
+        bottom: 45%
+        &.bx-prev
+          left: -20px
+          background-image: asset_url("UD-icon-arrow-up-l.svg")
+        &.bx-next
+          right: -20px
+          background-image: asset_url('UD-icon-arrow-up-r.svg')
 .l-main-banner-wrap
   height: 650px
   .bx-controls-direction
@@ -87,7 +205,8 @@ body.landing-page-wrap
     top: 0
     right: 0
     bottom: 0
-    //background: rebeccapurple
+    .l-banner-information-about-profile-inner
+      width: 100%
     .l-banner-about-profile
       position: relative
 
@@ -133,6 +252,38 @@ body.landing-page-wrap
           .ud-gender-input
             position: relative
             margin: 5px 0 20px
+            .lbf-gender-label-wrap
+              .lbf-ico
+                width: 22px
+                float: left
+                svg
+                  height: 20px
+                  width: 100%
+              .lbf-label
+                display: inline-block
+                height: 20px
+                float: left
+                label
+                  padding: 0 8px
+                  line-height: 20px
+                  font-size: 10px
+                  text-transform: uppercase
+                  margin: 0
+                  color: #fff
+              &.lbf-male
+                .lbf-ico
+                  margin-right: 3px
+                .lbf-label
+                  background-color: #287FB8
+                path
+                  fill: #287FB8
+              &.lbf-female
+                .lbf-ico
+                  margin-right: 8px
+                .lbf-label
+                  background-color: #D03F4A
+                path
+                  fill: #D03F4A
             input
               position: absolute
               left: -1000px
@@ -222,7 +373,13 @@ body.landing-page-wrap
   .l-header
     height: 38px
     background-color: #BEC3C7
-    h3
+    h4
+  ul#diamonds-online-carousel
+    margin-left: 0
+    list-style: none
+    padding-top: 10px
+    padding-bottom: 65px
+    margin-bottom: 35px
 
 .input-ud-button
   input[type="submit"]
@@ -363,6 +520,8 @@ body.landing-page-wrap
       background-color: #EDF0F1
       &:before
         background-color: #BEC3C7
+  .bx-pager
+    display: none
   ul
     list-style: none
     margin-left: 0
@@ -397,7 +556,62 @@ body.landing-page-wrap
 .l-men-say-wrap
   margin-top: 35px
   margin-bottom: 45px
+  .notification-container
+    background-color: #2E3E51
+    display: block
+    left: 90%
+    top: 0
+    bottom: 0
+    min-width: 100px
+    width: 280px
+    min-height: auto
+    border: none
+    &:after
+      display: block
+      content: ""
+      position: absolute
+      top: 35px
+      left: -11px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 11px 11px 11px 0
+      border-color: transparent #2E3E51 transparent transparent
+    &:before
+      display: none
+  .l-men-say
+    padding: 25px
+    &:before
+      display: inline-block
+      content: ''
+      position: absolute
+      background-image: asset-url("UAD-quote-1.svg")
+      background-size: 100%
+      background-repeat: no-repeat
+      left: 10px
+      top: 10px
+      width: 57px
+      height: 42px
+      z-index: -1
+    &:after
+      display: inline-block
+      content: ''
+      position: absolute
+      background-image: asset-url("UAD-quote-2.svg")
+      background-size: 100%
+      background-repeat: no-repeat
+      right: 15px
+      bottom: 15px
+      width: 57px
+      height: 42px
+    p
+      color: #D03F4A
+      font:
+        size: rem-calc(12)
+        weight: 300
+      line-height: rem-calc(16)
   .lms-one-wrap
+    cursor: pointer
     .image
       max-width: 100%
       width: 100%
@@ -436,7 +650,42 @@ body.landing-page-wrap
       background-color: #287FB8
       b
       p
+  ul
+    li
+      color: #2E3E51
+      font:
+        size: rem-calc(16)
+        weight: 300
+  strong
+    color: #2E2E36
+    font:
+      size: rem-calc(50)
+      family: 'dearjoe_1_msregular'
+    span
+      color: #D03F4A
+      &:last-of-type
+        color: #BEC3C7
+        font:
+          size: rem-calc(50)
+          family: 'dearjoe_1_msregular'
 
 .l-footer-wrap
   min-height: 60px
   background-color: #BEC3C7
+  position: relative
+
+  .scrollToTop
+    position: absolute
+    top: 0
+    right: 1rem
+    display: block
+    height: 60px
+    width: 32px
+    img
+      width: 36px
+      +my_center_align
+        position: absolute
+
+.ud-range-slider-wrap
+  input
+    width: 100%

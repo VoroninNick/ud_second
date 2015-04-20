@@ -49,4 +49,5 @@ gem 'slim-rails'
 gem 'foundation-rails'
 
 gem 'bxslider-rails'
+gem 'owlcarousel-rails'
 

@@ -16,12 +16,22 @@
           .row
             .columns.large-6.medium-6.small-6
               .ud-gender-input
-                label for="lbf-male" Male
-                input#lbf-male type="radio" name="gender" value="male"
+                .lbf-gender-label-wrap.lbf-male
+                  .lbf-ico
+                    =embedded_svg "UAD-icons-female.svg"
+                  .lbf-label
+                    label for="lbf-male" Male
+                input#lbf-male.lbf-male type="radio" name="gender" value="male"
+
             .columns.large-6.medium-6.small-6
               .ud-gender-input
-                label for="lbf-female" Female
-                input#lbf-female type="radio" name="gender" value="female"
+                .lbf-gender-label-wrap.lbf-female
+                  .lbf-ico
+                    =embedded_svg "UAD-icons-male.svg"
+                  .lbf-label
+                    label for="lbf-female"
+                      |Female
+                input#lbf-female.lbf-female type="radio" name="gender" value="female"
           .row
             .columns
               .input
