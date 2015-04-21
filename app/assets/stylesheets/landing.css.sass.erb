@@ -252,6 +252,17 @@ body.landing-page-wrap
         height: 610px
         left: 0
         right: 0
+        &:before
+          position: absolute
+          content: attr(data-profile-name)
+          left: -40px
+          bottom: -110px
+          font-family: "dearjoe_1_msregular"
+          font-size: 12.5625rem
+          font-weight: 600
+          color: #EDF0F1
+          opacity: 0.25
+          white-space: nowrap
         .lb-about-profile
           position: absolute
           left: 0
@@ -293,7 +304,8 @@ body.landing-page-wrap
         z-index: 10
         .lbf-registration-form
           margin-top: 10px
-
+          form
+            padding-bottom: 45px
           i
             color: #2E2E36
             font:
@@ -380,14 +392,18 @@ body.landing-page-wrap
           background-size: cover !important
           margin: 0 auto
 .ud-range-input
+  height: 60px
+  padding-top: 15px
   input
     color: #3598DB
     height: 40px
-    width: 40px
+    width: 100%
     font:
       size: rem-calc(16)
       weight: 400
-    text-transform: uppercase
+    text:
+      transform: uppercase
+      align: center
     line-height: rem-calc(40)
     border: none
     border-bottom: 1px solid #BEC3C7
@@ -399,7 +415,7 @@ body.landing-page-wrap
     height: 2px
     border: none
     border-radius: 0
-    top: 25px
+    margin-top: 10px
     position: relative
     &:before, &:after
       display: block
@@ -535,6 +551,10 @@ body.landing-page-wrap
     outline: none
 
 .l-search-form-wrap
+  form
+    padding-bottom: 35px
+    .input-ud-button
+      margin-top: 35px
   .input
     padding-top: 15px
     > label

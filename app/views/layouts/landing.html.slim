@@ -97,7 +97,7 @@ body.landing-page-wrap
             .row
               .columns.large-7.medium-7.right
                 .l-banner-about-profile
-                  .lb-about-profile-wrap
+                  .lb-about-profile-wrap data-profile-name="Diana Dream"
                     .lb-about-profile
                       h3 Hello, my name is
                       h2 Diana Dream
@@ -202,29 +202,43 @@ body.landing-page-wrap
                       .columns.large-2
                         input#lsf-age-min type="text" placeholder="18"
                       .columns.large-8
-                        #ud-range-slide data-min-val="18" data-max-val="65"
+                        .row
+                          .column
+                            label Age
+                        .row
+                          .columns
+                            #ud-range-age-slide data-min-val="18" data-max-val="65+"
                       .columns.large-2
                         input#lsf-age-max type="text" placeholder="65+"
-                  /.ud-range-slider-wrap
-                  /  .row.collapse
-                  /    .columns.large-6.medium-6
-                  /      label for="priceMin" Age
-                  /      input type="range" name="priceMin" id="priceMin" min="18" max="65" value="18" step="1"
-                  /    .columns.large-6.medium-6
-                  /      label for="priceMax" Price Range ($):
-                  /      input type="range" name="priceMax" id="priceMax" min="18" max="65" value="65"
-                  /
-                  /div data-role="rangeslider"
-                  /  label for="priceMin" Height
-                  /  input type="range" name="priceMin" id="priceMin" min="135" max="200" value="135"
-                  /  label for="priceMax" Price Range ($):
-                  /  input type="range" name="priceMax" id="priceMax" min="135" max="200" value="200"
-                  /
-                  /div data-role="rangeslider"
-                  /  label for="priceMin" Weight
-                  /  input type="range" name="priceMin" id="priceMin" min="40" max="150" value="40"
-                  /  label for="priceMax" Price Range ($):
-                  /  input type="range" name="priceMax" id="priceMax" min="40" max="150" value="150"
+
+                  .row
+                    .ud-range-input
+                      .columns.large-2
+                        input#lsf-height-min type="text" placeholder="135"
+                      .columns.large-8
+                        .row
+                          .column
+                            label Height
+                        .row
+                          .columns
+                            #ud-range-height-slide data-min-val="135" data-max-val="200"
+                      .columns.large-2
+                        input#lsf-height-max type="text" placeholder="200"
+
+
+                  .row
+                    .ud-range-input
+                      .columns.large-2
+                        input#lsf-weight-min type="text" placeholder="40  "
+                      .columns.large-8
+                        .row
+                          .column
+                            label Weight
+                        .row
+                          .columns
+                            #ud-range-weight-slide data-min-val="135" data-max-val="200"
+                      .columns.large-2
+                        input#lsf-weight-max type="text" placeholder="150"
 
 
                 .columns.large-6.medium-6
@@ -232,26 +246,27 @@ body.landing-page-wrap
                     label Hair color
                     select.ud-multiple
                       option value="Doesn’t matter" Doesn’t matter
-                      option value="Doesn’t matter" Doesn’t matter
-                      option value="Doesn’t matter" Doesn’t matter
-                      option value="Doesn’t matter" Doesn’t matter
-                      option value="Doesn’t matter" Doesn’t matter
-                      option value="Doesn’t matter" Doesn’t matter
+                      option value="Brown" Brown
+                      option value="Yellow" Yellow
+                      option value="Black" Black
+                      option value="White" White
                   .input
                     label City
                     select.ud-multiple multiple="multiple"
                       option value="Doesn’t matter" Doesn’t matter
-                      option value="Doesn’t matter" Doesn’t matter
-                      option value="Doesn’t matter" Doesn’t matter
-                      option value="Doesn’t matter" Doesn’t matter
-                      option value="Doesn’t matter" Doesn’t matter
-                      option value="Doesn’t matter" Doesn’t matter
+                      option value="Lviv" Lviv
+                      option value="Kyiv" Kyiv
+                      option value="Odesa" Odesa
+                      option value="Sevastopol" Sevastopol
+                      option value="Yalta" Yalta
                   .input-ud-button
                     input type="submit" value="Find Diamonds"
                   a
                     span
                       |or&nbsp;
                     |Clear form
+                .clearfix
+
         .white-grey.best-match-wrap.l-search-result-wrap
           .columns
             h3
@@ -437,7 +452,7 @@ body.landing-page-wrap
       .columns.large-3.medium-3
         .row
           .columns
-            = image_tag "UD-logo-diamond.png"
+            = image_tag "UAD-landing-chat.png"
         .row
           .columns
             b Communicate
@@ -451,7 +466,7 @@ body.landing-page-wrap
       .columns.large-3.medium-3
         .row
           .columns
-            = image_tag "UD-logo-diamond.png"
+            = image_tag "UAD-landing-hearts.png"
         .row
           .columns
             b Date diamonds

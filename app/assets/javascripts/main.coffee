@@ -6,9 +6,10 @@
 
 
 $(document).ready ->
-  $ ->
-    $('#ud-range-slide').slider
 
+#  range slide initialize
+  $ ->
+    $('#ud-range-age-slide').slider
       range: true
       min: 18
       max: 65
@@ -17,20 +18,63 @@ $(document).ready ->
         65
       ]
       slide: (event, ui) ->
-        #Поле минимального значения
+        # field min value
         $('#lsf-age-min').val ui.values[0]
-        #Поле максимального значения
+        # field max value
         $('#lsf-age-max').val ui.values[1]
         return
-    #Записываем значения ползунков в момент загрузки страницы
-    #То есть значения по умолчанию
-    $('#lsf-age-min').val $('#ud-range-slide').slider('values', 0)
-    $('#lsf-age-max').val $('#ud-range-slide').slider('values', 1)
+
+    # set default value
+    $('#lsf-age-min').val $('#ud-range-age-slide').slider('values', 0)
+    $('#lsf-age-max').val $('#ud-range-age-slide').slider('values', 1)
     return
 
 #  $('#lsf-age-min').change ->
 #    $('#ud-range-slide').slider 'value', parseInt(@value)
 #    return
+
+  $ ->
+    $('#ud-range-height-slide').slider
+      range: true
+      min: 135
+      max: 200
+      values: [
+        135
+        200
+      ]
+      slide: (event, ui) ->
+        # field min value
+        $('#lsf-height-min').val ui.values[0]
+        # field max value
+        $('#lsf-height-max').val ui.values[1]
+        return
+
+    # set default value
+    $('#lsf-height-min').val $('#ud-range-height-slide').slider('values', 0)
+    $('#lsf-height-max').val $('#ud-range-height-slide').slider('values', 1)
+    return
+
+  $ ->
+    $('#ud-range-weight-slide').slider
+      range: true
+      min: 40
+      max: 150
+      values: [
+        40
+        150
+      ]
+      slide: (event, ui) ->
+        # field min value
+        $('#lsf-weight-min').val ui.values[0]
+        # field max value
+        $('#lsf-weight-max').val ui.values[1]
+        return
+
+    # set default value
+    $('#lsf-weight-min').val $('#ud-range-weight-slide').slider('values', 0)
+    $('#lsf-weight-max').val $('#ud-range-weight-slide').slider('values', 1)
+    return
+
 
 #  landing banner registration form
   $('.lbf-registration-form .ud-gender-input label').click ->
