@@ -2,40 +2,6 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$(window).resize ->
-  if $(window).width() >= 1445
-    if $(".button-menu a.mobile").hasClass('open')
-      $(".button-menu a.mobile").removeClass('open')
-  st = $(this).scrollTop()
-  wh = $(window).height()
-  ot = $('footer').offset().top
-  fh = $('footer').height()
-
-  action = ot - wh
-  if st >= action
-    $('.ordered-list-wrap').addClass('fixed-to-footer')
-  else
-    $('.ordered-list-wrap').removeClass('fixed-to-footer')
-
-lastScrollTop = 0
-$(window).scroll (event) ->
-  st = $(this).scrollTop()
-  wh = $(window).height()
-  ot = $('.l-footer-wrap').offset().top
-
-  action = ot - wh
-  if st >= action
-    $('.ordered-list-wrap').addClass('fixed-to-footer')
-  else
-    $('.ordered-list-wrap').removeClass('fixed-to-footer')
-
-  if st > lastScrollTop
-    # downscroll code
-    $('body').addClass 'hide-header'
-  else
-    # upscroll code
-    $('body').removeClass 'hide-header'
-  lastScrollTop = st
 
 
 
@@ -62,9 +28,9 @@ $(document).ready ->
     $('#lsf-age-max').val $('#ud-range-slide').slider('values', 1)
     return
 
-  $('#lsf-age-min').change ->
-    $minValue = $(this).val
-    alert 'min'+ $minValue
+#  $('#lsf-age-min').change ->
+#    $('#ud-range-slide').slider 'value', parseInt(@value)
+#    return
 
 #  landing banner registration form
   $('.lbf-registration-form .ud-gender-input label').click ->
@@ -439,4 +405,40 @@ $(document).on 'mouseup', (event)->
   console.log("mouseup: in: #{in_container}; out: #{out_of_container}")
   if out_of_container
     $containers.fadeOut duration: 300
+
+$(window).resize ->
+  if $(window).width() >= 1445
+    if $(".button-menu a.mobile").hasClass('open')
+      $(".button-menu a.mobile").removeClass('open')
+  st = $(this).scrollTop()
+  wh = $(window).height()
+  ot = $('.l-footer-wrap').offset().top
+  fh = $('.l-footer-wrap').height()
+
+  action = ot - wh
+  if st >= action
+    $('.ordered-list-wrap').addClass('fixed-to-footer')
+  else
+    $('.ordered-list-wrap').removeClass('fixed-to-footer')
+
+lastScrollTop = 0
+$(window).scroll (event) ->
+  st = $(this).scrollTop()
+  wh = $(window).height()
+  ot = $('.l-footer-wrap').offset().top
+
+  action = ot - wh
+  if st >= action
+    $('.ordered-list-wrap').addClass('fixed-to-footer')
+  else
+    $('.ordered-list-wrap').removeClass('fixed-to-footer')
+
+  if st > lastScrollTop
+    # downscroll code
+    $('body').addClass 'hide-header'
+  else
+    # upscroll code
+    $('body').removeClass 'hide-header'
+  lastScrollTop = st
+
 

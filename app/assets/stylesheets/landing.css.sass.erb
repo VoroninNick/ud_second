@@ -242,6 +242,7 @@ body.landing-page-wrap
     bottom: 0
     .l-banner-information-about-profile-inner
       width: 100%
+      position: relative
     .l-banner-about-profile
       position: relative
 
@@ -256,7 +257,22 @@ body.landing-page-wrap
           left: 0
           right: 0
           bottom: 144px
-          //background-color: red
+          h3, h2, p
+            color: #EDF0F1
+          h3
+            font:
+              size: rem-calc(59)
+              family: dearjoe_1_msregular
+          h2
+            font:
+              size: rem-calc(60)
+              weight: 400
+              family: "Fira Sans", sans-serif
+          p
+            font:
+              size: rem-calc(14)
+              weight: 300
+            line-height: rem-calc(16.8)
 
   .l-banner-login-form-wrap
     height: 0
@@ -268,7 +284,7 @@ body.landing-page-wrap
       height: 0
       position: relative
       .l-banner-login-form
-        height: 410px
+        min-height: 410px
         background-color: #EDF0F1
         width: 90%
         position: absolute
@@ -288,22 +304,20 @@ body.landing-page-wrap
           .input-ud-button
             margin-top: 30px
             input[type="submit"]
-              height: 45px
-              font:
-                size: rem-calc(33) !important
-              line-height: rem-calc(45)
+              height: 35px
+              line-height: rem-calc(35)
               color: #EDF0F1 !important
               width: 100%
           .input
             input
-              height: 45px
+              height: 35px
             label
-              color: #2E3E51
-              font:
-                size: rem-calc(12)
-              padding-left: 12px
-              line-height: 1.05rem
-              margin-bottom: 6px
+              //color: #2E3E51
+              //font:
+              //  size: rem-calc(12)
+              //padding-left: 12px
+              //line-height: 1.05rem
+              //margin-bottom: 6px
 
         .lbf-header-wrap
           height: 60px
@@ -463,9 +477,9 @@ body.landing-page-wrap
       .lbf-ico
         margin-right: 3px
       .lbf-label
-        background-color: #287FB8
+        background-color: #2E3E51
       path
-        fill: #287FB8
+        fill: #2E3E51
     &.lbf-female
       .lbf-ico
         margin-right: 8px
@@ -480,6 +494,10 @@ body.landing-page-wrap
 .l-about-project-wrap
   background-color: #EDF0F1
   margin-bottom: 40px
+  b
+    color: #2E3E51
+  i
+    color: #D03F4A
 
 .l-who-is-online-now-wrap
   background-color: #EDF0F1
