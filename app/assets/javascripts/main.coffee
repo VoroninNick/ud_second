@@ -40,6 +40,32 @@ $(window).scroll (event) ->
 
 
 $(document).ready ->
+  $ ->
+    $('#ud-range-slide').slider
+
+      range: true
+      min: 18
+      max: 65
+      values: [
+        18
+        65
+      ]
+      slide: (event, ui) ->
+        #Поле минимального значения
+        $('#lsf-age-min').val ui.values[0]
+        #Поле максимального значения
+        $('#lsf-age-max').val ui.values[1]
+        return
+    #Записываем значения ползунков в момент загрузки страницы
+    #То есть значения по умолчанию
+    $('#lsf-age-min').val $('#ud-range-slide').slider('values', 0)
+    $('#lsf-age-max').val $('#ud-range-slide').slider('values', 1)
+    return
+
+  $('#lsf-age-min').change ->
+    $minValue = $(this).val
+    alert 'min'+ $minValue
+
 #  landing banner registration form
   $('.lbf-registration-form .ud-gender-input label').click ->
     alert 'test'
@@ -61,10 +87,9 @@ $(document).ready ->
     autoPlay : false
 
 # landing index banner
-  $('ul#index-banner').bxSlider ->
-    mode: 'swing'
+  $('ul#index-banner').bxSlider()
 #    auto: true
-    pause: 6000
+#    pause: 6000
 
 # landing couple stories
   $('#l-couple-stories ul').bxSlider()

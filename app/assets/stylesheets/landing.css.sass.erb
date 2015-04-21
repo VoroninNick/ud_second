@@ -340,14 +340,19 @@ body.landing-page-wrap
             width: 40%
   .bx-wrapper
     height: 610px
+    //width: 100%!important
     .bx-viewport
       height: 100%
+      //width: 100%!important
   ul
     height: 100%
     margin: 0
     list-style: none
+    //width: auto!important
+    position: relative
     li
       height: 100%
+      //width: 100%!important
       a
         height: 100%
         .image
@@ -360,6 +365,79 @@ body.landing-page-wrap
           -o-background-size: cover !important
           background-size: cover !important
           margin: 0 auto
+.ud-range-input
+  input
+    color: #3598DB
+    height: 40px
+    width: 40px
+    font:
+      size: rem-calc(16)
+      weight: 400
+    text-transform: uppercase
+    line-height: rem-calc(40)
+    border: none
+    border-bottom: 1px solid #BEC3C7
+    background: transparent
+    outline: none !important
+    box-shadow: none !important
+  .ui-slider
+    background: #BEC3C7
+    height: 2px
+    border: none
+    border-radius: 0
+    top: 25px
+    position: relative
+    &:before, &:after
+      display: block
+      position: absolute
+      bottom: -25px
+      color: #BEC3C7
+      font:
+        size: rem-calc(14)
+        weight: 300
+      line-height: rem-calc(16.8)
+    &:before
+      content: attr(data-min-val)
+      left: 0
+    &:after
+      content: attr(data-max-val)
+      right: 0
+    .ui-slider-range
+      background: #3598DB
+      border: none !important
+
+    .ui-slider-handle
+      width: 7px
+      height: 12px
+      background: #3598DB!important
+      padding: 0
+      border: none
+      border-radius: 0
+      outline: none
+      box-shadow: none
+      &:first-of-type:before
+        display: block
+        content: ''
+        position: absolute
+        top: -7px
+        left: 0
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 0 0 7px 7px
+        border-color: transparent transparent #007bff transparent
+      &:last-of-type:before
+        display: block
+        content: ''
+        position: absolute
+        top: -7px
+        left: 0
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 7px 0 0 7px
+        border-color: transparent transparent transparent #007bff
+
 .ud-gender-input
   position: relative
   margin: 5px 0 20px
@@ -618,6 +696,24 @@ body.landing-page-wrap
       border-color: transparent #2E3E51 transparent transparent
     &:before
       display: none
+
+  .columns:last-child
+    .notification-container
+      left: auto
+      right: 90%
+      &:after
+        display: block
+        content: ""
+        position: absolute
+        top: 35px
+        left: auto
+        right: -11px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 11px 0 11px 11px
+        border-color: transparent transparent transparent #2E3E51
+
   .l-men-say
     padding: 25px
     &:before
@@ -722,19 +818,29 @@ body.landing-page-wrap
       font:
         size: rem-calc(16)
         weight: 300
+      &:nth-child(n+5)
+        text-transform: uppercase
 
   strong
+    position: relative
     color: #2E2E36
     font:
-      size: rem-calc(50)
+      size: 2rem
       family: 'dearjoe_1_msregular'
+    display: block
+    padding-bottom: 20px
     span
       color: #D03F4A
+      position: relative
+      top: 20px
       &:last-of-type
-        color: #BEC3C7
-        font:
-          size: rem-calc(50)
-          family: 'dearjoe_1_msregular'
+        position: absolute
+        top: 0px
+        right: 18%
+        z-index: -1
+        svg
+          width: 75px
+          height: 100%
 
 .l-footer-wrap
   min-height: 60px

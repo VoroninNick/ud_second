@@ -5,8 +5,10 @@ html lang="en"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     title UdServiceSecondVersion
     = stylesheet_link_tag    'application'
+    = stylesheet_link_tag    'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css'
     = javascript_include_tag "vendor/modernizr"
     = javascript_include_tag 'application'
+    = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"
     = csrf_meta_tags
 
 body.landing-page-wrap
@@ -195,27 +197,36 @@ body.landing-page-wrap
             .columns
               form
                 .column.large-6.medium-6
+                  .row
+                    .ud-range-input
+                      .columns.large-2
+                        input#lsf-age-min type="text" placeholder="18"
+                      .columns.large-8
+                        #ud-range-slide data-min-val="18" data-max-val="65"
+                      .columns.large-2
+                        input#lsf-age-max type="text" placeholder="65+"
+                  /.ud-range-slider-wrap
+                  /  .row.collapse
+                  /    .columns.large-6.medium-6
+                  /      label for="priceMin" Age
+                  /      input type="range" name="priceMin" id="priceMin" min="18" max="65" value="18" step="1"
+                  /    .columns.large-6.medium-6
+                  /      label for="priceMax" Price Range ($):
+                  /      input type="range" name="priceMax" id="priceMax" min="18" max="65" value="65"
+                  /
+                  /div data-role="rangeslider"
+                  /  label for="priceMin" Height
+                  /  input type="range" name="priceMin" id="priceMin" min="135" max="200" value="135"
+                  /  label for="priceMax" Price Range ($):
+                  /  input type="range" name="priceMax" id="priceMax" min="135" max="200" value="200"
+                  /
+                  /div data-role="rangeslider"
+                  /  label for="priceMin" Weight
+                  /  input type="range" name="priceMin" id="priceMin" min="40" max="150" value="40"
+                  /  label for="priceMax" Price Range ($):
+                  /  input type="range" name="priceMax" id="priceMax" min="40" max="150" value="150"
 
-                  div.ud-range-slider-wrap
-                    .row.collapse
-                      .columns.large-6.medium-6
-                        label for="priceMin" Age
-                        input type="range" name="priceMin" id="priceMin" min="18" max="65" value="18" step="1"
-                      .columns.large-6.medium-6
-                        label for="priceMax" Price Range ($):
-                        input type="range" name="priceMax" id="priceMax" min="18" max="65" value="65"
 
-                  div data-role="rangeslider"
-                    label for="priceMin" Height
-                    input type="range" name="priceMin" id="priceMin" min="135" max="200" value="135"
-                    label for="priceMax" Price Range ($):
-                    input type="range" name="priceMax" id="priceMax" min="135" max="200" value="200"
-
-                  div data-role="rangeslider"
-                    label for="priceMin" Weight
-                    input type="range" name="priceMin" id="priceMin" min="40" max="150" value="40"
-                    label for="priceMax" Price Range ($):
-                    input type="range" name="priceMax" id="priceMax" min="40" max="150" value="150"
                 .columns.large-6.medium-6
                   .input
                     label Hair color
@@ -565,7 +576,7 @@ body.landing-page-wrap
           span
             |Ukrainian Diamonds
           span
-            |?
+            =embedded_svg "UAD-question mark.svg"
         ul
           li
             |100% satisfaction or 100% refund
