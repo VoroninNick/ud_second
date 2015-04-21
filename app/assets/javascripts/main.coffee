@@ -62,7 +62,7 @@ $(document).ready ->
 
 # landing index banner
   $('ul#index-banner').bxSlider ->
-    mode: 'fade'
+    mode: 'swing'
 #    auto: true
     pause: 6000
 

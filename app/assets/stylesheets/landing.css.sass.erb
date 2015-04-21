@@ -3,6 +3,24 @@
 
 body.landing-page-wrap
   display: block !important
+  .input
+    label
+      font-size: 0.875rem
+      line-height: 1.05rem
+      color: #2E3E51
+      margin-bottom: 6px
+    input
+      color: #D03F4A !important
+      font-size: 0.875rem !important
+      line-height: 1.05rem !important
+      outline: none !important
+      border: none
+      box-shadow: none !important
+      height: 35px
+      width: 100%
+      padding-left: 13px
+      &:focus
+        border: none !important
   .l-round-count-wrap
     position: relative
     height: 24px
@@ -120,6 +138,21 @@ body.landing-page-wrap
       height: 100%
       float: left
       padding: 0 25px
+      @media (min-width : 750px) and (max-width : 810px)
+        padding: 0 20px
+      @media (min-width : 727px) and (max-width : 750px)
+        padding: 0 18px
+      @media (min-width : 690px) and (max-width : 727px)
+        padding: 0 15px
+      @media (min-width : 651px) and (max-width : 690px)
+        padding: 0 12px
+      @media (min-width : 585px) and (max-width : 651px)
+        padding: 0 10px
+      @media (min-width : 487px) and (max-width : 585px)
+        padding: 0 8px
+      &.landing-header-anchors-hide-for-small
+        @media (min-width : 0) and (max-width : 487px)
+          display: none
       a
         display: inline-block
         +my_vertical_align
@@ -131,7 +164,7 @@ body.landing-page-wrap
         line-height: rem-calc(19)
   .l-logo-wrap
     .l-icon
-      width: 40%
+      width: 85px
       float: left
       height: 100px
       img
@@ -140,6 +173,8 @@ body.landing-page-wrap
       width: 60%
       float: left
       height: 100px
+      @media (min-width : 0) and (max-width : 735px)
+        display: none
       img
         +my_vertical_align
   .l-ud-button
@@ -249,45 +284,7 @@ body.landing-page-wrap
               size: rem-calc(25)
               weight: 300
               family: 'dearjoe_1_msregular'
-          .ud-gender-input
-            position: relative
-            margin: 5px 0 20px
-            .lbf-gender-label-wrap
-              .lbf-ico
-                width: 22px
-                float: left
-                svg
-                  height: 20px
-                  width: 100%
-              .lbf-label
-                display: inline-block
-                height: 20px
-                float: left
-                label
-                  padding: 0 8px
-                  line-height: 20px
-                  font-size: 10px
-                  text-transform: uppercase
-                  margin: 0
-                  color: #fff
-              &.lbf-male
-                .lbf-ico
-                  margin-right: 3px
-                .lbf-label
-                  background-color: #287FB8
-                path
-                  fill: #287FB8
-              &.lbf-female
-                .lbf-ico
-                  margin-right: 8px
-                .lbf-label
-                  background-color: #D03F4A
-                path
-                  fill: #D03F4A
-            input
-              position: absolute
-              left: -1000px
-              visibility: hidden
+
           .input-ud-button
             margin-top: 30px
             input[type="submit"]
@@ -363,7 +360,45 @@ body.landing-page-wrap
           -o-background-size: cover !important
           background-size: cover !important
           margin: 0 auto
-
+.ud-gender-input
+  position: relative
+  margin: 5px 0 20px
+  .lbf-gender-label-wrap
+    .lbf-ico
+      width: 22px
+      float: left
+      svg
+        height: 20px
+        width: 100%
+    .lbf-label
+      display: inline-block
+      height: 20px
+      float: left
+      label
+        padding: 0 8px
+        line-height: 20px
+        font-size: 10px
+        text-transform: uppercase
+        margin: 0
+        color: #fff
+    &.lbf-male
+      .lbf-ico
+        margin-right: 3px
+      .lbf-label
+        background-color: #287FB8
+      path
+        fill: #287FB8
+    &.lbf-female
+      .lbf-ico
+        margin-right: 8px
+      .lbf-label
+        background-color: #D03F4A
+      path
+        fill: #D03F4A
+  input
+    position: absolute
+    left: -1000px
+    visibility: hidden
 .l-about-project-wrap
   background-color: #EDF0F1
   margin-bottom: 40px
@@ -390,6 +425,7 @@ body.landing-page-wrap
     text-transform: uppercase
     color: #EDF0F1
     height: 35px
+    width: 100%
     background-color: #D03F4A
     text-align: center
     letter-spacing: 0.03rem
@@ -397,6 +433,10 @@ body.landing-page-wrap
 
     text-shadow: 1px 1px 1px #9b3036, 2px 2px 1px #9e3138, 3px 3px 1px #9e3138, 4px 4px 1px #a13239, 5px 5px 1px #a8343c, 6px 6px 1px #a9343d, 7px 7px 1px #ae353e, 8px 8px 1px #b13740, 9px 9px 1px #b63842, 10px 10px 1px #bb3944, 11px 11px 1px #bc3a45, 12px 12px 1px #c03b46, 13px 13px 1px #c03b46, 14px 14px 1px #bf3b46, 15px 15px 1px #c03b47, 16px 16px 1px #c23c47, 17px 17px 1px #c23c47, 18px 18px 1px #c33c48, 19px 19px 1px #c33c48, 20px 20px 1px #c33c48, 21px 21px 1px #c33c48, 22px 22px 1px #c33c48
     overflow: hidden
+
+    padding: 0
+    border: 0
+    outline: none
 
 .l-search-form-wrap
   .input
@@ -558,7 +598,6 @@ body.landing-page-wrap
   margin-bottom: 45px
   .notification-container
     background-color: #2E3E51
-    display: block
     left: 90%
     top: 0
     bottom: 0
@@ -645,17 +684,45 @@ body.landing-page-wrap
       text-align: center
 
 .l-why-we-wrap
+  margin-bottom: 45px
   .l-footer-registration-form-wrap
     .lfrf-header
       background-color: #287FB8
       b
+        color: #EDF0F1
+        font:
+          size: rem-calc(21)
+          weight: 400
+        line-height: rem-calc(25.2)
+        text-transform: uppercase
       p
+        color: #EDF0F1
+        font:
+          size: rem-calc(10)
+          weight: 300
+        line-height: rem-calc(12)
+        margin-bottom: 0
+    .lflf-form
+      padding-top: 20px
+      padding-bottom: 35px
+  = small-only
+    @media #{$small-only}
+      @content
+
   ul
+    list-style-image: asset_url('ud-list-diamond.png')
+    margin-left: grid-calc(2,12)
+
+    //@media #{$small-only}
+    //  margin-left: 0
+    +small-only
+      margin-left: 0
     li
       color: #2E3E51
       font:
         size: rem-calc(16)
         weight: 300
+
   strong
     color: #2E2E36
     font:
