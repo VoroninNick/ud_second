@@ -41,11 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="landing.html.slim" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/landing.html.slim">
+      <file leaf-file-name="_banner_reg_log_form.html.slim" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/partials/_banner_reg_log_form.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35886675" vertical-offset="3925" max-vertical-offset="11781">
-              <caret line="251" column="48" selection-start-line="251" selection-start-column="48" selection-end-line="251" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.8623188" vertical-offset="0" max-vertical-offset="1666">
+              <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -105,10 +105,10 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/main.sass.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.sass" />
-        <option value="$PROJECT_DIR$/app/views/partials/_banner_reg_log_form.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/main.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/landing.css.sass.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/landing.html.slim" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/landing.css.sass.erb" />
+        <option value="$PROJECT_DIR$/app/views/partials/_banner_reg_log_form.html.slim" />
       </list>
     </option>
   </component>
@@ -1791,62 +1791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/_banner_reg_log_form.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36956522" vertical-offset="0" max-vertical-offset="966">
-          <caret line="21" column="96" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding>
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".l-banner-login-form-inner" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".l-banner-login-form" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".lbf-header-wrap.text-center" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".lbf-tumbler.lbf-registration-wrap.lbf-active" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="b Registration" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="p For new users!" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".lbf-tumbler.lbf-login-wrap" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="b login" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="p For existing users" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".lbf-registration-form" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="form" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".columns" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".columns.text-center" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="i Welcome to Ukrainian diamonds!" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6.small-6" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".ud-gender-input" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".lbf-gender-label-wrap.lbf-male" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".lbf-ico" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-icons-female.svg&quot;" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".lbf-label" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="label for=&quot;lbf-male&quot; Male" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="input#lbf-male.lbf-male type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;male&quot;" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6.small-6" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".ud-gender-input" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".lbf-gender-label-wrap.lbf-female" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".lbf-ico" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-icons-male.svg&quot;" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".lbf-label" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="label for=&quot;lbf-female&quot;" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="|Female" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="input#lbf-female.lbf-female type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;female&quot;" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".columns" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".input" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="label Username or e-mail:" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="input type=&quot;email&quot; placeholder=&quot;usermail@gmail.com&quot;" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".input" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="label Phone:" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="input type=&quot;tel&quot; placeholder=&quot;(XXX)XXX-XXXX&quot;" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".input" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="label Password:" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="input type=&quot;password&quot; placeholder=&quot;********&quot;" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".input-ud-button" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder="input type=&quot;submit&quot; value=&quot;JOIN FOR FREE!&quot;" />
-            <marker date="1429627602000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/main.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7184265" vertical-offset="377" max-vertical-offset="8398">
@@ -1918,209 +1862,872 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/landing.css.sass.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/landing.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2775378" vertical-offset="6628" max-vertical-offset="15436">
-          <caret line="405" column="19" selection-start-line="405" selection-start-column="19" selection-end-line="405" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.093952484" vertical-offset="576" max-vertical-offset="11781">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="81" selection-end-column="25" />
           <folding>
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1429629981000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="html lang=&quot;en&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="head" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="meta charset=&quot;utf-8&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="title UdServiceSecondVersion" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= stylesheet_link_tag    'application'" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= stylesheet_link_tag    'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css'" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= javascript_include_tag &quot;vendor/modernizr&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= javascript_include_tag 'application'" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= javascript_include_tag &quot;https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= csrf_meta_tags" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="body.landing-page-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-header-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-header.black" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-4.small-2" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=root_path" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-logo-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-icon" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= image_tag &quot;UD-logo-diamond.png&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-title" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=image_tag &quot;UAD-logo-text.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-9.medium-8.small-10" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="ul.right" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li.landing-header-anchors-hide-for-small" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;#l-search&quot; Search" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li.landing-header-anchors-hide-for-small" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;#l-couple-stories&quot; Couple stories" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li.landing-header-anchors-hide-for-small" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;#l-men-say&quot; Men say" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a.l-ud-button.l-open-lhf-button login" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-4.medium-4.right" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-header-login-form-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-header-login-form-inner.hide" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-header-login-form" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p Login using Social networks:" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row.collapse.l-hf-socials-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6.small-6" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-icons-facebook.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|facebook" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6.small-6" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-icons-twitter.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|twitter" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-hf-label" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="b" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|or" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="form" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".input" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="label Username or e-mail:" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="input type=&quot;email&quot; placeholder=&quot;usermail@gmail.com&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".input" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="label Password:" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="input type=&quot;password&quot; placeholder=&quot;**********&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6.small-6" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".input" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".squared" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="input id=&quot;lf_remember_me&quot; type=&quot;checkbox&quot; value=&quot;remember me&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="label for=&quot;lf_remember_me&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".t-label" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="label for=&quot;lf_remember_me&quot; Remember me" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6.small-6" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a Forgot your password?" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".input-ud-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="input type=&quot;submit&quot; value=&quot;login&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-main-banner-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-banner-login-form-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-5.medium-5.end" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=render partial: &quot;partials/banner_reg_log_form&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="ul#index-banner" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;girl_101.jpg&quot;)}')no-repeat center center;&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-banner-information-about-profile-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-banner-information-about-profile-inner" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-7.medium-7.right" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-banner-about-profile" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".lb-about-profile-wrap data-profile-name=&quot;Diana Dream&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".lb-about-profile" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="h3 Hello, my name is" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="h2 Diana Dream" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p I am manager, from Lviv. I love sunshine and intellegence talks." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;girl_102.jpg&quot;)}')no-repeat center center;&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;girl-teddy-5.png&quot;)}')no-repeat center center;&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-about-project-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row.text-center" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-3.small-6" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= image_tag &quot;UD-logo-diamond.png&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="b PRIVACY &amp; SAFETY" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="i Guaranteed" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-3.small-6" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= image_tag &quot;UD-favorites.png&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="b REAL &amp; VALIDATED" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="i Ladies only" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-3.small-6" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= image_tag &quot;UAD-landing-money.png&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="b 100% REFUND" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="i Guaranteed" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-3.small-6" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= image_tag &quot;UD-favorites.png&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="b FREE TRIAL" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="i For Three Days" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-who-is-online-now-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-header.title-head.text-center" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="h4 Who is online now?" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= render partial: &quot;partials/who_is_online_now&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-search-form-wrap#l-search" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".title-head.grey.notification-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="h4 feel free to search some diamonds!" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".items-menu.notification-link" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=image_tag &quot;UD-icon-sub menu.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".notification-container" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".menu" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".group" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".title" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="strong Display options:" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".options" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".option" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".label" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".icon" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= embedded_svg &quot;UD-icon-sort.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="span" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|Sort by" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".input" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="select.sort-by" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="option value=&quot;age_increase&quot; Age increase" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="option value=&quot;age_decrease&quot; Age decrease" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="option value=&quot;alfabet&quot; Alfabet" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="option value=&quot;recent_activity&quot; Recent activity" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="option value=&quot;favotites_first&quot; Favotites first" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".white-grey" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="form" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".column.large-6.medium-6" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".ud-range-input" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-2" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="input#lsf-age-min type=&quot;text&quot; placeholder=&quot;18&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-8" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".column" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="label Age" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="#ud-range-age-slide data-min-val=&quot;18&quot; data-max-val=&quot;65+&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-2" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="input#lsf-age-max type=&quot;text&quot; placeholder=&quot;65+&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".ud-range-input" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-2" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="input#lsf-height-min type=&quot;text&quot; placeholder=&quot;135&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-8" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".column" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="label Height" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="#ud-range-height-slide data-min-val=&quot;135&quot; data-max-val=&quot;200&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-2" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="input#lsf-height-max type=&quot;text&quot; placeholder=&quot;200&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".ud-range-input" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-2" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="input#lsf-weight-min type=&quot;text&quot; placeholder=&quot;40  &quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-8" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".column" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="label Weight" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="#ud-range-weight-slide data-min-val=&quot;135&quot; data-max-val=&quot;200&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-2" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="input#lsf-weight-max type=&quot;text&quot; placeholder=&quot;150&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".input" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="label Hair color" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="select.ud-multiple" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="option value=&quot;&quot; selected=&quot;&quot; disabled=&quot;&quot; Doesn’t matter" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="option value=&quot;Brown&quot; Brown" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="option value=&quot;Yellow&quot; Yellow" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="option value=&quot;Black&quot; Black" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="option value=&quot;White&quot; White" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".input" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="label City" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="select.ud-multiple multiple=&quot;multiple&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="option value=&quot;&quot; disabled=&quot;&quot; Doesn’t matter" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="option value=&quot;Lviv&quot; Lviv" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="option value=&quot;Kyiv&quot; Kyiv" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="option value=&quot;Odesa&quot; Odesa" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="option value=&quot;Sevastopol&quot; Sevastopol" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="option value=&quot;Yalta&quot; Yalta" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".input-ud-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="input type=&quot;submit&quot; value=&quot;Find Diamonds&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="span" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|or&amp;nbsp;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|Clear form" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".white-grey.best-match-wrap.l-search-result-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="h3" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|Search results:&amp;nbsp;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="span" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|Found 5 ladies" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|&amp;nbsp;matching you creterias" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-3.small-6.your-best-match-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".preview-profile-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".preview-profile.the-best-match" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;girl_1.jpg&quot;)}')no-repeat center center;&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".information-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".triangle-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".triangle" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".information" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".title" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="h4 Zlata" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".info" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|21" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="span" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|&amp;nbsp;|&amp;nbsp;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|Lviv" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".actions" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button.red-fill" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-heart.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-introduction letter.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-mail.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-chat buble.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-camshare.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".p-status" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-3.small-6.collapse.your-best-match-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".preview-profile-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".preview-profile.the-best-match.offline" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;girl_2.jpg&quot;)}')no-repeat center center;&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".information-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".triangle-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".triangle" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".information" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".title" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="h4 Zlata" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".info" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|21" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="span" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|&amp;nbsp;|&amp;nbsp;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|Lviv" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".actions" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button.red-fill" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-heart.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-introduction letter.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-mail.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-chat buble.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-camshare.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".p-status" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-3.small-6.collapse.your-best-match-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".preview-profile-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".preview-profile.the-best-match" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;girl_3.jpg&quot;)}')no-repeat center center;&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".information-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".triangle-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".triangle" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".information" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".title" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="h4 Zlata" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".info" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|21" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="span" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|&amp;nbsp;|&amp;nbsp;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|Lviv" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".actions" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button.red-fill" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-heart.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-introduction letter.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-mail.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-chat buble.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-camshare.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".p-status" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-3.small-6.collapse.your-best-match-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".preview-profile-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".preview-profile.the-best-match" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;girl_4.jpg&quot;)}')no-repeat center center;&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".information-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".triangle-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".triangle" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".information" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".title" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="h4 Zlata" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".info" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|21" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="span" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|&amp;nbsp;|&amp;nbsp;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|Lviv" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".actions" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button.red-fill" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-heart.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-introduction letter.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-mail.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-chat buble.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".action-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a href=&quot;&quot; title=&quot;test&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UD-icon-camshare.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".p-status" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-how-it-work-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".title-block-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".title" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|How it works" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row.text-center" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-3" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= image_tag &quot;UD-logo-diamond.png&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="b Sign up" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="i its easy &amp; free!" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-round-count-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".round-count data-count=&quot;1&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-3" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= image_tag &quot;UD-logo-diamond.png&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="b Discover" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="i find your Diamond!" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-round-count-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".round-count data-count=&quot;2&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-3" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= image_tag &quot;UAD-landing-chat.png&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="b Communicate" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="i to win her heart!" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-round-count-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".round-count data-count=&quot;3&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-3" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= image_tag &quot;UAD-landing-hearts.png&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="b Date diamonds" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="i travel with us!" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-round-count-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".round-count data-count=&quot;4&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-couple-stories-wrap#l-couple-stories.white-grey" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".title-block-wrap.left-arrow-title" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".title" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|Couple Stories" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="ul" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-5.medium-5" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;kissing-couple.jpg&quot;)}')no-repeat center center;&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-7.medium-7" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="h3 DAVID &amp; OLGA" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|“It seems to me that all Internet dating stories are the same. After several fails you finally find what you were looking for. That’s the story of our meeting with Olga. She wrote me first!” – says David." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="span" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|“I’ve known what I wanted. So when I so David’s profile, I liked photos and just wrote. He answered. Soon we were out of online, we decided to move into the real world and that was right decision! We are happily marries for 2 years already and now we are expecting our first child”," />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|- Olga says." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-5.medium-5" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;smiling-couple-in-snow-montage.jpg&quot;)}')no-repeat center center;&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-7.medium-7" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="h3 DAVID &amp; OLGA" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|“It seems to me that all Internet dating stories are the same. After several fails you finally find what you were looking for. That’s the story of our meeting with Olga. She wrote me first!” – says David." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="span" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|“I’ve known what I wanted. So when I so David’s profile, I liked photos and just wrote. He answered. Soon we were out of online, we decided to move into the real world and that was right decision! We are happily marries for 2 years already and now we are expecting our first child”," />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|- Olga says." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-5.medium-5" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;couple-on-bench-2.jpg&quot;)}')no-repeat center center;&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-7.medium-7" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="h3 DAVID &amp; OLGA" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|“It seems to me that all Internet dating stories are the same. After several fails you finally find what you were looking for. That’s the story of our meeting with Olga. She wrote me first!” – says David." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="span" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|“I’ve known what I wanted. So when I so David’s profile, I liked photos and just wrote. He answered. Soon we were out of online, we decided to move into the real world and that was right decision! We are happily marries for 2 years already and now we are expecting our first child”," />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|- Olga says." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-men-say-wrap#l-men-say" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".title-block-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".title" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|Man says" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-3.notification-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".lms-one-wrap.notification-link" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;man_12.png&quot;)}')no-repeat center center;&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".white-grey" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="b GEORGE L." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="i Manager. 45" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".notification-container" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-men-say" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|I have always regarded Mr. Bean as a timeless, ageless character, and I would rather he be remembered as a character mostly in his 30s and 40s." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|I feel as though the camera is almost a kind of voyeur in Mr. Bean's life, and you just watch this bizarre man going about his life in the way that he wants to." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-3.notification-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".lms-one-wrap.notification-link" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;man_11a.jpg&quot;)}')no-repeat center center;&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".white-grey" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="b GEORGE L." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="i Manager. 45" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".notification-container" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-men-say" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|I have always regarded Mr. Bean as a timeless, ageless character, and I would rather he be remembered as a character mostly in his 30s and 40s." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|I feel as though the camera is almost a kind of voyeur in Mr. Bean's life, and you just watch this bizarre man going about his life in the way that he wants to." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-3.notification-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".lms-one-wrap.notification-link" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;man_4.jpg&quot;)}')no-repeat center center;&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".white-grey" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="b GEORGE L." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="i Manager. 45" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".notification-container" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-men-say" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|I have always regarded Mr. Bean as a timeless, ageless character, and I would rather he be remembered as a character mostly in his 30s and 40s." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|I feel as though the camera is almost a kind of voyeur in Mr. Bean's life, and you just watch this bizarre man going about his life in the way that he wants to." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-3.medium-3.notification-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".lms-one-wrap.notification-link" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".image style=&quot;background: url('#{asset_path(&quot;man_6.jpg&quot;)}')no-repeat center center;&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".white-grey.text-center" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="b GEORGE L." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="i Manager. 45" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".notification-container" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-men-say" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|I have always regarded Mr. Bean as a timeless, ageless character, and I would rather he be remembered as a character mostly in his 30s and 40s." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|I feel as though the camera is almost a kind of voyeur in Mr. Bean's life, and you just watch this bizarre man going about his life in the way that he wants to." />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-why-we-wrap#l-why-we" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="strong" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|Why" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="span" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|Ukrainian Diamonds" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="span" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-question mark.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="ul" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|100% satisfaction or 100% refund" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|The most beautiful, serious and genuine ladies" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|Automated built-in translation service" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|Two-way video streaming" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|ANTI-SCAM POLICY! 100%" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|SCAM-FREE GUARANTEED" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|YOUR PRIVACY IS 100% PROTECTED" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|24/7 CUSTOMER SERVİCE AND SUPPORT" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-footer-registration-form-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="form" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".lfrf-header" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".column.large-6.medium-6.small-6.text-center" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="b Registration" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p For new users!" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".column.large-6.medium-6.small-6" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6.small-6" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".ud-gender-input" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".lbf-gender-label-wrap.lbf-male" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".lbf-ico" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-icons-female.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".lbf-label" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="label for=&quot;lbf-male&quot; Male" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="input#lbf-male.lbf-male type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;male&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-6.medium-6.small-6" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".ud-gender-input" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".lbf-gender-label-wrap.lbf-female" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".lbf-ico" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=embedded_svg &quot;UAD-icons-male.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".lbf-label" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="label for=&quot;lbf-female&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|Female" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="input#lbf-female.lbf-female type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;female&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".white-grey.lflf-form" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".input" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="label Username or e-mail:" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="input type=&quot;email&quot; placeholder=&quot;usermail@gmail.com&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".input" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="label Password:" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="input type=&quot;password&quot; placeholder=&quot;********&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".input-ud-button" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="input type=&quot;submit&quot; value=&quot;JOIN FOR FREE!&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".clearfix" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".l-footer-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row.medium-main" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns.large-12.medium-10.medium-centered" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".row" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".columns" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".links-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="ul" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a About us" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a Free trail" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a Privacy policy" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a Other useful infomation" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".labels-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="ul.payment" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=image_tag &quot;Paymant-Visa.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=image_tag &quot;Paymant-Mastercard.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=image_tag &quot;Paymant-Paypal.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="li" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=image_tag &quot;Paymant-American express.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder=".copyright-wrap" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="p" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="=image_tag &quot;UD-icon-diamond.svg&quot;" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="|© UkrainianDiamonds 2015" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="a.scrollToTop" />
+            <marker date="1429630407000" expanded="true" signature="-1:-1" placeholder="= image_tag &quot;UD-icon-arrow up.svg&quot;" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/landing.html.slim">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/landing.css.sass.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35886675" vertical-offset="3925" max-vertical-offset="11781">
-          <caret line="251" column="48" selection-start-line="251" selection-start-column="48" selection-end-line="251" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.1738661" vertical-offset="1590" max-vertical-offset="15487">
+          <caret line="103" column="4" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding>
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1429630791000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/_banner_reg_log_form.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8623188" vertical-offset="0" max-vertical-offset="1666">
+          <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
           <folding />
         </state>
       </provider>

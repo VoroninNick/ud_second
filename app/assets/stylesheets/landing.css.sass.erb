@@ -37,99 +37,7 @@ body.landing-page-wrap
         position: absolute
         left: 0
         right: 0
-        .l-header-login-form
-          position: relative
-          z-index: 1
-          background-color: #EDF0F1
-          padding-top: 25px
-          padding-bottom: 35px
-          p
-            color: #2E3E51
-            font:
-              size: rem-calc(10)
-              weight: 300
-            line-height: rem-calc(12)
-            margin-bottom: 9px
-          form
-            a
-              color: #D03F4A
-              font:
-                size: rem-calc(10)
-                weight: 300
-              line-height: rem-calc(12)
-          .input
-            .t-label
-              label
-                font:
-                  size: rem-calc(10)
-                  weight: 300
-                line-height: rem-calc(12)
-                padding-left: 0
-            label
-              color: #2E3E51
-              font-size: 0.75rem
-              padding-left: 12px
-              line-height: 1.05rem
-              margin-bottom: 6px
-            input
-              color: #D03F4A
-          .l-hf-socials-wrap
-            a
-              display: inline-block
-              background-color: #287FB8
-              height: 35px
-              width: 100%
-              font:
-                size: rem-calc(12)
-              line-height: rem-calc(35)
-              color: #EDF0F1
-              text-transform: uppercase
-              border-left: 1px solid #EDF0F1
-              border-right: 1px solid #EDF0F1
-              padding-left: 40px
-              svg
-                width: 30px
-                height: 30px
-                position: absolute
-                left: 6px
-                top: 2.5px
-                path
-                  fill: #fff
-          .l-hf-label
-            width: 100%
-            height: 30px
-            overflow: hidden
-            margin-top: 5px
-            b
-              display: inline-block
-              background: #EDF0F1
-              font:
-                family: 'dearjoe_1_msregular'
-                size: rem-calc(23)
-              +my_horizontal_align
-              &:before
-                display: block
-                content: ''
-                width: 26px
-                height: 26px
-                position: absolute
-                top: 0
-                left: -5px
-                background-color: #EDF0F1
-                z-index: -1
-              &:after
-                display: block
-                content: ""
-                position: absolute
-                top: 13px
-                left: -1000px
-                width: 2000px
-                height: 0px
-                border-bottom: 2px dotted #48647C
-                z-index: -2
-          input[type="submit"]
-            width: 100%
-            color: #EDF0F1 !important
+
   ul
     list-style: none
     margin: 0
@@ -193,6 +101,101 @@ body.landing-page-wrap
     text-shadow: 1px 1px 1px #9b3036, 2px 2px 1px #9b2e36, 3px 3px 1px #9d2e37, 4px 4px 1px #9e2f37, 5px 5px 1px #a02f38, 6px 6px 1px #a13038, 7px 7px 1px #a33039, 8px 8px 1px #a53139, 9px 9px 1px #a6313a, 10px 10px 1px #a8323b, 11px 11px 1px #aa323b, 12px 12px 1px #ab333c, 13px 13px 1px #ad333c, 14px 14px 1px #ae343d, 15px 15px 1px #b0343d, 16px 16px 1px #b2353e, 17px 17px 1px #c23c47, 18px 18px 1px #b5363f, 19px 19px 1px #b63640, 20px 20px 1px #b83740, 21px 21px 1px #ba3741, 22px 22px 1px #bb3842
     overflow: hidden
     padding: 0 20px
+
+.l-header-login-form
+  position: relative
+  z-index: 1
+  background-color: #EDF0F1
+  padding-top: 25px
+  padding-bottom: 35px
+  p
+    color: #2E3E51
+    font:
+      size: rem-calc(10)
+      weight: 300
+    line-height: rem-calc(12)
+    margin-bottom: 9px
+  form
+    a
+      color: #D03F4A
+      font:
+        size: rem-calc(10)
+        weight: 300
+      line-height: rem-calc(12)
+  .input
+    .t-label
+      label
+        font:
+          size: rem-calc(10)
+          weight: 300
+        line-height: rem-calc(12)
+        padding-left: 0
+    label
+      color: #2E3E51
+      font-size: 0.75rem
+      padding-left: 12px
+      line-height: 1.05rem
+      margin-bottom: 6px
+    input
+      color: #D03F4A
+  .l-hf-socials-wrap
+    a
+      display: inline-block
+      background-color: #287FB8
+      height: 35px
+      width: 100%
+      font:
+        size: rem-calc(12)
+      line-height: rem-calc(35)
+      color: #EDF0F1
+      text-transform: uppercase
+      border-left: 1px solid #EDF0F1
+      border-right: 1px solid #EDF0F1
+      padding-left: 40px
+      svg
+        width: 30px
+        height: 30px
+        position: absolute
+        left: 6px
+        top: 2.5px
+        path
+          fill: #fff
+  .l-hf-label
+    width: 100%
+    height: 30px
+    overflow: hidden
+    margin-top: 5px
+    b
+      display: inline-block
+      background: #EDF0F1
+      font:
+        family: 'dearjoe_1_msregular'
+        size: rem-calc(23)
+      +my_horizontal_align
+      &:before
+        display: block
+        content: ''
+        width: 26px
+        height: 26px
+        position: absolute
+        top: 0
+        left: -5px
+        background-color: #EDF0F1
+        z-index: -1
+      &:after
+        display: block
+        content: ""
+        position: absolute
+        top: 13px
+        left: -1000px
+        width: 2000px
+        height: 0px
+        border-bottom: 2px dotted #48647C
+        z-index: -2
+  input[type="submit"]
+    width: 100%
+    color: #EDF0F1 !important
+
 .bx-wrapper
   position: relative
   .bx-controls
@@ -295,7 +298,7 @@ body.landing-page-wrap
       height: 0
       position: relative
       .l-banner-login-form
-        min-height: 410px
+        //min-height: 410px
         background-color: #EDF0F1
         width: 90%
         position: absolute

@@ -37,7 +37,7 @@
               .input
                 label Username or e-mail:
                 input type="email" placeholder="usermail@gmail.com"
-              .input
+              .input.lbf-for-fame-only.hide
                 label Phone:
                 input type="tel" placeholder="(XXX)XXX-XXXX"
               .input
@@ -45,4 +45,49 @@
                 input type="password" placeholder="********"
               .input-ud-button
                 input type="submit" value="JOIN FOR FREE!"
+        .clearfix
+
+    .lbf-login-form.hide
+      .l-header-login-form
+        .columns
+          .row
+            .columns
+              p Login using Social networks:
+          .row.collapse.l-hf-socials-wrap
+            .columns.large-6.medium-6.small-6
+              a
+                =embedded_svg "UAD-icons-facebook.svg"
+                |facebook
+            .columns.large-6.medium-6.small-6
+              a
+                =embedded_svg "UAD-icons-twitter.svg"
+                |twitter
+          .row
+            .columns
+              .l-hf-label
+                b
+                  |or
+          .row
+            form
+              .columns
+                .input
+                  label Username or e-mail:
+                  input type="email" placeholder="usermail@gmail.com"
+                .input
+                  label Password:
+                  input type="password" placeholder="**********"
+
+                .row
+                  .columns.large-6.medium-6.small-6
+                    .input
+                      .squared
+                        input id="lf_remember_me" type="checkbox" value="remember me"
+                        label for="lf_remember_me"
+                      .t-label
+                        label for="lf_remember_me" Remember me
+
+                  .columns.large-6.medium-6.small-6
+                    a Forgot your password?
+                .input-ud-button
+                  input type="submit" value="login"
         .clearfix
