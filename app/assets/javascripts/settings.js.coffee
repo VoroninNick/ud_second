@@ -123,3 +123,16 @@ $(document).on 'ready', ()->
 
   $('.settings-left-menu ul').observeMouseOut()
 
+  $('body').on "click", "#account-settings__membership-data .tabs .tab", (event)->
+    $tab = $(this)
+    active_tab_class = 'active-mobile-tab'
+    if !$tab.hasClass(active_tab_class)
+      $tab_content = $('.plans .plan').eq($tab.index())
+      $active_tab = $(".tab.#{active_tab_class}")
+      $active_tab_content = $(".plan.#{active_tab_class}")
+
+      $active_tab.removeClass(active_tab_class)
+      $active_tab_content.removeClass(active_tab_class)
+
+      $tab.addClass(active_tab_class)
+      $tab_content.addClass(active_tab_class)

@@ -4,8 +4,10 @@
 #account-settings__membership-data.settings-content class=("active" if @active_content_key == content_key) data-key="settings_account_settings_membership_plan"
   = panel_with_header("Membership plan") do
     .tabs
+      - i = 0
       - @membership_plan_settings[:plans].each_pair do |plan_key, plan_data|
-        .tab
+        - i += 1
+        .tab class=("active-mobile-tab" if @membership_plan_settings[:current_plan_name] == plan_key)
           = plan_data[:name]
     .invitation-and-option-labels
       .invitation
@@ -23,8 +25,10 @@
                 .help
                   = property_data[:help]
     .plans
+      - i = 0
       - @membership_plan_settings[:plans].each_pair do |plan_key, plan_data|
-        .plan class=("available" if plan_data[:available])
+        - i += 1
+        .plan class=("available" if plan_data[:available]) class=("active-mobile-tab" if @membership_plan_settings[:current_plan_name] == plan_key)
           - if @membership_plan_settings[:current_plan_name] == plan_key
             .current
               .inner

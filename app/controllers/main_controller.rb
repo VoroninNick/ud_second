@@ -65,10 +65,10 @@ class MainController < ApplicationController
                   name: "Buy credits",
                   href: "#"
               },
-              my_credit_card: {
-                  name: "My credit card",
-                  href: "#"
-              },
+              # my_credit_card: {
+              #     name: "My credit card",
+              #     href: "#"
+              # },
               purchase_history: {
                 name: "Purchase history",
                 href: "#"
