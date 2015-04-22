@@ -45,7 +45,7 @@ class MainController < ApplicationController
 
     # notification_settings
     @active_section = :account_settings
-    @active_content_key = :settings_account_settings_membership_plan
+    @active_content_key = :settings_account_settings_profile_data
 
 
     @settings = {
@@ -291,7 +291,7 @@ class MainController < ApplicationController
         plans: {
             free: {
                 name: "Free",
-                available: false,
+                available: true,
                 valid_for_a_week: true,
                 starting_plan: true,
                 options: {
@@ -335,7 +335,8 @@ class MainController < ApplicationController
             },
             premium: {
                 name: "Premium",
-                available: false,
+                available: true,
+                allow_renew: true,
                 price: "$48.99",
                 price_per: "per month",
                 options: {

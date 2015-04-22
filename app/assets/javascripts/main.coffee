@@ -2,8 +2,30 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
+$.fn.observeMouseOut = (options)->
+  $object = $(this)
 
+  $(document).on 'mouseup', (event)->
+    #$containers = $("div.notification-container")
+    $containers = $object
 
+    out_of_container = true
+    in_container = !out_of_container
+    $context_container = null
+    $containers.each (index, element)->
+      $element = $(element)
+      cond1 = !$element.is(event.target)
+      cond2 = $element.has(event.target).length is 0
+      out_of_container = cond1 && cond2
+      in_container = !out_of_container
+
+      if out_of_container
+        $context_container = $element
+      else
+        return false
+    #console.log("mouseup: in: #{in_container}; out: #{out_of_container}")
+    if out_of_container
+      $containers.trigger('mouseUpOut')
 
 $(document).ready ->
 #  form forgot password
@@ -472,25 +494,13 @@ $(document).ready ->
     else
       $container.removeClass('visible')
 
-$(document).on 'mouseup', (event)->
-  $containers = $("div.notification-container")
-  out_of_container = true
-  in_container = !out_of_container
-  $context_container = null
-  $containers.each (index, element)->
-    $element = $(element)
-    cond1 = !$element.is(event.target)
-    cond2 = $element.has(event.target).length is 0
-    out_of_container = cond1 && cond2
-    in_container = !out_of_container
-
-    if out_of_container
-      $context_container = $element
-    else
-      return false
-  console.log("mouseup: in: #{in_container}; out: #{out_of_container}")
-  if out_of_container
+  $notification_containers = $("div.notification-container")
+  $notification_containers.on "mouseUpOut", ()->
+    $containers = $(this)
     $containers.fadeOut duration: 300
+
+  $notification_containers.observeMouseOut()
+
 
 $(window).resize ->
   if $(window).width() >= 1445

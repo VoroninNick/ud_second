@@ -45,16 +45,13 @@
                 .price-per
                   = plan_data[:price_per]
           .secondary-info
-            - if plan_data[:starting_plan]
-              .starting-plan
-                |Starting plan
-            -else
-              - if !plan_data[:available] || plan_data[:available] == @membership_plan_settings[:current_plan_name]
-                .button-placeholder
 
-              - else
-                a.pasha-button
-                  |Get it
+            - if plan_data[:allow_renew]
+              a.pasha-button
+                |Renew
+            - else
+              a.pasha-button
+                |Get it
 
 
           .options
@@ -87,8 +84,12 @@
                 - elsif all_options[option_key][:type] == :string
                   .string
                     = option_data
-          a.pasha-button
-            |Get it
+          - if plan_data[:allow_renew]
+            a.pasha-button
+              |Renew
+          - else
+            a.pasha-button
+              |Get it
 
 
 

@@ -106,5 +106,20 @@ $(document).on 'ready', ()->
       $items.removeClass('hover')
       $button.addClass('hide')
 
-  #$('body').on "click", ".settings-left-menu", (event)->
-  #  if Modernizr.mq("(max-width: 64em)")
+  $('body').on "click", ".settings-left-menu li a", (event)->
+    if Modernizr.mq("(max-width: 64em)")
+      $anchor = $(this)
+      $ul = $anchor.closest('ul')
+      $menu_container = $anchor.closest('.settings-left-menu')
+      if $menu_container.hasClass('opened')
+        $menu_container.removeClass('opened')
+      else
+        $menu_container.addClass('opened')
+
+  $('.settings-left-menu ul').on "mouseUpOut", ()->
+    $menu_ul = $(this)
+    $menu_container = $('.settings-left-menu')
+    $menu_container.removeClass('opened').addClass('closed')
+
+  $('.settings-left-menu ul').observeMouseOut()
+
