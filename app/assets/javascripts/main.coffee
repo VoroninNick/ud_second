@@ -80,6 +80,20 @@ $(document).ready ->
   $('.lbf-registration-form .ud-gender-input label').click ->
     alert 'test'
 
+# lading banner form
+  $('.lbf-tumbler').click ->
+
+    current_position = $(@).index()
+    $wrap = $(@).closest('.l-banner-login-form')
+    $form_wrap = $wrap.find('.lbf-form-wrap')
+
+    $('.lbf-tumbler').removeClass('lbf-active')
+    $(@).addClass('lbf-active')
+
+    $('.lbf-form-wrap').addClass('hide')
+    $form_wrap.eq(current_position).removeClass('hide')
+
+
 #  landing binder header login form
   $('a.l-open-lhf-button').click ->
     if $('.l-header-login-form-inner').hasClass('hide')
