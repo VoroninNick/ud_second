@@ -78,8 +78,16 @@ $(document).ready ->
 
 
 #  landing banner registration form
-  $('.lbf-registration-form .ud-gender-input label').click ->
-#    alert 'test'
+  $('.ud-gender-input input:radio').change ->
+    $wrap = $(@).closest('form')
+    $input_for_female = $wrap.find('.lbf-for-fame-only')
+
+    if $(@).val() == 'male'
+      $input_for_female.addClass('hide')
+    else if $(@).val() == 'female'
+      $input_for_female.removeClass('hide')
+
+
 
 # lading banner form
   $('.lbf-tumbler').click ->
