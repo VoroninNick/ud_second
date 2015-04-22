@@ -1,0 +1,289 @@
+- content_key = "settings_account_settings_profile_data".to_sym
+- profile_data = @settings[:account_settings][:profile_data]
+#account-settings-profile-data.settings-content.profile-data-content data-key=content_key class=("active" if @active_content_key == content_key)
+  = panel_with_header("Profile data") do
+    .columns.large-12
+      form
+        /.field.birthday
+          label Birth day:
+          .input.three-columns
+            .input-inner
+              .select-wrap
+                select.ud-multiple
+                  - (1..31).each do |day_number|
+                    option value=day_number
+                      = day_number
+              .select-wrap
+                select.ud-multiple
+                  - @months.each do |month_name|
+                    option value=month_name
+                      = month_name
+              .select-wrap
+                select.ud-multiple
+                  - (1950..2015).each do |year|
+                    option value=year
+                      = year
+        /.field.height
+          label Height:
+          .input
+            .input-inner
+              .text-wrap
+                input type="text" value="180"
+              .select-wrap
+                select.ud-multiple
+                  option cm
+                  option inch
+                  option m
+        /.field
+          label Weight:
+          .input-wrap
+            input type="text" placeholder="Not specified"
+        /.field
+          label Hair color:
+          select.ud-multiple
+            option Black
+            option Gray
+            option Brown
+            option White
+            option Red
+            option Green
+            option Blue
+            option Orange
+
+        /.field
+          label Eyes color:
+          select.ud-multiple
+            option Black
+            option Gray
+            option Brown
+            option White
+            option Red
+            option Green
+            option Blue
+            option Orange
+        /.field.address
+          label Hair color:
+          .input
+            .input-inner
+              select.ud-multiple.country
+                option Ukraine
+                option Russia
+                option Belorussia
+                option Poland
+                option Italy
+                option Germany
+                option England
+                option USA
+            .input-inner
+              select.ud-multiple.city
+                option Lviv
+                option Kyiv
+                option Kharkiv
+                option Donetsk
+                option Chernigiv
+                option Lutsk
+        .fields
+          .my-field
+            label Birth day:
+            .inputs
+              .profile-data-input.columns.large-3
+                select.ud-multiple
+                  - (1..31).each do |day_number|
+                    option value=day_number
+                      = day_number
+              .profile-data-input.columns.large-5
+                select.ud-multiple
+                  - @months.each do |month_name|
+                    option value=month_name
+                      = month_name
+              .profile-data-input.columns.large-4
+                select.ud-multiple
+                  - (1950..2015).each do |year|
+                    option value=year
+                      = year
+
+          .my-field
+            label Height:
+            .inputs
+              .profile-data-input.columns.large-8
+                input type="number" value="180"
+              .profile-data-input.columns.large-4
+                select.ud-multiple
+                  option value="1" cm
+                  option value="1" inch
+                  option value="1" m
+          .my-field
+            label Weight:
+            .inputs
+              .profile-data-input
+                input type="number"
+
+          .my-field
+            label Hair color:
+            .inputs
+              .profile-data-input
+                select.ud-multiple
+                  option value="1" Black
+                  option value="2" Gray
+                  option value="3" Brown
+                  option value="4" White
+                  option value="5" Red
+                  option value="6" Green
+                  option value="7" Blue
+                  option value="8" Orange
+          .my-field
+            label Eyes color:
+            .inputs
+              .profile-data-input
+                select.ud-multiple
+                  option value="1" Black
+                  option value="2" Gray
+                  option value="3" Brown
+                  option value="4" White
+                  option value="5" Red
+                  option value="6" Green
+                  option value="7" Blue
+                  option value="8" Orange
+
+          .my-field
+            label Address:
+            .inputs
+              .profile-data-input.columns.large-6
+                select.ud-multiple
+                  option value="1" Ukraine
+                  option value="2" Russia
+                  option value="3" Belorussia
+                  option value="4" Poland
+                  option value="5" Italy
+                  option value="6" Germany
+                  option value="7" England
+                  option value="8" USA
+
+              .profile-data-input.columns.large-6
+                select.ud-multiple.city
+                  option value="1" Lviv
+                  option value="2" Kyiv
+                  option value="3" Kharkiv
+                  option value="4" Donetsk
+                  option value="5" Chernigiv
+                  option value="6" Lutsk
+              .profile-data-input.columns.large-8
+                input.street type="text" placeholder="Street"
+              .profile-data-input.columns.large-4
+                input type="number" placeholder="Index"
+          .my-field
+            label Education:
+            .inputs
+              .profile-data-input
+                input type="text"
+          .my-field
+            label Occupation:
+            .inputs
+              .profile-data-input
+                input type="text"
+          .my-field
+            label Religion:
+            .inputs
+              .profile-data-input
+                input type="text"
+          .my-field
+            label Marrital status:
+            .inputs
+              .profile-data-input
+                select.ud-multiple
+                  option value="1" Never been married
+                  option value="2" Anything else
+          .my-field
+            label Occupation:
+            .inputs
+              .profile-data-input
+                select.ud-multiple
+                  option value="1" Work
+                  option value="2" Study
+          .my-field
+            label Kids at home:
+            .inputs
+              .profile-data-input
+                select.ud-multiple
+                  option value="1" None
+                  option value="2" Son
+                  option value="3" Daughter
+                  option value="4" Son and daughter
+          .my-field
+            label Want kids:
+            .inputs
+              .profile-data-input
+                select.ud-multiple
+                  option value="1" Undecided
+                  option value="2" Yes
+                  option value="3" No
+          .my-field
+            label Drinking:
+            .inputs
+              .profile-data-input
+                select.ud-multiple
+                  option value="1" Yes
+                  option value="2" No
+          .my-field
+            label Smoking:
+            .inputs
+              .profile-data-input
+                select.ud-multiple
+                  option value="1" Yes
+                  option value="2" No
+          .my-field
+            label English level:
+            .inputs
+              .profile-data-input
+                select.ud-multiple
+                  option value="1" Beginner
+                  option value="2" Lower intermediate
+                  option value="3" Intermediate
+                  option value="4" Upper Intermediate
+                  option value="5" Strong
+                  option value="6" Fluent
+          .my-field
+            label Other languages:
+            .inputs
+              .profile-data-input
+                select.ud-multiple multiple="multiple"
+                  option value="1" Ukrainian
+                  option value="2" Russian
+                  option value="3" French
+                  option value="4" Polish
+                  option value="5" Spanish
+                  option value="6" Portuguese
+                  option value="7" Bulgarian
+                  option value="8" Swedish
+          .my-field
+            label Signature:
+            .inputs
+              .profile-data-input
+                input type="text"
+          .my-field
+            label Greeting:
+            .inputs
+              .profile-data-input
+                input type="text"
+
+          .my-field
+            label About me:
+            .inputs
+              .profile-data-input
+                textarea
+                  = "I have been working with writing challenged clients for over four years. (How long you've been providing a service is useful information.) The site provides ghost writing, coaching and ghost editing services."
+
+          .my-field
+            label My type of lady:
+            .inputs
+              .profile-data-input
+                textarea
+                  = "I have been working with writing challenged clients for over four years. (How long you've been providing a service is useful information.) The site provides ghost writing, coaching and ghost editing services."
+
+        .actions
+          .action.save
+            input.pasha-button.special-text-shadow type="submit"  value="Save changes"
+            br
+            |or&nbsp;
+            span.small-light-red-text
+              |Clear form

@@ -1,0 +1,58 @@
+- content_key = "settings_notification_settings_popup_message".to_sym
+.settings-content.email-settings-content.popup-settings-content data-key=content_key class=("active" if @active_content_key == content_key)
+  = panel_with_header("Pop-up message") do
+    .columns.large-12
+      .email-settings-section.news-letter
+        .email-settings-section-title
+          |News letter
+        .email-settings-section-content
+          = embedded_svg('UAD-inbox-1-Inbox.svg')
+          span.light-gray-text
+            |Turn pop-up message...
+          .checkbox-switch
+            input#turn-popup-message type="checkbox" name="turn_popup_message" checked="" data-enable=".popup-settings-content:not(.notification-stickers-settings-content) .email-settings-section.options"
+            label for="turn-popup-message"
+      .email-settings-section.options
+        div.light-gray-text
+          = embedded_svg "UD-icon-eye.svg"
+          span
+            |Display a pop-up message when someone...
+        .email-settings-section-content.light-gray-text
+          .input
+            .red-checkbox
+              input#popup-when-a type="checkbox" name="a"
+              label for="popup-when-a"
+            label for="popup-when-a"
+              |From favourites comes online
+
+          .input
+            .red-checkbox
+              input#popup-when-b type="checkbox" name="b"
+              label for="popup-when-b"
+            label for="popup-when-b"
+              |From favourites goes offline
+
+          .input
+            .red-checkbox
+              input#popup-when-c type="checkbox" name="c"
+              label for="popup-when-c"
+            label for="popup-when-c"
+              |Sends me a message
+
+          .input
+            .red-checkbox
+              input#popup-when-d type="checkbox" name="d" checked="checked"
+              label for="popup-when-d"
+            label for="popup-when-d"
+              |Starts an IM with me
+
+          .input
+            .red-checkbox
+              input#popup-when-e type="checkbox" name="e"
+              label for="popup-when-e"
+
+            label for="popup-when-e"
+              |Starts CamShare
+
+
+        .overlay

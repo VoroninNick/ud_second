@@ -1,0 +1,57 @@
+- content_key = "settings_account_settings_purchase_history".to_sym
+.settings-content.purchase-history-content data-key=content_key class=("active" if @active_content_key == content_key)
+  = panel_with_header("Purchase history") do
+    .columns.large-12
+      .credits-left
+        span.credits-left-label
+          = "Credits left: "
+        span.credits-left-value
+          = 2999
+      .year-wrap
+        /.selected-year
+          = 2015
+        select
+          option
+            = 2015
+          option
+            = 2014
+          option
+            = 2013
+          option
+            = 2012
+          option
+            = 2011
+
+      .table
+        .table-header
+          ul
+            - @settings[:account_settings][:purchase_history][:table][:columns].each do |column_name|
+              li
+                = column_name
+        .table-body
+          - @settings[:account_settings][:purchase_history][:table][:rows].each do |row|
+            .table-row
+              .table-cell.datetime
+                .table-cell-inner
+                  .date
+                    = row[:date_time][:date]
+                  .time
+                    = row[:date_time][:time]
+              .table-cell.operation
+                .table-cell-inner
+                  = row[:operation]
+              .table-cell.credits-brought
+                .table-cell-inner
+                  = raw "#{row[:credits_brought] ? row[:credits_brought] : '&mdash;'}"
+              .table-cell.price
+                .table-cell-inner
+                  = "#{row[:price][:currency]} #{row[:price][:sum]}"
+              .table-cell.status class=(row[:status] ? "yes" : "no")
+                .table-cell-inner
+                  - if row[:status]
+                    = embedded_svg "UD-icon-OK.svg"
+                  - else
+                    = embedded_svg "UD-icon-close.svg"
+              .clearfix
+
+

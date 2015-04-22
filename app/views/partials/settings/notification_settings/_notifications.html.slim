@@ -1,0 +1,60 @@
+- content_key = "settings_notification_settings_notifications".to_sym
+#notifications-settings-content.settings-content.email-settings-content.popup-settings-content.notification-stickers-settings-content data-key=content_key class=("active" if @active_content_key == content_key)
+  = panel_with_header("Notifications") do
+    .columns.large-12
+      .small-bold-black-text
+        |Settings:
+      form
+        .inputs.light-gray-text
+          .input-group
+            .input-group-icon
+              = embedded_svg "../UD-icon-diamond-white.svg"
+            .input-group-title
+              |System messages
+            .input-group-toggler
+              .checkbox-switch
+                input#turn-system-messages type="checkbox" name="turn_popup_message" checked="" data-enable="#notifications-settings-content .input-group:first-child .inputs"
+                label for="turn-system-messages"
+            .inputs
+              .input
+                .input
+                  .red-checkbox
+                    input#notifications-system-a type="checkbox" name="a"
+                    label for="notifications-system-a"
+                  label for="notifications-system-a"
+                    |Birthday of favourite girls
+
+              .input
+                .red-checkbox
+                  input#notifications-system-b type="checkbox" name="b"
+                  label for="notifications-system-b"
+                label for="notifications-system-b"
+                  |Birthday of favourite girls
+              .overlay
+
+          .input-group
+            .input-group-icon
+              = embedded_svg "../UD-icon-diamond-white.svg"
+            .input-group-title
+              |Notifications from girls
+            .inputs
+              .input
+                .red-checkbox
+                  input#notifications-from-girls-a type="checkbox" name="a"
+                  label for="notifications-from-girls-a"
+                label for="notifications-from-girls-a"
+                  |Girl add me to favourites
+
+              .input
+                .red-checkbox
+                  input#notifications-from-girls-b type="checkbox" name="b"
+                  label for="notifications-from-girls-b"
+                label for="notifications-from-girls-b"
+                  |Message from girl
+
+              .input
+                .red-checkbox
+                  input#notifications-from-girls-c type="checkbox" name="b"
+                  label for="notifications-from-girls-c"
+                label for="notifications-from-girls-c"
+                  |Message from girl

@@ -1,0 +1,46 @@
+- content_key = "settings_notification_settings_notifications_stickers".to_sym
+.settings-content.email-settings-content.popup-settings-content.notification-stickers-settings-content data-key=content_key class=("active" if @active_content_key == content_key)
+  = panel_with_header("Notifications stickers") do
+    .columns.large-12
+      form
+        .email-settings-section.news-letter
+          .email-settings-section-title
+            |News letter
+          .email-settings-section-content
+            = embedded_svg('UAD-inbox-1-Inbox.svg')
+            span.light-gray-text
+              |Turn notifications stickers...
+            .checkbox-switch
+              input#turn-notification-stickers type="checkbox" name="turn_popup_message" checked="" data-enable=".notification-stickers-settings-content .email-settings-section.options"
+              label for="turn-notification-stickers"
+        .email-settings-section.options
+          div.light-gray-text
+            = embedded_svg "UD-icon-eye.svg"
+            span
+              |Display those notifications stickers
+          .email-settings-section-content.light-gray-text
+            .input
+              .red-checkbox
+                input#notification-stickers-when-a type="checkbox" name="a"
+                label for="notification-stickers-when-a"
+              label for="notification-stickers-when-a"
+                |Birthday of favourite girls
+
+
+            .input
+              .red-checkbox
+                input#notification-stickers-when-b type="checkbox" name="b"
+                label for="notification-stickers-when-b"
+              label for="notification-stickers-when-b"
+                |Introduction letters
+
+            .input
+              .red-checkbox
+                input#notification-stickers-when-c type="checkbox" name="c"
+                label for="notification-stickers-when-c"
+              label for="notification-stickers-when-c"
+                |System messages
+
+
+
+          .overlay

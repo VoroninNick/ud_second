@@ -1,0 +1,26 @@
+- content_key = "settings_account_settings_password_change".to_sym
+#account-settings-password-change.settings-content.password-change-content data-key=content_key class=("active" if @active_content_key == content_key)
+  = panel_with_header("Password change") do
+    .columns.large-12
+      form.light-gray-text action="" method="post"
+        .inputs
+          .input
+            label.small-bold-black-text for="password_change_old_password"
+              |Password
+            input type="password" id="password_change_old_password" placeholder="Enter current password"
+          .input
+            label.small-bold-black-text for="password_change_new_password"
+              |Password
+            input type="password" id="password_change_new_password" placeholder="Enter new password"
+          .input
+            label.small-bold-black-text for="password_change_new_password_confirmation"
+              |Password
+            input type="password" id="password_change_new_password_confirmation" placeholder="Confirm new password"
+        .actions
+          .action
+            input.pasha-button type="submit" value="Change my password"
+            br
+            |or&nbsp;
+
+            span.small-light-red-text
+              |Clear form

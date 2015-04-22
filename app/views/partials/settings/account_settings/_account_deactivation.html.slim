@@ -1,0 +1,20 @@
+- content_key = "settings_account_settings_account_deactivation".to_sym
+#account-settings-account-deactivation.settings-content.account-deactivation-content data-key=content_key class=("active" if @active_content_key == content_key)
+  = panel_with_header("Account deactivation") do
+    .columns.large-12
+      form.light-gray-text action="" method="post"
+        .inputs
+          .input
+            label.small-bold-black-text for="account_deactivation_password"
+              |Password
+            input type="password" id="account_deactivation_password"
+          div
+            |Password is needed to confirm your inventions to deactivate your account
+        .actions
+          .action
+            input.pasha-button type="submit" value="Deactivate my account"
+            br
+            |or&nbsp;
+
+            span.small-light-red-text
+              |Clear form

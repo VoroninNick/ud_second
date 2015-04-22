@@ -320,7 +320,7 @@ $(document).ready ->
 #  $('#AddAPictures').foundation('reveal', 'open')
 
 #  init index page tabs wooman
-  $('.favorites-nav li').click ->
+  $('.favorites-nav-wrap:not(.settings-nav-wrap) .favorites-nav li').click ->
     current_position = $(this).index()
 
     $head_tabs = $(this)
@@ -333,7 +333,7 @@ $(document).ready ->
     $body_tabs.eq(current_position).removeClass('hide')
 
 #  init index page tabs man
-  $('.favorites-nav li').click ->
+  $('.favorites-nav-wrap:not(.settings-nav-wrap) .favorites-nav li').click ->
     current_position = $(this).index()
 
     $head_tabs = $(this)

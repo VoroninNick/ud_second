@@ -1,0 +1,101 @@
+- content_key = "settings_account_settings_membership_plan".to_sym
+- all_options = @membership_plan_settings[:options]
+
+#account-settings__membership-data.settings-content class=("active" if @active_content_key == content_key) data-key="settings_account_settings_membership_plan"
+  = panel_with_header("Membership plan") do
+    .tabs
+      - @membership_plan_settings[:plans].each_pair do |plan_key, plan_data|
+        .tab
+          = plan_data[:name]
+    .invitation-and-option-labels
+      .invitation
+        .title
+          |Become a member
+        .subtext
+          |to communicate with lovely Ukrainian Ladies
+      .option-labels
+        - all_options.each_pair do |property_key, property_data|
+          .option-label
+            .inner
+              .name
+                = property_data[:name]
+              - if property_data[:help].present?
+                .help
+                  = property_data[:help]
+    .plans
+      - @membership_plan_settings[:plans].each_pair do |plan_key, plan_data|
+        .plan class=("available" if plan_data[:available])
+          - if @membership_plan_settings[:current_plan_name] == plan_key
+            .current
+              .inner
+                |Current plan
+          .name
+            = plan_data[:name]
+          .primary-info
+            .inner
+              - if plan_data[:valid_for_a_week]
+                .valid-for-a-week
+                  |Valid for
+                  br
+                  |a week
+              - if plan_data[:price].present?
+                .price
+                  = plan_data[:price]
+              - if plan_data[:price_per].present?
+                .price-per
+                  = plan_data[:price_per]
+          .secondary-info
+            - if plan_data[:starting_plan]
+              .starting-plan
+                |Starting plan
+            -else
+              - if !plan_data[:available] || plan_data[:available] == @membership_plan_settings[:current_plan_name]
+                .button-placeholder
+
+              - else
+                a.pasha-button
+                  |Get it
+
+
+          .options
+            - plan_data[:options].each_pair do |option_key, option_data|
+              .option
+                - if option_data.respond_to?("each")
+                  - in_group = nil
+                  - group_name = nil
+                  - last_in_group = nil
+                  - option_data.each do |value|
+
+                    - in_group = value.is_a?(Hash) ? (value[:group] || value[:group_data]) : in_group  unless in_group
+                    - last_in_group = ( value.is_a?(Hash) && in_group) ? (value[:group] == :prev) : false unless last_in_group
+                    .value class=("in-group" if in_group) class=("last-in-group" if last_in_group)
+                      - if value.is_a?(Hash)
+                        - if value[:group_data]
+                          .inner
+                            = value[:group_data]
+                      - else
+                        .inner
+                          = value
+
+                - elsif all_options[option_key][:type] == :boolean
+                  - if option_data
+                    .boolean-true
+                      = embedded_svg "UD-icon-OK.svg"
+                  - else
+                    .boolean-false
+                      = embedded_svg "UD-icon-close.svg"
+                - elsif all_options[option_key][:type] == :string
+                  .string
+                    = option_data
+          a.pasha-button
+            |Get it
+
+
+
+  .additional-options
+    .input
+      .red-checkbox
+        input#automatically-renew type="checkbox" name="b"
+        label for="automatically-renew"
+      label for="automatically-renew"
+        |Automatically renew my membership. Membership package is valid for one month

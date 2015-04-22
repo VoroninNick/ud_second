@@ -1,0 +1,69 @@
+- content_key = "settings_account_settings_email_settings".to_sym
+.settings-content.email-settings-content data-key=content_key class=("active" if @active_content_key == content_key)
+  = panel_with_header("Emails") do
+    .columns.large-12
+      .email-settings-section.your-email
+        .email-settings-section-title
+          |Your email
+        .email-settings-section-content
+          form.change-email method="post" action="/settings/email/change"
+            input name="email" type="email" value="my-email@server.com"
+            input.pasha-button.special-text-shadow type="submit" value="Change"
+
+
+      .email-settings-section.news-letter
+        .email-settings-section-title
+          |News letter
+        .email-settings-section-content
+          = embedded_svg('UAD-inbox-1-Inbox.svg')
+          span.light-gray-text
+            |Subscription
+          .checkbox-switch
+            input#turn-notification type="checkbox" name="turn-notification" checked=""
+            label for="turn-notification"
+      .email-settings-section.options
+        .email-settings-section-title
+          |Inform me on email about...
+        .email-settings-section-content.light-gray-text
+          .input
+            .red-checkbox
+              input#inform-about-girl-add-me-to-favourites type="checkbox" name="a"
+              label for="inform-about-girl-add-me-to-favourites"
+            label for="inform-about-girl-add-me-to-favourites"
+              |Girl add me to favourites
+
+          .input
+            .red-checkbox
+              input#inform-about-message-from-girl type="checkbox" name="b"
+              label for="inform-about-message-from-girl"
+            label for="inform-about-message-from-girl"
+              |Message from girl
+
+          .input
+            .red-checkbox
+              input#inform-about-girl-sent-me-intro-letter type="checkbox" name="c"
+              label for="inform-about-girl-sent-me-intro-letter"
+            label for="inform-about-girl-sent-me-intro-letter"
+              |Girl sent me introduction letter
+
+          .input
+            .red-checkbox
+              input#inform-about-girl-birthday type="checkbox" name="d" checked="checked"
+              label for="inform-about-girl-birthday"
+            label for="inform-about-girl-birthday"
+              |Favorite girl has a birthday
+
+          .input
+            .red-checkbox
+              input#inform-about-membership-plan-expiration type="checkbox" name="e"
+              label for="inform-about-membership-plan-expiration"
+
+            label for="inform-about-membership-plan-expiration"
+              |Membership plan is about to expire
+
+          .input
+            .red-checkbox
+              input#credits-balance-low  type="checkbox" name="f"
+              label for="credits-balance-low"
+            label for="credits-balance-low"
+              |Credits balance getting low

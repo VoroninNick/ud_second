@@ -1,0 +1,1086 @@
+//
+// Created by: pasha
+//
+//
+//
+
+$option-height: rem-calc(45)
+
+%boolean
+  svg
+    width: rem-calc(15)
+    height: rem-calc(15)
+
+
+
+%boolean-true
+  @extend %boolean
+  svg
+    fill: $bright-green-color
+%boolean-false
+  @extend %boolean
+  svg
+    polygon
+      fill: #D03F4A
+%blue-small-text
+  color: $light-blue-text-color
+  font-weight: 300
+  font-size: rem-calc(14)
+%large-red-text
+  font-family: $dearjoe-font-family
+  color: $red-link-color
+  font-size: rem-calc(35)
+  height: rem-calc(36)
+%small-gray-text
+  font-size: rem-calc(14)
+  color: #aaa
+%small-darkblue-text
+  color: $blue-background-color
+  font-weight: 300
+  font-size: rem-calc(14)
+%help
+  font-size: rem-calc(12)
+  color: #aaa
+
+
+%center-content
+  > *
+    +transform(translateY(-50%))
+    top: 50%
+    position: relative
+
+%option-label
+  @extend %center-content
+  .name
+    @extend %small-darkblue-text
+    line-height: 1
+
+  .help
+    @extend %help
+    line-height: 1
+
+
+.small-bold-black-text
+  font-weight: 600
+  color: black
+  font-size: rem-calc(14)
+.bold-black-text-14px
+  font-weight: 600
+  color: black
+  font-size: rem-calc(14)
+
+%transparent-select
+  color: #D03F4A
+  background-color: Transparent
+  background: asset_path("UAD-triangle.png") no-repeat right center
+  appearance: none
+  -moz-appearance: none
+  -webkit-appearance: none
+  border: none
+  text-transform: uppercase
+  margin: 0
+  outline: none !important
+  +my_vertical_align
+    position: absolute
+
+
+$settings-header-height: rem-calc(85)
+
+.p_panel-header
+  height: rem-calc(38)
+  background-color: #BEC3C7
+  padding-left: rem-calc(15)
+  margin-bottom: rem-calc(3)
+
+
+.favorites-woman-wrap.settings-page-wrap
+  .settings-nav-wrap
+    li
+      width: calc(25% - 4px )
+      &.active
+        &:first-child
+          svg
+            &, path, rect
+              fill: #3598DB !important
+      &:nth-child(2)
+        svg
+          height: rem-calc(30)
+
+
+.settings-left-menu
+  font-family: $fira-sans-font-family
+  li
+    &:not(.visible)
+      display: none
+
+  ul
+    list-style: none
+
+    a
+      color: $gray-text-color
+
+    li
+      height: rem-calc(40)
+      line-height: rem-calc(40)
+      &.active
+        a
+          height: inherit
+          color: $red-link-color
+          font-weight: 600
+
+.table
+  text-align: center
+
+.table-header
+  height: rem-calc(30)
+  line-height: rem-calc(30)
+  ul
+    list-style: none
+    height: inherit
+    line-height: inherit
+    margin-left: 0
+
+    li
+      height: inherit
+      line-height: inherit
+      +grid-column(2)
+      color: #fff
+      text-transform: uppercase
+      padding-left: 0
+      padding-right: 0
+
+
+
+      background: $table-header-background
+
+
+
+
+
+
+.table-row
+  height: rem-calc(50)
+
+
+  clear: left
+  &:nth-child(2n)
+    background-color: #fff
+  &:nth-child(2n+1)
+    background-color: $panel-content-background
+
+  .table-cell
+    +grid-column(2)
+    height: inherit
+    line-height: rem-calc(16)
+
+
+    &:first-child, &:nth-child(2)
+      text-align: left
+    &:first-child
+      color: $gray-text-color
+
+    &:first-child, &:nth-child(2), &:nth-child(3)
+      font-weight: 500
+      font-size: rem-calc(14)
+    &:nth-child(4)
+      font-size: rem-calc(14)
+
+
+
+
+    &.status
+      &.yes
+        svg
+          width: rem-calc(18)
+          height: rem-calc(14)
+          fill: #99d341
+      &.no
+        svg
+          width: rem-calc(18)
+          height: rem-calc(14)
+          fill: $red-link-color
+          polygon
+            fill: $light-red-color
+    &:last-child
+      +clearfix
+
+    &.price
+      color: $light-red-color
+
+
+
+
+
+  &:last-child
+    border-bottom: 1px black solid
+
+  .table-cell-inner
+    +transform(translateY(-50%))
+    top: 50%
+    position: relative
+
+.table-cell, .table-header li
+  border-right: 1px black solid
+
+  &:first-child
+    border-left: 1px black solid
+
+
+.table-header li, .table-row .table-cell
+  //padding-left: 0
+  //padding-right: 0
+
+  &:nth-child(2), &:nth-child(3)
+    width: grid-calc(3, 12)
+
+
+%settings-content
+  +grid-column(9, $collapse: true)
+  display: none
+  &.active
+    display: block
+
+.settings-content
+  @extend %settings-content
+
+.panel-content
+  padding: rem-calc(25) rem-calc(15) rem-calc(64) rem-calc(15)
+  background: $panel-content-background
+
+
+.panel-content-row
+  +grid-row()
+
+.credits-left
+  float: left
+  .credits-left-label
+    color: $gray-text-color
+  .credits-left-value
+    margin-left: rem-calc(5)
+    font-weight: 600
+
+.account-deactivation-content
+  max-width: rem-calc(380)
+  .input
+    input
+      margin-bottom: 0.5rem
+  .actions
+    margin-top: rem-calc(30)
+    input
+      margin-bottom: rem-calc(6)
+
+.password-change-content
+  max-width: rem-calc(380)
+  .actions
+    padding-top: rem-calc(15)
+
+.purchase-history-content
+  font-family: $fira-sans-font-family
+  .year-wrap
+    float: right
+    select
+      @extend %transparent-select
+      top: 0
+      padding: 0
+      +transform(none)
+      position: relative
+      height: rem-calc(24)
+      padding-right: rem-calc(12)
+      background-position-x: calc( 100% + #{rem-calc(15)} )
+  .selected-year
+    color: $red-link-color
+  .table
+    clear: left
+    float: left
+    margin-top: rem-calc(10)
+    width: 100%
+
+
+// ==============================================================
+// --------------------------------------------------------------
+// Profile data
+// --------------------------------------------------------------
+// ==============================================================
+
+.profile-data-content
+  width: grid-calc(7, 12)
+  .SumoSelect
+    > .CaptionCont
+      > label
+        background-color: transparent
+        > i
+
+  .actions
+    @extend %help
+    .action
+      margin-left: grid-calc(3, 12)
+      width: grid-calc(7, 12)
+      padding: 0 rem-calc(5)
+      input
+        width: 100%
+
+  .field
+    clear: both
+    float: left
+    width: 100%
+
+    > .SumoSelect
+      .CaptionCont
+        width: 100%
+
+    > label
+      +grid-column(3)
+    > .input-wrap, > .SumoSelect
+      +grid-column(7)
+      padding-left: rem-calc(5)
+      padding-right: rem-calc(5)
+
+    .input
+      +grid-column(7, $collapse: true)
+      .input-inner
+        +grid-row()
+      &.three-columns
+        .input-inner
+          > *
+            +grid-column(4)
+            position: relative
+            padding-left: rem-calc(5)
+            padding-right: rem-calc(5)
+            //overflow: hidden
+      select, .SumoSelect, .CaptionCont
+        width: 100%
+
+    &.birthday
+      .input.three-columns
+        .select-wrap
+          &:first-child
+            width: rem-calc(60)
+          &:nth-child(2)
+            width: calc(#{grid-calc(12, 12)} - #{rem-calc(60 + 85)} )
+          &:nth-child(3)
+            width: rem-calc(85)
+    &.height
+      .text-wrap
+        +grid-column(8)
+        width: calc(#{grid-calc(12, 12)} - #{rem-calc(85)})
+      .select-wrap
+        +grid-column(4)
+        width: rem-calc(85)
+
+
+      .text-wrap, .select-wrap
+        padding-left: rem-calc(5)
+        padding-right: rem-calc(5)
+    &.address
+      .input
+        .input-inner
+          +grid-column(6)
+          padding-left: rem-calc(5)
+          padding-right: rem-calc(5)
+        .SumoSelect
+
+
+
+
+
+.my-field
+  +grid-row()
+  textarea
+    margin-bottom: rem-calc(16)
+    height: rem-calc(170)
+  > label
+    +grid-column(3)
+    @extend %small-darkblue-text
+    line-height: rem-calc(35)
+    min-height: rem-calc(35)
+  .inputs
+    +grid-column(7, $collapse: true)
+
+    .SumoSelect
+      > .CaptionCont
+        width: 100%
+
+    .profile-data-input
+      padding-left: rem-calc(5)
+      padding-right: rem-calc(5)
+.profile-data-input
+  &:not([class*="columns large-"])
+    +grid-column(12)
+  &:not(.auto-width)
+    .SumoSelect, .CaptionCont
+      width: 100%
+
+
+// ==============================================================
+// --------------------------------------------------------------
+// Buy credits
+// --------------------------------------------------------------
+// ==============================================================
+
+.offered-credits
+  .credit
+    position: relative
+    +transition(padding, 0.3s)
+    text-align: center
+    padding-bottom: rem-calc(10)
+    +grid-column(4)
+    padding-left: rem-calc(10)
+    padding-right: rem-calc(10)
+
+    .credit-bonus
+      display: block
+      position: absolute
+      right: rem-calc(0)
+      top: rem-calc(-20)
+      width: rem-calc(56)
+      height: rem-calc(56)
+      background: $red-link-color
+      border-radius: 50%
+      color: white
+      font-size: rem-calc(14)
+      line-height: rem-calc(15)
+      padding-top: rem-calc(14)
+      font-weight: 500
+
+    .credits-count
+      height: rem-calc(64)
+      background-color: $blue-background-color
+      color: #fff
+
+      .count
+
+
+    .credits-count, .credit-price
+      padding: rem-calc(9) 0
+      line-height: rem-calc(24)
+      letter-spacing: rem-calc(2)
+      span
+        font-weight: 300
+
+    .credits-count .count, .credit-price .total-price
+      font-weight: 600
+      font-size: 1.4rem
+
+    .credit-price
+      height: rem-calc(64)
+      color: $red-link-color
+      background-color: #fff
+      border-bottom: rem-calc(1) solid #eef0ef
+
+    .credit-reward
+      background-color: #fff
+      height: rem-calc(64)
+      color: $blue-background-color
+      padding-top: rem-calc(14)
+      p
+        font-size: rem-calc(14)
+        line-height: rem-calc(15)
+      span
+        font-weight: 500
+    .ud-button
+      opacity: 0
+
+    &:hover
+      padding-left: rem-calc(0)
+      padding-right: rem-calc(0)
+      .credits-count
+        background-color: $green-color
+      .ud-button
+        opacity: 1
+
+.buy-credits-info
+  +grid-column(12)
+  padding-left: rem-calc(10)
+  padding-right: rem-calc(10)
+  color: $blue-background-color
+
+  p
+    font-size: rem-calc(14)
+.buy-credits-info-header
+  text-transform: uppercase
+  font-weight: 500
+  font-size: rem-calc(14)
+  margin-bottom: rem-calc(16)
+
+
+
+
+
+// ===================================
+// -----------------------------------
+// settings forms styling
+// -----------------------------------
+// ===================================
+
+#settings-section
+  .SumoSelect
+    width: 100%
+    .optWrapper
+      top: 35px
+    ul.options
+      //max-height: none
+      height: auto
+      //overflow: visible
+      li
+        height: 35px
+        border-radius: 0!important
+        border-bottom: 1px solid #BEC3C7
+        padding: 0 0 0 35px
+        &:hover
+          background-color: #EDF0F1
+        span
+          i
+            background: #fff
+            border: 1px solid #BEC3C7
+        label
+          font:
+            size: rem-calc(14)
+          line-height: rem-calc(35)
+          color: #BEC3C7
+        &.selected
+          span
+            i
+              background-image: asset-url("UAD-check-(white).png")
+              background-color: $light-blue-text-color
+              border: none
+          label
+            color: $light-blue-text-color
+
+
+
+// ===================================
+// -----------------------------------
+// Membership plan
+// -----------------------------------
+// ===================================
+
+.invitation-and-plans-items
+  padding-top: rem-calc(15)
+  .invitation
+    +grid-column(4)
+  .invitation-title
+    font-family: "dearjoe_1_msregular"
+    color: $red-link-color
+    font-size: rem-calc(35)
+    height: rem-calc(36)
+  .small-light-blue-text
+    color: $light-blue-text-color
+    font-weight: 300
+    font-size: rem-calc(14)
+
+
+
+// ===================================
+// -----------------------------------
+// Email settings
+// -----------------------------------
+// ===================================
+
+.pasha-button
+  @extend a.ud-button
+  border: none
+  width: auto
+  padding: 0 rem-calc(30)
+  input + &
+    margin-left: rem-calc(10)
+
+
+.email-settings-section
+  margin-top: rem-calc(40)
+
+  &:first-child
+    margin-top: 0
+
+  svg
+    width: rem-calc(22)
+    height: rem-calc(17)
+    path
+      fill: #496482
+
+  .change-email
+    input:not([type=submit])
+      background-color: #bec3c7
+      color: #808487
+      font-weight: 600
+      height: rem-calc(35)
+      width: rem-calc(300)
+      font-size: rem-calc(13)
+      display: inline-block
+      margin: 0
+    input[type=submit]
+      vertical-align: middle
+
+
+
+
+
+
+.email-settings-section-title
+  font-weight: 600
+  font-size: rem-calc(14)
+  margin-bottom: rem-calc(10)
+
+.small-light-red-text
+  color: $red-link-color
+  font-size: rem-calc(12)
+  font-weight: 300
+.light-gray-text
+  color: #aaa
+  font-size: rem-calc(12)
+  font-weight: 300
+
+.email-settings-section-content
+  > *
+    display: inline-block
+
+.red-checkbox + label
+  color: inherit
+  font: inherit
+  display: inline
+  line-height: inherit
+
+
+.email-settings-section
+  &.news-letter
+    .email-settings-section-content
+      max-width: rem-calc(300)
+      > *
+        display: inline-block
+      .checkbox-switch
+        float: right
+    span
+      vertical-align: top
+  &.options
+    position: relative
+    .input
+      font-size: rem-calc(14)
+      display: block
+
+    .email-settings-section-content
+      margin-left: rem-calc(30)
+
+
+.inputs
+  position: relative
+form, .inputs, .email-settings-section.options
+  .overlay
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: none
+
+  &.disabled
+    opacity: 0.3
+    .overlay
+      display: block
+
+.popup-settings-content
+  .email-settings-section.options
+    > :first-child
+      svg
+        width: rem-calc(23)
+        height: rem-calc(23)
+        margin-right: rem-calc(4)
+      span
+        vertical-align: top
+        line-height: rem-calc(24)
+
+
+.red-checkbox
+  @extend .squared
+  display: inline
+  float: none
+  margin-right: rem-calc(8)
+  //input
+  //
+  //  //@extend .squared input[type=checkbox]
+  //label
+  //  //@extend .notification-container .group .input-group label
+  //  //@extend .squared input[type=checkbox]:checked + label
+  //  & input[type=checkbox]:checked + label
+  //    border: none
+  //    background-color: #D03F4A
+  //  & input[type=checkbox]:checked + label:after
+  //    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+  //    filter: alpha(opacity=100)
+  //    opacity: 1
+
+.input-group
+  margin-top: rem-calc(20)
+  margin-top: rem-calc(20)
+  .inputs
+    margin-left: rem-calc(30)
+
+
+#notifications-settings-content
+  .inputs
+    max-width: rem-calc(300)
+  .input-group
+    margin-top: rem-calc(20)
+    margin-bottom: rem-calc(20)
+    &:last-child
+      margin-bottom: 0
+    .inputs
+      float: left
+      clear: both
+      width: 100%
+
+  .input-group-icon
+    svg
+      width: rem-calc(16)
+      height: rem-calc(16)
+      path
+        fill: $blue-background-color
+
+  .input-group-icon, .input-group-title, .input-group-toggler
+    display: inline-block
+    vertical-align: top
+
+
+  .input-group-icon, .input-group-title
+    float: left
+  .input-group-icon
+    margin-right: rem-calc(15)
+  .input-group-toggler
+    float: right
+  .input-group-title
+    line-height: rem-calc(16)
+
+@media #{$medium-down}
+  .settings-left-menu
+    li
+      &:not(.active)
+        display: none
+      &.active
+        text-align: center
+        display: block
+        a
+          padding: 0 rem-calc(30)
+          display: inline-block
+          position: relative
+          text-transform: uppercase
+          &:after
+            +css-triangle(rem-calc(5), $red-link-color, top)
+            position: absolute
+            right: 0
+            top: rem-calc(18)
+            right: rem-calc(15)
+    &.open-dropdown
+      li
+        display: block
+  .settings-content
+    margin: 0 auto
+    position: relative
+    float: none
+    clear: both
+#account-settings-membership-plan
+  .invitation-and-plans-items
+    .invitation
+      padding-top: rem-calc(30)
+    .plan-items
+      +grid-column(8)
+      overflow-y: hidden
+
+      .plan-item
+        +grid-column(4)
+        padding-left: rem-calc(10)
+        padding-right: rem-calc(10)
+        +transition(padding, 0.3s)
+        position: relative
+        height: rem-calc(150)
+
+
+        .button-placeholder
+          height: rem-calc(35)
+          background-color: #ffffff
+
+        .current
+          position: absolute
+          height: rem-calc(27)
+          top: rem-calc(-27)
+          font-family: $dearjoe-font-family
+          font-size: rem-calc(21)
+          color: $blue-background-color
+          width: 100%
+          text-align: center
+
+
+        &.hover
+          padding-left: rem-calc(5)
+          padding-right: rem-calc(5)
+          .plan-name
+            background-color: #99d341
+            box-shadow: 7px 7px 7px rgba(0,0,0,0.3)
+          .price
+            color: $red-link-color
+
+          .plan-name, .price, .ud-button
+            box-shadow: 7px 7px 7px rgba(0,0,0,0.2)
+
+        .plan-name
+          height: rem-calc(30)
+          background-color: $blue-background-color
+          color: #ffffff
+          text-transform: uppercase
+          text-align: center
+          line-height: rem-calc(30)
+        .plan-duration, .price
+          background: #ffffff
+          height: rem-calc(85)
+          color: $blue-background-color
+          font-size: rem-calc(17)
+          font-weight: 600
+          text-align: center
+        .plan-duration, .price
+          padding-top: rem-calc(16)
+
+        .price-value
+          font-size: rem-calc(26)
+          line-height: 1
+        .per-month
+          line-height: 1
+          font-weight: 300
+        .status.starting-plan
+          background: #ffffff
+          font-weight: 300
+          font-size: rem-calc(14)
+          color: #aaa
+          height: rem-calc(35)
+          text-align: center
+  .options
+    .option
+      .option-name
+        +grid-column(4)
+        line-height: rem-calc(45)
+        height: rem-calc(45)
+        color: $blue-background-color
+        font-weight: 300
+        font-size: rem-calc(14)
+        position: relative
+        .name, .help
+          line-height: 1
+        .help
+          color: #aaa
+          font-size: rem-calc(12)
+        .name-and-help
+          position: absolute
+          top: 50%
+          display: block
+          +transform(translateY(-50%))
+      .option-value
+        height: 100%
+        line-height: rem-calc(45)
+        text-align: center
+        color: $blue-background-color
+        text-transform: uppercase
+        .columns.collapsed
+          height: 100%
+          padding-right: 0
+          padding-left: 0
+          &:first-child
+            border-right: rem-calc(1) solid white
+        &.gray
+          background-color: #f2f2f2 !important
+          .columns.vertical-separator
+            border-top: rem-calc(1) solid white
+            border-bottom: rem-calc(1) solid white
+      .plans
+        +grid-column(8)
+        .plan
+          +grid-column(4)
+          height: rem-calc(45)
+          padding-left: rem-calc(10)
+          padding-right: rem-calc(10)
+          +transition(padding, 0.3s)
+
+          &.hover
+            padding-left: rem-calc(5)
+            padding-right: rem-calc(5)
+            .option-value
+              box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2)
+
+      &:nth-child(2n+1)
+        .plan
+          .option-value
+            background-color: #f2f2f2
+      &:nth-child(2n)
+        .plan
+          .option-value
+            background-color: #ffffff
+      &.boolean
+        svg
+          width: rem-calc(16)
+          height: rem-calc(16)
+          display: block
+          +transform(translate(-50%, -50%))
+          position: relative
+          top: 50%
+          left: 50%
+
+        .option-value
+          &.true
+            svg
+              fill: #99d341
+          &.false
+            svg
+              polygon
+                fill: #D03F4A
+  .buttons
+    .columns.large-4
+      height: rem-calc(35)
+      padding-left: rem-calc(5)
+      padding-right: rem-calc(5)
+    .ud-button
+      &.hover
+        display: block !important
+
+
+#account-settings-password-change, #account-settings-account-deactivation
+  .actions
+    .action
+      input
+        width: 100%
+
+
+
+
+#account-settings__membership-data
+  @extend %settings-content
+  .panel-content-row
+    padding-top: rem-calc(30)
+
+  .tabs
+    display: none
+
+  .invitation-and-option-labels
+    +grid-column(4)
+  .invitation
+    padding-top: rem-calc(30)
+    height: rem-calc(150)
+    .title
+      @extend %large-red-text
+    .subtext
+      @extend %blue-small-text
+
+  .plans
+    +grid-column(8)
+    padding-left: rem-calc(5)
+    padding-right: rem-calc(5)
+    .plan
+      font-family: $fira-sans-font-family
+      text-align: center
+      +grid-column(4)
+      padding-left: rem-calc(10)
+      padding-right: rem-calc(10)
+      +transition(padding, 0.2s)
+      position: relative
+
+      .current
+        width: 100%
+        position: relative
+        height: rem-calc(27)
+        line-height: rem-calc(27)
+        margin-top: rem-calc(-27)
+        text-align: center
+        color: $blue-background-color
+        font-family: $dearjoe-font-family
+        font-size: rem-calc(21)
+
+        > *
+          position: relative
+
+      .name
+        background-color: $blue-background-color
+        color: #ffffff
+        height: rem-calc(30)
+        line-height: rem-calc(30)
+        text-transform: uppercase
+      .primary-info
+        height: rem-calc(85)
+        background-color: #ffffff
+        color: $blue-background-color
+        font-size: rem-calc(17)
+        font-weight: 600
+        line-height: 1
+        @extend %center-content
+      .price
+        font-size: rem-calc(26)
+        line-height: 1
+
+      .price-per
+        font-weight: 300
+        line-height: 1
+        font-size: rem-calc(15)
+      .secondary-info
+        height: rem-calc(35)
+        background-color: #ffffff
+      .starting-plan
+        @extend %small-gray-text
+      .button-placeholder
+        height: rem-calc(35)
+      .pasha-button
+        width: 100%
+        @extend .special-text-shadow
+        color: #ffffff
+
+      > .pasha-button
+        opacity: 0
+        display: block
+
+      &.available
+        &:hover
+          padding: 0
+          box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3)
+          .name
+            background-color: $bright-green-color
+          .primary-info
+            color: $red-link-color
+          > .pasha-button
+            opacity: 1
+
+    .option
+      @extend %center-content
+      height: $option-height
+      color: $blue-background-color
+      font-size: rem-calc(14)
+      text-transform: uppercase
+      font-weight: 500
+      &:nth-child(2n+1)
+        background-color: #f2f2f2
+      &:nth-child(2n+2)
+        background-color: #ffffff
+
+      .value
+        +grid-column(6, $collapse: true)
+        @extend %center-content
+        height: $option-height
+        &:first-child
+          border-right: 1px solid white
+        &.in-group
+          background-color: #f2f2f2
+          &:nth-child(2)
+            border-bottom: 1px solid white
+          &.last-in-group
+            border-bottom: none
+
+
+    .boolean-true
+      @extend %boolean-true
+    .boolean-false
+      @extend %boolean-false
+
+
+  .option-labels
+    @extend %small-gray-text
+  .option-label
+    @extend %option-label
+    height: $option-height
+
+
+
+  .additional-options
+    padding: 0 rem-calc(30)
+    label
+      @extend %small-gray-text

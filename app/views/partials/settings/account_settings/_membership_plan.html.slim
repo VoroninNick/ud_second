@@ -1,0 +1,245 @@
+- content_key = "settings_account_settings_membership_plan".to_sym
+#account-settings-membership-plan.settings-content.purchase-history-content data-key=content_key class=("active" if @active_content_key == content_key)
+  = panel_with_header("Membership plan") do
+
+    .tabs.hide-for-large-up
+      .tab
+        |Free
+      .tab
+        |Standard
+      .tab
+        |Premium
+    .invitation-and-plans-items
+      .invitation
+        .invitation-title
+          |Become a member
+        .small-light-blue-text
+          |to communicate with lovely Ukrainian Ladies
+
+      .plan-items
+        .plan-item.hover-unavailable
+          /.current
+            |Current plan
+          .plan-name
+            |Free
+          .plan-duration
+            |Valid for
+            br
+            |a week
+          .status.starting-plan
+            |Starting plan
+
+        .plan-item.hover-unavailable
+          .current
+            |Current plan
+          .plan-name
+            |Standard
+          .price
+            .price-value
+              |$27.99
+            .per-month
+              |per month
+          /a.ud-button.special-text-shadow href="#"
+            |Get it
+          .button-placeholder
+
+        .plan-item
+          .plan-name
+            |Premium
+          .price
+            .price-value
+              |$27.99
+            .per-month
+              |per month
+          a.ud-button.special-text-shadow href="#"
+            |Get it
+
+    /.columns.large-12
+    .options
+      .option.boolean
+        .option-name
+          |User search
+        .plans
+          .plan.hover-unavailable
+            .option-value.true
+              = embedded_svg "UD-icon-OK.svg"
+          .plan.hover-unavailable
+            .option-value.true
+              = embedded_svg "UD-icon-OK.svg"
+          .plan
+            .option-value.false
+              = embedded_svg "UD-icon-close.svg"
+      .option.boolean
+        .option-name
+          |Browse ladies profile
+        .plans
+          .plan.hover-unavailable
+            .option-value.true
+              = embedded_svg "UD-icon-OK.svg"
+          .plan.hover-unavailable
+            .option-value.true
+              = embedded_svg "UD-icon-OK.svg"
+          .plan
+            .option-value.false
+              = embedded_svg "UD-icon-close.svg"
+      .option.boolean
+        .option-name
+          |See who visited your profile
+        .plans
+          .plan.hover-unavailable
+            .option-value.true
+              = embedded_svg "UD-icon-OK.svg"
+          .plan.hover-unavailable
+            .option-value.false
+              = embedded_svg "UD-icon-close.svg"
+          .plan
+            .option-value.true
+              = embedded_svg "UD-icon-OK.svg"
+      .option.string
+        .option-name
+          .name-and-help
+            .name
+              |User search
+            .help
+              |credits/email
+        .plans
+          .plan.hover-unavailable
+            .option-value
+              |10
+          .plan.hover-unavailable
+            .option-value
+              |Unlimited
+          .plan
+            .option-value
+              |Unlimited
+      .option.string
+        .option-name
+          .name-and-help
+            .name
+              |User search
+            .help
+              |credits/email
+        .plans
+          .plan.hover-unavailable
+            .option-value
+              |10
+          .plan.hover-unavailable
+            .option-value
+              .columns.large-6.collapsed
+                |15 free
+              .columns.large-6.collapsed
+                |5
+          .plan
+            .option-value
+              |Unlimited
+      .option.string
+        .option-name
+          .name-and-help
+            .name
+              |User search
+            .help
+              |credits/email
+        .plans
+          .plan.hover-unavailable
+            .option-value
+              |10
+          .plan.hover-unavailable
+            .option-value
+              |10
+          .plan
+            .option-value
+              |10
+      .option.string
+        .option-name
+          .name-and-help
+            .name
+              |User search
+            .help
+              |credits/email
+        .plans
+          .plan.hover-unavailable
+            .option-value
+              |10
+          .plan.hover-unavailable
+            .option-value
+              .columns.large-6.collapsed
+                |
+              .columns.large-6.collapsed
+                |5
+          .plan
+            .option-value
+              .columns.large-6.collapsed
+                |
+              .columns.large-6.collapsed
+                |1
+      .option.string
+        .option-name
+          .name-and-help
+            .name
+              |User search
+            .help
+              |credits/email
+        .plans
+          .plan.hover-unavailable
+            .option-value
+              |10
+          .plan.hover-unavailable
+            .option-value.gray
+              .columns.large-6.collapsed
+                |30 free
+              .columns.large-6.collapsed.vertical-separator
+                |5
+          .plan
+            .option-value.gray
+              .columns.large-6.collapsed
+                |60 free
+              .columns.large-6.collapsed.vertical-separator
+                |1
+      .option.string
+        .option-name
+          .name-and-help
+            .name
+              |User search
+            .help
+              |credits/email
+        .plans
+          .plan.hover-unavailable
+            .option-value
+              |10
+          .plan.hover-unavailable
+            .option-value
+              .columns.large-6.collapsed
+                |
+              .columns.large-6.collapsed
+                |5
+          .plan
+            .option-value
+              .columns.large-6.collapsed
+                |
+              .columns.large-6.collapsed
+                |1
+      - 5.times do
+        .option.boolean
+          .option-name
+            |Browse ladies profile
+          .plans
+            .plan.hover-unavailable
+              .option-value.true
+                = embedded_svg "UD-icon-OK.svg"
+            .plan.hover-unavailable
+              .option-value.true
+                = embedded_svg "UD-icon-OK.svg"
+            .plan
+              .option-value.false
+                = embedded_svg "UD-icon-close.svg"
+
+    .buttons
+      .columns.large-4
+      .columns.large-8
+        .button-container.columns.large-4.hover-unavailable
+        .button-container.columns.large-4.hover-unavailable
+          /a.ud-button.special-text-shadow.hide href="#"
+            |Get it
+        .button-container.columns.large-4
+          a.ud-button.special-text-shadow.hide href="#"
+            |Get it

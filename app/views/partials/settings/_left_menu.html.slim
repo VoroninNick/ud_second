@@ -1,0 +1,8 @@
+.columns.large-3.settings-left-menu.account-settings-left-menu class=("visible" if false)
+  ul
+    - @settings.each_pair do |settings_section_key, settings_section|
+      - ( settings_section[:left_menu_items] || []).each_pair do |item_key, item|
+        - content_key = "settings_#{settings_section_key}_#{item_key}".to_sym
+        li class="#{"active" if content_key == @active_content_key}" data-tab-selector=content_key class=("visible" if settings_section_key == @active_section) data-belongs-to-section=settings_section_key
+          a href=item[:href]
+            = item[:name]

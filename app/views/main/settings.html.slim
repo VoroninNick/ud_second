@@ -1,0 +1,10 @@
+#settings-section.favorites-woman-wrap.settings-page-wrap
+  = render partial: "partials/settings/header_menu"
+  .row.medium-main.tab-item-wrap
+    = render partial: "partials/settings/left_menu"
+    /, locals: { :is_active_section => :account_settings == @active_section }
+    /= render partial: "partials/settings/left_menu", locals: { is_active_section: :notification_settings == @active_section }
+    = render partial: "partials/settings/account_settings"
+    = render partial: "partials/settings/notification_settings"
+
+

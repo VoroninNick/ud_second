@@ -1,0 +1,32 @@
+- content_key = "settings_account_settings_buy_credits".to_sym
+.settings-content.purchase-history-content data-key=content_key class=("active" if @active_content_key == content_key)
+  = panel_with_header("Buy credits") do
+    .offered-credits
+      - (1..6).each do
+        .credit
+          .credit-bonus
+            = "+200 free"
+          .credits-count
+            .count
+              = 1000
+            span
+              = "credits"
+          .credit-price
+            .total-price
+              = "$390"
+            .per-credit-price
+              = "$0.32 per credit"
+          .credit-reward
+            p
+              = raw "<span>120 letters</span> or<br/><span>1200 minutes</span> of Live Chat"
+          a.ud-button.special-text-shadow
+            |Purchase
+
+    .buy-credits-info
+      .buy-credits-info-header
+        |Chargeback notice
+      p
+        |I have been working with writing challenged clients for over four years. (How long you've been providing a service is useful information.) The site provides ghost writing, coaching and ghost editing services.
+
+      p
+        |I have been working with writing challenged clients for over four years. (How long you've been providing a service is useful information.) The site provides ghost writing, coaching and ghost editing services.
