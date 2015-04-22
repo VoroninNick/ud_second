@@ -241,7 +241,14 @@ $settings-header-height: rem-calc(85)
   display: none
   &.active
     display: block
-
+  @media #{$medium-down}
+    width: 100%
+    padding-left: rem-calc(85)
+    padding-right: rem-calc(85)
+    max-width: none
+  @media #{$small-only}
+    padding-left: 0
+    padding-right: 0
 .settings-content
   @extend %settings-content
 
@@ -270,11 +277,25 @@ $settings-header-height: rem-calc(85)
     margin-top: rem-calc(30)
     input
       margin-bottom: rem-calc(6)
+  @media #{$medium-only}
+    &.settings-content
+      padding: 0
+
+@media #{$large-up}
+  .account-deactivation-content
+
 
 .password-change-content
   max-width: rem-calc(380)
   .actions
     padding-top: rem-calc(15)
+  @media #{$medium-only}
+    &.settings-content
+      padding: 0
+
+@media #{$large-up}
+  .password-change-content
+
 
 .purchase-history-content
   font-family: $fira-sans-font-family
@@ -1087,6 +1108,14 @@ form, .inputs, .email-settings-section.options
           > .pasha-button
             opacity: 1
 
+      &.available
+        html.touch &
+          > .pasha-button
+            opacity: 1
+
+
+
+
     .option
       @extend %center-content
       height: $option-height
@@ -1131,3 +1160,35 @@ form, .inputs, .email-settings-section.options
     padding: 0 rem-calc(30)
     label
       @extend %small-gray-text
+  @media #{$medium-down}
+    .panel-content-row
+      padding-top: 0
+    .invitation-and-option-labels
+      width: 50%
+    .tabs
+      padding: 0 rem-calc(15)  rem-calc(60) rem-calc(15)
+      display: block
+      .tab
+        height: rem-calc(40)
+        line-height: rem-calc(40)
+        text-align: center
+        text-transform: uppercase
+        background: white
+        width: grid-calc(1, 3)
+        display: inline-block
+        float: left
+        cursor: pointer
+
+
+
+        &.active-mobile-tab, &:hover
+          background: $light-blue-text-color
+          color: white
+    .plans
+      width: 50%
+      .plan
+        width: 100%
+        &:not(.active-mobile-tab)
+          display: none
+
+
