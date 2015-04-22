@@ -28,11 +28,15 @@ $.fn.observeMouseOut = (options)->
       $containers.trigger('mouseUpOut')
 
 $(document).ready ->
+#  observe mouse
+  $('.l-header-login-form-inner').on 'mouseUpOut', ()->
+    $(@).addClass('hide')
+  $('.l-header-login-form-inner').observeMouseOut()
 #  form forgot password
   $('a.ud-landing-forgot-password').click (e)->
     e.preventDefault()
     $wrap = $(@).closest('.lf-fp-popup-wrap')
-    $forgot_password = $wrap.find('.l-hlf-forgot-password-wrap')
+    $forgot_password = $wrap.find('.l-hlf-forgot-password')
     $login_form = $wrap.find('.l-header-login-form')
 
     $forgot_password.removeClass('hide')
@@ -41,7 +45,7 @@ $(document).ready ->
   $('a.ud-lfp-back').click (e)->
     e.preventDefault()
     $wrap = $(@).closest('.lf-fp-popup-wrap')
-    $forgot_password = $wrap.find('.l-hlf-forgot-password-wrap')
+    $forgot_password = $wrap.find('.l-hlf-forgot-password')
     $login_form = $wrap.find('.l-header-login-form')
 
     $forgot_password.addClass('hide')

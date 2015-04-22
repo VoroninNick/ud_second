@@ -57,7 +57,24 @@
                 input type="submit" value="JOIN FOR FREE!"
         .clearfix
 
-    .lbf-form-wrap.lbf-login-form.hide
+    .lbf-form-wrap.lbf-login-form.lf-fp-popup-wrap.hide
+
+      / banner login form wrap
+      .l-hlf-forgot-password.hide
+        .columns
+          form
+            h3.text-center Password recovery
+            p.text-center Enter  your email and we'll sent you a password  reset link
+            .input
+              label E-mail:
+              input type="email" placeholder="usermail@gmail.com"
+            .input-ud-button
+              input type="submit" value="Recover my password"
+            p.ud-s-clear
+              |or&nbsp;
+              a.ud-lfp-back
+                |go back to login
+        .clearfix
       .l-header-login-form
         .columns
           .row
