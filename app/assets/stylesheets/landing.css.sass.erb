@@ -499,6 +499,11 @@ body.landing-page-wrap
         background-color: #2E3E51
       path
         fill: #2E3E51
+      input[type="radio"]:checked
+        ~ .lbf-label
+          background-color: #BEC3C7
+          label
+            color: #2E3E51
     &.lbf-female
       .lbf-ico
         margin-right: 8px
@@ -506,10 +511,17 @@ body.landing-page-wrap
         background-color: #D03F4A
       path
         fill: #D03F4A
+      input[type="radio"]:checked
+        ~ .lbf-label
+          background-color: #BEC3C7
+          label
+            color: #D03F4A
+
   input
     position: absolute
     left: -1000px
     visibility: hidden
+
 .l-about-project-wrap
   background-color: #EDF0F1
   margin-bottom: 40px

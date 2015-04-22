@@ -114,7 +114,7 @@ body.landing-page-wrap
       .columns.large-3.medium-3.small-6
         .row
           .columns
-            = image_tag "UD-logo-diamond.png"
+            = image_tag "UAD-landing-agent.png"
         .row
           .columns
             b PRIVACY & SAFETY
@@ -125,7 +125,7 @@ body.landing-page-wrap
       .columns.large-3.medium-3.small-6
         .row
           .columns
-            = image_tag "UAD-landing-user.png"
+            = image_tag "UD-logo-diamond.png"
         .row
           .columns
             b REAL & VALIDATED
@@ -147,7 +147,7 @@ body.landing-page-wrap
       .columns.large-3.medium-3.small-6
         .row
           .columns
-            = image_tag "UD-favorites.png"
+            = image_tag "UAD-trail-icons-flat.png"
         .row
           .columns
             b FREE TRIAL
@@ -424,7 +424,7 @@ body.landing-page-wrap
       .columns.large-3.medium-3.small-6
         .row
           .columns
-            = image_tag "UD-logo-diamond.png"
+            = image_tag "UAD-landing-user.png"
         .row
           .columns
             b Sign up
@@ -625,19 +625,21 @@ body.landing-page-wrap
                         .lbf-gender-label-wrap.lbf-male
                           .lbf-ico
                             =embedded_svg "UAD-icons-female.svg"
+                          input#lbf-male.lbf-male type="radio" name="gender-footer" value="male"
                           .lbf-label
                             label for="lbf-male" Male
-                        input#lbf-male.lbf-male type="radio" name="gender" value="male"
+
 
                     .columns.large-6.medium-6.small-6
                       .ud-gender-input
                         .lbf-gender-label-wrap.lbf-female
                           .lbf-ico
                             =embedded_svg "UAD-icons-male.svg"
+                          input#lbf-footer-female.lbf-female type="radio" name="gender-footer" value="female"
                           .lbf-label
-                            label for="lbf-female"
+                            label for="lbf-footer-female"
                               |Female
-                        input#lbf-female.lbf-female type="radio" name="gender" value="female"
+
             .white-grey.lflf-form
               .columns
                 .input

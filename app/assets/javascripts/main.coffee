@@ -8,77 +8,78 @@
 $(document).ready ->
 
 #  range slide initialize
-  $ ->
-    $('#ud-range-age-slide').slider
-      range: true
-      min: 18
-      max: 65
-      values: [
-        18
-        65
-      ]
-      slide: (event, ui) ->
-        # field min value
-        $('#lsf-age-min').val ui.values[0]
-        # field max value
-        $('#lsf-age-max').val ui.values[1]
-        return
+  if typeof $.fn.slider == 'function'
+    $ ->
+      $('#ud-range-age-slide').slider
+        range: true
+        min: 18
+        max: 65
+        values: [
+          18
+          65
+        ]
+        slide: (event, ui) ->
+          # field min value
+          $('#lsf-age-min').val ui.values[0]
+          # field max value
+          $('#lsf-age-max').val ui.values[1]
+          return
 
-    # set default value
-    $('#lsf-age-min').val $('#ud-range-age-slide').slider('values', 0)
-    $('#lsf-age-max').val $('#ud-range-age-slide').slider('values', 1)
-    return
+      # set default value
+      $('#lsf-age-min').val $('#ud-range-age-slide').slider('values', 0)
+      $('#lsf-age-max').val $('#ud-range-age-slide').slider('values', 1)
+      return
 
 #  $('#lsf-age-min').change ->
 #    $('#ud-range-slide').slider 'value', parseInt(@value)
 #    return
 
-  $ ->
-    $('#ud-range-height-slide').slider
-      range: true
-      min: 135
-      max: 200
-      values: [
-        135
-        200
-      ]
-      slide: (event, ui) ->
-        # field min value
-        $('#lsf-height-min').val ui.values[0]
-        # field max value
-        $('#lsf-height-max').val ui.values[1]
-        return
+    $ ->
+      $('#ud-range-height-slide').slider
+        range: true
+        min: 135
+        max: 200
+        values: [
+          135
+          200
+        ]
+        slide: (event, ui) ->
+          # field min value
+          $('#lsf-height-min').val ui.values[0]
+          # field max value
+          $('#lsf-height-max').val ui.values[1]
+          return
 
-    # set default value
-    $('#lsf-height-min').val $('#ud-range-height-slide').slider('values', 0)
-    $('#lsf-height-max').val $('#ud-range-height-slide').slider('values', 1)
-    return
+      # set default value
+      $('#lsf-height-min').val $('#ud-range-height-slide').slider('values', 0)
+      $('#lsf-height-max').val $('#ud-range-height-slide').slider('values', 1)
+      return
 
-  $ ->
-    $('#ud-range-weight-slide').slider
-      range: true
-      min: 40
-      max: 150
-      values: [
-        40
-        150
-      ]
-      slide: (event, ui) ->
-        # field min value
-        $('#lsf-weight-min').val ui.values[0]
-        # field max value
-        $('#lsf-weight-max').val ui.values[1]
-        return
+    $ ->
+      $('#ud-range-weight-slide').slider
+        range: true
+        min: 40
+        max: 150
+        values: [
+          40
+          150
+        ]
+        slide: (event, ui) ->
+          # field min value
+          $('#lsf-weight-min').val ui.values[0]
+          # field max value
+          $('#lsf-weight-max').val ui.values[1]
+          return
 
-    # set default value
-    $('#lsf-weight-min').val $('#ud-range-weight-slide').slider('values', 0)
-    $('#lsf-weight-max').val $('#ud-range-weight-slide').slider('values', 1)
-    return
+      # set default value
+      $('#lsf-weight-min').val $('#ud-range-weight-slide').slider('values', 0)
+      $('#lsf-weight-max').val $('#ud-range-weight-slide').slider('values', 1)
+      return
 
 
 #  landing banner registration form
   $('.lbf-registration-form .ud-gender-input label').click ->
-    alert 'test'
+#    alert 'test'
 
 # lading banner form
   $('.lbf-tumbler').click ->
@@ -313,7 +314,7 @@ $(document).ready ->
 #  init index page tabs wooman
   $('.favorites-nav li').click ->
     current_position = $(this).index()
-#    alert ''+current_position
+
     $head_tabs = $(this)
     $wrap = $(this).closest('.favorites-woman-wrap')
     $('.favorites-nav li').removeClass('active')
@@ -326,7 +327,7 @@ $(document).ready ->
 #  init index page tabs man
   $('.favorites-nav li').click ->
     current_position = $(this).index()
-#    alert ''+current_position
+
     $head_tabs = $(this)
     $wrap = $(this).closest('.favorites-man-wrap')
     $('.favorites-nav li').removeClass('active')
