@@ -6,6 +6,25 @@
 
 
 $(document).ready ->
+#  form forgot password
+  $('a.ud-landing-forgot-password').click (e)->
+    e.preventDefault()
+    $wrap = $(@).closest('.lf-fp-popup-wrap')
+    $forgot_password = $wrap.find('.l-hlf-forgot-password-wrap')
+    $login_form = $wrap.find('.l-header-login-form')
+
+    $forgot_password.removeClass('hide')
+    $login_form.addClass('hide')
+
+  $('a.ud-lfp-back').click (e)->
+    e.preventDefault()
+    $wrap = $(@).closest('.lf-fp-popup-wrap')
+    $forgot_password = $wrap.find('.l-hlf-forgot-password-wrap')
+    $login_form = $wrap.find('.l-header-login-form')
+
+    $forgot_password.addClass('hide')
+    $login_form.removeClass('hide')
+
 
 #  range slide initialize
   if typeof $.fn.slider == 'function'

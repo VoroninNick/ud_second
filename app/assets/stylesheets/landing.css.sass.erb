@@ -3,6 +3,52 @@
 
 body.landing-page-wrap
   display: block !important
+  .l-hlf-forgot-password-wrap
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: 22
+    display: block !important
+    .l-hlf-forgot-password
+      background: #EDF0F1
+      form
+        padding-top: 20px
+        padding-bottom: 20px
+        .input
+          input
+            margin-bottom: 30px
+      h3
+        margin: 0
+        padding: 0
+        line-height: 1.5625rem
+        color: #2E3E51
+        text-transform: uppercase
+        font-size: 1.30313rem
+        font-family: "Fira Sans", sans-serif
+        font-weight: 500
+        letter-spacing: 0.02rem
+      p
+        font-size: 0.625rem
+        font-weight: 300
+        line-height: 0.75rem
+        color: #2E3E51
+      P
+        &.ud-s-clear
+          font-size: 0.75rem
+          font-weight: 300
+          font-family: "Fira Sans", sans-serif
+          color: #2E3E51
+          line-height: 0.9rem
+          padding-top: 7px
+          padding-left: 12px
+          a
+            color: #D03F4A
+            height: auto
+            border: none
+            display: inline-block
+
   .input
     label
       font-size: 0.875rem
@@ -24,6 +70,8 @@ body.landing-page-wrap
   .l-round-count-wrap
     position: relative
     height: 24px
+    margin-top: 8px
+    padding-bottom: 25px
     .round-count
       +my_horizontal_align
 .l-header-wrap
@@ -63,7 +111,7 @@ body.landing-page-wrap
           display: none
       a
         display: inline-block
-        +my_vertical_align
+        +my_vertical_align(40%)
         color: #EDF0F1
         font:
           size: rem-calc(16)
@@ -108,6 +156,11 @@ body.landing-page-wrap
   background-color: #EDF0F1
   padding-top: 25px
   padding-bottom: 35px
+  h5
+    font-size: 0.875rem
+    line-height: 1.05rem
+    color: #2E3E51
+    margin-bottom: 9px
   p
     color: #2E3E51
     font:
@@ -117,23 +170,33 @@ body.landing-page-wrap
     margin-bottom: 9px
   form
     a
-      color: #D03F4A
-      font:
-        size: rem-calc(10)
-        weight: 300
-      line-height: rem-calc(12)
+      /*color: #D03F4A*/
+      /*font:*/
+        /*size: rem-calc(10)*/
+        /*weight: 300*/
+      /*line-height: rem-calc(12)*/
+      &.ud-landing-forgot-password
+        font:
+          size: 0.75rem
+          weight: 300
+        line-height: rem-calc(12)
+        padding-left: 0
+        color: #D03F4A
+        font-family: "Fira Sans", sans-serif
+        text-align: right
   .input
     .t-label
       label
         font:
-          size: rem-calc(10)
+          size: 0.75rem
           weight: 300
         line-height: rem-calc(12)
         padding-left: 0
+        color: #2E3E51
+        font-family: "Fira Sans", sans-serif
     label
       color: #2E3E51
       font-size: 0.75rem
-      padding-left: 12px
       line-height: 1.05rem
       margin-bottom: 6px
     input
@@ -145,13 +208,13 @@ body.landing-page-wrap
       height: 35px
       width: 100%
       font:
-        size: rem-calc(12)
+        size: rem-calc(16)
       line-height: rem-calc(35)
       color: #EDF0F1
       text-transform: uppercase
       border-left: 1px solid #EDF0F1
       border-right: 1px solid #EDF0F1
-      padding-left: 40px
+      padding-left: 45px
       svg
         width: 30px
         height: 30px
@@ -162,9 +225,9 @@ body.landing-page-wrap
           fill: #fff
   .l-hf-label
     width: 100%
-    height: 30px
+    height: 40px
     overflow: hidden
-    margin-top: 5px
+    margin-top: 15px
     b
       display: inline-block
       background: #EDF0F1
@@ -208,7 +271,7 @@ body.landing-page-wrap
         //background-color: royalblue
         background-size: 100%
         background-repeat: no-repeat
-        bottom: 45%
+        bottom: 53%
         &.bx-prev
           left: -20px
           background-image: asset_url("UD-icon-arrow-up-l.svg")
@@ -275,13 +338,19 @@ body.landing-page-wrap
             color: #EDF0F1
           h3
             font:
-              size: rem-calc(59)
+              size: rem-calc(32)
               family: dearjoe_1_msregular
+            margin-bottom: -15px
+            line-height: 2rem
+            padding-left: 20px
           h2
             font:
               size: rem-calc(60)
-              weight: 400
+              weight: 500
               family: "Fira Sans", sans-serif
+            margin-top: 0
+            padding-top: 0
+            margin-bottom: 0
           p
             font:
               size: rem-calc(14)
@@ -312,7 +381,10 @@ body.landing-page-wrap
             .ud-gender-input-wrap
               height: 30px
               position: relative
+              margin-bottom: 12px
               .ud-gender-input-inner
+                .lbf-female
+                  width: 120%
                 +my-horizontal_align
                   position: absolute
 
@@ -356,7 +428,7 @@ body.landing-page-wrap
             b
               font:  
                 size: rem-calc(21)
-                weight: 400
+                weight: 500
               line-height: rem-calc(25)
               text-transform: uppercase
             p
@@ -434,7 +506,7 @@ body.landing-page-wrap
       bottom: -25px
       color: #BEC3C7
       font:
-        size: rem-calc(14)
+        size: .75rem
         weight: 300
       line-height: rem-calc(16.8)
     &:before
@@ -466,7 +538,7 @@ body.landing-page-wrap
         height: 0
         border-style: solid
         border-width: 0 0 7px 7px
-        border-color: transparent transparent #007bff transparent
+        border-color: transparent transparent #3598DB transparent
       &:last-of-type:before
         display: block
         content: ''
@@ -477,7 +549,7 @@ body.landing-page-wrap
         height: 0
         border-style: solid
         border-width: 7px 0 0 7px
-        border-color: transparent transparent transparent #007bff
+        border-color: transparent transparent transparent #3598DB
 
 .ud-gender-input
   position: relative
@@ -533,10 +605,20 @@ body.landing-page-wrap
 .l-about-project-wrap
   background-color: #EDF0F1
   margin-bottom: 40px
+  padding-bottom: 30px
+  img
+    width: 70%
   b
     color: #2E3E51
+    font-size: 1.30313rem
+    font-weight: 500
+    line-height: 2.375rem
   i
     color: #D03F4A
+    font:
+      size: 1.5rem
+      family: dearjoe_1_msregular
+      style: normal
 
 .l-who-is-online-now-wrap
   background-color: #EDF0F1
@@ -670,7 +752,7 @@ body.landing-page-wrap
       color: #2E3E51
       font:
         size: rem-calc(20)
-        weight: 400
+        weight: 500
       line-height: rem-calc(25)
       text-transform: uppercase
       margin-bottom: 30px
@@ -679,19 +761,21 @@ body.landing-page-wrap
 
 .l-how-it-work-wrap
   margin-bottom: 35px
+  .title-block-wrap
+    top: 20px
+  img
+    width: 70%
   b
     color: #2E3E51
-    font:
-      size: rem-calc(21)
-      weight: 400
-    line-height: rem-calc(25)
+    font-size: 1.30313rem
+    font-weight: 500
+    line-height: 2.375rem
     text-transform: uppercase
   i
     color: #D03F4A
-    font:
-      size: rem-calc(25)
-      weight: 300
-      family: 'dearjoe_1_msregular'
+    font-size: 1.5rem
+    font-family: dearjoe_1_msregular
+    font-style: normal
 
 .l-couple-stories-wrap
   padding: 35px 0
@@ -711,7 +795,7 @@ body.landing-page-wrap
         color: #2E3E51
         font:
           size: rem-calc(21)
-          weight: 400
+          weight: 500
         line-height: rem-calc(25)
         text-transform: uppercase
       p
@@ -759,7 +843,9 @@ body.landing-page-wrap
       border-color: transparent #2E3E51 transparent transparent
     &:before
       display: none
-
+  .white-grey
+    height: 90px
+    padding-top: 10px
   .columns:last-child
     .notification-container
       left: auto
@@ -823,10 +909,9 @@ body.landing-page-wrap
       margin: 0 auto
     b
       color: #2E3E51
-      font:  
-        size: rem-calc(21)
-        weight: 400
-      line-height: rem-calc(25)
+      font-size: 1.30313rem
+      font-weight: 500
+      line-height: 2.375rem
       text-transform: uppercase
       width: 100%
       display: inline-block
@@ -834,10 +919,9 @@ body.landing-page-wrap
 
     i
       color: #D03F4A
-      font:
-        size: rem-calc(25)
-        weight: 300
-        family: 'dearjoe_1_msregular'
+      font-size: 1.5rem
+      font-family: dearjoe_1_msregular
+      font-style: normal
       width: 100%
       display: inline-block
       text-align: center
@@ -845,15 +929,21 @@ body.landing-page-wrap
 .l-why-we-wrap
   margin-bottom: 45px
   .l-footer-registration-form-wrap
+    .input-ud-button
+      padding-top: 14px
     .lfrf-header
       background-color: #287FB8
+      height: 60px
+      .ud-gender-input
+        padding-top: 14px
       b
         color: #EDF0F1
-        font:
-          size: rem-calc(21)
-          weight: 400
-        line-height: rem-calc(25.2)
+        font-size: 1.3125rem
+        font-weight: 500
+        line-height: 1.5625rem
         text-transform: uppercase
+        padding-top: 10px
+        display: inline-block
       p
         color: #EDF0F1
         font:
@@ -879,6 +969,7 @@ body.landing-page-wrap
       font:
         size: rem-calc(16)
         weight: 300
+      line-height: rem-calc(30)
       &:nth-child(n+5)
         text-transform: uppercase
 

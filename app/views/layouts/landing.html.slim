@@ -36,8 +36,24 @@ body.landing-page-wrap
       .row
         .columns.large-4.medium-4.right
           .l-header-login-form-wrap
-            .l-header-login-form-inner.hide
-              .l-header-login-form
+            .l-header-login-form-inner.lf-fp-popup-wrap
+              .l-hlf-forgot-password-wrap
+                .l-hlf-forgot-password
+                  .columns
+                    form
+                      h3.text-center Password recovery
+                      p.text-center Enter  your email and we'll sent you a password  reset link
+                      .input
+                        label E-mail:
+                        input type="email" placeholder="usermail@gmail.com"
+                      .input-ud-button
+                        input type="submit" value="Recover my password"
+                      p.ud-s-clear
+                        |or&nbsp;
+                        a.ud-lfp-back
+                          |go back to login
+                  .clearfix
+              .l-header-login-form.hide
                 .columns
                   .row
                     .columns
@@ -76,7 +92,7 @@ body.landing-page-wrap
                                 label for="lf_remember_me" Remember me
 
                           .columns.large-6.medium-6.small-6
-                            a Forgot your password?
+                            a.ud-landing-forgot-password Forgot your password?
                         .input-ud-button
                           input type="submit" value="login"
                 .clearfix
@@ -91,7 +107,7 @@ body.landing-page-wrap
     ul#index-banner
       li
         a
-          .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
+          .image style="background: url('#{asset_path("ud-main-banner-photo-1-1.jpg")}')no-repeat center center;"
         .l-banner-information-about-profile-wrap
           .l-banner-information-about-profile-inner
             .row
@@ -104,17 +120,37 @@ body.landing-page-wrap
                       p I am manager, from Lviv. I love sunshine and intellegence talks.
       li
         a
-          .image style="background: url('#{asset_path("girl_102.jpg")}')no-repeat center center;"
+          .image style="background: url('#{asset_path("ud-main-banner-photo-4-1.jpg")}')no-repeat center center;"
+        .l-banner-information-about-profile-wrap
+          .l-banner-information-about-profile-inner
+            .row
+              .columns.large-7.medium-7.right
+                .l-banner-about-profile
+                  .lb-about-profile-wrap data-profile-name="Valentina"
+                    .lb-about-profile
+                      h3 Hello, my name is
+                      h2 Valentina
+                      p I am manager, from Lviv. I love sunshine and intellegence talks.
       li
         a
-          .image style="background: url('#{asset_path("girl-teddy-5.png")}')no-repeat center center;"
+          .image style="background: url('#{asset_path("ud-main-banner-photo-2-1.jpg")}')no-repeat center center;"
+        .l-banner-information-about-profile-wrap
+          .l-banner-information-about-profile-inner
+            .row
+              .columns.large-7.medium-7.right
+                .l-banner-about-profile
+                  .lb-about-profile-wrap data-profile-name="Galina"
+                    .lb-about-profile
+                      h3 Hello, my name is
+                      h2 Galina
+                      p I am manager, from Lviv. I love sunshine and intellegence talks.
 
   .l-about-project-wrap
     .row.text-center
       .columns.large-3.medium-3.small-6
         .row
           .columns
-            = image_tag "UAD-landing-agent.png"
+            = image_tag "UAD-landing-agent-3.png"
         .row
           .columns
             b PRIVACY & SAFETY
@@ -125,7 +161,7 @@ body.landing-page-wrap
       .columns.large-3.medium-3.small-6
         .row
           .columns
-            = image_tag "UAD-landing-photo.png"
+            = image_tag "UAD-landing-photo-3.png"
         .row
           .columns
             b REAL & VALIDATED
@@ -136,7 +172,7 @@ body.landing-page-wrap
       .columns.large-3.medium-3.small-6
         .row
           .columns
-            = image_tag "UAD-landing-money.png"
+            = image_tag "UAD-landing-money-3.png"
         .row
           .columns
             b 100% REFUND
@@ -153,7 +189,7 @@ body.landing-page-wrap
             b FREE TRIAL
         .row
           .columns
-            i For Three Days
+            i For three days
       .clearfix
 
   .l-who-is-online-now-wrap
@@ -424,13 +460,13 @@ body.landing-page-wrap
       .columns.large-3.medium-3.small-6
         .row
           .columns
-            = image_tag "UAD-landing-user.png"
+            = image_tag "UAD-landing-user-3.png"
         .row
           .columns
             b Sign up
         .row
           .columns
-            i its easy & free!
+            i Its easy and free!
         .row
           .columns
             .l-round-count-wrap
@@ -444,7 +480,7 @@ body.landing-page-wrap
             b Discover
         .row
           .columns
-            i find your Diamond!
+            i Find your Diamond!
         .row
           .columns
             .l-round-count-wrap
@@ -452,13 +488,13 @@ body.landing-page-wrap
       .columns.large-3.medium-3.small-6
         .row
           .columns
-            = image_tag "UAD-landing-chat.png"
+            = image_tag "UAD-landing-chat-2.png"
         .row
           .columns
             b Communicate
         .row
           .columns
-            i to win her heart!
+            i To win her heart!
         .row
           .columns
             .l-round-count-wrap
@@ -472,7 +508,7 @@ body.landing-page-wrap
             b Date diamonds
         .row
           .columns
-            i travel with us!
+            i Travel with us!
         .row
           .columns
             .l-round-count-wrap
@@ -490,9 +526,9 @@ body.landing-page-wrap
           li
             .row
               .columns.large-5.medium-5
-                .image style="background: url('#{asset_path("kissing-couple.jpg")}')no-repeat center center;"
+                .image style="background: url('#{asset_path("couple-01.jpg")}')no-repeat center center;"
               .columns.large-7.medium-7
-                h3 DAVID & OLGA
+                h3 Olga and David
                 p
                   |“It seems to me that all Internet dating stories are the same. After several fails you finally find what you were looking for. That’s the story of our meeting with Olga. She wrote me first!” – says David.
                 p
@@ -502,27 +538,16 @@ body.landing-page-wrap
           li
             .row
               .columns.large-5.medium-5
-                .image style="background: url('#{asset_path("smiling-couple-in-snow-montage.jpg")}')no-repeat center center;"
+                .image style="background: url('#{asset_path("couple-02.jpg")}')no-repeat center center;"
               .columns.large-7.medium-7
-                h3 DAVID & OLGA
+                h3 Anastasia and Craig
                 p
-                  |“It seems to me that all Internet dating stories are the same. After several fails you finally find what you were looking for. That’s the story of our meeting with Olga. She wrote me first!” – says David.
+                  |“I decided to try online-dating after hard relationship, I wanted to distract myself, and never thought it would grow into something bigger that communication. But everything happened in such a different way!  My first experience of Internet dating became the last – I have found him. My future husband!” – says Anastasia.
                 p
                   span
-                    |“I’ve known what I wanted. So when I so David’s profile, I liked photos and just wrote. He answered. Soon we were out of online, we decided to move into the real world and that was right decision! We are happily marries for 2 years already and now we are expecting our first child”,
-                  |- Olga says.
-          li
-            .row
-              .columns.large-5.medium-5
-                .image style="background: url('#{asset_path("couple-on-bench-2.jpg")}')no-repeat center center;"
-              .columns.large-7.medium-7
-                h3 DAVID & OLGA
-                p
-                  |“It seems to me that all Internet dating stories are the same. After several fails you finally find what you were looking for. That’s the story of our meeting with Olga. She wrote me first!” – says David.
-                p
-                  span
-                    |“I’ve known what I wanted. So when I so David’s profile, I liked photos and just wrote. He answered. Soon we were out of online, we decided to move into the real world and that was right decision! We are happily marries for 2 years already and now we are expecting our first child”,
-                  |- Olga says.
+                    |“I could never believe this will happen in my life. I wrote to Nastya and that was the beginning of the best story in my life. We are getting married next summer. First I was afraid of age difference, but it doesn’t matter at all. She is my everything and I am grateful to “Ukrainian Diamonds” agency for her!” – Craig shares his experience.
+                  |- Anastasia says.
+
   .l-men-say-wrap#l-men-say
     .row
       .columns

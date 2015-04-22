@@ -10,7 +10,7 @@
     .SumoSelect > .CaptionCont { position: relative; border: 1px solid #ccc; min-height: 20px; background-color: #fff; }
         .SumoSelect > .CaptionCont > span { display: block; padding-right: 30px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
             /*placeholder style*/
-            .SumoSelect > .CaptionCont > span.placeholder { color: #ccc; font-style: italic; }
+            .SumoSelect > .CaptionCont > span.placeholder { color: #ccc; }
 
         .SumoSelect > .CaptionCont > label { position: absolute; top: 0px; right: 0px; bottom: 0px; width: 30px; background-color: #E0D8D8; }
             .SumoSelect > .CaptionCont > label > i { background-image: url('https://cdn2.iconfinder.com/data/icons/picol-vector/32/arrow_sans_down-16.png'); background-position: center center; width: 16px; height: 16px; display: block; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; }

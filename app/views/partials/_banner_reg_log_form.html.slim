@@ -19,9 +19,11 @@
                 .ud-gender-input-inner
                   .ud-gender-input
                     .lbf-gender-label-wrap.lbf-male
+                      input#lbf-male.lbf-male type="radio" name="gender" value="male"
+
                       .lbf-ico
                         =embedded_svg "UAD-icons-female.svg"
-                      input#lbf-male.lbf-male type="radio" name="gender" value="male"
+
                       .lbf-label
                         label for="lbf-male" Male
 
@@ -31,12 +33,15 @@
                 .ud-gender-input-inner
                   .ud-gender-input
                     .lbf-gender-label-wrap.lbf-female
+                      input#lbf-female.lbf-female type="radio" name="gender" value="female"
+
                       .lbf-ico
                         =embedded_svg "UAD-icons-male.svg"
-                      input#lbf-female.lbf-female type="radio" name="gender" value="female"
+
                       .lbf-label
                         label for="lbf-female"
                           |Female
+                      .clearfix
           .row
             .columns
               .input
@@ -57,7 +62,7 @@
         .columns
           .row
             .columns
-              p Login using Social networks:
+              h5 Login using Social networks:
           .row.collapse.l-hf-socials-wrap
             .columns.large-6.medium-6.small-6
               a
@@ -86,13 +91,13 @@
                   .columns.large-6.medium-6.small-6
                     .input
                       .squared
-                        input id="lf_remember_me" type="checkbox" value="remember me"
-                        label for="lf_remember_me"
+                        input id="lf_remember_me_bn" type="checkbox" value="remember me"
+                        label for="lf_remember_me_bn"
                       .t-label
-                        label for="lf_remember_me" Remember me
+                        label for="lf_remember_me_bn" Remember me
 
                   .columns.large-6.medium-6.small-6
-                    a Forgot your password?
+                    a.ud-landing-forgot-password Forgot your password?
                 .input-ud-button
                   input type="submit" value="login"
         .clearfix
