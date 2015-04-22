@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'second-version' => 'main#second'
 
   get 'profile_girl' => 'main#profile_woman'
+  get 'profile' => 'main#profile'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -438,7 +438,8 @@
                       .columns.large-2.medium-2
                         .avatar-wrap
                           .avatar
-                            .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+                            a href=profile_path
+                              .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
                           .title-for-avatar.text-center
                             span
                               |me
@@ -559,6 +560,7 @@
           |Saved
         .ud-inbox-one-tab-wrap.hide
           |Trash
+
 #AddAPictures.reveal-modal data-reveal=""
   .modal-wrap.ud-add-image-from-gallery-wrap
     .modal-header-wrap

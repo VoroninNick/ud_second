@@ -24,6 +24,10 @@ class MainController < ApplicationController
 
   end
 
+  def profile
+
+  end
+
   def gifts
 
   end
