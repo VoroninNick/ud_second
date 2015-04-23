@@ -739,10 +739,268 @@ p
       margin: 0 auto
       margin-bottom: 25px
 
+.p-profile-data-wrap
+  .white-grey
+    padding-top: 30px
+    padding-bottom: 20px
+    margin-bottom: 10px
+
+  .avatar
+    position: relative
+    a
+      display: inline-block !important
+      position: absolute !important
+      left: 0
+      right: 0
+      bottom: 0
+      line-height: rem-calc(32)
+      font:
+        size: rem-calc(14)
+        weight: 400
+        family: 'Fira Sans', sans-serif
+      color: #EDF0F1
+      background-color: rgba(40, 127, 184, .8)
+      text-transform: uppercase
+      height: 32px !important
+      text-align: center
+      opacity: .1
+      transition: opacity .5s
+    &:hover a
+      opacity: 1
+  ul
+    margin-left: 0
+    list-style: none
+  nav
+    list-style: none
+    li
+      display: inline-block
+      padding-right: 8px
+      a
+        color: #D03F4A
+        font:
+          size: rem-calc(14)
+          weight: 300
+        line-height: rem-calc(21)
+
+.p-photos-wrap
+  .white-grey
+    padding-top: 30px
+    padding-bottom: 40px
+    margin-bottom: 10px
+  .p-avatar-one-item
+    position: relative
+    .image
+      max-width: 100%
+      width: 100%
+      height: 0
+      padding-bottom: 100%
+      overflow: hidden
+      -webkit-background-size: cover !important
+      -moz-background-size: cover !important
+      -o-background-size: cover !important
+      background-size: cover !important
+      margin: 0 auto
+    a.p-set-as-avatar
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      height: 32px
+      background-color: rgba(40, 127, 184, 0.8)
+      text-align: center
+      line-height: 2rem
+      color: #fff
+      margin: 0
+      padding: 0
+      font-size: rem-calc(14)
+      font-weight: 400
+      text-transform: uppercase
+      /*opacity: 0*/
+    .p-action-button
+      position: absolute
+      top: 0
+      width: 32px
+      height: 32px
+      background-color: rgba(40, 127, 184, 0.8)
+      /*opacity: 0*/
+      &.pa-remove
+        right: 0
+        svg
+          width: 59%
+          height: 100%
+          margin: 0 auto
+          display: block
+          polygon
+            fill: #fff
+
+.p-gallery-wrap
+  .white-grey
+    padding-top: 30px
+    padding-bottom: 40px
+    margin-bottom: 10px
+    a
+      .image
+        max-width: 100%
+        width: 100%
+        height: 0
+        padding-bottom: 100%
+        overflow: hidden
+        -webkit-background-size: cover !important
+        -moz-background-size: cover !important
+        -o-background-size: cover !important
+        background-size: cover !important
+        margin: 0 auto
+
 .p-information-about-wrap
+  form
+    padding-top: 20px
   a.more
     width: 100%
     text-align: center
+
+.p-input-wrap
+  height: 35px
+  .p-label
+    width: 35%
+    float: left
+    /*background-color: yellow*/
+
+    label
+      color: #2E3E51
+      font:
+        size: rem-calc(14)
+        weight: 300
+      line-height: rem-calc(35px)
+  .p-input-inner
+    width: 65%
+    float: left
+    height: 100%
+    .p-input
+      padding-right: 35px
+      input
+        margin: 0
+      select
+        &.pf-years
+          width: 30%
+        &.pf-month
+          width: 50%
+        &.pf-day
+          width: 20%
+    .pi-apply-button, .pi-edit-button
+      width: 35px
+      height: 35px
+      cursor: pointer
+      position: absolute
+      top: 0
+      right: 0
+      background-size: 100%
+      background-repeat: no-repeat
+    .pi-edit-button
+      background-image: asset_url('UAD-edit.svg')
+      opacity: 0
+
+    .pi-apply-button
+      background-image: asset_url('UAD-icon-chek.jpg')
+    p
+      color: #3598DB
+      font:
+        size: rem-calc(16)
+        weight: 400
+      line-height: rem-calc(35)
+      margin-bottom: 0
+    .p-input-edit, .p-input-preview
+      position: relative
+    .p-input-edit
+      display: none
+    .p-input-preview
+      display: block
+      cursor: pointer
+      &:hover .pi-edit-button
+        opacity: 1
+
+#gallery_wrapper
+  width: 100% !important
+  height: 100% !important
+  left: 0 !important
+  top: 0 !important
+  z-index: 1111
+  .fancybox-skin
+    width: 100% !important
+    height: 100% !important
+    .fancybox-inner
+      width: 100% !important
+      height: 100% !important
+      background: rgba(34, 31, 32, 1)
+      img.fancybox-image
+        max-width: auto !important
+        width: auto !important
+        margin: 0 auto
+    a.fancybox-nav
+      span
+        visibility: visible !important
+        width: 20px !important
+        height: 57px !important
+        opacity: 0.4
+        +transition_all(0.5s)
+      &:hover span
+        opacity: 1
+
+    a.fancybox-prev
+      span
+        left: 20px !important
+        background: url("<%= asset_path('ET-arrow-1.svg') %>") no-repeat
+        background-size: 100% !important
+    a.fancybox-next
+      span
+        right: 20px !important
+        background: url("<%= asset_path('ET-arrow.svg') %>") no-repeat
+        background-size: 100% !important
+
+
+    a.fancybox-prev:hover span
+      background: url("<%= asset_path('ET-arrow-1.svg') %>") no-repeat
+      background-size: 100% !important
+    a.fancybox-next:hover span
+      background: url("<%= asset_path('ET-arrow.svg') %>") no-repeat
+      background-size: 100% !important
+
+#fancybox-thumbs
+  bottom: 0 !important
+  ul
+    li
+      opacity: 1 !important
+      border: none !important
+      padding: 0 !important
+      a
+        background: rgba(34, 31, 32, 0.8)!important
+        border: none !important
+        img
+          z-index: -1
+    li.active
+      opacity: 1  !important
+      border: none !important
+      a
+        img
+          z-index: 0
+a.close_fancybox_gallery
+  width: 40px
+  height: 40px
+  position: absolute
+  top: 20px
+  right: 20px
+  z-index: 10000
+  opacity: 0.4
+  +transition_all(0.5s)
+  svg
+    width: 100%
+    height: 100%
+  &:hover
+    opacity: 1
+
+/*.fancybox-overlay-fixed*/
+  /*position: fixed*/
+  /*bottom: 0*/
+  /*right: 0*/
 
 
 
