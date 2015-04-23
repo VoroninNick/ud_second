@@ -770,17 +770,89 @@ p
   ul
     margin-left: 0
     list-style: none
+    li
+      margin-bottom: 35px
+      strong
+        color: #2E3E51
+        font:
+          size: rem-calc(24)
+          weight: 400
+          family: "Fira Sans", sans-serif
+        line-height: rem-calc(28)
+      p
+        color: #2E3E51
+        font:
+          size: rem-calc(14)
+          weight: 300
+        line-height: rem-calc(28)
+        margin-bottom: 0
+        span
+          padding-left: 1rem
   nav
     list-style: none
     li
       display: inline-block
       padding-right: 8px
+      &:nth-child(n+2)
+        padding-left: 8px
+        border-left: 1px solid #BEC3C7
       a
         color: #D03F4A
         font:
           size: rem-calc(14)
           weight: 300
         line-height: rem-calc(21)
+
+.ud-browse-image-input
+  position: relative
+  overflow: hidden
+  padding: 1px
+  label
+    display: inline-block
+    width: 100%
+    height: 0
+    padding-bottom: 100%
+    background-color: #BEC3C7
+    &:before
+      display: block
+      content: ""
+      background-image: asset_url('ud-make-image.svg')
+      background-size: 100%
+      background-repeat: no-repeat
+      width: 40%
+      height: 0
+      padding-bottom: 40%
+      top: 35%
+      left: 50%
+      -webkit-transform: translate(-35%, -35%)
+      -moz-transform: translate(-35%, -35%)
+      -ms-transform: translate(-35%, -35%)
+      -o-transform: translate(-35%, -35%)
+      transform: translate(-50%, -35%)
+      position: absolute
+    &:after
+      display: inline-block
+      content: "new photo"
+      left: 0
+      -webkit-transform: translateY(-70%)
+      -moz-transform: translateY(-70%)
+      -ms-transform: translateY(-70%)
+      -o-transform: translateY(-70%)
+      transform: translateY(-70%)
+      position: absolute
+      top: 70%
+      color: #6D6E71
+      font-size: 0.875rem
+      font-weight: 400
+      text-transform: uppercase
+      width: 100%
+      text-align: center
+
+  input[type="file"]
+    visibility: hidden
+    position: absolute
+    left: -100px
+    top: -100px
 
 .p-photos-wrap
   .white-grey
@@ -789,6 +861,7 @@ p
     margin-bottom: 10px
   .p-avatar-one-item
     position: relative
+    margin: 1px
     .image
       max-width: 100%
       width: 100%
@@ -815,14 +888,23 @@ p
       font-size: rem-calc(14)
       font-weight: 400
       text-transform: uppercase
-      /*opacity: 0*/
+      opacity: 0
     .p-action-button
       position: absolute
       top: 0
       width: 32px
       height: 32px
       background-color: rgba(40, 127, 184, 0.8)
-      /*opacity: 0*/
+      opacity: 0
+      &.pa-crop
+        left: 0
+        svg
+          width: 70%
+          height: 100%
+          margin: 0 auto
+          display: block
+          path
+            fill: #fff
       &.pa-remove
         right: 0
         svg
@@ -832,28 +914,61 @@ p
           display: block
           polygon
             fill: #fff
+    &:hover
+      a.p-set-as-avatar, .p-action-button
+        opacity: 1
 
 .p-gallery-wrap
   .white-grey
     padding-top: 30px
     padding-bottom: 40px
     margin-bottom: 10px
-    a
-      .image
-        max-width: 100%
-        width: 100%
-        height: 0
-        padding-bottom: 100%
-        overflow: hidden
-        -webkit-background-size: cover !important
-        -moz-background-size: cover !important
-        -o-background-size: cover !important
-        background-size: cover !important
-        margin: 0 auto
+
+    .pg-one-item
+      position: relative
+      margin: 1px
+      &:hover .pg-action-button
+        opacity: 1
+      .pg-action-button
+        position: absolute
+        top: 0
+        width: 32px
+        height: 32px
+        background-color: rgba(40, 127, 184, 0.8)
+        opacity: 0
+        &.pga-remove
+          right: 0
+          svg
+            width: 59%
+            height: 100%
+            margin: 0 auto
+            display: block
+            polygon
+              fill: #fff
+      a
+        .image
+          max-width: 100%
+          width: 100%
+          height: 0
+          padding-bottom: 100%
+          overflow: hidden
+          -webkit-background-size: cover !important
+          -moz-background-size: cover !important
+          -o-background-size: cover !important
+          background-size: cover !important
+          margin: 0 auto
 
 .p-information-about-wrap
+  padding-bottom: 60px
   form
     padding-top: 20px
+  .pia-more-info-wrap
+    p
+      color: #58595B
+      font:
+        size: rem-calc(14)
+        weight: 300
+      line-height: rem-calc(24)
   a.more
     width: 100%
     text-align: center
