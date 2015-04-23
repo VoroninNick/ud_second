@@ -29,7 +29,7 @@ $.fn.observeMouseOut = (options)->
 
 $(document).ready ->
 #  image gallery
-#  $("a.fancy_gallery").fancybox
+  $("a.fancy_gallery").fancybox()
 #    padding: 0
 #    width: '100%'
 #    closeBtn : false
