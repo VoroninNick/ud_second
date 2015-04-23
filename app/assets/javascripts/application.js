@@ -17,7 +17,7 @@
 //= require owl.carousel
 //= require main
 //= require settings
-//= require fancybox
+// require fancybox
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
