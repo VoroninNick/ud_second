@@ -29,7 +29,14 @@ $.fn.observeMouseOut = (options)->
 
 $(document).ready ->
 #  image gallery
-  $("a.fancy_gallery").fancybox()
+  $("a.fancy_gallery").fancybox
+#    afterLoad: ->
+#    @title = 'Image ' + @index + 1 + ' of ' + @group.length + (if @title then ' - ' + @title else '')
+#    return
+    beforeShow : ->
+#      @.title = (@.title ? '' + @.title + '' : '') + ' ' + (@.index + 1) + ' of ' + @.group.length + '.'
+      @.title = (@.title ? '' + @.title + '' : '') + ' ' + (@.index + 1) + '/' + @.group.length
+      return
 #    padding: 0
 #    width: '100%'
 #    closeBtn : false
