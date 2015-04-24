@@ -65,10 +65,10 @@ class MainController < ApplicationController
                   name: "Buy credits",
                   href: "#"
               },
-              # my_credit_card: {
-              #     name: "My credit card",
-              #     href: "#"
-              # },
+              my_credit_card: {
+                  name: "My credit card",
+                  href: "#"
+              },
               purchase_history: {
                 name: "Purchase history",
                 href: "#"
@@ -219,6 +219,32 @@ class MainController < ApplicationController
               },
               notifications_stickers: {
                   name: "Notifications stickers"
+              }
+          }
+      },
+      view_settings: {
+          left_menu_items: {
+              test1: {
+                  name: "Test 1"
+              },
+              test2: {
+                  name: "Test 2"
+              },
+              test3: {
+                  name: "Test 3"
+              }
+          }
+      },
+      other_settings: {
+          left_menu_items: {
+              test1: {
+                  name: "Test 1"
+              },
+              test2: {
+                  name: "Test 2"
+              },
+              test3: {
+                  name: "Test 3"
               }
           }
       }

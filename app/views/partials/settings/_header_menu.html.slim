@@ -5,26 +5,30 @@
         nav
           li class=("active" if @active_section == :account_settings) data-section="account_settings"
             a
-              .icon
-                =embedded_svg "UAD-inbox-2-Intro.svg"
-              .title
-                b Account settings
+              .inner
+                .icon
+                  =embedded_svg "UAD-inbox-2-Intro.svg"
+                .title
+                  b Account settings
 
           li class=("active" if @active_section == :notification_settings)  data-section="notification_settings"
             a
-              .icon
-                =embedded_svg "../UD-icon-notifications.svg"
-              .title
-                b Notification settings
+              .inner
+                .icon
+                  =embedded_svg "../UD-icon-notifications.svg"
+                .title
+                  b Notification settings
           li class=("active" if @active_section == :view_settings) data-section="view_settings"
             a
-              .icon
-                =embedded_svg "../UD-icon-fullscreen.svg"
-              .title
-                b View settings
+              .inner
+                .icon
+                  =embedded_svg "../UD-icon-fullscreen.svg"
+                .title
+                  b View settings
           li class=("active" if @active_section == :other_settings) data-section="other_settings"
             a
-              .icon
-                =embedded_svg "UD-icon-eye.svg"
-              .title
-                b Other settings
+              .inner
+                .icon
+                  =embedded_svg "UD-icon-eye.svg"
+                .title
+                  b Other settings

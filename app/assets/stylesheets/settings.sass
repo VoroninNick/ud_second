@@ -32,6 +32,15 @@ $container-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3)
   color: $red-link-color
   font-size: rem-calc(35)
   height: rem-calc(36)
+%paragraph-with-small-text
+  font:
+    size: rem-calc(12)
+    weight: 300
+    family: "Fira Sans", sans-serif
+  color: #2E3E51
+  line-height: rem-calc(14.4)
+  padding-top: 7px
+  padding-left: 12px
 %small-gray-text
   font-size: rem-calc(14)
   color: #aaa
@@ -62,6 +71,7 @@ $container-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3)
     line-height: 1
 
 
+
 .small-bold-black-text
   font-weight: 600
   color: black
@@ -84,6 +94,83 @@ $container-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3)
   outline: none !important
   +my_vertical_align
     position: absolute
+
+%settings-input
+  label
+    @extend %settings-input__label
+  input
+    @extend %settings-input__input
+%settings-input__label
+  font-size: 0.875rem
+  line-height: 1.05rem
+  color: #2E3E51
+  margin-bottom: 6px
+%settings-input__input
+  color: #D03F4A !important
+  font-size: 0.875rem !important
+  line-height: 1.05rem !important
+  outline: none !important
+  border: none
+  box-shadow: none !important
+  height: 35px
+  width: 100%
+  padding-left: 13px
+  &:focus
+    border: none !important
+
+%settings-sumo-select
+  width: 100%
+  .optWrapper
+    top: 35px
+  ul.options
+    max-height: rem-calc(12 * 35) // 12 options max else scrollbar
+    height: auto
+    overflow: auto
+    li
+      height: 35px
+      border-radius: 0!important
+      border-bottom: 1px solid #BEC3C7
+      padding: 0 0 0 35px
+      &:hover
+        background-color: #EDF0F1
+      span
+        i
+          background: #fff
+          border: 1px solid #BEC3C7
+      label
+        font:
+          size: rem-calc(14)
+        line-height: rem-calc(35)
+        color: #BEC3C7
+      &.selected
+        span
+          i
+            background-image: asset_url("UAD-check-(white).png")
+            background-color: #3598DB
+            border: none
+        label
+          color: #3598DB
+
+%settings-select-box
+  width: 100%
+  padding: 0
+  height: 35px
+  border: none
+  margin: 0
+  > span
+    height: 100%
+    line-height: rem-calc(35)
+    color: #BEC3C7
+    font:
+      size: rem-calc(14)
+      weight: 300
+    padding-left: 12px
+  > label
+    background-color: transparent !important
+    > i
+      background-image: asset_url("UAD-triangle-grey.png")
+      width: 100%
+      height: 100%
 
 
 $settings-header-height: rem-calc(85)
@@ -319,19 +406,34 @@ $settings-header-height: rem-calc(85)
     width: 100%
 
 
+.settings-content
+  .action
+    p
+      @extend %paragraph-with-small-text
+
 // ==============================================================
 // --------------------------------------------------------------
 // Profile data
 // --------------------------------------------------------------
 // ==============================================================
+#account-settings__profile-data
+  .input
+    input
+      @extend %settings-input__input
+  .action
+    p
+      //@extend %paragraph-with-small-text
 
 .profile-data-content
   width: grid-calc(7, 12)
   .SumoSelect
-    > .CaptionCont
+    @extend %settings-sumo-select
+    //> .CaptionCont
       > label
         background-color: transparent
         > i
+  .SlectBox
+    @extend %settings-select-box
 
   .actions
     @extend %help
@@ -348,7 +450,8 @@ $settings-header-height: rem-calc(85)
     width: 100%
 
     > .SumoSelect
-      .CaptionCont
+      //@extend %settings-sumo-select
+      //.CaptionCont
         width: 100%
 
     > label
@@ -413,7 +516,9 @@ $settings-header-height: rem-calc(85)
     height: rem-calc(170)
   > label
     +grid-column(3)
-    @extend %small-darkblue-text
+    //@extend %small-darkblue-text
+    //@extend %settings-input__input
+    @extend %settings-input__label
     line-height: rem-calc(35)
     min-height: rem-calc(35)
   .inputs
@@ -1005,12 +1110,17 @@ form, .inputs, .email-settings-section.options
         display: block !important
 
 
-#account-settings-password-change, #account-settings-account-deactivation
+#account-settings__password-change, #account-settings__account-deactivation
+  .input
+    label
+      @extend %settings-input__label
+    input
+      //width: 100%
+      @extend %settings-input__input
   .actions
     .action
       input
         width: 100%
-
 
 
 
@@ -1178,11 +1288,14 @@ form, .inputs, .email-settings-section.options
         display: inline-block
         float: left
         cursor: pointer
+        color: #ccc
+        font-size: rem-calc(14)
+        font-weight: 500
 
 
 
         &.active-mobile-tab, &:hover
-          background: $light-blue-text-color
+          background: $active-tab-background-color
           color: white
     .plans
       width: 50%
@@ -1192,3 +1305,49 @@ form, .inputs, .email-settings-section.options
           display: none
 
 
+.settings-nav-wrap
+  background-color: #2E2E36
+  width: 100%
+  margin-bottom: 30px
+
+
+  nav
+    li
+      list-style: none
+      //width: 13.5%
+      width: calc(25% - 4px )
+      display: inline-block
+      border-left: 1px solid #27272E
+
+      a
+        display: inline-block
+        border-left: rem-calc(1) solid #43434D
+        height: rem-calc(85)
+        padding-top: 0
+
+
+        @extend %center-content
+
+        .icon
+          position: relative
+          height: 30px
+          margin-bottom: 6px
+
+          svg
+            position: relative
+            top: 50%
+            +transform(translateY(-50%))
+            height: rem-calc(34)
+            width: 100%
+            max-width: 100%
+            max-height: 100%
+        .title
+          height: auto
+          b
+            position: relative
+
+  @media (min-width : 40.063em) and (max-width : #{em-calc(1445)})
+    > .row
+      > .columns
+        padding-left: rem-calc(85)
+        padding-right: rem-calc(85)

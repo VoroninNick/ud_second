@@ -1,5 +1,5 @@
 - content_key = "settings_account_settings_account_deactivation".to_sym
-#account-settings-account-deactivation.settings-content.account-deactivation-content data-key=content_key class=("active" if @active_content_key == content_key)
+#account-settings__account-deactivation.settings-content.account-deactivation-content data-key=content_key class=("active" if @active_content_key == content_key)
   = panel_with_header("Account deactivation") do
     .columns.large-12
       form.light-gray-text action="" method="post"
@@ -13,8 +13,8 @@
         .actions
           .action
             input.pasha-button.special-text-shadow type="submit" value="Deactivate my account"
-            br
-            |or&nbsp;
+            p
+              |or&nbsp;
 
-            span.small-light-red-text
-              |Clear form
+              span.small-light-red-text
+                |Clear form

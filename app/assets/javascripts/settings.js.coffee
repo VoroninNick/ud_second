@@ -44,6 +44,8 @@ $(document).on 'ready', ()->
       $items_from_inactive_section = $items_with_section.filter("[data-belongs-to-section!=#{section_name}]")
       $items_from_inactive_section.removeClass('visible')
       $items_from_active_section.addClass('visible')
+      window.FIRST_ACTIVE = $items_from_active_section.first()
+      $items_from_active_section.first().find('a').trigger('click')
 #  $('body').on 'change', '.popup-settings-content input#turn-popup-message[type=checkbox]', ()->
 #    $input = $(this);
 #    checked = $input.filter(':checked').length == 1

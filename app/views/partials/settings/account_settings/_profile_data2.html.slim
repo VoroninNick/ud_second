@@ -1,6 +1,6 @@
 - content_key = "settings_account_settings_profile_data".to_sym
 - profile_data = @settings[:account_settings][:profile_data]
-#account-settings-profile-data.settings-content.profile-data-content data-key=content_key class=("active" if @active_content_key == content_key)
+#account-settings__profile-data.settings-content.profile-data-content data-key=content_key class=("active" if @active_content_key == content_key)
   = panel_with_header("Profile data") do
     .columns.large-12
       form
@@ -106,7 +106,7 @@
             label Height:
             .inputs
               .profile-data-input.columns.large-8
-                input type="number" value="180"
+                input type="number" value="180" placeholder="Height"
               .profile-data-input.columns.large-4
                 select.ud-multiple
                   option value="1" cm
@@ -116,7 +116,7 @@
             label Weight:
             .inputs
               .profile-data-input
-                input type="number"
+                input type="number" placeholder="Weight"
 
           .my-field
             label Hair color:
@@ -175,17 +175,17 @@
             label Education:
             .inputs
               .profile-data-input
-                input type="text"
+                input type="text" placeholder="Education"
           .my-field
             label Occupation:
             .inputs
               .profile-data-input
-                input type="text"
+                input type="text" placeholder="Occupation"
           .my-field
             label Religion:
             .inputs
               .profile-data-input
-                input type="text"
+                input type="text" placeholder="Religion"
           .my-field
             label Marrital status:
             .inputs
@@ -259,31 +259,29 @@
             label Signature:
             .inputs
               .profile-data-input
-                input type="text"
+                input type="text" placeholder="Signature"
           .my-field
             label Greeting:
             .inputs
               .profile-data-input
-                input type="text"
+                input type="text" placeholder="Greeting"
 
           .my-field
             label About me:
             .inputs
               .profile-data-input
-                textarea
-                  = "I have been working with writing challenged clients for over four years. (How long you've been providing a service is useful information.) The site provides ghost writing, coaching and ghost editing services."
+                textarea placeholder="I have been working with writing challenged clients for over four years. (How long you've been providing a service is useful information.) The site provides ghost writing, coaching and ghost editing services."
 
           .my-field
             label My type of lady:
             .inputs
               .profile-data-input
-                textarea
-                  = "I have been working with writing challenged clients for over four years. (How long you've been providing a service is useful information.) The site provides ghost writing, coaching and ghost editing services."
+                textarea placeholder="I have been working with writing challenged clients for over four years. (How long you've been providing a service is useful information.) The site provides ghost writing, coaching and ghost editing services."
 
         .actions
           .action.save
             input.pasha-button.special-text-shadow type="submit"  value="Save changes"
-            br
-            |or&nbsp;
-            span.small-light-red-text
-              |Clear form
+            p
+              |or&nbsp;
+              span.small-light-red-text
+                |Clear form

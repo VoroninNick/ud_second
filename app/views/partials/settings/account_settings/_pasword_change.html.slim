@@ -1,5 +1,5 @@
 - content_key = "settings_account_settings_password_change".to_sym
-#account-settings-password-change.settings-content.password-change-content data-key=content_key class=("active" if @active_content_key == content_key)
+#account-settings__password-change.settings-content.password-change-content data-key=content_key class=("active" if @active_content_key == content_key)
   = panel_with_header("Password change") do
     .columns.large-12
       form.light-gray-text action="" method="post"
@@ -19,8 +19,8 @@
         .actions
           .action
             input.pasha-button.special-text-shadow type="submit" value="Change my password"
-            br
-            |or&nbsp;
+            p
+              |or&nbsp;
 
-            span.small-light-red-text
-              |Clear form
+              span.small-light-red-text
+                |Clear form
