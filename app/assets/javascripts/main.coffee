@@ -28,37 +28,40 @@ $.fn.observeMouseOut = (options)->
       $containers.trigger('mouseUpOut')
 
 $(document).ready ->
+# edit changes informations
+  $('.p-edit-iam').click (e)->
+    e.preventDefault()
+    $wrap = $(@).closest('form')
+    if $wrap.hasClass('p-editing-form')
+      $wrap.removeClass('p-editing-form')
+    else
+      $wrap.addClass('p-editing-form')
+    $('.p-input-preview').hide()
+    $('.p-input-edit').show()
+    $(@).addClass('hide')
+    $saveButton = $wrap.find('.special-text-shadow.p-save-iam')
+    $saveButton.removeClass('hide')
+
+# save changes informations
+  $('.p-save-iam').click (e)->
+    e.preventDefault()
+    $wrap = $(@).closest('form')
+    if $wrap.hasClass('p-editing-form')
+      $wrap.removeClass('p-editing-form')
+    else
+      $wrap.addClass('p-editing-form')
+    $('.p-input-preview').show()
+    $('.p-input-edit').hide()
+    $(@).addClass('hide')
+    $editButton = $wrap.find('.p-edit-iam')
+    $editButton.removeClass('hide')
+
+
 #  image gallery
   $("a.fancy_gallery").fancybox
-#    afterLoad: ->
-#    @title = 'Image ' + @index + 1 + ' of ' + @group.length + (if @title then ' - ' + @title else '')
-#    return
     beforeShow : ->
-#      @.title = (@.title ? '' + @.title + '' : '') + ' ' + (@.index + 1) + ' of ' + @.group.length + '.'
       @.title = (@.title ? '' + @.title + '' : '') + ' ' + (@.index + 1) + '/' + @.group.length
       return
-#    padding: 0
-#    width: '100%'
-#    closeBtn : false
-#    prevEffect: "none"
-#    nextEffect: "none"
-#    helpers:
-#      title:
-#        type: "outside"
-#
-##      thumbs:
-##        width: 75
-##        height: 50
-#    tpl:
-#      wrap: "<div id=\"gallery_wrapper\" class=\"fancybox-wrap mywrap\" tabIndex=\"-1\"><div class=\"fancybox-skin\"><div class=\"fancybox-outer\"><div class=\"fancybox-inner\"></div><a class=\"close_fancybox_gallery\" onclick=\"$.fancybox.close()\"><svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"
-#width=\"14.85px\" height=\"14.849px\" viewBox=\"0 0 14.85 14.849\" enable-background=\"new 0 0 14.85 14.849\" xml:space=\"preserve\">
-#<polygon fill=\"#D1D3D4\" points=\"14.85,0.707 14.143,0 7.425,6.718 0.707,0 0,0.707 6.718,7.425 0,14.142 0.707,14.849 7.425,8.132
-#	14.143,14.849 14.85,14.142 8.132,7.425 \"/>
-#</svg></a></div></div></div>"
-#  $("a.fncy-custom-close").click (e) ->
-#    e.preventDefault()
-#    $.fancybox.close()
-#    return
 
 #  profile edit and save field
   $('.p-input-preview div').click ->
