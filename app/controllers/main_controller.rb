@@ -36,6 +36,10 @@ class MainController < ApplicationController
 
   end
 
+  def information
+
+  end
+
   def second
 
   end

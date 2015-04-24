@@ -17,6 +17,7 @@ Rails.application.routes.draw do
 
   get 'profile_girl' => 'main#profile_woman'
   get 'profile' => 'main#profile'
+  get 'information' => 'main#information'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
