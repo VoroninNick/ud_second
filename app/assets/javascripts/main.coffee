@@ -28,6 +28,22 @@ $.fn.observeMouseOut = (options)->
       $containers.trigger('mouseUpOut')
 
 $(document).ready ->
+# init tabs
+  $('.ud-tab').hide()
+  $('.ud-tab').first().show()
+  $('.ud-tab-link').first().addClass('active')
+
+  $('.ud-tab-link').click ->
+    current_position = $(@).index()
+    $wrap = $(@).closest('.ud-tabs-wrap')
+    $form_wrap = $wrap.find('.ud-tab')
+
+    $('.ud-tab-link').removeClass('active')
+    $(@).addClass('active')
+
+    $('.ud-tab').hide()
+    $form_wrap.eq(current_position).show()
+
 # edit changes informations
   $('.p-edit-iam').click (e)->
     e.preventDefault()

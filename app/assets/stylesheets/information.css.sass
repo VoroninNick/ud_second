@@ -1,0 +1,49 @@
+.information-page-wrap
+  nav
+    list-style: none
+    li
+      a
+        font:
+          size: 1rem
+          weight: 300
+          family: "Fira Sans", sans-serif
+        line-height: 2.375rem
+        color: #808285
+      &.active
+        a
+          color: #D03F4A
+          font-weight: 400
+  .i-one-sub-page-tab
+    .white-grey
+      min-height: 450px
+      margin-bottom: 45px
+      .ud-button
+        width: auto !important
+        padding: 0 30px
+  strong
+    display: block
+
+.ud-quote
+  color: #FF6F70
+  padding-left: 15%
+  padding-top: 25px
+  position: relative
+  &:before 
+    display: block 
+    content: ''
+    background-image: asset_url('UAD-quote-red.svg')
+    background-size: 100% 
+    background-repeat: no-repeat
+    width: 60px
+    height: 50px
+    position: absolute
+    left: 10%
+    top: 0
+    opacity: .3
+  q
+    position: relative
+    font:
+      size: rem-calc(14)
+      weight: 200
+      style: italic
+    line-height: rem-calc(18)
