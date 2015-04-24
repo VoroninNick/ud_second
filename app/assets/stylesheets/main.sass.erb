@@ -1959,7 +1959,50 @@ li.credits
                 display: none
           &:hover
             background-color: #F1F2F2
-
+a.close_fancybox_gallery
+  position: absolute
+  top: 0
+  right: 0
+.fancybox-outer
+  .fancybox-nav
+    span
+      width: 35px
+      height: 35px
+      background-size: 45%
+      background-repeat: no-repeat
+      background-position: center
+      background-color: rgba(40, 127, 184, 0.8)
+    &.fancybox-next
+      span
+        background-image: asset_url('UD-icon-arrow-up-r-white.svg')!important
+        right: -18px
+    &.fancybox-prev
+      span
+        background-image: asset_url('UD-icon-arrow-up-l-white.svg')!important
+        left: -18px
+.fancybox-close
+  height: 35px
+  width: 35px
+  background-color: rgba(40, 127, 184, 0.8)
+  background-image: asset_url('UD-icon-close-white.svg')
+  background-size: 65%
+  background-repeat: no-repeat
+  background-position: center
+.fancybox-overlay
+  background: #2E2E36 !important
+.fancybox-skin
+  padding: 0 !important
+.fancybox-title-float-wrap
+  right: 13px !important
+  span
+    background: transparent !important
+    color: #BEC3C7 !important
+    font:
+      size: rem-calc(16)
+      style: italic
+      weight: 200 !important
+      family: "Fira Sans", sans-serif
+    line-height: rem-calc(21) !important
 .medium-sidebar
   @media (min-width : 40.063em) and (max-width : 1700px)
     width: 310px
