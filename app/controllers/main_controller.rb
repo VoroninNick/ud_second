@@ -40,6 +40,10 @@ class MainController < ApplicationController
 
   end
 
+  def tripadvisor
+
+  end
+
   def second
 
   end

@@ -4,8 +4,7 @@
 //
 //
 
-$option-height: rem-calc(45)
-$container-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3)
+
 
 %boolean
   svg
@@ -196,26 +195,7 @@ $settings-header-height: rem-calc(85)
           height: rem-calc(30)
 
 
-.settings-left-menu
-  font-family: $fira-sans-font-family
-  li
-    &:not(.visible)
-      display: none
 
-  ul
-    list-style: none
-
-    a
-      color: $gray-text-color
-
-    li
-      height: rem-calc(40)
-      line-height: rem-calc(40)
-      &.active
-        a
-          height: inherit
-          color: $red-link-color
-          font-weight: 600
 
 .table
   text-align: center
@@ -323,21 +303,7 @@ $settings-header-height: rem-calc(85)
     width: grid-calc(3, 12)
 
 
-%settings-content
-  +grid-column(9, $collapse: true)
-  display: none
-  &.active
-    display: block
-  @media #{$medium-down}
-    width: 100%
-    padding-left: rem-calc(85)
-    padding-right: rem-calc(85)
-    max-width: none
-  @media #{$small-only}
-    padding-left: 0
-    padding-right: 0
-.settings-content
-  @extend %settings-content
+
 
 .panel-content
   padding: rem-calc(25) rem-calc(15) rem-calc(64) rem-calc(15)
@@ -883,70 +849,13 @@ form, .inputs, .email-settings-section.options
   .input-group-title
     line-height: rem-calc(16)
 
-@media #{$medium-down}
-  .settings-left-menu, .settings-content
-    padding: 0 rem-calc(85)
 
-  .settings-left-menu
-    text-align: center
-    height: rem-calc(40)
-    top: rem-calc(-15)
-
-    ul
-      display: inline-block
-      text-align: left
-      margin: 0
-      padding-left: rem-calc(22)
-      padding-right: rem-calc(27)
-
-    li
-      &:not(.active)
-        display: none
-      &.active
-        //text-align: center
-        display: block
-        a
-          //padding: 0 rem-calc(30)
-          padding-right: rem-calc(30)
-          display: inline-block
-          position: relative
-          text-transform: uppercase
-          &:after
-            +css-triangle(rem-calc(5), $red-link-color, top)
-            position: absolute
-            top: rem-calc(18)
-            right: rem-calc(15)
-
-    &.opened
-      z-index: 1
-      ul
-        background-color: #ecf0f1
-
-        box-shadow: $container-box-shadow
-      li
-        display: block
-
-        &.active
-          a
-            padding-right: 0
-            &:after
-              display: none
-        &:not(.visible)
-          display: none
-  .settings-content
-    margin: 0 auto
-    position: relative
-    float: none
-    clear: both
-    width: 100%
 @media (max-width: #{rem-calc(740)})
   .offered-credits
     .credit
       width: grid-calc(6, 12)
 
-@media #{$small-only}
-  .settings-left-menu, .settings-content
-    padding: 0
+
 
 #account-settings-membership-plan
   .invitation-and-plans-items

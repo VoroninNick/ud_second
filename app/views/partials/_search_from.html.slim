@@ -1,0 +1,23 @@
+.ud-find-form-wrap
+  .row.medium-main
+    .columns.large-12.medium-10.medium-centered
+      .row
+        .columns.large-3.small-12
+          .label-wrap
+            label for="f-user-name"
+              =embedded_svg "UD-icon-search.svg"
+              |find a lady by
+        .columns.large-7
+          .row
+            .columns.large-4.small-4
+              .input data-word="or"
+                input#f-user-name name="f-user-name" placeholder="User name"
+            .columns.large-4.small-4
+              .input data-word="or"
+                input#f-user-id name="f-user-id" placeholder="User ID"
+            .columns.large-4.small-4
+              .input
+                input#f-keyword name="f-keyword" placeholder="Keyword"
+        .columns.large-2.small-12
+          .input.form-action
+            button SEARCH

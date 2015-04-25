@@ -1,0 +1,23 @@
+.tripadvisor-page-wrap.ud-tabs-wrap
+  .row.medium-main
+    .columns.medium-10.medium-centered.large-12
+      .row
+        .columns.large-4.medium-4.small-4.ud-tab-link
+          |1
+          |Find a lady
+        .columns.large-4.medium-4.small-4.ud-tab-link
+          |2
+          |Book an appartment
+        .columns.large-4.medium-4.small-4.end.ud-tab-link
+          |3
+          |Book airport pick-up service
+      .row
+        columns
+          p IMPORTANT! For every new date you should fill in a new application
+
+  =render partial: "partials/search_from"
+  .row.medium-main
+    .columns.medium-10.medium-centered.large-12
+      =render partial: "partials/tripadvisor/find_lady"
+      =render partial: "partials/tripadvisor/book_and_appartment"
+      =render partial: "partials/tripadvisor/book_airport"
