@@ -46,7 +46,7 @@ end
 gem 'thin'
 gem 'slim-rails'
 
-gem 'foundation-rails'
+gem 'foundation-rails', '5.5.1.0'
 
 gem 'bxslider-rails'
 gem 'owlcarousel-rails'
