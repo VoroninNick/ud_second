@@ -1,0 +1,18 @@
+.tripadvisor-page-wrap
+  .tp-tab-title
+    cursor: pointer
+    b
+      color: #BEC3C7
+      font:
+        size: rem-calc(26)
+        family: dearjoe_1_msregular
+      line-height: rem-calc(43)
+
+      &:before
+        display: block
+        content: attr(data-tab-number)
+        font-size: rem-calc(100)
+        line-height: rem-calc(100)
+    &.active
+      b
+        color: #3598DB
