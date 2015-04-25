@@ -1,48 +1,50 @@
 .i-one-sub-page-tab.ud-tab
-  .title-head.grey.notification-wrap
-    .columns
-      .wrap
-        h4 Contact us
-  .white-grey
-    .columns
-      p Fill and send the following form, and we will answer you as soon as possible.
-      form
-        .input
-          label Type of support
-          select
-            option Please select
-            option value="1" 1
-            option value="2" 2
-            option value="3" 3
-        .input
-          label
-            |Subject
-            span
-              |(0/1000)
-          textarea type="text" rows="7" placeholder="For more detail information"
-        .input
-          label
-            |Comment
-            span
-              |(0/1000)
-          textarea type="text" rows="7" placeholder="Any additional comments and attached files"
-        .row
-          .columns
-            a.ud-button.special-text-shadow.right  href="#" Send
-            .ud-browse-images-wrap.notification-wrap.right
-              a.edit-icon-svg.browse-file.notification-link
-                = embedded_svg "UD-icon-add files.svg"
-              .notification-container
-                .menu
-                  .group
-                    .options
-                      .option
-                        .label
-                          .icon
-                            = embedded_svg "ud-make-image.svg"
-                        .input
-                          a data-reveal-id="AddAPictures" Add a picture
-                        .clearfix
-
+  .row
+    .columns.large-8.medium-8.end
+      .title-head.grey.notification-wrap
+        .columns
+          .wrap
+            h4 Contact us
+      .white-grey
+        .columns
+          b Fill and send the following form, and we will answer you as soon as possible.
+          form
+            .input
+              label Type of support
+              select
+                option Please select
+                option value="1" 1
+                option value="2" 2
+                option value="3" 3
+            .input
+              label
+                |Subject
+                span
+                  |(0/1000)
+              textarea type="text" rows="7" placeholder="For more detail information"
+            .input
+              label
+                |Comment
+                span
+                  |(0/1000)
+              textarea type="text" rows="7" placeholder="Any additional comments and attached files"
+            .row
+              .columns
+                a.ud-button.special-text-shadow.right  href="#" Send
+                .ud-browse-images-wrap.notification-wrap.right
+                  a.edit-icon-svg.browse-file.notification-link
+                    = embedded_svg "UD-icon-add files.svg"
+                  .notification-container
+                    .menu
+                      .group
+                        .options
+                          .option
+                            .label
+                              .icon
+                                = embedded_svg "ud-make-image.svg"
+                            .input
+                              a data-reveal-id="AddAPictures" Add a picture
+                            /.clearfix
+        .clearfix
 
     .clearfix

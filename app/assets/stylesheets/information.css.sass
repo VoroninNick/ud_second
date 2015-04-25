@@ -21,28 +21,56 @@
       .ud-button
         width: auto !important
         padding: 0 30px
-  h4, b, p
-    color: #2E3E51
-  h4, b
-    font:
-      weight: 500
-  h4
-    font:
-      size: rem-calc(21)
-    line-height: rem-calc(18)
-  b, p
-    font:
-      size: rem-calc(14)
-    line-height: rem-calc(18)
+        margin: 0 0 25px 0
 
-  strong
-    display: block
+      // check for default styling form
+      form
+        .input
+          label
+            color: #2E3E51
+            font:
+              size: rem-calc(14)
+              weight: 700
+              family: "Fira Sans", sans-serif
+            line-height: rem-calc(16.8)
+            margin-bottom: 7px
+            span
+              color: #BEC3C7
+              font-weight: 300
+              padding-left: 13px
+          input, textarea
+            margin-bottom: 14px
+
+
+
+      h4, b, p, strong
+        color: #2E3E51
+      h4, b, strong
+        font:
+          weight: 500
+      h4
+        font:
+          size: rem-calc(21)
+        line-height: rem-calc(18)
+        margin-bottom: 1.25rem
+      b, p, strong
+        font:
+          size: rem-calc(14)
+        line-height: rem-calc(18)
+      b, strong
+        margin-bottom: 1.25rem
+        display: block
+      p
+        font:
+          weight: 300
+
 
 .ud-quote
   color: #FF6F70
   padding-left: 15%
   padding-top: 25px
   position: relative
+  margin-bottom: 1.25rem
   &:before 
     display: block 
     content: ''
@@ -71,3 +99,5 @@
       margin-right: 20px
       polygon
         fill: #48647C
+
+
