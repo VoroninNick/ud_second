@@ -1,4 +1,135 @@
 .tripadvisor-page-wrap
+  .input
+    .input-select-date, .input-select-time
+      float: left
+    .input-select-date
+      width: 66.6%
+      input
+        width: calc(100% - 55px)
+        float: left
+    .input-select-time
+      width: 33.3%
+    img
+      height: 35px
+      width: 35px
+      margin-left: 10px
+  .t-book-apartment-gallery-wrap
+    padding-top: 45px
+    .tbag-image-preview-wrap
+      .image
+        max-width: 100%
+        width: 100%
+        height: 0
+        padding-bottom: 59%
+        overflow: hidden
+        -webkit-background-size: cover !important
+        -moz-background-size: cover !important
+        -o-background-size: cover !important
+        background-size: cover !important
+        margin: 0 auto
+    .tbag-thumbs-wrap
+      a
+        display: block
+        margin-bottom: 15px
+        position: relative
+        .image
+          max-width: 100%
+          width: 100%
+          height: 0
+          padding-bottom: 60%
+          overflow: hidden
+          -webkit-background-size: cover !important
+          -moz-background-size: cover !important
+          -o-background-size: cover !important
+          background-size: cover !important
+          margin: 0 auto
+          &:before
+            display: block
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            right: 0
+            bottom: 0
+            background-color: rgba(46, 46, 54, .8)
+        &.active
+          .image:before
+            display: none
+
+  .t-tab-wrap
+    margin-bottom: 120px
+    .t-find-girl-wrap
+      margin-top: 60px
+      svg
+        width: 60%
+        height: 100%
+      p
+        color: #BEC3C7
+        font:
+          size: rem-calc(14)
+          weight: 500
+        line-height: rem-calc(16.8)
+
+      .t-button-step-wrap
+        position: relative
+        a
+          margin: 0
+          +my_horizontal_align
+            position: absolute
+  .t-button-step-wrap
+    height: 35px
+    a
+      margin: 0
+  .t-button-finish-step-wrap
+    a.ud-button
+      width: 100%
+
+  .t-prev-step-wrap
+    height: 35px
+    padding-left: 30px
+    margin-top: 10px
+    position: relative
+
+    &:before
+      display: block
+      content: ''
+      position: absolute
+      left: 0
+      top: 8px
+      width: 18px
+      height: 18px
+      background-image: asset_url('UAD-icon-arrow-stepl.svg')
+      background-size: 100%
+      background-repeat: no-repeat
+      background-position: center
+    a
+      color: #BEC3C7
+      font:
+        size: rem-calc(18)
+        weight: 700
+      text:
+        transform: uppercase
+      line-height: rem-calc(35)
+  .t-book-tab-wrap
+    b, p
+      font:
+        size: rem-calc(14)
+        family: "Fira Sans", sans-serif
+      color: #2E3E51
+
+    b
+      font:
+        weight: 500
+      line-height: rem-calc(16.8)
+    p
+      font:
+        weight: 300
+      line-height: rem-calc(18)
+    form
+      padding-top: 25px
+    .t-button-step-wrap
+      float: right
+      margin-top: 10px
   .tp-tab-title
     cursor: pointer
     b
@@ -16,3 +147,67 @@
     &.active
       b
         color: #3598DB
+.ui-datepicker
+  border: none!important
+  border-radius: 0 !important
+  padding: 0 !important
+  .ui-datepicker-header
+    background: #3598DB !important
+    border: none!important
+    border-radius: 0 !important
+    a
+      .ui-icon
+        background-size: 100%
+        background-repeat: no-repeat
+        background-position: center
+      &.ui-datepicker-prev
+        .ui-icon
+          background-image: asset_url('UD-icon-arrow-up-l-white.svg')
+      &.ui-datepicker-next
+        .ui-icon
+          background-image: asset_url('UD-icon-arrow-up-r-white.svg')
+    .ui-datepicker-title
+      span
+        color: #fff
+        font:
+          size: rem-calc(12)
+          weight: 300
+          family: "Fira Sans", sans-serif
+        line-height: rem-calc(14.4)
+        &.ui-datepicker-month
+        &.ui-datepicker-year
+
+  table.ui-datepicker-calendar
+    border: none
+    thead
+      background: transparent
+      tr
+        th
+          span
+            color: #3598DB
+            font:
+              size: rem-calc(16)
+              weight: 300
+              style: italic
+              family: "Fira Sans", sans-serif
+            line-height: rem-calc(19.2)
+    tbody
+      tr
+        background: transparent
+        td
+          a.ui-state-default
+            color: #48647C
+            text-align: center
+            background: transparent
+            border: none
+            font:
+              size: rem-calc(12)
+              family: "Fira Sans", sans-serif
+              weight: 400
+            line-height: rem-calc(34)
+            height: 34px
+            &.ui-state-highlight
+              background: #EDF0F1
+            &:hover
+              background: #FF6F70
+              color: #fff

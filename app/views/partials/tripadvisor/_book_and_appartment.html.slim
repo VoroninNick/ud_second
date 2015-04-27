@@ -1,1 +1,80 @@
-.ud-tab
+.ud-tab.t-tab-wrap.t-book-tab-wrap
+  .row.medium-main
+    .columns.medium-10.medium-centered.large-12
+      .title-head.grey
+        .columns
+          .wrap
+            h4 Book an appartment (step 2)
+      .white-grey
+        .columns
+          .row
+            .columns.large-4.medium-4
+              form
+                .input
+                  label City
+                  select
+                    option value="Lviv" Lviv
+                    option value="Sevastopol" Sevastopol
+                    option value="Kyiv" Kyiv
+                .input
+                  label Apartment level
+                  select
+                    option value="VIP" VIP
+                    option value="Econom" Econom
+                    option value="Standart" Standart
+                .input
+                  label Bedrooms
+                  select
+                    option value="1bed" 1bed
+                    option value="2bed" 2bed
+                    option value="3bed" 3bed
+                .input
+                  label Check in date
+                  .input-select-date
+                    input.datepicker type="text"
+                  .input-select-time
+                    select
+                      option value="13:00" 13:00
+                      option value="13:00" 14:00
+                      option value="15:00" 15:00
+                      option value="16:00" 16:00
+                  p Check in time is after 13:00
+                .input
+                  label Check out date
+                  .input-select-date
+                    input.datepicker type="text"
+                  .input-select-time
+                    select
+                      option value="13:00" 13:00
+                      option value="13:00" 14:00
+                      option value="15:00" 15:00
+                      option value="16:00" 16:00
+                  p Check out time is before 11:00
+            .columns.large-8.medium-8
+              .row.t-book-apartment-gallery-wrap
+                .columns.large-9.medium-9
+                  .tbag-image-preview-wrap
+                    a.fancy_gallery href=asset_path("luxury-apartment-bedroom-apartments-luxurious-interior-apartments-photo-apartment-interior-design.jpg")
+                      .image.tbag-image style="background: url('#{asset_path("luxury-apartment-bedroom-apartments-luxurious-interior-apartments-photo-apartment-interior-design.jpg")}')no-repeat center center;"
+                .columns.large-3.medium-3.tbag-thumbs-wrap
+                  a.active data-href=asset_path("luxury-apartment-bedroom-apartments-luxurious-interior-apartments-photo-apartment-interior-design.jpg")
+                    .image style="background: url('#{asset_path("luxury-apartment-bedroom-apartments-luxurious-interior-apartments-photo-apartment-interior-design.jpg")}')no-repeat center center;"
+                  a data-href=asset_path("Luxury-penthouse-design-5.jpg")
+                    .image style="background: url('#{asset_path("Luxury-penthouse-design-5.jpg")}')no-repeat center center;"
+                  a data-href=asset_path("SAOTA-Victoria50_6.jpg")
+                    .image style="background: url('#{asset_path("SAOTA-Victoria50_6.jpg")}')no-repeat center center;"
+              .row
+                .columns
+                  b VIP appartment:
+                  p
+                    |Room is a room with two separate beds or one single bed for two persons, a wardrobe for clothes, a table and two chairs. There is a bathroom with shower cabin, toilet, washbasin and mirror.
+                  p
+                    |Our main objective is to help our Members find true love, as we provide all of the necessary features and contacts to make their search more pleasurable and successful.
+        .clearfix
+      .columns.large-6.medium-6
+        .t-prev-step-wrap
+          a.t-step-one Go back to step 1
+
+      .columns.large-6.medium-6
+        .t-button-step-wrap
+          a.more.tm-step-three Step 3

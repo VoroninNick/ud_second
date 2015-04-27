@@ -28,6 +28,56 @@ $.fn.observeMouseOut = (options)->
       $containers.trigger('mouseUpOut')
 
 $(document).ready ->
+# tripadvisor
+  $('.tbag-thumbs-wrap .image').click (e)->
+    e.preventDefault()
+
+    $wrapper = $(@).closest('.t-book-apartment-gallery-wrap')
+    $previewWrap = $wrapper.find('.tbag-image')
+    $hrefData = $(@).parent().attr('data-href')
+
+    $thisStyle = $(this).attr("style")
+    $previewWrap.attr style: $thisStyle
+    $previewWrap.parent().attr href: $hrefData
+
+    $('.tbag-thumbs-wrap a').removeClass('active')
+    $(@).parent().addClass(' active')
+
+  $('.t-prev-step-wrap a').click ->
+    $wrap = $(@).closest('.ud-tabs-wrap')
+    $tabHeader = $wrap.find('.ud-tab-link')
+    $tabs = $wrap.find('.ud-tab')
+
+    $('.tripadvisor-page-wrap .ud-tab-link').removeClass('active')
+    $tabs.hide()
+    if $(@).hasClass('t-step-one')
+      $tabHeader.eq(0).addClass(' active')
+      $tabs.eq(0).show()
+    if $(@).hasClass('t-step-two')
+      $tabHeader.eq(1).addClass(' active')
+      $tabs.eq(1).show()
+
+  $('.t-button-step-wrap a').click ->
+    $wrap = $(@).closest('.ud-tabs-wrap')
+    $tabHeader = $wrap.find('.ud-tab-link')
+    $tabs = $wrap.find('.ud-tab')
+
+    $('.tripadvisor-page-wrap .ud-tab-link').removeClass('active')
+    $tabs.hide()
+    if $(@).hasClass('tm-step-two')
+      $tabHeader.eq(1).addClass(' active')
+      $tabs.eq(1).show()
+    if $(@).hasClass('tm-step-three')
+      $tabHeader.eq(2).addClass(' active')
+      $tabs.eq(2).show()
+
+# datepicker
+  $('.datepicker').datepicker
+    showOn: 'button'
+    buttonImage: 'assets/UAD-calendar.png'
+    buttonImageOnly: true
+    buttonText: 'Select date'
+
 # init tabs
   $('.ud-tab').hide()
   $('.ud-tab').first().show()

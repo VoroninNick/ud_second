@@ -1,8 +1,14 @@
-.ud-tab
-  .row.text-center
-    .columns.large-3.large-centered.medium-3.medium-centered.small-6.small-centered
-      =embedded_svg "trip-first-step-girl-ico.svg"
-      p Choose a lady using search
-    .clearfix
-  .row
-    .columns.large-2.medium-2
+.ud-tab.t-tab-wrap
+  =render partial: "partials/search_from"
+  .row.medium-main
+    .columns.medium-10.medium-centered.large-12
+      .row.text-center
+        .columns.large-3.large-centered.medium-3.medium-centered.small-6.small-centered
+          .t-find-girl-wrap
+            =embedded_svg "UAD-icon-girl.svg"
+            p Choose a lady using search
+            .t-button-step-wrap
+              a.more.tm-step-two Step 2
+        .clearfix
+      .row
+        .columns.large-2.medium-2
