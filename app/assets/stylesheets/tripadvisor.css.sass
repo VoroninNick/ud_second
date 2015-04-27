@@ -85,6 +85,8 @@
   .t-book-apartment-gallery-wrap
     padding-top: 45px
     .tbag-image-preview-wrap
+      @media #{$small-only}
+        margin-bottom: $column-gutter
       .image
         max-width: 100%
         width: 100%
@@ -97,10 +99,16 @@
         background-size: cover !important
         margin: 0 auto
     .tbag-thumbs-wrap
+      .tbag-thumbs-inner
+        @media #{$small-only}
+          +grid-row(nest)
       a
         display: block
         margin-bottom: 15px
         position: relative
+        @media #{$small-only}
+          +grid-column(4)
+
         .image
           max-width: 100%
           width: 100%
@@ -116,9 +124,9 @@
             display: block
             content: ''
             position: absolute
-            left: 0
+            left: 0.9375rem
             top: 0
-            right: 0
+            right: 0.9375rem
             bottom: 0
             background-color: rgba(46, 46, 54, .8)
         &.active
@@ -150,6 +158,8 @@
     a
       margin: 0
   .t-button-finish-step-wrap
+    height: 35px
+    margin-top: 10px
     a.ud-button
       width: 100%
 
