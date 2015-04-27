@@ -28,6 +28,20 @@ $.fn.observeMouseOut = (options)->
       $containers.trigger('mouseUpOut')
 
 $(document).ready ->
+# tripadvisor finding girl
+  $('.t-result-finding-wrap .trf-choose-girl').click ->
+    $wrap = $(@).closest('.t-result-finding-wrap')
+    $girls = $wrap.find('.trf-one-girl-wrap')
+    $currentGirlWrap = $(@).closest('.trf-one-girl-wrap')
+
+    $nextStep = $wrap.find('.t-button-step-wrap')
+
+    $girls.hide()
+    $currentGirlWrap.show()
+    $currentGirlWrap.addClass('selected-girl')
+    $nextStep.show()
+
+
 # tripadvisor
   $('.tbag-thumbs-wrap .image').click (e)->
     e.preventDefault()
