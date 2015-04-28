@@ -54,3 +54,5 @@ gem 'owlcarousel-rails'
 gem 'fancybox2-rails', '~> 0.2.8'
 
 #gem 'debase'
+
+gem 'pry-rails'

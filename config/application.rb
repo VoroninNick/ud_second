@@ -22,5 +22,8 @@ module UdServiceSecond
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    #config.action_controller.relative_url_root
+    config.static_asset_paths = %w(:rails_root/app/assets2)
   end
 end

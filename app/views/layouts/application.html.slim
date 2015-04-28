@@ -10,8 +10,15 @@ html lang="en"
     = javascript_include_tag 'application'
     = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"
     = csrf_meta_tags
+    /sass:
+      *
+        display: none !important
+      .show, body, html
+        display: block !important
 
 body.ud-body
+  /h1.show
+    = asset_path("gallery-1.jpg")
   .primary-menu.main-menu-wrap.black.open-menu.medium-sidebar.slim-sidebar
     =render partial: "partials/main_menu"
 
