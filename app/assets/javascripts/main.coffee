@@ -28,6 +28,7 @@ $.fn.observeMouseOut = (options)->
       $containers.trigger('mouseUpOut')
 
 $(document).ready ->
+
 # tripadvisor finding girl
   $('.t-result-finding-wrap .trf-choose-girl').click ->
     $wrap = $(@).closest('.t-result-finding-wrap')
@@ -503,7 +504,7 @@ $(document).ready ->
     $frendContainer.toggleClass('hide')
 
 
-#  $('#AddAPictures').foundation('reveal', 'open')
+#  $('#SocialRegistration').foundation('reveal', 'open')
 
 #  init index page tabs wooman
   $('.favorites-nav-wrap:not(.settings-nav-wrap) .favorites-nav li').click ->
@@ -645,6 +646,14 @@ $(document).ready ->
     $containers.fadeOut duration: 300
 
   $notification_containers.observeMouseOut()
+
+#  $(window).resize ->
+#    footerHeight = $('.landing-page-wrap .l-footer-wrap').outerHeight()
+#    stickFooterPush = $('.l-registration-push').height(footerHeight)
+#    $('.landing-wrap').css 'marginBottom': '-' + footerHeight + 'px'
+#    return
+#  $(window).resize()
+#  return
 
 $(window).resize ->
   if $(window).width() >= 1445

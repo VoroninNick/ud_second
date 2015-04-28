@@ -1,6 +1,6 @@
 .l-why-we-wrap.l-registration-wrap
   .row
-    .columns.large-6.medium-6
+    .columns.large-6.medium-7
       .l-footer-registration-form-wrap
         form
           .lfrf-header
@@ -37,11 +37,11 @@
                   h5 Login using Social networks:
               .row.collapse.l-hf-socials-wrap
                 .columns.large-6.medium-6.small-6
-                  a
+                  a data-reveal-id="SocialRegistration" href=""
                     =embedded_svg "UAD-icons-vk.svg"
                     |Vkontakte
                 .columns.large-6.medium-6.small-6
-                  a
+                  a data-reveal-id="SocialRegistration" href=""
                     =embedded_svg "UAD-icons-odno.svg"
                     |odnoklassniki
               .row
@@ -72,7 +72,7 @@
             a
               |Terms of Use
 
-    .columns.large-6.medium-6
+    .columns.large-6.medium-5
       strong
         |Why
         span
@@ -96,3 +96,33 @@
           |YOUR PRIVACY IS 100% PROTECTED
         li
           |24/7 CUSTOMER SERVİCE AND SUPPORT
+.l-registration-push
+#SocialRegistration.reveal-modal data-reveal=""
+  .modal-wrap
+    .modal-header-wrap
+      h3 Synchronization
+      a.close-reveal-modal
+    .modal-content-wrap.your-introduction-letter
+      .row
+        .columns
+          p
+            |To finish synchronization with Vkontakte, enter your Email. As soon as your Email will be confirmed, your account will synchronized with Ukrainiandiamonds.com
+
+      .columns
+        .row.collapse
+          .columns.large-8.medium-8.small-8
+            .input
+              label Enter your email
+              input placeholder="Email"
+          .columns.large-4.medium-4.small-4
+            .input-ud-button
+              label
+                |&nbsp;
+              input type="submit" value="Confirm"
+            .ud-dismiss-wrap
+              p
+                |or&nbsp;
+                a.close-reveal-modal.dismiss
+                  |Dismiss
+
+      .clearfix

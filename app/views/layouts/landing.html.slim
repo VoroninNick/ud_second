@@ -12,94 +12,93 @@ html lang="en"
     = csrf_meta_tags
 
 body.landing-page-wrap
-  .landing-wrap
-    .l-header-wrap
-      .l-header.black
-        .row
-          .columns.large-3.medium-4.small-2
-            a href=root_path
-              .l-logo-wrap
-                .l-icon
-                  = image_tag "UD-logo-diamond.png"
-                .l-title
-                  =image_tag "UAD-logo-text.svg"
-          .columns.large-9.medium-8.small-10
-            ul.right
-              li.landing-header-anchors-hide-for-small
-                a href="#l-search" Search
-              li.landing-header-anchors-hide-for-small
-                a href="#l-couple-stories" Couple stories
-              li.landing-header-anchors-hide-for-small
-                a href="#l-men-say" Men say
-              li
-                a.l-ud-button.l-open-lhf-button login
+  .l-header-wrap
+    .l-header.black
+      .row
+        .columns.large-3.medium-4.small-2
+          a href=root_path
+            .l-logo-wrap
+              .l-icon
+                = image_tag "UD-logo-diamond.png"
+              .l-title
+                =image_tag "UAD-logo-text.svg"
+        .columns.large-9.medium-8.small-10
+          ul.right
+            li.landing-header-anchors-hide-for-small
+              a href="#l-search" Search
+            li.landing-header-anchors-hide-for-small
+              a href="#l-couple-stories" Couple stories
+            li.landing-header-anchors-hide-for-small
+              a href="#l-men-say" Men say
+            li
+              a.l-ud-button.l-open-lhf-button login
 
-        .row
-          .columns.large-4.medium-4.right
-            .l-header-login-form-wrap
-              .l-header-login-form-inner.lf-fp-popup-wrap.hide
-                .l-hlf-forgot-password-wrap
-                  .l-hlf-forgot-password.hide
-                    .columns
-                      form
-                        h3.text-center Password recovery
-                        p.text-center Enter  your email and we'll sent you a password  reset link
-                        .input
-                          label E-mail:
-                          input type="email" placeholder="usermail@gmail.com"
-                        .input-ud-button
-                          input type="submit" value="Recover my password"
-                        p.ud-s-clear
-                          |or&nbsp;
-                          a.ud-lfp-back
-                            |go back to login
-                    .clearfix
-
-                .l-header-login-form
+      .row
+        .columns.large-4.medium-4.right
+          .l-header-login-form-wrap
+            .l-header-login-form-inner.lf-fp-popup-wrap.hide
+              .l-hlf-forgot-password-wrap
+                .l-hlf-forgot-password.hide
                   .columns
-                    .row
-                      .columns
-                        h5 Login using Social networks:
-                    .row.collapse.l-hf-socials-wrap
-                      .columns.large-6.medium-6.small-6
-                        a
-                          =embedded_svg "UAD-icons-facebook.svg"
-                          |facebook
-                      .columns.large-6.medium-6.small-6
-                        a
-                          =embedded_svg "UAD-icons-twitter.svg"
-                          |twitter
-                    .row
-                      .columns
-                        .l-hf-label
-                          b
-                            |or
-                    .row
-                      form
-                        .columns
-                          .input
-                            label Username or e-mail:
-                            input type="email" placeholder="usermail@gmail.com"
-                          .input
-                            label Password:
-                            input type="password" placeholder="**********"
-
-                          .row
-                            .columns.large-6.medium-6.small-6
-                              .input
-                                .squared
-                                  input id="lf_remember_me" type="checkbox" value="remember me"
-                                  label for="lf_remember_me"
-                                .t-label
-                                  label for="lf_remember_me" Remember me
-
-                            .columns.large-6.medium-6.small-6
-                              a.ud-landing-forgot-password Forgot your password?
-                          .input-ud-button
-                            input type="submit" value="login"
+                    form
+                      h3.text-center Password recovery
+                      p.text-center Enter  your email and we'll sent you a password  reset link
+                      .input
+                        label E-mail:
+                        input type="email" placeholder="usermail@gmail.com"
+                      .input-ud-button
+                        input type="submit" value="Recover my password"
+                      p.ud-s-clear
+                        |or&nbsp;
+                        a.ud-lfp-back
+                          |go back to login
                   .clearfix
 
-    =yield
+              .l-header-login-form
+                .columns
+                  .row
+                    .columns
+                      h5 Login using Social networks:
+                  .row.collapse.l-hf-socials-wrap
+                    .columns.large-6.medium-6.small-6
+                      a
+                        =embedded_svg "UAD-icons-facebook.svg"
+                        |facebook
+                    .columns.large-6.medium-6.small-6
+                      a
+                        =embedded_svg "UAD-icons-twitter.svg"
+                        |twitter
+                  .row
+                    .columns
+                      .l-hf-label
+                        b
+                          |or
+                  .row
+                    form
+                      .columns
+                        .input
+                          label Username or e-mail:
+                          input type="email" placeholder="usermail@gmail.com"
+                        .input
+                          label Password:
+                          input type="password" placeholder="**********"
+
+                        .row
+                          .columns.large-6.medium-6.small-6
+                            .input
+                              .squared
+                                input id="lf_remember_me" type="checkbox" value="remember me"
+                                label for="lf_remember_me"
+                              .t-label
+                                label for="lf_remember_me" Remember me
+
+                          .columns.large-6.medium-6.small-6
+                            a.ud-landing-forgot-password Forgot your password?
+                        .input-ud-button
+                          input type="submit" value="login"
+                .clearfix
+
+  =yield
   .l-footer-wrap
     .row.medium-main
       .columns.large-12.medium-10.medium-centered
