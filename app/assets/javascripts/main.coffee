@@ -644,7 +644,6 @@ $(document).ready ->
 
   $notification_containers.observeMouseOut()
 
-
 $(window).resize ->
   if $(window).width() >= 1445
     if $(".button-menu a.mobile").hasClass('open')
