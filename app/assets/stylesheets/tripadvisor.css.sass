@@ -79,9 +79,16 @@
     .input-select-time
       width: 33.3%
     img
-      height: 35px
-      width: 35px
+      //height: 35px
+      //width: 35px
       margin-left: 10px
+      margin-top: 0.125rem
+      width: 1.6875rem
+      height: 1.875rem
+      padding-left: 0
+      padding-right: 0
+      cursor: pointer
+
   .t-book-apartment-gallery-wrap
     padding-top: 45px
     .tbag-image-preview-wrap
@@ -124,11 +131,14 @@
             display: block
             content: ''
             position: absolute
-            left: 0.9375rem
+            left: 0
+            right: 0
             top: 0
-            right: 0.9375rem
             bottom: 0
             background-color: rgba(46, 46, 54, .8)
+            @media #{$small-only}
+              left: 0.9375rem
+              right: 0.9375rem
         &.active
           .image:before
             display: none
@@ -138,7 +148,7 @@
     .t-find-girl-wrap
       margin-top: 60px
       svg
-        width: 60%
+        width: 50%
         height: 100%
       p
         color: #BEC3C7
@@ -155,8 +165,16 @@
             position: absolute
   .t-button-step-wrap
     height: 35px
+    //width: 100%
     a
       margin: 0
+      font-weight: 500
+      //width: 100%
+      text-align: center
+      &.tm-step-two
+        width: 100%
+      &.tm-step-three
+        width: 136px
   .t-button-finish-step-wrap
     height: 35px
     margin-top: 10px
@@ -185,7 +203,7 @@
       color: #BEC3C7
       font:
         size: rem-calc(18)
-        weight: 700
+        weight: 500
       text:
         transform: uppercase
       line-height: rem-calc(35)
@@ -209,6 +227,19 @@
     .t-button-step-wrap
       float: right
       margin-top: 10px
+  .t-book-airport-wrap
+    .white-grey
+      padding-bottom: 45px
+      margin-bottom: 10px
+      h4
+        margin-top: 30px
+        margin-bottom: 20px
+        color: #2E3E51
+        font:
+          size: rem-calc(21)
+          weight: 500
+        text-transform: uppercase
+        line-height: rem-calc(25.2)
   .tp-tab-title
     cursor: pointer
     b
@@ -217,12 +248,15 @@
         size: rem-calc(26)
         family: dearjoe_1_msregular
       line-height: rem-calc(43)
-
+      display: inline-block
+      margin-bottom: 25px
       &:before
         display: block
         content: attr(data-tab-number)
         font-size: rem-calc(100)
         line-height: rem-calc(100)
+        position: relative
+        top: 30px
     &.active
       b
         color: #3598DB
@@ -295,7 +329,7 @@
               color: #fff
 
 .t-important-message-wrap
-  margin-bottom: 40px
+  margin-bottom: 10px
   p
     color: #2E3E51
     font:
