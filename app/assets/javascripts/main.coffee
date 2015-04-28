@@ -91,6 +91,8 @@ $(document).ready ->
     buttonImage: 'assets/UAD-calendar.png'
     buttonImageOnly: true
     buttonText: 'Select date'
+  $('.datepicker.hasDatepicker').on 'click', ()->
+    $(this).next().trigger('click')
 
 # init tabs
   $('.ud-tab').hide()

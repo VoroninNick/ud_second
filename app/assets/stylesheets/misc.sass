@@ -32,11 +32,19 @@
     li
       height: rem-calc(40)
       line-height: rem-calc(40)
+      a
+        font:
+          size: 1rem
+          weight: 300
+          family: "Fira Sans", sans-serif
+        line-height: 2.375rem
+        color: #808285
+
       &.active
         a
           height: inherit
           color: $red-link-color
-          font-weight: 600
+          font-weight: 400
 
 
 @media #{$medium-down}
@@ -70,7 +78,7 @@
           &:after
             +css-triangle(rem-calc(5), $red-link-color, top)
             position: absolute
-            top: rem-calc(18)
+            top: rem-calc(16)
             right: rem-calc(15)
 
     &.opened

@@ -1,2 +1,21 @@
-@function asset-url($asset)
+//@function asset-url($asset)
   @return "../images/#{$asset}"
+
+= reset_foundation_input_styles
+  color: #2E3E51 !important
+  font:
+    size: rem-calc(14) !important
+  line-height: rem-calc(16.8) !important
+  outline: none !important
+  border: none
+  box-shadow: none !important
+  &:focus
+    border: 1px solid #2E3E51 !important
+
+= input
+  height: rem-calc(35)
+  line-height: rem-calc(35)
+  width: 100%
+  padding-left: rem-calc(13)
+  &:focus
+    border: none !important

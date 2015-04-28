@@ -86,22 +86,24 @@
           .my-field
             label Birth day:
             .inputs
-              .profile-data-input.columns.large-3
+              /.profile-data-input.columns.large-3
                 select.ud-multiple
                   - (1..31).each do |day_number|
                     option value=day_number
                       = day_number
-              .profile-data-input.columns.large-5
+              //.profile-data-input.columns.large-5
                 select.ud-multiple
                   - @months.each do |month_name|
                     option value=month_name
                       = month_name
-              .profile-data-input.columns.large-4
+              //.profile-data-input.columns.large-4
                 select.ud-multiple
                   - (1950..2015).each do |year|
                     option value=year
                       = year
-
+              .profile-data-input.profile-data-input-datepicker.columns.large-12
+                .input-select-date
+                  input.datepicker type="text" placeholder="Pick your birthday"
           .my-field
             label Height:
             .inputs

@@ -30,4 +30,8 @@ module ApplicationHelper
    end
    doc.to_html.html_safe
   end
+
+  def asset_url(file)
+    "test/#{file}"
+  end
 end

@@ -398,7 +398,7 @@ $settings-header-height: rem-calc(85)
       > label
         background-color: transparent
         > i
-  .SlectBox
+  .SlectBox, .SumoSelect .SlectBox
     @extend %settings-select-box
 
   .actions
@@ -476,6 +476,11 @@ $settings-header-height: rem-calc(85)
 
 
 .my-field
+  input
+    @include reset_foundation_input_styles
+    @include input
+    &:focus
+      background: white
   +grid-row()
   textarea
     margin-bottom: rem-calc(16)
@@ -503,6 +508,25 @@ $settings-header-height: rem-calc(85)
   &:not(.auto-width)
     .SumoSelect, .CaptionCont
       width: 100%
+
+.profile-data-input
+  &.profile-data-input-datepicker
+    input
+      +grid-column(8)
+      width: calc(#{grid-calc(12, 12)} - #{rem-calc(37)})
+      cursor: pointer
+    img
+      +grid-column(4)
+      //max-width: 30px
+      //max-height: 30px
+      margin-top: rem-calc(2)
+      width: rem-calc(27)
+      height: rem-calc(30)
+      padding-left: 0
+      //padding-right: rem-calc(15/2)
+      float: right
+      padding-right: 0
+      cursor: pointer
 
 
 // ==============================================================
@@ -680,8 +704,9 @@ $settings-header-height: rem-calc(85)
 .pasha-button
   @extend a.ud-button
   border: none
-  width: auto
+
   padding: 0 rem-calc(30)
+  width: auto !important
   input + &
     margin-left: rem-calc(10)
 
@@ -734,11 +759,16 @@ $settings-header-height: rem-calc(85)
   > *
     display: inline-block
 
+
+.settings-content
+  .red-checkbox
+    clear: left
 .red-checkbox + label
   color: inherit
   font: inherit
   display: inline
-  line-height: inherit
+  //line-height: inherit
+  line-height: rem-calc(30)
 
 
 .email-settings-section
