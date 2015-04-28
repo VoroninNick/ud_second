@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root 'main#index'
 
   get 'main' => 'main#main'
+  get 'main/registration' => 'main#main_registration'
   get 'favorites' => 'main#favorites'
   get 'search' => 'main#search'
   get 'live_chat' => 'main#live_chat'

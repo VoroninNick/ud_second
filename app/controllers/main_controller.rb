@@ -1,8 +1,13 @@
 class MainController < ApplicationController
-  layout "landing", only: [:main]
+  layout "landing", only: [:main, :main_registration]
   def main
 
   end
+
+  def main_registration
+
+  end
+
 
   def index
 
