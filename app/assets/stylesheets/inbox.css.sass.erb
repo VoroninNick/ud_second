@@ -406,6 +406,57 @@ p.ud-inbox-draft
               size: rem-calc(12)
             line-height: rem-calc(30)
 
+.ud-smiles-wrap
+  .notification-container
+    bottom: 48px
+    top: auto
+    //display: block !important
+    min-width: 215px
+    min-height: 40px
+    left: -30px
+    right: auto
+    border: none
+    &:before, &:after
+      top: auto
+    &:before
+      border-color: rgba(0, 0, 0, 0.2) transparent transparent transparent
+      border-width: 12px 12px 0  12px
+      left: 30px
+      bottom: -12px
+    &:after
+      border-color: #edf0f1 transparent transparent transparent
+      border-width: 11px 11px 0  11px
+      left: 30px
+      bottom: -11px
+    .group
+      padding: 15px
+      padding-left: 20px
+    .options
+      .option
+        padding-left: 0
+        .label
+          width: 20px
+          height: 30px
+          line-height: 30px
+          .icon
+            width: 100%
+            height: 100%
+            margin: 0
+            padding: 0
+            svg
+              left: 0
+        .input
+          width: auto
+          height: 30px
+          margin-left: 10px
+          a
+            color: #58595B
+            font:
+              size: rem-calc(12)
+            line-height: rem-calc(30)
+    .ud-smiles-inner
+      height: 130px
+      overflow-y: auto
 
 .ud-draft-wrap
   .avatar-wrap
