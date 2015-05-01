@@ -27,7 +27,80 @@ $.fn.observeMouseOut = (options)->
     if out_of_container
       $containers.trigger('mouseUpOut')
 
+(($) ->
+  $.fn.getCursorPosition = ->
+    input = @get(0)
+    if !input
+      return
+    # No (input) element found
+    if 'selectionStart' in input
+      # Standard-compliant browsers
+      return input.selectionStart
+    else if document.selection
+      # IE
+      input.focus()
+      sel = document.selection.createRange()
+      selLen = document.selection.createRange().text.length
+      sel.moveStart 'character', -input.value.length
+      return sel.text.length - selLen
+    return
+
+  return
+) jQuery
+
+
+
+
 $(document).ready ->
+
+#  countect for enter characters
+  max_symbols = 1000
+  editor_state = {
+    chars_length: null
+  }
+
+  $('body')
+      .on 'focus', '[contenteditable]', ()->
+          $this = $(this)
+          $this.data 'before', $this.html()
+          return $this
+      .on 'blur keyup keydown paste input', '[contenteditable]', (event)->
+          $this = $(this)
+          if $this.text().length >= max_symbols && event.which != undefined && ((event.which >= 48 && event.which <=90) || (event.which >= 96 && event.which <= 105))
+            event.preventDefault()
+          if $this.data('before') isnt $this.html()
+              $this.data 'before', $this.html()
+              $this.trigger('change')
+          return $this
+  getCaretPosition = (editableDiv) ->
+    caretPos = 0
+    sel = undefined
+    range = undefined
+    if window.getSelection
+      sel = window.getSelection()
+      if sel.rangeCount
+        range = sel.getRangeAt(0)
+        if range.commonAncestorContainer.parentNode == editableDiv
+          caretPos = range.endOffset
+    else if document.selection and document.selection.createRange
+      range = document.selection.createRange()
+      if range.parentElement() == editableDiv
+        tempEl = document.createElement('span')
+        editableDiv.insertBefore tempEl, editableDiv.firstChild
+        tempRange = range.duplicate()
+        tempRange.moveToElementText tempEl
+        tempRange.setEndPoint 'EndToEnd', range
+        caretPos = tempRange.text.length
+    caretPos
+
+
+  $('section[contenteditable]').on "change", (event)->
+    $area = $(@)
+
+    editor_state.chars_length = $area.text().length
+    $('.ud-ce-label span').text(editor_state.chars_length)
+    event.preventDefault()
+
 # mailbox text input
   $('.ud-message-wrap .image-popup-one-item a').click ->
     $get_user_mb_id = $(@).closest('.reveal-modal').attr('data-user-id')
