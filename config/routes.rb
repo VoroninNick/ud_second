@@ -21,6 +21,8 @@ Rails.application.routes.draw do
   get 'information' => 'main#information'
   get 'tripadvisor' => 'main#tripadvisor'
 
+  get 'test' => 'main#test'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

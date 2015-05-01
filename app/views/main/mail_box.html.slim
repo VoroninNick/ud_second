@@ -250,7 +250,7 @@
                           .row
                             .columns
                               /a Translate into english
-                              a.modal-link.m-send.right  href="#" Send
+                              a.modal-link.m-send.special-text-shadow.right  href="#" Send
                               .ud-browse-images-wrap.notification-wrap.right
                                 a.edit-icon-svg.browse-file.notification-link
                                   = embedded_svg "UD-icon-add files.svg"
@@ -459,7 +459,7 @@
                           .row
                             .columns
                               /a Translate into english
-                              a.modal-link.m-send.right  href="#" Send
+                              a.modal-link.m-send.special-text-shadow.right  href="#" Send
                               .ud-browse-images-wrap.notification-wrap.right
                                 a.edit-icon-svg.browse-file.notification-link
                                   = embedded_svg "UD-icon-add files.svg"
@@ -611,8 +611,67 @@
             .clearfix
         .ud-inbox-one-tab-wrap.hide
           |Intros
-        .ud-inbox-one-tab-wrap.hide
-          |Sent
+        .ud-inbox-one-tab-wrap.ud-sent-wrap.hide
+          .title-head.grey
+            .columns
+              .wrap
+                h4 Group email
+          .white-grey
+            .columns
+              .send-group-mail-wrap
+                .row
+                  .columns.large-2.large-centered.medium-2.medium-centered
+                    =image_tag "Paperplane-2-512.png"
+                .row
+                  .columns.large-3.large-centered.medium-3.medium-centered
+                    a.ud-button.special-text-shadow.send-group-mail Send group email
+              .send-group-mail-finish-wrap
+                .row
+                  .columns.large-3.medium-3
+                    .input
+                      .squared
+                        input#match_list type="checkbox" name="group_email" value="Match list"
+                        label for="match_list"
+                      .t-label
+                        label for="match_list" Match list
+                    .input
+                      .squared
+                        input#favorite_list type="checkbox" name="group_email" value="Favorite list"
+                        label for="favorite_list"
+                      .t-label
+                        label for="favorite_list" Favorite list
+                    .input
+                      .squared
+                        input#exclude_list type="checkbox" name="group_email" value="Exclude list"
+                        label for="exclude_list"
+                      .t-label
+                        label for="exclude_list" Exclude list
+                    .input
+                      .squared
+                        input#introduced_list type="checkbox" name="group_email" value="Introduced list"
+                        label for="introduced_list"
+                      .t-label
+                        label for="introduced_list" Introduced list
+                    .input
+                      .squared
+                        input#not_introduced_list type="checkbox" name="group_email" value="Not introduced list"
+                        label for="not_introduced_list"
+                      .t-label
+                        label for="not_introduced_list" Not introduced list
+
+                  .columns.large-9.medium-9
+                    section id="ud-editable" contenteditable="true"
+                      a
+                        |[girl's name]
+                      span
+                        |, You are the most beautiful man I have ever seen. From beautiful country
+                      a
+                        |[country]
+                      span
+                        |Your hair, your eyes, your lips, your body that you haven't grown into, the way you walk, smile, laugh, the way your cheeks drop when you're mad or upset, the way you drag your feet when you're tired. Every single thing about you is beautiful.
+
+            .clearfix
+
         .ud-inbox-one-tab-wrap.hide
           |Drafts
         .ud-inbox-one-tab-wrap.hide

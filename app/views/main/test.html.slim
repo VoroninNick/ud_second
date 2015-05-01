@@ -1,0 +1,139 @@
+.row.medium-main
+  .columns.medium-10.medium-centered.large-12
+    .ud-message-wrap#ud-mb-12
+      .columns
+        .row
+          .columns
+            .ud-section-wrap
+              section id="ud-editable" contenteditable="true"
+                a contentEditable="false"
+                  |[girl's name]
+                span
+                  |, You are the most beautiful man I have ever seen. From beautiful country
+                a
+                  |[country]
+                span
+                  |Your hair, your eyes, your lips, your body that you haven't grown into, the way you walk, smile, laugh, the way your cheeks drop when you're mad or upset, the way you drag your feet when you're tired. Every single thing about you is beautiful.
+                .ud-e-attachment-wrap
+
+        .row
+          .columns
+            /a Translate into english
+            a.modal-link.m-send.special-text-shadow.right  href="#" Send
+            .ud-browse-images-wrap.notification-wrap.right
+              a.edit-icon-svg.browse-file.notification-link
+                = embedded_svg "UD-icon-add files.svg"
+              .notification-container
+                .menu
+                  .group
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "ud-make-image.svg"
+                        .input
+                          a data-reveal-id="AddAPictures" Add a picture
+                        .clearfix
+
+            .ud-smiles-wrap.notification-wrap.right
+              a.edit-icon-svg.notification-link.smiles
+                = embedded_svg "UD-icon-smile.svg"
+              .notification-container
+                .menu
+                  .group
+                    .options
+                      .option
+                        .ud-smiles-inner
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+                          a
+                            =image_tag "face_smile.png"
+      .clearfix
+
+      #AddAPictures.reveal-modal data-reveal="" data-user-id="#ud-mb-12"
+        .modal-wrap.ud-add-image-from-gallery-wrap
+          .modal-header-wrap
+            h3 Add a picture
+            a.close-reveal-modal
+          .modal-content-wrap
+            .row
+              .columns
+                h3 My gallery
+            .row
+              .columns
+                .row.collapse
+                  .columns.large-3.medium-3.small-6
+                    .image-popup-one-item
+                      a
+                        .image style="background: url('#{asset_path("My gallery 1.jpg")}')no-repeat center center;"
+                  .columns.large-3.medium-3.small-6
+                    .image-popup-one-item
+                      a
+                        .image style="background: url('#{asset_path("My gallery 4.jpg")}')no-repeat center center;"
+                  .columns.large-3.medium-3.small-6
+                    .image-popup-one-item
+                      a
+                        .image style="background: url('#{asset_path("My gallery 5.jpg")}')no-repeat center center;"
+                  .columns.large-3.medium-3.small-6
+                    .image-popup-one-item
+                      a
+                        .image style="background: url('#{asset_path("My gallery 6.jpg")}')no-repeat center center;"
+                  .columns.large-3.medium-3.small-6
+                    .image-popup-one-item
+                      a
+                        .image style="background: url('#{asset_path("girl-teddy-6.png")}')no-repeat center center;"
+                  .columns.large-3.medium-3.small-6.end
+                    .image-popup-one-item
+                      label for="browseImage"
+                        .image style="background: url('#{asset_path("girl-teddy-6.png")}')no-repeat center center;"
+                      input#browseImage type="file"
+          .modal-footer-wrap
+            .row
+              .columns
+                p You can attach two photos to your letter. Attach one photo for free. 5 credits will be deducted from your account for the second photo.

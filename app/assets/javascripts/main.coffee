@@ -28,6 +28,20 @@ $.fn.observeMouseOut = (options)->
       $containers.trigger('mouseUpOut')
 
 $(document).ready ->
+# mailbox text input
+  $('.ud-message-wrap .image-popup-one-item a').click ->
+    $get_user_mb_id = $(@).closest('.reveal-modal').attr('data-user-id')
+    $wrap = $("#{$get_user_mb_id}")
+    $attach_wrap = $wrap.find('.ud-e-attachment-wrap')
+    $image_object = $(@).parent().html()
+    $attach_wrap.append($image_object)
+
+#    $('#AddAPictures').trigger 'reveal:close'
+    $('#AddAPictures').foundation 'reveal', 'close'
+  $('.ud-smiles-inner a img').click ->
+    alert 'smile'
+
+
 
 # tripadvisor finding girl
   $('.t-result-finding-wrap .trf-choose-girl').click ->
@@ -319,6 +333,16 @@ $(document).ready ->
 #    speed: 1000
 #    touchEnabled:false
 #    pagerCustom: 'ul#pagers-index-banner'
+
+# mailbox sent
+  $('.ud-sent-wrap a.send-group-mail').click ->
+    $wrap = $(@).closest('.ud-sent-wrap')
+    $send_gm_before = $wrap.find('.send-group-mail-wrap')
+    $send_gm_after = $wrap.find('.send-group-mail-finish-wrap')
+
+    $send_gm_before.hide()
+    $send_gm_after.show()
+
 
 # gits inbox tabs
   $('.ud-inbox-page-wrap .ud-inbox-tab').click ->

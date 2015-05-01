@@ -53,6 +53,10 @@ class MainController < ApplicationController
 
   end
 
+  def test
+
+  end
+
   def settings
     @months = %w[January February March April May June July August September October November December]
 
