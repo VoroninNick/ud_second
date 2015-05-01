@@ -96,9 +96,13 @@ $(document).ready ->
 
   $('section[contenteditable]').on "change", (event)->
     $area = $(@)
+    $wrap = $(@).closest('.ud-message-wrap')
+    $label_count = $wrap.find('.ud-ce-label span')
 
-    editor_state.chars_length = $area.text().length
-    $('.ud-ce-label span').text(editor_state.chars_length)
+    #editor_state.chars_length = $area.text().length
+    chars_length = $area.text().length
+    $area.data('chars_length', chars_length )
+    $label_count.text($area.text().length)
     event.preventDefault()
 
 # mailbox text input
