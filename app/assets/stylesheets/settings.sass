@@ -5,6 +5,13 @@
 //
 
 
+//
+// TODO
+//
+// 2. purchase history. year dropdown
+
+
+
 
 %boolean
   svg
@@ -14,23 +21,28 @@
 
 
 %boolean-true
-  @extend %boolean
+  //@extend %boolean
   svg
+    width: rem-calc(16)
+    height: rem-calc(16)
     fill: $bright-green-color
 %boolean-false
-  @extend %boolean
+  //@extend %boolean
   svg
+    width: rem-calc(14)
+    height: rem-calc(14)
     polygon
       fill: #D03F4A
 %blue-small-text
   color: $light-blue-text-color
   font-weight: 300
   font-size: rem-calc(14)
+  line-height: rem-calc(18)
 %large-red-text
   font-family: $dearjoe-font-family
   color: $red-link-color
   font-size: rem-calc(35)
-  height: rem-calc(36)
+  //height: rem-calc(36)
 %paragraph-with-small-text
   font:
     size: rem-calc(12)
@@ -43,9 +55,10 @@
 %small-gray-text
   font-size: rem-calc(14)
   color: #aaa
+
 %small-darkblue-text
   color: $blue-background-color
-  font-weight: 300
+  font-weight: 400
   font-size: rem-calc(14)
 %help
   font-size: rem-calc(12)
@@ -104,8 +117,10 @@
   line-height: 1.05rem
   color: #2E3E51
   margin-bottom: 6px
-%settings-input__input
-  color: #D03F4A !important
+
+= settings-input__input
+  //color: #D03F4A !important
+  color: #2E3E51 !important
   font-size: 0.875rem !important
   line-height: 1.05rem !important
   outline: none !important
@@ -116,6 +131,12 @@
   padding-left: 13px
   &:focus
     border: none !important
+  &[disabled=disabled]
+    background-color: #bec3c7
+    color: $gray-text-color !important
+    font-weight: 600
+%settings-input__input
+  +settings-input__input
 
 %settings-sumo-select
   width: 100%
@@ -172,6 +193,18 @@
       height: 100%
 
 
++keyframes(block-hover)
+  0%, 90%
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3)
+  100%
+    +container-box-shadow
+
+.some-text
+  font-size: 14px
+  color: #bec3c7
+  font-weight: 300
+  line-height: 16px
+
 $settings-header-height: rem-calc(85)
 
 .p_panel-header
@@ -183,6 +216,8 @@ $settings-header-height: rem-calc(85)
 
 .favorites-woman-wrap.settings-page-wrap
   .settings-nav-wrap
+    nav
+      height: rem-calc(85)
     li
       width: calc(25% - 4px )
       &.active
@@ -193,9 +228,16 @@ $settings-header-height: rem-calc(85)
       &:nth-child(2)
         svg
           height: rem-calc(30)
+    @media #{$screen} and (max-width: #{rem-calc(1100)})
+      nav
+        li
+          a
+            padding-top: 0
 
 
 
+.title-head
+  padding: 0 rem-calc(15)
 
 .table
   text-align: center
@@ -217,6 +259,7 @@ $settings-header-height: rem-calc(85)
       text-transform: uppercase
       padding-left: 0
       padding-right: 0
+      font-weight: 500
 
 
 
@@ -246,7 +289,8 @@ $settings-header-height: rem-calc(85)
     &:first-child, &:nth-child(2)
       text-align: left
     &:first-child
-      color: $gray-text-color
+      //color: $gray-text-color
+      color: #6d6e71
 
     &:first-child, &:nth-child(2), &:nth-child(3)
       font-weight: 500
@@ -260,12 +304,12 @@ $settings-header-height: rem-calc(85)
     &.status
       &.yes
         svg
-          width: rem-calc(18)
-          height: rem-calc(14)
+          width: rem-calc(16)
+          height: rem-calc(16)
           fill: #99d341
       &.no
         svg
-          width: rem-calc(18)
+          width: rem-calc(14)
           height: rem-calc(14)
           fill: $red-link-color
           polygon
@@ -275,20 +319,27 @@ $settings-header-height: rem-calc(85)
 
     &.price
       color: $light-red-color
+      font-weight: 500
+
 
 
 
 
 
   &:last-child
-    border-bottom: 1px black solid
+    //border-bottom: 1px black solid
+    border-bottom: 1px #bec3c7 solid
 
   .table-cell-inner
     +transform(translateY(-50%))
     top: 50%
     position: relative
 
-.table-cell, .table-header li
+.table-cell
+  border-right: 1px #bec3c7 solid
+  &:first-child
+    border-left: 1px #bec3c7 solid
+.table-header li
   border-right: 1px black solid
 
   &:first-child
@@ -308,6 +359,8 @@ $settings-header-height: rem-calc(85)
 .panel-content
   padding: rem-calc(25) rem-calc(15) rem-calc(64) rem-calc(15)
   background: $panel-content-background
+  //padding-bottom: rem-calc(20)
+  padding-bottom: rem-calc(50)
 
 
 .panel-content-row
@@ -316,7 +369,10 @@ $settings-header-height: rem-calc(85)
 .credits-left
   float: left
   .credits-left-label
-    color: $gray-text-color
+    //color: $gray-text-color
+    color: #2E3E51
+    font-weight: 300
+    font-size: 0.875rem
   .credits-left-value
     margin-left: rem-calc(5)
     font-weight: 600
@@ -331,11 +387,14 @@ $settings-header-height: rem-calc(85)
     input
       margin-bottom: rem-calc(6)
   @media #{$medium-only}
+    max-width: none
+
     &.settings-content
-      padding: 0
+      //padding: 0
 
 @media #{$large-up}
   .account-deactivation-content
+    //max-width: none
 
 
 .password-change-content
@@ -343,8 +402,9 @@ $settings-header-height: rem-calc(85)
   .actions
     padding-top: rem-calc(15)
   @media #{$medium-only}
+    max-width: none
     &.settings-content
-      padding: 0
+      //padding: 0
 
 @media #{$large-up}
   .password-change-content
@@ -354,6 +414,15 @@ $settings-header-height: rem-calc(85)
   font-family: $fira-sans-font-family
   .year-wrap
     float: right
+    width: auto
+    > label
+      float: left
+      font-size: rem-calc(12)
+      color: #58595b
+      font-weight: 300
+      height: rem-calc(40)
+      line-height: rem-calc(40)
+      margin-right: rem-calc(5)
     select
       @extend %transparent-select
       top: 0
@@ -363,6 +432,9 @@ $settings-header-height: rem-calc(85)
       height: rem-calc(24)
       padding-right: rem-calc(12)
       background-position-x: calc( 100% + #{rem-calc(15)} )
+      float: left
+      width: auto
+      background: asset-url("UAD-triangle.png") no-repeat right center
   .selected-year
     color: $red-link-color
   .table
@@ -471,7 +543,8 @@ $settings-header-height: rem-calc(85)
           padding-right: rem-calc(5)
         .SumoSelect
 
-
+  @media #{$medium-down}
+    width: 100%
 
 
 
@@ -487,6 +560,7 @@ $settings-header-height: rem-calc(85)
     height: rem-calc(170)
   > label
     +grid-column(3)
+    padding-left: 0
     //@extend %small-darkblue-text
     //@extend %settings-input__input
     @extend %settings-input__label
@@ -538,12 +612,19 @@ $settings-header-height: rem-calc(85)
 .offered-credits
   .credit
     position: relative
-    +transition(padding, 0.3s)
+    //+transition_all("padding 0.3s 0.3s, box-shadow 0.2s 0.3s")
+    +transition_all("padding 0.3s 0.3s")
     text-align: center
-    padding-bottom: rem-calc(10)
+    //padding-bottom: rem-calc(10)
+    margin-bottom: rem-calc(10)
     +grid-column(4)
     padding-left: rem-calc(10)
     padding-right: rem-calc(10)
+
+    height: rem-calc(227) // fixed height
+
+    > .inner
+      height: 100%
 
     .credit-bonus
       display: block
@@ -559,6 +640,7 @@ $settings-header-height: rem-calc(85)
       line-height: rem-calc(15)
       padding-top: rem-calc(14)
       font-weight: 500
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35)
 
     .credits-count
       height: rem-calc(64)
@@ -571,13 +653,15 @@ $settings-header-height: rem-calc(85)
     .credits-count, .credit-price
       padding: rem-calc(9) 0
       line-height: rem-calc(24)
-      letter-spacing: rem-calc(2)
+      //letter-spacing: rem-calc(2)
+
       span
         font-weight: 300
 
     .credits-count .count, .credit-price .total-price
       font-weight: 600
-      font-size: 1.4rem
+      //font-size: 1.4rem
+      font-size: rem-calc(30)
 
     .credit-price
       height: rem-calc(64)
@@ -601,6 +685,13 @@ $settings-header-height: rem-calc(85)
     &:hover
       padding-left: rem-calc(0)
       padding-right: rem-calc(0)
+      //+container-box-shadow
+      //+transition_all("padding 0.3s 0.3s, box-shadow 0s 0.3s")
+      +transition_all("padding 0.3s 0.3s")
+      //+animation(0, 0.3s, block-hover)
+      //+transition_all("padding 0.3s")
+      > .inner
+        +container-box-shadow
       .credits-count
         background-color: $green-color
       .ud-button
@@ -620,12 +711,9 @@ $settings-header-height: rem-calc(85)
   color: $blue-background-color
 
   p
-    font-size: rem-calc(14)
+    @include text-paragraph
 .buy-credits-info-header
-  text-transform: uppercase
-  font-weight: 500
-  font-size: rem-calc(14)
-  margin-bottom: rem-calc(16)
+  @include text-title
 
 
 
@@ -638,7 +726,7 @@ $settings-header-height: rem-calc(85)
 // ===================================
 
 #settings-section
-  .SumoSelect
+  .SumoSelect:not(.GraySelect)
     width: 100%
     .optWrapper
       top: 35px
@@ -701,18 +789,38 @@ $settings-header-height: rem-calc(85)
 // -----------------------------------
 // ===================================
 
+#account-settings__email-settings
+  form.change-email
+    +flexbox
+    input[type=submit]
+      cursor: pointer
+    input[type=email]
+      &:not([disabled])
+        & ~ input[type=submit]
+          display: none
+        & ~ input.button-save
+          display: inline-block
+          height: rem-calc(35)
+          width: rem-calc(35)
+          background-image: asset-url("UAD-icon-check.jpg")
+          background-size: cover
+          border: none
+
 .pasha-button
   @extend a.ud-button
   border: none
 
   padding: 0 rem-calc(30)
-  width: auto !important
+
   input + &
-    margin-left: rem-calc(10)
+    //margin-left: rem-calc(10)
 
 
 .email-settings-section
   margin-top: rem-calc(40)
+
+  .pasha-button
+    width: auto
 
   &:first-child
     margin-top: 0
@@ -725,14 +833,15 @@ $settings-header-height: rem-calc(85)
 
   .change-email
     input:not([type=submit])
-      background-color: #bec3c7
-      color: #808487
-      font-weight: 600
-      height: rem-calc(35)
+      @extend %settings-input__input
+      //background-color: #bec3c7
+      //color: $gray-text-color
+      //font-weight: 600
+      //height: rem-calc(35)
       width: rem-calc(300)
-      font-size: rem-calc(13)
-      display: inline-block
-      margin: 0
+      //font-size: rem-calc(13)
+      //display: inline-block
+      //margin: 0
     input[type=submit]
       vertical-align: middle
 
@@ -744,18 +853,21 @@ $settings-header-height: rem-calc(85)
 .email-settings-section-title
   font-weight: 600
   font-size: rem-calc(14)
-  margin-bottom: rem-calc(10)
+  //margin-bottom: rem-calc(10)
+  margin-bottom: rem-calc(5)
 
 .small-light-red-text
   color: $red-link-color
   font-size: rem-calc(12)
   font-weight: 300
 .light-gray-text
-  color: #aaa
+  //color: #aaa
+  color: #58595B
   font-size: rem-calc(12)
   font-weight: 300
 
 .email-settings-section-content
+  padding-top: rem-calc(15)
   > *
     display: inline-block
 
@@ -849,8 +961,13 @@ form, .inputs, .email-settings-section.options
   .inputs
     max-width: rem-calc(300)
   .input-group
+    clear: left
+    padding-top: rem-calc(40)
     margin-top: rem-calc(20)
     margin-bottom: rem-calc(20)
+    &:first-child
+      padding-top: 0
+
     &:last-child
       margin-bottom: 0
     .inputs
@@ -1050,6 +1167,8 @@ form, .inputs, .email-settings-section.options
 
 
 #account-settings__password-change, #account-settings__account-deactivation
+  .panel-content
+    padding-bottom: rem-calc(30)
   .input
     label
       @extend %settings-input__label
@@ -1074,10 +1193,13 @@ form, .inputs, .email-settings-section.options
   .invitation-and-option-labels
     +grid-column(4)
   .invitation
-    padding-top: rem-calc(30)
+    //padding-top: rem-calc(30)
+    padding-top: rem-calc(42) // fix for dear-joe font-family
     height: rem-calc(150)
     .title
       @extend %large-red-text
+      height: auto
+      line-height: 0.7
     .subtext
       @extend %blue-small-text
 
@@ -1094,9 +1216,13 @@ form, .inputs, .email-settings-section.options
       +transition(padding, 0.2s)
       position: relative
 
+      .inner
+        position: relative
+
       .current
         width: 100%
-        position: relative
+        //position: relative
+        position: absolute
         height: rem-calc(27)
         line-height: rem-calc(27)
         margin-top: rem-calc(-27)
@@ -1114,6 +1240,7 @@ form, .inputs, .email-settings-section.options
         height: rem-calc(30)
         line-height: rem-calc(30)
         text-transform: uppercase
+        font-weight: 500
       .primary-info
         height: rem-calc(85)
         background-color: #ffffff
@@ -1123,13 +1250,13 @@ form, .inputs, .email-settings-section.options
         line-height: 1
         @extend %center-content
       .price
-        font-size: rem-calc(26)
+        font-size: rem-calc(30)
         line-height: 1
 
       .price-per
         font-weight: 300
         line-height: 1
-        font-size: rem-calc(15)
+        font-size: rem-calc(16)
       .secondary-info
         height: rem-calc(35)
         background-color: #ffffff
@@ -1141,6 +1268,7 @@ form, .inputs, .email-settings-section.options
         width: 100%
         @extend .special-text-shadow
         color: #ffffff
+        display: block
 
       > .pasha-button
         opacity: 0
@@ -1149,7 +1277,9 @@ form, .inputs, .email-settings-section.options
       &.available
         &:hover
           padding: 0
-          box-shadow: $container-box-shadow
+          //+container-box-shadow
+          > .inner
+            +container-box-shadow
           .name
             background-color: $bright-green-color
           .primary-info
@@ -1202,14 +1332,23 @@ form, .inputs, .email-settings-section.options
   .option-label
     @extend %option-label
     height: $option-height
+    .help
+      color: #808285 !important
 
 
 
   .additional-options
     padding: 0 rem-calc(30)
+    clear: left
+    padding-top: rem-calc(15)
+    padding-left: rem-calc(15)
     label
       @extend %small-gray-text
+      color: $gray-text-color
   @media #{$medium-down}
+    .plan
+      > .inner
+        +container-box-shadow
     .panel-content-row
       padding-top: 0
     .invitation-and-option-labels
@@ -1290,3 +1429,83 @@ form, .inputs, .email-settings-section.options
       > .columns
         padding-left: rem-calc(85)
         padding-right: rem-calc(85)
+
+
+.SumoSelectOuter.GraySelectOuter
+  float: right
+  height: rem-calc(40)
+
+  *
+    +transition_all("none !important")
+  &:not(.open)
+    overflow: hidden
+
+  .SumoSelect
+    z-index: 1
+    //height: rem-calc(40)
+    height: auto
+    .CaptionCont
+      width: auto
+      height: rem-calc(40)
+      background: transparent
+      color: #D03F4A
+      line-height: rem-calc(40)
+      font-weight: 400
+      border: none
+      padding: 0
+      margin: 0
+      //float: right
+      +flexbox
+
+      > span
+        padding-right: rem-calc(20)
+
+      label
+        +css-triangle(rem-calc(5), $red-link-color, top)
+        position: relative
+        top: rem-calc(16)
+        right: rem-calc(15)
+        background: transparent
+    .optWrapper
+      position: relative
+      box-shadow: none
+      border: none
+      top: 0
+      li
+        padding: 0 0 0 0
+        label
+          font-weight: 400
+
+  &.open
+    .SumoSelect
+      background: #ecf0f1
+      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3)
+      padding: 0 rem-calc(27) 0 rem-calc(22)
+
+      .CaptionCont
+        display: none
+        span
+          padding-right: 0
+        label
+          display: none
+      .optWrapper
+        background: inherit
+        ul.options
+          max-height: none
+          li
+            height: rem-calc(40)
+            border: none
+            padding: 0
+            &.selected
+              label
+                color:  #D03F4A !important
+
+            &:hover
+              background: transparent
+            label
+              height: rem-calc(40)
+              line-height: rem-calc(40) !important
+              font-size: 1rem !important
+              font-weight: 300
+              font-family: "Fira Sans", sans-serif
+              color: #808285 !important

@@ -634,7 +634,15 @@ $(document).ready ->
     $body_tabs.eq(current_position).removeClass('hide')
 
 #    init multiple select
-  $('select.ud-multiple').SumoSelect()
+  $('select.ud-multiple').SumoSelect({
+    outerHtml: false
+  })
+  $('select.sort-by, select.view-mode').SumoSelect({
+    captionHtml: "<p class='CaptionCont SlectBox'><label></label></p>",
+    wrapperHtml: '<div class="SumoSelect GraySelect">',
+    outerHtml: '<div class="SumoSelectOuter GraySelectOuter">',
+    selectFirstIfBlank: true
+  })
 
 #clear form
   $('a.clear-form').click ->

@@ -27,6 +27,23 @@ $(document).on 'ready', ()->
       $menu_container = $ul.parent()
       $menu_container.addClass('open-dropdown')
 
+  $('#account-settings__email-settings').on "click", "form.change-email input[type=submit]", (event)->
+    event.preventDefault()
+
+    $this = $(this)
+    $form = $this.closest('form')
+    $email_input = $form.find('input[type=email]')
+
+    if !$this.hasClass('button-save')
+      $email_input.removeAttr('disabled')
+      $email_input.focus()
+
+      $button_save = $("<input type='submit' class='button-save' value='' />")
+      $button_save.insertAfter($email_input)
+    else
+      $form.find(".button-save").remove()
+      $email_input.attr('disabled', 'disabled')
+
 
   $('.settings-nav-wrap').on "click", "li", (event)->
     event.preventDefault()
@@ -138,3 +155,11 @@ $(document).on 'ready', ()->
 
       $tab.addClass(active_tab_class)
       $tab_content.addClass(active_tab_class)
+
+
+  $("#account-settings__purchase-history .year-wrap select").SumoSelect({
+    captionHtml: "<p class='CaptionCont SlectBox'><label></label></p>",
+    wrapperHtml: '<div class="SumoSelect GraySelect">',
+    outerHtml: '<div class="SumoSelectOuter GraySelectOuter">',
+    selectFirstIfBlank: true
+  })

@@ -5,24 +5,25 @@
       - (1..6).each do |i|
         - bonus = i == 1 ? "+200 free" : nil
         .credit
-          - if bonus
-            .credit-bonus
-              = bonus
-          .credits-count
-            .count
-              = 1000
-            span
-              = "credits"
-          .credit-price
-            .total-price
-              = "$390"
-            .per-credit-price
-              = "$0.32 per credit"
-          .credit-reward
-            p
-              = raw "<span>120 letters</span> or<br/><span>1200 minutes</span> of Live Chat"
-          a.ud-button.special-text-shadow
-            |Purchase
+          .inner
+            - if bonus
+              .credit-bonus
+                = bonus
+            .credits-count
+              .count
+                = 1000
+              span
+                = "credits"
+            .credit-price
+              .total-price
+                = "$390"
+              .per-credit-price
+                = "$0.32 per credit"
+            .credit-reward
+              p
+                = raw "<span>120 letters</span> or<br/><span>1200 minutes</span> of Live Chat"
+            a.ud-button.special-text-shadow
+              |Purchase
 
     .buy-credits-info
       .buy-credits-info-header

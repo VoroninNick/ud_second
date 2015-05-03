@@ -26,7 +26,11 @@
             outputAsCSV: false,           // true to POST data as csv ( false for Html control array ie. deafault select )
             csvSepChar: ',',              // seperation char in csv mode
             okCancelInMulti: false,       //display ok cancel buttons in desktop mode multiselect also.
-            triggerChangeCombined: true   // im multi select mode wether to trigger change event on individual selection or combined selection.
+            triggerChangeCombined: true,   // im multi select mode wether to trigger change event on individual selection or combined selection.
+            captionHtml: '<p class="CaptionCont SlectBox"><label><i></i></label></p>',
+            wrapperHtml: '<div class="SumoSelect">',
+            outerHtml: '<div class="SumoSelectOuter">',
+            selectFirstIfBlank: false
 
         }, options);
 
@@ -50,13 +54,25 @@
 
                 createElems: function () {
                     var O = this;
-                    O.E.wrap('<div class="SumoSelect">');
+                    O.E.wrap(settings.wrapperHtml);
+                    O.wrapper = O.E.parent()
+                    if(settings.outerHtml) {
+                        O.wrapper.wrap(settings.outerHtml)
+                        O.outer = O.wrapper.parent()
+                    }
+                    else{
+                        O.outer = $()
+                    }
                     O.select = O.E.parent();
                     O.caption = $('<span></span>');
-                    O.CaptionCont = $('<p class="CaptionCont"><label><i></i></label></p>').addClass('SlectBox').attr('style', O.E.attr('style')).prepend(O.caption);
+                    O.CaptionCont = $(settings.captionHtml).attr('style', O.E.attr('style')).prepend(O.caption);
                     O.select.append(O.CaptionCont);
 
                     if(O.E.attr('disabled'))O.select.addClass('disabled')
+
+                    if(settings.selectFirstIfBlank){
+                        O.select.find('option').first().attr('selected', 'selected')
+                    }
 
                     //if output as csv and is a multiselect.
                     if (settings.outputAsCSV && O.is_multi && O.E.attr('name')) {
@@ -100,6 +116,20 @@
 
                     O.select.append(O.optDiv);
                     O.basicEvents();
+                },
+                bindEvents: function(){
+                    var O = this
+                    O.select.on('open', function(event){
+                        O.wrapper.addClass('open')
+                        O.optDiv.addClass('open')
+                        O.outer.addClass('open')
+                    })
+
+                    O.select.on('close', function(event){
+                        O.wrapper.removeClass('open')
+                        O.optDiv.removeClass('open')
+                        O.outer.removeClass('open')
+                    })
                 },
 
                 //## Creates a LI element from a given option and binds events to it
@@ -183,7 +213,8 @@
                     if (O.E.attr('disabled')) return; // if select is disabled then retrun
                     O.is_opened = true;
                     //O.backdrop.show();
-                    O.optDiv.addClass('open');
+                    O.select.trigger('open');
+
                     console.log('active');
                     //tmp.addClass('ds');
                     // hide options on click outside.
@@ -213,7 +244,7 @@
                     O.is_opened = false;
                     //O.backdrop.hide();
                     console.log('not active');
-                    O.optDiv.removeClass('open');
+                    O.select.trigger("close")
                 },
                 basicEvents: function () {
                     var O = this;
@@ -227,7 +258,7 @@
                     //O.backdrop.click(function () { O.hideOpts(); });
 
                     O.E.on('blur', function () {
-                        O.optDiv.removeClass('open');
+                        O.select.trigger('close');
                     });
 
                     $(window).on('resize.sumo', function () { O.floatingList(); });
@@ -463,6 +494,7 @@
                 init: function () {
                     var O = this;
                     O.createElems();
+                    O.bindEvents()
                     O.setText();
                     return O
                 }

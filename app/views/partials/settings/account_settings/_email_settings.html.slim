@@ -1,5 +1,5 @@
 - content_key = "settings_account_settings_email_settings".to_sym
-.settings-content.email-settings-content data-key=content_key class=("active" if @active_content_key == content_key)
+#account-settings__email-settings.settings-content.email-settings-content data-key=content_key class=("active" if @active_content_key == content_key)
   = panel_with_header("Emails") do
     .columns.large-12
       .email-settings-section.your-email
@@ -7,7 +7,7 @@
           |Your email
         .email-settings-section-content
           form.change-email method="post" action="/settings/email/change"
-            input name="email" type="email" value="my-email@server.com"
+            input disabled="disabled" name="email" type="email" value="my-email@server.com"
             input.pasha-button.special-text-shadow type="submit" value="Change"
 
 

@@ -1,0 +1,1050 @@
+@import "mixins"
+
+
+body.landing-page-wrap
+  display: block !important
+  .l-hlf-forgot-password-wrap
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    z-index: 22
+    display: block !important
+  .l-hlf-forgot-password
+    background: #EDF0F1
+    form
+      padding-top: 20px
+      padding-bottom: 20px
+      .input
+        input
+          margin-bottom: 30px
+    h3
+      margin: 0
+      padding: 0
+      line-height: 1.5625rem
+      color: #2E3E51
+      text-transform: uppercase
+      font-size: 1.30313rem
+      font-family: "Fira Sans", sans-serif
+      font-weight: 500
+      letter-spacing: 0.02rem
+    p
+      font-size: 0.625rem
+      font-weight: 300
+      line-height: 0.75rem
+      color: #2E3E51
+    P
+      &.ud-s-clear
+        font-size: 0.75rem
+        font-weight: 300
+        font-family: "Fira Sans", sans-serif
+        color: #2E3E51
+        line-height: 0.9rem
+        padding-top: 7px
+        padding-left: 12px
+        a
+          color: #D03F4A
+          height: auto
+          border: none
+          display: inline-block
+
+  .input
+    label
+      font-size: 0.875rem
+      line-height: 1.05rem
+      color: #2E3E51
+      margin-bottom: 6px
+    input
+      color: #D03F4A !important
+      font-size: 0.875rem !important
+      line-height: 1.05rem !important
+      outline: none !important
+      border: none
+      box-shadow: none !important
+      height: 35px
+      width: 100%
+      padding-left: 13px
+      &:focus
+        border: none !important
+  .l-round-count-wrap
+    position: relative
+    height: 24px
+    margin-top: 8px
+    padding-bottom: 25px
+    .round-count
+      +my_horizontal_align
+.l-header-wrap
+  height: 100px
+  .l-header
+    height: 100%
+    .l-header-login-form-wrap
+      position: relative
+      width: 100%
+      .l-header-login-form-inner
+        position: absolute
+        left: 0
+        right: 0
+
+  ul
+    list-style: none
+    margin: 0
+    height: 100px
+    li
+      height: 100%
+      float: left
+      padding: 0 25px
+      @media (min-width : 750px) and (max-width : 810px)
+        padding: 0 20px
+      @media (min-width : 727px) and (max-width : 750px)
+        padding: 0 18px
+      @media (min-width : 690px) and (max-width : 727px)
+        padding: 0 15px
+      @media (min-width : 651px) and (max-width : 690px)
+        padding: 0 12px
+      @media (min-width : 585px) and (max-width : 651px)
+        padding: 0 10px
+      @media (min-width : 487px) and (max-width : 585px)
+        padding: 0 8px
+      &.landing-header-anchors-hide-for-small
+        @media (min-width : 0) and (max-width : 487px)
+          display: none
+      a
+        display: inline-block
+        +my_vertical_align(40%)
+        color: #EDF0F1
+        font:
+          size: rem-calc(16)
+          weight: 400
+        height: 19px
+        line-height: rem-calc(19)
+  .l-logo-wrap
+    .l-icon
+      width: 85px
+      float: left
+      height: 100px
+      img
+        +my_vertical_align
+    .l-title
+      width: 60%
+      float: left
+      height: 100px
+      @media (min-width : 0) and (max-width : 735px)
+        display: none
+      img
+        +my_vertical_align
+  .l-ud-button
+    font:
+      size: rem-calc(18)
+      family: 'Fira Sans', sans-serif
+      weight: 400
+    color: #EDF0F1
+    line-height: rem-calc(35)
+    height: rem-calc(35)
+    display: inline-block
+    text:
+      transform: uppercase
+      align: center
+    background-color: #D03F4A
+    text-shadow: 1px 1px 1px #9b3036, 2px 2px 1px #9b2e36, 3px 3px 1px #9d2e37, 4px 4px 1px #9e2f37, 5px 5px 1px #a02f38, 6px 6px 1px #a13038, 7px 7px 1px #a33039, 8px 8px 1px #a53139, 9px 9px 1px #a6313a, 10px 10px 1px #a8323b, 11px 11px 1px #aa323b, 12px 12px 1px #ab333c, 13px 13px 1px #ad333c, 14px 14px 1px #ae343d, 15px 15px 1px #b0343d, 16px 16px 1px #b2353e, 17px 17px 1px #c23c47, 18px 18px 1px #b5363f, 19px 19px 1px #b63640, 20px 20px 1px #b83740, 21px 21px 1px #ba3741, 22px 22px 1px #bb3842
+    overflow: hidden
+    padding: 0 20px
+
+.l-header-login-form
+  position: relative
+  z-index: 1
+  background-color: #EDF0F1
+  padding-top: 25px
+  padding-bottom: 35px
+  h5
+    font-size: 0.875rem
+    line-height: 1.05rem
+    color: #2E3E51
+    margin-bottom: 9px
+  p
+    color: #2E3E51
+    font:
+      size: rem-calc(10)
+      weight: 300
+    line-height: rem-calc(12)
+    margin-bottom: 9px
+  form
+    a
+      /*color: #D03F4A*/
+      /*font:*/
+        /*size: rem-calc(10)*/
+        /*weight: 300*/
+      /*line-height: rem-calc(12)*/
+      &.ud-landing-forgot-password
+        font:
+          size: 0.75rem
+          weight: 300
+        line-height: rem-calc(12)
+        padding-left: 0
+        color: #D03F4A
+        font-family: "Fira Sans", sans-serif
+        text-align: right
+  .input
+    .t-label
+      label
+        font:
+          size: 0.75rem
+          weight: 300
+        line-height: rem-calc(12)
+        padding-left: 0
+        color: #2E3E51
+        font-family: "Fira Sans", sans-serif
+    label
+      color: #2E3E51
+      font-size: 0.75rem
+      line-height: 1.05rem
+      margin-bottom: 6px
+    input
+      color: #D03F4A
+  input[type="submit"]
+    width: 100%
+    color: #EDF0F1 !important
+
+.bx-wrapper
+  position: relative
+  .bx-controls
+    .bx-controls-direction
+      a
+        position: absolute
+        text-indent: -9999px
+        width: 14px
+        height: 28px
+        //background-color: royalblue
+        background-size: 100%
+        background-repeat: no-repeat
+        bottom: 53%
+        &.bx-prev
+          left: -20px
+          background-image: asset_url("UD-icon-arrow-up-l.svg")
+        &.bx-next
+          right: -20px
+          background-image: asset_url('UD-icon-arrow-up-r.svg')
+.l-main-banner-wrap
+  height: 650px
+  .bx-controls-direction
+    display: none
+  .bx-pager
+    height: 40px
+    background: #2E2E36
+    width: 100%
+    position: relative
+    text-align: center
+    .bx-pager-item
+      display: inline-block
+      margin: 10px 30px
+      a
+        background-image: asset_url('UD-icon-diamond-white.svg')
+        background-size: 100%
+        background-repeat: no-repeat
+        text-indent: -9999px
+        display: block
+        width: 20px
+        &.active
+          background-image: asset_url('UD-icon-diamond-red.svg')
+  .l-banner-information-about-profile-wrap
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    .l-banner-information-about-profile-inner
+      width: 100%
+      position: relative
+    .l-banner-about-profile
+      position: relative
+
+      .lb-about-profile-wrap
+        position: absolute
+        //background-color: yellow
+        height: 610px
+        left: 0
+        right: 0
+        &:before
+          position: absolute
+          content: attr(data-profile-name)
+          left: -40px
+          bottom: -110px
+          font-family: "dearjoe_1_msregular"
+          font-size: 12.5625rem
+          font-weight: 600
+          color: #EDF0F1
+          opacity: 0.25
+          white-space: nowrap
+        .lb-about-profile
+          position: absolute
+          left: 0
+          right: 0
+          bottom: 144px
+          h3, h2, p
+            color: #EDF0F1
+          h3
+            font:
+              size: rem-calc(32)
+              family: dearjoe_1_msregular
+            margin-bottom: -15px
+            line-height: 2rem
+            padding-left: 20px
+          h2
+            font:
+              size: rem-calc(60)
+              weight: 500
+              family: "Fira Sans", sans-serif
+            margin-top: 0
+            padding-top: 0
+            margin-bottom: 0
+          p
+            font:
+              size: rem-calc(14)
+              weight: 300
+            line-height: rem-calc(16.8)
+
+  .l-banner-login-form-wrap
+    height: 0
+    position: absolute
+    left: 0
+    top: 100px
+    right: 0
+    .l-banner-login-form-inner
+      height: 0
+      position: relative
+      .l-banner-login-form
+        //min-height: 410px
+        background-color: #EDF0F1
+        width: 90%
+        position: absolute
+        top: 55px
+        right: 0
+        z-index: 10
+        .lbf-registration-form
+          margin-top: 10px
+          form
+            padding-bottom: 45px
+            .ud-gender-input-wrap
+              height: 30px
+              position: relative
+              margin-bottom: 12px
+              .ud-gender-input-inner
+                .lbf-female
+                  width: 120%
+                +my-horizontal_align
+                  position: absolute
+
+          i
+            color: #2E2E36
+            font:
+              size: rem-calc(25)
+              weight: 300
+              family: 'dearjoe_1_msregular'
+              style: normal
+
+          .input-ud-button
+            margin-top: 30px
+            input[type="submit"]
+              height: 35px
+              line-height: rem-calc(35)
+              color: #EDF0F1 !important
+              width: 100%
+          .input
+            input
+              height: 35px
+            label
+              //color: #2E3E51
+              //font:
+              //  size: rem-calc(12)
+              //padding-left: 12px
+              //line-height: 1.05rem
+              //margin-bottom: 6px
+
+        .lbf-header-wrap
+          height: 60px
+          width: 100%
+          .lbf-tumbler
+            height: 100%
+            float: left
+            background-color: #D03F4A
+            padding-top: 10px
+            cursor: pointer
+            b, p
+              color: #EDF0F1
+            b
+              font:  
+                size: rem-calc(21)
+                weight: 500
+              line-height: rem-calc(25)
+              text-transform: uppercase
+            p
+              margin-bottom: 0
+              font:
+                size: rem-calc(10)
+                weight: 300
+              line-height: rem-calc(12)
+            &.lbf-active
+              background-color: #EDF0F1
+              cursor: default
+              b, p
+                color: #2E3E51
+
+          .lbf-registration-wrap
+            width: 60%
+          .lbf-login-wrap
+            width: 40%
+  .bx-wrapper
+    height: 610px
+    //width: 100%!important
+    .bx-viewport
+      height: 100%
+      //width: 100%!important
+  ul
+    height: 100%
+    margin: 0
+    list-style: none
+    //width: auto!important
+    position: relative
+    li
+      height: 100%
+      //width: 100%!important
+      a
+        height: 100%
+        .image
+          max-width: 100%
+          width: 100%
+          height: 100%
+          overflow: hidden
+          -webkit-background-size: cover !important
+          -moz-background-size: cover !important
+          -o-background-size: cover !important
+          background-size: cover !important
+          margin: 0 auto
+.ud-range-input
+  height: 60px
+  padding-top: 15px
+  input
+    color: #3598DB
+    height: 40px
+    width: 100%
+    font:
+      size: rem-calc(16)
+      weight: 400
+    text:
+      transform: uppercase
+      align: center
+    line-height: rem-calc(40)
+    border: none
+    border-bottom: 1px solid #BEC3C7
+    background: transparent
+    outline: none !important
+    box-shadow: none !important
+  .ui-slider
+    background: #BEC3C7
+    height: 2px
+    border: none
+    border-radius: 0
+    margin-top: 10px
+    position: relative
+    &:before, &:after
+      display: block
+      position: absolute
+      bottom: -25px
+      color: #BEC3C7
+      font:
+        size: .75rem
+        weight: 300
+      line-height: rem-calc(16.8)
+    &:before
+      content: attr(data-min-val)
+      left: 0
+    &:after
+      content: attr(data-max-val)
+      right: 0
+    .ui-slider-range
+      background: #3598DB
+      border: none !important
+
+    .ui-slider-handle
+      width: 7px
+      height: 12px
+      background: #3598DB!important
+      padding: 0
+      border: none
+      border-radius: 0
+      outline: none
+      box-shadow: none
+      &:first-of-type:before
+        display: block
+        content: ''
+        position: absolute
+        top: -7px
+        left: 0
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 0 0 7px 7px
+        border-color: transparent transparent #3598DB transparent
+      &:last-of-type:before
+        display: block
+        content: ''
+        position: absolute
+        top: -7px
+        left: 0
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 7px 0 0 7px
+        border-color: transparent transparent transparent #3598DB
+
+.ud-gender-input
+  position: relative
+  margin: 5px 0 20px
+  .lbf-gender-label-wrap
+    .lbf-ico
+      width: 22px
+      float: left
+      svg
+        height: 20px
+        width: 100%
+    .lbf-label
+      display: inline-block
+      height: 20px
+      float: left
+      label
+        padding: 0 8px
+        line-height: 20px
+        font-size: 10px
+        text-transform: uppercase
+        margin: 0
+        color: #fff
+    &.lbf-male
+      .lbf-ico
+        margin-right: 3px
+      .lbf-label
+        background-color: #2E3E51
+      path
+        fill: #2E3E51
+      input[type="radio"]:checked
+        ~ .lbf-label
+          background-color: #BEC3C7
+          label
+            color: #2E3E51
+    &.lbf-female
+      .lbf-ico
+        margin-right: 8px
+      .lbf-label
+        background-color: #D03F4A
+      path
+        fill: #D03F4A
+      input[type="radio"]:checked
+        ~ .lbf-label
+          background-color: #BEC3C7
+          label
+            color: #D03F4A
+
+  input
+    position: absolute
+    left: -1000px
+    visibility: hidden
+
+.l-about-project-wrap
+  background-color: #EDF0F1
+  margin-bottom: 40px
+  padding-bottom: 30px
+  img
+    width: 70%
+  b
+    color: #2E3E51
+    font-size: 1.30313rem
+    font-weight: 500
+    line-height: 2.375rem
+  i
+    color: #D03F4A
+    font:
+      size: 1.5rem
+      family: dearjoe_1_msregular
+      style: normal
+
+.l-who-is-online-now-wrap
+  background-color: #EDF0F1
+  .l-header
+    height: 38px
+    background-color: #BEC3C7
+    h4
+  ul#diamonds-online-carousel
+    margin-left: 0
+    list-style: none
+    padding-top: 10px
+    padding-bottom: 65px
+    margin-bottom: 35px
+    .your-best-match-wrap
+      width: 100% !important
+
+.input-ud-button
+  input[type="submit"]
+    font-size: 1.125rem
+    font-weight: 500
+    font-family: "Fira Sans", sans-serif
+    line-height: rem-calc(35)
+    text-transform: uppercase
+    color: #EDF0F1
+    height: 35px
+    width: 100%
+    background-color: #D03F4A
+    text-align: center
+    letter-spacing: 0.03rem
+    display: inline-block
+
+    text-shadow: 1px 1px 1px #9b3036, 2px 2px 1px #9e3138, 3px 3px 1px #9e3138, 4px 4px 1px #a13239, 5px 5px 1px #a8343c, 6px 6px 1px #a9343d, 7px 7px 1px #ae353e, 8px 8px 1px #b13740, 9px 9px 1px #b63842, 10px 10px 1px #bb3944, 11px 11px 1px #bc3a45, 12px 12px 1px #c03b46, 13px 13px 1px #c03b46, 14px 14px 1px #bf3b46, 15px 15px 1px #c03b47, 16px 16px 1px #c23c47, 17px 17px 1px #c23c47, 18px 18px 1px #c33c48, 19px 19px 1px #c33c48, 20px 20px 1px #c33c48, 21px 21px 1px #c33c48, 22px 22px 1px #c33c48
+    overflow: hidden
+
+    padding: 0
+    border: 0
+    outline: none
+
+.l-search-form-wrap
+  form
+    padding-bottom: 35px
+    .input-ud-button
+      margin-top: 35px
+  .input
+    padding-top: 15px
+    > label
+      font:
+        size: rem-calc(14)
+      line-height: rem-calc(16.8)
+      color: #2E3E51
+      margin-bottom: 6px
+    select
+      width: 100%
+      margin: 0
+      border: none
+    .SumoSelect
+      width: 100%
+      .optWrapper
+        top: 35px
+      ul.options
+        max-height: none
+        height: auto
+        overflow: visible
+        li
+          height: 35px
+          border-radius: 0!important
+          border-bottom: 1px solid #BEC3C7
+          padding: 0 0 0 35px
+          &:hover
+            background-color: #EDF0F1
+          span
+            i
+              background: #fff
+              border: 1px solid #BEC3C7
+          label
+            font:
+              size: rem-calc(14)
+            line-height: rem-calc(35)
+            color: #BEC3C7
+          &.selected
+            span
+              i
+                background-image: url("UAD-check-(white).png")
+                background-color: #3598DB
+                border: none
+            label
+              color: #3598DB
+    .SlectBox
+      width: 100%
+      padding: 0
+      height: 35px
+      border: none
+      margin: 0
+      > span
+        height: 100%
+        line-height: rem-calc(35)
+        color: #BEC3C7
+        font:
+          size: rem-calc(14)
+          weight: 300
+        padding-left: 12px
+      > label
+        background-color: transparent
+        > i
+          background-image: asset-url("UAD-triangle-grey.png")
+          width: 100%
+          height: 100%
+  .input-ud-button
+    input[type="submit"]
+      width: 100%
+      color: #EDF0F1 !important
+      font-size: 1.125rem !important
+  a
+    font-size: 0.75rem
+    font-weight: 300
+    font-family: "Fira Sans", sans-serif
+    color: #D03F4A
+    line-height: 0.9rem
+    padding-top: 7px
+    padding-left: 12px
+    span
+      color: #2E3E51
+      height: auto
+      border: none
+      display: inline-block
+  .l-search-result-wrap
+    margin-top: 2px
+    padding-top: 15px
+    padding-bottom: 65px
+    h3
+      color: #2E3E51
+      font:
+        size: rem-calc(20)
+        weight: 500
+      line-height: rem-calc(25)
+      text-transform: uppercase
+      margin-bottom: 30px
+      span
+        color: #D03F4A
+
+.l-how-it-work-wrap
+  margin-bottom: 35px
+  .title-block-wrap
+    top: 20px
+  img
+    width: 70%
+  b
+    color: #2E3E51
+    font-size: 1.30313rem
+    font-weight: 500
+    line-height: 2.375rem
+    text-transform: uppercase
+  i
+    color: #D03F4A
+    font-size: 1.5rem
+    font-family: dearjoe_1_msregular
+    font-style: normal
+
+.l-couple-stories-wrap
+  padding: 35px 0
+  .title-block-wrap
+    z-index: 11
+    .title
+      background-color: #EDF0F1
+      &:before
+        background-color: #BEC3C7
+  .bx-pager
+    display: none
+  ul
+    list-style: none
+    margin-left: 0
+    li
+      h3
+        color: #2E3E51
+        font:
+          size: rem-calc(21)
+          weight: 500
+        line-height: rem-calc(25)
+        text-transform: uppercase
+      p
+        color: #2E3E51
+        font:
+          size: rem-calc(14)
+          weight: 300
+        line-height: rem-calc(28)
+        span
+          color: #D03F4A
+      .image
+        max-width: 100%
+        width: 100%
+        height: 0
+        padding-bottom: 70%
+        overflow: hidden
+        -webkit-background-size: cover !important
+        -moz-background-size: cover !important
+        -o-background-size: cover !important
+        background-size: cover !important
+        margin: 0 auto
+
+.l-men-say-wrap
+  margin-top: 35px
+  margin-bottom: 45px
+  .notification-container
+    background-color: #2E3E51
+    left: 90%
+    top: 0
+    bottom: 0
+    min-width: 100px
+    width: 280px
+    min-height: auto
+    border: none
+    &:after
+      display: block
+      content: ""
+      position: absolute
+      top: 35px
+      left: -11px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 11px 11px 11px 0
+      border-color: transparent #2E3E51 transparent transparent
+    &:before
+      display: none
+  .white-grey
+    height: 90px
+    padding-top: 10px
+  .columns:last-child
+    .notification-container
+      left: auto
+      right: 90%
+      &:after
+        display: block
+        content: ""
+        position: absolute
+        top: 35px
+        left: auto
+        right: -11px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 11px 0 11px 11px
+        border-color: transparent transparent transparent #2E3E51
+
+  .l-men-say
+    padding: 25px
+    &:before
+      display: inline-block
+      content: ''
+      position: absolute
+      background-image: asset-url("UAD-quote-1.svg")
+      background-size: 100%
+      background-repeat: no-repeat
+      left: 10px
+      top: 10px
+      width: 57px
+      height: 42px
+      z-index: -1
+    &:after
+      display: inline-block
+      content: ''
+      position: absolute
+      background-image: asset-url("UAD-quote-2.svg")
+      background-size: 100%
+      background-repeat: no-repeat
+      right: 15px
+      bottom: 15px
+      width: 57px
+      height: 42px
+    p
+      color: #D03F4A
+      font:
+        size: rem-calc(12)
+        weight: 300
+      line-height: rem-calc(16)
+  .lms-one-wrap
+    cursor: pointer
+    .image
+      max-width: 100%
+      width: 100%
+      height: 0
+      padding-bottom: 110%
+      overflow: hidden
+      -webkit-background-size: cover !important
+      -moz-background-size: cover !important
+      -o-background-size: cover !important
+      background-size: cover !important
+      margin: 0 auto
+    b
+      color: #2E3E51
+      font-size: 1.30313rem
+      font-weight: 500
+      line-height: 2.375rem
+      text-transform: uppercase
+      width: 100%
+      display: inline-block
+      text-align: center
+
+    i
+      color: #D03F4A
+      font-size: 1.5rem
+      font-family: dearjoe_1_msregular
+      font-style: normal
+      width: 100%
+      display: inline-block
+      text-align: center
+
+.l-why-we-wrap
+  margin-bottom: 45px
+  .l-footer-registration-form-wrap
+    .input-ud-button
+      padding-top: 14px
+    .lfrf-header
+      background-color: #287FB8
+      height: 60px
+      .ud-gender-input
+        padding-top: 14px
+      b
+        color: #EDF0F1
+        font-size: 1.3125rem
+        font-weight: 500
+        line-height: 1.5625rem
+        text-transform: uppercase
+        padding-top: 10px
+        display: inline-block
+      p
+        color: #EDF0F1
+        font:
+          size: rem-calc(10)
+          weight: 300
+        line-height: rem-calc(12)
+        margin-bottom: 0
+    .lflf-form
+      padding-top: 20px
+      padding-bottom: 35px
+  = small-only
+    @media #{$small-only}
+      @content
+
+  ul
+    list-style-image: asset_url('ud-list-diamond.png')
+    margin-left: grid-calc(2,12)
+
+    +small-only
+      margin-left: 0.9375rem
+    li
+      color: #2E3E51
+      font:
+        size: rem-calc(16)
+        weight: 300
+      line-height: rem-calc(30)
+      &:nth-child(n+5)
+        text-transform: uppercase
+
+  strong
+    position: relative
+    color: #2E2E36
+    font:
+      size: 2rem
+      family: 'dearjoe_1_msregular'
+    display: block
+    padding-bottom: 20px
+    span
+      color: #D03F4A
+      position: relative
+      top: 20px
+      &:last-of-type
+        position: absolute
+        top: 0px
+        right: 18%
+        z-index: -1
+        svg
+          width: 75px
+          height: 100%
+
+.l-footer-wrap
+  min-height: 60px
+  background-color: #BEC3C7
+  position: relative
+
+  .scrollToTop
+    position: absolute
+    top: 0
+    right: 1rem
+    display: block
+    height: 60px
+    width: 32px
+    img
+      width: 36px
+      +my_center_align
+        position: absolute
+
+.ud-range-slider-wrap
+  input
+    width: 100%
+
+
+.l-registration-wrap
+  margin-top: 85px
+  margin-bottom: 120px
+  p
+    color: #2E3E51
+    font:
+      size: rem-calc(14)
+      weight: 300
+    line-height: rem-calc(16.8)
+
+    margin-top: 10px
+    a
+      color: #D03F4A
+
+
+  .lflf-form
+    h5
+      font-size: 0.875rem
+      line-height: 1.05rem
+      color: #2E3E51
+      margin-bottom: 9px
+    p
+      color: #BEC3C7
+      font:
+        size: rem-calc(12)
+        weight: 300
+      line-height: rem-calc(14.4)
+
+      margin-top: 10px
+      margin-bottom: 0
+    .l-hf-label
+      margin-top: 5px
+
+.l-hf-socials-wrap
+  a
+    display: inline-block
+    background-color: #287FB8
+    height: 35px
+    width: 100%
+    font:
+      size: rem-calc(16)
+    line-height: rem-calc(35)
+    color: #EDF0F1
+    text-transform: uppercase
+    border-left: 1px solid #EDF0F1
+    border-right: 1px solid #EDF0F1
+    padding-left: 45px
+    svg
+      width: 30px
+      height: 30px
+      position: absolute
+      left: 6px
+      top: 2.5px
+      path
+        fill: #fff
+.l-hf-label
+  width: 100%
+  height: 40px
+  overflow: hidden
+  margin-top: 15px
+  b
+    display: inline-block
+    background: #EDF0F1
+    font:
+      family: 'dearjoe_1_msregular'
+      size: rem-calc(23)
+    +my_horizontal_align
+    &:before
+      display: block
+      content: ''
+      width: 26px
+      height: 26px
+      position: absolute
+      top: 0
+      left: -5px
+      background-color: #EDF0F1
+      z-index: -1
+    &:after
+      display: block
+      content: ""
+      position: absolute
+      top: 13px
+      left: -1000px
+      width: 2000px
+      height: 0px
+      border-bottom: 2px dotted #48647C
+      z-index: -2

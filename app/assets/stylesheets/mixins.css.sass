@@ -118,16 +118,16 @@
 
 
 = keyframes($animation_name)
-    @-webkit-keyframes $animation_name
+    @-webkit-keyframes #{$animation_name}
         @content
 
-    @-moz-keyframes $animation_name
+    @-moz-keyframes #{$animation_name}
         @content
 
-    @-o-keyframes $animation_name
+    @-o-keyframes #{$animation_name}
         @content
 
-    @keyframes $animation_name
+    @keyframes #{$animation_name}
         @content
 
 
@@ -161,11 +161,11 @@
     transition: $transition-property $transition-time $method
 
 = transition_all( $transition-time)
-    -webkit-transition: $transition-time
-    -moz-transition: $transition-time
-    -ms-transition: $transition-time
-    -o-transition: $transition-time
-    transition: $transition-time
+    -webkit-transition: unquote($transition-time)
+    -moz-transition: unquote($transition-time)
+    -ms-transition: unquote($transition-time)
+    -o-transition: unquote($transition-time)
+    transition: unquote($transition-time)
     @content
 
 = transform($transforms)
