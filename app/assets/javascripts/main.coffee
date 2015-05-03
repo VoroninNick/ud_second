@@ -7,7 +7,7 @@ $.fn.observeMouseOut = (options)->
 
   $(document).on 'mouseup', (event)->
     #$containers = $("div.notification-container")
-    $containers = $object
+    $containers = $object.filter(":visible")
 
     out_of_container = true
     in_container = !out_of_container
@@ -752,7 +752,10 @@ $(document).ready ->
   $notification_containers = $("div.notification-container")
   $notification_containers.on "mouseUpOut", ()->
     $containers = $(this)
-    $containers.fadeOut duration: 300
+    console.log("hello")
+    if $containers.hasClass('visible')
+      $containers.fadeOut duration: 300
+      $containers.removeClass('visible')
 
   $notification_containers.observeMouseOut()
 
