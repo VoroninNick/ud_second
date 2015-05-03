@@ -741,21 +741,14 @@ $(document).ready ->
 #notification popup
   $('.notification-link').click (event)->
     $wrap = $(this).closest('.notification-wrap')
-    $container = $wrap.find('.notification-container')
-
-    if !$container.hasClass('visible')
-      $container.fadeIn 300
-      $container.addClass('visible')
-    else
-      $container.removeClass('visible')
+    $container = $wrap.find('.notification-container').filter(":not(:visible)")
+    $container.fadeIn 300
 
   $notification_containers = $("div.notification-container")
   $notification_containers.on "mouseUpOut", ()->
     $containers = $(this)
     console.log("hello")
-    if $containers.hasClass('visible')
-      $containers.fadeOut duration: 300
-      $containers.removeClass('visible')
+    $containers.fadeOut duration: 300
 
   $notification_containers.observeMouseOut()
 
