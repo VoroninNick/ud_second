@@ -27,6 +27,9 @@ $(document).on 'ready', ()->
       $menu_container = $ul.parent()
       $menu_container.addClass('open-dropdown')
 
+
+  $("form.change-email input[type=email]").attr({disabled: "disabled"})
+
   $('#account-settings__email-settings').on "click", "form.change-email input[type=submit]", (event)->
     event.preventDefault()
 
