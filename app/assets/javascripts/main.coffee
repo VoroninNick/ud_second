@@ -204,6 +204,8 @@ $(document).ready ->
     if $(@).hasClass('t-step-one')
       $tabHeader.eq(0).addClass(' active')
       $tabs.eq(0).show()
+      $('.trf-one-girl-wrap').show()
+      $('.trf-one-girl-wrap').removeClass('selected-girl')
     if $(@).hasClass('t-step-two')
       $tabHeader.eq(1).addClass(' active')
       $tabs.eq(1).show()
@@ -236,16 +238,16 @@ $(document).ready ->
   $('.ud-tab').first().show()
   $('.ud-tab-link').first().addClass('active')
 
-  $('.ud-tab-link').click ->
-    current_position = $(@).index()
-    $wrap = $(@).closest('.ud-tabs-wrap')
-    $form_wrap = $wrap.find('.ud-tab')
-
-    $('.ud-tab-link').removeClass('active')
-    $(@).addClass('active')
-
-    $('.ud-tab').hide()
-    $form_wrap.eq(current_position).show()
+#  $('.ud-tab-link').click ->
+#    current_position = $(@).index()
+#    $wrap = $(@).closest('.ud-tabs-wrap')
+#    $form_wrap = $wrap.find('.ud-tab')
+#
+#    $('.ud-tab-link').removeClass('active')
+#    $(@).addClass('active')
+#
+#    $('.ud-tab').hide()
+#    $form_wrap.eq(current_position).show()
 
 # edit changes informations
   $('.p-edit-iam').click (e)->
