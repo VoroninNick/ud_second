@@ -398,9 +398,24 @@ $(document).ready ->
     autoPlay : false
 
 # landing index banner
-  $('ul#index-banner').bxSlider()
-#    auto: true
+#  $('ul#index-banner').bxSlider
+##    auto: true
 #    pause: 6000
+#    onSliderLoad: ->
+#      $('.lb-about-profile').addClass('animated fadeInUp')
+  $("ul#index-banner").bxSlider
+    auto: true,
+    mode: 'fade',
+    pause: 6000,
+    controls: false,
+#    pagerCustom: "ul#bx_thumb",
+    onSliderLoad: ->
+      $('.lb-about-profile').addClass('animated fadeInUp')
+#      $('.title_layer_2').addClass('animated slideInRight')
+#      setTimeout (->
+#        $('.main_banner_order_button').addClass('animated slideInDown')
+#        #do something special
+#      ), 2400
 
 # landing couple stories
   $('#l-couple-stories ul').bxSlider()
