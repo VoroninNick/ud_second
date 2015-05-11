@@ -144,7 +144,7 @@
                           label Age
                       .row
                         .columns
-                          #ud-range-age-slide data-min-val="18" data-max-val="65+"
+                          #ud-range-age-slide data-min-val="18" data-max-val="65"
                     .columns.large-2.small-3
                       input#lsf-age-max type="text" placeholder="65+"
 
@@ -166,14 +166,14 @@
                 .row
                   .ud-range-input
                     .columns.large-2
-                      input#lsf-weight-min type="text" placeholder="40  "
+                      input#lsf-weight-min type="text" placeholder="40 "
                     .columns.large-8
                       .row
                         .column
                           label Weight
                       .row
                         .columns
-                          #ud-range-weight-slide data-min-val="135" data-max-val="200"
+                          #ud-range-weight-slide data-min-val="40" data-max-val="150"
                     .columns.large-2
                       input#lsf-weight-max type="text" placeholder="150"
 
@@ -181,7 +181,7 @@
               .columns.large-6.medium-6
                 .input
                   label Hair color
-                  select.ud-multiple
+                  select.ud-multiple multiple="multiple"
                     option value="" selected="" disabled="" Doesn’t matter
                     option value="Brown" Brown
                     option value="Yellow" Yellow
@@ -198,10 +198,10 @@
                     option value="Yalta" Yalta
                 .input-ud-button
                   input type="submit" value="Find Diamonds"
-                a
-                  span
-                    |or&nbsp;
-                  |Clear form
+                p.ud-s-clear
+                  |or&nbsp;
+                  a
+                    |Clear form
               .clearfix
 
       .white-grey.best-match-wrap.l-search-result-wrap

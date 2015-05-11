@@ -52,6 +52,51 @@ $.fn.observeMouseOut = (options)->
 
 
 $(document).ready ->
+#  init multiple select
+  $('select.ud-multiple').SumoSelect outerHtml: false
+
+  $('select.sort-by, select.view-mode').SumoSelect
+    captionHtml: '<p class=\'CaptionCont SlectBox\'><label></label></p>'
+    wrapperHtml: '<div class="SumoSelect GraySelect">'
+    outerHtml: '<div class="SumoSelectOuter GraySelectOuter">'
+    selectFirstIfBlank: true
+
+#clear form
+  $('a.clear-form').click ->
+    $formWrap = $(this).closest('form')
+    $items = $formWrap.find('ul.options li')
+    $items.removeClass('selected')
+    $captionSelect = $formWrap.find('p.CaptionCont span')
+    $captionSelect.text('')
+
+#  set sumo select in true
+#  $('.ud-multiple').SumoSelect okCancelInMulti: true
+
+# binder for clear form if click on clear form button
+  $('p.ud-s-clear a').on 'click', ->
+#   for sumoselect
+#    $('select.ud-multiple')[0].sumo.unSelectAll()
+#    $('select.ud-multiple')[0].sumo.reload()
+
+#    clear standart inputs and textarea
+    range_age = $("#ud-range-age-slide")
+    range_age.slider("values", 0, range_age.attr('data-min-val'))
+    range_age.slider("values", 1, range_age.attr('data-max-val'))
+    $('#lsf-age-min').val range_age.attr('data-min-val')
+    $('#lsf-age-max').val range_age.attr('data-max-val')
+
+    range_height = $("#ud-range-height-slide")
+    range_height.slider("values", 0, range_height.attr('data-min-val'))
+    range_height.slider("values", 1, range_height.attr('data-max-val'))
+    $('#lsf-height-min').val range_height.attr('data-min-val')
+    $('#lsf-height-max').val range_height.attr('data-max-val')
+
+
+    range_weight = $("#ud-range-weight-slide")
+    range_weight.slider("values", 0, range_weight.attr('data-min-val'))
+    range_weight.slider("values", 1, range_weight.attr('data-max-val'))
+    $('#lsf-weight-min').val range_weight.attr('data-min-val')
+    $('#lsf-weight-max').val range_weight.attr('data-max-val')
 
 #  countect for enter characters
   max_symbols = 1000
@@ -647,25 +692,6 @@ $(document).ready ->
     $body_tabs = $wrap.find('.tab-item-wrap')
     $body_tabs.addClass('hide')
     $body_tabs.eq(current_position).removeClass('hide')
-
-#    init multiple select
-  $('select.ud-multiple').SumoSelect({
-    outerHtml: false
-  })
-  $('select.sort-by, select.view-mode').SumoSelect({
-    captionHtml: "<p class='CaptionCont SlectBox'><label></label></p>",
-    wrapperHtml: '<div class="SumoSelect GraySelect">',
-    outerHtml: '<div class="SumoSelectOuter GraySelectOuter">',
-    selectFirstIfBlank: true
-  })
-
-#clear form
-  $('a.clear-form').click ->
-    $formWrap = $(this).closest('form')
-    $items = $formWrap.find('ul.options li')
-    $items.removeClass('selected')#
-    $captionSelect = $formWrap.find('p.CaptionCont span')
-    $captionSelect.text('')
 
 #small search form height binder
   $isExpendeForm = false
