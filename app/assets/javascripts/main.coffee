@@ -2,6 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
+
 $.fn.observeMouseOut = (options)->
   $object = $(this)
 
@@ -49,9 +50,27 @@ $.fn.observeMouseOut = (options)->
 ) jQuery
 
 
-
+#(($) ->
+#  if $.browser.msie == false
+#    return
+#  $('input[type=file]').live 'click', (e) ->
+#    self = this
+#
+#    blur = ->
+#      $(self).blur()
+#      return
+#
+#    setTimeout blur, 0
+#    return
+#  return
+#) jQuery
 
 $(document).ready ->
+#   init binder upload file
+  $('.ud-file-uploader-wrap input[type=file]').change ->
+#    alert 'value : '+$(@).value
+    $(@).closest('.ud-file-uploader-wrap').find('.ud-uploaded-file-wrap').text($(@).val())
+
 #  init multiple select
   $('select.ud-multiple').SumoSelect outerHtml: false
 
