@@ -516,7 +516,24 @@ textarea
     font:
       size: .875rem
       weight: 200
-
+.selected-one-gift-wrap
+  .selected-one-gift
+    &:after
+      display: block
+      content: ''
+      @media (min-width : 0) and (max-width : 40em)
+        display: none
+      right: -24px
+      width: 18px
+      height: 18px
+      +my_vertical_align(38%)
+        position: absolute
+      background-color: red
+  &:last-of-type
+    .selected-one-gift:after
+      display: none
+.ud-gift-notes
+  padding-top: 35px
 .selected-one-gift
   position: relative
   &.gift-empty-ico

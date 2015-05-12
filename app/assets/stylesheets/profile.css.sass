@@ -935,6 +935,72 @@ p
           display: block
           polygon
             fill: #fff
+    &.p-status-not-approved
+      &:before
+        display: block
+        content: 'Photo is not approved'
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background: rgba(46, 46, 54, .8)
+        text:
+          transform: uppercase
+          align: center
+        color: #EDF0F1
+        font:
+          size: rem-calc(14)
+          weight: 500
+          family: "Fira Sans", sans-serif
+        line-height: rem-calc(14)
+        padding-top: 50%
+
+      &:after
+        display: block
+        content: ''
+        background-image: asset_url('UD-icon-not-approved.svg')
+        background-size: 34px
+        background-repeat: no-repeat
+        +my_horizontal_align
+          position: absolute
+        bottom: 60%
+        width: 34px
+        height: 34px
+
+    &.p-status-approvement
+      &:before
+        display: block
+        content: 'Waiting for approvement'
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background: rgba(255, 111, 112, .8)
+        text:
+          transform: uppercase
+          align: center
+        color: #EDF0F1
+        font:
+          size: rem-calc(14)
+          weight: 500
+          family: "Fira Sans", sans-serif
+        line-height: rem-calc(14)
+        padding-top: 50%
+
+      &:after
+        display: block
+        content: ''
+        background-image: asset_url('UD-icon-not-approved.svg')
+        background-size: 34px
+        background-repeat: no-repeat
+        +my_horizontal_align
+          position: absolute
+        bottom: 60%
+        width: 34px
+        height: 34px
+
     &:hover
       a.p-set-as-avatar, .p-action-button
         opacity: 1
