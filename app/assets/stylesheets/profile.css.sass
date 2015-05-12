@@ -89,6 +89,7 @@ p
     margin-top: -120px
     position: relative
     top: 10px
+    overflow: hidden
     .p-image
       height: 100%
       width: 100%
@@ -237,16 +238,13 @@ p
       position: absolute
       bottom: 25px
       z-index: 2
-      &.remove-from-favorites
-        .p-title:before
-          left: 80px
-        svg
-          display: block
+
       .p-title
         width: 100%
         position: relative
         top: 15px
         padding-left: 29px
+        height: 35px
         &:before
           content: 'online'
           position: absolute
@@ -261,6 +259,21 @@ p
           letter-spacing: .02rem
           @media (min-width : 0) and (max-width : 818px)
             display: none
+      &.ud-in-favorites
+        .p-title
+          &:before
+            left: 80px
+          &:after
+            display: block
+            content: ''
+            width: 38px
+            height: 35px
+            background-image: asset_url('UD-icon-heart-white.svg')
+            background-size: 100%
+            background-repeat: no-repeat
+            position: absolute
+            left: 29px
+            top: 0
       svg
         display: none
         width: 38px
