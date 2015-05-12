@@ -935,6 +935,10 @@ p
           display: block
           polygon
             fill: #fff
+    &.p-status-not-approved, &.p-status-approvement
+      .pa-crop, .p-set-as-avatar
+        display: none
+
     &.p-status-not-approved
       &:before
         display: block
@@ -992,7 +996,7 @@ p
       &:after
         display: block
         content: ''
-        background-image: asset_url('UD-icon-not-approved.svg')
+        background-image: asset_url('UD-icon-aprovement-status.svg')
         background-size: 34px
         background-repeat: no-repeat
         +my_horizontal_align
