@@ -1133,8 +1133,10 @@ form
       font:
         size: rem-calc(16)
         weight: 400
-      line-height: rem-calc(35)
+      line-height: 1.2rem
       margin-bottom: 0
+      word-wrap: break-word
+      word-break: break-all
     .p-input-edit, .p-input-preview
       position: relative
     .p-input-edit
@@ -1142,6 +1144,11 @@ form
     .p-input-preview
       display: block
       cursor: pointer
+      height: 35px
+      position: relative
+      .p-input
+        +my_vertical_align()
+          position: absolute
       &:hover .pi-edit-button
         opacity: 1
 
