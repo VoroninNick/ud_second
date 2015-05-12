@@ -355,10 +355,6 @@ $(document).ready ->
       $('#lsf-age-max').val $('#ud-range-age-slide').slider('values', 1)
       return
 
-#  $('#lsf-age-min').change ->
-#    $('#ud-range-slide').slider 'value', parseInt(@value)
-#    return
-
     $ ->
       $('#ud-range-height-slide').slider
         range: true
@@ -400,6 +396,31 @@ $(document).ready ->
       $('#lsf-weight-min').val $('#ud-range-weight-slide').slider('values', 0)
       $('#lsf-weight-max').val $('#ud-range-weight-slide').slider('values', 1)
       return
+
+#      for age slider
+  $('#lsf-age-min').keyup ->
+    range_age = $("#ud-range-age-slide")
+    range_age.slider("values", 0, @value)
+  $('#lsf-age-max').keyup ->
+    range_age = $("#ud-range-age-slide")
+    range_age.slider("values", 1, @value)
+
+#      for weight slider
+  $('#lsf-weight-min').keyup ->
+    range_weight = $("#ud-range-weight-slide")
+    range_weight.slider("values", 0, @value)
+  $('#lsf-weight-max').keyup ->
+    range_weight = $("#ud-range-weight-slide")
+    range_weight.slider("values", 1, @value)
+
+#      for height slider
+  $('#lsf-height-min').keyup ->
+    range_height = $("#ud-range-height-slide")
+    range_height.slider("values", 0, @value)
+
+  $('#lsf-height-max').keyup ->
+    range_height = $("#ud-range-height-slide")
+    range_height.slider("values", 1, @value)
 
 
 #  landing banner registration form
@@ -444,6 +465,10 @@ $(document).ready ->
     itemsMobile: false # itemsMobile disabled - inherit from itemsTablet option
     autoPlay : false
 
+#  landing search form
+  $('.l-search-form-wrap form').submit (e) ->
+    e.preventDefault()
+    $('.l-search-result-wrap').show()
 # landing index banner
 #  $('ul#index-banner').bxSlider
 ##    auto: true
