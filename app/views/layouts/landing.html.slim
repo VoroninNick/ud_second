@@ -99,39 +99,40 @@ body.landing-page-wrap
                 .clearfix
 
   =yield
-  .l-footer-wrap
-    .row.medium-main
-      .columns.large-12.medium-10.medium-centered
-        .row
-          .columns
-            .links-wrap
-              ul
-                li
-                  a About us
-                li
-                  a Free trail
-                li
-                  a Privacy policy
-                li
-                  a Other useful infomation
-            .labels-wrap
-              ul.payment
-                li
-                  a
-                    =image_tag "Paymant-Visa.svg"
-                li
-                  a
-                    =image_tag "Paymant-Mastercard.svg"
-                li
-                  a
-                    =image_tag "Paymant-Paypal.svg"
-                li
-                  a
-                    =image_tag "Paymant-American express.svg"
-            .copyright-wrap
-              p
-                =image_tag "UD-icon-diamond.svg"
-                |© UkrainianDiamonds 2015
-
-    a.scrollToTop
-      = image_tag "UD-icon-arrow up.svg"
+  = render partial: "partials/footer"
+  /.l-footer-wrap
+  /  .row.medium-main
+  /    .columns.large-12.medium-10.medium-centered
+  /      .row
+  /        .columns
+  /          .links-wrap
+  /            ul
+  /              li
+  /                a About us
+  /              li
+  /                a Free trail
+  /              li
+  /                a Privacy policy
+  /              li
+  /                a Other useful infomation
+  /          .labels-wrap
+  /            ul.payment
+  /              li
+  /                a
+  /                  =image_tag "Paymant-Visa.svg"
+  /              li
+  /                a
+  /                  =image_tag "Paymant-Mastercard.svg"
+  /              li
+  /                a
+  /                  =image_tag "Paymant-Paypal.svg"
+  /              li
+  /                a
+  /                  =image_tag "Paymant-American express.svg"
+  /          .copyright-wrap
+  /            p
+  /              =image_tag "UD-icon-diamond.svg"
+  /              |© UkrainianDiamonds 2015
+  /
+  /  a.scrollToTop
+  /    = image_tag "UD-icon-arrow up.svg"
