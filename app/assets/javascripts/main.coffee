@@ -253,9 +253,9 @@ $(document).ready ->
     $(this).next().trigger('click')
 
 # init tabs
-  $('.ud-tab').hide()
-  $('.ud-tab').first().show()
-  $('.ud-tab-link').first().addClass('active')
+#  $('.ud-tab').hide()
+#  $('.ud-tab').first().show()
+#  $('.ud-tab-link').first().addClass('active')
 
 #  $('.ud-tab-link').click ->
 #    current_position = $(@).index()

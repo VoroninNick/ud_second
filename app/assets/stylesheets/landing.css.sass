@@ -3,6 +3,16 @@
 
 body.landing-page-wrap
   display: block !important
+  .your-best-match-wrap
+    .action-button
+      @media (min-width: 480px) and (max-width: 540px)
+        margin-right: 7px !important
+      @media (min-width: 0) and (max-width: 480px)
+        margin-right: 5px !important
+      @media (min-width: 405px) and (max-width: 480px)
+        width: 25px !important
+      @media (min-width: 0) and (max-width: 405px)
+        width: 20px !important
   .l-page-inner
     min-height: 100%
     height: auto !important
@@ -590,6 +600,7 @@ body.landing-page-wrap
     .your-best-match-wrap
       width: 100% !important
 
+
 .input-ud-button
   input[type="submit"]
     font-size: 1.125rem
@@ -693,8 +704,8 @@ body.landing-page-wrap
     font-family: "Fira Sans", sans-serif
     color: #D03F4A
     line-height: 0.9rem
-    padding-top: 7px
-    padding-left: 12px
+    //padding-top: 7px
+    //padding-left: 12px
     span
       color: #2E3E51
       height: auto
