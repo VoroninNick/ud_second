@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get "settings", to: "main#settings"
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   get 'main' => 'main#main'
   get 'main/registration' => 'main#main_registration'
+  get 'main/recovery-password' => 'main#main_recovery_password'
   get 'favorites' => 'main#favorites'
   get 'search' => 'main#search'
   get 'live_chat' => 'main#live_chat'
@@ -20,6 +21,7 @@ Rails.application.routes.draw do
   get 'profile' => 'main#profile'
   get 'information' => 'main#information'
   get 'tripadvisor' => 'main#tripadvisor'
+  get "settings", to: "main#settings"
 
   get 'test' => 'main#test'
 

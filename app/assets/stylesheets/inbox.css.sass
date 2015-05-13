@@ -3,8 +3,31 @@
 .ud-inbox-page-wrap
   .ud-message-one-block-wrap
     background-color: #EDF0F1
+    .ud-plaid-message-link
+      display: none
     &.ud-opened-message-block
       margin: 20px 0
+    &.ud-plaid-message
+      p.ud-text-message
+        width: 150px
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+      .ud-plaid-message-link
+        display: block
+        padding-top: 10px
+        p
+          color: #FF6F70
+          font:
+            size: rem-calc(14)
+            weight: 300
+          line-height: rem-calc(18)
+          a
+            padding: 0 5px
+            color: #3598DB
+        .ud-button-blue
+          width: 100%
+
   .ui-all-messages
     margin-top: 28px
   .ud-inbox-header-wrap

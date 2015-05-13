@@ -1,0 +1,102 @@
+.ud-message-one-block-wrap
+  .ud-inbox-message-block-wrap
+    .ud-message-option-wrap
+      .ud-message-option
+        =embedded_svg "UD-icon-sub menu.svg"
+        .ud-message-option-popup.hide
+          ul
+            li
+              a
+                =embedded_svg "UAD-inbox-replay.svg"
+                |Reply
+            li
+              a
+                =embedded_svg "UAD-inbox-5-saved.svg"
+                |Save e-mail
+            li
+              a
+                =embedded_svg "UAD-inbox-print.svg"
+                |Print it
+            li
+              a
+                =embedded_svg "UAD-inbox-6 trash.svg"
+                |Delete
+            p Messege id: #20150323234501123
+    .row
+      .columns.large-2.medium-2
+        .avatar-wrap
+          .avatar
+            .image style="background: url('#{asset_path("girl_11.jpeg")}')no-repeat center center;"
+          .title-for-avatar.text-center
+            span
+              |Kateryna
+      .columns.large-10.medium-10.no-padding-left
+        .ui-message-main-wrap data-count-messages=""
+          .row
+            .columns.large-6.medium-6
+              b Spring is the subject of conversation
+            .columns.large-6.medium-6
+              .ui-message-detail-info
+                p.ud-date
+                  |2015-02-20
+                a
+                  =embedded_svg "UAD-inbox-5-saved.svg"
+                a
+                  =embedded_svg "UAD-inbox-2-Intro.svg"
+                a
+                  =embedded_svg "UAD-inbox-4-drafts.svg"
+
+          .row
+            .columns.large-11.medium-11.small-11
+              p.ud-text-message
+                |I wish I could call you with a special name in real life. But did you decide something about our acquaintence? Or still not sure?? what doubts do you have, suleyman? Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me. I`m repeating it to you all the time, so what is the problem? You look through my profile when I write to you.? Oksana
+          .row
+            .column
+    .clearfix
+
+
+  .ud-inbox-sent-message.hide
+    .columns
+      .row
+        .columns.large-2.medium-2
+          .avatar-wrap
+            .avatar
+              .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+            .title-for-avatar.text-center
+              span
+                |me
+        .columns.no-padding-left.large-10.medium-10
+          .ud-input-message-wrap
+            form
+              .row
+                .columns
+                  .input
+                    .input-label
+                      label
+                        |Quick replay
+                        span
+                          |(0/1000)
+
+                    textarea placeholder="The maximum message length is 1000 symbols" rows="7" maxlength="1000"
+            .row
+              .columns
+                /a Translate into english
+                a.modal-link.m-send.special-text-shadow.right  href="#" Send
+                .ud-browse-images-wrap.notification-wrap.right
+                  a.edit-icon-svg.browse-file.notification-link
+                    = embedded_svg "UD-icon-add files.svg"
+                  .notification-container
+                    .menu
+                      .group
+                        .options
+                          .option
+                            .label
+                              .icon
+                                = embedded_svg "ud-make-image.svg"
+                            .input
+                              a data-reveal-id="AddAPictures" Add a picture
+                            .clearfix
+                a.edit-icon-svg.smiles.right
+                  = embedded_svg "UD-icon-smile.svg"
+            .clearfix
+    .clearfix

@@ -551,7 +551,7 @@ $(document).ready ->
     $editMessage = $wrapper.find('.ud-inbox-sent-message')
     $subMesssageWrapper = $wrapper.find('.ud-inbox-message-sub-block-wrap')
 
-    if !$wrapper.hasClass('ud-nc-b')
+    if !$wrapper.hasClass('ud-nc-b') and !$wrapper.hasClass('ud-plaid-message')
       $('.ud-inbox-sent-message, .ud-inbox-message-sub-block-wrap').addClass('hide')
       $('.ud-message-one-block-wrap').removeClass('ud-opened-message-block')
       $wrapper.addClass('ud-opened-message-block')
