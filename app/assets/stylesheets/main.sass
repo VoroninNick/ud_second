@@ -63,6 +63,9 @@ header
   z-index: 50
   transition: top .3s
 
+@-moz-document url-prefix()
+  .reveal-modal, dialog
+    position: fixed
 
 .l-footer-wrap
   .links-wrap, .labels-wrap, .copyright-wrap
@@ -112,8 +115,8 @@ header
           border: none
           position: relative
         svg
-          height: 30px
-          width: 30px
+          height: 22px
+          width: 22px
           +my_vertical_align()
             position: absolute
           path, rect, polygon

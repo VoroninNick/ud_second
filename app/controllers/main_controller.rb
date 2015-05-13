@@ -1,10 +1,14 @@
 class MainController < ApplicationController
-  layout "landing", only: [:main, :main_registration]
+  layout "landing", only: [:main, :main_registration, :main_recovery_password]
   def main
 
   end
 
   def main_registration
+
+  end
+
+  def main_recovery_password
 
   end
 

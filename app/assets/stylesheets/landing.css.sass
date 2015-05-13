@@ -3,6 +3,11 @@
 
 body.landing-page-wrap
   display: block !important
+  .l-page-inner
+    min-height: 100%
+    height: auto !important
+    height: 100%
+    margin: 0 auto -125px
   .l-hlf-forgot-password-wrap
     position: absolute
     left: 0
@@ -65,7 +70,7 @@ body.landing-page-wrap
       height: 35px
       width: 100%
       padding-left: 13px
-      font-family: "dearjoe_1_msregular"
+      //font-family: "dearjoe_1_msregular"
       &:focus
         border: none !important
   .l-round-count-wrap
@@ -355,6 +360,7 @@ body.landing-page-wrap
           .input
             input
               height: 35px
+              line-height: rem-calc(35)!important
             label
               //color: #2E3E51
               //font:
@@ -969,8 +975,8 @@ body.landing-page-wrap
 
 
 .l-registration-wrap
-  margin-top: 115px
-  margin-bottom: 165px
+  margin-top: 65px
+  margin-bottom: 100px
   p
     color: #2E3E51
     font:

@@ -335,6 +335,9 @@ p
       line-height: rem-calc(28)
       color: #58595B
     .media-content-block-wrap
+      &.video-wrap
+        .content
+          margin-bottom: 3px
       &.photos-wrap
         padding-bottom: 45px
       .header
@@ -357,6 +360,10 @@ p
           width: 100%
         .profile-one-photo
           padding: 1px
+      p
+        font-size: 11px
+        padding-left: 3px
+        margin-bottom: 10px
 .action-for-hide-on-small
   @media (min-width : 818px) and (max-width : 865px)
     display: none !important
