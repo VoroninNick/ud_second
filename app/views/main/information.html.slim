@@ -1,11 +1,11 @@
 .row.medium-main
   .columns.medium-10.medium-centered.large-12
-    .row.information-page-wrap.ud-tabs-wrap
-      .columns.large-3.medium-3.settings-left-menu
+    .row.information-page-wrap
+      .columns.large-3.settings-left-menu
         ul
-          li.ud-tab-link.visible.active
+          li.visible.active
             a About Us
-          li.ud-tab-link.visible
+          li.visible
             a Contact us
           li.ud-tab-link.visible
             a Our Services
@@ -30,7 +30,7 @@
           li.ud-tab-link.visible
             a Privacy Policy
 
-      .columns.large-9.medium-9
+      .columns.large-9
         =render partial: "partials/information/about_us"
         =render partial: "partials/information/contact_us"
         =render partial: "partials/information/our_services"
