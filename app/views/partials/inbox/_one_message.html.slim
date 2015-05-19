@@ -1,27 +1,27 @@
 .ud-message-one-block-wrap
   .ud-inbox-message-block-wrap
-    .ud-message-option-wrap
-      .ud-message-option
+    .ud-message-option-wrap.notification-wrap
+      .ud-message-option.notification-link
         =embedded_svg "UD-icon-sub menu.svg"
-        .ud-message-option-popup.hide
-          ul
-            li
-              a
-                =embedded_svg "UAD-inbox-replay.svg"
-                |Reply
-            li
-              a
-                =embedded_svg "UAD-inbox-5-saved.svg"
-                |Save e-mail
-            li
-              a
-                =embedded_svg "UAD-inbox-print.svg"
-                |Print it
-            li
-              a
-                =embedded_svg "UAD-inbox-6 trash.svg"
-                |Delete
-            p Messege id: #20150323234501123
+      .ud-message-option-popup.notification-container
+        ul
+          li
+            a
+              =embedded_svg "UAD-inbox-replay.svg"
+              |Reply
+          li
+            a
+              =embedded_svg "UAD-inbox-5-saved.svg"
+              |Save e-mail
+          li
+            a
+              =embedded_svg "UAD-inbox-print.svg"
+              |Print it
+          li
+            a
+              =embedded_svg "UAD-inbox-6 trash.svg"
+              |Delete
+          p Messege id: #20150323234501123
     .row
       .columns.large-2.medium-2.small-2
         .avatar-wrap
