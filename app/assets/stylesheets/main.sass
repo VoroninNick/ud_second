@@ -1318,7 +1318,12 @@ li.credits
 .note-column
   @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2)
     width: 100% !important
-
+.test-320
+  @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)
+    display: none
+.test-568
+  @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2)
+    display: none
 .notes
   width: 97%
   margin: 0 auto

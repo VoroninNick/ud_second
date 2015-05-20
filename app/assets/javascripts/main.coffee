@@ -176,9 +176,11 @@ $(document).ready ->
     $attach_wrap = $wrap.find('.ud-e-attachment-wrap')
     $image_object = $(@).parent().html()
     $attach_wrap.append($image_object)
+    alert "test"
 
 #    $('#AddAPictures').trigger 'reveal:close'
     $('#AddAPictures').foundation 'reveal', 'close'
+
   $('.ud-smiles-inner a img').click ->
     alert 'smile'
 
