@@ -68,11 +68,16 @@ $.fn.observeMouseOut = (options)->
 $(document).ready ->
 #   init binder upload file
   $('.ud-file-uploader-wrap input[type=file]').change ->
-#    alert 'value : '+$(@).value
     $(@).closest('.ud-file-uploader-wrap').find('.ud-uploaded-file-wrap').text($(@).val())
 
+#=========================================================
 #  init multiple select
-  $('select.ud-multiple').SumoSelect outerHtml: false
+#=========================================================
+  multiSelect = undefined
+
+  multiSelect = $('select.ud-multiple').SumoSelect
+    outerHtml: false
+#    okCancelInMulti: true
 
   $('select.sort-by, select.view-mode').SumoSelect
     captionHtml: '<p class=\'CaptionCont SlectBox\'><label></label></p>'
@@ -88,14 +93,24 @@ $(document).ready ->
     $captionSelect = $formWrap.find('p.CaptionCont span')
     $captionSelect.text('')
 
-#  set sumo select in true
-#  $('.ud-multiple').SumoSelect okCancelInMulti: true
-
+#=========================================================
 # binder for clear form if click on clear form button
+#=========================================================
+
   $('p.ud-s-clear a').on 'click', ->
 #   for sumoselect
-#    $('select.ud-multiple')[0].sumo.unSelectAll()
-#    $('select.ud-multiple')[0].sumo.reload()
+#    obj = []
+#    $('option:selected').each ->
+#      obj.push $(this).index()
+#      return
+#    i = 0
+#    while i < obj.length
+#      $('select.ud-multiple')[0].sumo.unSelectItem obj[i]
+#      i++
+#    return
+
+    $('select.ud-multiple')[0].sumo.unSelectAll()
+    $('select.ud-multiple')[1].sumo.unSelectAll()
 
 #    clear standart inputs and textarea
     range_age = $("#ud-range-age-slide")
