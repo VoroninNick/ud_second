@@ -789,9 +789,9 @@ ul.primary-menu
       //@media (min-width : 40.063em) and (max-width : 1445px)
       position: absolute
       top: 0
-      left: -450px
-      width: 435px
-      height: 260px
+      left: -325px
+      width: 310px
+      height: 230px
       -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
       -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
       box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
@@ -1127,14 +1127,14 @@ section.ordered-list
     .ol-start-chat-wrap
       padding-top: 15px
       background: #EDF0F1
-      padding-bottom: 10px
+      //padding-bottom: 10px
       display: inline-block
       @media (min-width : 40.063em) and (max-width : 1445px)
         position: absolute
         top: 0
-        left: -450px
-        width: 435px
-        height: 260px
+        left: -325px
+        width: 310px
+        height: 230px
         -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
         -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
         box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
@@ -1202,7 +1202,6 @@ section.ordered-list
       -moz-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.35)
       box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.35)
       margin-bottom: 15px
-      margin-top: 15px
       position: relative
       @media (min-width : 40.063em) and (max-width : 1445px)
         margin-top: 0
@@ -1210,13 +1209,13 @@ section.ordered-list
         display: block
         content: ""
         position: absolute
-        top: -11px
-        left: 20px
+        top: 20px
+        left: -11px
         width: 0
         height: 0
         border-style: solid
-        border-width: 0 11px 11px 11px
-        border-color: transparent transparent #D7EAF8 transparent
+        border-width: 11px 11px 11px 0
+        border-color: transparent #D7EAF8 transparent transparent
         z-index: 1
         @media (min-width : 40.063em) and (max-width : 1445px)
           top: 16px
@@ -1227,13 +1226,13 @@ section.ordered-list
         display: block
         content: ""
         position: absolute
-        top: -11px
-        left: 21px
+        top: 21px
+        left: -11px
         width: 0
         height: 0
         border-style: solid
-        border-width: 0 11px 11px 11px
-        border-color: transparent transparent rgba(0, 0, 0, 0.35) transparent
+        border-width: 11px 11px 11px 0
+        border-color: transparent rgba(0, 0, 0, 0.35) transparent transparent
         @media (min-width : 40.063em) and (max-width : 1445px)
           top: 17px
           left: -11px
@@ -1246,6 +1245,7 @@ section.ordered-list
           family: "Fira Sans", sans-serif
         line-height: rem-calc(18)
         color: #404049
+        margin-bottom: 0
 a.ud-button
   font:
     size: rem-calc(18)
@@ -1267,19 +1267,16 @@ a.ud-button
 .fo-custom-row
   width: 100%
   float: left
-  @media (min-width : 40.063em) and (max-width : 1445px)
-    margin-top: 20px
-    .columns
-      width: 100% !important
 
 .avatar-column
   @media (min-width : 40.063em) and (max-width : 1445px)
-    width: 22%
+    width: 100%
+    margin-top: 10px
     p
       margin-top: 5px
 .text-column
   @media (min-width : 40.063em) and (max-width : 1445px)
-    width: 78%
+    width: 100%
 
 .admin-menu
   header, .main-menu-wrap
