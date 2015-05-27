@@ -25,6 +25,10 @@ class MainController < ApplicationController
 
   end
 
+  def live_chat2
+
+  end
+
   def search
 
   end

@@ -1,0 +1,12 @@
+.main-block-wrap.main-block
+  .row.medium-main
+    .columns.medium-10.medium-centered.large-12
+      .live-chat-page-wrap
+        .lvc-offered-list-wrap
+          = render partial: "partials/livechat/offered_list"
+        .lvc-live-chat-wrap
+          .lvc-chat-wrap
+            = render partial: "partials/livechat/text_chat"
+          .lvc-video-wrap
+            = render partial: "partials/livechat/video_chat"
+        .clearfix

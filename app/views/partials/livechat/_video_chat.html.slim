@@ -1,0 +1,82 @@
+.video-chat-wrap.video-chat-column
+  .row
+    .columns.vch-column.column-live-chat-enemy
+      .video-chat-window
+        .vcw-welcome
+          .row
+            .columns.column-for-vertical-layout
+              .row
+                .columns
+                  .avatar
+                    .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+              .row
+                .columns.text-center
+                  .about-people
+                    b
+                      |Olena
+                      = embedded_svg "UD-icon-camshare-green.svg"
+            .columns.column-for-vertical-layout
+              .lvc-cam-button-wrap
+                a.ud-button.special-text-shadow.ud-start-cam see her webcam
+              p Each minute of chat with video billed at 2 Credits
+        .vcw-inner.hide
+          .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+          .avatar.avatar-me
+            .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+          .avatar.avatar-enemy
+            .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+          .vcw-navigation-wrap
+            .triangle-wrap
+              .triangle
+            .vcw-navigation
+              .row
+                .columns
+                  .columns.vcw-inner-columns.large-8.medium-8.small-8.no-padding-right
+                    p Each minute of chat with video billed at 2 Credits
+                  .columns.vcw-inner-columns.large-4.medium-4.small-4
+                    a.ud-button.special-text-shadow.ud-stop-cam stop
+                    a.ud-button.special-text-shadow.ud-minimize-stop-cam stop
+                  /.columns.large-3.medium-3.small-3
+                  /  a.ud-fullscreen-mode
+                  /    =embedded_svg "UD-icon-fullscreen.svg"
+                  /  a.ud-minimize-mode
+                  /    =embedded_svg "UD-icon-minimize.svg"
+
+    .columns.vch-column.column-live-chat-me
+      .video-chat-window
+        .vcw-welcome
+          .row
+            .columns.column-for-vertical-layout
+              .row
+                .columns
+                  .avatar
+                    .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+              .row
+                .columns.text-center
+                  .about-people
+                    b You
+            .columns.column-for-vertical-layout
+              .lvc-cam-button-wrap
+                a.ud-button.special-text-shadow.ud-start-cam start camshare
+              p Each minute of chat with CamShare billed at 4 Credits
+        .vcw-inner.hide
+          .image style="background: url('#{asset_path("man_11a.jpg")}')no-repeat center center;"
+          .avatar
+            .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+          .vcw-navigation-wrap
+            .triangle-wrap
+              .triangle
+            .vcw-navigation
+              .row
+                .columns
+                  .columns.vcw-inner-columns.large-8.medium-8.small-8
+                    p Each minute of chat with video billed at 2 Credits
+                  .columns.vcw-inner-columns.large-4.medium-4.small-4
+                    a.ud-button.special-text-shadow.ud-stop-cam stop
+
+  .row
+    .columns
+      .lvc-credits-wrap
+        p Credits left
+        .credits-inner
+        .credits 2999

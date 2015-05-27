@@ -1,0 +1,139 @@
+.text-chat-wrap.text-chat-column
+  .title-head.grey.notification-wrap
+    .columns
+      .wrap
+        h4 Live chat: You and Olena
+        .items-menu.notification-link
+          =image_tag "UD-icon-sub menu.svg"
+          .notification-container
+            .menu
+              .group
+                .title
+                  strong Display options:
+                .options
+                  .option
+                    .label
+                      .icon
+                        = embedded_svg "UD-icon-sort.svg"
+                      span
+                        |Sort by
+                    .input
+                      select.sort-by
+                        option value="age_increase" Age increase
+                        option value="age_decrease" Age decrease
+                        option value="alfabet" Alfabet
+                        option value="recent_activity" Recent activity
+                        option value="favotites_first" Favotites first
+                    .clearfix
+  .text-chat-inner
+  .text-chat-view-container
+    .columns
+      .row.ud-one-message.my-message
+        .column.large-3.medium-3.small-3
+          .row
+            .columns
+              .avatar
+                .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+          .row
+            .columns.text-center
+              .about-people
+                b me
+        .column.large-7.medium7.small-9.end
+          .chat-bubbles-wrap
+            .text-wrap
+              .date-time-wrap
+                p 02:16 PM
+              p Hello!
+
+      .row.ud-one-message.enemy-message
+        .column.large-3.medium-3.small-3.right
+          .row
+            .columns
+              .avatar
+                .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+          .row
+            .columns.text-center
+              .about-people
+                b Olena
+        .column.large-7.medium-7.small-9
+          .chat-bubbles-wrap
+            .text-wrap
+              .date-time-wrap
+                p 02:17 PM
+              p  Hello, Greg!
+
+      .row.ud-one-message.my-message
+        .column.large-3.medium-3.small-3
+          .row
+            .columns
+              .avatar
+                .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+          .row
+            .columns.text-center
+              .about-people
+                b me
+        .column.large-7.medium-7.small-6.end
+          .chat-bubbles-wrap
+            .text-wrap
+              .date-time-wrap
+                p 02:18 PM
+              p How are you?
+
+      .row.ud-one-message.enemy-message
+        .column.large-3.medium-3.small-3.right
+          .row
+            .columns
+              .avatar
+                .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+          .row
+            .columns.text-center
+              .about-people
+                b Olena
+        .column.large-7.medium-7.small-6
+          .chat-bubbles-wrap
+            .text-wrap
+              .date-time-wrap
+                p 02:16 PM
+              p  t's me writing to you again trying to earn your attention ;)) So it's Friday today. Finally, this working week came to it's end. What was this week like for you?) How are you planning to finish this day? :)
+      .row.ud-one-message.enemy-message
+        .column.large-3.medium-3.small-3.right
+          .row
+            .columns
+              .avatar
+                .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+          .row
+            .columns.text-center
+              .about-people
+                b Olena
+        .column.large-7.medium-7.small-6
+          .chat-bubbles-wrap
+            .text-wrap
+              .date-time-wrap
+                p 02:16 PM
+              p  What are u duing?
+
+  .text-chat-input-container
+    .text-chat-input-container-inner
+      .row
+        .columns
+          form
+            .row
+              .columns
+                label Quick replay
+            .row
+              .columns
+                textarea rows="7"
+            .row
+              .columns
+                a.translate.left Translate into english
+                .right-group-links
+                  a.ud-button.special-text-shadow.right href="#" Send
+                  a.edit-icon-svg.browse-file.right
+                    = embedded_svg "UD-icon-add files.svg"
+                  a.edit-icon-svg.smiles.right
+                    = embedded_svg "UD-icon-smile.svg"
+                  a.ud-close-session.right
+                    |Close this session
+                    span
+                      |&nbsp;or
+                  .clearfix

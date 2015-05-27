@@ -1,29 +1,197 @@
-.live-chat-tumblers
-  float: right
-  position: relative
-  .tumbler
-    width: 20px
-    height: 20px
-    float: left
-    margin: 5px
-    cursor: pointer
-    position: absolute
-    top: -30px
-    svg
-      width: 100%
-      height: 100%
-      rect
-        fill: #BEC3C7
-    &.vertical-layout-button
-      right: 30px
-    &.horizontal-layout-button
-      right: 60px
-    &.active
-      rect
-        fill: #48647C
+//======================================
+// new version
+//======================================
 
-.live-chat-custom-column
-.lch-people-online
+.live-chat-page-wrap
+  margin-bottom: 100px
+  .lvc-offered-list-wrap, .lvc-live-chat-wrap
+    height: 100%
+    float: left
+  .lvc-offered-list-wrap
+    width: 130px
+    background-color: #EDF0F1
+    margin-right: 2px
+    .title-head
+      h4
+        white-space: nowrap
+    ul
+      margin-left: 0
+      margin-bottom: 0
+      list-style: none
+      li
+        padding-top: 15px
+        padding-bottom: 11px
+        border-top: 1px solid #BEC3C7
+        border-bottom: 1px solid #FFF
+        .lvc-ol-profile, .lvc-ol-actions
+          float: left
+        .lvc-ol-profile
+          width: 90px
+          .preview-profile
+            width: 62px
+            margin: 0 auto
+            position: relative
+            .image
+              max-width: 100%
+              width: 100%
+              height: 0
+              padding-bottom: 100%
+              overflow: hidden
+              -webkit-background-size: cover !important
+              -moz-background-size: cover !important
+              -o-background-size: cover !important
+              background-size: cover !important
+              margin: 0 auto
+            &:before
+              display: block
+              content: ''
+              position: absolute
+              height: 3px
+              left: 0
+              right: 0
+              bottom: 0
+              background-color: #96D03F
+          .title
+            b
+              text-align: center
+              display: block
+              color: #2E3E51
+              font:
+                size: rem-calc(14)
+                weight: 400
+                family: "Fira Sans", sans-serif
+        .lvc-ol-actions
+          width: 40px
+          position: relative
+          top: -8px
+          left: -6px
+          .action-button
+            height: 40px
+            a
+              padding: 10px
+              display: block
+              svg
+                width: 100%
+                height: 100%
+              &:hover
+                path
+                  fill: #96D03F
+              &.red-fill:hover
+                path
+                  fill: #96D03F
+    @media only screen and (max-width: 768px)
+      display: none
+  .lvc-live-chat-wrap
+    width: calc(100% - 135px)
+    .lvc-chat-wrap, .lvc-video-wrap
+      float: left
+      height: 100%
+    .lvc-chat-wrap
+      background-color: #EDF0F1
+      width: 60%
+      a.ud-button
+        width: auto!important
+    .lvc-video-wrap
+      background-color: #2E2E36
+      width: 40%
+      position: relative
+      &:before
+        display: block
+        content: ''
+        position: absolute
+        top: 14px
+        left: -8px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 5.5px 8px 5.5px 0
+        border-color: transparent #2e2e36 transparent transparent
+        z-index: 11
+      .lvc-cam-button-wrap
+        //padding: 0 25px
+        width: 56%
+        margin: 0 auto
+      .lvc-credits-wrap
+        position: relative
+        padding-bottom: 15px
+        padding-top: 13px
+        p
+          text-align: center
+          color: #EDF0F1
+          font:
+            size: rem-calc(14)
+            weight: 400
+          line-height: rem-calc(16.8)
+          margin-bottom: 10px
+        .credits-inner
+          margin: 0 auto
+        .credits
+          height: 24px
+          background-color: #D03F4A
+          font-size: 1.125rem
+          font-family: "Fira Sans", sans-serif
+          font-weight: 300
+          line-height: 1.5625rem
+          color: #EDF0F1
+          padding-left: 30px
+          padding-right: 10px
+          border-radius: 12px
+          position: relative
+          width: auto
+          display: inline-block
+          +my_horizontal_align
+          &:before
+            display: block
+            content: ""
+            background-image: asset_url('UD-icon-diamond-white.svg')
+            background-size: 100%
+            background-repeat: no-repeat
+            position: absolute
+            width: 16px
+            height: 16px
+            top: 6px
+            left: 8px
+
+    @media only screen and (max-width: 768px)
+      width: 100%
+      .lvc-chat-wrap
+        width: 100%
+      .lvc-video-wrap
+        display: none
+
+
+
+
+
+//======================================
+// old version
+//======================================
+//
+//
+//.live-chat-tumblers
+//  float: right
+//  position: relative
+//  .tumbler
+//    width: 20px
+//    height: 20px
+//    float: left
+//    margin: 5px
+//    cursor: pointer
+//    position: absolute
+//    top: -30px
+//    svg
+//      width: 100%
+//      height: 100%
+//      rect
+//        fill: #BEC3C7
+//    &.vertical-layout-button
+//      right: 30px
+//    &.horizontal-layout-button
+//      right: 60px
+//    &.active
+//      rect
+//        fill: #48647C
+
 .black-layer-absolute
   width: 100%
   position: relative
@@ -71,93 +239,46 @@
       path, polygon
         fill: #fff
 
-.horizontal-layout
-  position: relative
-  .black-layer-absolute
-    &:before
-      background: #2E2E36
-  .video-chat-column
-    width: 100%
-    .video-chat-wrap
-      height: 245px
-      transition: height .4s
-      .vch-column
-        width: 50%
-      .video-chat-window
-        height: 200px
-        transition: height .4s
-  .text-chat-column
-    width: 100%
-    margin-top: 24px
-    @media (min-width : 0) and (max-width : 980px)
-      margin-bottom: 65px
-  .column-for-horizontal-layout
-    @media (min-width : 0) and (max-width : 1500px)
+
+.video-chat-column
+  padding-left: 0
+  .column-live-chat-me
+    margin-bottom: 35px
+  .video-chat-wrap
+    min-height: 670px
+  .video-chat-wrap
+    position: relative
+
+    .vch-column
       width: 100%
-      .avatar
-        width: 32%
-        margin: 0 auto
+    .video-chat-window
+      height: auto
+      width: 85%
+      margin: 0 auto
+      margin-top: 38px
+      //margin-bottom: 50px
+      padding-bottom: 47px
+      .vcw-inner
+        overflow: inherit
+        .image
+          padding-bottom: 100%
+        .vcw-navigation-wrap
+          bottom: -47px !important
+          z-index: 1
+          .vcw-inner-columns
+            width: 100%
+            p
+              margin-bottom: 8px
+            a
+              width: 100%
+          .ud-fullscreen-mode, .ud-minimize-mode
+            display: none !important
+      .column-for-vertical-layout
+        width: 100%
+        &.no-padding-left
+          padding-left: 0.9375rem
       p
         text-align: center
-.vertical-layout
-  .video-chat-column
-    width: 30%
-    float: right
-    padding-left: 0
-    .column-live-chat-me
-      margin-bottom: 35px
-    .video-chat-wrap
-      min-height: 670px
-    .video-chat-wrap
-      position: relative
-      &:before
-        display: block
-        content: ''
-        position: absolute
-        top: 14px
-        left: -8px
-        width: 0
-        height: 0
-        border-style: solid
-        border-width: 5.5px 8px 5.5px 0
-        border-color: transparent #2e2e36 transparent transparent
-        z-index: 11
-      .vch-column
-        width: 100%
-      .video-chat-window
-        height: auto
-        width: 85%
-        margin: 0 auto
-        margin-top: 38px
-        //margin-bottom: 50px
-        padding-bottom: 47px
-        .vcw-inner
-          overflow: inherit
-          .image
-            padding-bottom: 100%
-          .vcw-navigation-wrap
-            bottom: -47px !important
-            z-index: 1
-            .vcw-inner-columns
-              width: 100%
-              p
-                margin-bottom: 8px
-              a
-                width: 100%
-            .ud-fullscreen-mode, .ud-minimize-mode
-              display: none !important
-        .column-for-vertical-layout
-          width: 100%
-          &.no-padding-left
-            padding-left: 0.9375rem
-        p
-          text-align: center
-
-  .text-chat-column
-    width: 70%
-    padding-right: 0
-
-
 
 .text-chat-column
   resize: vertical
@@ -330,11 +451,11 @@
           weight: 400
         color: #2E3E51
   .text-chat-input-container
-    min-height: 235px
+    min-height: 210px
     position: absolute
     left: 0
     right: 0
-    bottom: 0
+    bottom: 25px
     &:before
       display: block
       content: ''
@@ -443,147 +564,169 @@
 .video-chat-column
   .video-chat-wrap
     background-color: #2E2E36
-    .vch-column
-    .video-chat-window
+  .vch-column
+  .video-chat-window
+    width: 100%
+    margin-top: 22px
+    a.ud-button
+      font:
+        size: rem-calc(18)
+        weight: 500
+        family: "Fira Sans", sans-serif
+      line-height: rem-calc(35)
+      text-transform: uppercase
+      color: #EDF0F1
+      height: 35px
+      display: block
       width: 100%
-      margin-top: 22px
-      a.ud-button
-        font:
-          size: rem-calc(18)
-          weight: 500
-          family: "Fira Sans", sans-serif
-        line-height: rem-calc(35)
-        text-transform: uppercase
-        color: #EDF0F1
-        height: 35px
-        display: block
-        width: 100%
-        background-color: #D03F4A
-        text-align: center
-        letter-spacing: 0.03rem
-      .vcw-welcome
-        .avatar
-          position: relative
-          .image
-            max-width: 100%
-            width: 100%
-            height: 0
-            padding-bottom: 100%
-            overflow: hidden
-            -webkit-background-size: cover !important
-            -moz-background-size: cover !important
-            -o-background-size: cover !important
-            background-size: cover !important
-            margin: 0 auto
-          &:before
-            display: block
-            content: ""
-            position: absolute
-            bottom: 0
-            height: 4px
-            background-color: #96D03F
-            width: 100%
-        .about-people
-          b
-            font:
-              size: rem-calc(31)
-              family: "Fira Sans", sans-serif
-              weight: 400
-            color: #EDF0F1
-            svg
-              width: 21px
-              height: 21px
-        a.ud-button
-          margin-bottom: 10px
-        p
-          font:
-            size: rem-calc(10)
-            family: "Fira Sans", sans-serif
-            weight: 200
-          color: #BEC3C7
-          line-height: rem-calc(13)
-      .vcw-inner
-        width: 80%
-        margin: 0 auto
-        height: 100%
-        overflow: hidden
+      background-color: #D03F4A
+      text-align: center
+      letter-spacing: 0.03rem
+    .vcw-welcome
+      .avatar
         position: relative
-        &:hover
-          .vcw-navigation-wrap
-            bottom: 0
-        .vcw-navigation-wrap
-          height: 55px
+        width: 50%
+        margin: 0 auto
+        .image
+          max-width: 100%
+          width: 100%
+          height: 0
+          padding-bottom: 100%
+          overflow: hidden
+          -webkit-background-size: cover !important
+          -moz-background-size: cover !important
+          -o-background-size: cover !important
+          background-size: cover !important
+          margin: 0 auto
+        &:before
+          display: block
+          content: ""
           position: absolute
-          left: 0
-          right: 0
-          bottom: -47px
-          //bottom: 0
-          transition: bottom .5s
-          .triangle-wrap
+          bottom: 0
+          height: 4px
+          background-color: #96D03F
+          width: 100%
+      .about-people
+        b
+          font:
+            size: 1.74rem
+            family: "Fira Sans", sans-serif
+            weight: 400
+          color: #EDF0F1
+          svg
+            width: 21px
+            height: 21px
+      a.ud-button
+        margin-bottom: 10px
+      p
+        font:
+          size: rem-calc(10)
+          family: "Fira Sans", sans-serif
+          weight: 200
+        color: #BEC3C7
+        line-height: rem-calc(13)
+        text-align: center
+        width: 50%
+        margin: 0 auto
+    .vcw-inner
+      width: 80%
+      margin: 0 auto
+      height: 100%
+      overflow: hidden
+      position: relative
+      &:hover
+        .vcw-navigation-wrap
+          bottom: 0
+      .vcw-navigation-wrap
+        height: 55px
+        position: absolute
+        left: 0
+        right: 0
+        bottom: -47px
+        //bottom: 0
+        transition: bottom .5s
+        .triangle-wrap
+          position: relative
+          overflow: hidden
+          height: 8px
+          width: 100%
+          opacity: .8
+          .triangle
+            border: 8px solid #2E2E36
+            border-bottom: none
+            border-color: transparent #2E2E36 transparent
             position: relative
-            overflow: hidden
-            height: 8px
-            width: 100%
-            opacity: .8
-            .triangle
-              border: 8px solid #2E2E36
-              border-bottom: none
-              border-color: transparent #2E2E36 transparent
-              position: relative
-              left: 30px
-              -webkit-transform: translateX(-50%)
-              -moz-transform: translateX(-50%)
-              -ms-transform: translateX(-50%)
-              -o-transform: translateX(-50%)
-              transform: translateX(-50%)
+            left: 30px
+            -webkit-transform: translateX(-50%)
+            -moz-transform: translateX(-50%)
+            -ms-transform: translateX(-50%)
+            -o-transform: translateX(-50%)
+            transform: translateX(-50%)
+            position: absolute
+            top: 0
+            z-index: 11
+            &:before, &:after
+              right: 8px
+              width: 1000px
+            &:before
+              content: ""
               position: absolute
-              top: 0
               z-index: 11
-              &:before, &:after
-                right: 8px
-                width: 1000px
-              &:before
-                content: ""
-                position: absolute
-                z-index: 11
-                height: 8px
-                top: -8px
-                background: #2E2E36
-              &:after
-                content: ""
-                position: absolute
-                z-index: 11
-                height: 8px
-                top: -8px
-                left: 8px
-                background: #2E2E36
-          .vcw-navigation
-            height: 47px
-            width: 100%
-            background-color: rgba(46, 46, 54, .8)
-            a.ud-minimize-stop-cam
-              display: none
-            a.ud-minimize-mode
-              display: none
-            p
-              font:
-                size: rem-calc(10)
-                family: "Fira Sans", sans-serif
-                weight: 300
-              color: #BEC3C7
-              line-height: rem-calc(13)
-              margin-top: 2px
-            a.ud-stop-cam
-              margin-top: 3px
-            a.ud-fullscreen-mode
-              width: 46px
-              height: 38px
-              display: inline-block
-              svg
-                width: 100%
-                height: 100%
-                path, polygon
-                  fill: #fff
+              height: 8px
+              top: -8px
+              background: #2E2E36
+            &:after
+              content: ""
+              position: absolute
+              z-index: 11
+              height: 8px
+              top: -8px
+              left: 8px
+              background: #2E2E36
+        .vcw-navigation
+          height: 47px
+          width: 100%
+          background-color: rgba(46, 46, 54, .8)
+          a.ud-minimize-stop-cam
+            display: none
+          a.ud-minimize-mode
+            display: none
+          p
+            font:
+              size: rem-calc(10)
+              family: "Fira Sans", sans-serif
+              weight: 300
+            color: #BEC3C7
+            line-height: rem-calc(13)
+            margin-top: 2px
+          a.ud-stop-cam
+            margin-top: 3px
+          a.ud-fullscreen-mode
+            width: 46px
+            height: 38px
+            display: inline-block
+            svg
+              width: 100%
+              height: 100%
+              path, polygon
+                fill: #fff
+      .image
+        max-width: 100%
+        width: 100%
+        height: 100%
+        padding-bottom: 100%
+        overflow: hidden
+        -webkit-background-size: cover !important
+        -moz-background-size: cover !important
+        -o-background-size: cover !important
+        background-size: cover !important
+        margin: 0 auto
+      .avatar
+        width: 52px
+        height: 52px
+        position: absolute
+        left: 0
+        top: 0
         .image
           max-width: 100%
           width: 100%
@@ -594,30 +737,14 @@
           -o-background-size: cover !important
           background-size: cover !important
           margin: 0 auto
-        .avatar
-          width: 52px
-          height: 52px
+        &:before
+          display: block
+          content: ""
           position: absolute
-          left: 0
-          top: 0
-          .image
-            max-width: 100%
-            width: 100%
-            height: 100%
-            overflow: hidden
-            -webkit-background-size: cover !important
-            -moz-background-size: cover !important
-            -o-background-size: cover !important
-            background-size: cover !important
-            margin: 0 auto
-          &:before
-            display: block
-            content: ""
-            position: absolute
-            bottom: 0
-            height: 4px
-            background-color: #96D03F
-            width: 100%
+          bottom: 0
+          height: 4px
+          background-color: #96D03F
+          width: 100%
 
 .lch-people-online-wrap
   background: #EDF0F1
