@@ -968,6 +968,7 @@ p
       background-color: rgba(40, 127, 184, 0.8)
       opacity: 0
       transition: opacity .5s
+      z-index: 1
       &.pa-crop
         left: 0
         svg
@@ -991,120 +992,7 @@ p
         display: none
 
     &.p-status-not-approved
-      &:before
-        display: block
-        content: 'Photo is not approved'
-        position: absolute
-        left: 0
-        top: 0
-        right: 0
-        bottom: 0
-        background: rgba(46, 46, 54, .8)
-        text:
-          transform: uppercase
-          align: center
-        color: #EDF0F1
-        font:
-          size: rem-calc(14)
-          weight: 500
-          family: "Fira Sans", sans-serif
-        line-height: rem-calc(14)
-        padding-top: 50%
-
-      &:after
-        display: block
-        content: ''
-        background-image: asset_url('UD-icon-not-approved.svg')
-        background-size: 34px
-        background-repeat: no-repeat
-        +my_horizontal_align
-          position: absolute
-        bottom: 60%
-        width: 34px
-        height: 34px
-
-    &.p-status-approvement
-      &:before
-        display: block
-        content: 'Waiting for approvement'
-        position: absolute
-        left: 0
-        top: 0
-        right: 0
-        bottom: 0
-        background: rgba(255, 111, 112, .8)
-        text:
-          transform: uppercase
-          align: center
-        color: #EDF0F1
-        font:
-          size: rem-calc(14)
-          weight: 500
-          family: "Fira Sans", sans-serif
-        line-height: rem-calc(14)
-        padding-top: 50%
-
-      &:after
-        display: block
-        content: ''
-        background-image: asset_url('UD-icon-aprovement-status.svg')
-        background-size: 34px
-        background-repeat: no-repeat
-        +my_horizontal_align
-          position: absolute
-        bottom: 60%
-        width: 34px
-        height: 34px
-
-    &:hover
-      a.p-set-as-avatar, .p-action-button
-        opacity: 1
-
-.p-gallery-wrap
-  .white-grey
-    padding-top: 30px
-    padding-bottom: 40px
-    margin-bottom: 10px
-
-    .pg-one-item
-      position: relative
-      margin: 1px
-      &:hover .pg-action-button
-        opacity: 1
-      .pg-action-button
-        position: absolute
-        top: 0
-        width: 32px
-        height: 32px
-        background-color: rgba(40, 127, 184, 0.8)
-        opacity: 0
-        transition: opacity .5s
-        &.pga-remove
-          right: 0
-          svg
-            width: 59%
-            height: 100%
-            margin: 0 auto
-            display: block
-            polygon
-              fill: #fff
-      a
-        .image
-          max-width: 100%
-          width: 100%
-          height: 0
-          padding-bottom: 100%
-          overflow: hidden
-          -webkit-background-size: cover !important
-          -moz-background-size: cover !important
-          -o-background-size: cover !important
-          background-size: cover !important
-          margin: 0 auto
-      &.p-status-not-approved, &.p-status-approvement
-        .pa-crop, .p-set-as-avatar
-          display: none
-
-      &.p-status-not-approved
+      a.fancy_gallery
         &:before
           display: block
           content: 'Photo is not approved'
@@ -1137,7 +1025,8 @@ p
           width: 34px
           height: 34px
 
-      &.p-status-approvement
+    &.p-status-approvement
+      a.fancy_gallery
         &:before
           display: block
           content: 'Waiting for approvement'
@@ -1169,6 +1058,99 @@ p
           bottom: 60%
           width: 34px
           height: 34px
+
+    &:hover
+      a.p-set-as-avatar, .p-action-button
+        opacity: 1
+
+.p-gallery-wrap
+  .white-grey
+    padding-top: 30px
+    padding-bottom: 40px
+    margin-bottom: 10px
+
+    .pg-one-item
+      position: relative
+      margin: 1px
+      &:hover .pg-action-button
+        opacity: 1
+      .pg-action-button
+        position: absolute
+        top: 0
+        width: 32px
+        height: 32px
+        background-color: rgba(40, 127, 184, 0.8)
+        opacity: 0
+        transition: opacity .5s
+        z-index: 1
+        &.pga-remove
+          right: 0
+          svg
+            width: 59%
+            height: 100%
+            margin: 0 auto
+            display: block
+            polygon
+              fill: #fff
+      a
+        .image
+          max-width: 100%
+          width: 100%
+          height: 0
+          padding-bottom: 100%
+          overflow: hidden
+          -webkit-background-size: cover !important
+          -moz-background-size: cover !important
+          -o-background-size: cover !important
+          background-size: cover !important
+          margin: 0 auto
+      &.p-status-not-approved, &.p-status-approvement
+        .pa-crop, .p-set-as-avatar
+          display: none
+
+      &.p-status-not-approved
+        a.fancy_gallery
+          &:before
+            display: block
+            content: 'Photo is not approved'
+            position: absolute
+            left: 0
+            top: 0
+            right: 0
+            bottom: 0
+            background: rgba(46, 46, 54, .8)
+            text:
+              transform: uppercase
+              align: center
+            color: #EDF0F1
+            font:
+              size: rem-calc(12)
+              weight: 400
+              family: "Fira Sans", sans-serif
+            line-height: rem-calc(14)
+            padding-top: 36%
+
+      &.p-status-approvement
+        a.fancy_gallery
+          &:before
+            display: block
+            content: 'Waiting for approvement'
+            position: absolute
+            left: 0
+            top: 0
+            right: 0
+            bottom: 0
+            background: rgba(255, 111, 112, .8)
+            text:
+              transform: uppercase
+              align: center
+            color: #EDF0F1
+            font:
+              size: rem-calc(12)
+              weight: 400
+              family: "Fira Sans", sans-serif
+            line-height: rem-calc(14)
+            padding-top: 36%
 
 
 .p-profile-verification-wrap
