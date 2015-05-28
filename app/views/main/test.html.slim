@@ -306,3 +306,46 @@
   .columns
     ul.ud-testing
       li 1
+
+.row
+  .columns
+    h2 test for retina display
+.row
+  .columns
+    .retina-1
+      h1 Retina 1
+      p
+        |@media
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi) {
+              /* Retina-specific stuff here */
+          }
+.row
+  .columns
+    .retina-2
+      h1 Retina 2
+      p
+        |@media
+          only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1025px),
+          only screen and (   min--moz-device-pixel-ratio: 2) and (min-device-width: 1025px),
+          only screen and (   -o-min-device-pixel-ratio: 2/1) and (min-device-width: 1025px),
+          only screen and (        min-device-pixel-ratio: 2) and (min-device-width: 1025px),
+          only screen and (           min-resolution: 192dpi) and (min-device-width: 1025px),
+          only screen and (            min-resolution: 2dppx) and (min-device-width: 1025px) {
+
+              /* MacBook-Retina-specific stuff here */
+          }
+
+.row
+  .columns
+    .retina-3
+      h1 Retina 3
+      p
+        |@media
+          only screen and (-webkit-min-device-pixel-ratio: 2),
+          only screen and (   min--moz-device-pixel-ratio: 2),
+          only screen and (     -o-min-device-pixel-ratio: 2/1) {
+
+            /* Retina-specific stuff here */
+
+          }

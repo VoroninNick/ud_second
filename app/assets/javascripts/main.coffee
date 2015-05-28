@@ -66,6 +66,15 @@ $.fn.observeMouseOut = (options)->
 #) jQuery
 
 $(document).ready ->
+
+#================================
+#  detect ration
+#================================
+  if(window.location.href.indexOf("test") > -1)
+    dpr     = window.devicePixelRatio
+    alert 'Device Pixel Ratio: ' + dpr
+
+
 #   init binder upload file
   $('.ud-file-uploader-wrap input[type=file]').change ->
     $(@).closest('.ud-file-uploader-wrap').find('.ud-uploaded-file-wrap').text($(@).val())
