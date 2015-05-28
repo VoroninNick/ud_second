@@ -26,93 +26,11 @@
                 .title-head.notification-wrap
                   .columns
                     .p-title
+                      .ud-link-to-favorite
                       .items-menu.notification-link
                         =image_tag "UD-icon-sub menu.svg"
                         .notification-container
-                          .menu
-                            .group
-                              .title
-                                strong user Actions:
-                              .options.actions
-                                .option.action
-                                  .label
-                                    .icon
-                                      = embedded_svg "UD-icon-introduction letter.svg"
-                                  .input
-                                    a data-reveal-id="YourIntroductionLetter" href="#" Send INTRODUCTION LETTER
-                                .option.action
-                                  .label
-                                    .icon
-                                      = embedded_svg "UD-icon-heart.svg"
-                                  .input
-                                    a href="" Add to FAVORITES
-                                .option.action
-                                  .label
-                                    .icon
-                                      = embedded_svg "UD-icon-remove from favorites.svg"
-                                  .input
-                                    a href="" Remove from FAVORITES
-                                .option.action
-                                  .label
-                                    .icon
-                                      = embedded_svg "UD-icon-mail.svg"
-                                  .input
-                                    a href="" Write EMAIL
-                                .option.action
-                                  .label
-                                    .icon
-                                      = embedded_svg "UD-icon-chat buble.svg"
-                                  .input
-                                    a href="" Start LIVE CHAT
-                                .option.action
-                                  .label
-                                    .icon
-                                      = embedded_svg "UD-icon-camshare.svg"
-                                  .input
-                                    a href="" Start CAM SHARE
-
-                                .option.action
-                                  .label
-                                    .icon
-                                      = embedded_svg "UD-icon-gift.svg"
-                                  .input
-                                    a href="" Send GIFT
-                                .option.action
-                                  .label
-                                    .icon
-                                      = embedded_svg "UD-icon-intimisy request.svg"
-                                  .input
-                                    a data-reveal-id="IntimacyRequest" Send INTIMACY REQUEST
-                                .option.action
-                                  .label
-                                    .icon
-                                      = embedded_svg "UD-icon-block.svg"
-                                  .input
-                                    a data-reveal-id="ReportUser" REPORT user
-
-                                  .clearfix
-                            .group
-                              .title
-                                strong user information:
-                              .options.information
-                                p
-                                  |Account #:&nbsp;
-                                  span
-                                    |8765473
-                                p
-                                  |Accaunt Type:&nbsp;
-                                  span
-                                    |Validated by AGENCY
-                                p
-                                  |Registered:&nbsp;
-                                  span
-                                    |2014-02-13
-                                p
-                                  |Last On-line activity:&nbsp;
-                                  span
-                                    |2015-02-28
-
-
+                          = render partial: "partials/girl profile/profile_option"
 
 
           .columns.large-7.medium-7

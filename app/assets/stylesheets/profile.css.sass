@@ -238,13 +238,23 @@ p
       position: absolute
       bottom: 25px
       z-index: 2
-
+      .icon
+        svg
+          display: block
       .p-title
         width: 100%
         position: relative
         top: 15px
         padding-left: 29px
         height: 35px
+        .ud-link-to-favorite
+          position: absolute
+          left: 0
+          top: 0
+          right: 40px
+          bottom: 0
+          cursor: pointer
+          z-index: 111
         &:before
           content: 'online'
           position: absolute
@@ -767,7 +777,25 @@ p
     padding-top: 30px
     padding-bottom: 7px
     margin-bottom: 10px
-
+  .title-head
+    h4
+      span
+        padding-left: 1rem
+        font-family: "dearjoe_1_msregular"
+        font-size: 1.5rem
+        text-transform: capitalize
+        position: relative
+        bottom: -1px
+  &.ud-validated
+    .title-head
+      h4
+        span
+          color: #287FB8
+  &.ud-not-validated
+  .title-head
+    h4
+      span
+        color: #D03F4A
   .avatar
     position: relative
     .image

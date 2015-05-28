@@ -71,6 +71,35 @@ $(document).ready ->
     $(@).closest('.ud-file-uploader-wrap').find('.ud-uploaded-file-wrap').text($(@).val())
 
 #=========================================================
+#  init close foundation reveal after add
+#=========================================================
+  $('#AddAPictures .image-popup-one-item a').click ->
+    $this = $(this)
+    locked = $this.data('locked')
+
+    if !locked
+      $this.data('locked', true)
+      setTimeout(()->
+        $this.data('locked', false)
+      , 300)
+      # do something
+      conv_id = $('#AddAPictures').data('conv-id')
+      folder = $('#AddAPictures').data('folder')
+      fid = $(this).data('attachment-fid')
+      $.post '/sites/all/themes/ud/ajax/get_attachment_html.php', {
+        attachment_id: fid
+        conversation_id: conv_id
+        reply_folder: folder
+      }, (data) ->
+        $('div#' + folder + '-conv-id-' + conv_id + ' .ud-e-attachment-wrap').append data
+        $('.ud-e-attachment-wrap .message-attachment-item').removeClass 'end'
+        $('.ud-e-attachment-wrap .message-attachment-item:last').addClass 'end'
+        $('div#' + folder + '-conv-id-' + conv_id + ' form#conv-' + conv_id + ' textarea').trigger 'keyup'
+        return
+      return
+      $('#AddAPictures').foundation 'reveal', 'close'
+
+#=========================================================
 #  init multiple select
 #=========================================================
   multiSelect = undefined
@@ -183,18 +212,52 @@ $(document).ready ->
     $area.data('chars_length', chars_length )
     $label_count.text($area.text().length)
     event.preventDefault()
-
+#=======================================================================
 # mailbox text input
-  $('.ud-message-wrap .image-popup-one-item a').click ->
-    $get_user_mb_id = $(@).closest('.reveal-modal').attr('data-user-id')
-    $wrap = $("#{$get_user_mb_id}")
-    $attach_wrap = $wrap.find('.ud-e-attachment-wrap')
-    $image_object = $(@).parent().html()
-    $attach_wrap.append($image_object)
-    alert "test"
+#=======================================================================
+#  $('.ud-message-wrap .image-popup-one-item a').click ->
+#    $get_user_mb_id = $(@).closest('.reveal-modal').attr('data-user-id')
+#    $wrap = $("#{$get_user_mb_id}")
+#    $attach_wrap = $wrap.find('.ud-e-attachment-wrap')
+#    $image_object = $(@).parent().html()
+#    $attach_wrap.append($image_object)
+#
+#    $('#AddAPictures').foundation 'reveal', 'close'
 
-#    $('#AddAPictures').trigger 'reveal:close'
-    $('#AddAPictures').foundation 'reveal', 'close'
+  $('.ud-message-wrap .image-popup-one-item a').click ->
+    $this = $(this)
+    locked = $this.data('locked')
+
+    if !locked
+      $this.data('locked', true)
+      setTimeout(()->
+        $this.data('locked', false)
+      , 300)
+      # do something
+      $get_user_mb_id = $(@).closest('.reveal-modal').attr('data-user-id')
+      $wrap = $("#{$get_user_mb_id}")
+      $attach_wrap = $wrap.find('.ud-e-attachment-wrap')
+      $image_object = $(@).parent().html()
+      $attach_wrap.append($image_object)
+
+      $('#AddAPictures').foundation 'reveal', 'close'
+
+# test version
+  $('a.button').click ->
+    ud_count = $('ul.ud-testing li:last-child').text()
+    ud_count++
+    list_ul = $('ul.ud-testing')
+
+    $this = $(this)
+    locked = $this.data('locked')
+    if !locked
+      $this.data('locked', true)
+      setTimeout(()->
+        $this.data('locked', false)
+      , 300)
+      # do something
+      list_ul.append('<li>'+ud_count+'</li>')
+
 
   $('.ud-smiles-inner a img').click ->
     alert 'smile'
