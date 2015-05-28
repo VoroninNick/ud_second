@@ -170,7 +170,7 @@
           .all-conversations.ud-inbox-message-wrap
             .columns.no-padding
               .ud-message-one-block-wrap
-                .ud-inbox-message-block-wrap
+                .ud-inbox-message-block-wrap.ud-inbox-unread-message
                   .ud-message-option-wrap.notification-wrap
                     .ud-message-option.notification-link
                       =embedded_svg "UD-icon-sub menu.svg"
@@ -277,7 +277,7 @@
               = render partial: "partials/inbox/one_message_renew"
 
               .ud-message-one-block-wrap
-                .ud-inbox-message-block-wrap
+                .ud-inbox-message-block-wrap.ud-inbox-unread-message
                   .ud-message-option-wrap.notification-wrap
                     .ud-message-option.notification-link
                       =embedded_svg "UD-icon-sub menu.svg"

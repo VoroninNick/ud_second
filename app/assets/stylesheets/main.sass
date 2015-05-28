@@ -1299,7 +1299,14 @@ a.ud-button
     overflow: hidden
     +my_horizontal_align
 
-
+.hide-for-iphone
+  @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)
+    display: none !important
+.hide-for-all-mobile-device
+  @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)
+    display: none !important
+  @media #{$small-only}
+    display: none !important
 
 .your-best-match-wrap
   @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2)

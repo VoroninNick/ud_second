@@ -1091,6 +1091,13 @@ p
   padding-bottom: 60px
   form
     padding-top: 20px
+    &.ud-bf
+      .p-input-preview, .pi-edit-button, label, a.p-edit-iam
+        cursor: default !important
+      .pi-edit-button
+        opacity: 0 !important
+
+
   .pia-more-info-wrap
     margin-top: 15px
     .title-block-wrap
@@ -1173,7 +1180,7 @@ form
       line-height: 1.2rem
       margin-bottom: 0
       word-wrap: break-word
-      word-break: break-all
+      //word-break: break-all
     .p-input-edit, .p-input-preview
       position: relative
     .p-input-edit

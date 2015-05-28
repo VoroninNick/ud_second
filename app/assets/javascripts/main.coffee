@@ -284,25 +284,31 @@ $(document).ready ->
 #
 #    $('.ud-tab').hide()
 #    $form_wrap.eq(current_position).show()
-
+#=========================================================
 # edit changes informations
+#=========================================================
   $('.p-edit-iam').click (e)->
     e.preventDefault()
-    $wrap = $(@).closest('form')
-    if $wrap.hasClass('p-editing-form')
-      $wrap.removeClass('p-editing-form')
+    $wrap = $(@).closest('form.ud-form-about-me')
+    if $wrap.hasClass('ud-bf')
     else
-      $wrap.addClass('p-editing-form')
-    $('.p-input-preview').hide()
-    $('.p-input-edit').show()
-    $(@).addClass('hide')
-    $saveButton = $wrap.find('.special-text-shadow.p-save-iam')
-    $saveButton.removeClass('hide')
+      if $wrap.hasClass('p-editing-form')
+        $wrap.removeClass('p-editing-form')
+      else
+        $wrap.addClass('p-editing-form')
+      $('.p-input-preview').hide()
+      $('.p-input-edit').show()
+      $(@).addClass('hide')
+      $saveButton = $wrap.find('.special-text-shadow.p-save-iam')
+      $saveButton.removeClass('hide')
 
+
+#=========================================================
 # save changes informations
+#=========================================================
   $('.p-save-iam').click (e)->
     e.preventDefault()
-    $wrap = $(@).closest('form')
+    $wrap = $(@).closest('form.ud-form-about-me')
     if $wrap.hasClass('p-editing-form')
       $wrap.removeClass('p-editing-form')
     else
@@ -313,23 +319,29 @@ $(document).ready ->
     $editButton = $wrap.find('.p-edit-iam')
     $editButton.removeClass('hide')
 
-
+#=========================================================
 #  image gallery
+#=========================================================
   $("a.fancy_gallery").fancybox
     beforeShow : ->
       @.title = (@.title ? '' + @.title + '' : '') + ' ' + (@.index + 1) + '/' + @.group.length
       return
 
+#=========================================================
 #  profile edit and save field
+#=========================================================
   $('.p-input-preview div').click ->
+    form = $(@).closest('form')
     $wrap = $(@).closest('.p-input-wrap')
     $editField = $wrap.find('.p-input-edit')
     $previewField = $wrap.find('.p-input-preview')
 
-    $('.p-input-edit').hide()
-    $('.p-input-preview').show()
-    $previewField.hide()
-    $editField.show()
+    if !form.hasClass('.ud-bf')
+    else
+      $('.p-input-edit').hide()
+      $('.p-input-preview').show()
+      $previewField.hide()
+      $editField.show()
 
   $('.p-input-edit .pi-apply-button').click ->
     $wrap = $(@).closest('.p-input-wrap')
