@@ -70,9 +70,13 @@ $(document).ready ->
 #================================
 #  detect ration
 #================================
-  if(window.location.href.indexOf("test") > -1)
+  if(window.location.href.indexOf("live_chat") > -1)
     dpr     = window.devicePixelRatio
-    alert 'Device Pixel Ratio: ' + dpr
+    if dpr == 2
+      $('body').addClass('.hide-header')
+    else
+#      alert '1'
+#    alert 'Device Pixel Ratio: ' + dpr
 
 
 #   init binder upload file

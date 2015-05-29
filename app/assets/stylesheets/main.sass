@@ -62,7 +62,13 @@ header
   top: 0
   z-index: 50
   transition: top .3s
-
+//.ud-retina
+//  header
+//    top: -80px
+//  .ordered-list-wrap
+//    top: 20px
+//  main.main-block-wrap
+//    margin-top: 20px
 @-moz-document url-prefix()
   .reveal-modal, dialog
     position: fixed
@@ -754,6 +760,11 @@ ul.primary-menu
     top: -80px
   .ordered-list-wrap
     top: 20px
+  main.main-block-wrap
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (   min--moz-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (   -o-min-device-pixel-ratio: 2/1) and (min-device-width: 1025px), only screen and (        min-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (           min-resolution: 192dpi) and (min-device-width: 1025px), only screen and (            min-resolution: 2dppx) and (min-device-width: 1025px)
+      margin-top: 20px
+
+
 .ordered-list-wrap
   width: 300px
   position: fixed
