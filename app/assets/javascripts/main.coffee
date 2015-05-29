@@ -73,24 +73,21 @@ currentMousePos =
 $(document).mousemove (event) ->
   currentMousePos.x = event.pageX
   currentMousePos.y = event.pageY
+  dpr     = window.devicePixelRatio
 #  return
 # ELSEWHERE, your code that needs to know the mouse position without an event
-  if currentMousePos.y < 60
-    if(window.location.href.indexOf("live_chat") > -1)
-        dpr     = window.devicePixelRatio
-        if dpr == 2
-          $('body').removeClass('hide-header')
-          $('main.main-block-wrap').removeClass('retina-livechat-page-wrap')
-    #      alert 'Device Pixel Ratio: ' + dpr
-        else
-  else
-    if(window.location.href.indexOf("live_chat") > -1)
-        dpr     = window.devicePixelRatio
-        if dpr == 2
+  if(window.location.href.indexOf("live_chat") > -1)
+    if currentMousePos.y < 60
+      if dpr == 2
+        $('body').removeClass('hide-header')
+        $('main.main-block-wrap').removeClass('retina-livechat-page-wrap')
+    else
+      if dpr == 2
+        setTimeout(()->
           $('body').addClass('hide-header')
           $('main.main-block-wrap').addClass('retina-livechat-page-wrap')
-    #      alert 'Device Pixel Ratio: ' + dpr
-        else
+        , 3000)
+
 
 
 $(document).ready ->
