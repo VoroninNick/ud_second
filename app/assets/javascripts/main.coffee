@@ -7,7 +7,6 @@ $.fn.observeMouseOut = (options)->
   $object = $(this)
 
   $(document).on 'mouseup', (event)->
-    #$containers = $("div.notification-container")
     $containers = $object.filter(":visible")
 
     out_of_container = true
@@ -50,44 +49,30 @@ $.fn.observeMouseOut = (options)->
 ) jQuery
 
 
-#(($) ->
-#  if $.browser.msie == false
-#    return
-#  $('input[type=file]').live 'click', (e) ->
-#    self = this
-#
-#    blur = ->
-#      $(self).blur()
-#      return
-#
-#    setTimeout blur, 0
-#    return
-#  return
-#) jQuery
 #==============================
-#      detect position cursor
+#  detect position cursor
 #==============================
 currentMousePos =
   x: -1
   y: -1
+
 $(document).mousemove (event) ->
   currentMousePos.x = event.pageX
   currentMousePos.y = event.pageY
   dpr     = window.devicePixelRatio
-#  return
-# ELSEWHERE, your code that needs to know the mouse position without an event
+
   if(window.location.href.indexOf("live_chat") > -1)
-    if currentMousePos.y < 60
-      if dpr == 2
+#    console.log('current_position.y' + currentMousePos.y )
+    if dpr == 2
+      if currentMousePos.y < 20
         $('body').removeClass('hide-header')
         $('main.main-block-wrap').removeClass('retina-livechat-page-wrap')
-    else
-      if dpr == 2
-        setTimeout(()->
-          $('body').addClass('hide-header')
-          $('main.main-block-wrap').addClass('retina-livechat-page-wrap')
-        , 3000)
-
+      else if $('header').is(':hover')
+        console.log('hover')
+      else
+        console.log('out')
+        $('body').addClass('hide-header')
+        $('main.main-block-wrap').addClass('retina-livechat-page-wrap')
 
 
 $(document).ready ->
@@ -100,12 +85,6 @@ $(document).ready ->
     if dpr == 2
       $('body').addClass('hide-header')
       $('main.main-block-wrap').addClass('retina-livechat-page-wrap')
-##      alert 'Device Pixel Ratio: ' + dpr
-#    else
-
-
-
-
 
 #   init binder upload file
   $('.ud-file-uploader-wrap input[type=file]').change ->
