@@ -64,19 +64,49 @@ $.fn.observeMouseOut = (options)->
 #    return
 #  return
 #) jQuery
+#==============================
+#      detect position cursor
+#==============================
+currentMousePos =
+  x: -1
+  y: -1
+$(document).mousemove (event) ->
+  currentMousePos.x = event.pageX
+  currentMousePos.y = event.pageY
+#  return
+# ELSEWHERE, your code that needs to know the mouse position without an event
+  if currentMousePos.y < 60
+    if(window.location.href.indexOf("live_chat") > -1)
+        dpr     = window.devicePixelRatio
+        if dpr == 2
+          $('body').removeClass('hide-header')
+          $('main.main-block-wrap').removeClass('retina-livechat-page-wrap')
+    #      alert 'Device Pixel Ratio: ' + dpr
+        else
+  else
+    if(window.location.href.indexOf("live_chat") > -1)
+        dpr     = window.devicePixelRatio
+        if dpr == 2
+          $('body').addClass('hide-header')
+          $('main.main-block-wrap').addClass('retina-livechat-page-wrap')
+    #      alert 'Device Pixel Ratio: ' + dpr
+        else
+
 
 $(document).ready ->
 
 #================================
 #  detect ration
 #================================
-  if(window.location.href.indexOf("live_chat") > -1)
-    dpr     = window.devicePixelRatio
-    if dpr == 2
-      $('body').addClass('hide-header')
-      $('main.main-block-wrap').addClass('retina-livechat-page-wrap')
-#      alert 'Device Pixel Ratio: ' + dpr
-    else
+#  if(window.location.href.indexOf("live_chat") > -1)
+#    dpr     = window.devicePixelRatio
+#    if dpr == 1
+#      $('body').addClass('hide-header')
+#      $('main.main-block-wrap').addClass('retina-livechat-page-wrap')
+##      alert 'Device Pixel Ratio: ' + dpr
+#    else
+
+
 
 
 
@@ -1018,19 +1048,21 @@ $(window).scroll (event) ->
   st = $(this).scrollTop()
   wh = $(window).height()
   ot = $('.l-footer-wrap').offset().top
-
-  action = ot - wh
-  if st >= action
-    $('.ordered-list-wrap').addClass('fixed-to-footer')
+  dpr     = window.devicePixelRatio
+  if(window.location.href.indexOf("live_chat") > -1) && dpr == 2
   else
-    $('.ordered-list-wrap').removeClass('fixed-to-footer')
+    action = ot - wh
+    if st >= action
+      $('.ordered-list-wrap').addClass('fixed-to-footer')
+    else
+      $('.ordered-list-wrap').removeClass('fixed-to-footer')
 
-  if st > lastScrollTop
-    # downscroll code
-    $('body').addClass 'hide-header'
-  else
-    # upscroll code
-    $('body').removeClass 'hide-header'
-  lastScrollTop = st
+    if st > lastScrollTop
+      # downscroll code
+      $('body').addClass 'hide-header'
+    else
+      # upscroll code
+      $('body').removeClass 'hide-header'
+    lastScrollTop = st
 
 
