@@ -73,11 +73,11 @@ $(document).ready ->
   if(window.location.href.indexOf("live_chat") > -1)
     dpr     = window.devicePixelRatio
     if dpr == 2
-      $('body').addClass('.hide-header')
-      alert 'Device Pixel Ratio: ' + dpr
+      $('body').addClass('hide-header')
+#      alert 'Device Pixel Ratio: ' + dpr
     else
 #      alert '1'
-    alert '' + dpr
+#    alert '' + dpr
 
 
 #   init binder upload file
@@ -807,7 +807,13 @@ $(document).ready ->
         $wrapper.addClass('maxinmizate')
       alert '< large'
     else
+      $wrapper = $(this).closest('.ordered-list-wrap')
+      if $wrapper.hasClass('minimizate')
+        $wrapper.removeClass('minimizate')
+      else
+        $wrapper.addClass('minimizate')
       alert 'large'
+
 #  $('.ordered-list-wrap img.diamond-logo').click ->
 #    $wrapper = $(this).closest('.ordered-list-wrap')
 #    if $wrapper.hasClass('minimizate')
