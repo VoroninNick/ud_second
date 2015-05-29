@@ -98,11 +98,11 @@ $(document).ready ->
 #================================
 #  detect ration
 #================================
-#  if(window.location.href.indexOf("live_chat") > -1)
-#    dpr     = window.devicePixelRatio
-#    if dpr == 1
-#      $('body').addClass('hide-header')
-#      $('main.main-block-wrap').addClass('retina-livechat-page-wrap')
+  if(window.location.href.indexOf("live_chat") > -1)
+    dpr     = window.devicePixelRatio
+    if dpr == 2
+      $('body').addClass('hide-header')
+      $('main.main-block-wrap').addClass('retina-livechat-page-wrap')
 ##      alert 'Device Pixel Ratio: ' + dpr
 #    else
 
