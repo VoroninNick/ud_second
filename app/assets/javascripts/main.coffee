@@ -74,9 +74,10 @@ $(document).ready ->
     dpr     = window.devicePixelRatio
     if dpr == 2
       $('body').addClass('.hide-header')
+      alert 'Device Pixel Ratio: ' + dpr
     else
 #      alert '1'
-#    alert 'Device Pixel Ratio: ' + dpr
+    alert '' + dpr
 
 
 #   init binder upload file
@@ -794,21 +795,36 @@ $(document).ready ->
       $wrapper.removeClass('horizontal-layout')
     $wrapper.addClass('vertical-layout')
 
-# binder for frends list minimizate maximizate
+#=====================================================
+# binder for frends list minimizate - maximizate
+#=====================================================
   $('.ordered-list-wrap img.diamond-logo').click ->
-    $wrapper = $(this).closest('.ordered-list-wrap')
-    if $wrapper.hasClass('minimizate')
-      $wrapper.removeClass('minimizate')
+    if($(window).width() < 1445)
+      $wrapper = $(this).closest('.ordered-list-wrap')
+      if $wrapper.hasClass('maxinmizate')
+        $wrapper.removeClass('maxinmizate')
+      else
+        $wrapper.addClass('maxinmizate')
+      alert '< large'
     else
-      $wrapper.addClass('minimizate')
-  $('.ordered-list-wrap img.diamond-logo-mobile').click ->
-    $wrapper = $(this).closest('.ordered-list-wrap')
-    if $wrapper.hasClass('maxinmizate')
-      $wrapper.removeClass('maxinmizate')
-    else
-      $wrapper.addClass('maxinmizate')
+      alert 'large'
+#  $('.ordered-list-wrap img.diamond-logo').click ->
+#    $wrapper = $(this).closest('.ordered-list-wrap')
+#    if $wrapper.hasClass('minimizate')
+#      $wrapper.removeClass('minimizate')
+#    else
+#      $wrapper.addClass('minimizate')
+#
+#  $('.ordered-list-wrap img.diamond-logo-mobile').click ->
+#    $wrapper = $(this).closest('.ordered-list-wrap')
+#    if $wrapper.hasClass('maxinmizate')
+#      $wrapper.removeClass('maxinmizate')
+#    else
+#      $wrapper.addClass('maxinmizate')
 
+#=====================================================
 # dismiss message on frendlie list
+#=====================================================
   $('.ol-start-chart-footer a.dismiss').click ->
     $wrapper = $(this).closest('.ol-start-chat')
     $frendContainer = $wrapper.find('.one-item')
@@ -819,7 +835,9 @@ $(document).ready ->
 
 #  $('#SocialRegistration').foundation('reveal', 'open')
 
+#=====================================================
 #  init index page tabs wooman
+#=====================================================
   $('.favorites-nav-wrap:not(.settings-nav-wrap) .favorites-nav li').click ->
     current_position = $(this).index()
 
