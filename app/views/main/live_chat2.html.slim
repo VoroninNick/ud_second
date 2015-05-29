@@ -2,11 +2,11 @@
   .row.medium-main
     .columns.medium-10.medium-centered.large-12
       .live-chat-page-wrap
-        .lvc-offered-list-wrap
+        .lvc-offered-list-wrap.lvc-coll
           = render partial: "partials/livechat/offered_list"
         .lvc-live-chat-wrap
-          .lvc-chat-wrap
+          .lvc-chat-wrap.lvc-coll
             = render partial: "partials/livechat/text_chat"
-          .lvc-video-wrap
+          .lvc-video-wrap.lvc-coll
             = render partial: "partials/livechat/video_chat"
         .clearfix

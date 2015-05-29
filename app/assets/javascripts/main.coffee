@@ -48,6 +48,28 @@ $.fn.observeMouseOut = (options)->
   return
 ) jQuery
 
+#======================================
+#  on resize change height livechat
+#======================================
+
+setHeight = (column) ->
+  maxHeight = 0
+  #Get all the element with class = col
+  column = $(column)
+  column.css 'height', 'auto'
+  #Loop all the column
+  textChatColumn = $('.lvc-chat-wrap').height()
+  $('.lvc-offered-list-inner').height textChatColumn - 38
+  $('.lvc-offered-list-wrap').height textChatColumn
+  $('.lvc-video-wrap').height textChatColumn
+
+$(document).ready ->
+  setHeight '.lvc-coll'
+  return
+$(window).resize ->
+  setHeight '.lvc-coll'
+  return
+
 
 #==============================
 #  detect position cursor
@@ -76,7 +98,6 @@ $(document).mousemove (event) ->
 
 
 $(document).ready ->
-
 #================================
 #  detect ration
 #================================
@@ -181,7 +202,9 @@ $(document).ready ->
     $('#lsf-weight-min').val range_weight.attr('data-min-val')
     $('#lsf-weight-max').val range_weight.attr('data-max-val')
 
+#===========================================================
 #  countect for enter characters
+#===========================================================
   max_symbols = 1000
   editor_state = {
     chars_length: null
@@ -232,6 +255,7 @@ $(document).ready ->
     $area.data('chars_length', chars_length )
     $label_count.text($area.text().length)
     event.preventDefault()
+
 #=======================================================================
 # mailbox text input
 #=======================================================================
@@ -262,7 +286,9 @@ $(document).ready ->
 
       $('#AddAPictures').foundation 'reveal', 'close'
 
+#===========================================================
 # test version
+#===========================================================
   $('a.button').click ->
     ud_count = $('ul.ud-testing li:last-child').text()
     ud_count++
@@ -283,8 +309,9 @@ $(document).ready ->
     alert 'smile'
 
 
-
+#===========================================================
 # tripadvisor finding girl
+#===========================================================
   $('.t-result-finding-wrap .trf-choose-girl').click ->
     $wrap = $(@).closest('.t-result-finding-wrap')
     $girls = $wrap.find('.trf-one-girl-wrap')
@@ -297,8 +324,9 @@ $(document).ready ->
     $currentGirlWrap.addClass('selected-girl')
     $nextStep.show()
 
-
+#===========================================================
 # tripadvisor
+#===========================================================
   $('.tbag-thumbs-wrap .image').click (e)->
     e.preventDefault()
 
@@ -343,7 +371,9 @@ $(document).ready ->
       $tabHeader.eq(2).addClass(' active')
       $tabs.eq(2).show()
 
+#===========================================================
 # datepicker
+#===========================================================
   $('.datepicker').datepicker
     showOn: 'button'
     buttonImage: 'assets/UAD-calendar.png'
@@ -367,6 +397,8 @@ $(document).ready ->
 #
 #    $('.ud-tab').hide()
 #    $form_wrap.eq(current_position).show()
+
+
 #=========================================================
 # edit changes informations
 #=========================================================
@@ -439,7 +471,9 @@ $(document).ready ->
     $previewField.show()
     $editField.hide()
 
+#===========================================================
 #  observe mouse
+#===========================================================
   $('.l-header-login-form-inner').on 'mouseUpOut', ()->
     $(@).addClass('hide')
   $('.l-header-login-form-inner').observeMouseOut()
@@ -462,8 +496,9 @@ $(document).ready ->
     $forgot_password.addClass('hide')
     $login_form.removeClass('hide')
 
-
+#===========================================================
 #  range slide initialize
+#===========================================================
   if typeof $.fn.slider == 'function'
     $ ->
       $('#ud-range-age-slide').slider
@@ -565,8 +600,9 @@ $(document).ready ->
       $input_for_female.removeClass('hide')
 
 
-
+#===========================================================
 # lading banner form
+#===========================================================
   $('.lbf-tumbler').click ->
 
     current_position = $(@).index()
@@ -896,6 +932,7 @@ $(document).ready ->
     $body_tabs.addClass('hide')
     $body_tabs.eq(current_position).removeClass('hide')
 
+
 #small search form height binder
   $isExpendeForm = false
   $('.advanced-form-wrap .wrap h4').click ->
@@ -909,7 +946,9 @@ $(document).ready ->
       $form.removeClass('extend-form')
       $isExpendeForm = false
 
+#===========================================================
 #  search header form
+#===========================================================
   $('li.search a').click ->
     $wrap = $(this).closest('.header-navigation')
     $search = $(this).parent()
@@ -922,7 +961,9 @@ $(document).ready ->
     else
       $wrap.addClass('open-search')
 
+#===========================================================
 # disable scroll when mouse over an absolute div
+#===========================================================
   $('#notifications-panel').bind 'mousewheel DOMMouseScroll', (e) ->
     scrollTo = null
     if e.type == 'mousewheel'
@@ -939,7 +980,9 @@ $(document).ready ->
   if $(window).width() <= 1024
     $menuWrap.addClass('mobile-menu')
 
-#    main-menu binder
+#===========================================================
+#  main-menu binder
+#===========================================================
   $(".button-menu a.desktop").click ->
     $('body').removeClass('opened-main-menu')
     if $menuWrap.hasClass('open-menu')
@@ -972,8 +1015,9 @@ $(document).ready ->
 
 
 
-
+#===========================================================
 # click event to scroll to top
+#===========================================================
   $(".scrollToTop").click ->
     $("html, body").animate
       scrollTop: 0
@@ -981,8 +1025,9 @@ $(document).ready ->
     false
 
 
-
+#===========================================================
 #notification popup
+#===========================================================
   $('.notification-link').click (event)->
     $wrap = $(this).closest('.notification-wrap')
     $container = $wrap.find('.notification-container').filter(":not(:visible)")
@@ -996,13 +1041,6 @@ $(document).ready ->
 
   $notification_containers.observeMouseOut()
 
-#  $(window).resize ->
-#    footerHeight = $('.landing-page-wrap .l-footer-wrap').outerHeight()
-#    stickFooterPush = $('.l-registration-push').height(footerHeight)
-#    $('.landing-wrap').css 'marginBottom': '-' + footerHeight + 'px'
-#    return
-#  $(window).resize()
-#  return
 
 $(window).resize ->
   if $(window).width() >= 1445

@@ -3,23 +3,22 @@
     .wrap
       h4
         |on-line
-- count_item = 5
-/- arr = Array.new(count_item)
-/  -arr.each do |t|
-ul
-  - count_item.times do
-    li
-      .lvc-ol-profile
-        .preview-profile
-          a href=profile_girl_path
-            .image style="background: url('#{asset_path("girl_21.jpg")}')no-repeat center center;"
-        .title
-          b Polina
-      .lvc-ol-actions
-        .action-button.red-fill
-          a href="" title="test"
-            =embedded_svg "UD-icon-heart.svg"
-        .action-button
-          a href="" title="test"
-            =embedded_svg "UD-icon-chat buble.svg"
-      .clearfix
+- count_item = 6
+.lvc-offered-list-inner.online-list-scroll
+  ul
+    - count_item.times do
+      li
+        .lvc-ol-profile
+          .preview-profile
+            a href=profile_girl_path
+              .image style="background: url('#{asset_path("girl_21.jpg")}')no-repeat center center;"
+          .title
+            b Polina
+        .lvc-ol-actions
+          .action-button.red-fill
+            a href="" title="test"
+              =embedded_svg "UD-icon-heart.svg"
+          .action-button
+            a href="" title="test"
+              =embedded_svg "UD-icon-chat buble.svg"
+        .clearfix
