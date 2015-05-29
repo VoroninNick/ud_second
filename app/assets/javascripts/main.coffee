@@ -72,12 +72,12 @@ $(document).ready ->
 #================================
   if(window.location.href.indexOf("live_chat") > -1)
     dpr     = window.devicePixelRatio
-    if dpr == 2
+    if dpr == 1
       $('body').addClass('hide-header')
+      $('main.main-block-wrap').addClass('retina-livechat-page-wrap')
 #      alert 'Device Pixel Ratio: ' + dpr
     else
-#      alert '1'
-#    alert '' + dpr
+
 
 
 #   init binder upload file
@@ -805,14 +805,35 @@ $(document).ready ->
         $wrapper.removeClass('maxinmizate')
       else
         $wrapper.addClass('maxinmizate')
-      alert '< large'
+#      alert '< large'
     else
       $wrapper = $(this).closest('.ordered-list-wrap')
       if $wrapper.hasClass('minimizate')
         $wrapper.removeClass('minimizate')
       else
         $wrapper.addClass('minimizate')
-      alert 'large'
+#      alert 'large'
+  $('li.ordered-list-button').click ->
+    order_list_sidebar = $('.ordered-list-wrap')
+
+    if order_list_sidebar.hasClass('maxinmizate')
+      order_list_sidebar.removeClass('maxinmizate')
+    else
+      order_list_sidebar.addClass('maxinmizate')
+#    if($(window).width() < 1445)
+#      $wrapper = $(this).closest('.ordered-list-wrap')
+#      if $wrapper.hasClass('maxinmizate')
+#        $wrapper.removeClass('maxinmizate')
+#      else
+#        $wrapper.addClass('maxinmizate')
+##      alert '< large'
+#    else
+#      $wrapper = $(this).closest('.ordered-list-wrap')
+#      if $wrapper.hasClass('minimizate')
+#        $wrapper.removeClass('minimizate')
+#      else
+#        $wrapper.addClass('minimizate')
+#      alert 'large'
 
 #  $('.ordered-list-wrap img.diamond-logo').click ->
 #    $wrapper = $(this).closest('.ordered-list-wrap')

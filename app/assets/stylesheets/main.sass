@@ -50,6 +50,7 @@ main
   flex: 1 0 auto
   width: 100%
   margin-top: 120px
+  transition: margin-top 0.3s
 header, footer
   flex: none
 
@@ -760,9 +761,10 @@ ul.primary-menu
     top: -80px
   .ordered-list-wrap
     top: 20px
-  main.main-block-wrap
-    @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (   min--moz-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (   -o-min-device-pixel-ratio: 2/1) and (min-device-width: 1025px), only screen and (        min-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (           min-resolution: 192dpi) and (min-device-width: 1025px), only screen and (            min-resolution: 2dppx) and (min-device-width: 1025px)
-      margin-top: 20px
+  main.retina-livechat-page-wrap
+    margin-top: 20px
+    //@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (   min--moz-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (   -o-min-device-pixel-ratio: 2/1) and (min-device-width: 1025px), only screen and (        min-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (           min-resolution: 192dpi) and (min-device-width: 1025px), only screen and (            min-resolution: 2dppx) and (min-device-width: 1025px)
+    //  margin-top: 20px
 
 
 .ordered-list-wrap
@@ -2120,6 +2122,10 @@ a.close_fancybox_gallery
           display: none !important
       .information
         display: none !important
+    &.maxinmizate
+      //@media (min-width : 40.063em) and (max-width : 1445px)
+      width: 310px
+      display: block
 .notification-container
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
   -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
