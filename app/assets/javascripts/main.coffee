@@ -48,6 +48,33 @@ $.fn.observeMouseOut = (options)->
   return
 ) jQuery
 
+(($) ->
+
+  $.fn.scrollToElement = (el, options) ->
+    $el = jQuery(el)
+    parentTop = @scrollTop()
+    parentBottom = parentTop + @height()
+    elTop = $el.position().top
+    elBottom = elTop + $el.height() + parentTop
+    offset = undefined
+    if elBottom >= parentBottom
+      # go down
+      offset = parentTop + elBottom - parentBottom
+      if options
+        @animate { scrollTop: offset }, options
+      else
+        @scrollTop offset
+    else if elTop < 0
+      # go up
+      offset = parentTop + elTop
+      if options
+        @animate { scrollTop: offset }, options
+      else
+        @scrollTop offset
+    return
+
+  return
+) jQuery
 #======================================
 #  on resize change height livechat
 #======================================
@@ -686,11 +713,6 @@ $(document).ready ->
     $send_gm_before.hide()
     $send_gm_after.show()
 
-#======================================================================
-#  mailbox  reply
-#======================================================================
-  $('ul.ud-mb-actions li.ud-reply a').on "click", (event) ->
-    alert "test"
 
 # gits inbox tabs
   $('.ud-inbox-page-wrap .ud-inbox-tab').click ->
@@ -710,20 +732,51 @@ $(document).ready ->
     $block = $wrap.find('.ud-attached-wrap')
     $block.show()
 
-#  mail box
-  $('.ui-message-main-wrap b, .ui-message-main-wrap p.ud-text-message').click ->
+##======================================================================
+##  mailbox  reply
+##======================================================================
+#  $('ul.ud-mb-actions li.ud-reply a').on "click", (event) ->
+#    $wrapper = $(this).closest('.ud-message-one-block-wrap')
+#    $editMessage = $wrapper.find('.ud-inbox-sent-message')
+#    $subMesssageWrapper = $wrapper.find('.ud-inbox-message-sub-block-wrap')
+#
+#    if !$wrapper.hasClass('ud-nc-b') and !$wrapper.hasClass('ud-plaid-message')
+#      $('.ud-inbox-sent-message, .ud-inbox-message-sub-block-wrap').addClass('hide')
+#      $('.ud-message-one-block-wrap').removeClass('ud-opened-message-block')
+#      $wrapper.addClass('ud-opened-message-block')
+#
+#      $subMesssageWrapper.removeClass('hide')
+#      $editMessage.removeClass('hide')
+
+#======================================================================
+#  mailbox  expand message
+#======================================================================
+  $('.ui-message-main-wrap b, .ui-message-main-wrap p.ud-text-message, ul.ud-mb-actions li.ud-reply a').on "click", (event) ->
+
     $wrapper = $(this).closest('.ud-message-one-block-wrap')
     $editMessage = $wrapper.find('.ud-inbox-sent-message')
     $subMesssageWrapper = $wrapper.find('.ud-inbox-message-sub-block-wrap')
 
-    if !$wrapper.hasClass('ud-nc-b') and !$wrapper.hasClass('ud-plaid-message')
-      $('.ud-inbox-sent-message, .ud-inbox-message-sub-block-wrap').addClass('hide')
-      $('.ud-message-one-block-wrap').removeClass('ud-opened-message-block')
-      $wrapper.addClass('ud-opened-message-block')
+    if !$wrapper.hasClass('ud-opened-message-block')
+      if !$wrapper.hasClass('ud-nc-b') and !$wrapper.hasClass('ud-plaid-message')
+        $('.ud-inbox-sent-message, .ud-inbox-message-sub-block-wrap').addClass('hide')
+        $('.ud-message-one-block-wrap').removeClass('ud-opened-message-block')
+        $wrapper.addClass('ud-opened-message-block')
 
-      $subMesssageWrapper.removeClass('hide')
-      $editMessage.removeClass('hide')
+        $subMesssageWrapper.removeClass('hide')
+        $editMessage.removeClass('hide')
 
+        $("div.notification-container").hide()
+
+        $editMessage.focus()
+#        $editMessage.scrollToElement '#bottom',
+#          animate: true
+#          duration: 'slow'
+
+#    else
+#      $wrapper.removeClass('ud-opened-message-block')
+#      $editMessage.addClass('hide')
+#      $subMesssageWrapper.addClass('hide')
 
 
   $('.ud-inbox-message-wrap a.m-send').click ->
@@ -1054,7 +1107,7 @@ $(document).ready ->
   $notification_containers = $("div.notification-container")
   $notification_containers.on "mouseUpOut", ()->
     $containers = $(this)
-    console.log("hello")
+#    console.log("hello")
     $containers.fadeOut duration: 300
 
   $notification_containers.observeMouseOut()
