@@ -384,7 +384,22 @@
         .ui-message-main-wrap
           &:before, b, p
             color: #2E3E51
-
+      &.ud-message-with-arrow
+        .avatar-wrap:after
+          display: block
+          content: ""
+          width: 30px
+          height: 16px
+          background-image: asset_url("UD-icon-sent-to.svg")
+          background-size: 100%
+          background-repeat: no-repeat
+          position: absolute
+          top: 30%
+          left: -40px
+          @media (max-width: 1500px)
+            top: auto
+            bottom: -20px
+            left: 11px
 .message-attachment-item
   float: left
 

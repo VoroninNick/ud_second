@@ -686,6 +686,11 @@ $(document).ready ->
     $send_gm_before.hide()
     $send_gm_after.show()
 
+#======================================================================
+#  mailbox  reply
+#======================================================================
+  $('ul.ud-mb-actions li.ud-reply a').on "click", (event) ->
+    alert "test"
 
 # gits inbox tabs
   $('.ud-inbox-page-wrap .ud-inbox-tab').click ->
@@ -1031,6 +1036,7 @@ $(document).ready ->
 # click event to scroll to top
 #===========================================================
   $(".scrollToTop").click ->
+    $("html, body").animate
     $("html, body").animate
       scrollTop: 0
     , 800
