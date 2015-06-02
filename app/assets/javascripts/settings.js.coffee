@@ -9,8 +9,8 @@ $(document).on 'ready', ()->
   $window = $(window)
   $document = $(document)
   $body = $('body')
-  ###
-  $document.on 'click', 'div.settings-left-menu a', (event)->
+
+  $document.on 'click', 'div.ud-us-sidebar a', (event)->
     #console.log('hello')
     #alert('hello')
     event.preventDefault()
@@ -27,7 +27,7 @@ $(document).on 'ready', ()->
     else if Modernizr.mq('(max-width: 640px)')
       $menu_container = $ul.parent()
       $menu_container.addClass('open-dropdown')
-  ###
+
 
 
   $("form.change-email input[type=email]").attr({disabled: "disabled"})
