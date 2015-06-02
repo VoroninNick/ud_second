@@ -446,28 +446,40 @@ $(document).ready ->
 #  profile edit and save field
 #=========================================================
   $('.p-input-preview div').click ->
+
     form = $(@).closest('form')
     $wrap = $(@).closest('.p-input-wrap')
     $editField = $wrap.find('.p-input-edit')
     $previewField = $wrap.find('.p-input-preview')
 
-    if !form.hasClass('.ud-bf')
+    if form.hasClass('ud-bf')
+      console.log('disable')
     else
       $('.p-input-edit').hide()
       $('.p-input-preview').show()
       $previewField.hide()
       $editField.show()
 
+
+
   $('.p-input-edit .pi-apply-button').click ->
     $wrap = $(@).closest('.p-input-wrap')
+
     $editField = $wrap.find('.p-input-edit')
     $previewField = $wrap.find('.p-input-preview')
 
+    window.$select = $wrap.find('select').SumoSelect()
+
     $editFieldInput = $wrap.find('input').val()
+    str_from_select = $select.sumo.getSelStr()
+
+#    alert 'test'+ str_from_select
 #    alert 'value: '+$editFieldInput
     $previewFieldInput = $wrap.find('p')
-    $previewFieldInput.text($editFieldInput)
-
+    if !$editFieldInput
+      $previewFieldInput.text(str_from_select)
+    else if !str_from_select
+      $previewFieldInput.text($editFieldInput)
     $previewField.show()
     $editField.hide()
 

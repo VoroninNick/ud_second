@@ -140,3 +140,23 @@
         p Brown
       .pi-edit-button
         = embedded_svg 'UAD-edit.svg'
+
+.p-input-wrap
+  .p-label
+    label Multi-select:
+  .p-input-inner
+    .p-input-edit
+      .p-input
+        select.ud-multiple multiple="multiple"
+          option value="1" 1
+          option value="2" 2
+          option value="3" 3
+          option value="4" 4
+          option value="5" 5
+          option value="6" 6
+      .pi-apply-button
+    .p-input-preview
+      .p-input
+        p 1
+      .pi-edit-button
+        = embedded_svg 'UAD-edit.svg'
