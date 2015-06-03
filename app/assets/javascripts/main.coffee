@@ -800,7 +800,7 @@ $(document).ready ->
         $editMessage.removeClass('hide')
 
         $("div.notification-container").hide()
-
+        $wrapper.find('.ulmfc').hide()
         current_message.focus()
 
 
