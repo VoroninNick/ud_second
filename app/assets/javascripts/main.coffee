@@ -751,7 +751,7 @@ $(document).ready ->
 #======================================================================
 #  mailbox  reply
 #======================================================================
-  $('.ui-message-main-wrap b, .ui-message-main-wrap .ui-read-more, ul.ud-mb-actions li.ud-reply a').on "click", (event) ->
+  $('.ui-message-main-wrap b, .ui-message-main-wrap p.ud-text-message, ul.ud-mb-actions li.ud-reply a').on "click", (event) ->
 
     $wrapper = $(this).closest('.ud-message-one-block-wrap')
     $editMessage = $wrapper.find('.ud-inbox-sent-message')
@@ -770,6 +770,16 @@ $(document).ready ->
 
         $editMessage.focus()
 
+#======================================================================
+#  mailbox  expand message
+#======================================================================
+  $('.ui-message-main-wrap .ui-read-more').on "click", (event) ->
+#    alert 'expand'
+    wrap = $(@).closest('.ud-text-message-wrap')
+    if !wrap.hasClass('ui-om-expand')
+      wrap.addClass('ui-om-expand')
+    else
+      wrap.removeClass('ui-om-expand')
 #======================================================================
 #  mailbox  expand new message
 #======================================================================

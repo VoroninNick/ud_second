@@ -290,12 +290,16 @@
             font-size: .8rem
         .ud-text-message-wrap
           position: relative
+          .ui-one-message
+            overflow: hidden
+            height: 20px
+
           .ui-read-more
             position: absolute
             background-color: yellow
             min-height: 5px
-            right: 0
-            bottom: 0
+            right: -35px
+            bottom: -25px
             cursor: pointer
           .ulmfc
             position: absolute
@@ -310,6 +314,11 @@
               font-weight: 300
               line-height: 1.1875rem
               cursor: pointer
+          &.ui-om-expand
+            .ui-one-message
+              height: auto
+            .ui-read-more
+              background-color: green
       .ud-message-option-wrap
         position: absolute
         width: 20px
@@ -382,7 +391,7 @@
           size: rem-calc(14)
           weight: 300
         line-height: rem-calc(19)
-        //cursor: pointer
+        cursor: pointer
         &.udi-label
           color: #FF6F70
           font:
