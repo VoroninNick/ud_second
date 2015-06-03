@@ -51,7 +51,7 @@
         font-size: 0.875rem
         font-weight: 300
         line-height: 1.1875rem
-        cursor: pointer
+        //cursor: pointer
         outline: none !important
 //========================================================
 // code from site.css by Ivan      ----END-----
@@ -290,6 +290,13 @@
             font-size: .8rem
         .ud-text-message-wrap
           position: relative
+          .ui-read-more
+            position: absolute
+            background-color: yellow
+            min-height: 5px
+            right: 0
+            bottom: 0
+            cursor: pointer
           .ulmfc
             position: absolute
             left: 0
@@ -367,13 +374,15 @@
           size: rem-calc(18)
           weight: 400
         line-height: rem-calc(21.6)
+        cursor: pointer
+
       p.ud-text-message
         color: #BEC3C7
         font:
           size: rem-calc(14)
           weight: 300
         line-height: rem-calc(19)
-        cursor: pointer
+        //cursor: pointer
         &.udi-label
           color: #FF6F70
           font:
