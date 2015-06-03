@@ -958,6 +958,7 @@ $(document).ready ->
       order_list_sidebar.removeClass('maxinmizate')
     else
       order_list_sidebar.addClass('maxinmizate')
+
 #    if($(window).width() < 1445)
 #      $wrapper = $(this).closest('.ordered-list-wrap')
 #      if $wrapper.hasClass('maxinmizate')
@@ -1150,9 +1151,11 @@ $(window).resize ->
 
   action = ot - wh
   if st >= action
-    $('.ordered-list-wrap').addClass('fixed-to-footer')
+#    $('.ordered-list-wrap').addClass('fixed-to-footer')
+    $('.ordered-list-wrap').css 'bottom', $('footer').height()
   else
-    $('.ordered-list-wrap').removeClass('fixed-to-footer')
+#    $('.ordered-list-wrap').removeClass('fixed-to-footer')
+    $('.ordered-list-wrap').css 'bottom', '0'
 
 lastScrollTop = 0
 $(window).scroll (event) ->

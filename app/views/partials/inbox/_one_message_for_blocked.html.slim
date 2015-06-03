@@ -1,0 +1,69 @@
+.ud-message-one-block-wrap.ud-u-blocked
+  .ud-inbox-message-block-wrap
+    .ud-message-option-wrap.notification-wrap
+      .ud-message-option.notification-link
+        =embedded_svg "UD-icon-sub menu.svg"
+      .ud-message-option-popup.notification-container
+        = render partial: "partials/inbox/letter_options"
+    .row
+      .columns.large-2.medium-2.small-2
+        .avatar-wrap
+          .avatar
+            .image style="background: url('#{asset_path("girl_11.jpeg")}')no-repeat center center;"
+          .title-for-avatar.text-center
+            span
+              |Kateryna
+      .columns.large-10.medium-10.no-padding-left.small-10
+        .ui-message-main-wrap data-count-messages=""
+          .row
+            .columns
+              p Olya has blocked you, so you can't send any letter to him
+
+    .clearfix
+
+
+  .ud-inbox-sent-message.hide
+    .columns
+      .row
+        .columns.large-2.medium-2.small-2
+          .avatar-wrap
+            .avatar
+              .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+            .title-for-avatar.text-center
+              span
+                |me
+        .columns.no-padding-left.large-10.medium-10.small-10
+          .ud-input-message-wrap
+            form
+              .row
+                .columns
+                  .input
+                    .input-label
+                      label
+                        |Quick replay
+                        span
+                          |(0/1000)
+
+                    textarea placeholder="The maximum message length is 1000 symbols" rows="7" maxlength="1000"
+            .row
+              .columns
+                /a Translate into english
+                a.modal-link.m-send.special-text-shadow.right  href="#" Send
+                .ud-browse-images-wrap.notification-wrap.right
+                  a.edit-icon-svg.browse-file.notification-link
+                    = embedded_svg "UD-icon-add files.svg"
+                  .notification-container
+                    .menu
+                      .group
+                        .options
+                          .option
+                            .label
+                              .icon
+                                = embedded_svg "ud-make-image.svg"
+                            .input
+                              a data-reveal-id="AddAPictures" Add a picture
+                            .clearfix
+                a.edit-icon-svg.smiles.right
+                  = embedded_svg "UD-icon-smile.svg"
+            .clearfix
+    .clearfix
