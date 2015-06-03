@@ -749,7 +749,7 @@ $(document).ready ->
 #      $editMessage.removeClass('hide')
 
 #======================================================================
-#  mailbox  expand message
+#  mailbox  reply
 #======================================================================
   $('.ui-message-main-wrap b, .ui-message-main-wrap p.ud-text-message, ul.ud-mb-actions li.ud-reply a').on "click", (event) ->
 
@@ -769,14 +769,30 @@ $(document).ready ->
         $("div.notification-container").hide()
 
         $editMessage.focus()
-#        $editMessage.scrollToElement '#bottom',
-#          animate: true
-#          duration: 'slow'
 
-#    else
-#      $wrapper.removeClass('ud-opened-message-block')
-#      $editMessage.addClass('hide')
-#      $subMesssageWrapper.addClass('hide')
+#======================================================================
+#  mailbox  expand new message
+#======================================================================
+  $('.ud-message-one-block-wrap .ulmfc p').on "click", (event) ->
+
+    $wrapper = $(this).closest('.ud-message-one-block-wrap')
+    $editMessage = $wrapper.find('.ud-inbox-sent-message')
+    $subMesssageWrapper = $wrapper.find('.ud-inbox-message-sub-block-wrap')
+    current_message = $wrapper.find('.uic-current')
+
+    if !$wrapper.hasClass('ud-opened-message-block')
+      if !$wrapper.hasClass('ud-nc-b') and !$wrapper.hasClass('ud-plaid-message')
+        $('.ud-inbox-sent-message, .ud-inbox-message-sub-block-wrap').addClass('hide')
+        $('.ud-message-one-block-wrap').removeClass('ud-opened-message-block')
+        $wrapper.addClass('ud-opened-message-block')
+
+        $subMesssageWrapper.removeClass('hide')
+        $editMessage.removeClass('hide')
+
+        $("div.notification-container").hide()
+
+        current_message.focus()
+
 
 
   $('.ud-inbox-message-wrap a.m-send').click ->
