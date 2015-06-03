@@ -1,0 +1,215 @@
+.ud-message-one-block-wrap
+  .ud-inbox-message-block-wrap.ud-inbox-unread-message.ud-message-with-arrow
+    .ud-message-option-wrap.notification-wrap
+      .ud-message-option.notification-link
+        =embedded_svg "UD-icon-sub menu.svg"
+      .ud-message-option-popup.notification-container
+        = render partial: "partials/inbox/letter_options"
+    .row
+      .columns.large-2.medium-2.small-2
+        .avatar-wrap
+          .avatar
+            .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
+          .title-for-avatar.text-center
+            span
+              |Olena
+      .columns.large-10.medium-10.no-padding-left.small-10
+        .ui-message-main-wrap data-count-messages="[3]"
+          .row
+            .columns.large-6.medium-6
+              b Spring is the subject of conversation
+            .columns.large-6.medium-6.no-padding-left
+              .ui-message-detail-info
+                p.ud-date Sent: 04/20/2015 12:48 AM
+                a
+                  =embedded_svg "UAD-inbox-5-saved.svg"
+                a
+                  =embedded_svg "UAD-inbox-2-Intro.svg"
+                a
+                  =embedded_svg "UAD-inbox-4-drafts.svg"
+
+          .row
+            .columns.large-11.medium-11.small-11
+              p.ud-text-message
+                |I wish I could call you with a special name in real life. But did you decide something about our acquaintence? Or still not sure?? what doubts do you have, suleyman? Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me. I`m repeating it to you all the time, so what is the problem? You look through my profile when I write to you.? Oksana
+          .row
+            .column
+    .clearfix
+  / sub message
+  .ud-inbox-message-block-wrap.ud-inbox-message-sub-block-wrap.ud-inbox-message-from-me.hide
+    .ud-message-option-wrap.notification-wrap
+      .ud-message-option.notification-link
+        =embedded_svg "UD-icon-sub menu.svg"
+      .ud-message-option-popup.notification-container
+        = render partial: "partials/inbox/letter_options"
+    .row
+      .columns.large-2.medium-2.small-2
+        .avatar-wrap
+          .avatar
+            .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+          .title-for-avatar.text-center
+            span
+              |me
+      .columns.large-10.medium-10.no-padding-left.small-10
+        .ui-message-main-wrap
+          .row
+            .columns.large-6.medium-6
+              p.ud-date 02:16 PM
+            .columns.large-6.medium-6
+              .ui-message-detail-info
+                a
+                  =embedded_svg "UAD-inbox-5-saved.svg"
+                a
+                  =embedded_svg "UAD-inbox-2-Intro.svg"
+                a
+                  =embedded_svg "UAD-inbox-4-drafts.svg"
+
+          .row
+            .columns.large-11.medium-11.small-11
+              p.ud-text-message
+                |Hello! Your life is gonna change this year and I can tell you why! My name is Gregory, I was born in sweet place of Ukraine - calling Poltava. To introduce myself I want to start from five words: -faith -love -future -dream -eternity You know why?
+          .row
+            .column
+    .clearfix
+  / sub message
+  .ud-inbox-message-block-wrap.ud-inbox-message-sub-block-wrap.hide
+    .ud-message-option-wrap.notification-wrap
+      .ud-message-option.notification-link
+        =embedded_svg "UD-icon-sub menu.svg"
+      .ud-message-option-popup.notification-container
+        = render partial: "partials/inbox/letter_options"
+    .row
+      .columns.large-2.medium-2
+        .avatar-wrap
+          .avatar
+            .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
+          .title-for-avatar.text-center
+            span
+              |me
+      .columns.large-10.medium-10.no-padding-left
+        .ui-message-main-wrap
+          .row
+            .columns.large-6.medium-6
+              p.ud-date 02:32 PM
+            .columns.large-6.medium-6
+              .ui-message-detail-info
+                a
+                  =embedded_svg "UAD-inbox-5-saved.svg"
+                a
+                  =embedded_svg "UAD-inbox-2-Intro.svg"
+                a
+                  =embedded_svg "UAD-inbox-4-drafts.svg"
+
+          .row
+            .columns.large-11.medium-11.small-11
+              p.ud-text-message
+                |My DREAM is strong family, I know it will someday. And everything I do - should come in ETERNITY soon, it will be my children...through all generations. So here I am. If you like my world – so just come in and you’ll see more. Enjoy!
+          .row
+            .column
+    .clearfix
+
+  .ud-inbox-sent-message.hide tabindex="-1"
+    .columns
+      .row
+        .columns.large-2.medium-2.small-2
+          .avatar-wrap
+            .avatar
+              a href=profile_path
+                .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+            .title-for-avatar.text-center
+              span
+                |me
+        .columns.no-padding-left.large-10.medium-10.small-10
+          .ud-input-message-wrap
+            form
+              .row
+                .columns
+                  .input
+                    .input-label
+                      label
+                        |Quick replay
+                        span
+                          |(0/1000)
+
+                    textarea placeholder="The maximum message length is 1000 symbols" rows="7" maxlength="1000"
+            .row
+              .columns
+                /a Translate into english
+                a.modal-link.m-send.special-text-shadow.right  href="#" Send
+                .ud-browse-images-wrap.notification-wrap.right
+                  a.edit-icon-svg.browse-file.notification-link
+                    = embedded_svg "UD-icon-add files.svg"
+                  .notification-container
+                    .menu
+                      .group
+                        .options
+                          .option
+                            .label
+                              .icon
+                                = embedded_svg "ud-make-image.svg"
+                            .input
+                              a data-reveal-id="AddAPictures" Add a picture
+                            .clearfix
+
+                .ud-smiles-wrap.notification-wrap.right
+                  a.edit-icon-svg.notification-link.smiles
+                    = embedded_svg "UD-icon-smile.svg"
+                  .notification-container
+                    .menu
+                      .group
+                        .options
+                          .option
+                            .ud-smiles-inner
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+                              a
+                                =image_tag "face_smile.png"
+
+            .clearfix
+    .clearfix
