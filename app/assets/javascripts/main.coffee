@@ -751,7 +751,7 @@ $(document).ready ->
 #======================================================================
 #  mailbox  reply
 #======================================================================
-  $('.ui-message-main-wrap b, .ui-message-main-wrap p.ud-text-message, ul.ud-mb-actions li.ud-reply a').on "click", (event) ->
+  $('.ui-message-main-wrap b, .ui-message-main-wrap p.ud-text-message, p.ud-inbox-draft, ul.ud-mb-actions li.ud-reply a').on "click", (event) ->
 
     $wrapper = $(this).closest('.ud-message-one-block-wrap')
     $editMessage = $wrapper.find('.ud-inbox-sent-message')
