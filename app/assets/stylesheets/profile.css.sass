@@ -301,6 +301,22 @@ p
         border-style: solid
         border-width: 0 0 22px 22px
         border-color: transparent transparent #96d03f transparent
+      @media (max-width : 925px)
+        &.ud-in-favorites
+          .p-title
+            &:before
+              left: 51px
+            &:after
+              left: 9px
+          .ud-link-to-favorite
+            left: 0
+      &.profile-b-status-offline
+        background-color: #D03F4A
+        &:after
+          border-color: transparent transparent #D03F4A transparent
+        .p-title:before
+          content: "offline"
+
     nav
       li
         width: 80px
