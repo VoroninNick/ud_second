@@ -141,31 +141,74 @@ $(document).ready ->
 #=========================================================
 #  init close foundation reveal after add
 #=========================================================
+#  $('#AddAPictures .image-popup-one-item a').click ->
+#    $this = $(this)
+#    locked = $this.data('locked')
+#
+#    if !locked
+#      $this.data('locked', true)
+#      setTimeout(()->
+#        $this.data('locked', false)
+#      , 300)
+#      # do something
+#      conv_id = $('#AddAPictures').data('conv-id')
+#      folder = $('#AddAPictures').data('folder')
+#      fid = $(this).data('attachment-fid')
+#      $.post '/sites/all/themes/ud/ajax/get_attachment_html.php', {
+#        attachment_id: fid
+#        conversation_id: conv_id
+#        reply_folder: folder
+#      }, (data) ->
+#        $('div#' + folder + '-conv-id-' + conv_id + ' .ud-e-attachment-wrap').append data
+#        $('.ud-e-attachment-wrap .message-attachment-item').removeClass 'end'
+#        $('.ud-e-attachment-wrap .message-attachment-item:last').addClass 'end'
+#        $('div#' + folder + '-conv-id-' + conv_id + ' form#conv-' + conv_id + ' textarea').trigger 'keyup'
+#        return
+#      return
+#      $('#AddAPictures').foundation 'reveal', 'close'
+
+#============================================
+#  add attachment to current conversation
+#============================================
+
+  this_for_mesaage = ''
+
+  $('.ud-attach-file-into-message .browse-file').click ->
+    this_for_mesaage = $(@)
+
   $('#AddAPictures .image-popup-one-item a').click ->
     $this = $(this)
     locked = $this.data('locked')
-
     if !locked
       $this.data('locked', true)
+
+      wrap = this_for_mesaage.closest('.ud-attach-file-into-message')
+      attach_wrap = wrap.find('.ud-e-attachment-wrap')
+
+      $image_object = $this.parent().html()
+
+      attachment_one_item = '<div class="columns large-2 medium-2 small-4 end"><div class="pg-one-item">
+              <div class="pg-action-button pga-remove">
+                <a data-file-id="123" data-folder="inbox" data-conv-id="65">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+                  <polygon fill="#2E3E51" points="64,6.464 57.536,0 32,25.536 6.464,0 0,6.464 25.536,32 0,57.536 6.464,64 32,38.464 57.536,64
+                      64,57.536 38.464,32 "></polygon>
+                  </svg>
+                  </a>
+              </div>'+$image_object+'
+            </div></div>'
+      attach_wrap.append(attachment_one_item)
+
       setTimeout(()->
         $this.data('locked', false)
       , 300)
       # do something
-      conv_id = $('#AddAPictures').data('conv-id')
-      folder = $('#AddAPictures').data('folder')
-      fid = $(this).data('attachment-fid')
-      $.post '/sites/all/themes/ud/ajax/get_attachment_html.php', {
-        attachment_id: fid
-        conversation_id: conv_id
-        reply_folder: folder
-      }, (data) ->
-        $('div#' + folder + '-conv-id-' + conv_id + ' .ud-e-attachment-wrap').append data
-        $('.ud-e-attachment-wrap .message-attachment-item').removeClass 'end'
-        $('.ud-e-attachment-wrap .message-attachment-item:last').addClass 'end'
-        $('div#' + folder + '-conv-id-' + conv_id + ' form#conv-' + conv_id + ' textarea').trigger 'keyup'
-        return
-      return
-      $('#AddAPictures').foundation 'reveal', 'close'
+      if wrap.hasClass('ud-message-one-block-wrap')
+        $('#AddAPictures').foundation 'reveal', 'close'
+      else if wrap.hasClass('your-introduction-letter')
+        $('.notification-container').hide()
+        $('#YourIntroductionLetterEdit').foundation 'reveal', 'open'
+
 
 #=========================================================
 #  init multiple select

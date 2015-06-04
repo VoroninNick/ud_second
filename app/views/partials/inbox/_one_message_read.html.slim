@@ -1,4 +1,4 @@
-.ud-message-one-block-wrap
+.ud-message-one-block-wrap.ud-attach-file-into-message
   .ud-inbox-message-block-wrap.ud-inbox-unread-message.ud-message-with-arrow
     .ud-message-option-wrap.notification-wrap
       .ud-message-option.notification-link
@@ -56,8 +56,6 @@
                           a
                             .image style="background: url('#{asset_path("My gallery 6.jpg")}')no-repeat center center;"
                 .ui-read-more  expand
-          .row
-            .column
     .clearfix
   / sub message
   .ud-inbox-message-block-wrap.ud-inbox-message-sub-block-wrap.ud-inbox-message-from-me.hide
@@ -181,6 +179,8 @@
                           |(0/1000)
 
                     textarea placeholder="The maximum message length is 1000 symbols" rows="7" maxlength="1000"
+            .row
+              .ud-e-attachment-wrap
             .row
               .columns
                 /a Translate into english

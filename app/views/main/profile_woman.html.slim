@@ -565,7 +565,7 @@
     .modal-header-wrap
       h3 compose your introduction letter
       a.close-reveal-modal
-    .modal-content-wrap.your-introduction-letter
+    .modal-content-wrap.your-introduction-letter.ud-attach-file-into-message
       .row
         .columns
           form
@@ -582,12 +582,27 @@
                 |[girl’s name], You are the most beautiful woman I have ever seen. Your hair, your eyes, your lips, your body that you haven't grown into, the way you walk, smile, laugh, the way your cheeks drop when you're mad or upset, the way you drag your feet when you're tired. Every single thing about you is beautiful.
 
       .row
+        .ud-e-attachment-wrap
+      .row
         .columns
           a.modal-link.m-send.right data-reveal-id="YourIntroductionLetterSend" href="#" Save letter
-          a.edit-icon-svg.browse-file.right
-            = embedded_svg "UD-icon-add files.svg"
-          a.edit-icon-svg.smiles.right
-            = embedded_svg "UD-icon-smile.svg"
+          .ud-browse-images-wrap.notification-wrap.right
+            a.edit-icon-svg.browse-file.notification-link
+              = embedded_svg "UD-icon-add files.svg"
+              .notification-container
+                .menu
+                  .group
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "ud-make-image.svg"
+                        .input
+                          a data-reveal-id="AddAPictures" Add a picture
+                        .clearfix
+          .ud-smiles-wrap.notification-wrap.right
+            a.edit-icon-svg.smiles
+              = embedded_svg "UD-icon-smile.svg"
 
 #YourIntroductionLetterSend.reveal-modal data-reveal=""
   .modal-wrap
@@ -638,7 +653,7 @@
     .modal-header-wrap
       h3 Send email
       a.close-reveal-modal
-    .modal-content-wrap.your-introduction-letter
+    .modal-content-wrap.your-introduction-letter.ud-attach-file-into-message
       form
         .row
           .columns
@@ -664,12 +679,28 @@
                   label Message field (104/1000)
                   a Translate into english
                 textarea rows="7" placeholder="Galina, you are the most beautiful woman I have ever seen. Your hair, your eyes, your lips, your body that you haven't grown into, the way you walk, smile, laugh, the way your cheeks drop when you're mad or upset, the way you drag your feet when you're tired. Every single thing about you is beautiful."
-
+        .row
+          .ud-e-attachment-wrap
         .row
           .columns
             a.modal-link.m-send.right data-reveal-id="YourIntroductionLetterSend" href="#" Save letter
-            a.edit-icon-svg.browse-file.right
-              = embedded_svg "UD-icon-add files.svg"
-            a.edit-icon-svg.smiles.right
-              = embedded_svg "UD-icon-smile.svg"
+            .ud-browse-images-wrap.notification-wrap.right
+              a.edit-icon-svg.browse-file.notification-link
+                = embedded_svg "UD-icon-add files.svg"
+                .notification-container
+                  .menu
+                    .group
+                      .options
+                        .option
+                          .label
+                            .icon
+                              = embedded_svg "ud-make-image.svg"
+                          .input
+                            a data-reveal-id="AddAPictures" Add a picture
+                          .clearfix
+            .ud-smiles-wrap.notification-wrap.right
+              a.edit-icon-svg.smiles
+                = embedded_svg "UD-icon-smile.svg"
+
+= render partial: "partials/attachment_image_popup"
 
