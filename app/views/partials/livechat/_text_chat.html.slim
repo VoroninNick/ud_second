@@ -112,7 +112,7 @@
                 p 02:16 PM
               p  What are u duing?
 
-  .text-chat-input-container
+  .text-chat-input-container.ud-attach-file-into-message
     .text-chat-input-container-inner
       .row
         .columns
@@ -125,11 +125,25 @@
               .columns
                 textarea rows="3"
             .row
+              .ud-e-attachment-wrap
+            .row
               .columns
                 .right-group-links
                   a.ud-button.special-text-shadow.right href="#" Send
-                  a.edit-icon-svg.browse-file.right
-                    = embedded_svg "UD-icon-add files.svg"
+                  .ud-browse-images-wrap.notification-wrap.right
+                    a.edit-icon-svg.browse-file.notification-link
+                      = embedded_svg "UD-icon-add files.svg"
+                    .notification-container
+                      .menu
+                        .group
+                          .options
+                            .option
+                              .label
+                                .icon
+                                  = embedded_svg "ud-make-image.svg"
+                              .input
+                                a data-reveal-id="AddAPictures" Add a picture
+                              .clearfix
                   a.edit-icon-svg.smiles.right
                     = embedded_svg "UD-icon-smile.svg"
                   a.ud-close-session.right
@@ -137,3 +151,5 @@
                     span
                       |&nbsp;or
                   .clearfix
+
+= render partial: "partials/attachment_image_popup"

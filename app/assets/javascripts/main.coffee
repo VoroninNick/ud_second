@@ -205,9 +205,20 @@ $(document).ready ->
       # do something
       if wrap.hasClass('ud-message-one-block-wrap')
         $('#AddAPictures').foundation 'reveal', 'close'
-      else if wrap.hasClass('your-introduction-letter')
+      else if wrap.hasClass('ud-intro-edit-mail')
         $('.notification-container').hide()
         $('#YourIntroductionLetterEdit').foundation 'reveal', 'open'
+      else if wrap.hasClass('ud-intro-send-mail')
+        $('.notification-container').hide()
+        $('#SendEmail').foundation 'reveal', 'open'
+      else if wrap.hasClass('text-chat-input-container')
+
+        current_wrap = this_for_mesaage.closest('.text-chat-column')
+        current_wrap.find('.text-chat-view-container').addClass('ud-chat-has-attached-file')
+        wrap.addClass('ud-chat-has-attached-file')
+
+        $('.notification-container').hide()
+        $('#AddAPictures').foundation 'reveal', 'close'
 
 
 #=========================================================
