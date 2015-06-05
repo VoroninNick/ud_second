@@ -118,6 +118,31 @@
 
             .clearfix
 
+        .p-photos-wrap.p-video-wrap
+          .title-head.grey.notification-wrap
+            .columns
+              .wrap
+                h4 My video
+          .white-grey
+            .columns
+              .row
+                .columns.large-6
+                  .row
+                    .columns.large-12.medium-6.medium-centered.small-6.small-centered
+                      .ud-browse-video-input
+                        label for="pBrowseImageGallery"
+                        input id="pBrowseImageGallery" type="file"
+                  .p-video-input-wrap.hide
+                    = image_tag "UAD-video-girl.jpg"
+                .columns.large-6
+                  b.hide-for-small Upload yout introduction video
+                  p.hide-for-small
+                    |Some tules text. Like a multimedia container format must be AVI,
+                     in HD resilution (equal or more than 720p) etc...
+                  a.more.p-delete-video Delete video
+
+            .clearfix
+
         .p-gallery-wrap
           .title-head.grey.notification-wrap
             .columns

@@ -126,6 +126,26 @@ $(document).mousemove (event) ->
 
 $(document).ready ->
 #================================
+#  adding video to profile
+#================================
+  $('.ud-browse-video-input input').change ->
+    wrap = $(@).closest('.p-video-wrap')
+    browse_video = wrap.find('.ud-browse-video-input')
+    view_video = wrap.find('.p-video-input-wrap')
+    if !browse_video.hasClass('hide')
+      browse_video.addClass('hide')
+      view_video.removeClass('hide')
+#================================
+#  deleting video from profile
+#================================
+  $('.p-video-wrap .p-delete-video').click ->
+    wrap = $(@).closest('.p-video-wrap')
+    browse_video = wrap.find('.ud-browse-video-input')
+    view_video = wrap.find('.p-video-input-wrap')
+    if browse_video.hasClass('hide')
+      browse_video.removeClass('hide')
+      view_video.addClass('hide')
+#================================
 #  detect ration
 #================================
   if(window.location.href.indexOf("live_chat") > -1)

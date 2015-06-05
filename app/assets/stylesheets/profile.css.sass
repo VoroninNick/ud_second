@@ -49,6 +49,10 @@ p
         size: rem-calc(60)
         weight: 400
       line-height: rem-calc(72)
+      @media (min-width : 818px) and (max-width : 900px)
+        font:
+          size: rem-calc(48)
+        line-height: rem-calc(56)
       @media (min-width : 0) and (max-width : 40em)
         text-align: center
         padding-bottom: 10px
@@ -889,7 +893,7 @@ p
           weight: 300
         line-height: rem-calc(21)
 
-.ud-browse-image-input
+.ud-browse-image-input, .ud-browse-video-input
   position: relative
   overflow: hidden
   padding: 1px
@@ -939,6 +943,16 @@ p
     position: absolute
     left: -100px
     top: -100px
+
+.ud-browse-video-input
+  label
+    padding-bottom: 75%
+    &:before
+      background-image: asset_url('UD-icon-camshare-dark.svg')
+      background-size: 80%
+    &:after
+      content: "add a video"
+
 
 .p-photos-wrap
   .white-grey
@@ -1078,7 +1092,20 @@ p
     &:hover
       a.p-set-as-avatar, .p-action-button
         opacity: 1
-
+  &.p-video-wrap
+    a.more
+      position: static
+      -webkit-transform: translateX(0)
+      -moz-transform: translateX(0)
+      -ms-transform: translateX(0)
+      -o-transform: translateX(0)
+      transform: translateX(0)
+      &.p-delete-video
+        float: right
+        @media #{$small-only}
+          float: none !important
+          +my_horizontal_align
+            position: relative
 .p-gallery-wrap
   .white-grey
     padding-top: 30px
