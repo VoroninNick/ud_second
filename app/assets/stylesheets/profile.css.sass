@@ -1281,6 +1281,8 @@ form
           width: 50%
         &.pf-day
           width: 20%
+      .ui-datepicker-trigger
+        display: none
     .pi-apply-button, .pi-edit-button
       width: 35px
       height: 35px
@@ -1303,8 +1305,9 @@ form
         weight: 400
       line-height: 1.2rem
       margin-bottom: 0
-      word-wrap: break-word
       //word-break: break-all
+      word-wrap: break-word
+      width: 100%
     .p-input-edit, .p-input-preview
       position: relative
     .p-input-edit
@@ -1314,9 +1317,12 @@ form
       cursor: pointer
       height: 35px
       position: relative
+      width: 100%
       .p-input
+        width: 100%
         +my_vertical_align()
           position: absolute
+
       &:hover .pi-edit-button
         opacity: 1
 

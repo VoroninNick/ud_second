@@ -569,20 +569,27 @@ $(document).ready ->
     $editField = $wrap.find('.p-input-edit')
     $previewField = $wrap.find('.p-input-preview')
 
-    window.$select = $wrap.find('select').SumoSelect()
+    $previewFieldInput = $wrap.find('p')
+    current_input = $wrap.find('.p-input')
+    if current_input.find('input').length
+#      alert 'input'
+      $editFieldInput = $wrap.find('input').val()
+      $previewFieldInput.text($editFieldInput)
 
-    $editFieldInput = $wrap.find('input').val()
-    str_from_select = $select.sumo.getSelStr()
+    else if current_input.find('select').length
+#      alert 'select'
+      window.$select = $wrap.find('select').SumoSelect()
+
+      str_from_select = $select.sumo.getSelStr()
+      $previewFieldInput.text(str_from_select)
+
+
+    $previewField.show()
+    $editField.hide()
 
 #    alert 'test'+ str_from_select
 #    alert 'value: '+$editFieldInput
-    $previewFieldInput = $wrap.find('p')
-    if !$editFieldInput
-      $previewFieldInput.text(str_from_select)
-    else if !str_from_select
-      $previewFieldInput.text($editFieldInput)
-    $previewField.show()
-    $editField.hide()
+
 
 #===========================================================
 #  observe mouse
