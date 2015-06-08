@@ -12,62 +12,7 @@
         margin-right: auto !important
         float: none !important
 
-    .trf-one-girl
-      .trf-avatar-wrap
-        position: relative
-        &:before
-          display: block
-          content: ""
-          position: absolute
-          bottom: 0
-          height: 4px
-          background-color: #96D03F
-          width: 100%
-        .trf-choose-girl
-          position: absolute
-          bottom: 4px
-          left: 0
-          right: 0
-          height: 32px
-          background-color: rgba(40, 127, 184, 0.8)
-          text-align: center
-          line-height: 2rem
-          color: #fff
-          margin: 0
-          padding: 0
-          font-size: 0.875rem
-          font-weight: 400
-          text-transform: uppercase
-          cursor: pointer
-          opacity: 0
-          transition: opacity .5s
-      h4
-        color: #BEC3C7
-        font:
-          size: rem-calc(14)
-          weight: 500
-        line-height: rem-calc(16.8)
-      &.offline
-        .trf-avatar-wrap:before
-          background-color: #D03F4A
-      &:hover
-        h4
-          color: #2E3E51
-        .trf-choose-girl
-          opacity: 1
 
-
-    .image
-      max-width: 100%
-      width: 100%
-      height: 0
-      padding-bottom: 100%
-      overflow: hidden
-      -webkit-background-size: cover !important
-      -moz-background-size: cover !important
-      -o-background-size: cover !important
-      background-size: cover !important
-      margin: 0 auto
   .input
     .input-select-date, .input-select-time
       float: left
@@ -145,6 +90,76 @@
 
   .t-tab-wrap
     margin-bottom: 120px
+    display: none
+    &.t-find-tab-wrap
+      display: block
+      .ud-trip-find-one-block
+        margin-bottom: 13px
+        padding-top: 25px
+        .trf-one-girl
+          .trf-avatar-wrap
+            position: relative
+            &:before
+              display: block
+              content: ""
+              position: absolute
+              bottom: 0
+              height: 4px
+              background-color: #96D03F
+              width: 100%
+            .trf-choose-girl, .trf-selected-girl
+              position: absolute
+              bottom: 4px
+              left: 0
+              right: 0
+              height: 32px
+              background-color: rgba(40, 127, 184, 0.8)
+              text-align: center
+              line-height: 2rem
+              color: #fff
+              margin: 0
+              padding: 0
+              font-size: 0.875rem
+              font-weight: 400
+              text-transform: uppercase
+              cursor: pointer
+            .trf-choose-girl
+              opacity: 0
+              transition: opacity .5s
+            .trf-selected-girl
+              display: none
+          h4
+            color: #BEC3C7
+            font:
+              size: rem-calc(14)
+              weight: 500
+            line-height: rem-calc(16.8)
+          &.offline
+            .trf-avatar-wrap:before
+              background-color: #D03F4A
+          &:hover
+            h4
+              color: #2E3E51
+            .trf-choose-girl
+              opacity: 1
+          &.ud_selected_girl
+            .trf-avatar-wrap
+              .trf-selected-girl
+                display: block
+            h4
+              color: #2E3E51
+        .image
+          max-width: 100%
+          width: 100%
+          height: 0
+          padding-bottom: 100%
+          overflow: hidden
+          -webkit-background-size: cover !important
+          -moz-background-size: cover !important
+          -o-background-size: cover !important
+          background-size: cover !important
+          margin: 0 auto
+
     .t-find-girl-wrap
       margin-top: 60px
       svg

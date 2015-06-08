@@ -1,13 +1,8 @@
 .tripadvisor-page-wrap.ud-tabs-wrap
   .row.medium-main
     .columns.medium-10.medium-centered.large-12
-      .row
-        columns
-          .columns
-            .t-important-message-wrap
-              p IMPORTANT! For every new date you should fill in a new application
       .row.text-center
-        .columns.large-4.medium-4.small-4.tp-tab-title.ud-tab-link
+        .columns.large-4.medium-4.small-4.tp-tab-title.ud-tab-link.active
           b data-tab-number="1" Find a lady
         .columns.large-4.medium-4.small-4.tp-tab-title.ud-tab-link
           b data-tab-number="2" Book an appartment
@@ -18,3 +13,10 @@
   =render partial: "partials/tripadvisor/find_lady"
   =render partial: "partials/tripadvisor/book_and_appartment"
   =render partial: "partials/tripadvisor/book_airport"
+  .row.medium-main
+    .columns.medium-10.medium-centered.large-12
+      .row
+        columns
+          .columns
+            .t-important-message-wrap
+              p IMPORTANT! For every new date you should fill in a new application

@@ -1,50 +1,207 @@
-.ud-tab.t-tab-wrap
-  =render partial: "partials/search_from"
+-counter_gitls_block = 8
+
+.ud-tab.t-tab-wrap.ud-ladies-that-confirmed.t-find-tab-wrap
+  div.hide
+    =render partial: "partials/search_from"
   .row.medium-main
     .columns.medium-10.medium-centered.large-12
-      .row.text-center
+      .row.text-center.hide
         .columns.large-3.large-centered.medium-3.medium-centered.small-6.small-centered
           .t-find-girl-wrap
             =embedded_svg "UAD-icon-girl.svg"
             p Choose a lady using search
         .clearfix
 
-      .row.t-result-finding-wrap
-        .columns.large-2.medium-2.small-6.trf-one-girl-wrap
-          .trf-one-girl
-            .row
-              .columns
-                .trf-avatar-wrap
-                  .image style="background: url('#{asset_path("girl_22.jpg")}')no-repeat center center;"
-                  .trf-choose-girl
-                    |Choose
-            .row.text-center
-              .columns
-                h4 Galina
+      /.row.t-result-finding-wrap
+      /  .columns.large-2.medium-2.small-6.trf-one-girl-wrap
+      /    .trf-one-girl
+      /      .row
+      /        .columns
+      /          .trf-avatar-wrap
+      /            .image style="background: url('#{asset_path("girl_22.jpg")}')no-repeat center center;"
+      /            .trf-choose-girl
+      /              |Choose
+      /      .row.text-center
+      /        .columns
+      /          h4 Galina
+      /
+      /  .columns.large-2.medium-2.small-6.trf-one-girl-wrap
+      /    .trf-one-girl
+      /      .row
+      /        .columns
+      /          .trf-avatar-wrap
+      /            .image style="background: url('#{asset_path("girl_11.jpeg")}')no-repeat center center;"
+      /            .trf-choose-girl
+      /              |Choose
+      /      .row.text-center
+      /        .columns
+      /          h4 Galina
+      /  .columns.large-2.medium-2.small-6.end.trf-one-girl-wrap
+      /    .trf-one-girl.offline
+      /      .row
+      /        .columns
+      /          .trf-avatar-wrap
+      /            .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+      /            .trf-choose-girl
+      /              |Choose
+      /      .row.text-center
+      /        .columns
+      /          h4 Galina
+      /  .row
+      /    .columns.large-2.medium-2.large-centered.medium-centered
+      /      .t-button-step-wrap
+      /        a.more.tm-step-two Step 2
 
-        .columns.large-2.medium-2.small-6.trf-one-girl-wrap
-          .trf-one-girl
-            .row
-              .columns
-                .trf-avatar-wrap
-                  .image style="background: url('#{asset_path("girl_11.jpeg")}')no-repeat center center;"
-                  .trf-choose-girl
-                    |Choose
-            .row.text-center
-              .columns
-                h4 Galina
-        .columns.large-2.medium-2.small-6.end.trf-one-girl-wrap
-          .trf-one-girl.offline
-            .row
-              .columns
-                .trf-avatar-wrap
-                  .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
-                  .trf-choose-girl
-                    |Choose
-            .row.text-center
-              .columns
-                h4 Galina
-        .row
-          .columns.large-2.medium-2.large-centered.medium-centered
-            .t-button-step-wrap
-              a.more.tm-step-two Step 2
+
+
+
+      .title-head.grey.notification-wrap
+        .columns
+          .wrap
+            h4 Ladies that confirmed your intimacy request
+            .items-menu.notification-link
+              =image_tag "UD-icon-sub menu.svg"
+              .notification-container
+                .menu
+                  .group
+                    .title
+                      strong Display options:
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-sort.svg"
+                          span
+                            |Sort by
+                        .input
+                          select.sort-by
+                            option value="age_increase" Age increase
+                            option value="age_decrease" Age decrease
+                            option value="alfabet" Alfabet
+                            option value="recent_activity" Recent activity
+                            option value="favotites_first" Favotites first
+                        .clearfix
+      .white-grey.ud-trip-find-one-block
+        .columns
+          .row
+
+            - counter_gitls_block.times do |i|
+              .columns.large-2.medium-2.small-6.trf-one-girl-wrap class=('end' if i==counter_gitls_block-1)
+                .trf-one-girl
+                  .row
+                    .columns
+                      .trf-avatar-wrap
+                        .image style="background: url('#{asset_path("girl_22.jpg")}')no-repeat center center;"
+                        .trf-choose-girl
+                          |Choose
+                        .trf-selected-girl
+                          |Selected
+                  .row.text-center
+                    .columns
+                      h4 Galina
+
+        .clearfix
+
+
+      .title-head.grey.notification-wrap
+        .columns
+          .wrap
+            h4 Ladies that not confirmed yet your intimacy request
+            .items-menu.notification-link
+              =image_tag "UD-icon-sub menu.svg"
+              .notification-container
+                .menu
+                  .group
+                    .title
+                      strong Display options:
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-sort.svg"
+                          span
+                            |Sort by
+                        .input
+                          select.sort-by
+                            option value="age_increase" Age increase
+                            option value="age_decrease" Age decrease
+                            option value="alfabet" Alfabet
+                            option value="recent_activity" Recent activity
+                            option value="favotites_first" Favotites first
+                        .clearfix
+      .white-grey.ud-trip-find-one-block
+        .columns
+          .row
+            .columns.large-2.medium-2.small-6.trf-one-girl-wrap
+              .trf-one-girl
+                .row
+                  .columns
+                    .trf-avatar-wrap
+                      .image style="background: url('#{asset_path("girl_22.jpg")}')no-repeat center center;"
+                .row.text-center
+                  .columns
+                    h4 Galina
+            .columns.large-2.medium-2.small-6.trf-one-girl-wrap.end
+              .trf-one-girl
+                .row
+                  .columns
+                    .trf-avatar-wrap
+                      .image style="background: url('#{asset_path("girl_22.jpg")}')no-repeat center center;"
+                .row.text-center
+                  .columns
+                    h4 Galina
+        .clearfix
+
+
+      .title-head.grey.notification-wrap
+        .columns
+          .wrap
+            h4 My favorites
+            .items-menu.notification-link
+              =image_tag "UD-icon-sub menu.svg"
+              .notification-container
+                .menu
+                  .group
+                    .title
+                      strong Display options:
+                    .options
+                      .option
+                        .label
+                          .icon
+                            = embedded_svg "UD-icon-sort.svg"
+                          span
+                            |Sort by
+                        .input
+                          select.sort-by
+                            option value="age_increase" Age increase
+                            option value="age_decrease" Age decrease
+                            option value="alfabet" Alfabet
+                            option value="recent_activity" Recent activity
+                            option value="favotites_first" Favotites first
+                        .clearfix
+      .white-grey.ud-trip-find-one-block
+        .columns
+          .row
+            .columns.large-2.medium-2.small-6.trf-one-girl-wrap
+              .trf-one-girl
+                .row
+                  .columns
+                    .trf-avatar-wrap
+                      .image style="background: url('#{asset_path("girl_22.jpg")}')no-repeat center center;"
+                      .trf-choose-girl
+                        |Send
+                .row.text-center
+                  .columns
+                    h4 Galina
+            .columns.large-2.medium-2.small-6.trf-one-girl-wrap.end
+              .trf-one-girl
+                .row
+                  .columns
+                    .trf-avatar-wrap
+                      .image style="background: url('#{asset_path("girl_22.jpg")}')no-repeat center center;"
+                      .trf-choose-girl
+                        |Send
+                .row.text-center
+                  .columns
+                    h4 Galina
+        .clearfix

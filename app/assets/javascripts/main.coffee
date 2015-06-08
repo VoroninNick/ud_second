@@ -413,17 +413,20 @@ $(document).ready ->
 #===========================================================
 # tripadvisor finding girl
 #===========================================================
-  $('.t-result-finding-wrap .trf-choose-girl').click ->
-    $wrap = $(@).closest('.t-result-finding-wrap')
-    $girls = $wrap.find('.trf-one-girl-wrap')
-    $currentGirlWrap = $(@).closest('.trf-one-girl-wrap')
+  $('.ud-ladies-that-confirmed .trf-choose-girl').click ->
 
-    $nextStep = $wrap.find('.t-button-step-wrap')
+    current_girl = $(@).closest('.trf-one-girl')
+    $('.trf-one-girl').removeClass('ud_selected_girl')
+    current_girl.addClass('ud_selected_girl')
+#    $girls = $wrap.find('.trf-one-girl-wrap')
+#    $currentGirlWrap = $(@).closest('.trf-one-girl-wrap')
 
-    $girls.hide()
-    $currentGirlWrap.show()
-    $currentGirlWrap.addClass('selected-girl')
-    $nextStep.show()
+#    $nextStep = $wrap.find('.t-button-step-wrap')
+#
+#    $girls.hide()
+#    $currentGirlWrap.show()
+#    $currentGirlWrap.addClass('selected-girl')
+#    $nextStep.show()
 
 #===========================================================
 # tripadvisor
@@ -472,6 +475,18 @@ $(document).ready ->
       $tabHeader.eq(2).addClass(' active')
       $tabs.eq(2).show()
 
+#      second version after changes
+  $('.trf-one-girl .trf-choose-girl').click ->
+    $wrap = $(@).closest('.ud-tabs-wrap')
+    $tabHeader = $wrap.find('.ud-tab-link')
+    $tabs = $wrap.find('.ud-tab')
+
+    $('.tripadvisor-page-wrap .ud-tab-link').removeClass('active')
+    $tabs.hide()
+
+    $tabHeader.eq(1).addClass(' active')
+    $tabs.eq(1).show()
+
 #===========================================================
 # datepicker
 #===========================================================
@@ -487,7 +502,7 @@ $(document).ready ->
 #  $('.ud-tab').hide()
 #  $('.ud-tab').first().show()
 #  $('.ud-tab-link').first().addClass('active')
-
+#
 #  $('.ud-tab-link').click ->
 #    current_position = $(@).index()
 #    $wrap = $(@).closest('.ud-tabs-wrap')
