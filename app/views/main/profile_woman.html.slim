@@ -513,11 +513,18 @@
                     |(0/1000)
                 textarea rows="3" placeholder="Here is a screenshot prove"
           .row
+            .columns.large-9.medium-9.right
+              .ud-attach-for-report-user
+
+          .row
             .columns.large-8.medium-8.right
               a.close-reveal-modal.modal-link.ud-button.special-text-shadow.right Send request
 
               a.edit-icon-svg.browse-file.right
-                = embedded_svg "UD-icon-add files.svg"
+                label for="ud-report-user-browse"
+                  = embedded_svg "UD-icon-add files.svg"
+
+                input#ud-report-user-browse type="file"
 
               .input.right
                 .squared

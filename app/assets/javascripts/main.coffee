@@ -125,6 +125,27 @@ $(document).mousemove (event) ->
 
 
 $(document).ready ->
+#==================================
+#  upload file when reporting user
+#==================================
+  $('input#ud-report-user-browse').change ->
+    wrap = $(@).closest('.ud-report-user-wrap')
+    attach_wrap = wrap.find('.ud-attach-for-report-user')
+
+    filename = wrap.find('input[type=file]').val().replace(/C:\\fakepath\\/i, '')
+
+    attached_file = filename+'<div class="ud-ru-remove-file"></div>'
+    attach_wrap.append(attached_file)
+#  clear value file upload
+  $('.ud-attach-for-report-user').on 'click', '.ud-ru-remove-file', ->
+    wrap = $(@).closest('.ud-report-user-wrap')
+
+    $(@).closest('.ud-attach-for-report-user').text('')
+    $(@).closest('.ud-attach-for-report-user').children().remove()
+
+    wrap.find('input[type=file]').attr value: ''
+
+
 #================================
 #  adding video to profile
 #================================
