@@ -476,7 +476,7 @@ $(document).ready ->
       $tabs.eq(2).show()
 
 #      second version after changes
-  $('.trf-one-girl .trf-choose-girl').click ->
+  $('.trf-one-girl .trf-choose-girl, .trf-one-girl .trf-selected-girl').click ->
     $wrap = $(@).closest('.ud-tabs-wrap')
     $tabHeader = $wrap.find('.ud-tab-link')
     $tabs = $wrap.find('.ud-tab')
