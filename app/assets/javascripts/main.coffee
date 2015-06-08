@@ -143,7 +143,7 @@ $(document).ready ->
     $(@).closest('.ud-attach-for-report-user').text('')
     $(@).closest('.ud-attach-for-report-user').children().remove()
 
-    wrap.find('input[type=file]').attr value: ''
+    wrap.find('input[type=file]').attr value: ''   #clear input
 
 
 #================================
