@@ -18,7 +18,7 @@
                     option value="Kyiv" Kyiv
                 .input
                   label Apartment level
-                  select
+                  select.ud-select-apartment
                     option value="VIP" VIP
                     option value="Econom" Econom
                     option value="Standart" Standart
@@ -52,18 +52,49 @@
                   p Check out time is before 11:00
             .columns.large-8.medium-8
               .row.t-book-apartment-gallery-wrap
-                .columns.large-9.medium-9
-                  .tbag-image-preview-wrap
-                    a.fancy_gallery href=asset_path("luxury-apartment-bedroom-apartments-luxurious-interior-apartments-photo-apartment-interior-design.jpg")
-                      .image.tbag-image style="background: url('#{asset_path("luxury-apartment-bedroom-apartments-luxurious-interior-apartments-photo-apartment-interior-design.jpg")}')no-repeat center center;"
-                .columns.large-3.medium-3.tbag-thumbs-wrap
-                  .tbag-thumbs-inner
-                    a.active data-href=asset_path("luxury-apartment-bedroom-apartments-luxurious-interior-apartments-photo-apartment-interior-design.jpg")
-                      .image style="background: url('#{asset_path("luxury-apartment-bedroom-apartments-luxurious-interior-apartments-photo-apartment-interior-design.jpg")}')no-repeat center center;"
-                    a data-href=asset_path("Luxury-penthouse-design-5.jpg")
-                      .image style="background: url('#{asset_path("Luxury-penthouse-design-5.jpg")}')no-repeat center center;"
-                    a data-href=asset_path("SAOTA-Victoria50_6.jpg")
-                      .image style="background: url('#{asset_path("SAOTA-Victoria50_6.jpg")}')no-repeat center center;"
+                .tba-one-item.tba-vip
+                  .columns.large-9.medium-9
+                    .tbag-image-preview-wrap
+                      a.fancy_gallery href=asset_path("luxury-apartment-bedroom-apartments-luxurious-interior-apartments-photo-apartment-interior-design.jpg")
+                        .image.tbag-image style="background: url('#{asset_path("luxury-apartment-bedroom-apartments-luxurious-interior-apartments-photo-apartment-interior-design.jpg")}')no-repeat center center;"
+                  .columns.large-3.medium-3.tbag-thumbs-wrap
+                    .tbag-thumbs-inner
+                      a.active data-href=asset_path("luxury-apartment-bedroom-apartments-luxurious-interior-apartments-photo-apartment-interior-design.jpg")
+                        .image style="background: url('#{asset_path("luxury-apartment-bedroom-apartments-luxurious-interior-apartments-photo-apartment-interior-design.jpg")}')no-repeat center center;"
+                      a data-href=asset_path("Luxury-penthouse-design-5.jpg")
+                        .image style="background: url('#{asset_path("Luxury-penthouse-design-5.jpg")}')no-repeat center center;"
+                      a data-href=asset_path("SAOTA-Victoria50_6.jpg")
+                        .image style="background: url('#{asset_path("SAOTA-Victoria50_6.jpg")}')no-repeat center center;"
+
+                .tba-one-item.tba-economy
+                  .columns.large-9.medium-9
+                    .tbag-image-preview-wrap
+                      a.fancy_gallery href=asset_path("trip-econom-ap-1.jpg")
+                        .image.tbag-image style="background: url('#{asset_path("trip-econom-ap-1.jpg")}')no-repeat center center;"
+                  .columns.large-3.medium-3.tbag-thumbs-wrap
+                    .tbag-thumbs-inner
+                      a.active data-href=asset_path("trip-econom-ap-1.jpg")
+                        .image style="background: url('#{asset_path("trip-econom-ap-1.jpg")}')no-repeat center center;"
+                      a data-href=asset_path("trip-econom-ap-2.jpg")
+                        .image style="background: url('#{asset_path("trip-econom-ap-2.jpg")}')no-repeat center center;"
+                      a data-href=asset_path("trip-econom-ap-3.jpg")
+                        .image style="background: url('#{asset_path("trip-econom-ap-3.jpg")}')no-repeat center center;"
+
+                .tba-one-item.tba-standard
+                  .columns.large-9.medium-9
+                    .tbag-image-preview-wrap
+                      a.fancy_gallery href=asset_path("standard_1.jpg")
+                        .image.tbag-image style="background: url('#{asset_path("standard_1.jpg")}')no-repeat center center;"
+                  .columns.large-3.medium-3.tbag-thumbs-wrap
+                    .tbag-thumbs-inner
+                      a.active data-href=asset_path("standard_1.jpg")
+                        .image style="background: url('#{asset_path("standard_1.jpg")}')no-repeat center center;"
+                      a data-href=asset_path("standard_2.jpg")
+                        .image style="background: url('#{asset_path("standard_2.jpg")}')no-repeat center center;"
+                      a data-href=asset_path("standard_3.jpg.jpg")
+                        .image style="background: url('#{asset_path("standard_3.jpg")}')no-repeat center center;"
+
+
               .row
                 .columns
                   b VIP appartment:

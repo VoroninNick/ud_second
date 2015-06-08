@@ -434,15 +434,18 @@ $(document).ready ->
   $('.tbag-thumbs-wrap .image').click (e)->
     e.preventDefault()
 
-    $wrapper = $(@).closest('.t-book-apartment-gallery-wrap')
+    $wrapper = $(@).closest('.tba-one-item')
     $previewWrap = $wrapper.find('.tbag-image')
     $hrefData = $(@).parent().attr('data-href')
+
+    all_current_thumbs = $wrapper.find('a')
 
     $thisStyle = $(this).attr("style")
     $previewWrap.attr style: $thisStyle
     $previewWrap.parent().attr href: $hrefData
 
-    $('.tbag-thumbs-wrap a').removeClass('active')
+#    $('.tbag-thumbs-wrap a').removeClass('active')
+    all_current_thumbs.removeClass('active')
     $(@).parent().addClass(' active')
 
   $('.t-prev-step-wrap a').click ->
@@ -486,6 +489,21 @@ $(document).ready ->
 
     $tabHeader.eq(1).addClass(' active')
     $tabs.eq(1).show()
+
+#    slect apartment
+  $('select.ud-select-apartment').change ->
+
+    wrap = $(@).closest('.t-book-tab-wrap')
+    appartmen_gallery_list = wrap.find('.tba-one-item')
+    appartmen_gallery_list.hide()
+    if $(@).val() == 'VIP'
+      wrap.find('.tba-vip').show()
+
+    else if $(@).val() == 'Econom'
+      wrap.find('.tba-economy').show()
+
+    else if $(@).val() == 'Standart'
+      wrap.find('.tba-standard').show()
 
 #===========================================================
 # datepicker
