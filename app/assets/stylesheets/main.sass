@@ -1526,6 +1526,33 @@ li.credits
     img
       width: 33px
 
+.ud-system-notification-wrap
+  background-color: #FF6F70
+  margin-bottom: 10px
+  padding: 10px
+  .ud-sn-ico
+    position: relative
+    padding-bottom: 80%
+  svg
+    width: 30px
+    height: 30px
+    +my_center_align()
+      position: absolute
+    path, rect
+      fill: #fff
+  p
+    font:
+      size: rem-calc(14)
+      weight: 300
+    color: #fff
+    line-height: rem-calc(18)
+    margin: 0
+    a
+      color: #404049
+      padding-left: 10px
+      font-weight: 400
+
+
 .hide-note
   @media (min-width : 0) and (max-width : 818px)
     display: none
