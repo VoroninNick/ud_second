@@ -36,7 +36,12 @@ body.ud-body
 
   main.main-block-wrap.main-block
     =yield
-
+    /.row.medium-main
+    /  .columns.large-12.medium-10.medium-centered
+    /    .row
+    /      .columns.large-1.right
+    /        a.scrollToTop
+    /          = image_tag "UD-icon-arrow up.svg"
   .ordered-list-wrap.white-grey.medium-sidebar.slim-sidebar
     .ordered-list
       .title-head.grey.notification-wrap
