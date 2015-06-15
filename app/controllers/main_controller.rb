@@ -1,5 +1,6 @@
 class MainController < ApplicationController
   layout "landing", only: [:main, :main_registration, :main_recovery_password]
+
   def main
 
   end
@@ -61,7 +62,7 @@ class MainController < ApplicationController
 
   end
 
-  def mail_tmpleates
+  def mail_templates
 
   end
 

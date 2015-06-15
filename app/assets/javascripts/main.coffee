@@ -1281,6 +1281,7 @@ $(document).ready ->
   $('ul.ud-navigation li').click (e)->
     e.preventDefault()
     current_position = $(this).index()
+
     $wrapper = $(this).closest('.email-templates-wrap')
 
     tabWrapper = $(@).closest('.ud-navigation')
@@ -1290,8 +1291,7 @@ $(document).ready ->
     $tabHeader.removeClass('active')
     $(this).addClass('active')
 
-    bodyWrapper = $wrapper.find('.ud-email-templates')
-    $body_tabs = bodyWrapper.find('li')
+    $body_tabs = $wrapper.find('li.ud-et')
 
     $body_tabs.addClass('hide')
     $body_tabs.eq(current_position).removeClass('hide')
