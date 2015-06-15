@@ -1,0 +1,31 @@
+.row.medium-main
+  .columns.medium-10.medium-centered.large-12
+    .email-templates-wrap
+      .row
+        .columns.large-3.medium-4
+          ul.ud-navigation
+            li.active
+              |E-mail confirmation
+            li
+              |Welcome to UD
+            li
+              |Password reset letter
+            li
+              |Congratulations You have a new password
+            li
+              |You have a new message from
+            li
+              |Your photo has been approved
+            li
+              |Your photo has not been approved
+            li
+              |Daily Report on your account
+            li
+              |View new beautiful diamonds
+        .columns.large-9.medium-8
+          ul.ud-email-templates
+            li
+              = render partial: "partials/email_templates/confirmation_email"
+            li
+
+            li

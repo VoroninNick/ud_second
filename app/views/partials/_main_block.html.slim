@@ -80,7 +80,10 @@
 .title-head.grey.notification-wrap
   .columns
     .wrap
-      h4 MOST POPULAR
+      h4
+        |MOST POPULAR&nbsp;&nbsp;
+        = link_to "email templeates", mails_path
+
       .items-menu.notification-link
         =image_tag "UD-icon-sub menu.svg"
         .notification-container

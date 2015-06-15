@@ -1275,6 +1275,29 @@ $(document).ready ->
   $notification_containers.observeMouseOut()
 
 
+#===========================================================
+# email templates
+#===========================================================
+  $('ul.ud-navigation li').click (e)->
+    e.preventDefault()
+    current_position = $(this).index()
+    $wrapper = $(this).closest('.email-templates-wrap')
+
+    tabWrapper = $(@).closest('.ud-navigation')
+    $tabHeader = tabWrapper.find('li')
+
+
+    $tabHeader.removeClass('active')
+    $(this).addClass('active')
+
+    bodyWrapper = $wrapper.find('.ud-email-templates')
+    $body_tabs = bodyWrapper.find('li')
+
+    $body_tabs.addClass('hide')
+    $body_tabs.eq(current_position).removeClass('hide')
+
+
+
 $(window).resize ->
   if $(window).width() >= 1445
     if $(".button-menu a.mobile").hasClass('open')

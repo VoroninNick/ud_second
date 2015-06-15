@@ -25,5 +25,7 @@ module UdServiceSecond
 
     #config.action_controller.relative_url_root
     config.static_asset_paths = %w(:rails_root/app/assets2)
+
+    # config.assets.precompile += ["email.css"]
   end
 end

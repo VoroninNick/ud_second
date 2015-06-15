@@ -24,6 +24,8 @@ Rails.application.routes.draw do
   get 'tripadvisor' => 'main#tripadvisor'
   get "settings", to: "main#settings"
 
+  get 'mails' => 'main#mail_templates'
+
   get 'test' => 'main#test'
 
   # Example of regular route:

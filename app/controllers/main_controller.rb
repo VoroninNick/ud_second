@@ -61,6 +61,10 @@ class MainController < ApplicationController
 
   end
 
+  def mail_tmpleates
+
+  end
+
   def test
 
   end
