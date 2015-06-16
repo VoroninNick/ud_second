@@ -1,3 +1,12 @@
+.ud-mt-clearfix
+  &:after
+    visibility: hidden
+    display: block
+    font-size: 0
+    content: " "
+    clear: both
+    height: 0
+
 .email-templates-wrap
   ul
     &.ud-navigation
@@ -73,7 +82,25 @@
               height: 50px
               background-color: #D03F4A
               margin: 25px 0 30px 0
-
+              overflow: hidden
+              a
+                display: block
+                position: relative
+                &:before
+                  display: inline-block
+                  content: ''
+                  color: #fff
+                  font:
+                    family: "Fira Sans", sans-serif
+                    size: rem-calc(21)
+                    weight: 400
+                  line-height: rem-calc(50)
+                  display: inline-block
+                  text-transform: uppercase
+                  width: 100%
+                  height: 100%
+                  text-align: center
+                  text-shadow: 1px 1px 1px #9b3036, 2px 2px 1px #9e3138, 3px 3px 1px #9e3138, 4px 4px 1px #a13239, 5px 5px 1px #a8343c, 6px 6px 1px #a9343d, 7px 7px 1px #ae353e, 8px 8px 1px #b13740, 9px 9px 1px #b63842, 10px 10px 1px #bb3944, 11px 11px 1px #bc3a45, 12px 12px 1px #c03b46, 13px 13px 1px #c03b46, 14px 14px 1px #bf3b46, 15px 15px 1px #c03b47, 16px 16px 1px #c23c47, 17px 17px 1px #c23c47, 18px 18px 1px #c33c48, 19px 19px 1px #c33c48, 20px 20px 1px #c33c48, 21px 21px 1px #c33c48, 22px 22px 1px #c33c48
 
             .ud-mt-row
               height: 110px
@@ -82,7 +109,9 @@
               float: left
 
             .ud-mt-image
-              width: 147px
+              width: 151px
+              img
+                width: 100%
             .ud-mt-title
               width: 350px
               margin-left: 18px
@@ -134,24 +163,158 @@
                   margin-bottom: 23px
               .ud-mt-email-button
                 width: 350px
-                overflow: hidden
-                a
-                  display: block
+                a:before
+                  display: inline-block
+                  content: 'CONFIRM YOUR ACCOUNT'
+
+            &.ud-mt-welcome
+              .ud-mt-email-button
+                width: 285px
+                margin: 0 auto
+                a:before
+                  display: inline-block
+                  content: 'Find your diamond'
+
+              .ud-mt-welcome-head
+                height: 450px
+                padding-top: 20px
+                .ud-mt-welcome-login
+                  padding-top: 30px
+                  .ud-mt-row
+                    padding-top: 10px
+                    .ud-mt-image-sig-in
+                      margin-top: 14px
+              .ud-mt-white, .ud-mt-grey
+                position: relative
+              .ud-mt-welcome-step
+                position: absolute
+                bottom: 20px
+                left: 65px
+                font:
+                  family: "dearjoe_1_msregular", sans-serif
+                  size: rem-calc(24)
+                color: #287FB8
+                &.ud-mt-step-right
+                  right: 65px
+                  left: inherit
+
+            .ud-mt-welcome-default-block
+              height: 250px
+              padding-top: 30px
+
+            .ud-mt-profiles-wrap
+              .ud-mt-white
+                padding-top: 40px
+                padding-bottom: 45px
+              h1
+                color: #287FB8
+                font:
+                  family: "dearjoe_1_msregular", sans-serif
+                  size: rem-calc(36)
+                line-height: rem-calc(36)
+              .ud-mt-profiles
+                padding-bottom: 22px
+                .ud-mt-one-prof
+                  width: 166px
+                  height: 240px
+                  float: left
+                  margin: 0 2px
                   position: relative
-                  &:before
-                    display: inline-block
-                    content: 'CONFIRM YOUR ACCOUNT'
-                    color: #fff
-                    font:
-                      family: "Fira Sans", sans-serif
-                      size: rem-calc(21)
-                      weight: 400
-                    line-height: rem-calc(50)
-                    display: inline-block
-                    text-transform: uppercase
+                  .image
+                    max-width: 100%
                     width: 100%
                     height: 100%
-                    text-align: center
+                    overflow: hidden
+                    -webkit-background-size: cover !important
+                    -moz-background-size: cover !important
+                    -o-background-size: cover !important
+                    background-size: cover !important
+                    margin: 0 auto
+                  .ud-mt-prof-information
+                    position: absolute
+                    height: 55px
+                    width: 100%
+                    bottom: 0
+                    &:before
+                      display: block
+                      content: ''
+                      background-color: #2E2E36
+                      position: absolute
+                      left: 0
+                      top: 0
+                      right: 0
+                      bottom: 0
+                      opacity: .8
+                    .ud-mt-triangle-header
+                      position: absolute
+                      top: -8px
+                      height: 8px
+                      width: 100%
+                      .triangle-wrap
+                        position: relative
+                        overflow: hidden
+                        height: 8px
+                        width: 100%
+                        opacity: 0.8
+                        .triangle
+                          border: 8px solid #2E2E36
+                          border-bottom: none
+                          border-color: transparent #2E2E36 transparent
+                          position: relative
+                          left: 30px
+                          -webkit-transform: translateX(-50%)
+                          -moz-transform: translateX(-50%)
+                          -ms-transform: translateX(-50%)
+                          -o-transform: translateX(-50%)
+                          transform: translateX(-50%)
+                          position: absolute
+                          top: 0
+                          z-index: 11
+                          &:before, &:after
+                            right: 8px
+                            width: 1000px
+                          &:before
+                            content: ""
+                            position: absolute
+                            z-index: 11
+                            height: 8px
+                            top: -8px
+                            background: #2E2E36
+                          &:after
+                            content: ""
+                            position: absolute
+                            z-index: 11
+                            height: 8px
+                            top: -8px
+                            left: 8px
+                            background: #2E2E36
+
+                    .ud-mt-prof-about
+                      position: relative
+                      padding: 0 18px
+                      b
+                        color: #fff
+                        font:
+                          family: "Fira Sans", sans-serif
+                          size: rem-calc(18)
+                          weight: 400
+                        line-height: rem-calc(19)
+                      p
+                        color: #96D03F
+                        font:
+                          family: "Fira Sans", sans-serif
+                          size: rem-calc(14)
+                          weight: 200
+                        line-height: rem-calc(16.8)
+                        span
+                          padding: 0 4px
+
+
+
+
+
+
+
 
 
           .ud-mt-footer
