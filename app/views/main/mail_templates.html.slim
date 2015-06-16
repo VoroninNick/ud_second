@@ -8,12 +8,12 @@
               |E-mail confirmation (done)
             li
               |Welcome to UD (done)
+            li
+              |Password reset letter (done)
             li.active
-              |Password reset letter (wip)
+              |Congratulations You have a new password (done)
             li
-              |Congratulations You have a new password
-            li
-              |You have a new message from
+              |You have a new message from (wip)
             li
               |Your photo has been approved
             li
@@ -28,4 +28,8 @@
               = render partial: "partials/email_templates/confirmation_email"
             li.ud-et.hide
               = render partial: "partials/email_templates/welcome_to_ud"
+            li.ud-et.hide
+              = render partial: "partials/email_templates/password_reset_letter"
             li.ud-et
+              = render partial: "partials/email_templates/password_confirmation"
+            li.ud-et.hide
