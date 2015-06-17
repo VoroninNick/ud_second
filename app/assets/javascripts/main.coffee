@@ -676,13 +676,18 @@ $(document).ready ->
 #===========================================================
   if typeof $.fn.slider == 'function'
     $ ->
-      $('#ud-range-age-slide').slider
+      range_age = $("#ud-range-age-slide")
+      min_val = +range_age.attr('data-min-val')
+      max_val = +range_age.attr('data-max-val')
+
+      range_age.slider
+
         range: true
-        min: 18
-        max: 65
+        min: min_val
+        max: max_val
         values: [
-          18
-          65
+          min_val
+          max_val
         ]
         slide: (event, ui) ->
           # field min value
@@ -697,13 +702,18 @@ $(document).ready ->
       return
 
     $ ->
-      $('#ud-range-height-slide').slider
+      range_age = $("#ud-range-height-slide")
+      min_val = +range_age.attr('data-min-val')
+      max_val = +range_age.attr('data-max-val')
+
+      range_age.slider
+
         range: true
-        min: 135
-        max: 200
+        min: min_val
+        max: max_val
         values: [
-          135
-          200
+          min_val
+          max_val
         ]
         slide: (event, ui) ->
           # field min value
@@ -718,13 +728,18 @@ $(document).ready ->
       return
 
     $ ->
-      $('#ud-range-weight-slide').slider
+      range_age = $("#ud-range-weight-slide")
+      min_val = +range_age.attr('data-min-val')
+      max_val = +range_age.attr('data-max-val')
+
+      range_age.slider
+
         range: true
-        min: 40
-        max: 150
+        min: min_val
+        max: max_val
         values: [
-          40
-          150
+          min_val
+          max_val
         ]
         slide: (event, ui) ->
           # field min value
