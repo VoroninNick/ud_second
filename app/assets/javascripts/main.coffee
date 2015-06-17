@@ -534,6 +534,7 @@ $(document).ready ->
     buttonImage: 'assets/UAD-calendar.png'
     buttonImageOnly: true
     buttonText: 'Select date'
+#    dateFormat: 'yy-dd-mm'
   $('.datepicker.hasDatepicker').on 'click', ()->
     $(this).next().trigger('click')
 

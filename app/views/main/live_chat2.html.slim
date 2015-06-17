@@ -9,4 +9,12 @@
             = render partial: "partials/livechat/text_chat"
           .lvc-video-wrap.lvc-coll
             = render partial: "partials/livechat/video_chat"
+          .lvc-empty-live-chat
+            .lvc-empty-live-chat-inner
+              .lvc-empty-chat-info
+                = embedded_svg "UAD-icon-no chat.svg"
+                p
+                  |Livechat is no avaliable wright now!
+                    You need to pick a lady to chat with first
+                = link_to "Find a lady", search_path, class: "more"
         .clearfix

@@ -85,8 +85,44 @@
                 fill: #D03F4A
     @media only screen and (max-width: 768px)
       display: none
+
   .lvc-live-chat-wrap
     width: calc(100% - 135px)
+    position: relative
+    .lvc-empty-live-chat
+      position: absolute
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      background-color: #fff
+      z-index: 11
+      .lvc-empty-live-chat-inner
+        width: 100%
+        height: 100%
+        position: relative
+        .lvc-empty-chat-info
+          width: 35%
+          +my_center_align()
+            position: absolute
+          svg
+            display: block
+            margin: 0 auto
+            width: 25%
+            height: 100%
+            margin-bottom: 15px
+          p
+            color: #BEC3C7
+            text:
+              transform: uppercase
+              align: center
+
+            font:
+              size: 0.875rem
+              weight: 400
+              family: "Fira Sans", sans-serif
+            line-height: 1.2rem
+
     .lvc-chat-wrap, .lvc-video-wrap
       float: left
       height: 100%
