@@ -1051,6 +1051,34 @@ p
       z-index: 1111
 
 .p-photos-wrap
+  h4.ud-profile-rules-ling
+    position: absolute
+    top: 0
+    right: 0
+    color: #D03F4A
+    cursor: pointer
+
+  .ud-profile-rules-wrap
+    width: 200px
+    .ud-profile-rules
+      padding: 20px 30px
+      b
+        margin-bottom: 1.25rem
+        display: block
+        font-weight: 500
+        color: #2E3E51
+        font-size: 0.875rem
+        line-height: 1.125rem
+      ul
+        li
+          font-weight: 300
+          font-size: 0.875rem
+          line-height: 1.125rem
+          color: #2E3E51
+          font-family: "Fira Sans", sans-serif
+          margin-bottom: 1rem
+
+
   .white-grey
     padding-top: 30px
     padding-bottom: 40px
@@ -1404,7 +1432,7 @@ form
       //word-break: break-all
       word-wrap: break-word
       width: 100%
-    .p-input-edit, .p-input-preview
+    .p-input-edit, .p-input-preview, .p-input-blocked
       position: relative
     .p-input-edit
       display: none
@@ -1421,6 +1449,27 @@ form
 
       &:hover .pi-edit-button
         opacity: 1
+
+    .p-input-blocked
+      display: block
+      cursor: pointer
+      height: 35px
+      position: relative
+      width: 100%
+      .p-input
+        width: 100%
+        +my_vertical_align()
+          position: absolute
+      p
+        color: #3598DB
+        font:
+          size: rem-calc(16)
+          weight: 400
+        line-height: 1.2rem
+        margin-bottom: 0
+        //word-break: break-all
+        word-wrap: break-word
+        width: 100%
 
 
 
