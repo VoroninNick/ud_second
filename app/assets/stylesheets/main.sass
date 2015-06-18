@@ -776,14 +776,20 @@ ul.primary-menu
   transition: top .5s
   bottom: 0
   z-index: 11
+  overflow: hidden
   .ordered-list
+    .orl-section-wrap
+      position: absolute
+      overflow: auto
+      height: 100%
+      width: 100%
+
     .title-head
       .columns
         padding: 0
   &.fixed-to-footer
-    bottom: 82px
-    @media (min-width : 40.063em) and (max-width : 1170px)
-      bottom: 160px
+    //overflow: hidden
+    //bottom: 120px
   @media (min-width : 40.063em) and (max-width : 64em)
     width: 85px
   @media (min-width : 0em) and (max-width : 40em)

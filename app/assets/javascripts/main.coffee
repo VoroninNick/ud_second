@@ -123,8 +123,46 @@ $(document).mousemove (event) ->
         $('body').addClass('hide-header')
         $('main.main-block-wrap').addClass('retina-livechat-page-wrap')
 
+#============================================================
+# sticky friends online sidebar
+#============================================================
+friends_online = () ->
+  window_height = $(window).height()
+  console.log('window height: ', window_height)
+  footer_height = $("footer").height()
+  console.log('footer height: ', footer_height)
+
+  offset_top = $('footer').offset().top
+  console.log('offset top: ', offset_top)
+
+#  footer_to_top = $('footer').outerHeight()
+#  console.log('footer top: ', footer_to_top)
+#  $('.ordered-list-wrap').css 'bottom', footer_height
+
+  st = $(this).scrollTop()
+  wh = $(window).height()
+  ot = $('.l-footer-wrap').offset().top
+  fh = $('.l-footer-wrap').height()
+
+  console.log('scroll top: ', st)
+
+
+
+  action = st + wh
+
+  console.log('scroll top + window height: ', action)
+
+  ol_bottom = action - ot
+  console.log('must be to bottom: ', ol_bottom)
+  diff = ot <= action
+  console.log('diff: ', diff)
+  if diff
+    $('.ordered-list-wrap').css 'bottom', ol_bottom
+  else
+    $('.ordered-list-wrap').css 'bottom', 0
 
 $(document).ready ->
+  friends_online()
 #==================================
 #  upload file when reporting user
 #==================================
@@ -1338,10 +1376,13 @@ $(document).ready ->
 
 
 
+#  ====================================================================
 $(window).resize ->
   if $(window).width() >= 1445
     if $(".button-menu a.mobile").hasClass('open')
       $(".button-menu a.mobile").removeClass('open')
+
+  friends_online()
   st = $(this).scrollTop()
   wh = $(window).height()
   ot = $('.l-footer-wrap').offset().top
@@ -1349,25 +1390,29 @@ $(window).resize ->
 
   action = ot - wh
   if st >= action
-#    $('.ordered-list-wrap').addClass('fixed-to-footer')
+    $('.ordered-list-wrap').addClass('fixed-to-footer')
     $('.ordered-list-wrap').css 'bottom', $('footer').height()
   else
-#    $('.ordered-list-wrap').removeClass('fixed-to-footer')
+    $('.ordered-list-wrap').removeClass('fixed-to-footer')
     $('.ordered-list-wrap').css 'bottom', '0'
 
 lastScrollTop = 0
 $(window).scroll (event) ->
+  friends_online()
+
+
   st = $(this).scrollTop()
   wh = $(window).height()
   ot = $('.l-footer-wrap').offset().top
   dpr     = window.devicePixelRatio
   if(window.location.href.indexOf("live_chat") > -1) && dpr == 2
   else
-    action = ot - wh
-    if st >= action
-      $('.ordered-list-wrap').addClass('fixed-to-footer')
-    else
-      $('.ordered-list-wrap').removeClass('fixed-to-footer')
+#    action = st + wh
+#    diff = ot <= action
+#    if diff
+#      $('.ordered-list-wrap').addClass('fixed-to-footer')
+#    else
+#      $('.ordered-list-wrap').removeClass('fixed-to-footer')
 
     if st > lastScrollTop
       # downscroll code
