@@ -579,6 +579,7 @@ $(document).ready ->
 #=========================================================
   $('.p-save-iam').click (e)->
     e.preventDefault()
+
     $wrap = $(@).closest('form.ud-form-about-me')
     if $wrap.hasClass('p-editing-form')
       $wrap.removeClass('p-editing-form')
@@ -589,6 +590,19 @@ $(document).ready ->
     $(@).addClass('hide')
     $editButton = $wrap.find('.p-edit-iam')
     $editButton.removeClass('hide')
+
+
+    $form = $(this).closest('form')
+    $form.find('.pii-wrap').each ()->
+      $wrap = $(this)
+      $dst = $wrap.find(".p-input-preview .p-input p")
+      $src = $wrap.find(".p-input-edit").find("input, select, textarea")
+      str = ''
+      $src.each (index)->
+        if index
+          str += '- '
+        str += $(this).val()
+      $dst.text(str)
 
 #=========================================================
 #  image gallery
@@ -633,10 +647,20 @@ $(document).ready ->
 
     else if current_input.find('select').length
 #      alert 'select'
-      window.$select = $wrap.find('select').SumoSelect()
 
-      str_from_select = $select.sumo.getSelStr()
-      $previewFieldInput.text(str_from_select)
+#      window.$select = $wrap.find('select').SumoSelect()
+      $src = $wrap.find('select')
+
+      str = ''
+      $src.each (index)->
+        if index
+          str += '/'
+        str += $(this).val()
+      $previewFieldInput.text(str)
+
+
+#      str_from_select = $select.sumo.getSelStr()
+#      $previewFieldInput.text(str_from_select)
 
 
     $previewField.show()

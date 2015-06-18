@@ -19,29 +19,33 @@
                 .columns.white-grey.advanced-form
                   form
                     .input.half
+                      - from = 0
+                      - to = 50
+                      - size = 50
                       label Age
-                      select.ud-multiple
-                        option value="19" 19
-                        option value="20" 20
-                        option value="21" 21
-                        option value="22" 22
-                      select.ud-multiple
-                        option value="29" 29
-                        option value="30" 30
-                        option value="31" 31
-                        option value="32" 32
+                      select
+                        - size.times do
+                          - from = from+1
+                          option value="#{from}" =from
+
+                      select
+                        - size.times do
+                          - to = to+1
+                          option value="#{to}" =to
                     .input.half
+                      - from = 0
+                      - to = 100
+                      - size = 100
                       label Height
-                      select.ud-multiple
-                        option value="180" 180
-                        option value="182" 182
-                        option value="183" 183
-                        option value="184" 184
-                      select.ud-multiple
-                        option value="190" 190
-                        option value="191" 191
-                        option value="192" 192
-                        option value="193" 193
+                      select
+                        - size.times do
+                          - from = from+1
+                          option value="#{from}" =from
+
+                      select
+                        - size.times do
+                          - to = to+1
+                          option value="#{to}" =to
                     .input.half
                       label Weight
                       select.ud-multiple

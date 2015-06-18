@@ -1,7 +1,7 @@
 .p-input-wrap
   .p-label
     label for="p-name" Name:
-  .p-input-inner
+  .p-input-inner.pii-wrap
     .p-input-edit
       .p-input
         input#p-name type="text" placeholder="Gregory" value="Gregory"
@@ -14,10 +14,10 @@
 .p-input-wrap
   .p-label
     label for="p-surname" Surname:
-  .p-input-inner
+  .p-input-inner.pii-wrap
     .p-input-edit
       .p-input
-        input#p-surname type="text" placeholder="Michel" value="Michel"
+        input#p-surname name="p-name" type="text" placeholder="Michel" value="Michel"
       .pi-apply-button
     .p-input-preview
       .p-input
@@ -28,9 +28,10 @@
 .p-input-wrap
   .p-label
     label for="p-birth" Birth day:
-  .p-input-inner
+  .p-input-inner.pii-wrap
     .p-input-edit
       .p-input
+        /input.datepicker type="text"
         select.pf-years
           option value="1983" 1983
           option value="1984" 1984
@@ -68,7 +69,7 @@
 .p-input-wrap
   .p-label
     label Age:
-  .p-input-inner
+  .p-input-inner.pii-wrap
     .p-input-blocked
       .p-input
         p 39
@@ -78,7 +79,7 @@
 .p-input-wrap
   .p-label
     label Height:
-  .p-input-inner
+  .p-input-inner.pii-wrap
     .p-input-edit
       .p-input
         input type="number" value="180"
@@ -92,7 +93,7 @@
 .p-input-wrap
   .p-label
     label Weight:
-  .p-input-inner
+  .p-input-inner.pii-wrap
     .p-input-edit
       .p-input
         input type="number" value="80"
@@ -106,7 +107,7 @@
 .p-input-wrap
   .p-label
     label Hair color:
-  .p-input-inner
+  .p-input-inner.pii-wrap
     .p-input-edit
       .p-input
         select
@@ -123,7 +124,7 @@
 .p-input-wrap
   .p-label
     label Eye color:
-  .p-input-inner
+  .p-input-inner.pii-wrap
     .p-input-edit
       .p-input
         select
@@ -140,13 +141,13 @@
 .p-input-wrap
   .p-label
     label Multi-select:
-  .p-input-inner
+  .p-input-inner.pii-wrap
     .p-input-edit
       .p-input
         select.ud-multiple multiple="multiple"
-          option value="1" 1
-          option value="2" 2
-          option value="3" 3
+          option value="1" диван
+          option value="2" ліжко
+          option value="3" лежак
           option value="4" 4
           option value="5" 5
           option value="6" 6
@@ -160,7 +161,7 @@
 .p-input-wrap
   .p-label
     label Datepicker:
-  .p-input-inner
+  .p-input-inner.pii-wrap
     .p-input-edit
       .p-input
         input.datepicker type="text"
