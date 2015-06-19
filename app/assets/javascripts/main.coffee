@@ -194,6 +194,7 @@ $(document).ready ->
     if !browse_video.hasClass('hide')
       browse_video.addClass('hide')
       view_video.removeClass('hide')
+
 #================================
 #  deleting video from profile
 #================================
