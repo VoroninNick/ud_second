@@ -1,4 +1,4 @@
-.orl-section-wrap
+.orl-section-wrap.online-list-scroll
   section.ordered-list
     li.ol-start-chat
       .one-item-wrap
@@ -105,43 +105,59 @@
             .title-small
               h4 Olha
     li.a-web-camera.in-ud-chat
-      a
-        .one-item
-          .row
-            .columns
-              .avatar
+
+      .one-item
+        .row
+          .columns
+            .avatar
+              a
                 .image style="background: url('#{asset_path("girl_4.jpg")}')no-repeat center center;"
-              .information.hide-for-medium-only
-                .title
-                  h4 Zlata
-                .info
-                  p
-                    |21
-                    span
-                      |&nbsp;|&nbsp;
-                    |Lviv
-          .row
-            .title-small
-              h4 Zlata
+              .flo-actions-wrap
+                .flo-actions-inner
+                  .flo-actions
+                    .flo-action
+                      a
+                        = embedded_svg "UD-icon-camshare.svg"
+                    .flo-action
+                      a
+                        = embedded_svg "UD-icon-chat buble.svg"
+            .information.hide-for-medium-only
+              .title
+                h4 Zlata
+              .info
+                p
+                  |21
+                  span
+                    |&nbsp;|&nbsp;
+                  |Lviv
+        .row
+          .title-small
+            h4 Zlata
     li.in-ud-chat
-      a
-        .one-item
-          .row
-            .columns
-              .avatar
+      .one-item
+        .row
+          .columns
+            .avatar
+              a
                 .image style="background: url('#{asset_path("girl_23.jpg")}')no-repeat center center;"
-              .information.hide-for-medium-only
-                .title
-                  h4 Kateryna
-                .info
-                  p
-                    |24
-                    span
-                      |&nbsp;|&nbsp;
-                    |Lviv
-          .row
-            .title-small
-              h4 Zlata
+              .flo-actions-wrap
+                .flo-actions-inner
+                  .flo-actions
+                    .flo-action
+                      a
+                        = embedded_svg "UD-icon-chat buble.svg"
+            .information.hide-for-medium-only
+              .title
+                h4 Kateryna
+              .info
+                p
+                  |24
+                  span
+                    |&nbsp;|&nbsp;
+                  |Lviv
+        .row
+          .title-small
+            h4 Zlata
     li.a-web-camera.in-ud-chat
       a
         .one-item

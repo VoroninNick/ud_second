@@ -390,7 +390,7 @@
                     if(!O.mob)O.optDiv.find('ul.options li').eq(i).toggleClass('selected',c);
                     O.setText();
                 },
-                
+
                 //toggles alloption on c as boolean.
                 toggSelAll: function (c, i) {
                     var O = this.vRange(i);
@@ -401,7 +401,7 @@
                     O.setText();
                     });
 
-                  
+
                 },
 
                 //toggles disabled on c as boolean.
@@ -464,7 +464,7 @@
 
                 //## Select an iten at a given index.
                 selectItem: function (i) { this.toggSel(true, i); },
-                
+
                 //## Select all items  of the select.
                 SelectAll: function (i) { this.toggSelAll(true, i ); },
 

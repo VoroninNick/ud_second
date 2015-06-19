@@ -962,32 +962,32 @@ section.ordered-list
             height: 14px
             top: 2px
             right: 0px
-      @media (min-width : 40.063em) and (max-width : 1445px)
-        .avatar
-          .image
-            &:before
-              display: block
-              content: ''
-              background-image: asset-url("UD-icon-camshare-green.svg")
-              background-size: 100%
-              background-repeat: no-repeat
-              position: absolute
-              width: 17px
-              height: 14px
-              top: 5px
-              right: 5px
+      //@media (min-width : 40.063em) and (max-width : 1445px)
+      //  .avatar
+      //    .image
+      //      &:before
+      //        display: block
+      //        content: ''
+      //        background-image: asset-url("UD-icon-camshare-green.svg")
+      //        background-size: 100%
+      //        background-repeat: no-repeat
+      //        position: absolute
+      //        width: 17px
+      //        height: 14px
+      //        top: 5px
+      //        right: 5px
     &.a-web-camera
       &.in-ud-chat
         .information
           .title
             &:after
               right: 30px
-        .avatar
-          .image
-            &:after
-              @media (min-width : 40.063em) and (max-width : 1445px)
-                top: 24px
-                right: 5px
+        //.avatar
+        //  .image
+        //    &:after
+        //      @media (min-width : 40.063em) and (max-width : 1445px)
+        //        top: 24px
+        //        right: 5px
     &.in-ud-chat
       background-color: #DBDDDD
       .information
@@ -1004,20 +1004,20 @@ section.ordered-list
             height: 17px
             top: 1px
             right: 0px
-      @media (min-width : 40.063em) and (max-width : 1445px)
-        .avatar
-          .image
-            &:after
-              display: block
-              content: ''
-              background-image: asset-url("UD-icon-chat-buble-notification.svg")
-              background-size: 100%
-              background-repeat: no-repeat
-              position: absolute
-              width: 17px
-              height: 17px
-              top: 5px
-              right: 5px
+      //@media (min-width : 40.063em) and (max-width : 1445px)
+      //  .avatar
+      //    .image
+      //      &:after
+      //        display: block
+      //        content: ''
+      //        background-image: asset-url("UD-icon-chat-buble-notification.svg")
+      //        background-size: 100%
+      //        background-repeat: no-repeat
+      //        position: absolute
+      //        width: 17px
+      //        height: 17px
+      //        top: 5px
+      //        right: 5px
     &.in-ud-video-chat
       background-color: #FF6F70
       .title-small
@@ -1048,7 +1048,7 @@ section.ordered-list
           background-repeat: no-repeat
           background-position: center
 
-    a, .one-item-wrap
+    .one-item-wrap, .one-item
       display: block
       height: 81px
       border-bottom: 1px solid #fff
@@ -1099,6 +1099,9 @@ section.ordered-list
         height: 4px
         background-color: #96D03F
         width: 100%
+      a
+        display: block
+        height: auto
       .image
         max-width: 100%
         width: 100%
@@ -1110,6 +1113,38 @@ section.ordered-list
         -o-background-size: cover !important
         background-size: cover !important
         margin: 0 auto
+      .flo-actions-wrap
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        .flo-actions-inner
+          position: relative
+          width: 100%
+          height: 100%
+          &:before
+            display: block
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            right: 0
+            bottom: 0
+            background-color: #2E2E36
+            opacity: .8
+        .flo-actions
+          +my_vertical_align()
+            position: absolute
+          .flo-action
+            height: 30px
+            a
+              svg
+                height: 20px
+                width: 100%
+                margin-top: 5px
+                path
+                  fill: #fff
     .information
       float: left
       width: 75%

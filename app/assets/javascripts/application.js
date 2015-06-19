@@ -12,7 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require foundation
+
+//= require foundation/foundation
+//= require foundation/foundation.reveal
+
 //= require bxslider
 //= require owl.carousel
 //= require main
