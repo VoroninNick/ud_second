@@ -776,8 +776,10 @@ ul.primary-menu
   transition: top .5s
   bottom: 0
   z-index: 11
-  overflow: hidden
   .ordered-list
+    overflow: hidden
+    height: 100%
+    position: relative
     .orl-section-wrap
       position: absolute
       overflow: auto
@@ -943,7 +945,6 @@ ul.primary-menu
 
 section.ordered-list
   margin-left: 0
-  //overflow: hidden
   li
     list-style: none
     border-bottom: 1px solid #BEC3C7
@@ -962,32 +963,12 @@ section.ordered-list
             height: 14px
             top: 2px
             right: 0px
-      //@media (min-width : 40.063em) and (max-width : 1445px)
-      //  .avatar
-      //    .image
-      //      &:before
-      //        display: block
-      //        content: ''
-      //        background-image: asset-url("UD-icon-camshare-green.svg")
-      //        background-size: 100%
-      //        background-repeat: no-repeat
-      //        position: absolute
-      //        width: 17px
-      //        height: 14px
-      //        top: 5px
-      //        right: 5px
     &.a-web-camera
       &.in-ud-chat
         .information
           .title
             &:after
               right: 30px
-        //.avatar
-        //  .image
-        //    &:after
-        //      @media (min-width : 40.063em) and (max-width : 1445px)
-        //        top: 24px
-        //        right: 5px
     &.in-ud-chat
       background-color: #DBDDDD
       .information
@@ -1004,20 +985,6 @@ section.ordered-list
             height: 17px
             top: 1px
             right: 0px
-      //@media (min-width : 40.063em) and (max-width : 1445px)
-      //  .avatar
-      //    .image
-      //      &:after
-      //        display: block
-      //        content: ''
-      //        background-image: asset-url("UD-icon-chat-buble-notification.svg")
-      //        background-size: 100%
-      //        background-repeat: no-repeat
-      //        position: absolute
-      //        width: 17px
-      //        height: 17px
-      //        top: 5px
-      //        right: 5px
     &.in-ud-video-chat
       background-color: #FF6F70
 
@@ -1185,125 +1152,169 @@ section.ordered-list
             weight: 300
           line-height: rem-calc(14.4)
           color: #BEC3C7
-  .ol-start-chat
-    .one-item-wrap
-      height: auto
-      position: relative
-    .ol-start-chat-wrap
-      padding-top: 15px
-      background: #EDF0F1
-      //padding-bottom: 10px
-      display: inline-block
-      @media (min-width : 40.063em) and (max-width : 1445px)
-        position: absolute
-        top: 0
-        left: -325px
-        width: 310px
-        height: 230px
-        -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
-        -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
-        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
-        &:before
-          display: block
-          position: absolute
-          content: ''
-          top: 30px
-          right: -11px
-          width: 0
-          height: 0
-          border-style: solid
-          border-width: 11px 0 11px 11px
-          border-color: transparent transparent transparent #EDF0F1
-      .avatar
-        &:before
-          display: none
+  &.ud-fo-has-chat-request
+    padding-top: 261px
+    @media (min-width : 40.063em) and (max-width : 1445px)
+      padding-top: 0
 
-      .avatar-column
-        p
-          font:
-            size: rem-calc(12)
-          @media (min-width : 40.063em) and (max-width : 1445px)
-            text-align: center
-    .ol-start-chart-footer
-      p
-        font:
-          size: rem-calc(12)
-          weight: 300
-          family: "Fira Sans", sans-serif
-        color: #2E3E51
-        line-height: rem-calc(14.4)
-        padding-top: 7px
-        padding-left: 12px
-        a
-          color: #D03F4A
-          height: auto
-          border: none
-          display: inline-block
-      @media (min-width : 40.063em) and (max-width : 1445px)
-        .ud-button
-          width: 60%
-          float: right
-        p
-          float: right
-          padding-right: 20px
-          a
-            float: left
-            padding-right: 10px
+.ol-start-chat-wrap
+  padding-top: 15px
+  background: #EDF0F1
+  display: inline-block
 
-    .ud-tool-tip
-      padding: 11px
-      background-color: #D7EAF8
-      border-radius: 5px
-      -webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.35)
-      -moz-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.35)
-      box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.35)
-      margin-bottom: 15px
-      position: relative
-      @media (min-width : 40.063em) and (max-width : 1445px)
-        margin-top: 0
+  height: 261px
+  position: absolute
+  border-bottom: 1px solid #BEC3C7
+  top: 38px
+  z-index: 1
+  @media (min-width : 40.063em) and (max-width : 1445px)
+    //position: absolute
+    //top: 0
+    left: -325px
+    width: 310px
+    height: 230px
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
+    &:before
+      display: block
+      position: absolute
+      content: ''
+      top: 30px
+      right: -11px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 11px 0 11px 11px
+      border-color: transparent transparent transparent #EDF0F1
+  b
+    font:
+      size: rem-calc(18)
+      weight: 500
+      family: "Fira Sans", sans-serif
+    line-height: rem-calc(19)
+    display: inline-block
+    margin-bottom: 8px
+    padding: 0
+    color: #2E3E51
+  p
+    font-size: 0.75rem
+    font-family: "Fira Sans", sans-serif
+    font-weight: 300
+  .avatar
+    width: 60px
+    height: 60px
+    float: left
+    position: relative
+    margin-top: 4px
+    @media (min-width : 40.063em) and (max-width : 1445px)
+      width: 60px
+      height: 60px
+      margin-top: -1px
+      +my_horizontal_align
       &:before
-        display: block
-        content: ""
-        position: absolute
-        top: 20px
+        bottom: 0 !important
+        height: 4px !important
+
+    a
+      display: block
+      height: auto
+    .image
+      max-width: 100%
+      width: 100%
+      height: 0
+      padding-bottom: 100%
+      overflow: hidden
+      -webkit-background-size: cover !important
+      -moz-background-size: cover !important
+      -o-background-size: cover !important
+      background-size: cover !important
+      margin: 0 auto
+  .avatar-column
+    p
+      font:
+        size: rem-calc(12)
+      @media (min-width : 40.063em) and (max-width : 1445px)
+        text-align: center
+
+  .ol-start-chart-footer
+    p
+      font:
+        size: rem-calc(12)
+        weight: 300
+        family: "Fira Sans", sans-serif
+      color: #2E3E51
+      line-height: rem-calc(14.4)
+      padding-top: 7px
+      padding-left: 12px
+      a
+        color: #D03F4A
+        height: auto
+        border: none
+        display: inline-block
+    @media (min-width : 40.063em) and (max-width : 1445px)
+      .ud-button
+        width: 60%
+        float: right
+      p
+        float: right
+        padding-right: 20px
+        a
+          float: left
+          padding-right: 10px
+
+  .ud-tool-tip
+    padding: 11px
+    background-color: #D7EAF8
+    border-radius: 5px
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.35)
+    -moz-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.35)
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.35)
+    margin-bottom: 15px
+    position: relative
+    @media (min-width : 40.063em) and (max-width : 1445px)
+      margin-top: 0
+    &:before
+      display: block
+      content: ""
+      position: absolute
+      top: 20px
+      left: -11px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 11px 11px 11px 0
+      border-color: transparent #D7EAF8 transparent transparent
+      z-index: 1
+      @media (min-width : 40.063em) and (max-width : 1445px)
+        top: 16px
         left: -11px
-        width: 0
-        height: 0
-        border-style: solid
         border-width: 11px 11px 11px 0
         border-color: transparent #D7EAF8 transparent transparent
-        z-index: 1
-        @media (min-width : 40.063em) and (max-width : 1445px)
-          top: 16px
-          left: -11px
-          border-width: 11px 11px 11px 0
-          border-color: transparent #D7EAF8 transparent transparent
-      &:after
-        display: block
-        content: ""
-        position: absolute
-        top: 21px
+    &:after
+      display: block
+      content: ""
+      position: absolute
+      top: 21px
+      left: -11px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 11px 11px 11px 0
+      border-color: transparent rgba(0, 0, 0, 0.35) transparent transparent
+      @media (min-width : 40.063em) and (max-width : 1445px)
+        top: 17px
         left: -11px
-        width: 0
-        height: 0
-        border-style: solid
         border-width: 11px 11px 11px 0
         border-color: transparent rgba(0, 0, 0, 0.35) transparent transparent
-        @media (min-width : 40.063em) and (max-width : 1445px)
-          top: 17px
-          left: -11px
-          border-width: 11px 11px 11px 0
-          border-color: transparent rgba(0, 0, 0, 0.35) transparent transparent
-      p
-        font:
-          size: rem-calc(14)
-          weight: 300
-          family: "Fira Sans", sans-serif
-        line-height: rem-calc(18)
-        color: #404049
-        margin-bottom: 0
-
-
+    p
+      font:
+        size: rem-calc(14)
+        weight: 300
+        family: "Fira Sans", sans-serif
+      line-height: rem-calc(18)
+      color: #404049
+      margin-bottom: 0
 
 a.ud-button
   font:
