@@ -819,9 +819,19 @@ ul.primary-menu
       display: none !important
     .title-small
       display: block !important
-    .one-item.hide
-      display: block !important
-      visibility: visible
+    .one-item
+      height: 88px
+      &.hide
+        display: block !important
+        visibility: visible
+      .avatar
+        .image
+          &:before, &:after
+            display: none !important
+      .flo-actions-wrap
+        &:hover
+          .flo-actions-inner
+            display: block
     .ol-start-chat-wrap
       //@media (min-width : 40.063em) and (max-width : 1445px)
       position: absolute
@@ -2574,7 +2584,7 @@ ul.socials
 
 .ud-chat-request-others-wrap
   width: 380px
-  height: 175px
+  //height: 175px
   position: fixed
   right: 20px
   bottom: 0
@@ -2584,6 +2594,7 @@ ul.socials
     position: absolute
     right: 0
     bottom: 0
+    height: 175px
     padding: 20px 30px
     background-color: #EDF0F1
 
