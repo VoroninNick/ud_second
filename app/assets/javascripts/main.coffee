@@ -1206,11 +1206,18 @@ $(document).ready ->
 # dismiss message on frendlie list
 #=====================================================
   $('.ol-start-chart-footer a.dismiss').click ->
-    $wrapper = $(this).closest('.ol-start-chat')
-    $frendContainer = $wrapper.find('.one-item')
-    $thisContainer = $wrapper.find('.ol-start-chat-wrap')
-    $thisContainer.toggleClass('hide')
-    $frendContainer.toggleClass('hide')
+    wrapper = $(this).closest('.ordered-list-wrap')
+
+    frends_list = wrapper.find('section.ordered-list')
+
+    $(@).closest('.fo-chat-request-one-item').remove()
+
+    if frends_list.hasClass('ud-fo-has-chat-request')
+      frends_list.removeClass('ud-fo-has-chat-request')
+#    $frendContainer = $wrapper.find('.one-item')
+#    $thisContainer = $wrapper.find('.ol-start-chat-wrap')
+#    $thisContainer.toggleClass('hide')
+#    $frendContainer.toggleClass('hide')
 
 #=====================================================
 # dismiss messagefrom not friends
