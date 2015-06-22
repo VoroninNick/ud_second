@@ -1212,6 +1212,11 @@ $(document).ready ->
     $thisContainer.toggleClass('hide')
     $frendContainer.toggleClass('hide')
 
+#=====================================================
+# dismiss messagefrom not friends
+#=====================================================
+  $('.ud-chat-request-others-wrap a.dismiss').click ->
+    $(@).closest('.ud-chat-request-others').remove()
 
 #  $('#SocialRegistration').foundation('reveal', 'open')
 
