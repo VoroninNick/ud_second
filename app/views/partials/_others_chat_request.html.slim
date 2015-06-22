@@ -4,7 +4,8 @@
   .ud-chat-request-block
     .ud-chat-request-avatar
       .avatar
-        .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+        = link_to profile_girl_path
+          .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
       .title-for-avatar
         span
           |Olena
@@ -27,7 +28,8 @@
   .ud-chat-request-block
     .ud-chat-request-avatar
       .avatar
-        .image style="background: url('#{asset_path("zlata-3.jpg")}')no-repeat center center;"
+        = link_to profile_girl_path
+          .image style="background: url('#{asset_path("zlata-3.jpg")}')no-repeat center center;"
       .title-for-avatar
         span
           |Kateryna
