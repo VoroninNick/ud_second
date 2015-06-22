@@ -1209,11 +1209,20 @@ $(document).ready ->
     wrapper = $(this).closest('.ordered-list-wrap')
 
     frends_list = wrapper.find('section.ordered-list')
+    chat_req_wrap = $(@).closest('.ol-start-chat-wrap')
+    count_requests = +wrapper.find('.fo-chat-request-one-item').length
+
+    console.log ('count requests before: '+count_requests)
 
     $(@).closest('.fo-chat-request-one-item').remove()
 
+
+
     if frends_list.hasClass('ud-fo-has-chat-request')
       frends_list.removeClass('ud-fo-has-chat-request')
+    if count_requests <= 1
+      chat_req_wrap.remove()
+    else
 #    $frendContainer = $wrapper.find('.one-item')
 #    $thisContainer = $wrapper.find('.ol-start-chat-wrap')
 #    $thisContainer.toggleClass('hide')

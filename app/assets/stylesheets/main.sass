@@ -776,6 +776,9 @@ ul.primary-menu
   transition: top .5s
   bottom: 0
   z-index: 11
+  .fo-chat-request-one-item
+    position: absolute
+    background-color: #EDF0F1
   .ordered-list
     //overflow: hidden
     height: 100%
@@ -802,8 +805,11 @@ ul.primary-menu
   @media (min-width : 0em) and (max-width : 40em)
     display: none
   &.minimizate
-    //@media (min-width : 40.063em)
     width: 85px
+    .ud-fo-has-chat-request
+      padding-top: 0
+    .fo-chat-request-one-item
+
     img.diamond-logo
       display: block
     .wrap
@@ -838,15 +844,15 @@ ul.primary-menu
         border-width: 11px 0 11px 11px
         border-color: transparent transparent transparent #EDF0F1
       .avatar-column
-        width: 22%
+        //width: 22%
         p
           text-align: center
       .text-column
-        width: 78%
+        //width: 78%
       .fo-custom-row
-        margin-top: 20px
+        //margin-top: 20px
         .columns
-          width: 100%
+          //width: 100%
       .ol-start-chart-footer
         p
           float: right
@@ -1157,15 +1163,17 @@ section.ordered-list
             weight: 300
           line-height: rem-calc(14.4)
           color: #BEC3C7
-  &.ud-fo-has-chat-request
-    padding-top: 261px
-    @media (min-width : 40.063em) and (max-width : 1445px)
-      padding-top: 0
+
+.ud-fo-has-chat-request
+  padding-top: 261px
+  @media (min-width : 40.063em) and (max-width : 1445px)
+    padding-top: 0
 
 .ol-start-chat-wrap
   padding-top: 15px
   background: #EDF0F1
   display: inline-block
+  width: 100%
 
   height: 261px
   position: absolute
@@ -2220,6 +2228,27 @@ a.close_fancybox_gallery
       //@media (min-width : 40.063em) and (max-width : 1445px)
       width: 310px
       display: block
+      .title-head
+        .wrap
+          h4
+            display: inherit !important
+      .one-item
+        .avatar
+          position: static
+          -webkit-transform: translateX(0)
+          -moz-transform: translateX(0)
+          -ms-transform: translateX(0)
+          -o-transform: translateX(0)
+          transform: translateX(0)
+        .information
+          display: block !important
+        .title-small
+          display: none
+        .flo-actions-wrap
+          display: none
+      section.ordered-list
+        &.ud-fo-has-chat-request
+
 .notification-container
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
   -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35)
