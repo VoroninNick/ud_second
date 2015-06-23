@@ -217,6 +217,8 @@ $(document).ready ->
 
     frends_list = wrapper.find('section.ordered-list')
     chat_req_wrap = $(@).closest('.ol-start-chat-wrap')
+    chat_req = wrapper.find('.fo-chat-request-one-item')
+
     count_requests = +wrapper.find('.fo-chat-request-one-item').length
 
     user_id = $(@).closest('.fo-chat-request-one-item').attr 'data-user-id'
@@ -231,8 +233,15 @@ $(document).ready ->
     if frends_list.hasClass('ud-fo-has-chat-request')
       frends_list.removeClass('ud-fo-has-chat-request')
     if count_requests <= 1
+
       chat_req_wrap.remove()
     else
+      chat_req.each ->
+        if !$(@).hasClass('hide')
+          chat_req_wrap.addClass('hide')
+
+
+
 #    $frendContainer = $wrapper.find('.one-item')
 #    $thisContainer = $wrapper.find('.ol-start-chat-wrap')
 #    $thisContainer.toggleClass('hide')
