@@ -303,6 +303,7 @@ $(document).ready ->
 #================================
   if(window.location.href.indexOf("live_chat") > -1)
     dpr     = window.devicePixelRatio
+    $('body').addClass('live-chat-body')
     if dpr == 2
       $('body').addClass('hide-header')
       $('main.main-block-wrap').addClass('retina-livechat-page-wrap')
@@ -1434,7 +1435,15 @@ $(window).resize ->
     if $(".button-menu a.mobile").hasClass('open')
       $(".button-menu a.mobile").removeClass('open')
 
+
+  if $(window).height() <= 768
+    $('body').addClass('live-chat-body')
+  else
+    $('body').removeClass('live-chat-body')
+
+
   friends_online()
+
   st = $(this).scrollTop()
   wh = $(window).height()
   ot = $('.l-footer-wrap').offset().top
