@@ -228,6 +228,7 @@ $(document).ready ->
 
     $(@).closest('.fo-chat-request-one-item').remove()
     current_user.removeClass('uhcr-hidden')
+    current_user.removeClass('ud-has-chat-request')
 
 
     if frends_list.hasClass('ud-fo-has-chat-request')

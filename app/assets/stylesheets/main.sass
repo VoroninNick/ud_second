@@ -1007,7 +1007,20 @@ section.ordered-list
             top: 1px
             right: 0px
     &.ud-has-chat-request
-      background-color: #FF6F70
+      position: relative
+      &:before
+        display: block
+        content: ''
+        background-color: #FF6F70
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        -webkit-animation: flicker 1.5s infinite /* Safari 4+ */
+        -moz-animation:    flicker 1.5s infinite /* Fx 5+ */
+        -o-animation:      flicker 1.5s infinite /* Opera 12+ */
+        animation:         flicker 1.5s infinite /* IE 10+, Fx 29+ */
 
       .title-small
         h4
