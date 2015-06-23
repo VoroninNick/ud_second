@@ -112,7 +112,7 @@ $(document).mousemove (event) ->
 
   if(window.location.href.indexOf("live_chat") > -1)
 #    console.log('current_position.y' + currentMousePos.y )
-    if dpr == 2
+    if dpr == 2 || dpr == 1
       if currentMousePos.y < 20
         $('body').removeClass('hide-header')
         $('main.main-block-wrap').removeClass('retina-livechat-page-wrap')
@@ -301,10 +301,11 @@ $(document).ready ->
 #================================
 #  detect ration
 #================================
+
   if(window.location.href.indexOf("live_chat") > -1)
     dpr     = window.devicePixelRatio
     $('body').addClass('live-chat-body')
-    if dpr == 2
+    if dpr == 2 || dpr == 1
       $('body').addClass('hide-header')
       $('main.main-block-wrap').addClass('retina-livechat-page-wrap')
 
