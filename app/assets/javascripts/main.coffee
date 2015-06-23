@@ -163,6 +163,89 @@ friends_online = () ->
 
 $(document).ready ->
   friends_online()
+
+# ============================================================================
+#  timer for chat request frends list
+# ============================================================================
+  setTimeout(()->
+    obj = $('.ol-start-chat-wrap')
+    obj.find('.fo-chat-request-one-item')
+
+#    console.log('chat_requests.length'+obj.find('.fo-chat-request-one-item').hasClass('hide').length)
+    obj.find('.fo-chat-request-one-item').addClass('hide')
+
+#    console.log('chat_requests.length'+obj.find('.fo-chat-request-one-item').hasClass('hide').length)
+
+    obj.addClass('hide')
+    $('section.ordered-list').removeClass('ud-fo-has-chat-request')
+
+    $('section.ordered-list .ud-has-chat-request').addClass('uhcr-hidden')
+
+  , 6000)
+
+# ============================================================================
+#  click for show hidden chat request
+# ============================================================================
+#  $('li.ud-has-chat-request .one-item .avatar').click ->
+#    alert 'test'
+  $('section.ordered-list').on 'click', 'li.ud-has-chat-request .one-item .avatar', ->
+    this_wrap = $(@).closest('li')
+    user_id = this_wrap.attr 'data-user-id'
+
+    wrap = $(@).closest('.ordered-list-wrap')
+    wrap_request = wrap.find('.ol-start-chat-wrap')
+
+    request_list = wrap_request.find('.fo-chat-request-one-item')
+#    console.log('request list', request_list.length)
+    current_request = request_list.filter("[data-user-id='" + user_id + "']")
+    if this_wrap.hasClass('uhcr-hidden')
+      if current_request
+        wrap_request.removeClass('hide')
+        current_request.removeClass('hide')
+        this_wrap.removeClass('uhcr-hidden')
+        $('section.ordered-list').addClass('ud-fo-has-chat-request')
+      else
+        console.log('dosnt')
+#    console.log('current request :', current_request)
+#    alert 'user id : '+ user_id
+
+#=====================================================
+# dismiss message on frendlie list
+#=====================================================
+  $('.ol-start-chart-footer a.dismiss').click ->
+    wrapper = $(this).closest('.ordered-list-wrap')
+
+    frends_list = wrapper.find('section.ordered-list')
+    chat_req_wrap = $(@).closest('.ol-start-chat-wrap')
+    count_requests = +wrapper.find('.fo-chat-request-one-item').length
+
+    user_id = $(@).closest('.fo-chat-request-one-item').attr 'data-user-id'
+
+    users_list = wrapper.find('li')
+    current_user = users_list.filter("[data-user-id='" + user_id + "']")
+
+    $(@).closest('.fo-chat-request-one-item').remove()
+    current_user.removeClass('uhcr-hidden')
+
+
+    if frends_list.hasClass('ud-fo-has-chat-request')
+      frends_list.removeClass('ud-fo-has-chat-request')
+    if count_requests <= 1
+      chat_req_wrap.remove()
+    else
+#    $frendContainer = $wrapper.find('.one-item')
+#    $thisContainer = $wrapper.find('.ol-start-chat-wrap')
+#    $thisContainer.toggleClass('hide')
+#    $frendContainer.toggleClass('hide')
+
+#=====================================================
+# dismiss messagefrom not friends
+#=====================================================
+  $('.ud-chat-request-others-wrap a.dismiss').click ->
+    $(@).closest('.ud-chat-request-others').remove()
+
+#  $('#SocialRegistration').foundation('reveal', 'open')
+
 #==================================
 #  upload file when reporting user
 #==================================
@@ -267,17 +350,17 @@ $(document).ready ->
 
       $image_object = $this.parent().html()
 
-      attachment_one_item = '<div class="columns large-2 medium-2 small-4 end"><div class="pg-one-item">
-              <div class="pg-action-button pga-remove">
-                <a data-file-id="123" data-folder="inbox" data-conv-id="65">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-                  <polygon fill="#2E3E51" points="64,6.464 57.536,0 32,25.536 6.464,0 0,6.464 25.536,32 0,57.536 6.464,64 32,38.464 57.536,64
-                      64,57.536 38.464,32 "></polygon>
-                  </svg>
-                  </a>
-              </div>'+$image_object+'
-            </div></div>'
-      attach_wrap.append(attachment_one_item)
+#      attachment_one_item = '<div class="columns large-2 medium-2 small-4 end"><div class="pg-one-item">
+#              <div class="pg-action-button pga-remove">
+#                <a data-file-id="123" data-folder="inbox" data-conv-id="65">
+#                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+#                  <polygon fill="#2E3E51" points="64,6.464 57.536,0 32,25.536 6.464,0 0,6.464 25.536,32 0,57.536 6.464,64 32,38.464 57.536,64
+#                      64,57.536 38.464,32 "></polygon>
+#                  </svg>
+#                  </a>
+#              </div>'+$image_object+'
+#            </div></div>'
+#      attach_wrap.append(attachment_one_item)
 
       setTimeout(()->
         $this.data('locked', false)
@@ -435,7 +518,7 @@ $(document).ready ->
 
     if !locked
       $this.data('locked', true)
-      setTimeout(()->
+      readyt(()->
         $this.data('locked', false)
       , 300)
       # do something
@@ -1172,69 +1255,6 @@ $(document).ready ->
       order_list_sidebar.removeClass('maxinmizate')
     else
       order_list_sidebar.addClass('maxinmizate')
-
-#    if($(window).width() < 1445)
-#      $wrapper = $(this).closest('.ordered-list-wrap')
-#      if $wrapper.hasClass('maxinmizate')
-#        $wrapper.removeClass('maxinmizate')
-#      else
-#        $wrapper.addClass('maxinmizate')
-##      alert '< large'
-#    else
-#      $wrapper = $(this).closest('.ordered-list-wrap')
-#      if $wrapper.hasClass('minimizate')
-#        $wrapper.removeClass('minimizate')
-#      else
-#        $wrapper.addClass('minimizate')
-#      alert 'large'
-
-#  $('.ordered-list-wrap img.diamond-logo').click ->
-#    $wrapper = $(this).closest('.ordered-list-wrap')
-#    if $wrapper.hasClass('minimizate')
-#      $wrapper.removeClass('minimizate')
-#    else
-#      $wrapper.addClass('minimizate')
-#
-#  $('.ordered-list-wrap img.diamond-logo-mobile').click ->
-#    $wrapper = $(this).closest('.ordered-list-wrap')
-#    if $wrapper.hasClass('maxinmizate')
-#      $wrapper.removeClass('maxinmizate')
-#    else
-#      $wrapper.addClass('maxinmizate')
-
-#=====================================================
-# dismiss message on frendlie list
-#=====================================================
-  $('.ol-start-chart-footer a.dismiss').click ->
-    wrapper = $(this).closest('.ordered-list-wrap')
-
-    frends_list = wrapper.find('section.ordered-list')
-    chat_req_wrap = $(@).closest('.ol-start-chat-wrap')
-    count_requests = +wrapper.find('.fo-chat-request-one-item').length
-
-    console.log ('count requests before: '+count_requests)
-
-    $(@).closest('.fo-chat-request-one-item').remove()
-
-
-
-    if frends_list.hasClass('ud-fo-has-chat-request')
-      frends_list.removeClass('ud-fo-has-chat-request')
-    if count_requests <= 1
-      chat_req_wrap.remove()
-    else
-#    $frendContainer = $wrapper.find('.one-item')
-#    $thisContainer = $wrapper.find('.ol-start-chat-wrap')
-#    $thisContainer.toggleClass('hide')
-#    $frendContainer.toggleClass('hide')
-
-#=====================================================
-# dismiss messagefrom not friends
-#=====================================================
-  $('.ud-chat-request-others-wrap a.dismiss').click ->
-    $(@).closest('.ud-chat-request-others').remove()
-
-#  $('#SocialRegistration').foundation('reveal', 'open')
 
 #=====================================================
 #  init index page tabs wooman

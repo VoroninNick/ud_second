@@ -1006,7 +1006,7 @@ section.ordered-list
             height: 17px
             top: 1px
             right: 0px
-    &.in-ud-video-chat
+    &.ud-has-chat-request
       background-color: #FF6F70
 
       .title-small
@@ -1021,6 +1021,21 @@ section.ordered-list
       .about
         p
           color: #fff !important
+    &.uhcr-hidden
+      .avatar
+        &:after
+          display: block
+          content: ''
+          position: absolute
+          left: 0
+          top: 0
+          right: 0
+          bottom: 0
+          background-color: rgba(255, 111, 112, .8)
+          background-image: asset-url("UD-icon-chat-buble-white.svg")
+          background-size: 70%
+          background-repeat: no-repeat
+          background-position: center
     &.received-a-letter
       .avatar
         &:after
