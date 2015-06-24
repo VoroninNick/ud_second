@@ -60,6 +60,24 @@
                     padding: 8px
 
           .ud-mt-main
+            .ud-mt-membership
+              .ud-mt-membership-image, .ud-mt-membership-text
+                width: 50%
+                //display: inline-block
+                float: left
+              .ud-mt-membership-image
+
+              .ud-mt-membership-text
+
+
+            strong
+              color: #2E3E51
+              font:
+                size: rem-calc(18)
+                weight: 500
+                family: "Fira Sans", sans-serif
+              line-height: rem-calc(21)
+
             h3
               color: #D03F4A
               font:
@@ -132,14 +150,21 @@
                   weight: 300
                   style: italic
                 line-height: rem-calc(24)
+              &.ud-mt-title-blue-text
+                p
+                  color: #287FB8
 
 
+            .ud-mt-white, .ud-mt-grey, .ud-mt-black
+              padding: 0 32px
             .ud-mt-white
               background-color: #fff
-              padding: 0 32px
 
             .ud-mt-grey
               background-color: #EDF0F1
+
+            .ud-mt-black
+              background-color: #2E2E36
 
             &.ud-mt-confirmation
               .ud-mt-user-info
@@ -182,6 +207,97 @@
                     content: 'Go to ukrainian diamonds'
 
 
+            &.ud-mt-new-message
+              .ud-mt-controls
+                padding-top: 18px
+                .ud-mt-control
+                  width: 50%
+                  float: left
+                  a
+                    display: block
+                    img
+                      padding-left: 40px
+                    b
+                      display: block
+                      text-align: center
+                      color: #fff
+                      font:
+                        size: rem-calc(14)
+                        weight: 200
+                        family: "Fira Sans", sans-serif
+                      line-height: rem-calc(16.8)
+                      position: relative
+                      top: -12px
+                      left: -10px
+
+              .ud-mt-profile-from-message
+                .ud-mt-pfm-avatar, .ud-mt-pfm-information
+                  float: left
+                .ud-mt-pfm-avatar
+                  width: 200px
+                .ud-mt-pfm-information
+                  width: 302px
+                  margin-left: 18px
+                  h1
+                    color: #fff
+                    font:
+                      size: rem-calc(36)
+                      weight: 400
+                      family: "Fira Sans", sans-serif
+                    line-height: rem-calc(19)
+
+                  .ud-mt-controls
+                    padding-top: 18px
+                    .ud-mt-control
+
+                  ul.ud-mt-data
+                    margin-left: 0
+                    padding-top: 15px
+                    li
+                      list-style: none
+                      .ud-mt-key, .ud-mt-value
+                        //float: left
+                        display: inline-block
+                      .ud-mt-key
+                        width: 100px
+                        color: #EDF0F1
+                        font:
+                          size: rem-calc(12)
+                          weight: 300
+                          family: "Fira Sans", sans-serif
+                        line-height: rem-calc(21)
+                      .ud-mt-value
+                        //width: 202px
+                        width: 195px
+                        color: #96D03F
+                        font:
+                          family: "dearjoe_1_msregular"
+                          size: rem-calc(21)
+                          weight: 400
+                        line-height: rem-calc(21)
+                        img
+                          height: 21px
+                          margin-left: 10px
+
+              .ud-mt-white, .ud-mt-grey
+                padding-top: 30px
+                padding-bottom: 20px
+
+              .ud-mt-black
+                padding-top: 30px
+                padding-bottom: 36px
+
+              .ud-mt-grey
+                strong
+                  display: block
+                  margin-bottom: 10px
+
+                  span
+                    color: #BEC3C7
+                    font:
+                      size: rem-calc(14)
+                      weight: 300
+                    float: right
 
             &.ud-mt-welcome
               .ud-mt-email-button

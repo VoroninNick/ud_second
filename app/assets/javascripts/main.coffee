@@ -364,6 +364,7 @@ $(document).ready ->
 
       $image_object = $this.parent().html()
 
+#      fields to comment before commit
 #      attachment_one_item = '<div class="columns large-2 medium-2 small-4 end"><div class="pg-one-item">
 #              <div class="pg-action-button pga-remove">
 #                <a data-file-id="123" data-folder="inbox" data-conv-id="65">
@@ -375,6 +376,7 @@ $(document).ready ->
 #              </div>'+$image_object+'
 #            </div></div>'
 #      attach_wrap.append(attachment_one_item)
+#      fields to comment end
 
       setTimeout(()->
         $this.data('locked', false)
