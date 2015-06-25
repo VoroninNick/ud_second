@@ -181,6 +181,7 @@ $(document).ready ->
 
     $('section.ordered-list .ud-has-chat-request').addClass('uhcr-hidden')
 
+    $('.ud-chat-request-others').hide()  #hiden chat requests from other pepoples on down page
   , 6000)
 
 # ============================================================================

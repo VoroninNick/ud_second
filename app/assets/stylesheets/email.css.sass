@@ -165,7 +165,55 @@
 
             .ud-mt-black
               background-color: #2E2E36
+            .ud-mt-block
+              width: 100%
+              .ud-mt-half
+                width: 50%
+                float: left
+                &:first-child
+                  padding-right: 10px
+                  //background-color: red
 
+                &.ud-mt-half-last
+                  padding-left: 10px
+                  //background-color: black
+
+            &.ud-mt-no-approved-photo
+              .ud-mt-email-button
+                width: 250px
+                margin: 0
+                a:before
+                  content: 'Add a new photo'
+              h3
+                margin-bottom: 1rem
+              .ud-mt-white
+                padding-top: 36px
+              .ud-mt-last-white
+                padding-bottom: 30px
+              .ud-mt-grey
+                padding-top: 30px
+              .ud-mt-subtitle-block
+                padding-top: 15px
+                padding-bottom: 36px
+              .ud-mt-image-wrap
+                padding-bottom: 13px
+              .ud-mt-approved-status
+                height: 10px
+                width: 100%
+                &.ud-mt-as-bad
+                  background-color: #FF6F70
+                &.ud-mt-as-good
+                  background-color: #96D03F
+              .ud-mt-block
+                padding-top: 15px
+                padding-bottom: 35px
+                strong
+                  color: #6D6E71
+                  font:
+                    size: rem-calc(18)
+                    family: "Fira Sans", sans-serif
+                    weight: 600
+                  line-height: rem-calc(36)
             &.ud-mt-approved-photo
               .ud-mt-white
                 padding-top: 30px
