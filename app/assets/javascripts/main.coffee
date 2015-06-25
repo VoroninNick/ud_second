@@ -365,17 +365,17 @@ $(document).ready ->
       $image_object = $this.parent().html()
 
 #      fields to comment before commit
-#      attachment_one_item = '<div class="columns large-2 medium-2 small-4 end"><div class="pg-one-item">
-#              <div class="pg-action-button pga-remove">
-#                <a data-file-id="123" data-folder="inbox" data-conv-id="65">
-#                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-#                  <polygon fill="#2E3E51" points="64,6.464 57.536,0 32,25.536 6.464,0 0,6.464 25.536,32 0,57.536 6.464,64 32,38.464 57.536,64
-#                      64,57.536 38.464,32 "></polygon>
-#                  </svg>
-#                  </a>
-#              </div>'+$image_object+'
-#            </div></div>'
-#      attach_wrap.append(attachment_one_item)
+      attachment_one_item = '<div class="columns large-2 medium-2 small-4 end"><div class="pg-one-item">
+              <div class="pg-action-button pga-remove">
+                <a data-file-id="123" data-folder="inbox" data-conv-id="65">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+                  <polygon fill="#2E3E51" points="64,6.464 57.536,0 32,25.536 6.464,0 0,6.464 25.536,32 0,57.536 6.464,64 32,38.464 57.536,64
+                      64,57.536 38.464,32 "></polygon>
+                  </svg>
+                  </a>
+              </div>'+$image_object+'
+            </div></div>'
+      attach_wrap.append(attachment_one_item)
 #      fields to comment end
 
       setTimeout(()->
