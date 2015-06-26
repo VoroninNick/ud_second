@@ -16,12 +16,12 @@
               |You have a new message from (done)
             li
               |Your photo has been approved (done)
-            li.active
+            li
               |Your photo has not been approved (done)
+            li.active
+              |Daily Report on your account (done)
             li
-              |Daily Report on your account (wip)
-            li
-              |View new beautiful diamonds
+              |View new beautiful diamonds (wip)
         .columns.large-9.medium-8
           ul.ud-email-templates
             li.ud-et.hide
@@ -36,5 +36,7 @@
               = render partial: "partials/email_templates/you_have_new_message"
             li.ud-et.hide
               = render partial: "partials/email_templates/is_approved_photo"
-            li.ud-et
+            li.ud-et.hide
               = render partial: "partials/email_templates/is_no_approved_photo"
+            li.ud-et
+              = render partial: "partials/email_templates/daily_report_acount"
