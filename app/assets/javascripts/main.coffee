@@ -117,9 +117,9 @@ $(document).mousemove (event) ->
         $('body').removeClass('hide-header')
         $('main.main-block-wrap').removeClass('retina-livechat-page-wrap')
       else if $('header').is(':hover')
-        console.log('hover')
+#        console.log('hover')
       else
-        console.log('out')
+#        console.log('out')
         $('body').addClass('hide-header')
         $('main.main-block-wrap').addClass('retina-livechat-page-wrap')
 
@@ -128,12 +128,12 @@ $(document).mousemove (event) ->
 #============================================================
 friends_online = () ->
   window_height = $(window).height()
-  console.log('window height: ', window_height)
+#  console.log('window height: ', window_height)
   footer_height = $("footer").height()
-  console.log('footer height: ', footer_height)
+#  console.log('footer height: ', footer_height)
 
   offset_top = $('footer').offset().top
-  console.log('offset top: ', offset_top)
+#  console.log('offset top: ', offset_top)
 
 #  footer_to_top = $('footer').outerHeight()
 #  console.log('footer top: ', footer_to_top)
@@ -144,18 +144,18 @@ friends_online = () ->
   ot = $('.l-footer-wrap').offset().top
   fh = $('.l-footer-wrap').height()
 
-  console.log('scroll top: ', st)
+#  console.log('scroll top: ', st)
 
 
 
   action = st + wh
 
-  console.log('scroll top + window height: ', action)
+#  console.log('scroll top + window height: ', action)
 
   ol_bottom = action - ot
-  console.log('must be to bottom: ', ol_bottom)
+#  console.log('must be to bottom: ', ol_bottom)
   diff = ot <= action
-  console.log('diff: ', diff)
+#  console.log('diff: ', diff)
   if diff
     $('.ordered-list-wrap').css 'bottom', ol_bottom
   else
@@ -206,7 +206,7 @@ $(document).ready ->
         this_wrap.removeClass('uhcr-hidden')
         $('section.ordered-list').addClass('ud-fo-has-chat-request')
       else
-        console.log('dosnt')
+#        console.log('dosnt')
 #    console.log('current request :', current_request)
 #    alert 'user id : '+ user_id
 
@@ -735,12 +735,16 @@ $(document).ready ->
     $form.find('.pii-wrap').each ()->
       $wrap = $(this)
       $dst = $wrap.find(".p-input-preview .p-input p")
-      $src = $wrap.find(".p-input-edit").find("input, select, textarea")
+      $src = $wrap.find(".p-input-edit").find("input, select option:selected, textarea")
       str = ''
+
       $src.each (index)->
         if index
           str += '- '
-        str += $(this).val()
+        if $(@).is('option')
+          str += $(this).text()
+        else
+          str += $(this).val()
       $dst.text(str)
 
 #=========================================================
@@ -762,7 +766,7 @@ $(document).ready ->
     $previewField = $wrap.find('.p-input-preview')
 
     if form.hasClass('ud-bf')
-      console.log('disable')
+#      console.log('disable')
     else
       $('.p-input-edit').hide()
       $('.p-input-preview').show()
@@ -780,21 +784,19 @@ $(document).ready ->
     $previewFieldInput = $wrap.find('p')
     current_input = $wrap.find('.p-input')
     if current_input.find('input').length
-#      alert 'input'
       $editFieldInput = $wrap.find('input').val()
       $previewFieldInput.text($editFieldInput)
 
     else if current_input.find('select').length
-#      alert 'select'
 
 #      window.$select = $wrap.find('select').SumoSelect()
-      $src = $wrap.find('select')
+      $src = $wrap.find('select option:selected')
 
       str = ''
       $src.each (index)->
         if index
           str += '/'
-        str += $(this).val()
+        str += $(this).text()
       $previewFieldInput.text(str)
 
 
