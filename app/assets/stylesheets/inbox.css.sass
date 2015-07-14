@@ -302,11 +302,28 @@
 
           .ui-read-more
             position: absolute
-            background-color: yellow
             min-height: 5px
-            right: -35px
+            right: -5px
             bottom: -25px
             cursor: pointer
+            &:before
+              display: inline-block
+              content: attr(data-name-e)
+              color: #3598DB
+              font:
+                size: 0.875rem
+                weight: 300
+                family: "Fira Sans", sans-serif
+            &:after
+              display: block
+              content: ''
+              background-image: asset-url('show_more_down.svg')
+              background-size: 100%
+              width: 25px
+              height: 25px
+              +my_vertical_align()
+                position: absolute
+                right: -25px
           .ulmfc
             position: absolute
             left: 0
@@ -326,7 +343,12 @@
             .ui-one-message
               height: auto
             .ui-read-more
-              background-color: green
+              &:before
+                display: inline-block
+                content: attr(data-name-une)
+              &:after
+                background-image: asset-url('show_more_up.svg')
+
             .ui-attached-files
               display: block
       .ud-message-option-wrap
