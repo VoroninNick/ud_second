@@ -161,6 +161,10 @@ friends_online = () ->
   else
     $('.ordered-list-wrap').css 'bottom', 0
 
+
+resetForm = ($form) ->
+  $form.find('input, select, textarea').val ''
+
 $(document).ready ->
   friends_online()
 
@@ -418,6 +422,9 @@ $(document).ready ->
 
 #clear form
   $('a.clear-form').click ->
+    $current_form = $(@).closest('form')
+    resetForm($current_form)
+
     $formWrap = $(this).closest('form')
     $items = $formWrap.find('ul.options li')
     $items.removeClass('selected')
