@@ -3,6 +3,7 @@
     .email-templates-wrap
       .row
         .columns.large-3.medium-4
+
           ul.ud-navigation
             li
               |E-mail confirmation (done)
@@ -18,10 +19,18 @@
               |Your photo has been approved (done)
             li
               |Your photo has not been approved (done)
-            li.active
-              |Daily Report on your account (done)
             li
-              |View new beautiful diamonds (wip)
+              |Daily Report on your account (done)
+            li.active
+              |View new beautiful diamonds (done)
+          /hr
+          /form method='POST' action=get_email_template_path
+          /  = tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token)
+          /  .input
+          /    label for="test_email_template" Емейл для отримання тестового шаблону:
+          /    input#test_email_template name="email" type="email" placeholder="email@mail.com"
+          /    button type="submit" Надіслати
+
         .columns.large-9.medium-8
           ul.ud-email-templates
             li.ud-et.hide
@@ -38,5 +47,7 @@
               = render partial: "partials/email_templates/is_approved_photo"
             li.ud-et.hide
               = render partial: "partials/email_templates/is_no_approved_photo"
-            li.ud-et
+            li.ud-et.hide
               = render partial: "partials/email_templates/daily_report_acount"
+            li.ud-et
+              = render partial: "partials/email_templates/new_beautiful_diamonds"

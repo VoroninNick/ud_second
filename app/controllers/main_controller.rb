@@ -70,6 +70,10 @@ class MainController < ApplicationController
 
   end
 
+  def email_template
+
+  end
+
   def settings
     @months = %w[January February March April May June July August September October November December]
 
@@ -420,3 +424,21 @@ class MainController < ApplicationController
     }
   end
 end
+
+
+# def Dog
+#   def initialize(breed)
+#     @breed = breed
+#   end
+#   def to_s
+#     "(#@breed, #@name)"
+#   end
+# end
+#
+# class Lab < Dog
+#   def initialize(breed, name)
+#     super(breed)
+#     @name = name
+#   end
+# end
+

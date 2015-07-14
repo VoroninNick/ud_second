@@ -28,6 +28,8 @@ Rails.application.routes.draw do
 
   get 'test' => 'main#test'
 
+  post '/get-email-template' => 'main#email_template'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
