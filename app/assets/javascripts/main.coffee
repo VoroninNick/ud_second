@@ -166,6 +166,30 @@ resetForm = ($form) ->
   $form.find('input, select, textarea').val ''
 
 $(document).ready ->
+#  =========================
+# callback handler for form submit
+#  =========================
+  $('form.ud-mt-ajax-send').submit (e) ->
+    $this = $(@)
+    postData = $this.serializeArray()
+    formURL = $this.attr('action')
+
+    $.ajax
+      url: formURL
+      dataType: 'html'
+      type: "POST"
+      data: postData
+      beforeSend: ->
+        alert "before"
+      success: ->
+        alert "success"
+      complete: ->
+
+      error: ->
+
+    e.preventDefault()
+
+
   friends_online()
 
 #===========================================

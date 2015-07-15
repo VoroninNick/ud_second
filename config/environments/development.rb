@@ -52,4 +52,16 @@ Rails.application.configure do
     password: ENV["GMAIL_PASSWORD"]
   }
 
+
+  config.roadie.url_options = {host: "ud.voroninstudio.eu", scheme: "https"}
+
+  # app/mailer/my_mailer.rb
+  class MyMailer
+    include Roadie::Rails::Mailer
+
+    protected
+    def roadie_options
+      super.merge(url_options: {host: Product.current.host})
+    end
+  end
 end

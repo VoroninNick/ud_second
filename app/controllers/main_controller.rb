@@ -71,7 +71,10 @@ class MainController < ApplicationController
   end
 
   def email_template
+    emailTemplate = params[:emailTemplate]
+    email = params[:email]
 
+    NewsletterMailer.data_template(emailTemplate, email).deliver
   end
 
   def settings
