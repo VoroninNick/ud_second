@@ -7,14 +7,14 @@
             ul.ud-navigation
               li
                 |E-mail confirmation (done)
-              .switch.round.small
-                input#ud-mt-radio1 type="radio" name="emailTemplate" value="1"
-                label for="ud-mt-radio1"
+              /.switch.round.small
+              /  input#ud-mt-radio1 type="radio" name="emailTemplate" value="1"
+              /  label for="ud-mt-radio1"
               li
                 |Welcome to UD (done)
-              .switch.round.small
-                input#ud-mt-radio2 type="radio" name="emailTemplate" value="2"
-                label for="ud-mt-radio2"
+              /.switch.round.small
+              /  input#ud-mt-radio2 type="radio" name="emailTemplate" value="2"
+              /  label for="ud-mt-radio2"
               li
                 |Password reset letter (done)
               li
@@ -32,7 +32,7 @@
               li.active
                 |Congratulations on your Birthday! (done)
             hr
-
+            .hide
               = tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token)
               .input
                 label for="test_email_template" Емейл для отримання тестового шаблону:
