@@ -21,8 +21,10 @@
               |Your photo has not been approved (done)
             li
               |Daily Report on your account (done)
-            li.active
+            li
               |View new beautiful diamonds (done)
+            li.active
+              |Congratulations on your Birthday! (done)
           /hr
           /form method='POST' action=get_email_template_path
           /  = tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token)
@@ -49,5 +51,7 @@
               = render partial: "partials/email_templates/is_no_approved_photo"
             li.ud-et.hide
               = render partial: "partials/email_templates/daily_report_acount"
-            li.ud-et
+            li.ud-et.hide
               = render partial: "partials/email_templates/new_beautiful_diamonds"
+            li.ud-et
+              = render partial: "partials/email_templates/congratulations_on_u_birthday"
