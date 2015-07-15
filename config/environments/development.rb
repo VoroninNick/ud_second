@@ -53,7 +53,7 @@ Rails.application.configure do
   }
 
 
-  config.roadie.url_options = {host: "ud.voroninstudio.eu", scheme: "https"}
+  config.roadie.url_options = {host: "ud.voroninstudio.eu", scheme: "http"}
 
   # app/mailer/my_mailer.rb
   class MyMailer
