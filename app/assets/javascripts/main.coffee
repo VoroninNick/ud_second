@@ -168,6 +168,16 @@ resetForm = ($form) ->
 $(document).ready ->
   friends_online()
 
+#===========================================
+#  smiley
+#  ==========================================
+  $('.ud-smiles-inner a').click ->
+
+    smiley = $(@).children().attr('title')
+    text_input = $(@).closest('.ud-input-message-wrap').find('textarea')
+    text_input.val(text_input.val()+" "+smiley+" ")
+
+
 # ============================================================================
 #  timer for chat request frends list
 # ============================================================================
@@ -571,10 +581,6 @@ $(document).ready ->
       , 300)
       # do something
       list_ul.append('<li>'+ud_count+'</li>')
-
-
-  $('.ud-smiles-inner a img').click ->
-    alert 'smile'
 
 
 #===========================================================
