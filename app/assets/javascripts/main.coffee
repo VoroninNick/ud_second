@@ -709,6 +709,8 @@ $(document).ready ->
     showOn: 'button'
     buttonImage: 'assets/UAD-calendar.png'
     buttonImageOnly: true
+    changeMonth: true
+    changeYear: true
     buttonText: 'Select date'
 #    dateFormat: 'yy-dd-mm'
   $('.datepicker.hasDatepicker').on 'click', ()->
@@ -1454,9 +1456,9 @@ $(document).ready ->
 #===========================================================
 # email templates
 #===========================================================
-  $('ul.ud-navigation li').click (e)->
+  $('ul.ud-navigation li a').click (e)->
     e.preventDefault()
-    current_position = $(this).index()
+    current_position = $(this).parent().index()
 
     $wrapper = $(this).closest('.email-templates-wrap')
 
@@ -1464,7 +1466,7 @@ $(document).ready ->
     $tabHeader = tabWrapper.find('li')
 
 
-    $tabHeader.removeClass('active')
+    $tabHeader.children().removeClass('active')
     $(this).addClass('active')
 
     $body_tabs = $wrapper.find('li.ud-et')
