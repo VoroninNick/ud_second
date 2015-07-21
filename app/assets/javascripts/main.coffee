@@ -163,7 +163,7 @@ friends_online = () ->
 
 
 resetForm = ($form) ->
-  $form.find('input, select, textarea').val ''
+  $form.find('input, select, textarea').not(':input[type=button], :input[type=submit], :input[type=reset]').val ''
 
 $(document).ready ->
 #  =========================

@@ -373,7 +373,7 @@ $content-bg : #2E3E51
 .open .navicon:after
   transition: $duration
 
-.open.larr .navicon,
+.open.larr .navicon
   &:before, &:after
     width: 1.2rem
   &:before
@@ -425,6 +425,21 @@ $content-bg : #2E3E51
     line-height: rem-calc(24)
     width: 24px
     text-align: center
+.primary-menu-wrap
+  @media (min-height: 0) and (max-height : 600px)
+    position: absolute
+    top: 128px
+    bottom: 0
+    left: 0
+    right: 0px
+    overflow: hidden
+    ul.primary-menu
+      overflow-y: auto
+      position: absolute
+      left: 0
+      right: -15px
+      top: 0
+      bottom: 0
 ul.primary-menu
   margin-left: 0
   li
@@ -2549,6 +2564,8 @@ select[multiple]
   width: 100%
   overflow: hidden
   height: 55px
+  @media (min-height: 0) and (max-height : 600px)
+    display: none
 ul.socials
   width: 260px
   transition: width .5s
