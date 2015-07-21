@@ -711,6 +711,7 @@ $(document).ready ->
     buttonImageOnly: true
     changeMonth: true
     changeYear: true
+    yearRange: "-95:-18"
     buttonText: 'Select date'
 #    dateFormat: 'yy-dd-mm'
   $('.datepicker.hasDatepicker').on 'click', ()->
