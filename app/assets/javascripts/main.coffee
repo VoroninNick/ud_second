@@ -1459,6 +1459,7 @@ $(document).ready ->
 #===========================================================
   $('ul.ud-navigation li a').click (e)->
     e.preventDefault()
+    alert 'ttt'
     current_position = $(this).parent().index()
 
     $wrapper = $(this).closest('.email-templates-wrap')

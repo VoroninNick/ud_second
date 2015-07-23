@@ -6,33 +6,33 @@
           form.ud-mt-ajax-send method='POST' action=get_email_template_path
             ul.ud-navigation
               li
-                |E-mail confirmation (done)
-              /.switch.round.small
-              /  input#ud-mt-radio1 type="radio" name="emailTemplate" value="1"
-              /  label for="ud-mt-radio1"
+                a E-mail confirmation (done)
+                .switch.round.small
+                  input#ud-mt-radio1 type="radio" name="emailTemplate" value="1"
+                  label for="ud-mt-radio1"
               li
-                |Welcome to UD (done)
-              /.switch.round.small
-              /  input#ud-mt-radio2 type="radio" name="emailTemplate" value="2"
-              /  label for="ud-mt-radio2"
+                a Welcome to UD (done)
+                .switch.round.small
+                  input#ud-mt-radio2 type="radio" name="emailTemplate" value="2"
+                  label for="ud-mt-radio2"
               li
-                |Password reset letter (done)
+                a Password reset letter (done)
               li
-                |Congratulations You have a new password (done)
+                a Congratulations You have a new password (done)
               li
-                |You have a new message from (done)
+                a You have a new message from (done)
               li
-                |Your photo has been approved (done)
+                a Your photo has been approved (done)
               li
-                |Your photo has not been approved (done)
+                a Your photo has not been approved (done)
               li
-                |Daily Report on your account (done)
+                a Daily Report on your account (done)
               li
-                |View new beautiful diamonds (done)
-              li.active
-                |Congratulations on your Birthday! (done)
+                a View new beautiful diamonds (done)
+              li
+                a.active Congratulations on your Birthday! (done)
             hr
-            .hide
+
               = tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token)
               .input
                 label for="test_email_template" Емейл для отримання тестового шаблону:

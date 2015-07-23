@@ -1,5 +1,10 @@
 class MainController < ApplicationController
   layout "landing", only: [:main, :main_registration, :main_recovery_password]
+  layout "email_template", only: [:tt]
+
+  def tt
+
+  end
 
   def main
 
