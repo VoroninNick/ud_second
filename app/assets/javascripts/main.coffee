@@ -1446,11 +1446,14 @@ $(document).ready ->
     $container.fadeIn 300
 
   $notification_containers = $("div.notification-container")
-  $notification_containers.on "mouseUpOut", ()->
-    $containers = $(this)
+#  $notification_containers.on "mouseUpOut", ()->
+#    $containers = $(this)
 #    console.log("hello")
+#    $containers.fadeOut duration: 300
+  $('body').on "mouseUpOut", '.notification-container', ()->
+    $containers = $(this)
+    console.log("hello")
     $containers.fadeOut duration: 300
-
   $notification_containers.observeMouseOut()
 
 
