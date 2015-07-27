@@ -1129,7 +1129,7 @@ $(document).ready ->
 #======================================================================
 #  mailbox  expand message
 #======================================================================
-  $('.ui-message-main-wrap .ui-read-more').on "click", (event) ->
+  $('.ud-inbox-message-wrap').on 'click', '.ui-read-more', (event) ->
 #    alert 'expand'
     wrap = $(@).closest('.ud-text-message-wrap')
     if !wrap.hasClass('ui-om-expand')
@@ -1440,7 +1440,7 @@ $(document).ready ->
 #===========================================================
 #notification popup
 #===========================================================
-  $('.notification-link').click (event)->
+  $('body').on 'click', '.notification-link', (event)->
     $wrap = $(this).closest('.notification-wrap')
     $container = $wrap.find('.notification-container').filter(":not(:visible)")
     $container.fadeIn 300
