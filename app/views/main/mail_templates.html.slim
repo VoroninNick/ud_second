@@ -7,12 +7,12 @@
             ul.ud-navigation
               li
                 a E-mail confirmation (done)
-                .switch.round.small
+                .switch.round.small.hide
                   input#ud-mt-radio1 type="radio" name="emailTemplate" value="1"
                   label for="ud-mt-radio1"
               li
                 a Welcome to UD (done)
-                .switch.round.small
+                .switch.round.small.hide
                   input#ud-mt-radio2 type="radio" name="emailTemplate" value="2"
                   label for="ud-mt-radio2"
               li
@@ -34,7 +34,7 @@
             hr
 
               = tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token)
-              .input
+              .input.hide
                 label for="test_email_template" Емейл для отримання тестового шаблону:
                 input#test_email_template name="email" type="email" placeholder="email@mail.com" required=""
                 button type="submit" Надіслати

@@ -27,7 +27,7 @@ Rails.application.routes.draw do
   get 'mails' => 'main#mail_templates'
 
   get 'test' => 'main#test'
-  get 'template' => 'main#tt'
+  get 'tt' => 'main#tt'
 
   post '/get-email-template' => 'main#email_template'
 
