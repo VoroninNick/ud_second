@@ -106,8 +106,56 @@
     background-color: #EDF0F1
     .ud-plaid-message-link
       display: none
+    .ud-inbox-message-group
+      display: none
     &.ud-opened-message-block
       margin: 20px 0
+      .ud-inbox-message-group
+        position: relative
+        height: 33px
+        overflow: hidden
+        background-color: #EDF0F1
+        display: block
+        border-top: 1px solid #BEC3C7
+        &:before
+          display: block
+          content: ""
+          height: 1px
+          left: 0
+          bottom: 1px
+          right: 0
+          position: absolute
+          background-color: #fff
+          z-index: 111111
+        &:after
+          display: block
+          content: ""
+          height: 1px
+          left: 0
+          bottom: 0px
+          right: 0
+          position: absolute
+          background-color: #BEC3C7
+          z-index: 111111
+        .ud-inbox-mg-button-wrap
+          position: absolute
+          left: 0
+          top: 0
+          right: 0
+          bottom: 0
+          background-color: #404049
+          z-index: 1111
+          cursor: pointer
+          .ud-inbox-mg-button
+            color: #3598DA
+            font-size: 0.875rem
+            font-weight: 300
+            font-family: "Fira Sans", sans-serif
+            display: inline-block
+            padding: 0 20px
+            line-height: 33px
+            background-color: #BEC3C7
+            +my_horizontal_align
     &.ud-plaid-message
       p.ud-text-message
         width: 150px
@@ -136,6 +184,7 @@
         display: none
       p
         color: #FF6F70
+
 
   .ui-all-messages
     margin-top: 28px
@@ -330,7 +379,7 @@
             top: 0
             right: 0
             bottom: 0
-            background-color: #EDF0F1
+            background-color: #EFECCE
             p
               color: #2E3E51
               font-size: 0.875rem
@@ -446,6 +495,7 @@
             border-radius: 50%
             padding-bottom: 100%
       &.ud-inbox-unread-message
+        background-color: #EFECCE
         .ui-message-main-wrap
           &:before, b, p
             color: #2E3E51
