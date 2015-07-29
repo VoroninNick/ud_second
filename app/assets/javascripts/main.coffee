@@ -1452,7 +1452,7 @@ $(document).ready ->
 #    $containers.fadeOut duration: 300
   $('body').on "mouseUpOut", '.notification-container', ()->
     $containers = $(this)
-    console.log("hello")
+#    console.log("hello")
     $containers.fadeOut duration: 300
   $notification_containers.observeMouseOut()
 
