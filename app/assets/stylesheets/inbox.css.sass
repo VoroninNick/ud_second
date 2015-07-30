@@ -282,6 +282,9 @@
         right: 0
         position: absolute
         background-color: #BEC3C7
+      .no-padding-left
+        @media #{$medium-down}
+          padding-left: 0.9375rem
       .avatar-wrap
         position: relative
         width: 60px
@@ -321,12 +324,16 @@
           content: attr(data-count-messages)
           position: absolute
           top: 0
-          left: -25px
+          left: -43px
           color: #BEC3C7
           font:
             size: rem-calc(18)
             weight: 400
           line-height: 1.35rem
+          width: 40px
+          text-align: right
+          @media #{$small-only}
+            display: none
         p
           margin-bottom: 0
         .ui-message-detail-info
@@ -458,7 +465,14 @@
               weight: 300
             line-height: rem-calc(30)
             margin-bottom: 0
-
+      .ud-om-counter
+        color: #BEC3C7
+        font-size: 1.125rem
+        font-weight: 400
+        line-height: 1.35rem
+        display: none
+        @media #{$small-only}
+          display: inline-block
       b
         color: #BEC3C7
         font:
@@ -466,6 +480,9 @@
           weight: 400
         line-height: rem-calc(21.6)
         cursor: pointer
+        span
+          color: #FF6F70
+          margin-right: 4px
 
       p.ud-text-message
         color: #BEC3C7
@@ -498,7 +515,7 @@
       &.ud-inbox-unread-message, .ud-inbox-unread-message
         background-color: #EFECCE
         .ui-message-main-wrap
-          &:before, b, p
+          &:before, b, p, .ud-om-counter
             color: #2E3E51
       &.ud-message-with-arrow
         .avatar-wrap:after
