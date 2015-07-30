@@ -14,7 +14,7 @@ class NewsletterMailer < ApplicationMailer
   end
 
   def data_template(emailTemplate, email)
-    et = 'email_confirmation'
+    et = 'test_email'
     if emailTemplate == '1'
       et = 'email_confirmation'
     elsif emailTemplate == '2'
