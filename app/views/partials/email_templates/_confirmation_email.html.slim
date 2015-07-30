@@ -1,21 +1,7 @@
 .ud-mt-mail-cover
   .ud-mt-mail
     .ud-mt-header
-      .ud-mt-header-inner
-        .ud-mt-logo
-          a
-            =image_tag "UD-logo-diamond.png", class: "ud-mt-logo-ico"
-            =image_tag "UAD-logo-textpart.png", class: "ud-mt-logo-label"
-        ul.ud-mt-socials
-          li
-            a href="" rel="nofollow"
-              =image_tag "UD-social-facebook.png"
-          li
-            a href="" rel="nofollow"
-              =image_tag "UD-social-twitter.png"
-          li
-            a href="" rel="nofollow"
-              =image_tag "UD-social-gplus.png"
+      = render partial: "partials/email_templates/et_header"
 
     .ud-mt-main.ud-mt-confirmation
       .ud-mt-white
@@ -54,21 +40,4 @@
 
 
     .ud-mt-footer
-      .ud-mt-footer-inner
-        .ud-mt-footer-left
-          p
-            |This email was sent to
-            a
-              |voronin.nick@gmail.com
-          p
-            |Don't want to receive this type of email?
-            a
-              |Unsubscribe
-          p
-            |Have a question?
-            a
-              |Use custumer support
-        .ud-mt-footer-right
-          p
-            =image_tag "UAD-diamond-logo.png"
-            |© UkrainainDiamonds 2015
+      = render partial: "partials/email_templates/et_footer"
