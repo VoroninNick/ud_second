@@ -1136,7 +1136,7 @@ $(document).ready ->
 #  mailbox  expand message
 #======================================================================
   $('.ud-inbox-message-wrap').on 'click', '.ui-read-more', (event) ->
-#    alert 'expand'
+#    $(@).closest('.ud-inbox-message-block-wrap').removeClass('ud-inbox-unread-message')
     wrap = $(@).closest('.ud-text-message-wrap')
     if !wrap.hasClass('ui-om-expand')
       wrap.addClass('ui-om-expand')

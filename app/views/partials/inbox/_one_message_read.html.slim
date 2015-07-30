@@ -31,14 +31,20 @@
           .row
             .columns.large-11.medium-11.small-11
               .ud-text-message-wrap
-                .ui-one-message
-                  p.ud-text-message
-                    |I wish I could call you with a special name in real life.
-                     But did you decide something about our acquaintence?
-                     Or still not sure?? what doubts do you have, suleyman?
-                     Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me.
-                     I`m repeating it to you all the time, so what is the problem?
-                     You look through my profile when I write to you.? Oksana
+                /.ui-one-message
+                p.ud-text-message
+                  |I wish I could call you with a special name in real life.
+                   But did you decide something about our acquaintence?
+                   Or still not sure?? what doubts do you have, suleyman?
+                   Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me.
+                   I`m repeating it to you all the time, so what is the problem?
+                   You look through my profile when I write to you.? Oksana
+                .ulmfc
+                  p
+                    |My DREAM is strong family, I know it will someday.
+                     And everything I do - should come in ETERNITY soon, it will be my children...through all generations.
+                     So here I am. If you like my world – so just come in and you’ll see more.
+                     Enjoy!
                 .row.ud-has-attached-file
                   .column
                     .ud-attached-wrap
@@ -97,10 +103,8 @@
                       |Hello! Your life is gonna change this year and I can tell you why!
                        My name is Gregory, I was born in sweet place of Ukraine - calling Poltava.
                        To introduce myself I want to start from five words: -faith -love -future -dream -eternity You know why?
-                  .ui-read-more  expand
+                  .ui-read-more data-name-e="Show more" data-name-une="Show less"
 
-            .row
-              .column
       .clearfix
     / sub message
     .ud-inbox-message-block-wrap.ud-inbox-message-sub-block-wrap.hide
@@ -194,10 +198,8 @@
                       |Hello! Your life is gonna change this year and I can tell you why!
                        My name is Gregory, I was born in sweet place of Ukraine - calling Poltava.
                        To introduce myself I want to start from five words: -faith -love -future -dream -eternity You know why?
-                  .ui-read-more  expand
+                  .ui-read-more data-name-e="Show more" data-name-une="Show less"
 
-            .row
-              .column
       .clearfix
     / sub message
     .ud-inbox-message-block-wrap.ud-inbox-message-sub-block-wrap.hide
@@ -291,12 +293,62 @@
                       |Hello! Your life is gonna change this year and I can tell you why!
                        My name is Gregory, I was born in sweet place of Ukraine - calling Poltava.
                        To introduce myself I want to start from five words: -faith -love -future -dream -eternity You know why?
-                  .ui-read-more  expand
-
-            .row
-              .column
+                  .ui-read-more data-name-e="Show more" data-name-une="Show less"
       .clearfix
 
+  / new message
+  .ud-inbox-message-block-wrap.ud-inbox-message-sub-block-wrap.ud-inbox-unread-message.hide
+    .ud-message-option-wrap.notification-wrap
+      .ud-message-option.notification-link
+        =embedded_svg "UD-icon-sub menu.svg"
+      .ud-message-option-popup.notification-container
+        = render partial: "partials/inbox/letter_options"
+    .row
+      .columns.large-2.medium-2
+        .avatar-wrap
+          .avatar
+            .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
+          .title-for-avatar.text-center
+            span
+              |me
+      .columns.large-10.medium-10.no-padding-left
+        .ui-message-main-wrap
+          .row
+            .columns.large-6.medium-6
+              p.ud-date 02:32 PM
+            .columns.large-6.medium-6
+              .ui-message-detail-info
+                a
+                  =embedded_svg "UAD-inbox-5-saved.svg"
+                a
+                  =embedded_svg "UAD-inbox-2-Intro.svg"
+                a
+                  =embedded_svg "UAD-inbox-4-drafts.svg"
+
+          .row
+            .columns.large-11.medium-11.small-11
+              .ud-text-message-wrap
+                .ui-one-message
+                  p.ud-text-message
+                    |An example Rails 4.2 app with Stripe and the Payola gem for a membership or subscription site.
+                  /.row.ud-has-attached-file
+                  /  .column
+                  /    .ud-attached-wrap
+                  /      .row
+                  /        .columns
+                  /          b 3 files attached
+                  /      .row
+                  /        .columns.large-2.medium-2.small-4
+                  /          a
+                  /            .image style="background: url('#{asset_path("My gallery 4.jpg")}')no-repeat center center;"
+                  /        .columns.large-2.medium-2.small-4
+                  /          a
+                  /            .image style="background: url('#{asset_path("My gallery 5.jpg")}')no-repeat center center;"
+                  /        .columns.large-2.medium-2.small-4.end
+                  /          a
+                  /            .image style="background: url('#{asset_path("My gallery 6.jpg")}')no-repeat center center;"
+                .ui-read-more data-name-e="Show more" data-name-une="Show less"
+    .clearfix
   / new message
   .ud-inbox-message-block-wrap.ud-inbox-message-sub-block-wrap.ud-inbox-unread-message.hide
     .ud-message-option-wrap.notification-wrap
@@ -334,77 +386,22 @@
                     |My DREAM is strong family, I know it will someday.
                      And everything I do - should come in ETERNITY soon, it will be my children...through all generations.
                      So here I am. If you like my world – so just come in and you’ll see more. Enjoy!
-                  .row.ud-has-attached-file
-                    .column
-                      .ud-attached-wrap
-                        .row
-                          .columns
-                            b 3 files attached
-                        .row
-                          .columns.large-2.medium-2.small-4
-                            a
-                              .image style="background: url('#{asset_path("My gallery 4.jpg")}')no-repeat center center;"
-                          .columns.large-2.medium-2.small-4
-                            a
-                              .image style="background: url('#{asset_path("My gallery 5.jpg")}')no-repeat center center;"
-                          .columns.large-2.medium-2.small-4.end
-                            a
-                              .image style="background: url('#{asset_path("My gallery 6.jpg")}')no-repeat center center;"
-                .ui-read-more data-name-e="Show more" data-name-une="Show less"
-    .clearfix
-  / sub message
-  .ud-inbox-message-block-wrap.ud-inbox-message-sub-block-wrap.ud-inbox-unread-message.hide
-    .ud-message-option-wrap.notification-wrap
-      .ud-message-option.notification-link
-        =embedded_svg "UD-icon-sub menu.svg"
-      .ud-message-option-popup.notification-container
-        = render partial: "partials/inbox/letter_options"
-    .row
-      .columns.large-2.medium-2
-        .avatar-wrap
-          .avatar
-            .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
-          .title-for-avatar.text-center
-            span
-              |me
-      .columns.large-10.medium-10.no-padding-left
-        .ui-message-main-wrap
-          .row
-            .columns.large-6.medium-6
-              p.ud-date 02:32 PM
-            .columns.large-6.medium-6
-              .ui-message-detail-info
-                a
-                  =embedded_svg "UAD-inbox-5-saved.svg"
-                a
-                  =embedded_svg "UAD-inbox-2-Intro.svg"
-                a
-                  =embedded_svg "UAD-inbox-4-drafts.svg"
-
-          .row
-            .columns.large-11.medium-11.small-11
-              .ud-text-message-wrap
-                .ui-one-message
-                  p.ud-text-message
-                    |My DREAM is strong family, I know it will someday.
-                     And everything I do - should come in ETERNITY soon, it will be my children...through all generations.
-                     So here I am. If you like my world – so just come in and you’ll see more. Enjoy!
-                  .row.ud-has-attached-file
-                    .column
-                      .ud-attached-wrap
-                        .row
-                          .columns
-                            b 3 files attached
-                        .row
-                          .columns.large-2.medium-2.small-4
-                            a
-                              .image style="background: url('#{asset_path("My gallery 4.jpg")}')no-repeat center center;"
-                          .columns.large-2.medium-2.small-4
-                            a
-                              .image style="background: url('#{asset_path("My gallery 5.jpg")}')no-repeat center center;"
-                          .columns.large-2.medium-2.small-4.end
-                            a
-                              .image style="background: url('#{asset_path("My gallery 6.jpg")}')no-repeat center center;"
+                  /.row.ud-has-attached-file
+                  /  .column
+                  /    .ud-attached-wrap
+                  /      .row
+                  /        .columns
+                  /          b 3 files attached
+                  /      .row
+                  /        .columns.large-2.medium-2.small-4
+                  /          a
+                  /            .image style="background: url('#{asset_path("My gallery 4.jpg")}')no-repeat center center;"
+                  /        .columns.large-2.medium-2.small-4
+                  /          a
+                  /            .image style="background: url('#{asset_path("My gallery 5.jpg")}')no-repeat center center;"
+                  /        .columns.large-2.medium-2.small-4.end
+                  /          a
+                  /            .image style="background: url('#{asset_path("My gallery 6.jpg")}')no-repeat center center;"
                 .ui-read-more data-name-e="Show more" data-name-une="Show less"
     .clearfix
   /===========================/ input
