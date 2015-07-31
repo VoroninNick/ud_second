@@ -14,11 +14,13 @@ class NewsletterMailer < ApplicationMailer
   end
 
   def data_template(emailTemplate, email)
-    et = 'test_email'
+    et = 'password_reset'
     if emailTemplate == '1'
       et = 'email_confirmation'
     elsif emailTemplate == '2'
       et = 'welcome_to_ud'
+    elsif emailTemplate == '3'
+      et = 'password_reset'
     end
 
     mail(:template_path => 'newsletter_mailer', :template_name => et, layout: false, :subject => "tests emails", to: email)
