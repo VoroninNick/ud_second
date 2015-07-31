@@ -111,6 +111,38 @@
               .date-time-wrap
                 p 02:16 PM
               p  What are u duing?
+      .row.ud-one-message.my-message
+        .column.large-3.medium-3.small-3
+          .row
+            .columns
+              .avatar
+                .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+          .row
+            .columns.text-center
+              .about-people
+                b me
+        .column.large-9.medium-9.small-9.end
+          .chat-bubbles-wrap
+            .text-wrap
+              .date-time-wrap
+                p 02:18 PM
+              p How are you?
+          .ud-chat-one-status
+            p Read
+      .row.ud-one-message.enemy-message.ud-one-message-is-typing
+        .column.large-3.medium-3.small-3.right
+          .row
+            .columns
+              .avatar
+                .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+          .row
+            .columns.text-center
+              .about-people
+                b Olena
+        .column.large-4.medium-5.small-4
+          .chat-bubbles-wrap
+            .text-wrap
+              p is typing...
 
   .text-chat-input-container.ud-attach-file-into-message
     .text-chat-input-container-inner

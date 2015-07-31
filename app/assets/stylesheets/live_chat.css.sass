@@ -404,7 +404,7 @@
           border-width: 0 20px 20px 0
           border-color: transparent #ffffff transparent transparent
           position: absolute
-          top: 24px
+          top: 12px
           left: -20px
           .about-people
       b
@@ -434,11 +434,19 @@
           border-width: 20px 20px 0 0
           border-color: #d7eaf8 transparent transparent transparent
           position: absolute
-          top: 24px
+          top: 12px
           right: -20px
+      &.ud-one-message-is-typing
+        .chat-bubbles-wrap
+          background-color: #e0e0e0
+          &:after
+            border-color: #e0e0e0 transparent transparent transparent
+          .text-wrap
+            p
+              color: #6D6E71
     .chat-bubbles-wrap
       width: 100%
-      min-height: 80px
+      min-height: 45px
       border-radius: 7px
       @media (min-width : 980px) and (max-width : 1170px)
         width: 95%
@@ -467,6 +475,15 @@
         line-height: rem-calc(19)
         color: #404049
         margin-bottom: 0
+
+    .ud-chat-one-status
+      p
+        color: #BEC3C7
+        font-size: 0.625rem
+        font-weight: 300
+        line-height: 0.75rem
+        margin: 0
+        padding: 5px 0 0 15px
     .avatar
       width: 64px
       margin: 0 auto
