@@ -201,9 +201,13 @@ $(document).ready ->
 #===========================================
 #  smiley
 #  ==========================================
-  $('.ud-smiles-inner a').click ->
+  $('body').on "click",".ud-smiles-inner a", ->
     smiley = $(@).children().attr('title')
-    text_input = $(@).closest('.ud-input-message-wrap').find('textarea')
+    if $(@).closest('.ud-input-message-wrap').length >0
+      text_input = $(@).closest('.ud-input-message-wrap, .ud-emotion-wrap').find('textarea')
+    else if $(@).closest('.ud-emotion-wrap').length >0
+      text_input = $(@).closest('.ud-emotion-wrap').find('textarea')
+
     if (text_input.length == 0)
       text_input = $('#message')
     text_input.val(text_input.val() + " " + smiley + " ")
