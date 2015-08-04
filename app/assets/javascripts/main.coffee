@@ -202,10 +202,11 @@ $(document).ready ->
 #  smiley
 #  ==========================================
   $('.ud-smiles-inner a').click ->
-
     smiley = $(@).children().attr('title')
     text_input = $(@).closest('.ud-input-message-wrap').find('textarea')
-    text_input.val(text_input.val()+" "+smiley+" ")
+    if (text_input.length == 0)
+      text_input = $('#message')
+    text_input.val(text_input.val() + " " + smiley + " ")
 
 
 # ============================================================================

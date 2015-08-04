@@ -1,0 +1,29 @@
+.ud-mt-mail-cover
+  .ud-mt-mail
+    .ud-mt-header
+      = render partial: "partials/email_templates/et_header"
+
+    .ud-mt-main.ud-mt-account-not-approved
+      .ud-mt-white
+        .ud-mt-row
+          .ud-mt-image
+            = image_tag "UAD-email-2-14.jpg"
+          .ud-mt-title
+            h2
+              |Your account has not benn approved
+            P
+              |We are sorry, but your registration information did not fit our riles policy
+        .ud-mt-dear-block
+          h3
+            |Dear Crisitian,
+          p
+            |Your account was not approved, due to wrong information toy added about yourself.
+        p
+          |Have a great time using our services!
+        P
+          |The 
+          a
+            |UkrainianDiamonds.com 
+          |Team
+    .ud-mt-footer
+      = render partial: "partials/email_templates/et_footer"
