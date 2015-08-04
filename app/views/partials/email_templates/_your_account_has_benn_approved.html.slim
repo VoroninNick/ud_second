@@ -1,0 +1,114 @@
+.ud-mt-mail-cover
+  .ud-mt-mail
+    .ud-mt-header
+      = render partial: "partials/email_templates/et_header"
+
+    .ud-mt-main.ud-mt-account-approved
+      .ud-mt-white
+        .ud-mt-row
+          .ud-mt-image
+            = image_tag "UAD-email-2-15.jpg"
+          .ud-mt-title
+            h2
+              |Your account has benn approved
+
+        .ud-mt-dear-block
+          h3
+            |Dear Crisitian,
+          p
+            |We have approved you account, now you can fully anjoy communication with beautiful Ukrainian Diamonds.
+        h3 Here is some Diamonds to meet with
+        .ud-mt-profiles-wrap
+          .ud-mt-profiles
+            .ud-mt-one-prof
+              .image style="background: url('#{asset_path("new-girl-1.jpg")}')no-repeat center center;"
+              .ud-mt-prof-information
+                .ud-mt-triangle-header
+                  .triangle-wrap
+                    .triangle
+                .ud-mt-prof-about
+                  b Kateryna
+                  p
+                    |23
+                    span
+                      ||
+                    |Lviv
+            .ud-mt-one-prof
+              .image style="background: url('#{asset_path("girl_22.jpg")}')no-repeat center center;"
+              .ud-mt-prof-information
+                .ud-mt-triangle-header
+                  .triangle-wrap
+                    .triangle
+                .ud-mt-prof-about
+                  b Galina
+                  p
+                    |23
+                    span
+                      ||
+                    |Lviv
+            .ud-mt-one-prof
+              .image style="background: url('#{asset_path("girl_11.jpeg")}')no-repeat center center;"
+              .ud-mt-prof-information
+                .ud-mt-triangle-header
+                  .triangle-wrap
+                    .triangle
+                .ud-mt-prof-about
+                  b Olena
+                  p
+                    |25
+                    span
+                      ||
+                    |Lviv
+            .ud-mt-one-prof
+              .image style="background: url('#{asset_path("girl_11.jpeg")}')no-repeat center center;"
+              .ud-mt-prof-information
+                .ud-mt-triangle-header
+                  .triangle-wrap
+                    .triangle
+                .ud-mt-prof-about
+                  b Myroslava
+                  p
+                    |24
+                    span
+                      ||
+                    |Lviv
+            .ud-mt-one-prof
+              .image style="background: url('#{asset_path("new-girl-2.jpg")}')no-repeat center center;"
+              .ud-mt-prof-information
+                .ud-mt-triangle-header
+                  .triangle-wrap
+                    .triangle
+                .ud-mt-prof-about
+                  b Maryana
+                  p
+                    |23
+                    span
+                      ||
+                    |Lviv
+            .ud-mt-one-prof
+              .image style="background: url('#{asset_path("new-girl-3.jpg")}')no-repeat center center;"
+              .ud-mt-prof-information
+                .ud-mt-triangle-header
+                  .triangle-wrap
+                    .triangle
+                .ud-mt-prof-about
+                  b Alexandra
+                  p
+                    |21
+                    span
+                      ||
+                    |Lviv
+
+            .ud-mt-clearfix
+
+        .ud-mt-email-button
+          a
+        p
+          |Have a great time using our services!
+        P
+          |The 
+          a
+            |UkrainianDiamonds.com 
+          |Team
+    .ud-mt-footer
+      = render partial: "partials/email_templates/et_footer"
