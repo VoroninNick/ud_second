@@ -8,6 +8,7 @@
     .row
       .columns.large-2.medium-2.small-2
         .avatar-wrap
+          =render partial: "partials/inbox_checkbox", locals: {value: "5"}
           .avatar
             .image style="background: url('#{asset_path("girl_11.jpeg")}')no-repeat center center;"
           .title-for-avatar.text-center
@@ -51,6 +52,7 @@
       .row
         .columns.large-2.medium-2.small-2
           .avatar-wrap
+            =render partial: "partials/inbox_checkbox", locals: {value: "6"}
             .avatar
               .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
             .title-for-avatar.text-center

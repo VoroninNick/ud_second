@@ -92,6 +92,7 @@
                   .row
                     .columns.large-2.medium-2.small-2
                       .avatar-wrap
+
                         .avatar
                           .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
                         .title-for-avatar.text-center
@@ -126,6 +127,13 @@
           .ui-all-messages.title-head.grey.notification-wrap
             .columns
               .wrap
+                .ud-inbox-message-actions-wrap
+                  a
+                    =embedded_svg "ic_done_all_24px.svg"
+                  a
+                    =embedded_svg "UAD-inbox-5-saved.svg"
+                  a
+                    =embedded_svg "UAD-inbox-6-trash.svg"
                 h4 all conversations
                 .items-menu.notification-link
                   =image_tag "UD-icon-sub menu.svg"
@@ -163,6 +171,7 @@
                   .row
                     .columns.large-2.medium-2.small-2
                       .avatar-wrap
+                        =render partial: "partials/inbox_checkbox", locals: {value: "1"}
                         .avatar
                           .image style="background: url('#{asset_path("girl_11.jpeg")}')no-repeat center center;"
                         .title-for-avatar.text-center
@@ -198,6 +207,7 @@
                     .row
                       .columns.large-2.medium-2.small-2
                         .avatar-wrap
+                          =render partial: "partials/inbox_checkbox", locals: {value: "2"}
                           .avatar
                             .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
                           .title-for-avatar.text-center
@@ -253,6 +263,7 @@
                   .row
                     .columns.large-2.medium-2.small-2
                       .avatar-wrap
+                        =render partial: "partials/inbox_checkbox", locals: {value: "9"}
                         .avatar
                           .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
                         .title-for-avatar.text-center
@@ -298,6 +309,7 @@
                   .row
                     .columns.large-2.medium-2.small-2
                       .avatar-wrap
+                        =render partial: "partials/inbox_checkbox", locals: {value: "10"}
                         .avatar
                           .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
                         .title-for-avatar.text-center
@@ -340,6 +352,7 @@
                   .row
                     .columns.large-2.medium-2
                       .avatar-wrap
+                        =render partial: "partials/inbox_checkbox", locals: {value: "11"}
                         .avatar
                           .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
                         .title-for-avatar.text-center
@@ -377,6 +390,7 @@
                     .row
                       .columns.large-2.medium-2.small-2
                         .avatar-wrap
+                          =render partial: "partials/inbox_checkbox", locals: {value: "12"}
                           .avatar
                             a href=profile_path
                               .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
@@ -487,6 +501,7 @@
                   .row
                     .columns.large-2.medium-2.small-2
                       .avatar-wrap
+                        =render partial: "partials/inbox_checkbox", locals: {value: "13"}
                         .avatar.ud-offline
                           .image style="background: url('#{asset_path("girl_103.jpg")}')no-repeat center center;"
                         .title-for-avatar.text-center

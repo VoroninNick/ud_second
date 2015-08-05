@@ -1082,16 +1082,29 @@ $(document).ready ->
 
 
 # gits inbox tabs
-  $('.ud-inbox-page-wrap .ud-inbox-tab').click ->
-    current_position = $(this).index()
-    $head_tabs = $(this)
-    $wrap = $(this).closest('.ud-inbox-page-wrap')
-    $('.ud-inbox-page-wrap .ud-inbox-tab').removeClass('active')
-    $(this).addClass('active')
+#  $('.ud-inbox-page-wrap .ud-inbox-tab').click ->
+#    alert 'this'
+#    current_position = $(this).index()
+#    $head_tabs = $(this)
+#    $wrap = $(this).closest('.ud-inbox-page-wrap')
+#    $('.ud-inbox-page-wrap .ud-inbox-tab').removeClass('active')
+#    $(this).addClass('active')
+#
+#    $body_tabs = $wrap.find('.ud-inbox-one-tab-wrap')
+#    $body_tabs.addClass('hide')
+#    $body_tabs.eq(current_position).removeClass('hide')
 
-    $body_tabs = $wrap.find('.ud-inbox-one-tab-wrap')
-    $body_tabs.addClass('hide')
-    $body_tabs.eq(current_position).removeClass('hide')
+
+# mailbox message checkbox action handler
+  $('.ud-inbox-wrap').on 'change', '.ud-inbox-checkbox input', ->
+    el = $(@).closest('.ud-inbox-page-wrap').find('.ui-all-messages')
+    if $(@).is(':checked')
+      if !el.hasClass('ud-inbox-is-checked-message') && $(@).closest('.ud-inbox-page-wrap').find('input:checked').length > 0
+        el.addClass('ud-inbox-is-checked-message')
+    else if !$(@).closest('.ud-inbox-page-wrap').find('input:checked').length
+      el.removeClass('ud-inbox-is-checked-message')
+
+
 
 #  mailbox show browse file
   $('.ud-has-attached-file .ua-tumbler').click ->
@@ -1156,6 +1169,9 @@ $(document).ready ->
     $editMessage = $wrapper.find('.ud-inbox-sent-message')
     $subMesssageWrapper = $wrapper.find('.ud-inbox-message-sub-block-wrap')
     current_message = $wrapper.find('.uic-current')
+
+    $(@).parent().hide()
+    $wrapper.find('p.ud-text-message, .ud-has-attached-file, .ui-read-more').show()
 
     if !$wrapper.hasClass('ud-opened-message-block')
       if !$wrapper.hasClass('ud-nc-b') and !$wrapper.hasClass('ud-plaid-message')

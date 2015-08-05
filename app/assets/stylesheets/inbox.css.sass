@@ -58,6 +58,14 @@
 // code from site.css by Ivan      ----END-----
 //========================================================
 .ud-inbox-page-wrap
+  .ud-inbox-checkbox
+    position: absolute
+    top: -6px
+    left: -30px
+    @media (max-width: 1500px)
+      top: inherit
+      bottom: -33px
+      left: 20px
   .input
     .input-label
       position: relative
@@ -189,6 +197,29 @@
 
   .ui-all-messages
     margin-top: 28px
+    .ud-inbox-message-actions-wrap
+      display: none
+      float: left
+      a
+        svg
+          path
+
+    &.ud-inbox-is-checked-message
+      background-color: #2E2E36
+      .ud-inbox-message-actions-wrap
+        display: inline-block
+        height: 100%
+        a
+          display: inline-block
+          width: 40px
+          height: 100%
+          svg
+            width: 50%
+        path
+          fill: #BEC3C7
+      h4
+        color: #BEC3C7
+
   .ud-inbox-header-wrap
     height: 64px
     background-color: #2E2E36
@@ -218,6 +249,12 @@
           .round-count
             top: 5px
             right: -19px
+            @media #{$medium-only}
+              right: -10px
+            @media #{$small-only}
+              right: -10px
+            @media screen and (max-width: 500px)
+              right: -5px
           .inbox-tab-ico
             height: 100%
             float: left
@@ -228,6 +265,8 @@
           .inbox-tab-title
             height: 100%
             float: left
+            @media #{$medium-down}
+              display: none
             span
               font:
                 size: 1.3125rem
@@ -264,6 +303,7 @@
       padding-right: 0.9375rem
       padding-bottom: 24px
       position: relative
+      min-height: 180px
       &:before
         display: block
         content: ""
@@ -517,6 +557,11 @@
           .image
             border-radius: 50%
             padding-bottom: 100%
+      &.ud-inbox-unread-message
+        .ui-message-main-wrap
+          p.ud-text-message, .ud-has-attached-file, .ui-read-more
+            display: none
+
       &.ud-inbox-unread-message, .ud-inbox-unread-message
         background-color: #EFECCE
         .ui-message-main-wrap
@@ -536,7 +581,7 @@
           left: -40px
           @media (max-width: 1500px)
             top: auto
-            bottom: -20px
+            bottom: -50px
             left: 11px
 .message-attachment-item
   float: left
