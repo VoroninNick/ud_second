@@ -1,0 +1,523 @@
+.ud-inbox-page-wrap
+  .ud-inbox-header-wrap
+    .row.medium-main
+      .columns.medium-10.medium-centered.large-12
+        .row
+          .columns.large-2.medium-2.small-2.ud-inbox-tab.active.ud-inbox-last-tab
+            a
+              .inbox-tab-head-block
+                .inbox-tab-ico
+                  = embedded_svg "UAD-inbox-1-Inbox.svg"
+                .inbox-tab-title
+                  span inbox
+                .round-count data-count="99"
+
+
+  .ud-inbox-content-wrap
+    .row.medium-main
+      .columns.medium-10.medium-centered.large-12
+        .ud-inbox-one-tab-wrap.ud-inbox-wrap
+          .title-head.grey.notification-wrap.hide
+            .columns
+              .wrap
+                h4 draft messeges
+                .items-menu.notification-link
+                  =image_tag "UD-icon-sub menu.svg"
+                  .notification-container
+                    .menu
+                      .group
+                        .title
+                          strong Display options:
+                        .options
+                          .option
+                            .label
+                              .icon
+                                = embedded_svg "UD-icon-sort.svg"
+                              span
+                                |Sort by
+                            .input
+                              select.sort-by
+                                option value="age_increase" Age increase
+                                option value="age_decrease" Age decrease
+                                option value="alfabet" Alfabet
+                                option value="recent_activity" Recent activity
+                                option value="favotites_first" Favotites first
+                            .clearfix
+
+
+          .white-grey.ud-draft-wrap.hide
+            .columns.no-padding
+              .ud-message-one-block-wrap.ud-nc-b
+                .ud-inbox-message-block-wrap
+                  .ud-message-option-wrap.notification-wrap
+                    .ud-message-option.notification-link
+                      =embedded_svg "UD-icon-sub menu.svg"
+                    .ud-message-option-popup.notification-container
+                      = render partial: "partials/inbox/letter_options"
+                  .row
+                    .columns.large-2.medium-2.small-2
+                      .avatar-wrap
+
+                        .avatar
+                          .image style="background: url('#{asset_path("girl_24.jpg")}')no-repeat center center;"
+                        .title-for-avatar.text-center
+                          span
+                            |Galina
+                    .columns.large-10.medium-10.no-padding-left.small-10
+                      .ui-message-main-wrap data-count-messages="[6]"
+                        .row
+                          .columns.large-6.medium-6
+                            b Spring is the subject of conversation
+                          .columns.large-6.medium-6
+                            p.ud-inbox-draft Draft
+                            .ui-message-detail-info
+                              p.ud-date
+                                |2015-02-20
+                              a
+                                =embedded_svg "UAD-inbox-5-saved.svg"
+                              a
+                                =embedded_svg "UAD-inbox-4-drafts.svg"
+
+                        .row
+                          .columns.large-11.medium-11.small-11
+                            p.ud-text-message
+                              |I wish I could call you with a special name in real life. But did you decide something about our acquaintence? Or still not sure?? what doubts do you have, suleyman? Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me. I`m repeating it to you all the time, so what is the problem? You look through my profile when I write to you.? Oksana
+                        .row
+                          .ud-e-attachment-wrap
+
+                  .clearfix
+
+            .clearfix
+
+          .ui-all-messages.title-head.grey.notification-wrap
+            .columns
+              .wrap
+                .ud-inbox-message-actions-wrap
+                  a
+                    =embedded_svg "ic_done_all_24px.svg"
+                  a
+                    =embedded_svg "UAD-inbox-5-saved.svg"
+                  a
+                    =embedded_svg "UAD-inbox-6-trash.svg"
+                h4 all conversations
+                .items-menu.notification-link
+                  =image_tag "UD-icon-sub menu.svg"
+                  .notification-container
+                    .menu
+                      .group
+                        .title
+                          strong Display options:
+                        .options
+                          .option
+                            .label
+                              .icon
+                                = embedded_svg "UD-icon-sort.svg"
+                              span
+                                |Sort by
+                            .input
+                              select.sort-by
+                                option value="age_increase" Age increase
+                                option value="age_decrease" Age decrease
+                                option value="alfabet" Alfabet
+                                option value="recent_activity" Recent activity
+                                option value="favotites_first" Favotites first
+                            .clearfix
+
+
+          .all-conversations.ud-inbox-message-wrap
+            .columns.no-padding
+              .ud-message-one-block-wrap
+                .ud-inbox-message-block-wrap.ud-inbox-unread-message
+                  .ud-message-option-wrap.notification-wrap
+                    .ud-message-option.notification-link
+                      =embedded_svg "UD-icon-sub menu.svg"
+                    .ud-message-option-popup.notification-container
+                      = render partial: "partials/inbox/letter_options"
+                  .row
+                    .columns.large-2.medium-2.small-2
+                      .avatar-wrap
+                        =render partial: "partials/inbox_checkbox", locals: {value: "1"}
+                        .avatar
+                          .image style="background: url('#{asset_path("girl_11.jpeg")}')no-repeat center center;"
+                        .title-for-avatar.text-center
+                          span
+                            |Kateryna
+                    .columns.large-10.medium-10.no-padding-left.small-10
+                      .ui-message-main-wrap data-count-messages=""
+                        .row
+                          .columns.large-6.medium-6
+                            b Spring is the subject of conversation
+                          .columns.large-6.medium-6.no-padding-left
+                            .ui-message-detail-info
+                              p.ud-date
+                                |2015-02-20
+                              a
+                                =embedded_svg "UAD-inbox-5-saved.svg"
+                              a
+                                =embedded_svg "UAD-inbox-2-Intro.svg"
+                              a
+                                =embedded_svg "UAD-inbox-4-drafts.svg"
+
+                        .row
+                          .columns.large-11.medium-11.small-11
+                            p.ud-text-message
+                              |I wish I could call you with a special name in real life. But did you decide something about our acquaintence? Or still not sure?? what doubts do you have, suleyman? Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me. I`m repeating it to you all the time, so what is the problem? You look through my profile when I write to you.? Oksana
+                        .row
+                          .column
+                  .clearfix
+
+
+                .ud-inbox-sent-message.hide tabindex="-1"
+                  .columns
+                    .row
+                      .columns.large-2.medium-2.small-2
+                        .avatar-wrap
+                          =render partial: "partials/inbox_checkbox", locals: {value: "2"}
+                          .avatar
+                            .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+                          .title-for-avatar.text-center
+                            span
+                              |me
+                      .columns.no-padding-left.large-10.medium-10.small-10
+                        .ud-input-message-wrap
+                          form
+                            .row
+                              .columns
+                                .input
+                                  .input-label
+                                    label
+                                      |Quick replay
+                                      span
+                                        |(0/1000)
+
+                                  textarea placeholder="The maximum message length is 1000 symbols" rows="7" maxlength="1000"
+                          .row
+                            .columns
+                              /a Translate into english
+                              a.modal-link.m-send.special-text-shadow.right  href="#" Send
+                              .ud-browse-images-wrap.notification-wrap.right
+                                a.edit-icon-svg.browse-file.notification-link
+                                  = embedded_svg "UD-icon-add files.svg"
+                                .notification-container
+                                  .menu
+                                    .group
+                                      .options
+                                        .option
+                                          .label
+                                            .icon
+                                              = embedded_svg "ud-make-image.svg"
+                                          .input
+                                            a data-reveal-id="AddAPictures" Add a picture
+                                          .clearfix
+                              a.edit-icon-svg.smiles.right
+                                = embedded_svg "UD-icon-smile.svg"
+                          .clearfix
+                  .clearfix
+
+              = render partial: "partials/inbox/one_message"
+              = render partial: "partials/inbox/one_message_membership"
+              = render partial: "partials/inbox/one_message_renew"
+
+              .ud-message-one-block-wrap
+                .ud-inbox-message-block-wrap.ud-inbox-unread-message.ud-message-with-arrow
+                  .ud-message-option-wrap.notification-wrap
+                    .ud-message-option.notification-link
+                      =embedded_svg "UD-icon-sub menu.svg"
+                    .ud-message-option-popup.notification-container
+                      = render partial: "partials/inbox/letter_options"
+                  .row
+                    .columns.large-2.medium-2.small-2
+                      .avatar-wrap
+                        =render partial: "partials/inbox_checkbox", locals: {value: "9"}
+                        .avatar
+                          .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
+                        .title-for-avatar.text-center
+                          span
+                            |Olena
+                    .columns.large-10.medium-10.no-padding-left.small-10
+                      .ui-message-main-wrap data-count-messages="[3]"
+                        .row
+                          .columns.large-6.medium-6
+                            b Spring is the subject of conversation
+                          .columns.large-6.medium-6.no-padding-left
+                            .ui-message-detail-info
+                              p.ud-date Sent: 04/20/2015 12:48 AM
+                              a
+                                =embedded_svg "UAD-inbox-5-saved.svg"
+                              a
+                                =embedded_svg "UAD-inbox-2-Intro.svg"
+                              a
+                                =embedded_svg "UAD-inbox-4-drafts.svg"
+
+                        .row
+                          .columns.large-11.medium-11.small-11
+                            .ud-text-message-wrap
+                              .ui-one-message
+                                p.ud-text-message
+                                  |I wish I could call you with a special name in real life.
+                                   But did you decide something about our acquaintence?
+                                   Or still not sure?? what doubts do you have, suleyman?
+                                   Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me.
+                                   I`m repeating it to you all the time, so what is the problem?
+                                   You look through my profile when I write to you.? Oksana
+                              .ui-read-more data-name-e="Show more" data-name-une="Show less"
+                        .row
+                          .column
+                  .clearfix
+                / sub message
+                .ud-inbox-message-block-wrap.ud-inbox-message-sub-block-wrap.ud-inbox-message-from-me.hide
+                  .ud-message-option-wrap.notification-wrap
+                    .ud-message-option.notification-link
+                      =embedded_svg "UD-icon-sub menu.svg"
+                    .ud-message-option-popup.notification-container
+                      = render partial: "partials/inbox/letter_options"
+                  .row
+                    .columns.large-2.medium-2.small-2
+                      .avatar-wrap
+                        =render partial: "partials/inbox_checkbox", locals: {value: "10"}
+                        .avatar
+                          .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+                        .title-for-avatar.text-center
+                          span
+                            |me
+                    .columns.large-10.medium-10.no-padding-left.small-10
+                      .ui-message-main-wrap
+                        .row
+                          .columns.large-6.medium-6
+                            p.ud-date 02:16 PM
+                          .columns.large-6.medium-6
+                            .ui-message-detail-info
+                              a
+                                =embedded_svg "UAD-inbox-5-saved.svg"
+                              a
+                                =embedded_svg "UAD-inbox-2-Intro.svg"
+                              a
+                                =embedded_svg "UAD-inbox-4-drafts.svg"
+
+                        .row
+                          .columns.large-11.medium-11.small-11
+                            .ud-text-message-wrap
+                              .ui-one-message
+                                p.ud-text-message
+                                  |Hello! Your life is gonna change this year and I can tell you why!
+                                   My name is Gregory, I was born in sweet place of Ukraine - calling Poltava.
+                                   To introduce myself I want to start from five words: -faith -love -future -dream -eternity You know why?
+                              .ui-read-more data-name-e="Show more" data-name-une="Show less"
+
+                        .row
+                          .column
+                  .clearfix
+                / sub message
+                .ud-inbox-message-block-wrap.ud-inbox-message-sub-block-wrap.hide
+                  .ud-message-option-wrap.notification-wrap
+                    .ud-message-option.notification-link
+                      =embedded_svg "UD-icon-sub menu.svg"
+                    .ud-message-option-popup.notification-container
+                      = render partial: "partials/inbox/letter_options"
+                  .row
+                    .columns.large-2.medium-2
+                      .avatar-wrap
+                        =render partial: "partials/inbox_checkbox", locals: {value: "11"}
+                        .avatar
+                          .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
+                        .title-for-avatar.text-center
+                          span
+                            |me
+                    .columns.large-10.medium-10.no-padding-left
+                      .ui-message-main-wrap
+                        .row
+                          .columns.large-6.medium-6
+                            p.ud-date 02:32 PM
+                          .columns.large-6.medium-6
+                            .ui-message-detail-info
+                              a
+                                =embedded_svg "UAD-inbox-5-saved.svg"
+                              a
+                                =embedded_svg "UAD-inbox-2-Intro.svg"
+                              a
+                                =embedded_svg "UAD-inbox-4-drafts.svg"
+
+                        .row
+                          .columns.large-11.medium-11.small-11
+                            .ud-text-message-wrap
+                              .ui-one-message
+                                p.ud-text-message
+                                  |My DREAM is strong family, I know it will someday.
+                                   And everything I do - should come in ETERNITY soon, it will be my children...through all generations.
+                                   So here I am. If you like my world – so just come in and you’ll see more. Enjoy!
+                              .ui-read-more data-name-e="Show more" data-name-une="Show less"
+                        .row
+                          .column
+                  .clearfix
+
+                .ud-inbox-sent-message.hide tabindex="-1"
+                  .columns
+                    .row
+                      .columns.large-2.medium-2.small-2
+                        .avatar-wrap
+                          =render partial: "partials/inbox_checkbox", locals: {value: "12"}
+                          .avatar
+                            a href=profile_path
+                              .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+                          .title-for-avatar.text-center
+                            span
+                              |me
+                      .columns.no-padding-left.large-10.medium-10.small-10
+                        .ud-input-message-wrap
+                          form
+                            .row
+                              .columns
+                                .input
+                                  .input-label
+                                    label
+                                      |Quick replay
+                                      span
+                                        |(0/1000)
+
+                                  textarea placeholder="The maximum message length is 1000 symbols" rows="7" maxlength="1000"
+                          .row
+                            .columns
+                              /a Translate into english
+                              a.modal-link.m-send.special-text-shadow.right  href="#" Send
+                              .ud-browse-images-wrap.notification-wrap.right
+                                a.edit-icon-svg.browse-file.notification-link
+                                  = embedded_svg "UD-icon-add files.svg"
+                                .notification-container
+                                  .menu
+                                    .group
+                                      .options
+                                        .option
+                                          .label
+                                            .icon
+                                              = embedded_svg "ud-make-image.svg"
+                                          .input
+                                            a data-reveal-id="AddAPictures" Add a picture
+                                          .clearfix
+
+                              .ud-smiles-wrap.notification-wrap.right
+                                a.edit-icon-svg.notification-link.smiles
+                                  = embedded_svg "UD-icon-smile.svg"
+                                .notification-container
+                                  .menu
+                                    .group
+                                      .options
+                                        .option
+                                          .ud-smiles-inner
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+                                            a
+                                              =image_tag "face_smile.png"
+
+                          .clearfix
+                  .clearfix
+              .ud-message-one-block-wrap
+                .ud-inbox-message-block-wrap
+                  .ud-message-option-wrap.notification-wrap
+                    .ud-message-option.notification-link
+                      =embedded_svg "UD-icon-sub menu.svg"
+                    .ud-message-option-popup.notification-container
+                      = render partial: "partials/inbox/letter_options"
+                  .row
+                    .columns.large-2.medium-2.small-2
+                      .avatar-wrap
+                        =render partial: "partials/inbox_checkbox", locals: {value: "13"}
+                        .avatar.ud-offline
+                          .image style="background: url('#{asset_path("girl_103.jpg")}')no-repeat center center;"
+                        .title-for-avatar.text-center
+                          span
+                            |Kateryna
+                    .columns.large-10.medium-10.no-padding-left.small-10
+                      .ui-message-main-wrap data-count-messages=""
+                        .row
+                          .columns.large-6.medium-6
+                            b Spring is the subject of conversation
+                          .columns.large-6.medium-6.no-padding-left
+                            .ui-message-detail-info
+                              p.ud-date Read: 04/20/2015 12:48 AM
+                              a
+                                =embedded_svg "UAD-inbox-5-saved.svg"
+
+                        .row
+                          .columns.large-11.medium-11.small-11
+                            .ud-text-message-wrap
+                              p.ud-text-message
+                                |I wish I could call you with a special name in real life. But did you decide something about our acquaintence? Or still not sure?? what doubts do you have, suleyman? Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me. I`m repeating it to you all the time, so what is the problem? You look through my profile when I write to you.? Oksana
+                        .row.ud-has-attached-file
+                          .column
+                            .row
+                              .columns
+                                .ud-attached-tumbler-wrap
+                                  .ua-tumbler
+                                    =embedded_svg "UAD-attachments status.svg"
+                                  a Translate into english
+                            .ud-attached-wrap
+                              .row
+                                .columns
+                                  b 3 files attached
+                              .row
+                                .columns.large-2.medium-2.small-4
+                                  a
+                                    .image style="background: url('#{asset_path("My gallery 4.jpg")}')no-repeat center center;"
+                                .columns.large-2.medium-2.small-4
+                                  a
+                                    .image style="background: url('#{asset_path("My gallery 5.jpg")}')no-repeat center center;"
+                                .columns.large-2.medium-2.small-4.end
+                                  a
+                                    .image style="background: url('#{asset_path("My gallery 6.jpg")}')no-repeat center center;"
+                  .clearfix
+              = render partial: "partials/inbox/one_message_last"
+              = render partial: "partials/inbox/one_message_read"
+              = render partial: "partials/inbox/one_message_for_blocked"
+
+
+            .clearfix
+
+
+
+= render partial: "partials/attachment_image_popup"

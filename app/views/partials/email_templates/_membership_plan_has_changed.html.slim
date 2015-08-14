@@ -1,0 +1,87 @@
+.ud-mt-mail-cover
+  .ud-mt-mail
+    .ud-mt-header
+      = render partial: "partials/email_templates/et_header"
+
+    .ud-mt-main.ud-mt-birthday.ud-mt-membership-plan
+      .ud-mt-white
+        .ud-mt-birthday-title
+          h2 Membership plan has changes!
+          p We would like to inform that we decided to take even more steps towards you requirements!
+            Due to numerous request on a membership plans change - we did it!
+        .ud-mt-row
+          .ud-mt-title
+            h3
+              |Dear Crisitian,
+            p.ud-mt-indent
+              |From now on while buying a
+              b
+                |Standard
+              |membership you will get – 10 free introduction email, 10 follow up letters and 10 free minutes of chat!
+
+            p.ud-mt-indent
+              |While buying
+              b
+                |Premium
+              |membership you will get – 10 introduction letters, 30 follow up emails and 20 free minutes of chat!
+
+      .ud-mt-blue
+        .ud-mt-table
+          .ud-mt-t-label
+            .ud-mt-t-row
+            .ud-mt-t-row
+              |Introduction letters
+            .ud-mt-t-row
+              |Follow up letters
+            .ud-mt-t-row
+              |Minutes of chat
+            .ud-mt-row-button
+          .ud-mt-t-standard
+            .ud-mt-t-row.ud-mt-row-title
+              |Standard membership plan
+            .ud-mt-t-row.umt-grey
+              |+10
+            .ud-mt-t-row
+              |+10
+            .ud-mt-t-row.umt-grey
+              |+10
+            .ud-mt-row-button
+              a
+                =image_tag "email-button-get-it.jpg"
+          .ud-mt-t-premium
+            .ud-mt-t-row.ud-mt-row-title
+              |Premium membership plan
+            .ud-mt-t-row.umt-grey
+              |+10
+            .ud-mt-t-row
+              |+30
+            .ud-mt-t-row.umt-grey
+              |+20
+            .ud-mt-row-button
+              a
+                =image_tag "email-button-get-it.jpg"
+
+      .ud-mt-white
+        .ud-mt-title
+          .ud-mt-attention-red
+            p
+              |As a small token of our appreciation of you staying
+                with us – we grant you 20 complementary credits!
+          p.ud-mt-addition-info
+            |There are thousands of ladies eager to hear from you. Don’t keep them waiting for much longer.
+              Live Chat with one of the beautiful Ladies on our site will surely add up to your mood, and it will take you one step closer to finding true love.
+          p Best Wishes on this special day.
+          p Have a great time using our services!
+          p
+            a
+              |UkrainianDiamonds.com
+            |team!
+        .ud-mt-clearfix
+      .ud-mt-birthday-bg
+        b We give you
+        p +20 credits
+        .ud-mt-email-button
+          a
+
+    .ud-mt-footer
+      = render partial: "partials/email_templates/et_footer"

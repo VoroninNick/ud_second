@@ -15,7 +15,11 @@ Rails.application.routes.draw do
   # get 'live_chat' => 'main#live_chat'
   get 'live_chat' => 'main#live_chat2'
   get 'gifts' => 'main#gifts'
+
   get 'mail_box' => 'main#mail_box'
+  get 'inbox' => 'main#inbox'
+
+
   get 'second-version' => 'main#second'
 
   get 'profile_girl' => 'main#profile_woman'

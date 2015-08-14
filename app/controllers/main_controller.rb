@@ -7,7 +7,7 @@ class MainController < ApplicationController
   end
 
   def main
-
+    render layout: "landing"
   end
 
   def main_registration
@@ -52,6 +52,10 @@ class MainController < ApplicationController
   end
 
   def mail_box
+
+  end
+
+  def inbox
 
   end
 

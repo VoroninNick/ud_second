@@ -1235,16 +1235,16 @@ $(document).ready ->
 
 
 #  gifts main tabs
-  $('.gift-tab').click ->
-    current_position = $(this).index()
-    $head_tabs = $(this)
-    $wrap = $(this).closest('.gifts-page-wrap')
-    $('.gifts-header-wrap .gift-tab').removeClass('active')
-    $(this).addClass('active')
-
-    $body_tabs = $wrap.find('.gift-one-page')
-    $body_tabs.addClass('hide')
-    $body_tabs.eq(current_position).removeClass('hide')
+#  $('.gift-tab').click ->
+#    current_position = $(this).index()
+#    $head_tabs = $(this)
+#    $wrap = $(this).closest('.gifts-page-wrap')
+#    $('.gifts-header-wrap .gift-tab').removeClass('active')
+#    $(this).addClass('active')
+#
+#    $body_tabs = $wrap.find('.gift-one-page')
+#    $body_tabs.addClass('hide')
+#    $body_tabs.eq(current_position).removeClass('hide')
 
 #  binder for click on button a.read-all-rules
   $('a.read-all-rules').click (e)->
@@ -1463,6 +1463,18 @@ $(document).ready ->
     , 800
     false
 
+# ivan code
+  $('#pBrowseAvatar').on 'change', ->
+    $('#ud-upload-user-picture-form #edit-upload').trigger 'mousedown'
+    count = $('#profile-photos-count').html()
+    $('#profile-photos-count').html parseInt(count) + 1
+    $.post '/sites/all/themes/ud/ajax/get_avatars_count.php', {}, (data) ->
+      if parseInt(data) == 8
+        $('#upload-user-picture').hide()
+
+      alert 1
+      $('#FillProfile').foundation 'reveal', 'open'
+      alert 2
 
 #===========================================================
 #notification popup
