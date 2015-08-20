@@ -744,6 +744,15 @@ $(document).ready ->
 #    $('.ud-tab').hide()
 #    $form_wrap.eq(current_position).show()
 
+#=========================================================
+# edit changes informations  if form has class ud-p-profile-editing-true
+#=========================================================
+  if $('form.ud-form-about-me').hasClass('ud-p-profile-editing-true')
+    $('form.ud-form-about-me').addClass('p-editing-form')
+    $('.p-input-preview').hide()
+    $('.p-input-edit').show()
+    $('form.ud-form-about-me').find('.p-edit-iam').addClass('hide')
+    $('form.ud-form-about-me').find('.special-text-shadow.p-save-iam').removeClass('hide')
 
 #=========================================================
 # edit changes informations
@@ -759,7 +768,7 @@ $(document).ready ->
         $wrap.addClass('p-editing-form')
       $('.p-input-preview').hide()
       $('.p-input-edit').show()
-      $(@).addClass('hide')
+      $wrap.find('.p-edit-iam').addClass('hide')
       $saveButton = $wrap.find('.special-text-shadow.p-save-iam')
       $saveButton.removeClass('hide')
 
@@ -777,7 +786,7 @@ $(document).ready ->
       $wrap.addClass('p-editing-form')
     $('.p-input-preview').show()
     $('.p-input-edit').hide()
-    $(@).addClass('hide')
+    $wrap.find('.p-save-iam').addClass('hide')
     $editButton = $wrap.find('.p-edit-iam')
     $editButton.removeClass('hide')
 

@@ -34,7 +34,9 @@
               li
                 a Your account has not benn approved (done)
               li
-                a.active Your account has benn approved (done)
+                a Your account has benn approved (done)
+              li
+                a.active Membership plan has changes! (done)
             hr
               = tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token)
               .input
@@ -66,5 +68,7 @@
               = render partial: "partials/email_templates/congratulations_on_u_birthday"
             li.ud-et.hide
               = render partial: "partials/email_templates/your_account_has_not_benn_approved"
-            li.ud-et
+            li.ud-et.hide
               = render partial: "partials/email_templates/your_account_has_benn_approved"
+            li.ud-et
+              = render partial: "partials/email_templates/membership_plan_has_changed"
