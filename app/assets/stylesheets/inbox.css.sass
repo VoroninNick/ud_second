@@ -110,14 +110,29 @@
     textarea
       padding: 13px
       margin-bottom: 10px
+
+
+
+  //
   .ud-message-one-block-wrap
     background-color: #EDF0F1
+
+
     .ud-plaid-message-link
       display: none
     .ud-inbox-message-group
       display: none
+    &:first-child
+      &.ud-opened-message-block
+        margin-bottom: 20px
+    &:not(:first-child)
+      &.ud-opened-message-block
+        margin: 20px 0
+
+    // якщо блок розгорнути
     &.ud-opened-message-block
-      margin: 20px 0
+      .ui-inbox-reply-message
+        display: none
       .ud-inbox-message-group
         position: relative
         height: 33px
@@ -165,6 +180,29 @@
             line-height: 33px
             background-color: #EDF0F1
             +my_horizontal_align
+
+        .ud-inbox-message-block-wrap
+          display: none
+
+        &.ud-inbox-message-group-expanded
+          height: auto
+          overflow: inherit
+          .ud-inbox-mg-button-wrap
+            display: none
+          .ud-inbox-message-block-wrap
+            display: block
+
+
+
+
+
+
+
+
+
+
+
+
     &.ud-plaid-message
       p.ud-text-message
         width: 150px
@@ -283,6 +321,7 @@
           .inbox-tab-title
             span
               color: #3598DB
+
       &.ud-inbox-last-tab
         border-right: 1px solid #27272E
         &:after
@@ -396,7 +435,9 @@
           .ui-one-message
             overflow: hidden
             height: 20px
-
+          .ui-inbox-reply-message
+            float: right
+            cursor: pointer
           .ui-read-more
             position: absolute
             min-height: 5px
@@ -421,12 +462,8 @@
               +my_vertical_align()
                 position: absolute
                 right: -25px
-          .ulmfc
-            position: absolute
-            left: 0
-            top: 0
-            right: 0
-            bottom: 0
+          .ud-text-message-newer
+            position: relative
             background-color: #EFECCE
             p
               color: #2E3E51

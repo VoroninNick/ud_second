@@ -169,8 +169,12 @@ $(document).ready ->
   $('.ud-inbox-page-wrap').on 'click', '.ud-inbox-mg-button-wrap', () ->
     $this = $(@)
     wrap = $this.closest('.ud-inbox-message-group')
-    wrap.css('height', 'auto')
-    wrap.find('.ud-inbox-mg-button-wrap').hide()
+
+    wrap.addClass('ud-inbox-message-group-expanded')
+
+#    wrap.css('height', 'auto')
+#    wrap.find('.ud-inbox-mg-button-wrap').hide()
+#    wrap.find('.ud-inbox-message-block-wrap').show()
 
 #  =========================
 # callback handler for form submit
@@ -1140,24 +1144,36 @@ $(document).ready ->
 #======================================================================
 #  mailbox  reply
 #======================================================================
-  $('.ui-message-main-wrap b, .ui-message-main-wrap p.ud-text-message, p.ud-inbox-draft, ul.ud-mb-actions li.ud-reply a').on "click", (event) ->
+  $('.ui-message-main-wrap p.ud-text-message, p.ud-inbox-draft, ul.ud-mb-actions li.ud-reply a').on "click", (event) ->
 
     $wrapper = $(this).closest('.ud-message-one-block-wrap')
     $editMessage = $wrapper.find('.ud-inbox-sent-message')
     $subMesssageWrapper = $wrapper.find('.ud-inbox-message-sub-block-wrap')
 
-    if !$wrapper.hasClass('ud-opened-message-block')
-      if !$wrapper.hasClass('ud-nc-b') and !$wrapper.hasClass('ud-plaid-message')
-        $('.ud-inbox-sent-message, .ud-inbox-message-sub-block-wrap').addClass('hide')
-        $('.ud-message-one-block-wrap').removeClass('ud-opened-message-block')
-        $wrapper.addClass('ud-opened-message-block')
+    $wrapper.find('p.ud-text-message, .ud-has-attached-file, .ui-read-more').show()
 
-        $subMesssageWrapper.removeClass('hide')
-        $editMessage.removeClass('hide')
+    if !$wrapper.hasClass('ud-nc-b') and !$wrapper.hasClass('ud-plaid-message')
+      $('.ud-inbox-sent-message, .ud-inbox-message-sub-block-wrap').addClass('hide')
+      $('.ud-message-one-block-wrap').removeClass('ud-opened-message-block')
+      $wrapper.addClass('ud-opened-message-block')
 
-        $("div.notification-container").hide()
+      $subMesssageWrapper.removeClass('hide')
+      $editMessage.removeClass('hide')
 
-        $editMessage.focus()
+      $wrapper.find('.ud-text-message-newer').hide()
+      $("div.notification-container").hide()
+
+      $editMessage.focus()
+
+#======================================================================
+#  mailbox  expand message
+#======================================================================
+  $('.ud-inbox-message-wrap').on 'click', '.ud-inbox-message-block-wrap .ud-message-option', (event) ->
+    $this = $(@)
+    wrap = $this.closest('.ud-inbox-message-block-wrap')
+
+    $('.ud-inbox-message-block-wrap').css 'zIndex', 0
+    wrap.css 'zIndex', 1111111
 
 #======================================================================
 #  mailbox  expand message
@@ -1172,14 +1188,14 @@ $(document).ready ->
 #======================================================================
 #  mailbox  expand new message
 #======================================================================
-  $('.ud-message-one-block-wrap .ulmfc p').on "click", (event) ->
+  $('.ui-message-main-wrap b, .ud-message-one-block-wrap .ud-text-message-newer p, .ui-inbox-reply-message').on "click", (event) ->
 
     $wrapper = $(this).closest('.ud-message-one-block-wrap')
     $editMessage = $wrapper.find('.ud-inbox-sent-message')
     $subMesssageWrapper = $wrapper.find('.ud-inbox-message-sub-block-wrap')
     current_message = $wrapper.find('.uic-current')
 
-    $(@).parent().hide()
+#    $(@).parent().hide()
     $wrapper.find('p.ud-text-message, .ud-has-attached-file, .ui-read-more').show()
 
     if !$wrapper.hasClass('ud-opened-message-block')
@@ -1192,8 +1208,9 @@ $(document).ready ->
         $editMessage.removeClass('hide')
 
         $("div.notification-container").hide()
-        $wrapper.find('.ulmfc').hide()
-        current_message.focus()
+        $wrapper.find('.ud-text-message-newer').hide()
+#        current_message.focus() - було раніше для фокусу на нове повідомлення
+        $wrapper.find('.ud-input-message-wrap textarea').focus()
 
 
 
