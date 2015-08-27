@@ -146,81 +146,82 @@
                                    proviennent de la section 1.10.32.
                                 /розгорнути повідомлення
                                 .ui-inbox-reply-message Reply
-                  .row
-                    /тіло листа
-                    .columns.large-2.medium-2.small-2
-                      .avatar-wrap
-                        /аватарка листа
-                        =render partial: "partials/inbox_checkbox", locals: {value: "18"}
-                        .avatar
-                          .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
-                        .title-for-avatar.text-center
-                          span
-                            |Me
-                    .columns.large-10.medium-10.no-padding-left.small-10
-                      .ui-message-main-wrap data-count-messages="[99+]"
-                        /лист
-                        .row
-                          /заголовок
-                          .columns.large-6.medium-6
-                            .ud-om-counter
-                              |[99+]
-                            b
-                              span
-                                |[2 new]
-                              |Spring is the subject of conversation
-                          .columns.large-6.medium-6.no-padding-left
-                            .ui-message-detail-info
-                              /інформаційна частина з кнопками швидкої дії
-                              p.ud-date Sent: 04/20/2015 12:48 AM
-                              a
-                                =embedded_svg "UAD-inbox-5-saved.svg"
-                              a
-                                =embedded_svg "UAD-inbox-2-Intro.svg"
-                              a
-                                =embedded_svg "UAD-inbox-4-drafts.svg"
+                  .ud-inbox-message-block-first
+                    .row
+                      /тіло листа
+                      .columns.large-2.medium-2.small-2
+                        .avatar-wrap
+                          /аватарка листа
+                          =render partial: "partials/inbox_checkbox", locals: {value: "18"}
+                          .avatar
+                            .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+                          .title-for-avatar.text-center
+                            span
+                              |Me
+                      .columns.large-10.medium-10.no-padding-left.small-10
+                        .ui-message-main-wrap data-count-messages="[99+]"
+                          /лист
+                          .row
+                            /заголовок
+                            .columns.large-6.medium-6
+                              .ud-om-counter
+                                |[99+]
+                              b
+                                span
+                                  |[2 new]
+                                |Spring is the subject of conversation
+                            .columns.large-6.medium-6.no-padding-left
+                              .ui-message-detail-info
+                                /інформаційна частина з кнопками швидкої дії
+                                p.ud-date Sent: 04/20/2015 12:48 AM
+                                a
+                                  =embedded_svg "UAD-inbox-5-saved.svg"
+                                a
+                                  =embedded_svg "UAD-inbox-2-Intro.svg"
+                                a
+                                  =embedded_svg "UAD-inbox-4-drafts.svg"
 
-                        .row
-                          /текст обгортка
-                          .columns.large-11.medium-11.small-11
-                            .ud-text-message-wrap
-                              /текст першого повідомлення
-                              p.ud-text-message
-                                |I wish I could call you with a special name in real life.
-                                 But did you decide something about our acquaintence?
-                                 Or still not sure?? what doubts do you have, suleyman?
-                                 Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me.
-                                 I`m repeating it to you all the time, so what is the problem?
-                                 You look through my profile when I write to you.? Oksana
+                          .row
+                            /текст обгортка
+                            .columns.large-11.medium-11.small-11
+                              .ud-text-message-wrap
+                                /текст першого повідомлення
+                                p.ud-text-message
+                                  |I wish I could call you with a special name in real life.
+                                   But did you decide something about our acquaintence?
+                                   Or still not sure?? what doubts do you have, suleyman?
+                                   Sorry for such direct questions. i also would be pleased if you don`t afraid to be direst and open with me.
+                                   I`m repeating it to you all the time, so what is the problem?
+                                   You look through my profile when I write to you.? Oksana
 
-                              .ud-text-message-newer
-                                /текст останнього отриманого
-                                p
-                                  |My DREAM is strong family, I know it will someday.
-                                   And everything I do - should come in ETERNITY soon, it will be my children...through all generations.
-                                   So here I am. If you like my world – so just come in and you’ll see more.
-                                   Enjoy!
-                              .row.ud-has-attached-file
-                                /цей блок якщо є атачмент в листі
-                                .column
-                                  .ud-attached-wrap
-                                    .row
-                                      .columns
-                                        span 3 files attached
-                                    .row.ui-attached-files
-                                      .columns.large-2.medium-2.small-4
-                                        a
-                                          .image style="background: url('#{asset_path("My gallery 4.jpg")}')no-repeat center center;"
-                                      .columns.large-2.medium-2.small-4
-                                        a
-                                          .image style="background: url('#{asset_path("My gallery 5.jpg")}')no-repeat center center;"
-                                      .columns.large-2.medium-2.small-4.end
-                                        a
-                                          .image style="background: url('#{asset_path("My gallery 6.jpg")}')no-repeat center center;"
-                              .ui-read-more data-name-e="Show more" data-name-une="Show less"
-                              /розгорнути повідомлення
-                              .ui-inbox-reply-message Reply
-                    .clearfix
+                                .ud-text-message-newer
+                                  /текст останнього отриманого
+                                  p
+                                    |My DREAM is strong family, I know it will someday.
+                                     And everything I do - should come in ETERNITY soon, it will be my children...through all generations.
+                                     So here I am. If you like my world – so just come in and you’ll see more.
+                                     Enjoy!
+                                .row.ud-has-attached-file
+                                  /цей блок якщо є атачмент в листі
+                                  .column
+                                    .ud-attached-wrap
+                                      .row
+                                        .columns
+                                          span 3 files attached
+                                      .row.ui-attached-files
+                                        .columns.large-2.medium-2.small-4
+                                          a
+                                            .image style="background: url('#{asset_path("My gallery 4.jpg")}')no-repeat center center;"
+                                        .columns.large-2.medium-2.small-4
+                                          a
+                                            .image style="background: url('#{asset_path("My gallery 5.jpg")}')no-repeat center center;"
+                                        .columns.large-2.medium-2.small-4.end
+                                          a
+                                            .image style="background: url('#{asset_path("My gallery 6.jpg")}')no-repeat center center;"
+                                .ui-read-more data-name-e="Show more" data-name-une="Show less"
+                                /розгорнути повідомлення
+                                .ui-inbox-reply-message Reply
+                      .clearfix
 
                 .ud-inbox-message-group
                   .ud-inbox-mg-button-wrap
@@ -612,6 +613,8 @@
                                         .option
                                           .ud-smiles-inner
                                             =render partial: "partials/smiles"
+
+
 
                           .clearfix
                   .clearfix

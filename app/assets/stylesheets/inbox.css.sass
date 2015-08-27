@@ -47,8 +47,10 @@
         color: #404049
 
     .ud-inbox-message-block-wrap
+      .ud-inbox-message-block-first
+        opacity: 0
       .ud-inbox-message-block-newer
-        background-color: #3598DB
+        background-color: transparent
         position: absolute
         left: 0.9375rem
         top: 26px
@@ -202,6 +204,8 @@
       .ud-inbox-message-block-wrap
         .ui-read-more
           display: inline-block !important
+        .ud-inbox-message-block-first
+          opacity: 1
         .ud-inbox-message-block-newer
           display: none
 
