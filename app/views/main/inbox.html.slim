@@ -94,6 +94,58 @@
                       =embedded_svg "UD-icon-sub menu.svg"
                     .ud-message-option-popup.notification-container
                       = render partial: "partials/inbox/letter_options"
+                  .ud-inbox-message-block-newer
+                    /новий лист з конверсейшина
+                    .row
+                      /тіло новішого листа з конверсейшина
+                      .columns.large-2.medium-2.small-2
+                        .avatar-wrap
+                          /аватарка листа
+                          =render partial: "partials/inbox_checkbox", locals: {value: "18"}
+                          .avatar
+                            .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
+                          .title-for-avatar.text-center
+                            span
+                              |Olena2
+
+                      .columns.large-10.medium-10.no-padding-left.small-10
+                        .ui-message-main-wrap data-count-messages="[99+]"
+                          /лист
+                          .row
+                            /заголовок
+                            .columns.large-6.medium-6
+                              .ud-om-counter
+                                |[99+]
+                              b
+                                span
+                                  |[2 new]
+                                |Spring is the subject of conversation
+                            .columns.large-6.medium-6.no-padding-left
+                              .ui-message-detail-info
+                                /інформаційна частина з кнопками швидкої дії
+                                p.ud-date Sent: 04/20/2015 12:48 AM
+                                a
+                                  =embedded_svg "UAD-inbox-5-saved.svg"
+                                a
+                                  =embedded_svg "UAD-inbox-2-Intro.svg"
+                                a
+                                  =embedded_svg "UAD-inbox-4-drafts.svg"
+
+                          .row
+                            /текст обгортка
+                            .columns.large-11.medium-11.small-11
+                              .ud-text-message-wrap
+                                /текст першого повідомлення
+                                p.ud-text-message
+                                  |Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire.
+                                   Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C.,
+                                   le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé à un des mots latins les plus obscurs,
+                                   consectetur, extrait d'un passage du Lorem Ipsum, et en étudiant tous les usages de ce mot dans la littérature classique, découvrit la source incontestable du Lorem Ipsum.
+                                   Il provient en fait des sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" (Des Suprêmes Biens et des Suprêmes Maux) de Cicéron.
+                                   Cet ouvrage, très populaire pendant la Renaissance, est un traité sur la théorie de l'éthique. Les premières lignes du Lorem Ipsum, "Lorem ipsum dolor sit amet...",
+                                   proviennent de la section 1.10.32.
+                                /розгорнути повідомлення
+                                .ui-inbox-reply-message Reply
                   .row
                     /тіло листа
                     .columns.large-2.medium-2.small-2
@@ -101,10 +153,10 @@
                         /аватарка листа
                         =render partial: "partials/inbox_checkbox", locals: {value: "18"}
                         .avatar
-                          .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
+                          .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
                         .title-for-avatar.text-center
                           span
-                            |Olena2
+                            |Me
                     .columns.large-10.medium-10.no-padding-left.small-10
                       .ui-message-main-wrap data-count-messages="[99+]"
                         /лист
@@ -229,7 +281,7 @@
                             .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
                           .title-for-avatar.text-center
                             span
-                              |me
+                              |Olena2
                       .columns.large-10.medium-10.no-padding-left
                         .ui-message-main-wrap
                           .row
@@ -408,6 +460,13 @@
                                 .ui-read-more data-name-e="Show more" data-name-une="Show less"
                     .clearfix
 
+
+
+
+
+
+
+
                 / new message
                 .ud-inbox-message-block-wrap.ud-inbox-message-sub-block-wrap.ud-inbox-unread-message.hide
                   .ud-message-option-wrap.notification-wrap
@@ -423,7 +482,7 @@
                           .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
                         .title-for-avatar.text-center
                           span
-                            |me
+                            |Olena2
                     .columns.large-10.medium-10.no-padding-left
                       .ui-message-main-wrap
                         .row
@@ -464,7 +523,7 @@
                           .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
                         .title-for-avatar.text-center
                           span
-                            |me
+                            |Olena2
                     .columns.large-10.medium-10.no-padding-left
                       .ui-message-main-wrap
                         .row
@@ -487,9 +546,13 @@
                             .ud-text-message-wrap
                               .ui-one-message
                                 p.ud-text-message
-                                  |My DREAM is strong family, I know it will someday.
-                                   And everything I do - should come in ETERNITY soon, it will be my children...through all generations.
-                                   So here I am. If you like my world – so just come in and you’ll see more. Enjoy!
+                                  |Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire.
+                                   Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C.,
+                                   le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé à un des mots latins les plus obscurs,
+                                   consectetur, extrait d'un passage du Lorem Ipsum, et en étudiant tous les usages de ce mot dans la littérature classique, découvrit la source incontestable du Lorem Ipsum.
+                                   Il provient en fait des sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" (Des Suprêmes Biens et des Suprêmes Maux) de Cicéron.
+                                   Cet ouvrage, très populaire pendant la Renaissance, est un traité sur la théorie de l'éthique. Les premières lignes du Lorem Ipsum, "Lorem ipsum dolor sit amet...",
+                                   proviennent de la section 1.10.32.
                               .ui-read-more data-name-e="Show more" data-name-une="Show less"
                   .clearfix
                 /===========================/ input

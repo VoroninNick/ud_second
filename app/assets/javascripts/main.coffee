@@ -1150,7 +1150,7 @@ $(document).ready ->
     $editMessage = $wrapper.find('.ud-inbox-sent-message')
     $subMesssageWrapper = $wrapper.find('.ud-inbox-message-sub-block-wrap')
 
-    $wrapper.find('p.ud-text-message, .ud-has-attached-file, .ui-read-more').show()
+#    $wrapper.find('p.ud-text-message, .ud-has-attached-file, .ui-read-more').show()
 
     if !$wrapper.hasClass('ud-nc-b') and !$wrapper.hasClass('ud-plaid-message')
       $('.ud-inbox-sent-message, .ud-inbox-message-sub-block-wrap').addClass('hide')
@@ -1196,7 +1196,7 @@ $(document).ready ->
     current_message = $wrapper.find('.uic-current')
 
 #    $(@).parent().hide()
-    $wrapper.find('p.ud-text-message, .ud-has-attached-file, .ui-read-more').show()
+#    $wrapper.find('p.ud-text-message, .ud-has-attached-file, .ui-read-more').show()
 
     if !$wrapper.hasClass('ud-opened-message-block')
       if !$wrapper.hasClass('ud-nc-b') and !$wrapper.hasClass('ud-plaid-message')
