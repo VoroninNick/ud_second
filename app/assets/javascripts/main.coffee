@@ -166,15 +166,16 @@ resetForm = ($form) ->
   $form.find('input, select, textarea').not(':input[type=button], :input[type=submit], :input[type=reset]').val ''
 
 $(document).ready ->
+
   $('.ud-inbox-page-wrap').on 'click', '.ud-inbox-mg-button-wrap', () ->
     $this = $(@)
     wrap = $this.closest('.ud-inbox-message-group')
 
     wrap.addClass('ud-inbox-message-group-expanded')
 
-#    wrap.css('height', 'auto')
-#    wrap.find('.ud-inbox-mg-button-wrap').hide()
-#    wrap.find('.ud-inbox-message-block-wrap').show()
+    wrap.css('height', 'auto')
+    wrap.find('.ud-inbox-mg-button-wrap').hide()
+    wrap.find('.ud-inbox-message-block-wrap').show()
 
 #  =========================
 # callback handler for form submit

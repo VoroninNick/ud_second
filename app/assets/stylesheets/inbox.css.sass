@@ -204,6 +204,10 @@
       .ud-inbox-message-block-wrap
         .ui-read-more
           display: inline-block !important
+        .ud-text-message-wrap
+          &.ui-om-expand
+            .ud-has-attached-file
+              display: block
         .ud-inbox-message-block-first
           opacity: 1
         .ud-inbox-message-block-newer
@@ -462,7 +466,7 @@
             //overflow: hidden
             //height: 20px
           .ui-inbox-reply-message
-            float: right
+            float: left
             cursor: pointer
           .ui-read-more
             position: relative
