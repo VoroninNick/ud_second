@@ -1145,7 +1145,7 @@ $(document).ready ->
 #======================================================================
 #  mailbox  reply
 #======================================================================
-  $('.ud-inbox-message-wrap').on 'click', '.ui-message-main-wrap p.ud-text-message, p.ud-inbox-draft, ul.ud-mb-actions li.ud-reply a', (event) ->
+  $('.ud-inbox-message-wrap').on 'click', '.ui-message-main-wrap .ud-mpm-window p, .ui-message-main-wrap p.ud-text-message, p.ud-inbox-draft, ul.ud-mb-actions li.ud-reply a', (event) ->
 
     console.log('first inbox message handler')
 
@@ -1192,7 +1192,7 @@ $(document).ready ->
 #======================================================================
 #  mailbox  expand new message
 #======================================================================
-  $('.ud-inbox-message-wrap').on 'click', '.ui-message-main-wrap b, .ud-message-one-block-wrap .ud-text-message-newer p, .ui-inbox-reply-message', (event) ->
+  $('.ud-inbox-message-wrap').on 'click', '.ui-message-main-wrap .ud-mpm-window p, .ui-message-main-wrap b, .ud-message-one-block-wrap .ud-text-message-newer p, .ui-inbox-reply-message', (event) ->
 
     console.log('second inbox message handler')
 

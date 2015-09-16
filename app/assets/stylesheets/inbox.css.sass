@@ -49,14 +49,17 @@
     .ud-inbox-message-block-wrap
       .ud-inbox-message-block-first
         opacity: 0
+        height: 0px
+        overflow: hidden
         .ui-message-main-wrap
           height: 110px
           overflow: hidden
       .ud-inbox-message-block-newer
         background-color: transparent
         position: absolute
+        position: relative
         left: 0.9375rem
-        top: 26px
+        top: 0
         right: 0.9375rem
         bottom: 24px
         z-index: 1
@@ -215,6 +218,8 @@
               display: block
         .ud-inbox-message-block-first
           opacity: 1
+          height: auto
+
           .ui-message-main-wrap
             height: auto
         .ud-inbox-message-block-newer
@@ -241,11 +246,6 @@
 
 
     &.ud-membership-plan-message
-      //p.ud-text-message
-      //  width: 150px
-      //  white-space: nowrap
-      //  overflow: hidden
-      //  text-overflow: ellipsis
       .ud-mpm-window
         display: block
         padding-top: 10px
@@ -255,6 +255,7 @@
             size: rem-calc(14)
             weight: 300
           line-height: rem-calc(18)
+          cursor: pointer
           a
             padding: 0 5px
             color: #3598DB
