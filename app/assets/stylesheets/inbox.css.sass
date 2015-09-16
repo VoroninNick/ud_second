@@ -139,7 +139,7 @@
     background-color: #EDF0F1
 
 
-    .ud-plaid-message-link
+    //.ud-mpm-window
       display: none
     .ud-inbox-message-group
       display: none
@@ -171,6 +171,7 @@
           position: absolute
           background-color: #fff
           z-index: 111111
+          z-index: 10
         &:after
           display: block
           content: ""
@@ -180,7 +181,7 @@
           right: 0
           position: absolute
           background-color: #BEC3C7
-          z-index: 111111
+          z-index: 10
         .ud-inbox-mg-button-wrap
           position: absolute
           left: 0
@@ -189,7 +190,8 @@
           bottom: 0
           background-image: asset-url("ud-inbox-pattern-v1.jpg")
           background-repeat: repeat-x
-          z-index: 1111
+          //z-index: 1111
+          z-index: 10
           cursor: pointer
           .ud-inbox-mg-button
             color: #3598DA
@@ -238,17 +240,17 @@
 
 
 
-    &.ud-plaid-message
-      p.ud-text-message
-        width: 150px
-        white-space: nowrap
-        overflow: hidden
-        text-overflow: ellipsis
-      .ud-plaid-message-link
+    &.ud-membership-plan-message
+      //p.ud-text-message
+      //  width: 150px
+      //  white-space: nowrap
+      //  overflow: hidden
+      //  text-overflow: ellipsis
+      .ud-mpm-window
         display: block
         padding-top: 10px
         p
-          color: #FF6F70
+          color: #FF6F70 !important
           font:
             size: rem-calc(14)
             weight: 300

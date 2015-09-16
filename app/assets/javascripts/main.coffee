@@ -1134,7 +1134,7 @@ $(document).ready ->
 #    $editMessage = $wrapper.find('.ud-inbox-sent-message')
 #    $subMesssageWrapper = $wrapper.find('.ud-inbox-message-sub-block-wrap')
 #
-#    if !$wrapper.hasClass('ud-nc-b') and !$wrapper.hasClass('ud-plaid-message')
+#    if !$wrapper.hasClass('ud-nc-b') and !$wrapper.hasClass('ud-membership-plan-message')
 #      $('.ud-inbox-sent-message, .ud-inbox-message-sub-block-wrap').addClass('hide')
 #      $('.ud-message-one-block-wrap').removeClass('ud-opened-message-block')
 #      $wrapper.addClass('ud-opened-message-block')
@@ -1145,7 +1145,9 @@ $(document).ready ->
 #======================================================================
 #  mailbox  reply
 #======================================================================
-  $('.ui-message-main-wrap p.ud-text-message, p.ud-inbox-draft, ul.ud-mb-actions li.ud-reply a').on "click", (event) ->
+  $('.ud-inbox-message-wrap').on 'click', '.ui-message-main-wrap p.ud-text-message, p.ud-inbox-draft, ul.ud-mb-actions li.ud-reply a', (event) ->
+
+    console.log('first inbox message handler')
 
     $wrapper = $(this).closest('.ud-message-one-block-wrap')
     $editMessage = $wrapper.find('.ud-inbox-sent-message')
@@ -1153,7 +1155,7 @@ $(document).ready ->
 
 #    $wrapper.find('p.ud-text-message, .ud-has-attached-file, .ui-read-more').show()
 
-    if !$wrapper.hasClass('ud-nc-b') and !$wrapper.hasClass('ud-plaid-message')
+    if !$wrapper.hasClass('ud-nc-b')
       $('.ud-inbox-sent-message, .ud-inbox-message-sub-block-wrap').addClass('hide')
       $('.ud-message-one-block-wrap').removeClass('ud-opened-message-block')
       $wrapper.addClass('ud-opened-message-block')
@@ -1174,7 +1176,8 @@ $(document).ready ->
     wrap = $this.closest('.ud-inbox-message-block-wrap')
 
     $('.ud-inbox-message-block-wrap').css 'zIndex', 0
-    wrap.css 'zIndex', 1111111
+#    wrap.css 'zIndex', 1111111
+    wrap.css 'zIndex', 11
 
 #======================================================================
 #  mailbox  expand message
@@ -1189,7 +1192,9 @@ $(document).ready ->
 #======================================================================
 #  mailbox  expand new message
 #======================================================================
-  $('.ui-message-main-wrap b, .ud-message-one-block-wrap .ud-text-message-newer p, .ui-inbox-reply-message').on "click", (event) ->
+  $('.ud-inbox-message-wrap').on 'click', '.ui-message-main-wrap b, .ud-message-one-block-wrap .ud-text-message-newer p, .ui-inbox-reply-message', (event) ->
+
+    console.log('second inbox message handler')
 
     $wrapper = $(this).closest('.ud-message-one-block-wrap')
     $editMessage = $wrapper.find('.ud-inbox-sent-message')
@@ -1200,7 +1205,7 @@ $(document).ready ->
 #    $wrapper.find('p.ud-text-message, .ud-has-attached-file, .ui-read-more').show()
 
     if !$wrapper.hasClass('ud-opened-message-block')
-      if !$wrapper.hasClass('ud-nc-b') and !$wrapper.hasClass('ud-plaid-message')
+      if !$wrapper.hasClass('ud-nc-b')
         $('.ud-inbox-sent-message, .ud-inbox-message-sub-block-wrap').addClass('hide')
         $('.ud-message-one-block-wrap').removeClass('ud-opened-message-block')
         $wrapper.addClass('ud-opened-message-block')
