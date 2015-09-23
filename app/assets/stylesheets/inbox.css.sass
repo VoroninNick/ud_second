@@ -997,12 +997,76 @@ p.ud-inbox-draft
     .white-grey
       padding-bottom: 25px
       .send-group-mail-wrap
-        /*display: none*/
-      .send-group-mail-finish-wrap
+        //display: block
         display: none
+      .send-group-mail-finish-wrap
+        //display: none
+        display: block
         .input
           width: 100%
-          height: 30px
+          //height: 30px
+        .ud-smiles-wrap
+          svg
+            height: 35px
+            width: 24px
+            margin-right: 20px
+            path, circle, polygon
+              fill: #48647C
+        .option
+          .label
+            background-color: transparent
+            .icon
+              width: 22px
+              height: 22px
+              float: left
+              margin-right: 10px
+              svg
+                width: 100%
+                height: 100%
+                path
+                  fill: #48647C
+            span
+              color: #58595B
+              font:
+                size: rem-calc(12)
+                weight: 300
+                family: "Fira Sans", sans-serif
+              line-height: rem-calc(22)
+          .input-group
+            margin-top: 0
+            margin-left: 40px
+            .input-ud-button
+              width: 125px
+              margin-top: 25px
+        .send-group-mail
+          padding-top: 30px
+          p
+            position: absolute
+            display: inline-block
+            color: #BEC3C7
+          b
+            color: #BEC3C7
+            font:
+              size: rem-calc(14)
+              weight: 300
+              family: "Fira Sans", sans-serif
+            line-height: rem-calc(16.8)
+          ul
+            list-style: none
+            margin: 0
+            li
+              color: #808285
+              font:
+                size: rem-calc(16)
+                weight: 500
+                family: "Fira Sans", sans-serif
+              line-height: rem-calc(40)
+              &.ud-current
+                color: #3598DB
+
+        .send-group-mail-option
+          .input
+            height: 30px
 section[contenteditable=true]
   outline: none !important
 .ud-message-wrap
