@@ -29,6 +29,8 @@
 
               textarea placeholder="The maximum message length is 1000 symbols" rows="7" maxlength="1000"
         .row
+          .ud-e-attachment-wrap
+        .row
           .columns
             p Please check is everything is correct and press a “send” button
             .ud-browse-images-wrap.notification-wrap.right
@@ -110,7 +112,52 @@
           .clearfix
         .clearfix
     .medium-4.columns
+      .option
+        .label
+          .icon
+            = embedded_svg "ic_perm_identity_black_24px.svg"
+          span Don’t sent this letter only to these man:
+        .clearfix
+        ul.send-group-mail-blocked-list
+          li
+            |David Bekham
+            a
+              =embedded_svg "UD-icon-close.svg"
+          li
+            |Clarence Seedorf
+            a
+              =embedded_svg "UD-icon-close.svg"
+        .sgm-blocked-list-input
+          input type="text" placeholder="Insert ID number"
+          .sgm-button
+            button type="submit" value=""
+              =embedded_svg "UD-icon-plus.svg"
+
+
     .medium-4.columns
+      .option
+        .label
+          .icon
+            = embedded_svg "ic_perm_identity_black_24px.svg"
+          span Sent this letter only to these man:
+        .clearfix
+        ul.send-group-mail-blocked-list
+          li
+            |David Bekham
+            a
+              =embedded_svg "UD-icon-close.svg"
+          li
+            |Clarence Seedorf
+            a
+              =embedded_svg "UD-icon-close.svg"
+        .sgm-blocked-list-input
+          input type="text" placeholder="Insert ID number"
+          .sgm-button
+            button type="submit" value=""
+              =embedded_svg "UD-icon-plus.svg"
+        .input-ud-button
+          input type="submit" value="SEND"
+        .clearfix
   /.row
     .columns.large-3.medium-3
       .input
