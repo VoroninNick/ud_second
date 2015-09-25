@@ -166,6 +166,9 @@ resetForm = ($form) ->
   $form.find('input, select, textarea').not(':input[type=button], :input[type=submit], :input[type=reset]').val ''
 
 $(document).ready ->
+#  group ckeckbox with class radio-checkbox
+  $('input.radio-checkbox[type="checkbox"]').on 'change', ->
+    $('input[type="checkbox"]').not(this).prop 'checked', false
 
   $('.ud-inbox-page-wrap').on 'click', '.ud-inbox-mg-button-wrap', () ->
     $this = $(@)

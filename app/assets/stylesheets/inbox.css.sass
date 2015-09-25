@@ -374,6 +374,7 @@
 
   .ud-inbox-content-wrap
     margin-top: 13px
+    margin-bottom: 100px
     .ud-inbox-message-block-wrap
       padding-top: 26px
       padding-left: 0.9375rem
@@ -1058,27 +1059,37 @@ p.ud-inbox-draft
               color: #808285
               font:
                 size: rem-calc(16)
-                weight: 500
+                weight: 300
                 family: "Fira Sans", sans-serif
               line-height: rem-calc(40)
+              cursor: pointer
               &.ud-current
                 color: #3598DB
+                font:
+                  weight: 500
           .ud-attach-file-into-message
             .ud-e-attachment-wrap
               margin-top: 7px
               .pg-one-item
                 padding-bottom: 15px
+                .pga-remove
+                  right: 8px
             .ud-browse-images-wrap
               a
                 display: block
 
         .send-group-mail-option
-          margin-top: 40px
+          margin-top: 80px
           .input
             height: 30px
+          .ud-mailing-vertical-border
+            border-right: 1px solid #BEC3C7
+            @media #{$small-only}
+              border-right: none
         .send-group-mail-blocked-list
           list-style: none
           margin: 0
+          margin-left: 40px
           li
             color: #2E3E51
             font:
@@ -1105,11 +1116,19 @@ p.ud-inbox-draft
           position: relative
           margin-top: 20px
           margin-bottom: 50px
+          margin-left: 40px
           width: 75%
           input
             height: 100%
             width: 100%
             margin-right: 35px
+            color: #2E3E51 !important
+            font-size: 0.875rem !important
+            line-height: 1.05rem !important
+            outline: none !important
+            border: none
+            box-shadow: none !important
+
           .sgm-button
             position: absolute
             top: 0
@@ -1128,7 +1147,13 @@ p.ud-inbox-draft
                 padding: 6px
                 polygon
                   fill: #fff
-
+        .ud-mailing-sent-to-people-filter
+          .input-ud-button
+            margin-left: 40px
+.right-only-not-small
+  float: right
+  @media #{$small-only}
+    float: left
 section[contenteditable=true]
   outline: none !important
 .ud-message-wrap

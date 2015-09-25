@@ -7,6 +7,15 @@
       a.ud-button.special-text-shadow.send-group-mail Send group email
 .send-group-mail-finish-wrap
   .row.send-group-mail
+    .medium-3.columns.right-only-not-small
+      b Insert variable
+      ul
+        li.ud-current Name
+        li Age
+        li Country
+        li City
+        li Date of birth
+        li Astrology sign
     .medium-9.columns
       form
         .row
@@ -31,18 +40,17 @@
         /атачмент блок
 
         .row.ud-attach-file-into-message.ud-attach-file-is-mailing
-          .medium-10.columns
+          .small-8.medium-8.large-9.columns
             .row.ud-e-attachment-wrap
-              -11.times do
-                .small-6.medium-2.end.columns.message-attachment-item data-attachment-id="31876"
-                  .pg-one-item
-                    .pg-action-button.pga-remove
-                      a data-file-id="31876" data-folder="" data-conv-id=""
-                        =embedded_svg "UD-icon-close.svg"
-                    a.fancy_gallery href=asset_path("girl_101.jpg") rel="profile_gallery"
-                      .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
+              .small-4.medium-3.large-2.end.columns.message-attachment-item data-attachment-id="31876"
+                .pg-one-item
+                  .pg-action-button.pga-remove
+                    a data-file-id="31876" data-folder="" data-conv-id=""
+                      =embedded_svg "UD-icon-close.svg"
+                  a.fancy_gallery href=asset_path("girl_101.jpg") rel="profile_gallery"
+                    .image style="background: url('#{asset_path("girl_101.jpg")}')no-repeat center center;"
 
-          .medium-2.columns
+          .small-4.medium-4.large-3.columns
             .ud-browse-images-wrap.notification-wrap.right
               a.edit-icon-svg.browse-file.notification-link
                 = embedded_svg "UD-icon-add files.svg"
@@ -73,17 +81,8 @@
             p Please check is everything is correct and press a “send” button
 
 
-    .medium-3.columns
-      b Insert variable
-      ul
-        li.ud-current Name
-        li Age
-        li Country
-        li City
-        li Date of birth
-        li Astrology sign
   .row.send-group-mail-option
-    .medium-4.columns
+    .medium-4.columns.ud-mailing-vertical-border
       .option
         .label
           .icon
@@ -93,39 +92,40 @@
         .input-group
           .input
             .squared
-              input#comes_online type="checkbox" name="notification-group" value="Comes online" checked=""
-              label for="comes_online"
+              input#m_match_list.radio-checkbox type="checkbox" name="sent_this_letter" value="Comes online" checked=""
+              label for="m_match_list"
             .t-label
-              label for="comes_online" Match list
+              label for="m_match_list" Match list
           .input
             .squared
-              input#goes-offline type="checkbox" name="notification-group" value="Goes offline" checked=""
-              label for="goes-offline"
+              input#m_favirite_list.radio-checkbox type="checkbox" name="sent_this_letter" value="Goes offline"
+              label for="m_favirite_list"
             .t-label
-              label for="goes-offline" Favirite list
+              label for="m_favirite_list" Favirite list
           .input
             .squared
-              input#starts_an_im type="checkbox" name="notification-group" value="Starts an IM with me"
-              label for="starts_an_im"
+              input#m_exclude_list.radio-checkbox type="checkbox" name="sent_this_letter" value="Starts an IM with me"
+              label for="m_exclude_list"
             .t-label
-              label for="starts_an_im" Exclude list
+              label for="m_exclude_list" Exclude list
           .input
             .squared
-              input#sends_me_a_message type="checkbox" name="notification-group" value="Sends me a message"
-              label for="sends_me_a_message"
+              input#m_introdused_list.radio-checkbox type="checkbox" name="sent_this_letter" value="Sends me a message"
+              label for="m_introdused_list"
             .t-label
-              label for="sends_me_a_message" Introdused list
+              label for="m_introdused_list" Introdused list
           .input
             .squared
-              input#sends_me_a_message type="checkbox" name="notification-group" value="Sends me a message"
-              label for="sends_me_a_message"
+              input#m_not_introdused_list.radio-checkbox type="checkbox" name="sent_this_letter" value="Sends me a message"
+              label for="m_not_introdused_list"
             .t-label
-              label for="sends_me_a_message" Not introdused list
+              label for="m_not_introdused_list" Not introdused list
           .input-ud-button
             input type="submit" value="SEND"
           .clearfix
         .clearfix
-    .medium-4.columns
+
+    .medium-4.columns.ud-mailing-sent-to-people-filter
       .option
         .label
           .icon
@@ -148,7 +148,7 @@
               =embedded_svg "UD-icon-plus.svg"
 
 
-    .medium-4.columns
+    .medium-4.columns.ud-mailing-sent-to-people-filter
       .option
         .label
           .icon
@@ -172,46 +172,3 @@
         .input-ud-button
           input type="submit" value="SEND"
         .clearfix
-  /.row
-    .columns.large-3.medium-3
-      .input
-        .squared
-          input#match_list type="checkbox" name="group_email" value="Match list"
-          label for="match_list"
-        .t-label
-          label for="match_list" Match list
-      .input
-        .squared
-          input#favorite_list type="checkbox" name="group_email" value="Favorite list"
-          label for="favorite_list"
-        .t-label
-          label for="favorite_list" Favorite list
-      .input
-        .squared
-          input#exclude_list type="checkbox" name="group_email" value="Exclude list"
-          label for="exclude_list"
-        .t-label
-          label for="exclude_list" Exclude list
-      .input
-        .squared
-          input#introduced_list type="checkbox" name="group_email" value="Introduced list"
-          label for="introduced_list"
-        .t-label
-          label for="introduced_list" Introduced list
-      .input
-        .squared
-          input#not_introduced_list type="checkbox" name="group_email" value="Not introduced list"
-          label for="not_introduced_list"
-        .t-label
-          label for="not_introduced_list" Not introduced list
-
-    .columns.large-9.medium-9
-      section id="ud-editable" contenteditable="true"
-        a
-          |[girl's name]
-        span
-          |, You are the most beautiful man I have ever seen. From beautiful country
-        a
-          |[country]
-        span
-          |Your hair, your eyes, your lips, your body that you haven't grown into, the way you walk, smile, laugh, the way your cheeks drop when you're mad or upset, the way you drag your feet when you're tired. Every single thing about you is beautiful.
