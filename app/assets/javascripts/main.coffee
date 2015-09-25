@@ -453,6 +453,8 @@ $(document).ready ->
 
         $('.notification-container').hide()
         $('#AddAPictures').foundation 'reveal', 'close'
+      else if wrap.hasClass('ud-attach-file-is-mailing')
+        $('#AddAPictures').foundation 'reveal', 'close'
 
 
 #=========================================================
