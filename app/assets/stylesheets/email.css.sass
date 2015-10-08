@@ -157,6 +157,12 @@
           size: rem-calc(29)
           weight: 500
         line-height: rem-calc(30)
+        a
+          font:
+            size: inherit
+            weight: inherit
+            style: inherit
+          color: inherit
       a
         color: #287FB8
         font:
@@ -165,6 +171,7 @@
           weight: 300
           style: italic
         line-height: rem-calc(24)
+
       &.ud-mt-title-blue-text
         p
           color: #287FB8
@@ -607,7 +614,7 @@
         padding-bottom: 22px
         .ud-mt-one-prof
           width: 166px
-          height: 240px
+          min-height: 240px
           float: left
           margin: 2px
           position: relative
@@ -625,11 +632,12 @@
             background-size: cover !important
             margin: 0 auto
           .ud-mt-prof-information
-            background: asset-url("UAD-email-shadow.png")
-            position: absolute
+            //background: asset-url("UAD-email-shadow.png")
+            background-color: #2E2E36
+            //position: absolute
             height: 63px
             width: 100%
-            bottom: 0
+            //bottom: 0
             padding-top: 13px
             //&:before
               display: block
