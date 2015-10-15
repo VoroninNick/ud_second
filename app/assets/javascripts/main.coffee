@@ -738,6 +738,14 @@ $(document).ready ->
   $('.datepicker.hasDatepicker').on 'click', ()->
     $(this).next().trigger('click')
 
+  $('.trip-datepicker').datepicker
+    showOn: 'button'
+    buttonImage: 'assets/UAD-calendar.png'
+    buttonImageOnly: true
+    changeMonth: true
+    changeYear: true
+    yearRange: "-0:+1"
+    buttonText: 'Select date'
 # init tabs
 #  $('.ud-tab').hide()
 #  $('.ud-tab').first().show()
