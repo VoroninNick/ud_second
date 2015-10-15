@@ -746,6 +746,8 @@ $(document).ready ->
     changeYear: true
     yearRange: "-0:+1"
     buttonText: 'Select date'
+  $('.trip-datepicker.hasDatepicker').on 'click', ()->
+    $(this).next().trigger('click')
 # init tabs
 #  $('.ud-tab').hide()
 #  $('.ud-tab').first().show()
