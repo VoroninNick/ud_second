@@ -23,7 +23,19 @@
 
         .ud-mt-profiles-wrap
           .ud-mt-profiles
-            .ud-mt-one-prof
+            -12.times do
+              .ud-mt-one-prof
+                a
+                  =image_tag("unnamed.jpg")
+                  .ud-mt-prof-information
+                    .ud-mt-prof-about
+                      b Galina
+                      p
+                        |23
+                        span
+                          ||
+                        |Lviv
+            /.ud-mt-one-prof
               .image style="background: url('#{asset_path("new-girl-1.jpg")}')no-repeat center center;"
               .ud-mt-prof-information
                 .ud-mt-triangle-header
@@ -36,7 +48,7 @@
                     span
                       ||
                     |Lviv
-            .ud-mt-one-prof
+            /.ud-mt-one-prof
               .image style="background: url('#{asset_path("girl_22.jpg")}')no-repeat center center;"
               .ud-mt-prof-information
                 .ud-mt-triangle-header
@@ -49,7 +61,7 @@
                     span
                       ||
                     |Lviv
-            .ud-mt-one-prof
+            /.ud-mt-one-prof
               .image style="background: url('#{asset_path("girl_11.jpeg")}')no-repeat center center;"
               .ud-mt-prof-information
                 .ud-mt-triangle-header
@@ -62,7 +74,7 @@
                     span
                       ||
                     |Lviv
-            .ud-mt-one-prof
+            /.ud-mt-one-prof
               .image style="background: url('#{asset_path("girl_11.jpeg")}')no-repeat center center;"
               .ud-mt-prof-information
                 .ud-mt-triangle-header
@@ -75,7 +87,7 @@
                     span
                       ||
                     |Lviv
-            .ud-mt-one-prof
+            /.ud-mt-one-prof
               .image style="background: url('#{asset_path("new-girl-2.jpg")}')no-repeat center center;"
               .ud-mt-prof-information
                 .ud-mt-triangle-header
@@ -88,7 +100,7 @@
                     span
                       ||
                     |Lviv
-            .ud-mt-one-prof
+            /.ud-mt-one-prof
               .image style="background: url('#{asset_path("new-girl-3.jpg")}')no-repeat center center;"
               .ud-mt-prof-information
                 .ud-mt-triangle-header
