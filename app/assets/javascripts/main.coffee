@@ -823,9 +823,11 @@ $(document).ready ->
           str += '- '
         if $(@).is('option')
           str += $(this).text()
+        if $(@).is('textarea')
+          str +=$(@).val().replace(/</g, '&lt;').replace(/>/g,'&gt;').replace(/\n/g, '<br/>')
         else
           str += $(this).val()
-      $dst.text(str)
+      $dst.html(str)
 
 #=========================================================
 #  image gallery
