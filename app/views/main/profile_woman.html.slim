@@ -659,59 +659,6 @@
 
 
 
-#SendEmail.reveal-modal data-reveal=""
-  .modal-wrap
-    .modal-header-wrap
-      h3 Send email
-      a.close-reveal-modal
-    .modal-content-wrap.your-introduction-letter.ud-attach-file-into-message.ud-intro-send-mail
-      form
-        .row
-          .columns
-            form
-              .row
-                .column.large-3.medium-3.small-3
-                  .row
-                    .columns
-                      .avatar.send_to_girl_avatar.icon-send-to
-                        .image style="background: url('#{asset_path("girl_21.jpg")}')no-repeat center center;"
-                  .row
-                    .columns
-                      .send_to_girl_name.text-center
-                        b Galina
-                .column.large-9.medium-9.small-9
-                  .input
-                    .input-label
-                      label Title of the letter (29/1000)
-                      a Translate into english
-                    input placeholder="Hello, my name is Gregory, nice to meet you"
-              .input
-                .input-label
-                  label Message field (104/1000)
-                  a Translate into english
-                textarea rows="7" placeholder="Galina, you are the most beautiful woman I have ever seen. Your hair, your eyes, your lips, your body that you haven't grown into, the way you walk, smile, laugh, the way your cheeks drop when you're mad or upset, the way you drag your feet when you're tired. Every single thing about you is beautiful."
-        .row
-          .ud-e-attachment-wrap
-        .row
-          .columns
-            a.modal-link.m-send.right data-reveal-id="YourIntroductionLetterSend" href="#" Save letter
-            .ud-browse-images-wrap.notification-wrap.right
-              a.edit-icon-svg.browse-file.notification-link
-                = embedded_svg "UD-icon-add files.svg"
-                .notification-container
-                  .menu
-                    .group
-                      .options
-                        .option
-                          .label
-                            .icon
-                              = embedded_svg "ud-make-image.svg"
-                          .input
-                            a data-reveal-id="AddAPictures" Add a picture
-                          .clearfix
-            .ud-smiles-wrap.notification-wrap.right
-              a.edit-icon-svg.smiles
-                = embedded_svg "UD-icon-smile.svg"
-
+= render partial: "partials/send_mail"
 = render partial: "partials/attachment_image_popup"
 
