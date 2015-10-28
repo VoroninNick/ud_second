@@ -412,6 +412,7 @@ $(document).ready ->
     this_for_mesaage = $(@)
 
   $('#AddAPictures .image-popup-one-item a').click ->
+    console.log("my_habdler_for_attachment")
     $this = $(this)
     locked = $this.data('locked')
     if !locked

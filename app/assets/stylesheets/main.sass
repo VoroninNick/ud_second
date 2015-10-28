@@ -602,6 +602,8 @@ ul.primary-menu
         display: block
         height: 100%
       &.search
+        @media #{$small-only}
+          display: none
         &.open
           @media (min-width : 0) and (max-width : 865px)
             position: absolute
