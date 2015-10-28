@@ -398,6 +398,10 @@ $content-bg : #2E3E51
     height: 122px
     border-bottom: 1px solid #43434D
     position: relative
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+      height: 90px
+      /* MacBook-Retina-specific stuff here */
+
   .logo-inner
     width: 215px
     margin: 0 auto
@@ -441,6 +445,8 @@ $content-bg : #2E3E51
     left: 0
     right: 0px
     overflow: hidden
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+      top: 90px
     ul.primary-menu
       overflow-y: auto
       position: absolute
@@ -1479,10 +1485,15 @@ li.credits
 .test-568
   @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2)
     display: none
+.jivo_top_wrap
+  @media #{$small-only}
+    display: none
 .notes
   width: 97%
   margin: 0 auto
   margin-bottom: 10px
+  @media #{$small-only}
+    display: none
   .hide-note-for-small
     @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)
       display: none
