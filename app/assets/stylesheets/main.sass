@@ -264,6 +264,42 @@ p.ud-biling-info
   .socials
     display: none
     width: 85px
+
+
+/* Icon Buzz */
+@-webkit-keyframes hvr-icon-buzz
+  50%
+    -webkit-transform: translateX(3px) rotate(2deg)
+    transform: translateX(3px) rotate(2deg)
+
+  100%
+    -webkit-transform: translateX(-3px) rotate(-2deg)
+    transform: translateX(-3px) rotate(-2deg)
+
+@keyframes hvr-icon-buzz
+  50%
+    -webkit-transform: translateX(3px) rotate(2deg)
+    transform: translateX(3px) rotate(2deg)
+
+
+  100%
+    -webkit-transform: translateX(-3px) rotate(-2deg)
+    transform: translateX(-3px) rotate(-2deg)
+
+.ud-icon-buzz
+  //img
+  //  -webkit-transform: translateZ(0)
+  //  transform: translateZ(0)
+  img
+    -webkit-animation-name: hvr-icon-buzz
+    animation-name: hvr-icon-buzz
+    -webkit-animation-duration: 0.15s
+    animation-duration: 0.15s
+    -webkit-animation-timing-function: linear
+    animation-timing-function: linear
+    -webkit-animation-iteration-count: infinite
+    animation-iteration-count: infinite
+
 .opened-main-menu
   .button-menu-wrap:before
     @media (min-width : 0em) and (max-width : 840px)
