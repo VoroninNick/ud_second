@@ -866,11 +866,14 @@ ul.primary-menu
 .hide-header
   header
     top: -80px
+    @media #{$small-only}
+      top: 0
   .ordered-list-wrap
     top: 20px
   main.retina-livechat-page-wrap
     margin-top: 20px
-
+    @media #{$small-only}
+      margin-top: 120px
 .ordered-list-wrap
   width: 300px
   position: fixed
