@@ -682,6 +682,35 @@ ul.primary-menu
           img
             width: 65%
             +my_vertical_align
+      &.chat-bubble
+        width: 55px
+        a
+          div
+            width: 47%
+            margin: 0 auto
+            +my_vertical_align
+            .round-count
+              position: absolute
+              top: 0
+              right: -15px
+              width: 24px
+              height: 24px
+              border-radius: 50%
+              background-color: #D03F4A
+              &:before
+                position: absolute
+                top: 0
+                left: 0
+                display: inline-block
+                content: attr(data-count)
+                color: #fff
+                font:
+                  size: rem-calc(14)
+                  family: 'Fira Sans', sans-serif
+                line-height: rem-calc(24)
+                width: 24px
+                text-align: center
+
       &.notification
         width: 55px
         padding: 0
