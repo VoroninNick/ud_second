@@ -16,11 +16,12 @@
           =image_tag "UD-icon-notifications.svg"
           .round-count data-count="28"
       =render partial: "partials/notifications"
-    li.chat-bubble
-      a
+    li.notification.chat-bubble.notification-wrap
+      a.notification-link
         .ud-icon-buzz
           =image_tag "UD-icon-chat-bubble-dark.svg"
           .round-count data-count="99"
+      =render partial: "partials/notifications"
     li.credits
       a
         div 2999
