@@ -166,6 +166,11 @@ resetForm = ($form) ->
   $form.find('input, select, textarea').not(':input[type=button], :input[type=submit], :input[type=reset]').val ''
 
 $(document).ready ->
+# notify alert sound
+  soundFx = $( 'audio#notify-sound' )
+  if $('.ud-notify-item').hasClass('ud-icon-buzz')
+    soundFx[0].play()
+
 #  group ckeckbox with class radio-checkbox
   $('input.radio-checkbox[type="checkbox"]').on 'change', ->
     $('input[type="checkbox"]').not(this).prop 'checked', false
