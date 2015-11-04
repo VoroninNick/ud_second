@@ -14,10 +14,42 @@ body
     flex-direction: column
     height: 100%
   &.live-chat-body
+    header
+      @media #{$small-only}
+        margin-bottom: 0
+    main
+      @media #{$small-only}
+        margin-top: 80px !important
+        &.main-block-wrap
+          position: absolute
+          left: 0
+          top: 0
+          right: 0
+          bottom: 0
+          >.main-block-wrap
+            height: 100%
+            >.row.medium-main
+              position: absolute
+              left: 0
+              top: 105px
+              right: 0
+              bottom: 0
+              >.columns
+                height: 100%
+                .live-chat-page-wrap
+                  height: 100%
+                  .lvc-live-chat-wrap
+                    height: 100%
+                    .lvc-chat-wrap
+                      height: 100% !important
+                      .text-chat-wrap
+                        height: 100%
     footer
       height: 0 !important
       min-height: 0 !important
       overflow: hidden
+      @media #{$small-only}
+        display: none !important
 
 
 /* Let's get this party started */
@@ -872,8 +904,6 @@ ul.primary-menu
     top: 20px
   main.retina-livechat-page-wrap
     margin-top: 20px
-    @media #{$small-only}
-      margin-top: 120px
 .ordered-list-wrap
   width: 300px
   position: fixed

@@ -1,9 +1,15 @@
 //======================================
 // new version
 //======================================
-
+.lc-mobile-activity-status
+  height: 105px
+  background: #2E2E36
 .live-chat-page-wrap
   margin-bottom: 100px
+  @media #{$small-only}
+    margin-left: -0.9375rem
+    margin-right: -0.9375rem
+    margin-bottom: 0
   .lvc-offered-list-wrap, .lvc-live-chat-wrap
     height: 100%
     float: left
@@ -386,6 +392,11 @@
       margin-bottom: 10px
 
     .my-message
+      @media #{$small-only}
+        .large-3
+          display: none
+        .large-9
+          width: 100%
       .avatar
         .image
           border-radius: 50%
@@ -536,6 +547,14 @@
       height: 220px
       textarea
         margin-bottom: 7px
+    @media #{$small-only}
+      background: #2E2E36
+      bottom: 0
+      &:after
+        display: none
+      .ud-button
+        display: none !important
+
     .text-chat-input-container-inner
       position: relative
       width: 100%
