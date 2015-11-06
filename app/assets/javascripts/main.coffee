@@ -368,6 +368,7 @@ $(document).ready ->
   if(window.location.href.indexOf("live_chat") > -1)
     dpr     = window.devicePixelRatio
     $('body').addClass('live-chat-body')
+    $('body').addClass('live-chat-body-mobile')
     if dpr == 2
       $('body').addClass('live-chat-body')
     if dpr == 2 || dpr == 1

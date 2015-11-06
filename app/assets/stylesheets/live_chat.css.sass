@@ -4,6 +4,9 @@
 .lc-mobile-activity-status
   height: 105px
   background: #2E2E36
+  display: none
+  @media #{$small-only}
+    display: block
 .live-chat-page-wrap
   margin-bottom: 100px
   @media #{$small-only}
@@ -550,11 +553,18 @@
     @media #{$small-only}
       background: #2E2E36
       bottom: 0
+      height: 210px
       &:after
         display: none
       .ud-button
         display: none !important
 
+    .notification-container
+      @media #{$small-only}
+        left: -130px
+        &:after
+          left: auto
+          right: 10px
     .text-chat-input-container-inner
       position: relative
       width: 100%
@@ -621,6 +631,8 @@
         margin-right: 20px
         path, circle, polygon
           fill: #48647C
+          @media #{$small-only}
+            fill: #BEC3C7
     a.translate
       color: #3598DB
       font:
@@ -641,8 +653,15 @@
         family: "Fira Sans", sans-serif
       color: #D03F4A
       padding-right: 25px
+      @media  #{$small-only}
+        color: #3598DB
+        font:
+          size: rem-calc(14)
       span
         color: #2E3E51
+        @media  #{$small-only}
+          color: #BEC3C7
+          padding-left: 10px
 
 .reveal-modal-bg
   //height: 3000px
