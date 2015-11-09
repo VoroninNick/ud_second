@@ -1375,6 +1375,18 @@ $(document).ready ->
 #=====================================================
 # binder for frends list minimizate - maximizate
 #=====================================================
+  owl_txt_chat = $('ul#live-chat-activity-list')
+  owl_txt_chat.owlCarousel
+    pagination: false,
+    navigation: false,
+    items: 4 #10 items above 1000px browser width
+#    itemsMobile: false # itemsMobile disabled - inherit from itemsTablet option
+    itemsMobile       : [640,4]
+    autoPlay : false
+
+# =====================================================
+# binder for frends list minimizate - maximizate
+#=====================================================
   $('.ordered-list-wrap img.diamond-logo').click ->
     if($(window).width() < 1445)
       $wrapper = $(this).closest('.ordered-list-wrap')
