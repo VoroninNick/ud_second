@@ -1,7 +1,17 @@
 .user-profile-wrap.notification-container
   .user-profile
+    .small-user-profile-header.show-for-small-only id 828204
+    .small-user-profile-main.show-for-small-only
+      .small-user-profile-main-one
+        a href=profile_path
+          =embedded_svg "6.svg"
+          |My profile
+      .small-user-profile-main-one
+        a href=profile_path
+          =embedded_svg "logout.svg"
+          |Logout
     .row
-      .columns.large-6.medium-6
+      .columns.large-6.medium-6.hide-for-small-only
         .avatar
           =image_tag "user_avatar_default.png"
           a Change photo
@@ -11,23 +21,27 @@
           li
             a Our Rules
       .columns.padding-left-large-none.padding-left-medium-none.large-6.medium-6
-        .information
+        .information.hide-for-small-only
           .name
             strong Gregory
           p from New York, USA | 828204
-        p Credits left:
+        p.hide-for-small-only Credits left:
         .credits
           |2999
-        p.critical-number
+        p.critical-number.hide-for-small-only
           |Free Introduction letters left:&nbsp;&nbsp;
           span
             |6
-        p.much-number
+        p.much-number.hide-for-small-only
           |Free chat minutes left:&nbsp;&nbsp;
           span
             |756
         /.normal-number   - for normal stats credits
 
-    .row
+    .row.small-user-profile-by-more-credits
       .columns
-        a.ud-more-credits.special-text-shadow buy more credits
+        a.ud-more-credits.special-text-shadow
+          |buy
+          span
+            |more
+          |credits

@@ -859,6 +859,87 @@ ul.primary-menu
 
             border-radius: 50%
             +my_vertical_align
+        .user-profile-wrap
+          @media #{$small-only}
+            min-width: 240px
+            width: 240px !important
+            min-height: 270px !important
+            padding: 0
+            &:after
+              border-color: transparent transparent #BEC3C7 transparent
+            .user-profile
+              height: 100%
+              position: absolute
+              .credits
+                color: #D03F4A
+                background: transparent
+                height: 60px
+                width: 100%
+                margin-left: 20px
+                border-radius: 0
+                margin: 0
+                line-height: 60px
+                font:
+                  size: rem-calc(21)
+                  weight: 500
+                  family: "Fira Sans", sans-serif
+                padding-left: 55px
+                cursor: pointer
+                &:before
+                  background: asset-url("UD-icon-diamond-red.svg")
+                  background-size: 100%
+                  background-repeat: no-repeat
+                  background-position: center
+                  width: 24px
+                  height: 24px
+                  top: 17px
+                  left: 15px
+              .ud-more-credits
+                margin-left: -0.9375rem
+                margin-right: -0.9375rem
+                span
+                  //display: none
+
+          .user-profile
+            .small-user-profile-header
+              height: 40px
+              background: #BEC3C7
+              width: 100%
+
+              color: #2E3E51
+              line-height: 40px
+              text-align: center
+              font:
+                size: rem-calc(21)
+                weight: 500
+                family: "Fira Sans", sans-serif
+              text-transform: uppercase
+            .small-user-profile-main
+              height: 120px
+              border-bottom: 1px solid #BEC3C7
+              .small-user-profile-main-one
+                height: 60px
+                a
+                  display: block
+                  padding-left: 20px
+                  line-height: 60px
+                  color: #2E3E51
+                  font:
+                    size: rem-calc(16)
+                    weight: 500
+                svg
+                  height: 100%
+                  width: 24px
+                  float: left
+                  margin-right: 15px
+            .small-user-profile-by-more-credits
+              @media #{$small-only}
+                position: absolute
+                bottom: 0
+              .ud-more-credits
+                span
+                  margin: 0px 8px
+
         &.close
           .user-profile-wrap
             +element-invisible
