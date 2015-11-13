@@ -166,7 +166,21 @@ resetForm = ($form) ->
   $form.find('input, select, textarea').not(':input[type=button], :input[type=submit], :input[type=reset]').val ''
 
 $(document).ready ->
+##========================================================================================
+## ios hover states
+##========================================================================================
+#  $('.locales-switcher li, .button-order-form a, .dishes-inner .dish').on 'touchstart mouseenter focus', (e) ->
+#    if e.type == 'touchstart'
+## Don't trigger mouseenter even if they hold
+#      e.stopImmediatePropagation()
+#      # If $item is a link (<a>), don't go to said link on mobile, show menu instead
+#      e.preventDefault()
+#  # Show the submenu here
+#  #      alert 'test'
+
+#========================================================================================
 # notify alert sound
+#========================================================================================
   soundFx = $( 'audio#notify-sound' )
   if $('.ud-notify-item').hasClass('ud-icon-buzz')
     soundFx[0].play()
