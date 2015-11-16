@@ -166,7 +166,39 @@ resetForm = ($form) ->
   $form.find('input, select, textarea').not(':input[type=button], :input[type=submit], :input[type=reset]').val ''
 
 $(document).ready ->
-##========================================================================================
+#========================================================================================
+# scroll
+#========================================================================================
+  $('.notification-panel').on 'scroll', ->
+    $panel = $(@)
+    viewport_height = $panel.height()
+    view_port_bottom = $panel.scrollTop() + viewport_height
+    console.log('view port bottom: ', view_port_bottom)
+
+    $panel.children().filter(':not(.read)').each ->
+      $item = $(@)
+      item_top = $item.offset().top
+      console.log('item top: ', item_top)
+      if item_top <= view_port_bottom
+        console.log('item bottom to top -', item_top - $item.height()-11)
+        console.log('panel height -', viewport_height)
+        if (item_top - $item.height()-11) <= viewport_height
+          $item.addClass 'read'
+
+#  $('.notification-panel').on 'scroll', ->
+#    $panel = $(this)
+#    viewport_height = $panel.height()
+#    view_port_bottom = $panel.scrollTop() + viewport_height
+#    $panel.children().filter(':not(.read)').each ->
+#      $item = $(this)
+#      item_top = $item.offset().top
+#      item_bottom = item_top + $item.height()
+#      diff = item_bottom - view_port_bottom
+#      diff_percent = diff / item.height()
+#      larger_part_visible = diff_percent > -0.5
+#      if item_top <= view_port_bottom && larger_part_visible
+#        $item.addClass 'read'
+#========================================================================================
 ## ios hover states
 ##========================================================================================
 #  $('.locales-switcher li, .button-order-form a, .dishes-inner .dish').on 'touchstart mouseenter focus', (e) ->
@@ -181,9 +213,9 @@ $(document).ready ->
 #========================================================================================
 # notify alert sound
 #========================================================================================
-  soundFx = $( 'audio#notify-sound' )
-  if $('.ud-notify-item').hasClass('ud-icon-buzz')
-    soundFx[0].play()
+#  soundFx = $( 'audio#notify-sound' )
+#  if $('.ud-notify-item').hasClass('ud-icon-buzz')
+#    soundFx[0].play()
 
 #  group ckeckbox with class radio-checkbox
   $('input.radio-checkbox[type="checkbox"]').on 'change', ->
