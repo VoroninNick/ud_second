@@ -1,6 +1,6 @@
 .header-navigation
   section
-    li.search
+    /li.search
       a
         =image_tag "UD-icon-search.svg"
       .search-input-wrap
@@ -10,27 +10,26 @@
               input type="text" placeholder="Find a lady by User ID, Name  or keyword"
             .form-action
               button SEARCH
-    li.notification.notification-wrap
+    /li.notification.notification-wrap
       a.notification-link
         .ud-notify-item.ud-icon-buzz
           =image_tag "UD-icon-notifications.svg"
           .round-count data-count="28"
       =render partial: "partials/notifications"
-    li.notification.chat-bubble.notification-wrap
+    /li.notification.chat-bubble.notification-wrap
       a.notification-link
         .ud-notify-item.ud-icon-buzz
           =image_tag "UD-icon-chat-bubble-dark.svg"
           .round-count data-count="99"
       =render partial: "partials/notifications"
-    li.credits
+    /li.credits
       a
         div 2999
     li.profile-avatar.notification-wrap
       a.notification-link
-        |test
-        /.image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+        .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
       =render partial: "partials/user_profile"
-    li.profile-info.hide-for-small-only
+    /li.profile-info.hide-for-small-only
       div
         p welcome back,
         strong Gregory
