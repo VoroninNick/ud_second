@@ -1,4 +1,4 @@
-.row.medium-main
+/.row.medium-main
   .columns.medium-10.medium-centered.large-12
     form
       .input
@@ -10,7 +10,13 @@
         |or&nbsp;
         span
           |Clear form
-
+.row.medium-main
+  .columns
+    .test-block
+      .profile-avatar.notification-wrap
+        a.notification-link
+          .image style="background: url('#{asset_path("user_avatar_default.png")}')no-repeat center center;"
+        =render partial: "partials/user_profile"
 /.row.medium-main
 /  .columns.medium-10.medium-centered.large-12
 /    .ud-message-wrap#ud-mb-12
@@ -319,7 +325,7 @@
 /  .columns
 /    ul.ud-testing
 /      li 1
-.row
+/.row
   .columns
     h1 default multi select
     - temp = 100
