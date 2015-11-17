@@ -432,6 +432,38 @@
       background: rgba(255,0,0,0.4)
     &.ud-chat-has-attached-file
       bottom: 237px
+    .ud-text-chat-datetime-separator
+      border-bottom: 1px solid #BEC3C7
+      margin-top: 20px
+      margin-bottom: 16px
+      position: relative
+      div
+        color: #939598
+        font:
+          size: rem-calc(12)
+          weight: 300
+          family: "Fira Sans", sans-serif
+        line-height: 14.4px
+        position: absolute
+        bottom: 0
+      .ud-tc-separator-status
+        left: 0
+      a.ud-tc-separator-help
+        color: #3598DB
+        font:
+          size: rem-calc(14)
+          weight: 300
+          family: "Fira Sans", sans-serif
+        line-height: 16.8px
+        +my_horizontal_align()
+          position: absolute
+        bottom: -10px
+        background: #EDF0F1
+        display: block
+        padding: 2px 10px
+
+      .ud-tc-separator-date
+        right: 0
     .ud-one-message
       margin-bottom: 10px
 
