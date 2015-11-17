@@ -1424,10 +1424,11 @@ $(document).ready ->
   owl_txt_chat = $('ul#live-chat-activity-list')
   owl_txt_chat.owlCarousel
     pagination: false,
-    navigation: false,
-    items: 4 #10 items above 1000px browser width
-#    itemsMobile: false # itemsMobile disabled - inherit from itemsTablet option
-    itemsMobile       : [640,4]
+    navigation: true,
+#    items: 4 #10 items above 1000px browser width
+    itemsTablet: [640,4],
+    itemsMobile       : [450,3],
+    navigationText: ["", ""],
     autoPlay : false
 
 # =====================================================

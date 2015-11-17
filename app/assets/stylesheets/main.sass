@@ -34,6 +34,8 @@ body
               top: 105px
               right: 0
               bottom: 0
+              @media  #{$small-only}
+                top: 0
               >.columns
                 height: 100%
                 .live-chat-page-wrap
@@ -990,6 +992,7 @@ ul.primary-menu
     top: 20px
   main.retina-livechat-page-wrap
     margin-top: 20px
+
 .ordered-list-wrap
   width: 300px
   position: fixed
