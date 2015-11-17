@@ -256,6 +256,7 @@ p.ud-biling-info
   width: 300px
   transition: width .5s
   height: 100%
+  background: red
   .button-menu
     +my_vertical_align
       position: absolute
@@ -658,6 +659,7 @@ ul.primary-menu
   top: 0
   right: 0
   bottom: 0
+  background: green
   &.open-search
     @media (min-width : 830px) and (max-width : 865px)
       width: 66%
@@ -678,6 +680,7 @@ ul.primary-menu
         display: block
         height: 100%
       &.search
+        background: yellow
         @media #{$small-only}
           display: none
         &.open
@@ -716,34 +719,6 @@ ul.primary-menu
           img
             width: 65%
             +my_vertical_align
-      &.chat-bubble
-        width: 55px
-        a
-          //div
-            width: 47%
-            margin: 0 auto
-            +my_vertical_align
-            .round-count
-              position: absolute
-              top: 0
-              right: -15px
-              width: 24px
-              height: 24px
-              border-radius: 50%
-              background-color: #D03F4A
-              &:before
-                position: absolute
-                top: 0
-                left: 0
-                display: inline-block
-                content: attr(data-count)
-                color: #fff
-                font:
-                  size: rem-calc(14)
-                  family: 'Fira Sans', sans-serif
-                line-height: rem-calc(24)
-                width: 24px
-                text-align: center
 
       &.notification
         width: 55px
@@ -752,6 +727,7 @@ ul.primary-menu
         display: block
         margin: 0
         position: relative
+        background: blue
         .notification-container
           /*display: block !important*/
           right: -40px
@@ -806,8 +782,38 @@ ul.primary-menu
         &.close
           .notifications-wrap
             +element-invisible
+      &.chat-bubble
+        width: 55px
+        background: sandybrown
+        a
+        //div
+          width: 47%
+          margin: 0 auto
+          +my_vertical_align
+          .round-count
+            position: absolute
+            top: 0
+            right: -15px
+            width: 24px
+            height: 24px
+            border-radius: 50%
+            background-color: #D03F4A
+            &:before
+              position: absolute
+              top: 0
+              left: 0
+              display: inline-block
+              content: attr(data-count)
+              color: #fff
+              font:
+                size: rem-calc(14)
+                family: 'Fira Sans', sans-serif
+              line-height: rem-calc(24)
+              width: 24px
+              text-align: center
       &.credits
         margin-left: 1rem
+        background: brown
         @media #{$small-only}
           display: none
         a
@@ -845,6 +851,7 @@ ul.primary-menu
         width: 66px
         position: relative
         z-index: 1111
+        background: royalblue
         a
           z-index: 1111
           .image
@@ -947,6 +954,7 @@ ul.primary-menu
             +element-invisible
       &.profile-info
         padding-left: 8px
+        background: lightseagreen
         div
           +my_vertical_align
         p
@@ -977,6 +985,7 @@ ul.primary-menu
           display: block
           padding-top: 3px
       &.ordered-list-button
+        background: sandybrown
         a
           img
             +my_vertical_align

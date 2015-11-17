@@ -1594,7 +1594,6 @@ $(document).ready ->
 #notification popup
 #===========================================================
   $('body').on 'click', '.notification-link', (event)->
-    alert 't'
     $wrap = $(this).closest('.notification-wrap')
     $container = $wrap.find('.notification-container').filter(":not(:visible)")
     $container.fadeIn 300
