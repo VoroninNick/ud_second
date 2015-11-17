@@ -852,9 +852,10 @@ ul.primary-menu
         position: relative
         z-index: 1111
         background: royalblue
-        a
+        .notification-link
           z-index: 1111
           background: red
+          height: 100%
           .image
             max-width: 100%
             width: 100%
@@ -869,7 +870,6 @@ ul.primary-menu
 
             border-radius: 50%
             +my_vertical_align
-            display: none
         .user-profile-wrap
           @media #{$small-only}
             min-width: 240px
