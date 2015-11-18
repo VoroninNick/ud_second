@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root 'main#index'
 
   get 'main' => 'main#main'
+  get 'm_main' => 'mobile#m_main'
   get 'main/registration' => 'main#main_registration'
   get 'main/recovery-password' => 'main#main_recovery_password'
   get 'favorites' => 'main#favorites'

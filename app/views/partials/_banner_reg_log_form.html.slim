@@ -1,67 +1,13 @@
 .l-banner-login-form-inner
   .l-banner-login-form
     .lbf-header-wrap.text-center
-      .lbf-tumbler.lbf-registration-wrap.lbf-active
-        b Registration
-        p For new users!
-      .lbf-tumbler.lbf-login-wrap
+      .lbf-tumbler.lbf-login-wrap.lbf-active
         b login
         p For existing users
-    .lbf-form-wrap.lbf-registration-form
-      form
-        .columns
-          .row
-            .columns.text-center
-              i Welcome to Ukrainian diamonds!
-          .row.collapse
-            .columns.large-6.medium-6.small-6
-              .ud-gender-input-wrap
-                .ud-gender-input-inner
-                  .ud-gender-input
-                    .lbf-gender-label-wrap.lbf-male
-                      input#lbf-male.lbf-male type="radio" name="gender" value="male"
-
-                      .lbf-ico
-                        =embedded_svg "UAD-icons-female.svg"
-
-                      .lbf-label
-                        label for="lbf-male" Male
-
-
-            .columns.large-6.medium-6.small-6
-              .ud-gender-input-wrap
-                .ud-gender-input-inner
-                  .ud-gender-input
-                    .lbf-gender-label-wrap.lbf-female
-                      input#lbf-female.lbf-female type="radio" name="gender" value="female"
-
-                      .lbf-ico
-                        =embedded_svg "UAD-icons-male.svg"
-
-                      .lbf-label
-                        label for="lbf-female"
-                          |Female
-                      .clearfix
-          .row
-            .columns
-              .input
-                label Username:
-                input type="text" placeholder="username" name="fname"
-              .input
-                label E-mail:
-                input type="email" placeholder="usermail@gmail.com" name="email"
-              .input.lbf-for-fame-only.hide
-                label Phone:
-                input type="tel" placeholder="(XXX)XXX-XXXX" name="pnone"
-              .input
-                label Password:
-                input type="password" placeholder="********" name="password"
-              .input-ud-button
-                input type="submit" value="JOIN FOR FREE!"
-        .clearfix
-
-    .lbf-form-wrap.lbf-login-form.lf-fp-popup-wrap.hide
-
+      .lbf-tumbler.lbf-registration-wrap
+        b Registration
+        p For new users!
+    .lbf-form-wrap.lbf-login-form.lf-fp-popup-wrap
       / banner login form wrap
       .l-hlf-forgot-password.hide
         .columns
@@ -121,3 +67,60 @@
                 .input-ud-button
                   input type="submit" value="login"
         .clearfix
+
+    .lbf-form-wrap.lbf-registration-form.hide
+      form
+        .columns
+          .row
+            .columns.text-center
+              i Welcome to Ukrainian diamonds!
+          .row.collapse
+            .columns.large-6.medium-6.small-6
+              .ud-gender-input-wrap
+                .ud-gender-input-inner
+                  .ud-gender-input
+                    .lbf-gender-label-wrap.lbf-male
+                      input#lbf-male.lbf-male type="radio" name="gender" value="male"
+
+                      .lbf-ico
+                        =embedded_svg "UAD-icons-female.svg"
+
+                      .lbf-label
+                        label for="lbf-male" Male
+
+
+            .columns.large-6.medium-6.small-6
+              .ud-gender-input-wrap
+                .ud-gender-input-inner
+                  .ud-gender-input
+                    .lbf-gender-label-wrap.lbf-female
+                      input#lbf-female.lbf-female type="radio" name="gender" value="female"
+
+                      .lbf-ico
+                        =embedded_svg "UAD-icons-male.svg"
+
+                      .lbf-label
+                        label for="lbf-female"
+                          |Female
+                      .clearfix
+          .row
+            .columns
+              .input
+                label Username:
+                input type="text" placeholder="username" name="fname"
+              .input
+                label E-mail:
+                input type="email" placeholder="usermail@gmail.com" name="email"
+              .input.lbf-for-fame-only.hide
+                label Phone:
+                input type="tel" placeholder="(XXX)XXX-XXXX" name="pnone"
+              .input
+                label Password:
+                input type="password" placeholder="********" name="password"
+              .input-ud-button
+                input type="submit" value="JOIN FOR FREE!"
+        .clearfix
+
+  .clearfix
+
+
