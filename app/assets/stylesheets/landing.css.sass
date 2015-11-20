@@ -397,6 +397,8 @@ body.landing-page-wrap
               position: relative
               margin-bottom: 12px
               .ud-gender-input-inner
+                .ud-gender-input
+                  width: 80px
                 .lbf-female
                   width: 120%
                 +my-horizontal_align
@@ -688,6 +690,8 @@ body.landing-page-wrap
               margin-right: 8px !important
             @media (max-width: 400px)
               margin-right: 6px !important
+
+
 .input-ud-button
   input[type="submit"]
     font-size: 1.125rem
@@ -1087,7 +1091,8 @@ body.landing-page-wrap
   height: 60px
   width: 32px
   z-index: 10
-
+  @media #{$small-only}
+    display: none
   img
     width: 36px
     +my_center_align

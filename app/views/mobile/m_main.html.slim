@@ -1,10 +1,13 @@
 .mobile-main-page
-  .l-main-banner-wrap
+  .l-main-banner-wrap#m_landing_login_form
     .l-banner-login-form-wrap
       .row
         .columns
           =render partial: "partials/banner_reg_log_form"
-.l-who-is-online-now-wrap
-  .l-header.title-head.text-center
-    h4 Who is online now?
-  = render partial: "partials/mobile/landing/who_is_online_now"
+  .l-who-is-online-now-wrap
+    .l-header.title-head.text-center
+      h4 Who is online now?
+    = render partial: "partials/mobile/landing/who_is_online_now"
+    .row
+      .columns
+        a.l-ud-button href="#m_landing_login_form" login
