@@ -259,6 +259,24 @@ p.ud-biling-info
   .main-menu
     a
       overflow: hidden
+    .logo
+      position: relative
+      .button-menu
+        position: absolute
+        top: 0
+        right: 0
+        display: none
+        @media only screen and (max-width: 400px)
+          display: block
+        .navicon-button
+          z-index: 1
+          .navicon
+            top: 40%
+            background: white
+            &:before
+              background: white
+            &:after
+              background: white
 .open-menu
   width: 300px
 
@@ -472,6 +490,32 @@ $content-bg : #2E3E51
     transform: rotate(-45deg)
     transform-origin: left bottom
 
+.ud-loading-wrap
+  background: rgba(255, 255, 255, 0.8)
+  position: fixed
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  z-index: 11111
+  .ud-loader
+    +my_center_align()
+      position: absolute
+    p
+      text-align: center
+      color: #2E3E51
+      font:
+        size: rem-calc(18)
+        family: "Fira Sans", sans-serif
+        weight: 500
+      line-height: 21.6px
+      text-transform: uppercase
+      margin-top: 10px
+      span
+        display: block
+        font:
+          size: rem-calc(14)
+          weight: 300
 .logo
   border-bottom: 1px solid #27272E
   a
@@ -487,6 +531,9 @@ $content-bg : #2E3E51
     width: 215px
     margin: 0 auto
     +my_vertical_align
+    //@media only screen and (min-width: 40.063em)
+    //@media #{$small-only}
+      margin-left: 1rem
     .icon
       float: left
       width: 80px
@@ -497,6 +544,9 @@ $content-bg : #2E3E51
       left: 78px
       @media only screen and (min-width : 40.063em) and (max-width : 64em)
         display: none
+      //@media #{$small-only}
+        width: 110px
+
 .round-count
   position: absolute
   top: 0px
