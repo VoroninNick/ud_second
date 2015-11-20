@@ -731,31 +731,17 @@ ul.primary-menu
       &.chat-bubble
         width: 55px
         a
-          //div
-            width: 47%
-            margin: 0 auto
-            +my_vertical_align
-            .round-count
-              position: absolute
-              top: 0
-              right: -15px
-              width: 24px
-              height: 24px
-              border-radius: 50%
-              background-color: #D03F4A
-              &:before
-                position: absolute
-                top: 0
-                left: 0
-                display: inline-block
-                content: attr(data-count)
-                color: #fff
-                font:
-                  size: rem-calc(14)
-                  family: 'Fira Sans', sans-serif
-                line-height: rem-calc(24)
-                width: 24px
-                text-align: center
+        .notification-container
+          @media #{$small-only}
+            right: -146px !important
+            min-width: 320px
+            width: 320px
+            &:before
+              right: 164px !important
+              left: inherit !important
+            &:after
+              right: 165px !important
+              left: inherit !important
 
       &.notification
         width: 55px
@@ -765,7 +751,6 @@ ul.primary-menu
         margin: 0
         position: relative
         .notification-container
-          /*display: block !important*/
           right: -40px
           &:before
             display: block
@@ -778,6 +763,9 @@ ul.primary-menu
             border-style: solid
             border-width: 0 11px 11px 11px
             border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent
+            @media #{$small-only}
+              right: inherit
+              left: 82px
           &:after
             display: block
             content: ""
@@ -789,6 +777,13 @@ ul.primary-menu
             border-style: solid
             border-width: 0 11px 11px 11px
             border-color: transparent transparent #edf0f1 transparent
+            @media #{$small-only}
+              right: inherit
+              left: 81px
+          @media #{$small-only}
+            right: -146px
+            min-width: 320px
+            width: 320px
         a
           div
             width: 47%
