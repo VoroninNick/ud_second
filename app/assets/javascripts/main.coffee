@@ -397,9 +397,9 @@ $(document).ready ->
       browse_video.addClass('hide')
       view_video.removeClass('hide')
 
-#================================
+#====================================================
 #  deleting video from profile
-#================================
+#====================================================
   $('.p-video-wrap .p-delete-video').click ->
     wrap = $(@).closest('.p-video-wrap')
     browse_video = wrap.find('.ud-browse-video-input')
@@ -407,9 +407,10 @@ $(document).ready ->
     if browse_video.hasClass('hide')
       browse_video.removeClass('hide')
       view_video.addClass('hide')
-#================================
+
+#====================================================
 #  detect ration
-#================================
+#====================================================
 
   if(window.location.href.indexOf("live_chat") > -1)
     dpr     = window.devicePixelRatio
@@ -421,7 +422,11 @@ $(document).ready ->
       $('body').addClass('hide-header')
       $('main.main-block-wrap').addClass('retina-livechat-page-wrap')
 
+
+#====================================================
 #   init binder upload file
+#====================================================
+
   $('.ud-file-uploader-wrap input[type=file]').change ->
     $(@).closest('.ud-file-uploader-wrap').find('.ud-uploaded-file-wrap').text($(@).val())
 
@@ -1643,9 +1648,11 @@ $(window).resize ->
 
 
   if $(window).height() <= 768
-    $('body').addClass('live-chat-body')
+    if(window.location.href.indexOf("live_chat") > -1)
+      $('body').addClass('live-chat-body')
   else
-    $('body').removeClass('live-chat-body')
+    if(window.location.href.indexOf("live_chat") > -1)
+      $('body').removeClass('live-chat-body')
 
 
   friends_online()

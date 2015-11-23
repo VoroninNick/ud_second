@@ -152,7 +152,7 @@
     @media #{$small-only}
       height: 105px !important
       width: 100%
-      display: block
+      display: none
       .title-head
         display: none
       .lvc-offered-list-inner
@@ -259,6 +259,13 @@
       z-index: 11
       a.ud-button
         width: auto!important
+      .text-chat-wrap
+        @media #{$small-only}
+          &:after
+            display: none
+          .title-head
+            display: none
+
     .lvc-video-wrap
       background-color: #2E2E36
       width: 40%
@@ -450,6 +457,8 @@
   overflow: auto
   min-height: 597px
   position: relative
+  @media #{$small-only}
+    min-height: auto
   &:after
     position: absolute
     bottom: 0
@@ -481,7 +490,8 @@
     overflow-y: auto
     overflow-x: hidden
     @media #{$small-only}
-      bottom: 295px
+      top: 0px
+      bottom: 180px
     &::-webkit-scrollbar
       width: 8px
       background-color: #EDF0F1
@@ -699,7 +709,7 @@
       background: #2E2E36
       bottom: 0
       height: 180px
-      bottom: 105px
+      bottom: 0px
       &:after
         display: none
       .ud-button
@@ -721,6 +731,9 @@
         position: absolute
         top: 0
         right: 0.9375rem
+      p.ud-biling-info
+        @media #{$small-only}
+          display: none
     textarea
       margin: 0
       outline: none !important
@@ -781,6 +794,10 @@
           fill: #48647C
           @media #{$small-only}
             fill: #BEC3C7
+      &.browse-file
+        svg
+          @media #{$small-only}
+            margin-right: 0
     a.translate
       color: #3598DB
       font:
@@ -812,7 +829,7 @@
           size: rem-calc(14)
           weight: 400
         float: left !important
-        padding: 0 10px
+        padding: 0 6px
         line-height: 30px
         margin-right: 10px
         span

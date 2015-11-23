@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'search' => 'main#search'
   # get 'live_chat' => 'main#live_chat'
   get 'live_chat' => 'main#live_chat2'
+  get 'm_live_chat' => 'main#m_live_chat'
   get 'gifts' => 'main#gifts'
 
   get 'mail_box' => 'main#mail_box'
