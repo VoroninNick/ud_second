@@ -167,6 +167,11 @@ resetForm = ($form) ->
 
 $(document).ready ->
 #========================================================================================
+# notifications click
+#========================================================================================
+  $('section .notification .notification-link').click ->
+    console.log('selector for notifications')
+#========================================================================================
 # scroll
 #========================================================================================
   $('.notification-panel').on 'scroll', ->
@@ -180,9 +185,9 @@ $(document).ready ->
       item_top = $item.offset().top
       console.log('item top: ', item_top)
       if item_top <= view_port_bottom
-        console.log('item bottom to top -', item_top - $item.height()-11)
+        console.log('item bottom to top -', item_top - $item.height()-12)
         console.log('panel height -', viewport_height)
-        if (item_top - $item.height()-11) <= viewport_height
+        if (item_top - $item.height()-12) <= viewport_height
           $item.addClass 'read'
 
 #  $('.notification-panel').on 'scroll', ->
