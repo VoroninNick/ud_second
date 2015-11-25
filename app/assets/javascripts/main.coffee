@@ -174,21 +174,27 @@ $(document).ready ->
 #========================================================================================
 # scroll
 #========================================================================================
+
   $('.notification-panel').on 'scroll', ->
     $panel = $(@)
     viewport_height = $panel.height()
     view_port_bottom = $panel.scrollTop() + viewport_height
-    console.log('view port bottom: ', view_port_bottom)
-
+#    console.log('view port bottom: ', view_port_bottom)
+    i =1
     $panel.children().filter(':not(.read)').each ->
       $item = $(@)
       item_top = $item.offset().top
-      console.log('item top: ', item_top)
+#      console.log('item top: ', item_top)
       if item_top <= view_port_bottom
-        console.log('item bottom to top -', item_top - $item.height()-12)
-        console.log('panel height -', viewport_height)
+
+#        console.log('item bottom to top -', item_top - $item.height()-12)
+#        console.log('panel height -', viewport_height)
+
         if (item_top - $item.height()-12) <= viewport_height
           $item.addClass 'read'
+          id = $item.attr "data-notify-id"
+          console.log("data-notify-id", id)
+
 
 #  $('.notification-panel').on 'scroll', ->
 #    $panel = $(this)

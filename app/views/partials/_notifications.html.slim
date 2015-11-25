@@ -17,7 +17,7 @@
 
     .notification-panel-wrap
       #notifications-panel.notification-panel
-        .notification-one-item.system
+        .notification-one-item.system data-notify-id="1"
           .row
             .columns.large-2.medium-3.small-3
               .avatar
@@ -33,7 +33,7 @@
                     /=embedded_svg "UD-icon-uprising.svg"
                     |read details
                   p now
-        .notification-one-item.system
+        .notification-one-item.system data-notify-id="2"
           .row
             .columns.large-2.medium-3.small-3
               .avatar
@@ -49,7 +49,7 @@
                     /=embedded_svg "UD-icon-uprising.svg"
                     |read details
                   p now
-        .notification-one-item.system
+        .notification-one-item.system data-notify-id="3"
           .row
             .columns.large-2.medium-3.small-3
               .avatar
@@ -66,7 +66,7 @@
                     /=embedded_svg "UD-icon-uprising.svg"
                     |read details
                   p now
-        .notification-one-item.offline
+        .notification-one-item.offline data-notify-id="4"
           .row
             .columns.large-2.medium-3.small-3
               .avatar
@@ -82,7 +82,7 @@
                     /=embedded_svg "UD-icon-heartplus.svg"
                     |say hello
                   p 23 minutes ago
-        .notification-one-item
+        .notification-one-item data-notify-id="5"
           .row
             .columns.large-2.medium-3.small-3
               .avatar
@@ -100,7 +100,7 @@
                     /=embedded_svg "../UD-icon-chat-buble-notification.svg"
                     |reply
                   p 6 hours ago
-        .notification-one-item
+        .notification-one-item  data-notify-id="6"
           .row
             .columns.large-2.medium-3.small-3
               .avatar
@@ -117,8 +117,10 @@
                     /=embedded_svg "UD-icon-block-notification.svg"
                     |unblock
                   p 23 minutes ago
+        - i = 6
         - 25.times do
-          .notification-one-item
+          -i+=1
+          .notification-one-item data-notify-id=i
             .row
               .columns.large-2.medium-3.small-3
                 .avatar
