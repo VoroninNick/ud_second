@@ -180,7 +180,6 @@ $(document).ready ->
     viewport_height = $panel.height()
     view_port_bottom = $panel.scrollTop() + viewport_height
 #    console.log('view port bottom: ', view_port_bottom)
-    i =1
     $panel.children().filter(':not(.read)').each ->
       $item = $(@)
       item_top = $item.offset().top
@@ -480,7 +479,7 @@ $(document).ready ->
     this_for_mesaage = $(@)
 
   $('#AddAPictures .image-popup-one-item a').click ->
-    console.log("my_habdler_for_attachment")
+#    console.log("my_habdler_for_attachment")
     $this = $(this)
     locked = $this.data('locked')
     if !locked
@@ -492,7 +491,7 @@ $(document).ready ->
       $image_object = $this.parent().html()
 
 #      fields to comment before commit
-      attachment_one_item = '<div class="columns large-2 medium-2 small-4 end"><div class="pg-one-item">
+      attachment_one_item = '<div class="pg-one-item">
               <div class="pg-action-button pga-remove">
                 <a data-file-id="123" data-folder="inbox" data-conv-id="65">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
@@ -501,7 +500,7 @@ $(document).ready ->
                   </svg>
                   </a>
               </div>'+$image_object+'
-            </div></div>'
+            </div>'
       attach_wrap.append(attachment_one_item)
 #      fields to comment end
 

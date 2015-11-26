@@ -5,6 +5,8 @@
 //========================================================
 .ud-input-message-wrap, .ud-attach-file-into-message
   .ud-e-attachment-wrap
+    padding-left: 0.9375rem
+    padding-right: 0.9375rem
     a
       .image
         max-width: 100%
@@ -19,6 +21,10 @@
         margin: 0 auto
         border-radius: 0 !important
   .pg-one-item
+    position: relative
+    float: left
+    margin-right: 0.9375rem
+    width: 50px
     @media #{$small-only}
       width: 40px
     &:hover
@@ -32,8 +38,11 @@
     background-color: rgba(40, 127, 184, 0.8)
     opacity: 0
     transition: opacity 0.5s
+    @media #{$small-only}
+      width: 25px
+      height: 25px
     &.pga-remove
-      right: 15px
+      right: 0px
       svg
         width: 59%
         height: 100%
@@ -1075,7 +1084,7 @@ p.ud-inbox-draft
               .pg-one-item
                 padding-bottom: 15px
                 .pga-remove
-                  right: 8px
+                  right: 0px
             .ud-browse-images-wrap
               a
                 display: block

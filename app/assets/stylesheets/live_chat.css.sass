@@ -458,7 +458,7 @@
   min-height: 597px
   position: relative
   @media #{$small-only}
-    min-height: auto
+    min-height: 100%
   &:after
     position: absolute
     bottom: 0
@@ -513,6 +513,8 @@
       background: rgba(255,0,0,0.4)
     &.ud-chat-has-attached-file
       bottom: 237px
+      @media #{$small-only}
+        bottom: 190px
     .ud-text-chat-datetime-separator
       border-bottom: 1px solid #BEC3C7
       margin-top: 20px
@@ -710,8 +712,12 @@
       bottom: 0
       height: 180px
       bottom: 0px
+      height: auto
+      padding-bottom: 10px
       &:after
         display: none
+      &.ud-chat-has-attached-file
+        height: auto
       .ud-button
         display: none !important
 
@@ -744,7 +750,8 @@
         weight: 300 !important
       line-height: 1.05rem
       color: #6D6E71 !important
-
+      @media #{$small-only}
+        height: 50px
     .right-group-links
       display: inline-block
       float: right
@@ -885,6 +892,9 @@
           height: 4px
           background-color: #96D03F
           width: 100%
+        &.offline
+          &:before
+            background-color: #D03F4A
       .about-people
         b
           font:
