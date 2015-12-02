@@ -2,8 +2,21 @@
   .title-head.grey.notification-wrap
     .columns
       .wrap
-        h4 Live chat: With Olena
-        .items-menu.notification-link
+        h4 You chat
+        section
+          li.notification.notification-wrap
+            a.notification-link
+              .ud-notify-item.ud-icon-buzz
+                =image_tag "UD-icon-notifications.svg"
+                .round-count data-count="28"
+            =render partial: "partials/notifications"
+          li.notification.chat-bubble.notification-wrap
+            a.notification-link
+              .ud-notify-item.ud-icon-buzz
+                =image_tag "UD-icon-chat-bubble-dark.svg"
+                .round-count data-count="99"
+            =render partial: "partials/notifications"
+        /.items-menu.notification-link
           =image_tag "UD-icon-sub menu.svg"
           .notification-container
             .menu
