@@ -101,6 +101,8 @@ main
   width: 100%
   margin-top: 120px
   transition: margin-top 0.3s
+  @media #{$small-only}
+    margin-top: 60px
 header, footer
   flex: none
 
@@ -592,6 +594,9 @@ ul.primary-menu
   li
     list-style: none
     border-bottom: 1px solid #27272E
+    &.hide-for-vh
+      @media #{$small-only}
+        display: none
     a
       display: block
       height: 76px
