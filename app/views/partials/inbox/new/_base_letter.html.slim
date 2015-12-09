@@ -12,7 +12,7 @@
       /новий лист з конверсейшина
       .row
         /тіло новішого листа з конверсейшина
-        .columns.large-2.medium-2.small-2
+        .small-3.medium-2.large-2.columns
           .avatar-wrap
             /аватарка листа
             =render partial: "partials/inbox_checkbox", locals: {value: "18"}
@@ -22,15 +22,15 @@
               span
                 |Olena2
 
-        .columns.large-10.medium-10.no-padding-left.small-10
+        .small-9.medium-10.large-10.columns.no-padding-left
           .ui-message-main-wrap data-count-messages="[99+]"
             /лист
             .row
               /заголовок
               .columns.large-6.medium-6
-                .ud-om-counter
-                  |[99+]
                 b
+                  .ud-om-counter
+                    |[99+]
                   span
                     |[2 new]
                   |Spring is the subject of conversation
@@ -383,7 +383,7 @@
       .ud-message-option-popup.notification-container
         = render partial: "partials/inbox/letter_options"
     .row
-      .columns.large-2.medium-2
+      .small-3.medium-2.large-2.columns
         .avatar-wrap
           =render partial: "partials/inbox_checkbox", locals: {value: "24"}
           .avatar
@@ -391,7 +391,7 @@
           .title-for-avatar.text-center
             span
               |Olena2
-      .columns.large-10.medium-10.no-padding-left
+      .small-9.medium-10.large-10.columns.no-padding-left
         .ui-message-main-wrap
           .row
             .columns.large-6.medium-6
@@ -424,7 +424,7 @@
       .ud-message-option-popup.notification-container
         = render partial: "partials/inbox/letter_options"
     .row
-      .columns.large-2.medium-2
+      .small-3.medium-2.large-2.columns
         .avatar-wrap
           =render partial: "partials/inbox_checkbox", locals: {value: "25"}
           .avatar
@@ -432,7 +432,7 @@
           .title-for-avatar.text-center
             span
               |Olena2
-      .columns.large-10.medium-10.no-padding-left
+      .small-9.medium-10.large-10.columns.no-padding-left
         .ui-message-main-wrap
           .row
             .columns.large-6.medium-6
@@ -467,7 +467,7 @@
   .ud-inbox-sent-message.hide tabindex="-1"
     .columns
       .row
-        .columns.large-2.medium-2.small-2
+        .medium-2.large-2.columns.hide-for-small-only
           .avatar-wrap
             .avatar
               a href=profile_path
@@ -475,7 +475,7 @@
             .title-for-avatar.text-center
               span
                 |me
-        .columns.no-padding-left.large-10.medium-10.small-10
+        .medium-10.large-10.columns.no-padding-left
           .ud-input-message-wrap
             form
               .row
