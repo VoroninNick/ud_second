@@ -2,21 +2,15 @@
   .ud-inbox-header-wrap
     .row.medium-main
       .columns.medium-10.medium-centered.large-12
-        .row
-          .columns.large-2.medium-2.small-2.ud-inbox-tab.active.ud-inbox-last-tab
-            a
-              .inbox-tab-head-block
-                .inbox-tab-ico
-                  = embedded_svg "UAD-inbox-1-Inbox.svg"
-                .inbox-tab-title
-                  span inbox
-                .round-count data-count="99"
-
+        = render "partials/inbox/inbox_navigation"
 
   .ud-inbox-content-wrap
     .row.medium-main
       .columns.medium-10.medium-centered.large-12
         .ud-inbox-one-tab-wrap.ud-inbox-wrap
+
+          = render "partials/inbox/inbox_find_letter"
+
           .title-head.grey.notification-wrap.hide
             .columns
               .wrap
@@ -59,25 +53,15 @@
                 .items-menu.notification-link
                   =image_tag "UD-icon-sub menu.svg"
                   .notification-container
-                    .menu
-                      .group
-                        .title
-                          strong Display options:
-                        .options
-                          .option
-                            .label
-                              .icon
-                                = embedded_svg "UD-icon-sort.svg"
-                              span
-                                |Sort by
-                            .input
-                              select.sort-by
-                                option value="age_increase" Age increase
-                                option value="age_decrease" Age decrease
-                                option value="alfabet" Alfabet
-                                option value="recent_activity" Recent activity
-                                option value="favotites_first" Favotites first
-                            .clearfix
+                    ul
+                      li
+                        a data-reveal-id="HowToEmail"
+                          = embedded_svg "UAD-inbox-replay.svg"
+                          |How to e-mail
+                      li
+                        a data-reveal-id="ClearFolder"
+                          = embedded_svg "UAD-inbox-6 trash.svg"
+                          |Clear inbox
 
 
           .all-conversations.ud-inbox-message-wrap

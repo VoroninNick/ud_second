@@ -350,7 +350,7 @@
               right: -10px
             @media #{$small-only}
               //right: -10px
-              right: 20%
+              right: 10% !important
             @media screen and (max-width: 500px)
               right: -5px
           .inbox-tab-ico
@@ -1042,6 +1042,28 @@ p.ud-inbox-draft
           fill: #48647C
 
 .ud-inbox-one-tab-wrap
+  .notification-container
+    min-width: 200px
+    padding: 13px
+    ul
+      list-style: none
+      margin-left: 0
+      margin-bottom: 0
+      li
+        padding: 6px 0
+        a
+          color: #58595B
+          font-size: 0.75rem
+          font-weight: 300
+          line-height: 1.25rem
+          svg
+            width: 20px
+            height: 20px
+            float: left
+            margin-right: 5px
+            polygon, path
+              fill: #48647C
+
   &.ud-sent-wrap
     .white-grey
       padding-bottom: 25px
@@ -1200,6 +1222,20 @@ p.ud-inbox-draft
         .ud-mailing-sent-to-people-filter
           .input-ud-button
             margin-left: 40px
+
+
+.ud-inbox-find-letter
+  form
+    .input, .input-ud-button
+      float: left
+    .input
+      width: 78%
+      input
+        border: 1px solid #cccccc
+        margin-bottom: 0
+    .input-ud-button
+      width: 22%
+
 .right-only-not-small
   float: right
   @media #{$small-only}
