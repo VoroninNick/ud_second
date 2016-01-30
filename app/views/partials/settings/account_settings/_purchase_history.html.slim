@@ -48,7 +48,7 @@
               .table-cell.price
                 .table-cell-inner
                   = "#{row[:price][:currency]} #{row[:price][:sum]}"
-              .table-cell.status class=(row[:status] ? "yes" : "no")
+              .table-cell.table-cell-status class=(row[:status] ? "yes" : "no")
                 .table-cell-inner
                   - if row[:status]
                     = embedded_svg "UD-icon-OK.svg"
